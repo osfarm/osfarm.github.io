@@ -1,0 +1,41 @@
+# global settings
+title: "OSFarm"
+description: "Building together a new innovative ecosystem for farms"
+permalink: "/stories/:title"
+url: https://osfarm.github.io
+relative_permalinks: false
+
+# build settings
+exclude: ["script", "vendor", "bower.json", "Gemfile", "Gemfile.lock", "Rakefile", "readme.md", "package.json", "node_modules"]
+markdown: kramdown
+plugins:
+  - jekyll-avatar
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-coffeescript
+  - jekyll-sitemap
+  - jekyll-octicons
+
+sass:
+  style: :compressed
+  # Where you keep your scss files
+  sass_dir: assets/css/
+  # Where sass should look for other scss
+  load_paths:
+    - node_modules/
+
+lsi: false
+safe: true
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
+# orgs on front page
+featured_orgs:
+  - ekylibre
+  - brad
+  - centipede

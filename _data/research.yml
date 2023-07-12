@@ -1,0 +1,343 @@
+# Government funded research - must have a government email/domain to be listed
+
+Australia:
+  - CSIRO-enviro-informatics
+  - CSIRO-GeoscienceAnalytics
+  - csiro-workspace
+  - csiro-wsn
+
+Austria:
+  - TUW-GEO
+
+Canada:
+  - Western-OC2-Lab
+
+China:
+  - Anhui-Medical-University
+  - arclab-hku
+  - BIMK
+  - bistu
+  - BIT-DA
+  - BIT-ENGD
+  - dbiir
+  - FudanNLP
+  - HITSZ-HLT
+  - HKBU-HPML
+  - hku-mars
+  - HPSCIL
+  - i2Nav-WHU
+  - MAI-Lab-West-China-Hospital
+  - NLP2CT
+  - PKU-DAIR
+  - PKUHPC
+  - ritju
+  - snnucs
+  - SUSTech-AMASLAB
+  - sysuits
+  - THUDM
+  - thuml
+  - TJ-CSCCG
+  - tuna
+  - XSLiuLab
+  - ZJU-DAILY
+  - ZJU-FAST-Lab
+  - zju-vipa
+  - zju3dv
+  - ZJULearning
+  - zjunlp
+  - ZJUSCT
+
+Czech Republic:
+  - CTU-IIG
+
+Denmark:
+  - DeiC-HPC
+  - DTUSoftware
+
+European Union:
+  - ec-jrc
+  - ecmwf
+  - ESA
+  - EU-ECDC
+
+Finland:
+  - Helsinki-NLP
+
+France:
+  - ifsttar
+  - INRIA
+  - luli
+
+Germany:
+  - 3dgeo-heidelberg
+  - automl
+  - AWI-ESM
+  - BAMresearch
+  - bauhaus
+  - baw-de
+  - cgre-aachen
+  - cispa
+  - ComNets-Bremen
+  - CompVis
+  - dainst
+  - DLR-SC
+  - eisenforschung
+  - ekut-es
+  - ExplainableML
+  - fkie
+  - Fraunhofer-AISEC
+  - fraunhofer-iais
+  - Fraunhofer-IIS
+  - Fraunhofer-IMS
+  - Fraunhofer-SCAI
+  - fraunhoferfokus
+  - fraunhoferhhi
+  - FraunhoferIOSB
+  - FraunhoferISST
+  - FZJ-IEK3-VSA
+  - FZJ-INM1-BDA
+  - FZJ-JSC
+  - GFZ
+  - ghga-de
+  - hegl-lab
+  - Heidelberg-NLP
+  - hmgu-itg
+  - hzdr
+  - hzi-braunschweig
+  - iame-uni-bonn
+  - ipa320
+  - leibniz-future-lab
+  - Leibniz-IWT
+  - maxplanck-ie
+  - MIC-DKFZ
+  - MPDL
+  - MPI-IS
+  - MPIB
+  - mpilhlt
+  - mppmu
+  - neurodial
+  - Rostlab
+  - RWTH-EBC
+  - subugoe
+  - tibhannover
+  - tml-tuebingen
+  - TU-Berlin
+  - tu-darmstadt-ros-pkg
+  - tum-gis
+  - UB-Heidelberg
+  - uds-psl
+  - Uni-Heidelberg
+  - vislearn
+  - VLSI-EDA
+  - WZBSocialScienceCenter
+  - x3dom
+
+Greece:
+  - ntua
+
+India:
+  - marsiitr
+
+International:
+  - CERN
+  - cerndb
+  - CICE-Consortium
+  - root-project
+  - swan-cern
+
+Iraq:
+  - ditkrg
+
+Italy:
+  - consiglionazionaledellericerche
+  - polimi-ispl
+
+Kenya:
+  - Multimedia-University-of-Kenya
+
+New Zealand Crown Research Institutes:
+  - AgResearch
+  - ESR-NZ
+  - niwa
+  - PlantandFoodResearch
+  - ScionResearch
+  - waikato-datamining
+
+Nigeria:
+  - ISTH-BNITM-PHE
+
+Philippines:
+  - InternationalRiceResearchInstitute
+
+Poland:
+  - gmum
+
+Portugal:
+  - fraunhoferportugal
+
+Russia:
+  - mirea-ninja
+
+Saudi Arabia:
+  - uqu-cis-cs
+
+South Korea:
+  - eGovFramework
+
+Spain:
+  - compsciencelab
+
+Sweden:
+  - ENCCS
+  - NBISweden
+  - smarc-project
+
+Switzerland:
+  - eth-cscs
+  - MeteoSwiss
+  - swiss-seismological-service
+  - SwissDataScienceCenter
+  - SwissTPH
+
+Taiwan:
+  - TW-NCHC
+
+Turkey:
+  - CankayaUniversity
+  - EuroCC-Turkey
+
+U.K:
+  - alan-turing-institute
+  - antarctica
+  - ARCHER2-HPC
+  - best-practice-and-impact
+  - BritishMuseum
+  - BritishMuseumDH
+  - GSTT-CSC
+  - SatelliteApplicationsCatapult
+
+U.S. Research Labs:
+  - ACME-Climate
+  - ai2es
+  - Argonne-National-Laboratory
+  - ARM-DOE
+  - Berkeley-Data
+  - berkeley-physics
+  - berkeley-scf
+  - berkeleybop
+  - BrookhavenNationalLaboratory
+  - CASL
+  - CBIIT
+  - CDAT
+  - chaos
+  - cocomans
+  - ControlSystemStudio
+  - cooperhewitt
+  - dlab-berkeley
+  - doe-nepa
+  - draperlaboratory
+  - DSSA-Stockton-University
+  - EarthSystemCoG
+  - EMSL-MSC
+  - epicsdeb
+  - esgf
+  - EVS-ATMOS
+  - exmatex
+  - flux-framework
+  - gatech
+  - georgia-tech-db
+  - globus
+  - glvis
+  - HipGISAXS
+  - hpc
+  - hpde
+  - idaholab
+  - jbei
+  - JGI-Bioinformatics
+  - JHUAPL
+  - jplopensource
+  - kbase
+  - kbaseIncubator
+  - lab11
+  - LANL
+  - LANL-Bioinformatics
+  - lbl-anp
+  - lbl-cal
+  - lblpbd
+  - libmesh
+  - llnl
+  - losalamos
+  - lsst-ts
+  - magellancloud
+  - materialsproject
+  - MCSclimate
+  - mdhim
+  - mfem
+  - MG-RAST
+  - mit-ll
+  - mitre
+  - NASA-Tensegrity-Robotics-Toolkit
+  - nasajpl
+  - ncats
+  - ncbi
+  - ncgmp09
+  - ncip
+  - ncpp
+  - ncsa
+  - NCSAGravity
+  - ndar
+  - nersc
+  - nhlbi
+  - niaid
+  - NIAID-RTB
+  - nih-fmrif
+  - NIHGOV
+  - Nikea
+  - nimh-nif
+  - nist-bws
+  - nist-emntg
+  - nist-ionstorage
+  - NIST-ISG
+  - NOAAGov
+  - nrel
+  - nrel-cookbooks
+  - nsf-open
+  - NSLS-II
+  - NSLS-II-CSX
+  - nsls2ap
+  - olcf
+  - ONOP
+  - OpsLabJPL
+  - ORNL
+  - ORNL-BTRIC
+  - ORNL-CEES
+  - ornl-sava
+  - ORNL-TechInt
+  - ornlcda
+  - PCMDI
+  - plfs
+  - pm-master
+  - pnnl
+  - PNNL-Comp-Mass-Spec
+  - pyepics
+  - reflectometry
+  - rose-compiler
+  - sandialabs
+  - scattering
+  - seed-platform
+  - sim-x
+  - smithsonian
+  - SNEWS-Collaboration
+  - SNL-WaterPower
+  - spacetelescope
+  - swift-lang
+  - thepanlab
+  - TinyTitan
+  - TriBITSPub
+  - ucla-mobility
+  - UCLA-Plasma-Simulation-Group
+  - UCLA-VAST
+  - UCLA-VMG
+  - usnistgov
+  - WISDEM
+  - zfsonlinux
