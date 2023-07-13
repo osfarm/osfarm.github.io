@@ -1,0 +1,16 @@
+# Add open source project link to agricultural technologies
+Farm Management Systems and Record Keeping:
+  - name: ekylibre
+    website: https://ekylibre.com
+    github: ekylibre
+    demo: https://demo-innovation.ekylibre.io
+Geospatial and GIS:
+  - name: qgis
+    website: https://qgis.org/en/site/
+    github: qgis
+    demo: https://qgis.org/en/site/about/screenshots.html
+Global Positionning System:
+  - name: centipede
+    website: https://centipede.fr
+    github: CentipedeRTK
+    demo: https://centipede.fr/index.php/view/map/?repository=cent&project=centipede

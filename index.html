@@ -1,26 +1,26 @@
 ---
 layout: home
-title: GitHub and Government
-description: Make government better, together. Stories of open source, open data, and open government.
+title: OSFarm
+description: Make farms better, together. Stories of open source, open data, and open hardware on farms.
 org_count: 60
 permalink: /
 ---
 
   <div class="container-lg p-responsive py-4 py-lg-6 my-xl-4 text-center">
-    <h1 class="alt-h1 mb-2 text-white">How agencies build&nbsp;software</h1>
-    <p class="f2-light text-white">Collaborate on code, data, policy, or procurement within your agency or with the&nbsp;public.</p>
+    <h1 class="alt-h1 mb-2 text-white">Awesome tools together for farming</h1>
+    <p class="f2-light text-white">Open source, Sustainable, Full, Affordable, Resilient, Merger.</p>
   </div>
 </div><!-- ends .full-width that started in header.html -->
 
 <div class="container-lg p-responsive">
   <div class="Box clearfix p-4 p-sm-5 col-md-7 mx-auto mt-6">
     <div class="float-left">
-      <img class="d-block pr-4" style="width: 80px;" alt="FedRAMP Logo" src="{{"/assets/img/Fedramp-logo.svg" | relative_url}}">
+      <img class="d-block pr-4" style="width: 120px;" alt="France 2030 Logo" src="{{"/assets/img/france_2030.png" | relative_url}}">
     </div>
     <div class="overflow-hidden">
-      <p>GitHub is now Federal Risk and Authorization Management Program (FedRAMP) authorized.
+      <p>OSFarm has make a deposit for France 2030 call on June 2023.
       </p>
-      <a href="{{"/fedramp/" | relative_url}}">Learn More {% octicon chevron-right height:18 class:"d-inline fill-blue ml-1" %}</a>
+      <a href="{{"/france2030/" | relative_url}}">Learn More {% octicon chevron-right height:18 class:"d-inline fill-blue ml-1" %}</a>
     </div>
   </div>
 </div>
@@ -160,7 +160,7 @@ permalink: /
 <section id="get-started" class="mini-section mt-6">
   <div class="container-lg p-responsive">
     <h2 class="alt-h2 text-center mb-3 mt-lg-6">Get started today</h2>
-    <p class="alt-lead text-gray text-center col-md-10 mx-auto">Create a free account to get started with GitHub. <a href="mailto:government@github.com">Contact us</a> to learn more about hosting your own GitHub instance.</p>
+    <p class="alt-lead text-gray text-center col-md-10 mx-auto">Create a free account to get started with GitHub. <a href="mailto:contact@osfarm.org">Contact us</a> to learn more about hosting your own GitHub instance.</p>
 
     <div class="mt-md-6 clearfix gutter-spacious">
       <div class="mb-4 col-md-6 float-left">
@@ -171,7 +171,7 @@ permalink: /
       <div class="mb-4 col-md-6 float-left">
         <h3 class="alt-h3 mb-2">Create an organization</h3>
         <p class="text-gray">An organization is your official presence on GitHub. <a href="https://github.com/organizations/new">Create a free organization</a> after you log in. Open source projects stay free.</p>
-        <p class="text-gray">Prefer to host your own GitHub instance? <a href="mailto:government@github.com">Contact us</a> or <a href="https://enterprise.github.com">request a free trial</a> to get started.
+        <p class="text-gray">Prefer to host your own GitHub instance? <a href="mailto:contact@osfarm.org">Contact us</a> or <a href="https://enterprise.github.com">request a free trial</a> to get started.
       </div>
     </div>
     <div class="mb-md-6 clearfix gutter-spacious">
@@ -192,11 +192,15 @@ permalink: /
 
 <section id="contact-a-human" class="bg-gray-light">
   <div class="container-lg p-responsive py-5 py-md-6 text-center">
-    <span class="text-center">
-      {% octicon person height:42 class:"d-block mx-auto mb-4 text-center fill-gray" aria-label:person %}
-    </span>
-    <h3 class="alt-h2 mb-4">Talk to a human</h3>
-    <p>Email <a href="mailto:government@github.com">government@github.com</a> to talk to GitHub's government team.</p>
-    <p><a href="https://government-community.githubapp.com/government">Post a question</a> in the government community to get feedback from other GitHub users in government.</p>
+    <div class="featured-orgs text-center p-2 m-2">
+      {% for people in site.data.teams %}
+      <a href="{{ people.url }}" class="animate-in">
+        <img class="avatar" src="{{ people.img | relative_url }}" alt="{{ people.name }}" width="80" height="80"/>
+        <div class="caption">{{ people.name }}</div>
+      </a>
+      {% endfor %}
+    </div>
+    <h3 class="alt-h2 mb-4">Talk to the core team</h3>
+    <p>Email <a href="mailto:contact@osfarm.org">contact@osfarm.org</a> to talk to OSfarm's team.</p>
   </div>
 </section>
