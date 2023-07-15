@@ -1,7 +1,7 @@
 ---
-title: Who's behind Open source Farm Technologies?
+title: What's behind OSFarm ?
 layout: support-page
-description: Projects link with Farming, agriculture and open source. If you don't see your organization on this list, follow the instructions below !
+description: Projects, Peoples, Organizations link with OSFarm. If you don't see your organization on this list, follow the instructions below !
 permalink: /community/
 ---
 <div id="to-top" class="text-center border-top border-bottom mb-3 mb-md-5">

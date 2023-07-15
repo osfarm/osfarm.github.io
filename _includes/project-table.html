@@ -19,12 +19,15 @@
             {% endif %}
 
             <div class="col-sm-3 float-left org">
-              <a href="https://github.com/{{ org.github }}" title="{{ org.name }}" class="border d-block text-center px-2 py-4 mb-4">
-                {% avatar user=org.github size=60 lazy=true %}
-                <div class="org-name text-small">
-                  @{{ org.github }}
-                </div>
-              </a>
+              <div class="border d-block text-center px-2 py-4 mb-4">
+                {% if org.img %}
+                  <img class="avatar" src="{{ org.img | relative_url }}" width="100" height="auto"/>
+                {% endif %}
+                <div class="org-name text-medium"><a href="{{ org.website }}" target='_blank'>{{ org.name }}</a></div>
+                {% if org.demo %}
+                  <div class="org-name text-small"><a href="{{ org.demo }}" target='_blank'>Demo</a></div>
+                {% endif %}
+              </div> 
             </div><!-- col-md-{{ 12 | divided_by:columns }} -->
 
             {% if column_number == 3 %}

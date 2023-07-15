@@ -1,16 +1,53 @@
 # Add open source project link to agricultural technologies
+Automation and Robotics:
+  - name: natuition
+    website: https://natuition.com/en/
+    github: natuition
+    demo: https://www.youtube.com/watch?v=ojdT-zIs6Po
+    img: "/assets/img/projects/natuition.png"
+Climate, Environment and Weather:
+  - name: openweathermap
+    website: https://openweathermap.org/
+    demo: https://openweathermap.org/weathermap
+    img: "/assets/img/projects/openweather.png"
+Data Standardization, Interoperability and APIs:
+  - name: Calculatrice IFT
+    website: https://alim.agriculture.gouv.fr/ift/
+    img: "/assets/img/projects/natuition.png"
+    demo: https://alim.agriculture.gouv.fr/ift/traitement-ift/2023
+    img: "/assets/img/projects/minalim.png"
+Equipments and Tools:
+  - name: "le pré fabriqué"
+    website: https://www.leprefabrique.com/
+    demo: "https://www.youtube.com/watch?v=I_MMp7Jgzrw&t=42s"
+    img: "/assets/img/projects/leprefabrique.svg"
 Farm Management Systems and Record Keeping:
   - name: ekylibre
     website: https://ekylibre.com
     github: ekylibre
     demo: https://demo-innovation.ekylibre.io
+    img: "/assets/img/projects/ekylibre.svg"
 Geospatial and GIS:
   - name: qgis
     website: https://qgis.org/en/site/
     github: qgis
     demo: https://qgis.org/en/site/about/screenshots.html
+    img: "/assets/img/projects/qgis.png"
 Global Positionning System:
   - name: centipede
     website: https://centipede.fr
     github: CentipedeRTK
     demo: https://centipede.fr/index.php/view/map/?repository=cent&project=centipede
+    img: "/assets/img/projects/centipede.png"
+IoT, Hardware:
+  - name: waziup
+    website: https://waziup.io/
+    demo: https://lab.waziup.io/my-solutions
+    img: "/assets/img/projects/waziup.svg"
+Knowledgebases and Learning Resources:
+  - name: Triple performance
+    website: https://wiki.tripleperformance.fr/wiki/Triple_Performance
+    demo: "https://forum.tripleperformance.fr/?_gl=1*smu8ea*_ga*MTc3MjIwNTgyOS4xNjg5NDMwMTUx*_ga_FXVTX5HGV7*MTY4OTQzMDE1MC4xLjEuMTY4OTQzMDE2NC40Ni4wLjA."
+    img: "/assets/img/projects/tp.svg"
+Machine Learning and AI:
+Remote Sensing and Imagery:

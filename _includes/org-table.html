@@ -19,10 +19,11 @@
             {% endif %}
 
             <div class="col-sm-3 float-left org">
-              <a href="https://github.com/{{ org }}" title="{{ org }}" class="border d-block text-center px-2 py-4 mb-4">
-                {% avatar user=org size=60 lazy=true %}
+              <a href="{{ org.website }}" title="{{ org.name }}" class="border d-block text-center px-2 py-4 mb-4">
                 <div class="org-name text-small">
-                  @{{ org }}
+                  <img class="avatar" src="{{ org.img | relative_url }}" width="80" height="80"/>
+                  <a href="{{ org.demo }}" target='_blank' title="{{ org.name }}"</a>
+                  </img>
                 </div>
               </a>
             </div><!-- col-md-{{ 12 | divided_by:columns }} -->
