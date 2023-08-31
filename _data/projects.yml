@@ -32,6 +32,11 @@ Farm Management Systems and Record Keeping:
     github: ekylibre
     demo: https://demo-innovation.ekylibre.io
     img: "/assets/img/projects/ekylibre.svg"
+  - name: farmos
+    website: https://farmos.org/
+    github: farmOS
+    demo: https://farmos-demo.rootedsolutions.io/
+    img: "/assets/img/projects/farmos.png"
 Geospatial and GIS:
   - name: qgis
     website: https://qgis.org/en/site/
@@ -49,6 +54,10 @@ IoT, Hardware:
     website: https://waziup.io/
     demo: https://lab.waziup.io/my-solutions
     img: "/assets/img/projects/waziup.svg"
+  - name: home assistant
+    website: https://www.home-assistant.io/
+    demo: https://demo.home-assistant.io/
+    img: "/assets/img/projects/home-assistant.png"
 Knowledgebases and Learning Resources:
   - name: Triple performance
     website: https://wiki.tripleperformance.fr/wiki/Triple_Performance
