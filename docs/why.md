@@ -11,8 +11,8 @@ redirect_from: "/508/"
       //plot options code with type: 'datetime'
       plotOptions: {
         series: {
-          pointStart: Date.UTC(2020, 2, 4),
-          pointInterval: 24 * 3600 * 1000
+          pointStart: Date.UTC(2000, 0, 1),
+          pointInterval: 24 * 3600 * 1000 * 365 * 10
         }
       },
       type: 'line',
@@ -21,27 +21,28 @@ redirect_from: "/508/"
         split: false,
         enabled: true,
       },
+      title: { text: 'Evolution of agriculture indicators'},
       xAxis: {
         type: 'datetime'
       },
-
       series: [{
-          data: [1, 2, 3, 4, 5],
+          name: 'People to feed (B)',
+          data: [4, 5, 6, 7.5, 9],
         },
-        {
-          data: [5, 15, 20, 10, 1],
+        { 
+          name: 'Working force in agriculture (%)',
+          data: [5, 4, 3, 2, 1],
         }
       ]
     });
   </script>
 <div class="col-md-8 mx-auto">
   <p>
-    Please note, when using GitHub.com or GitHub Enterprise, there are four alternate ways to interact with stored content:
+    OSFarm want to solve this issues:
   </p>
   <ol class="ml-3 ml-lg-0">
-    <li class="mb-2">No need to reinvent the whell</li>
+    <li class="mb-2">Foster Agtech innovation has no need to reinvent the whell</li>
     <li class="mb-2">Lot of pain and lack when using lot of new technologies on farms</li>
-    <li class="mb-2">95% of farmers has no access to new technologies</li>
     <li class="mb-2">95% of farmers has no access to new technologies</li>
   </ol>
   <div class="embed-responsive embed-responsive-16by9">

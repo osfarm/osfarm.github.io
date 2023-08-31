@@ -5,6 +5,11 @@ Automation and Robotics:
     github: natuition
     demo: https://www.youtube.com/watch?v=ojdT-zIs6Po
     img: "/assets/img/projects/natuition.png"
+  - name: farmbot
+    website: https://farm.bot
+    github: FarmBot
+    demo: https://www.youtube.com/watch?v=qwSbWy_1f8w
+    img: "/assets/img/projects/farmbot.png"
 Climate, Environment and Weather:
   - name: openweathermap
     website: https://openweathermap.org/
