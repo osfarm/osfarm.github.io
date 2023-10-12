@@ -15,12 +15,23 @@ Climate, Environment and Weather:
     website: https://openweathermap.org/
     demo: https://openweathermap.org/weathermap
     img: "/assets/img/projects/openweather.png"
-Data Standardization, Interoperability and APIs:
+Data Standardization, Open Data, Interoperability and APIs:
   - name: Calculatrice IFT
     website: https://alim.agriculture.gouv.fr/ift/
-    img: "/assets/img/projects/natuition.png"
     demo: https://alim.agriculture.gouv.fr/ift/traitement-ift/2023
     img: "/assets/img/projects/minalim.png"
+  - name: Data Food Consortium
+    website: https://www.datafoodconsortium.org/
+    demo: https://www.datafoodconsortium.org/
+    img: "/assets/img/projects/dfc.png"
+  - name: Global Biodiversity Information Facility
+    website: https://www.gbif.org/
+    demo: https://www.gbif.org/developer/summary
+    img: "/assets/img/projects/gbif.png"
+  - name: Pl@ntNet
+    website: https://plantnet.org/
+    demo: https://identify.plantnet.org/fr
+    img: "/assets/img/projects/plantnet.png"
 Equipments and Tools:
   - name: "le pré fabriqué"
     website: https://www.leprefabrique.com/
