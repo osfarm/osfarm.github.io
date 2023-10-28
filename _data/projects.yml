@@ -1,20 +1,42 @@
 # Add open source project link to agricultural technologies
 Automation and Robotics:
-  - name: natuition
-    website: https://natuition.com/en/
-    github: natuition
-    demo: https://www.youtube.com/watch?v=ojdT-zIs6Po
-    img: "/assets/img/projects/natuition.png"
+  - name: agopengps
+    website: https://github.com/farmerbriantee/AgOpenGPS
+    github: farmerbriantee/AgOpenGPS
+    demo: https://www.youtube.com/watch?v=I7qKnWaY5tg
+    img: "/assets/img/projects/agopengps.png"
+  - name: ecoterrabot
+    website: https://ecoterrabot.com/
+    demo: https://www.youtube.com/watch?v=PbUobvAS0MM
+    img: "/assets/img/projects/ecoterra.png"
   - name: farmbot
     website: https://farm.bot
     github: FarmBot
     demo: https://www.youtube.com/watch?v=qwSbWy_1f8w
     img: "/assets/img/projects/farmbot.png"
-Climate, Environment and Weather:
-  - name: openweathermap
+  - name: natuition
+    website: https://natuition.com/en/
+    github: natuition
+    demo: https://www.youtube.com/watch?v=ojdT-zIs6Po
+    img: "/assets/img/projects/natuition.png"
+  - name: open rmf
+    website: https://www.open-rmf.org/
+    github: open-rmf
+    demo: https://www.youtube.com/watch?v=ojdT-zIs6Po
+    img: "/assets/img/projects/openrmf.png"
+Climate, Environment, Imagery and Weather:
+  - name: open weather map
     website: https://openweathermap.org/
     demo: https://openweathermap.org/weathermap
     img: "/assets/img/projects/openweather.png"
+  - name: open meteo
+    website: https://open-meteo.com/
+    demo: https://open-meteo.com/en/docs
+    img: "/assets/img/projects/openmeteo.png"
+  - name: agro monitoring
+    website: https://agromonitoring.com/
+    demo: https://agromonitoring.com/map#12/41.978/-93.3977
+    img: "/assets/img/projects/agromonitoring.jpeg"  
 Data Standardization, Open Data, Interoperability and APIs:
   - name: Calculatrice IFT
     website: https://alim.agriculture.gouv.fr/ift/
@@ -37,6 +59,10 @@ Equipments and Tools:
     website: https://www.leprefabrique.com/
     demo: "https://www.youtube.com/watch?v=I_MMp7Jgzrw&t=42s"
     img: "/assets/img/projects/leprefabrique.svg"
+  - name: "L atelier paysan"
+    website: https://www.latelierpaysan.org
+    demo: "https://www.latelierpaysan.org/Plans-et-Tutoriels"
+    img: "/assets/img/projects/atelier.png"
 Farm Management Systems and Record Keeping:
   - name: ekylibre
     website: https://ekylibre.com
@@ -48,13 +74,12 @@ Farm Management Systems and Record Keeping:
     github: farmOS
     demo: https://farmos-demo.rootedsolutions.io/
     img: "/assets/img/projects/farmos.png"
-Geospatial and GIS:
+Geospatial, GIS and Global Positionning System:
   - name: qgis
     website: https://qgis.org/en/site/
     github: qgis
     demo: https://qgis.org/en/site/about/screenshots.html
     img: "/assets/img/projects/qgis.png"
-Global Positionning System:
   - name: centipede
     website: https://centipede.fr
     github: CentipedeRTK
@@ -80,4 +105,15 @@ Sales and Customers links:
     demo: https://github.com/acp-admin/acp-admin
     img: "/assets/img/projects/acp.png"
 Machine Learning and AI:
-Remote Sensing and Imagery:
+  - name: Ag ML
+    website: https://www.aifs.ucdavis.edu/research/agml-open-source-machine-learning-infrastructure-pilot-project-with-optimized-sensor-driven-resilient-precision-agriculture
+    demo: https://github.com/Project-AgML/AgML
+    img: "/assets/img/projects/agml.png"
+  - name: Plant CV
+    website: https://plantcv.danforthcenter.org/
+    demo: https://github.com/danforthcenter/plantcv
+    img: "/assets/img/projects/plantcv.png"
+
+
+    
+
