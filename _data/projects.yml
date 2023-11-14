@@ -97,7 +97,8 @@ IoT, Hardware:
 Knowledgebases and Learning Resources:
   - name: Triple performance
     website: https://wiki.tripleperformance.fr/wiki/Triple_Performance
-    demo: "https://forum.tripleperformance.fr/?_gl=1*smu8ea*_ga*MTc3MjIwNTgyOS4xNjg5NDMwMTUx*_ga_FXVTX5HGV7*MTY4OTQzMDE1MC4xLjEuMTY4OTQzMDE2NC40Ni4wLjA."
+    github: neayi
+    demo: https://forum.tripleperformance.fr/
     img: "/assets/img/projects/tp.svg"
 Sales and Customers links:
   - name: acp admin
