@@ -36,7 +36,7 @@ Climate, Environment, Imagery and Weather:
   - name: agro monitoring
     website: https://agromonitoring.com/
     demo: https://agromonitoring.com/map#12/41.978/-93.3977
-    img: "/assets/img/projects/agromonitoring.jpeg"  
+    img: "/assets/img/projects/agromonitoring.jpeg"
 Data Standardization, Open Data, Interoperability and APIs:
   - name: Calculatrice IFT
     website: https://alim.agriculture.gouv.fr/ift/
@@ -94,6 +94,11 @@ IoT, Hardware:
     website: https://www.home-assistant.io/
     demo: https://demo.home-assistant.io/
     img: "/assets/img/projects/home-assistant.png"
+  - name: Brad Technology
+    website: https://brad.ag/
+    github: https://github.com/bradtech
+    demo: https://www.brad.ag/la-solution-agritech-brad/
+    img: "assets/img/projects/brad-technology.png"
 Knowledgebases and Learning Resources:
   - name: Triple performance
     website: https://wiki.tripleperformance.fr/wiki/Triple_Performance
@@ -114,7 +119,3 @@ Machine Learning and AI:
     website: https://plantcv.danforthcenter.org/
     demo: https://github.com/danforthcenter/plantcv
     img: "/assets/img/projects/plantcv.png"
-
-
-    
-
