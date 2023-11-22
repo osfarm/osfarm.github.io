@@ -69,6 +69,14 @@ Data Standardization, Open Data, Interoperability and APIs:
     demo: https://www.fiware.org/community/smart-agrifood/
     img: "/assets/img/projects/fiware.png"
 Equipments and Tools:
+  - name: Open source ecology
+    website: https://www.opensourceecology.org/
+    demo: "https://opensourceecology.dozuki.com/"
+    img: "/assets/img/projects/ose.jpeg"
+  - name: OS Beehives
+    website: https://www.osbeehives.com/
+    demo: https://www.osbeehives.com/collections/source-files
+    img: "/assets/img/projects/osbeehives.png"
   - name: "Le pré fabriqué"
     website: https://www.leprefabrique.com/
     demo: "https://www.youtube.com/watch?v=I_MMp7Jgzrw&t=42s"
@@ -127,6 +135,15 @@ Geospatial, GIS and Global Positionning System reference:
     website: https://www.lizmap.com/
     demo: https://demo.lizmap.com/lizmap/
     img: "/assets/img/projects/lizmap.png"
+Icons:
+  - name: Agric
+    website: https://ekylibre.com/innovation/
+    demo: https://github.com/ekylibre/agric
+    img: "/assets/img/projects/agric.svg"
+  - name: Lex Icon / Food icon project
+    website: https://foodicons.org/
+    demo: https://thenounproject.com/foodiconscollection/
+    img: "/assets/img/projects/foodicon.png"
 IoT, Sensors for tracking, isobus and supervising:
   - name: Home assistant
     website: https://www.home-assistant.io/
