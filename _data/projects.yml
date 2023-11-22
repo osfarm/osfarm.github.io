@@ -68,6 +68,10 @@ Data Standardization, Open Data, Interoperability and APIs:
     website: https://www.fiware.org/
     demo: https://www.fiware.org/community/smart-agrifood/
     img: "/assets/img/projects/fiware.png"
+  - name: Open Food Facts
+    website: https://fr.openfoodfacts.org
+    demo: https://fr.openfoodfacts.org/data
+    img: "/assets/img/projects/off.svg"
 Equipments and Tools:
   - name: Open source ecology
     website: https://www.opensourceecology.org/
