@@ -1,39 +1,49 @@
 # Add open source project link to agricultural technologies
 Automation and Robotics:
-  - name: agopengps
+  - name: Agopengps
     website: https://github.com/farmerbriantee/AgOpenGPS
     github: farmerbriantee/AgOpenGPS
     demo: https://www.youtube.com/watch?v=I7qKnWaY5tg
     img: "/assets/img/projects/agopengps.png"
-  - name: ecoterrabot
+  - name: AgIsoStack
+    website: https://github.com/Open-Agriculture/AgIsoStack-plus-plus
+    github: Open-Agriculture/AgIsoStack-plus-plus
+    demo: https://isobus-plus-plus.readthedocs.io/en/latest/
+    img: "/assets/img/projects/agisostack.png"
+  - name: Ecoterrabot
     website: https://ecoterrabot.com/
     demo: https://www.youtube.com/watch?v=PbUobvAS0MM
     img: "/assets/img/projects/ecoterra.png"
-  - name: farmbot
+  - name: Farmbot
     website: https://farm.bot
     github: FarmBot
     demo: https://www.youtube.com/watch?v=qwSbWy_1f8w
     img: "/assets/img/projects/farmbot.png"
-  - name: natuition
+  - name: Natuition
     website: https://natuition.com/en/
     github: natuition
     demo: https://www.youtube.com/watch?v=ojdT-zIs6Po
     img: "/assets/img/projects/natuition.png"
-  - name: open rmf
+  - name: Open rmf
     website: https://www.open-rmf.org/
     github: open-rmf
     demo: https://www.youtube.com/watch?v=ojdT-zIs6Po
     img: "/assets/img/projects/openrmf.png"
+  - name: Super green os
+    website: https://www.supergreenlab.com/app
+    github: supergreenlab/SuperGreenOS
+    demo: https://github.com/supergreenlab/SuperGreenOS
+    img: "/assets/img/projects/supergreenos.png"
 Climate, Environment, Imagery and Weather:
-  - name: open weather map
+  - name: Open weather map
     website: https://openweathermap.org/
     demo: https://openweathermap.org/weathermap
     img: "/assets/img/projects/openweather.png"
-  - name: open meteo
+  - name: Open meteo
     website: https://open-meteo.com/
     demo: https://open-meteo.com/en/docs
     img: "/assets/img/projects/openmeteo.png"
-  - name: agro monitoring
+  - name: Agro monitoring
     website: https://agromonitoring.com/
     demo: https://agromonitoring.com/map#12/41.978/-93.3977
     img: "/assets/img/projects/agromonitoring.jpeg"
@@ -54,8 +64,12 @@ Data Standardization, Open Data, Interoperability and APIs:
     website: https://plantnet.org/
     demo: https://identify.plantnet.org/fr
     img: "/assets/img/projects/plantnet.png"
+  - name: Fiware
+    website: https://www.fiware.org/
+    demo: https://www.fiware.org/community/smart-agrifood/
+    img: "/assets/img/projects/fiware.png"
 Equipments and Tools:
-  - name: "le pré fabriqué"
+  - name: "Le pré fabriqué"
     website: https://www.leprefabrique.com/
     demo: "https://www.youtube.com/watch?v=I_MMp7Jgzrw&t=42s"
     img: "/assets/img/projects/leprefabrique.svg"
@@ -64,41 +78,98 @@ Equipments and Tools:
     demo: "https://www.latelierpaysan.org/Plans-et-Tutoriels"
     img: "/assets/img/projects/atelier.png"
 Farm Management Systems and Record Keeping:
-  - name: ekylibre
+  - name: Ekylibre
     website: https://ekylibre.com
     github: ekylibre
     demo: https://demo-innovation.ekylibre.io
     img: "/assets/img/projects/ekylibre.svg"
-  - name: farmos
+  - name: Farmos
     website: https://farmos.org/
     github: farmOS
     demo: https://farmos-demo.rootedsolutions.io/
     img: "/assets/img/projects/farmos.png"
-Geospatial, GIS and Global Positionning System:
-  - name: qgis
+  - name: Tania
+    website: https://usetania.org/
+    github: usetania/tania-core
+    demo: https://usetania.org/docs/
+    img: "/assets/img/projects/tania.svg"
+  - name: LiteFarm
+    website: https://www.litefarm.org/
+    github: LiteFarmOrg/LiteFarm
+    demo: https://github.com/LiteFarmOrg/LiteFarm
+    img: "/assets/img/projects/litefarm.png"
+  - name: Frappe
+    website: https://frappe.io/
+    github: LiteFarmOrg/LiteFarm
+    demo: https://docs.erpnext.com/docs/user/manual/en/crops-and-land-introduction
+    img: "/assets/img/projects/frappe.png"
+  - name: Brinjel
+    website: https://brinjel.com/fr/   
+    github: https://framagit.org/brinjel
+    demo: https://brinjel.com/fr/blog/
+    img: "/assets/img/projects/brinjel.png"
+Geospatial, GIS and Global Positionning System reference:
+  - name: Qgis
     website: https://qgis.org/en/site/
     github: qgis
     demo: https://qgis.org/en/site/about/screenshots.html
     img: "/assets/img/projects/qgis.png"
-  - name: centipede
+  - name: Centipede
     website: https://centipede.fr
     github: CentipedeRTK
     demo: https://centipede.fr/index.php/view/map/?repository=cent&project=centipede
     img: "/assets/img/projects/centipede.png"
-IoT, Hardware:
-  - name: waziup
-    website: https://waziup.io/
-    demo: https://lab.waziup.io/my-solutions
-    img: "/assets/img/projects/waziup.svg"
-  - name: home assistant
+  - name: OpenStreetMap
+    website: https://www.openstreetmap.fr/
+    demo: https://www.openstreetmap.org/#map=6/46.449/2.210
+    img: "/assets/img/projects/osm.png"
+  - name: Lizmap
+    website: https://www.lizmap.com/
+    demo: https://demo.lizmap.com/lizmap/
+    img: "/assets/img/projects/lizmap.png"
+IoT, Sensors for tracking, isobus and supervising:
+  - name: Home assistant
     website: https://www.home-assistant.io/
     demo: https://demo.home-assistant.io/
     img: "/assets/img/projects/home-assistant.png"
+  - name: Frigate
+    website: https://frigate.video/
+    demo: https://demo.frigate.video/
+    img: "/assets/img/projects/freegate.png"
+  - name: Isoblue
+    website: https://isoblue.org/
+    demo: https://isoblue.org/docs/
+    img: "/assets/img/projects/isoblue.png"
+  - name: Traccar
+    website: https://www.traccar.org/
+    demo: https://www.traccar.org/demo-server/
+    img: "/assets/img/projects/traccar.png"
+IoT, Sensors for soil and irrigation:
+  - name: Waziup
+    website: https://waziup.io/
+    demo: https://lab.waziup.io/my-solutions
+    img: "/assets/img/projects/waziup.svg"
   - name: Brad Technology
     website: https://brad.ag/
     github: https://github.com/bradtech
     demo: https://www.brad.ag/la-solution-agritech-brad/
     img: "assets/img/projects/brad-technology.png"
+  - name: Open remote
+    website: https://www.openremote.io/
+    demo: https://www.openremote.io/demo/
+    img: "/assets/img/projects/openremote.png"
+  - name: AgIot
+    website: https://agiot.inesctec.pt/
+    demo: http://vcriis01.inesctec.pt:1880/ui/#/0
+    img: "/assets/img/projects/default.png"
+  - name: OpenSprinkler
+    website: https://opensprinkler.com/
+    demo: https://github.com/OpenSprinkler
+    img: "/assets/img/projects/opensprinkler.jpeg"
+  - name: Agrolink
+    website: https://blog.pepinature.com/2023/07/23/module-dirrigation-automatise-open-source/
+    demo: https://pepinature.org/fr/gestion_de_l_eau/programmation_avancee_et_automatisation_de_l_irrigation
+    img: "/assets/img/projects/default.png"
 Knowledgebases and Learning Resources:
   - name: Triple performance
     website: https://wiki.tripleperformance.fr/wiki/Triple_Performance
@@ -106,7 +177,7 @@ Knowledgebases and Learning Resources:
     demo: https://forum.tripleperformance.fr/
     img: "/assets/img/projects/tp.svg"
 Sales and Customers links:
-  - name: acp admin
+  - name: Acp admin
     website: https://acp-admin.ch/
     demo: https://github.com/acp-admin/acp-admin
     img: "/assets/img/projects/acp.png"
@@ -119,3 +190,7 @@ Machine Learning and AI:
     website: https://plantcv.danforthcenter.org/
     demo: https://github.com/danforthcenter/plantcv
     img: "/assets/img/projects/plantcv.png"
+  - name: Mistral AI
+    website: https://mistral.ai/
+    demo: https://docs.mistral.ai/
+    img: "/assets/img/projects/mistralai.png"
