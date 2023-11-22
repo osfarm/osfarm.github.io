@@ -14,6 +14,5 @@ group :development, :test do
   gem 'html-proofer', '~> 4.0'
   gem 'parallel'
   gem 'rake'
-  gem 'rubocop'
   gem 'typhoeus'
 end
