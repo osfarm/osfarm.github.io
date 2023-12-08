@@ -121,6 +121,11 @@ Farm Management Systems and Record Keeping:
     demo: https://brinjel.com/fr/blog/
     img: "/assets/img/projects/brinjel.png"
 Geospatial, GIS and Global Positionning System reference:
+  - name: Carto
+    website: https://carto.com/
+    github: cartodb
+    demo: https://www.youtube.com/watch?v=4hoU2vNl6wE&t=6s
+    img: "/assets/img/projects/carto.svg"
   - name: Qgis
     website: https://qgis.org/en/site/
     github: qgis
