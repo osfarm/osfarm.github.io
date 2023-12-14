@@ -207,6 +207,10 @@ Sales and Customers links:
     website: https://acp-admin.ch/
     demo: https://github.com/acp-admin/acp-admin
     img: "/assets/img/projects/acp.png"
+  - name: Wordpress
+    website: https://wordpress.org/
+    demo: https://www.hartzlerdairy.com/
+    img: "/assets/img/projects/wp.png"
 Machine Learning and AI:
   - name: Ag ML
     website: https://www.aifs.ucdavis.edu/research/agml-open-source-machine-learning-infrastructure-pilot-project-with-optimized-sensor-driven-resilient-precision-agriculture
