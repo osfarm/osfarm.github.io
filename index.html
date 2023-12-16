@@ -47,6 +47,27 @@ permalink: /
   </div>
 </section>
 
+<section class="bg-gray-light">
+  <div class="container-lg p-responsive py-5 py-md-6 ">
+
+    <h2 class="alt-h2 text-center mb-3 mt-lg-6" id="more-than-just-code">Some project than make our farm stack better</h2>
+    <p class="alt-lead text-gray text-center col-md-10 mx-auto">OSFarm make a selection of functionnal and strong open source project to add it to the interoperable stack</p>
+      <div class="my-4 my-lg-6 clearfix gutter-spacious">
+        {% for org in site.data.showcases %}
+          <div class="col-md-4 float-left animate-out mb-4">
+            <h3 class="alt-h3 mb-3">{{ org.name }}</h3>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item"
+                src="{{ org.video }}" frameborder="0" allowfullscreen="">
+              </iframe>
+            </div>
+            <small>{{ org.description }}</small>
+          </div>
+        {% endfor %}
+      </div>
+  </div>
+</section>
+
 <section class="container-lg p-responsive py-5 py-md-6 my-lg-6">
   <h2 class="alt-h2 text-center mb-3 mt-lg-6">6 reasons to join us</h2>
   <div class="clearfix gutter-spacious">
@@ -105,67 +126,20 @@ permalink: /
   </p>
 </section>
 
-
-<section class="bg-gray-light">
-  <div class="container-lg p-responsive py-5 py-md-6 ">
-
-    <h2 class="alt-h2 text-center mb-3 mt-lg-6" id="more-than-just-code">Some project than make our farm stack better</h2>
-    <p class="alt-lead text-gray text-center col-md-10 mx-auto">OSFarm make a selection of functionnal and strong open source project to add it to the interoperable stack</p>
-
-    <div class="my-4 my-lg-6 clearfix gutter-spacious">
-      <div class="col-md-4 float-left animate-out mb-4">
-        <h3 class="alt-h3 mb-3">Intel Iris</h3>
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item"
-            src="https://www.youtube.com/embed/TBeyGvqpbxk" frameborder="0" allowfullscreen="">
-          </iframe>
-        </div>
-        <small>Intelligent Irrigation System for Low-cost Autonomous Water Control in Small-scale Agriculture</small>
-      </div>
-      <div class="col-md-4 float-left animate-out mb-4">
-        <h3 class="alt-h3 mb-3">AgOpenGPS</h3>
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item"
-              src="https://www.youtube.com/embed/I7qKnWaY5tg" frameborder="0" allowfullscreen="">
-            </iframe>
-          </div>
-        <small>Self Guidance System with RTK, section control and auto headland capacities</small>
-      </div>
-      <div class="col-md-4 float-left animate-out mb-4">
-        <h3 class="alt-h3 mb-3">Violette</h3>
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item"
-            src="https://www.youtube.com/embed/ojdT-zIs6Po" frameborder="0" allowfullscreen="">
-          </iframe>
-        </div>
-        <small>Autonomous robot for weed control</small>
-      </div>
-    </div>
-    <p class="text-center">
-      <a href="/showcases" class="btn btn-outline">See more showcases &rarr;</a>
-    </p>
-
-  </div>
-</section>
-
 <section class="">
   <div class="container-lg p-responsive py-5 py-md-6 ">
     <h2 class="alt-h2 text-center mb-3 mt-lg-6" id="join-the-revolution">Join the Revolution</h2>
     <p class="alt-lead text-gray text-center col-md-10 mx-auto">Join peoples, projects, organizations around the world who collaborate on code, data, hardware, and more for farming future. See the rest of the <a href="/community"> OSFarm community</a>.</p>
   </div>
-  <div style="overflow: hidden;">
-    {% assign count = 0 %}
-    {% for group in site.data.governments %}
-      {% for org in group[1] %}
-        {% assign count = count | plus:1 %}
-      {% endfor %}
-    {% endfor %}
     <div class="featured-orgs text-center p-2 m-2">
-      {% for org in site.featured_orgs %}
-      <a href="https://github.com/{{ org }}" class="animate-in">{% avatar user=org size=80 %}</a>
+      {% for orgs in site.data.projects %}
+        {% for org in orgs[1] %}
+          {% if org.github_org %}
+            <a href="https://github.com/{{ org.github_org }}" class="animate-in">{% avatar user=org.github_org size=80 %}</a>
+          {% endif  %}
+        {% endfor %}
       {% endfor %}
     </div>
-  </div>
 </section>
 
 <section id="get-started" class="mini-section mt-6">
@@ -190,7 +164,7 @@ permalink: /
       </div>
       <div class="mb-4 col-md-6 float-left">
         <h3 class="alt-h3 mb-2">Join Discussions and learn More</h3>
-        <p class="text-gray">Browse OSFarm resources <a href="/community">community</a> or <a href="https://github.com/orgs/osfarm/discussions" target="_blank">discussions</a></p>
+        <p class="text-gray">Browse OSFarm resources <a href="/community">community</a> or <a href="https://discord.gg/BSZSM4dS" target="_blank">discussions</a></p>
       </div>
     </div>
   </div>
@@ -198,6 +172,7 @@ permalink: /
 
 <section id="contact-a-human" class="bg-gray-light">
   <div class="container-lg p-responsive py-5 py-md-6 text-center">
+    <h2 class="alt-h2 text-center mb-3 mt-lg-6">Awesome experts for smart farming</h2>
     <div class="featured-orgs text-center p-2 m-2">
       {% for people in site.data.teams %}
       <a href="{{ people.url }}" class="animate-in">
@@ -207,6 +182,9 @@ permalink: /
       {% endfor %}
     </div>
     <h3 class="alt-h2 mb-4">Talk to the core team</h3>
-    <p>Email <a href="mailto:contact@osfarm.org">contact@osfarm.org</a> to talk to OSfarm's team.</p>
+    <p>Send an <a href="mailto:contact@osfarm.org">email</a> to inform OSfarm's team about your project</p>
+    <p>Join on <a href="https://discord.gg/BSZSM4dS">Discord</a> to talk to OSfarm's team.</p>
+    
+
   </div>
 </section>

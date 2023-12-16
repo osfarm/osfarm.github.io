@@ -1,0 +1,37 @@
+# Showcases video
+- name: Agopengps
+  video: https://www.youtube.com/embed/I7qKnWaY5tg
+  img: "/assets/img/projects/agopengps.png"
+  description: Self guidance system on existing tractor
+- name: Autoplant
+  video: https://www.youtube.com/embed/2Ybtjoabz_g?si=kwGgKt8rxNrkK9OI
+  img: "/assets/img/projects/agrogeovisio.png"
+  description: Self planting system on existing tractor
+- name: Ecoterrabot
+  video: https://www.youtube.com/embed/PbUobvAS0MM
+  img: "/assets/img/projects/ecoterra.png"
+  description: Autonomous precision weed picking robot
+- name: E-tract
+  video: https://www.youtube.com/embed/l4sHiCAmqXs?si=a8S8BQ6zDYBTy8JY
+  img: "/assets/img/projects/agrogeovisio.png"
+  description: Autonomous hoeing corn crop robot
+- name: Intel Iris
+  video: https://www.youtube.com/embed/TBeyGvqpbxk
+  img: "/assets/img/projects/waziup.png"
+  description: Low-cost Autonomous Water Control
+- name: Farmbot
+  video: https://www.youtube.com/embed/qwSbWy_1f8w
+  img: "/assets/img/projects/farmbot.png"
+  description: All in one robot for small croping area
+- name: Natuition
+  video: https://www.youtube.com/embed/ojdT-zIs6Po
+  img: "/assets/img/projects/natuition.png"
+  description: Autonomous precision weed picking robot on grass land
+- name: "Le pré fabriqué"
+  video: https://www.youtube.com/embed/W_apNCuG31M?si=M99qh332Y8BKCK-S
+  img: "/assets/img/projects/leprefabrique.svg"
+  description: On premise tools for crop
+- name: Ekylibre
+  video: https://www.youtube.com/embed/odJCn2xkkWQ
+  img: "/assets/img/projects/ekylibre.svg"
+  description: all in one farm management information system

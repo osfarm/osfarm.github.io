@@ -23,6 +23,10 @@
   role: Project Leader
   img: "/assets/img/teams/florent.jpeg"
   url: "https://www.linkedin.com/in/florent-chollet"
+- name: Hugo
+  role: Project Leader
+  img: "/assets/img/teams/hugo.jpeg"
+  url: "https://www.linkedin.com/in/hugo-gimbert-42721ba3"
 - name: Julien
   role: Project Leader
   img: "/assets/img/teams/julien.jpeg"
@@ -47,6 +51,10 @@
   role: Project Leader
   img: "/assets/img/teams/olivier.jpeg"
   url: "https://www.linkedin.com/in/crapougnax"
+- name: Olivier L
+  role: Project Leader
+  img: "/assets/img/teams/olivier_l.jpeg"
+  url: "https://www.linkedin.com/in/olivier-ly-8160b65"
 - name: Pierre
   role: Project Leader
   img: "/assets/img/teams/pierre.jpeg"

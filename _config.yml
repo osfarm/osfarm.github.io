@@ -15,6 +15,7 @@ plugins:
   - jekyll-coffeescript
   - jekyll-sitemap
   - jekyll-octicons
+  - jekyll-youtube
 
 sass:
   style: :compressed
@@ -33,10 +34,3 @@ gist:
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
-
-# orgs on front page
-featured_orgs:
-  - ekylibre
-  - CentipedeRTK
-  - natuition
-  - waziup
