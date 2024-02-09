@@ -1,9 +1,4 @@
 # Add open source project link to agricultural technologies
-featured_orgs:
-  - ekylibre
-  - CentipedeRTK
-  - natuition
-  - waziup
 Automation and Robotics:
   - name: Agopengps
     website: https://github.com/farmerbriantee/AgOpenGPS
@@ -56,6 +51,18 @@ Automation and Robotics:
     demo: https://github.com/supergreenlab/SuperGreenOS
     img: "/assets/img/projects/supergreenos.png"
 Climate, Environment, Imagery and Weather:
+  - name: Agro monitoring
+    website: https://agromonitoring.com/
+    demo: https://agromonitoring.com/map#12/41.978/-93.3977
+    img: "/assets/img/projects/agromonitoring.jpeg"
+  - name: IGN
+    website: https://ign.fr
+    demo: https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html#bd-topo
+    img: "/assets/img/projects/ign.png"
+  - name: Météo France
+    website: https://meteofrance.com/
+    demo: https://meteo.data.gouv.fr/
+    img: "/assets/img/projects/meteo_france.png"
   - name: Open weather map
     website: https://openweathermap.org/
     demo: https://openweathermap.org/weathermap
@@ -64,10 +71,6 @@ Climate, Environment, Imagery and Weather:
     website: https://open-meteo.com/
     demo: https://open-meteo.com/en/docs
     img: "/assets/img/projects/openmeteo.png"
-  - name: Agro monitoring
-    website: https://agromonitoring.com/
-    demo: https://agromonitoring.com/map#12/41.978/-93.3977
-    img: "/assets/img/projects/agromonitoring.jpeg"
 Data Standardization, Open Data, Interoperability and APIs:
   - name: Calculatrice IFT
     website: https://alim.agriculture.gouv.fr/ift/
@@ -249,6 +252,11 @@ Sales and Customers links:
     github_org: acp-admin
     demo: https://github.com/acp-admin/acp-admin
     img: "/assets/img/projects/acp.png"
+  - name: Oseille
+    website: https://www.oseille.app/
+    github_org: monsieurpigeon/oseille
+    demo: https://www.oseille.app/
+    img: "/assets/img/projects/oseille.jpeg"
   - name: Wordpress
     website: https://wordpress.org/
     github_org: WordPress
@@ -260,12 +268,16 @@ Machine Learning and AI:
     github_org: Project-AgML
     demo: https://github.com/Project-AgML/AgML
     img: "/assets/img/projects/agml.png"
-  - name: Plant CV
-    website: https://plantcv.danforthcenter.org/
-    demo: https://github.com/danforthcenter/plantcv
-    img: "/assets/img/projects/plantcv.png"
+  - name: Gaia
+    website: https://www.gaia-mistral.org/
+    demo: https://huggingface.co/spaces/gaia-mistral/chatbot-g-rag
+    img: "/assets/img/projects/gaia.png"
   - name: Mistral AI
     website: https://mistral.ai/
     github_org: mistralai
     demo: https://docs.mistral.ai/
     img: "/assets/img/projects/mistralai.png"
+  - name: Plant CV
+    website: https://plantcv.danforthcenter.org/
+    demo: https://github.com/danforthcenter/plantcv
+    img: "/assets/img/projects/plantcv.png"
