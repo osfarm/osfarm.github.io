@@ -254,7 +254,7 @@ Sales and Customers links:
     img: "/assets/img/projects/acp.png"
   - name: Oseille
     website: https://www.oseille.app/
-    github_org: monsieurpigeon/oseille
+    github_org: monsieurpigeon
     demo: https://www.oseille.app/
     img: "/assets/img/projects/oseille.jpeg"
   - name: Wordpress
