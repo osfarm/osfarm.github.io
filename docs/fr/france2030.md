@@ -1,8 +1,8 @@
 ---
 title: France 2030
-layout: support-page
+layout: fr-support-page
 description: « Innover pour réussir les transitions agroécologique et alimentaire »
-permalink: /france2030/
+permalink: /fr/france2030/
 lang: fr
 ---
 <p class="text-gray">

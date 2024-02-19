@@ -6,7 +6,6 @@ gem 'github-pages', '> 103', group: :jekyll_plugins
 
 group :jekyll_plugins do
   gem 'jekyll-octicons'
-  gem "jekyll-polyglot"
   # need lazy-load support
   gem 'jekyll-avatar'
   gem 'jekyll-youtube'

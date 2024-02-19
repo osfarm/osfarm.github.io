@@ -3,7 +3,6 @@ title: Why
 layout: support-page
 permalink: /why/
 description: "One stack to enroll them all"
-redirect_from: "/508/"
 lang: en
 ---
 <div id="graphcontainer1" style="height: 500px"></div>

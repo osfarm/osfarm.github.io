@@ -1,9 +1,8 @@
 ---
-title: Why
-layout: support-page
-permalink: /why/
-description: "One stack to enroll them all"
-redirect_from: "/508/"
+title: Pourquoi
+layout: fr-support-page
+permalink: /fr/why/
+description: "3 anneaux pour les embarquer tous"
 lang: fr
 ---
 <div id="graphcontainer1" style="height: 500px"></div>

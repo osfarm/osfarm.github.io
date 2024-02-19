@@ -1,8 +1,8 @@
 ---
 title: Agritech responsable - 15/11/2023 - 10H30
-layout: support-page
+layout: fr-support-page
 description: « Rendez-vous de l’AgriTech responsable »
-permalink: /agritech_adi/
+permalink: /fr/agritech_adi/
 lang: fr
 ---
 [ADI Nouvelle Aquitaine](https://www.adi-na.fr/) organise le rendez-vous de l’AgriTech responsable le mercredi 15 novembre de 10h30 à 12h pour mieux connaître l’environnement AgriTech et créer un réseau de coopération autour de l’AgriTech responsable (répondant au juste besoin, réparable, interopérable, accessible financièrement,…)
