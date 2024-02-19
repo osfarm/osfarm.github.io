@@ -1,7 +1,7 @@
 # global settings
 title: "OSFarm"
 description: "Building together a new innovative ecosystem for farms"
-permalink: "/stories/:title"
+permalink: pretty
 url: https://osfarm.github.io
 relative_permalinks: false
 
@@ -25,6 +25,7 @@ sass:
   # Where sass should look for other scss
   load_paths:
     - node_modules/
+  sourcemap: never
 
 lsi: false
 safe: true
@@ -41,3 +42,7 @@ languages: ["en", "fr"]
 default_lang: "en"
 exclude_from_localization: ["javascript", "images", "css", "public"]
 parallel_localization: true
+
+unexisting_page:
+  en: "The page you're looking for doesn't seem to be there!"
+  fr: "La page demandée n'est pas présente ici !"

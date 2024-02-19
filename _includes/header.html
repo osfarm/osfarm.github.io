@@ -10,10 +10,18 @@
   <link rel="preload" as="font" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" crossorigin>
   {% seo %}
 </head>
-
 <body{% if page.id %} id="{{ page.id }}"{% endif %} class="{{ page.layout }}">
 
   <div class="page-header pt-4 pb-5">
+    <nav class="language-switcher">
+      {% if page.name contains "index" %}
+        <a href="{{ site.baseurl }}/" class="text-white">EN</a>
+        <a href="{{ site.baseurl | append: "/fr" }}" class="text-white">FR</a>
+      {% else %}
+        <a href="{{ site.baseurl | append: page.handle }}" class="text-white">EN</a>
+        <a href="{{ site.baseurl | append: "/fr" | append: page.handle }}" class="text-white">FR</a>
+      {% endif %}
+    </nav>
     <div class="container-lg">
       <div class="text-center">
         <a href="{{ "/" | relative_url}}"><img class="logo py-3" src="{{ "/assets/img/logo_white.png" | relative_url}}" alt="OSFarm"></a>
