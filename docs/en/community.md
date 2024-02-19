@@ -3,6 +3,7 @@ title: What's behind OSFarm ?
 layout: support-page
 description: Projects, Peoples, Organizations link with OSFarm. If you don't see your organization on this list, follow the instructions below !
 permalink: /community/
+lang: en
 ---
 <div id="to-top" class="text-center border-top border-bottom mb-3 mb-md-5">
   <div class="alt-h3 py-3 py-md-5">

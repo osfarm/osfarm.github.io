@@ -10,6 +10,7 @@ exclude: ["script", "vendor", "bower.json", "Gemfile", "Gemfile.lock", "Rakefile
 markdown: kramdown
 plugins:
   - jekyll-avatar
+  - jekyll-polyglot
   - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-coffeescript
@@ -34,3 +35,9 @@ gist:
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
+
+# polyglot
+languages: ["en", "fr"]
+default_lang: "en"
+exclude_from_localization: ["javascript", "images", "css", "public"]
+parallel_localization: true

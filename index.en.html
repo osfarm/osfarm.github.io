@@ -1,0 +1,191 @@
+---
+layout: home
+title: OSFarm
+description: Make farms better, together. Stories of open source, open data, and open hardware on farms.
+org_count: 60
+permalink: /
+lang: en
+---
+  <div class="container-lg p-responsive py-4 py-lg-6 my-xl-4 text-center">
+    <h1 class="alt-h1 mb-2 text-white">Awesome stack for smart farming</h1>
+    <p class="f2-light text-white">Open source, Sustainable, Full, Affordable, Resilient, Merger.</p>
+  </div>
+</div><!-- ends .full-width that started in header.html -->
+<section id="news" class="mini-section mt-6 bg-gray-light">
+  <div class="container-lg p-responsive">
+    <div class="mt-md-6 clearfix gutter-spacious">
+      <div class="mb-4 col-md-6 float-left">
+        <img class="d-block pr-4 float-left" style="width: 80px;" alt="ADI Logo" src="{{"/assets/img/adi.png" | relative_url}}">
+        <h2 class="alt-h3 mb-2">
+          ADI introduce OSFarm for robotics
+          <a href="{{"/agritech_adi/" | relative_url}}">Learn More {% octicon chevron-right height:18 class:"d-inline fill-blue ml-1" %}</a>
+        </h2>
+      </div>
+      <div class="mb-4 col-md-6 float-left">
+        <img class="d-block pr-4 float-left" style="width: 80px;" alt="OSXP Logo" src="{{"/assets/img/osxp.png" | relative_url}}">
+        <h2 class="alt-h3 mb-2">
+          OSFarm talk at OSXP Paris 2023
+          <a href="{{"/osxp2023/" | relative_url}}">Learn More {% octicon chevron-right height:18 class:"d-inline fill-blue ml-1" %}</a>
+        </h2>
+      </div>
+    </div>
+    <div class="mb-md-6 clearfix gutter-spacious">
+      <div class="mb-4 col-md-6 float-left">
+        <img class="d-block pr-4 float-left" style="width: 80px;" alt="France 2030 Logo" src="{{"/assets/img/france_2030.png" | relative_url}}">
+        <h2 class="alt-h3 mb-2">
+          OSFarm make a deposit on France 2030
+          <a href="{{"/france2030/" | relative_url}}">Learn More {% octicon chevron-right height:18 class:"d-inline fill-blue ml-1" %}</a>
+        </h2>
+      </div>
+      <div class="mb-4 col-md-6 float-left">
+        <img class="d-block pr-4 float-left" style="width: 80px;" alt="SIA Logo" src="{{"/assets/img/sia.jpg" | relative_url}}">
+        <h2 class="alt-h3 mb-2">
+          OSFarm show room at SIA 2024
+          <a href="{{"/sia2024/" | relative_url}}">Learn More {% octicon chevron-right height:18 class:"d-inline fill-blue ml-1" %}</a>
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-gray-light">
+  <div class="container-lg p-responsive py-5 py-md-6 ">
+
+    <h2 class="alt-h2 text-center mb-3 mt-lg-6" id="more-than-just-code">Some project than make our farm stack better</h2>
+    <p class="alt-lead text-gray text-center col-md-10 mx-auto">OSFarm make a selection of functionnal and strong open source project to add it to the interoperable stack</p>
+      <div class="my-4 my-lg-6 clearfix gutter-spacious">
+        {% for org in site.data.showcases %}
+          <div class="col-md-4 float-left animate-out mb-4">
+            <h3 class="alt-h3 mb-3">{{ org.name }}</h3>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item"
+                src="{{ org.video }}" frameborder="0" allowfullscreen="">
+              </iframe>
+            </div>
+            <small>{{ org.description }}</small>
+          </div>
+        {% endfor %}
+      </div>
+  </div>
+</section>
+
+<section class="container-lg p-responsive py-5 py-md-6 my-lg-6">
+  <h2 class="alt-h2 text-center mb-3 mt-lg-6">6 reasons to join us</h2>
+  <div class="clearfix gutter-spacious">
+    <div class="mb-3 mb-md-5 col-md-6 float-left">
+      <h2 class="alt-h3 mb-2">
+        {% octicon terminal height:28 class:"fill-blue d-inline mr-2" aria-label:terminal %}
+        Collaborate on sustainable project
+      </h2>
+      <p class="text-gray">Share work, discuss changes, and get feedback in one place to save time and be sure not reinvented the wheel.</p>
+    </div>
+    <div class="mb-3 mb-md-5 col-md-6 float-left">
+      <h2 class="alt-h3 mb-2">
+        {% octicon server height:28 class:"fill-blue d-inline mr-2" aria-label:server %}
+        On your farm, on your servers or in the cloud
+      </h2>
+      <p class="text-gray">Run OSFarm stack on your servers as a virtual appliance, or let us host the stack for you, whatever your security requires.</p>
+    </div>
+  </div>
+
+  <div class="clearfix gutter-spacious">
+    <div class="mb-3 mb-md-5 col-md-6 float-left">
+      <h2 class="alt-h3 mb-2">
+        {% octicon beaker height:28 class:"fill-blue d-inline mr-2" aria-label:beaker %}
+        Foster innovation
+      </h2>
+      <p class="text-gray">OSFarm enables you to rapidly deploy new ideas to build better solutions, faster.</p>
+    </div>
+    <div class="mb-3 mb-md-5 col-md-6 float-left">
+      <h2 class="alt-h3 mb-2">
+        {% octicon tools height:28 class:"fill-blue d-inline mr-2" aria-label:tools %}
+        Software, Hardware built your way
+      </h2>
+      <p class="text-gray">Integrate and Customize third party tools, to deploy solution in the way that works best for your farm.</p>
+    </div>
+  </div>
+
+  <div class="clearfix gutter-spacious">
+    <div class="mb-3 mb-md-5 col-md-6 float-left">
+      <h2 class="alt-h3 mb-2">
+        {% octicon globe height:28 class:"fill-blue d-inline mr-2" aria-label:globe %}
+        Engage community by training & testing in a real farm
+      </h2>
+      <p class="text-gray">Test your project on real farm to engage farmer, or train your agtech developers with ease.</p>
+    </div>
+    <div class="mb-3 mb-md-5 col-md-6 float-left">
+      <h2 class="alt-h3 mb-2">
+        {% octicon checklist height:28 class:"fill-blue d-inline mr-2" aria-label:checklist %}
+        Skip the longtime paperwork on project
+      </h2>
+      <p class="text-gray">No more procrastination on project, look at our community and start building your stack</p>
+    </div>
+  </div>
+
+  <p class="text-center">
+    <a href="{{ "/community/" | relative_url}}" class="btn btn-outline">Show me the community &rarr;</a>
+  </p>
+</section>
+
+<section class="">
+  <div class="container-lg p-responsive py-5 py-md-6 ">
+    <h2 class="alt-h2 text-center mb-3 mt-lg-6" id="join-the-revolution">Join the Revolution</h2>
+    <p class="alt-lead text-gray text-center col-md-10 mx-auto">Join peoples, projects, organizations around the world who collaborate on code, data, hardware, and more for farming future. See the rest of the <a href="/community"> OSFarm community</a>.</p>
+  </div>
+    <div class="featured-orgs text-center p-2 m-2">
+      {% for orgs in site.data.projects %}
+        {% for org in orgs[1] %}
+          {% if org.github_org %}
+            <a href="https://github.com/{{ org.github_org }}" class="animate-in">{% avatar user=org.github_org size=80 %}</a>
+          {% endif  %}
+        {% endfor %}
+      {% endfor %}
+    </div>
+</section>
+
+<section id="get-started" class="mini-section mt-6">
+  <div class="container-lg p-responsive">
+    <h2 class="alt-h2 text-center mb-3 mt-lg-6">Get started today</h2>
+    <p class="alt-lead text-gray text-center col-md-10 mx-auto">Interessted by something around farming and open source <a href="mailto:contact@osfarm.org">Contact us</a> to learn more about how to be involved</p>
+
+    <div class="mt-md-6 clearfix gutter-spacious">
+      <div class="mb-4 col-md-6 float-left">
+        <h3 class="alt-h3 mb-2">Join as Contributor</h3>
+        <p class="text-gray">Coming soon.</p>
+      </div>
+      <div class="mb-4 col-md-6 float-left">
+        <h3 class="alt-h3 mb-2">Join as Farmer</h3>
+        <p class="text-gray">Coming soon.</p>
+      </div>
+    </div>
+    <div class="mb-md-6 clearfix gutter-spacious">
+      <div class="mb-4 col-md-6 float-left">
+        <h3 class="alt-h3 mb-2">Join as Farmer Organization</h3>
+        <p class="text-gray">Coming soon.</p>
+      </div>
+      <div class="mb-4 col-md-6 float-left">
+        <h3 class="alt-h3 mb-2">Join Discussions and learn More</h3>
+        <p class="text-gray">Browse OSFarm resources <a href="/community">community</a> or <a href="https://discord.gg/BSZSM4dS" target="_blank">discussions</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact-a-human" class="bg-gray-light">
+  <div class="container-lg p-responsive py-5 py-md-6 text-center">
+    <h2 class="alt-h2 text-center mb-3 mt-lg-6">Awesome experts for smart farming</h2>
+    <div class="featured-orgs text-center p-2 m-2">
+      {% for people in site.data.teams %}
+      <a href="{{ people.url }}" class="animate-in">
+        <img class="avatar" src="{{ people.img | relative_url }}" alt="{{ people.name }}" width="80" height="80"/>
+        <div class="caption">{{ people.name }}</div>
+      </a>
+      {% endfor %}
+    </div>
+    <h3 class="alt-h2 mb-4">Talk to the core team</h3>
+    <p>Send an <a href="mailto:contact@osfarm.org">email</a> to inform OSfarm's team about your project</p>
+    <p>Join on <a href="https://discord.gg/BSZSM4dS">Discord</a> to talk to OSfarm's team.</p>
+    
+
+  </div>
+</section>

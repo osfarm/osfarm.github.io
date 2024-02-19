@@ -4,7 +4,7 @@ layout: support-page
 permalink: /why/
 description: "One stack to enroll them all"
 redirect_from: "/508/"
-lang: fr
+lang: en
 ---
 <div id="graphcontainer1" style="height: 500px"></div>
 <div id="graphcontainer2" style="height: 500px"></div>
@@ -23,16 +23,16 @@ lang: fr
         split: false,
         enabled: true,
       },
-      title: { text: 'Personne à nourrir VS Force vive en agriculture (WW)'},
+      title: { text: 'People to feed VS Working force (WW)'},
       xAxis: {
         type: 'datetime'
       },
       series: [{
-          name: 'Personne à nourrir (Milliard)',
+          name: 'People to feed (B)',
           data: [4, 5, 6, 7.5, 9],
         },
         { 
-          name: 'Force vive en agriculture (% de la population active)',
+          name: 'Working force in agriculture (%)',
           data: [5, 4, 3, 2, 1],
         }
       ]
@@ -51,16 +51,16 @@ lang: fr
         split: false,
         enabled: true,
       },
-      title: { text: 'Adoption des technologies par les agriculteurs VS Solutions présentes sur le marché (FR)'},
+      title: { text: 'Farmer adoption VS Solutions present in market (FR)'},
       xAxis: {
         type: 'datetime'
       },
       series: [{
-          name: 'Solutions présentes sur le marché (FR)',
+          name: 'Solutions in market (FR - indicator)',
           data: [5, 9, 28, 60, 100],
         },
         { 
-          name: 'Adoption des technologies (% des agriculteurs)',
+          name: 'Adoption of new technologies by farmers (%)',
           data: [5, 7, 9, 10, 11],
         }
       ]
