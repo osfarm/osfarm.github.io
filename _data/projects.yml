@@ -165,6 +165,12 @@ Geospatial, GIS and Global Positionning System reference:
     github_org: qgis
     demo: https://qgis.org/en/site/about/screenshots.html
     img: "/assets/img/projects/qgis.png"
+  - name: Qfield
+    website: https://qfield.org/
+    github: opengisch/QField
+    github_org: opengisch
+    demo: https://www.opengis.ch/fr/category/gis-fr/qfield-fr/faits-saillants-de-qfield/
+    img: "/assets/img/projects/qfield.svg"
   - name: Centipede
     website: https://centipede.fr
     github: CentipedeRTK/centipede
