@@ -1,0 +1,56 @@
+# Add OSFarm open source project
+- name: Agric
+  logo: "/assets/img/projects/agric-icon.svg"
+  repository: https://github.com/ekylibre/agric
+  description_en: "Open source agricultural fonts and logo in many format"
+  description_fr: "Logos et polices sur le theme agricole"
+  project_leader: "Ekylibre"
+  project_leader_img: "/assets/img/projects/ekylibre.svg"
+  stack: "SVG, FontAwesome, JS, FontForge"
+  teams:
+  - name: David - Ekylibre
+    role: Data
+    img: "/assets/img/teams/david.jpg"
+    url: "https://www.linkedin.com/in/david-joulin-9b629790"
+- name: Lexicon
+  logo: "/assets/img/projects/lexicon-icon.svg"
+  repository: https://gitlab.com/ekylibre/lexicon/lexicon-builder
+  description_en: "All agriculture open data in one place accessing by API"
+  description_fr: "Toutes les données agricoles ouvertes accessibles via API"
+  project_leader: "Ekylibre"
+  project_leader_img: "/assets/img/projects/ekylibre.svg"
+  stack: "Postgresql, Postgis, Ruby, Bun, Docker"
+  teams:
+  - name: Olivier - Brad
+    role: Front / API
+    img: "/assets/img/teams/olivier.jpeg"
+    url: "https://www.linkedin.com/in/crapougnax"
+  - name: David - Ekylibre
+    role: Data
+    img: "/assets/img/teams/david.jpg"
+    url: "https://www.linkedin.com/in/david-joulin-9b629790"
+- name: Tika
+  logo: "/assets/img/projects/tika-icon.svg"
+  repository: https://github.com/osfarm/itineraire-technique
+  description_en: "Technical itinerary graph for agriculture"
+  description_fr: "Visualisation d'itinéraire technique agricole"
+  project_leader: "Triple Performance"
+  project_leader_img: "/assets/img/projects/tp.svg"
+  project_url: "https://www.linkedin.com/safety/go?url=https%3A%2F%2Fforum.tripleperformance.fr%2Ft%2Fmoteur-de-visualisation-des-itineraires-techniques-et-des-schemas-decisionnel%2F2966%2F2&trk=flagship-messaging-web&messageThreadUrn=urn%3Ali%3AmessagingThread%3A2-ZTRkZGU1YjgtZjI3MC00ZGU3LWE4YzAtZDE0ZGUzMjIyODk0XzAxMg%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BZ3rYmWeRS9%2BhaA2QA0OmmQ%3D%3D"
+  stack: "Apache ECharts, JS"
+  teams:
+  - name: Bertrand - Triple Performance
+    role: Conception / Front
+    img: "/assets/img/teams/bertrand.jpeg"
+    url: "https://www.linkedin.com/in/bertrandgorge"
+  - name: Vivien - UseDesign
+    role: Design / UX - UI
+    img: "/assets/img/teams/vivien_gauthier.jpeg"
+    url: "https://www.linkedin.com/in/viviengauthier"
+  
+
+
+
+
+
+    
