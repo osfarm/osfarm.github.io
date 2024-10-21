@@ -50,29 +50,64 @@ permalink: /fr/
 <section class="bg-light">
   <div class="container-lg p-responsive py-5 py-md-6">
     <h2 class="alt-h2 text-center mb-3 mt-lg-6" id="more-than-just-code">Appel à contributeurs 2025</h2>
-    <p class="alt-lead text-gray text-center col-md-10 mx-auto">OSFarm a besoin de vous pour developper des projets opérationnels plébiscités par la communauté </p>   
+    <p class="alt-lead text-gray text-center col-md-10 mx-auto">OSFarm a besoin de vous pour developper des projets open source et opérationnels plébiscités par la communauté</p>
+    
+    <div class="my-4 my-lg-6 clearfix gutter-spacious">
     {% for org in site.data.osfarm_projects %}
       <div class="col-md-4 float-left animate-out mb-4">
         <div class="card" style="width: 18rem;">
-          <div class="card-header">
-                {{ org.name }}
-          </div>
-          <img src="{{ org.logo | relative_url }}" class="card-img-thumbnail-top" alt="">
+          <h2 class="card-header">{{ org.name }}</h2>
+          <img src="{{ org.logo | relative_url }}" class="card-img-thumbnail-top" style="max-height: 200px; min-height: 200px; width: auto; margin: auto;" alt="">
           <div class="card-body">
-            <h5 class="card-title"></h3>
-            <small>{{ org.description_fr }}</small>
+            <h3 class="card-title">{{ org.description_fr }}</h3>
+            <h2 class="alt-h3 mb-2">
+              {% octicon git-branch height:28 class:"fill-blue d-inline mr-2" aria-label:terminal %}
+              <a href="{{ org.repository }}" target= "_blank" class="animate-in">Code</a>
+              {% octicon link-external height:28 class:"fill-blue d-inline mr-2" aria-label:terminal %}
+              <a href="{{ org.project_url }}" target= "_blank" class="animate-in">Résumé</a>
+            </h2>
+            <h2 class="alt-h3 mb-2"></h2>
+              {% octicon server height:28 class:"fill-blue d-inline mr-2" aria-label:terminal %}
+              {{ org.stack }}
+            </h2>
+           
             <div class="embed-responsive embed-responsive-16by9">
                 {% for people in org.teams %}
                 <a href="{{ people.url }}" class="animate-in">
-                  <img class="avatar" src="{{ people.img | relative_url }}" alt="{{ people.name }}" width="80" height="80"/>
-                  <div class="caption">{{ people.name }}</div>
+                  <img class="avatar" src="{{ people.img | relative_url }}" target="_blank" alt="{{ people.name }}" width="80" height="80"/>
                 </a>
                 {% endfor %}
             </div>
+            <div id="carousel{{ org.name }}" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                {% for company in org.companies %}
+                <div class="carousel-item active">
+                  <img src="{{ company.logo | relative_url }}" class="card-img-thumbnail-top" style="max-height: 80px; min-height: 80px; width: auto; margin: auto;" alt="{{ company.name }}">
+                </div>
+                {% endfor %}
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel{{ org.name }}" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel{{ org.name }}" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <h2 class="alt-h3 mb-2"></h2>
+              {% octicon mail height:28 class:"fill-blue d-inline mr-2" aria-label:terminal %}
+              <a href="mailto:{{ org.mail }}" target= "_blank" class="animate-in">Rejoindre le groupe</a>
+            </h2>
           </div>
         </div>
       </div>
     {% endfor %}
+    </div>
+    <p class="text-gray text-center col-md-10 mx-auto">>> Vous pouvez participer au titre du Mécenat de compétences ou du Mécenat</p>
+    <p class="text-center">
+      <a href="https://www.helloasso.com/associations/osfarm/adhesions/adhesion-osfarm-2024" target="_blank" class="btn btn-outline">J'adhère pour participer à un de ces projets&rarr;</a>
+    </p>
   </div>
 </section>
 

@@ -6,19 +6,90 @@
   description_fr: "Logos et polices sur le theme agricole"
   project_leader: "Ekylibre"
   project_leader_img: "/assets/img/projects/ekylibre.svg"
+  email: "projet-agric@osfarm.org"
   stack: "SVG, FontAwesome, JS, FontForge"
   teams:
   - name: David - Ekylibre
     role: Data
     img: "/assets/img/teams/david.jpg"
     url: "https://www.linkedin.com/in/david-joulin-9b629790"
+  companies:
+  - name: "Ekylibre"
+    logo: "/assets/img/teams/ekylibre.svg"
+- name: ACE
+  logo: "/assets/img/projects/aog.png"
+  repository: https://github.com/ekylibre/agric
+  description_en: "Open source agricultural self guidance stack"
+  description_fr: "Autoguidage Complet sur Etagère (logiciel et matériel)"
+  project_leader: "Abelio"
+  project_leader_img: "/assets/img/teams/abelio.svg"
+  email: "projet-ace@osfarm.org"
+  stack: "AgOpenGPS, Raspberry Pi, Python, C#, API, Postgis"
+  teams:
+  - name: Grégoire - Abelio
+    role: Project leader
+    img: "/assets/img/teams/gregoire.png"
+    url: "https://fr.linkedin.com/in/gregoiredupre"
+  - name: Mehdi - Apuso
+    role: Project leader
+    img: "/assets/img/teams/mehdi.jpeg"
+    url: "https://fr.linkedin.com/in/gregoiredupre"
+  companies:
+  - name: "Abelio"
+    logo: "/assets/img/teams/abelio.svg"
+  - name: "Apuso"
+    logo: "/assets/img/teams/apuso.jpeg"
+  - name: "Ekylibre"
+    logo: "/assets/img/teams/ekylibre.svg"
+- name: Gort
+  logo: "/assets/img/projects/gort.png"
+  repository: ""
+  description_en: "Generic, agnostic and interoperable robots for massive technological tranformations"
+  description_fr: "Robots interopérables pour la transformation agro-écologique"
+  project_leader: "XLIM"
+  project_leader_img: "/assets/img/teams/xlim.png"
+  email: "projet-gort@osfarm.org"
+  stack: "ROS, Raspberry Pi, Python, C++, NVIDIA Jetson"
+  teams:
+  - name: Ouiddad - XLIM
+    role: Project Leader
+    img: "/assets/img/teams/ouiddad.png"
+    url: "https://www.xlim.fr/recherche/pole-electronique/systemes-reseaux-intelligents/remix"
+  - name: Cyril - Natuition
+    role: Robot builder
+    img: "/assets/img/teams/cyril.jpeg"
+    url: "https://www.linkedin.com/in/cyril-roudot-63a56587"
+  - name: David - Ekylibre
+    role: Data consulting and evaluator
+    img: "/assets/img/teams/david.jpg"
+    url: "https://www.linkedin.com/in/david-joulin-9b629790"
+  - name: Emmanuel - ELATEC
+    role: Robot builder
+    img: "/assets/img/teams/emmanuel.jpeg"
+    url: "https://www.linkedin.com/in/labriffe-emmanuel-0b2248135"
+  - name: Olivier - LaBRI
+    role: Project consultant
+    img: "/assets/img/teams/olivier_l.jpeg"
+    url: "https://www.linkedin.com/in/olivier-ly-8160b65"
+  companies:
+  - name: "XLIM"
+    logo: "/assets/img/teams/xlim.png"
+  - name: "Ekylibre"
+    logo: "/assets/img/teams/ekylibre.svg"
+  - name: "LaBRI"
+    logo: "/assets/img/teams/labri.jpeg"
+  - name: "Natuition"
+    logo: "/assets/img/teams/natuition.png"
+  - name: "Elatec"
+    logo: "/assets/img/teams/elatec.svg"
 - name: Lexicon
   logo: "/assets/img/projects/lexicon-icon.svg"
-  repository: https://gitlab.com/ekylibre/lexicon/lexicon-builder
+  repository: "https://gitlab.com/ekylibre/lexicon/lexicon-builder/-/tree/5-1-0?ref_type=heads"
   description_en: "All agriculture open data in one place accessing by API"
   description_fr: "Toutes les données agricoles ouvertes accessibles via API"
   project_leader: "Ekylibre"
   project_leader_img: "/assets/img/projects/ekylibre.svg"
+  email: "projet-lexicon@osfarm.org"
   stack: "Postgresql, Postgis, Ruby, Bun, Docker"
   teams:
   - name: Olivier - Brad
@@ -29,6 +100,13 @@
     role: Data
     img: "/assets/img/teams/david.jpg"
     url: "https://www.linkedin.com/in/david-joulin-9b629790"
+  companies:
+  - name: "Brad"
+    logo: "/assets/img/teams/brad-technology.png"
+  - name: "Ekylibre"
+    logo: "/assets/img/teams/ekylibre.svg"
+  - name: "Région NA"
+    logo: "/assets/img/teams/region_na.png"
 - name: Tika
   logo: "/assets/img/projects/tika-icon.svg"
   repository: https://github.com/osfarm/itineraire-technique
@@ -36,7 +114,8 @@
   description_fr: "Visualisation d'itinéraire technique agricole"
   project_leader: "Triple Performance"
   project_leader_img: "/assets/img/projects/tp.svg"
-  project_url: "https://www.linkedin.com/safety/go?url=https%3A%2F%2Fforum.tripleperformance.fr%2Ft%2Fmoteur-de-visualisation-des-itineraires-techniques-et-des-schemas-decisionnel%2F2966%2F2&trk=flagship-messaging-web&messageThreadUrn=urn%3Ali%3AmessagingThread%3A2-ZTRkZGU1YjgtZjI3MC00ZGU3LWE4YzAtZDE0ZGUzMjIyODk0XzAxMg%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BZ3rYmWeRS9%2BhaA2QA0OmmQ%3D%3D"
+  email: "projet-tika@osfarm.org"
+  project_url: "https://forum.tripleperformance.fr/t/tika-moteur-de-visualisation-des-itineraires-techniques-et-des-schemas-decisionnel/2966"
   stack: "Apache ECharts, JS"
   teams:
   - name: Bertrand - Triple Performance
@@ -47,6 +126,19 @@
     role: Design / UX - UI
     img: "/assets/img/teams/vivien_gauthier.jpeg"
     url: "https://www.linkedin.com/in/viviengauthier"
+  companies:
+  - name: "ACTA"
+    logo: "/assets/img/teams/acta.png"
+  - name: "Centre National Agroecologie"
+    logo: "/assets/img/teams/cna.png"
+  - name: "Use Design"
+    logo: "/assets/img/teams/use_design.png"
+  - name: "Ver de terre production"
+    logo: "/assets/img/teams/vdtp.png"
+  - name: "Triple Performance"
+    logo: "/assets/img/teams/tp.png"
+  
+
   
 
 
