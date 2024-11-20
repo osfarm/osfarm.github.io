@@ -2,9 +2,19 @@
 title: Why
 layout: support-page
 permalink: /why/
-description: "One stack to enroll them all"
+description: "One stack to free them all"
 lang: en
 ---
+<div class="col-md-8 mx-auto">
+<p class="alt-h2 text-center mb-3 mt-lg-6">What appends, we don't want anymore</p>
+<div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" width="560" height="315"
+      src="https://www.youtube.com/embed/jaOS6bGta7M?si=iEW0fuUVhawVOSOE" frameborder="0" allowfullscreen="">
+    </iframe>
+</div>
+</div>
+
+<p class="alt-h2 text-center mb-3 mt-lg-6">What appends, we have to manage</p>
 <div id="graphcontainer1" style="height: 500px"></div>
 <div id="graphcontainer2" style="height: 500px"></div>
 <script>
@@ -76,6 +86,7 @@ lang: en
     </ol>
   </div>
 </section>
+
 <div class="col-md-8 mx-auto">
   <div class="embed-responsive embed-responsive-16by9">
     <iframe class="embed-responsive-item" width="560" height="315"

@@ -2,9 +2,18 @@
 title: Pourquoi
 layout: fr-support-page
 permalink: /fr/why/
-description: "3 anneaux pour les embarquer tous"
+description: "3 anneaux pour les libérer tous"
 lang: fr
 ---
+<div class="col-md-8 mx-auto">
+<p class="alt-h2 text-center mb-3 mt-lg-6">Ce que nous ne voulons plus</p>
+<div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" width="560" height="315"
+      src="https://www.youtube.com/embed/jaOS6bGta7M?si=iEW0fuUVhawVOSOE" frameborder="0" allowfullscreen="">
+    </iframe>
+</div>
+</div>
+
 <p class="alt-h2 text-center mb-3 mt-lg-6">Ce que nous observons</p>
 <div id="graphcontainer1" style="height: 500px"></div>
 <div id="graphcontainer2" style="height: 500px"></div>

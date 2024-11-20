@@ -16,27 +16,29 @@
   companies:
   - name: "Ekylibre"
     logo: "/assets/img/teams/ekylibre.svg"
-- name: ACE
+- name: AOG+
   logo: "/assets/img/projects/aog.png"
-  repository: https://github.com/ekylibre/agric
+  repository: https://github.com/osfarm/aog
   description_en: "Open source agricultural self guidance stack"
   description_fr: "Autoguidage Complet sur Etagère (logiciel et matériel)"
-  project_leader: "Abelio"
-  project_leader_img: "/assets/img/teams/abelio.svg"
-  email: "projet-ace@osfarm.org"
-  stack: "AgOpenGPS, Raspberry Pi, Python, C#, API, Postgis"
+  project_leader: "Apuso"
+  project_leader_img: "/assets/img/teams/apuso.jpeg"
+  email: "projet-aog@osfarm.org"
+  stack: "AgOpenGPS, Raspberry Pi, Python, C#, C++, API"
   teams:
-  - name: Grégoire - Abelio
-    role: Project leader
-    img: "/assets/img/teams/gregoire.png"
-    url: "https://fr.linkedin.com/in/gregoiredupre"
   - name: Mehdi - Apuso
     role: Project leader
     img: "/assets/img/teams/mehdi.jpeg"
-    url: "https://fr.linkedin.com/in/gregoiredupre"
+    url: "https://www.linkedin.com/in/mehdijaber/"
+  - name: Maxime
+    role: Project leader
+    img: "/assets/img/teams/maxime.jpeg"
+    url: "https://www.linkedin.com/in/maxime-emprou-005799178"
+  - name: David - Ekylibre
+    role: Data consulting
+    img: "/assets/img/teams/david.jpg"
+    url: "https://www.linkedin.com/in/david-joulin-9b629790"
   companies:
-  - name: "Abelio"
-    logo: "/assets/img/teams/abelio.svg"
   - name: "Apuso"
     logo: "/assets/img/teams/apuso.jpeg"
   - name: "Ekylibre"
