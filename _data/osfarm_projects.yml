@@ -84,9 +84,10 @@
     logo: "/assets/img/teams/natuition.png"
   - name: "Elatec"
     logo: "/assets/img/teams/elatec.svg"
-- name: Lexicon
+- name: Lexicon API
   logo: "/assets/img/projects/lexicon-icon.svg"
-  repository: "https://gitlab.com/ekylibre/lexicon/lexicon-builder/-/tree/5-1-0?ref_type=heads"
+  repository: "https://github.com/osfarm/lexicon-rest-api"
+  project_url: "https://lexicon.osfarm.org"
   description_en: "All agriculture open data in one place accessing by API"
   description_fr: "Toutes les données agricoles ouvertes accessibles via API"
   project_leader: "Ekylibre"
@@ -109,6 +110,32 @@
     logo: "/assets/img/teams/ekylibre.svg"
   - name: "Région NA"
     logo: "/assets/img/teams/region_na.png"
+- name: GAIA
+  logo: "/assets/img/projects/gaia-square.png"
+  repository: "https://huggingface.co/gaia-mistral"
+  project_url: "https://www.gaia-ia.org/"
+  description_en: "AI LLM agriculture stack"
+  description_fr: "L'IA LLM au service de l'agriculture"
+  project_leader: "Ekylibre"
+  project_leader_img: "/assets/img/projects/ekylibre.svg"
+  email: "projet-gaia@osfarm.org"
+  stack: "HugginFace, Llama, Mistral, Gradio, Python, Docker"
+  teams:
+  - name: Laurent - Bziiit
+    role: Front / API
+    img: "/assets/img/teams/laurent.jpeg"
+    url: "https://www.linkedin.com/in/laurenttripied"
+  - name: David - Ekylibre
+    role: Data / API
+    img: "/assets/img/teams/david.jpg"
+    url: "https://www.linkedin.com/in/david-joulin-9b629790"
+  companies:
+  - name: "Bziiit"
+    logo: "/assets/img/projects/bziiit.png"
+  - name: "Ekylibre"
+    logo: "/assets/img/teams/ekylibre.svg"
+  - name: "La ferme digitale"
+    logo: "/assets/img/projects/lfd.png"
 - name: Tika
   logo: "/assets/img/projects/tika-icon.svg"
   repository: https://github.com/osfarm/itineraire-technique
