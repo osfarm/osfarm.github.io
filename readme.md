@@ -16,7 +16,7 @@ Submit [issues](https://github.com/osfarm/osfarm.github.io/issues/new) and [pull
 
 ### Under the Hood
 
-This site is made with [Jekyll](https://jekyllrb.com), an open source static site generator. This means the Jekyll program takes the content we want to be on the site and turns them into HTML files ready to be hosted somewhere. Awesomely, GitHub provides free web hosting for repositories, called [GitHub Pages](https://pages.github.com/), and that's how this site is hosted. The content for the site is on a branch named [main](https://github.com/osfarm/osfarm.github.io/tree/main).
+This site is made with [Jekyll](https://jekyllrb.com) and [Liquid](https://shopify.dev/docs/api/liquid), an open source static site generator. This means the Jekyll program takes the content we want to be on the site and turns them into HTML files ready to be hosted somewhere. Awesomely, GitHub provides free web hosting for repositories, called [GitHub Pages](https://pages.github.com/), and that's how this site is hosted. The content for the site is on a branch named [main](https://github.com/osfarm/osfarm.github.io/tree/main).
 
 ## Contributing
 
@@ -47,6 +47,9 @@ To copy the repository's files from here onto your computer and to view and serv
 ```bash
 git clone git@github.com:osfarm/osfarm.github.io.git
 cd osfarm.github.io
+sudo apt-get install ruby-dev
+sudo gem install bundler jekyll
+bundle install
 script/bootstrap
 script/server
 ```

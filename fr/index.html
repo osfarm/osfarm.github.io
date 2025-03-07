@@ -57,7 +57,7 @@ permalink: /fr/
       <div class="col-md-4 float-left animate-out mb-4">
         <div class="card" style="width: 18rem;">
           <h2 class="card-header">{{ org.name }}</h2>
-          <img src="{{ org.logo | relative_url }}" class="card-img-thumbnail-top" style="max-height: 200px; min-height: 200px; width: auto; margin: auto;" alt="">
+          <img src="{{ org.logo | relative_url }}" class="card-img-thumbnail-top" alt="">
           <div class="card-body">
             <h3 class="card-title">{{ org.description_fr }}</h3>
             <h2 class="alt-h3 mb-2">
@@ -85,7 +85,12 @@ permalink: /fr/
             <div id="carousel{{ org.name }}" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
                 {% for company in org.companies %}
+                {% if forloop.first %}
                 <div class="carousel-item active">
+                  {% else %}
+                <div class="carousel-item">
+                {% endif %}
+                
                   <img src="{{ company.logo | relative_url }}" class="card-img-thumbnail-top" style="max-height: 80px; min-height: 80px; width: auto; margin: auto;" alt="{{ company.name }}">
                 </div>
                 {% endfor %}

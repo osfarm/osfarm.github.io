@@ -300,3 +300,24 @@ div.quoteAttribution {
   text-align: center;
   width: 0;
 }
+
+.carousel-item {
+  text-align: center;
+  margin-top: 5px;
+  
+  img {
+    max-width: 70%;
+    object-fit: scale-down;
+  }
+}
+
+.card {
+  & > img {
+    max-width: 90%;
+    object-fit: scale-down;
+    max-height: 200px;
+    min-height: 200px;
+    width: auto;
+    margin: 10px auto;
+  }
+}
