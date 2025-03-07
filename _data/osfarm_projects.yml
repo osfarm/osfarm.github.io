@@ -137,7 +137,7 @@
   - name: "La ferme digitale"
     logo: "/assets/img/projects/lfd.png"
 - name: Tika
-  logo: "/assets/img/projects/tika-icon.svg"
+  logo: "/assets/img/projects/tika.png"
   repository: https://github.com/osfarm/itineraire-technique
   description_en: "Technical itinerary graph for agriculture"
   description_fr: "Visualisation d'itinéraire technique agricole"
