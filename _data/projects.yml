@@ -219,10 +219,10 @@ IoT, Sensors for tracking, isobus and supervising:
     demo: https://www.traccar.org/demo-server/
     img: "/assets/img/projects/traccar.png"
 IoT, Sensors for soil and irrigation:
-  - name: Waziup
-    website: https://waziup.io/
-    demo: https://lab.waziup.io/my-solutions
-    img: "/assets/img/projects/waziup.svg"
+  - name: Intel-Iris
+    website: https://intel-irris.eu/
+    demo: https://youtu.be/z5NL3dBHQ6c
+    img: "/assets/img/projects/intel-irris.png"
   - name: Brad Technology
     website: https://brad.ag/
     github: bradtech/lora2db
