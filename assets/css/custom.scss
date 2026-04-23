@@ -1,8 +1,19 @@
-// $blue: #2D86FB;
+// OSFarm brand palette (extracted from logo.svg)
+$osfarm-green:       #338000;
+$osfarm-green-light: #e3f4d7;
+$osfarm-cream:       #f9f3d2;
+$osfarm-blue:        #5ba2d2;
+$osfarm-green-dark:  #245c00;
 
 body {
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 16px;
+}
+
+// Brand link color
+a {
+  color: $osfarm-green;
+  &:hover { color: $osfarm-green-dark; }
 }
 
 // HEADER url('https://i.stack.imgur.com/kx8MT.gif')  https://giphy.com/gifs/WdTjbzwsuP9gMfBjRr
@@ -10,8 +21,8 @@ body {
 
 .page-header {
   width: 100%;
-  background-color: $blue-500;
-  background-image: url('../img/giphy.gif'); 
+  background-color: $osfarm-green;
+  background-image: url('../img/giphy.gif');
   background-size: cover;
   -webkit-transition: background-image 0.6s ease-in-out 0s;
   -moz-transition: background-image 0.6s ease-in-out 0s;
@@ -31,8 +42,8 @@ body {
   max-width: 280px;
 }
 
-.fill-blue { fill: $blue; }
-.fill-green { fill: $green; }
+.fill-blue { fill: $osfarm-green; }
+.fill-green { fill: $osfarm-green; }
 .fill-gray { fill: $gray; }
 .fill-gray-light { fill: $gray-light; }
 
@@ -52,7 +63,7 @@ body {
 #filter {
   border-radius: 0;
   border: none;
-  border-bottom: 2px solid #2D86FB;
+  border-bottom: 2px solid $osfarm-green;
   box-shadow: none;
   padding-left: 0;
   padding-bottom: 0;
@@ -114,7 +125,7 @@ body {
   margin-top: $spacer-3;
 
   th {
-    background: #eeeeee;
+    background: $osfarm-green-light;
     font-size: 14px;
     @include breakpoint(lg){
       font-size: 16px;
@@ -144,7 +155,7 @@ body {
 
 }
 
-td.supports { color: $green-500;  }
+td.supports { color: $osfarm-green; }
 td.not-applicable { color: $gray-500; }
 td.supports-with-exceptions { color: $orange-500; }
 td.does-not-support { color: $red-500; }
@@ -172,6 +183,18 @@ td.does-not-support { color: $red-500; }
   &:hover,
   &:active {
     @include btn-transparent-active;
+  }
+}
+
+.btn-outline {
+  color: $osfarm-green;
+  border-color: $osfarm-green;
+
+  &:hover,
+  &:active {
+    color: $white;
+    background-color: $osfarm-green;
+    border-color: $osfarm-green;
   }
 }
 
@@ -215,11 +238,11 @@ blockquote, .quote {
 }
 
 .quote {
-  background: #f7f7f7;
-  border: thin gray solid;
+  background: $osfarm-cream;
+  border: thin $osfarm-green solid;
   border-radius: 8px;
-  box-shadow: 5px 5px 6px #999;
-  color: #5d5b5b;
+  box-shadow: 5px 5px 6px rgba($osfarm-green, 0.15);
+  color: #4a4a4a;
   line-height: 1.5;
   margin-top: 1rem;
   margin-left: auto;
@@ -236,7 +259,7 @@ blockquote, .quote {
 }
 
 .quote:before, .quote:after {
-  color: #E8E8E8;
+  color: rgba($osfarm-green, 0.2);
   font-family: "Helvetica Neue","Helvetica", Helvetica, Arial, sans-serif;
   font-style: italic;
   font-size: 80px;
