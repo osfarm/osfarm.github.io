@@ -453,7 +453,7 @@ p { color: var(--gray-600); margin-bottom: 0; }
   <div class="cta-inner">
     <div class="cta-text">
       <h2>Construire ensemble REBUS</h2>
-      <p>Rejoignez le projet — agriculteurs, techniciens, développeurs, organisations territoriales. REBUS a besoin de vous pour devenir la référence française du FarmLab open source.</p>
+      <p>Rejoignez le projet — agriculteurs, techniciens, développeurs, organisations territoriales. REBUS a besoin de vous pour devenir la référence européenne du FarmLab open source.</p>
     </div>
     <div class="cta-actions">
       <a href="/docs/fr/pres_rebus.html" target="_blank" class="btn-green">Presentation →</a>
