@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>REBUS — FarmLab La Vauzelle</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+<script src="deck-stage.js"></script>
+<style>
+:root {
+  --green:       #338000;
+  --green-dark:  #245c00;
+  --green-light: #e3f4d7;
+  --cream:       #f9f3d2;
+  --rebus-unused:       #7a5230;
+  --rebus-dark:  #5c3a1e;
+  --rebus-light: #f5ede3;
+  --gray-100:    #f6f8fa;
+  --gray-200:    #e1e4e8;
+  --gray-600:    #586069;
+  --gray-800:    #24292e;
+  --white:       #ffffff;
+  --font:        'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  --font-logo:   'Ubuntu', sans-serif;
+}
+
+/* TYPE SCALE (1920×1080) */
+/* title: 64px | subtitle: 44px | body: 34px | small: 28px */
+/* SPACING: paddingX:100 paddingTop:100 paddingBottom:80 titleGap:52 itemGap:28 */
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+section {
+  width: 100%; height: 100%;
+  font-family: var(--font);
+  display: flex; flex-direction: column;
+  position: relative; overflow: hidden;
+}
+
+/* ── LAYOUT HELPERS ── */
+.inner {
+  padding: 100px 100px 80px;
+  flex: 1; display: flex; flex-direction: column;
+}
+.inner.center { align-items: center; justify-content: center; text-align: center; }
+
+/* ── TYPE ── */
+.t-display { font-size: 96px; font-weight: 700; line-height: 1.0; font-family: var(--font-logo); }
+.t-title   { font-size: 64px; font-weight: 700; line-height: 1.1; }
+.t-sub     { font-size: 44px; font-weight: 300; line-height: 1.2; }
+.t-body    { font-size: 34px; line-height: 1.5; }
+.t-small   { font-size: 28px; line-height: 1.5; }
+.t-label   { font-size: 22px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; }
+
+.white  { color: var(--white); }
+.green  { color: var(--green); }
+.rebus  { color: var(--green); }
+.muted  { color: var(--gray-600); }
+
+/* ── FOOTER ── */
+.foot {
+  padding: 20px 100px;
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 24px;
+}
+.foot.dark  { border-top: 1px solid rgba(255,255,255,.15); color: rgba(255,255,255,.6); }
+.foot.light { border-top: 1px solid var(--gray-200); color: var(--gray-600); }
+.foot .logo-txt { font-family: var(--font-logo); font-weight: 700; font-size: 24px; }
+
+/* ── TITRES VERTS sur fonds gris clairs ── */
+#s1 .t-title, #s2 .t-title, #s3 .t-title, #s5 .t-title,
+#s6 .t-title, #s7 .t-title, #s8 .t-title, #s9 .t-title,
+#s10 .t-title, #s11 .t-title, #s12 .t-title, #s13 .t-title,
+#s14 .t-title, #s15 .t-title, #s16 .t-title, #s17 .t-title,
+#s18s .t-title { color: var(--green-dark); }
+
+/* ── TAG / BADGE ── */
+.tag {
+  display: inline-block; font-size: 24px; font-weight: 700;
+  border-radius: 20px; padding: 6px 20px; margin-bottom: 28px;
+}
+.tag.green { background: var(--green-light); color: var(--green-dark); }
+.tag.white { background: rgba(255,255,255,.15); color: #fff; border: 1px solid rgba(255,255,255,.3); }
+.tag.rebus { background: var(--green-light); color: var(--green-dark); }
+
+/* ── BULLET LIST ── */
+.blist { list-style: none; display: flex; flex-direction: column; gap: 24px; }
+.blist li { display: flex; gap: 16px; align-items: flex-start; font-size: 34px; color: var(--gray-800); line-height: 1.4; }
+.blist li::before { content: '→'; color: var(--green); font-weight: 700; flex-shrink: 0; }
+.blist.white li { color: rgba(255,255,255,.9); }
+.blist.white li::before { color: var(--green-light); }
+
+/* ─────────────────────────────────────────── */
+/* SLIDE 1 — TITRE */
+/* ─────────────────────────────────────────── */
+#s1 { background: #fff; }
+#s1 .photo {
+  position: absolute; inset: 0;
+  background: url('/assets/img/images-1777110131446.jpg') center/cover no-repeat;
+  opacity: .28;
+}
+#s1 .inner { z-index: 1; justify-content: flex-end; padding-bottom: 120px; }
+#s1 .eyebrow { font-size: 26px; font-weight: 300; color: var(--gray-600); letter-spacing: .15em; text-transform: uppercase; margin-bottom: 16px; }
+#s1 .name { font-family: var(--font-logo); font-size: 120px; font-weight: 700; color: var(--green); line-height: 1; margin-bottom: 20px; }
+#s1 .strapline { font-size: 40px; font-weight: 300; color: var(--gray-800); margin-bottom: 48px; max-width: 900px; }
+#s1 .pills { display: flex; gap: 14px; flex-wrap: wrap; }
+#s1 .pill { background: var(--green-light); border: 1px solid var(--green); border-radius: 20px; padding: 8px 24px; font-size: 24px; color: var(--green-dark); }
+
+/* ─────────────────────────────────────────── */
+/* SLIDE 2 — CONTEXTE */
+/* ─────────────────────────────────────────── */
+#s2 { background: var(--gray-100); }
+#s2 .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 52px; flex: 1; }
+#s2 .col-left { display: flex; flex-direction: column; gap: 24px; }
+#s2 .stat-big { font-size: 88px; font-weight: 700; color: var(--green); line-height: 1; }
+#s2 .stat-lbl { font-size: 28px; color: var(--gray-600); margin-top: -4px; }
+#s2 .col-right { display: flex; flex-direction: column; gap: 20px; }
+#s2 .prob {
+  background: #fff; border-radius: 8px; padding: 24px 28px;
+  border-left: 5px solid var(--green);
+}
+#s2 .prob-title { font-size: 28px; font-weight: 700; color: var(--gray-800); margin-bottom: 8px; }
+#s2 .prob-body  { font-size: 24px; color: var(--gray-600); line-height: 1.4; }
+
+/* ─────────────────────────────────────────── */
+/* SLIDE 3 — OSFARM */
+/* ─────────────────────────────────────────── */
+#s3 { background: var(--gray-100); }
+#s3 .grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 28px; margin-top: 52px; flex: 1; }
+#s3 .card { background: #fff; border: 1px solid var(--gray-200); border-radius: 10px; padding: 32px 28px; }
+#s3 .card-title { font-size: 32px; font-weight: 700; color: var(--green-dark); margin-bottom: 12px; }
+#s3 .card-body  { font-size: 26px; color: var(--gray-600); line-height: 1.4; }
+#s3 .award { background: var(--green-light); border: 1px solid var(--green); border-radius: 10px; padding: 24px 32px; display: flex; align-items: center; gap: 24px; margin-top: 28px; }
+#s3 .award-text { font-size: 26px; color: var(--gray-800); line-height: 1.4; }
+#s3 .award-num  { font-size: 48px; font-weight: 700; color: var(--green); }
+
+/* ─────────────────────────────────────────── */
+/* SLIDE 4 — LA VAUZELLE full-bleed */
+/* ─────────────────────────────────────────── */
+#s4 { background: #1a120a; }
+#s4 .photo {
+  position: absolute; inset: 0;
+  background: url('/assets/img/images-1777110131446.jpg') center/cover no-repeat;
+  opacity: .6;
+}
+#s4 .inner { z-index: 1; justify-content: flex-end; padding-bottom: 100px; }
+#s4 .title-block { margin-bottom: 40px; }
+#s4 .stats { display: flex; gap: 40px; flex-wrap: wrap; }
+#s4 .stat { background: rgba(0,0,0,.55); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,.2); border-radius: 10px; padding: 24px 36px; text-align: center; }
+#s4 .stat-val { font-size: 52px; font-weight: 700; color: #fff; line-height: 1; }
+#s4 .stat-lbl { font-size: 24px; color: rgba(255,255,255,.75); margin-top: 6px; }
+
+/* ─────────────────────────────────────────── */
+/* SLIDE 5 — CONCEPT FARMLAB */
+/* ─────────────────────────────────────────── */
+#s5 { background: var(--green-light); }
+#s5 .concept-row { display: flex; gap: 32px; margin-top: 52px; flex: 1; align-items: stretch; }
+#s5 .center-circle {
+  width: 320px; flex-shrink: 0;
+  background: var(--green); border-radius: 50%;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
+  padding: 40px; color: #fff;
+}
+#s5 .center-circle .c-title { font-size: 52px; font-weight: 700; font-family: var(--font-logo); line-height: 1; margin-bottom: 12px; }
+#s5 .center-circle .c-sub   { font-size: 26px; font-weight: 300; line-height: 1.4; color: rgba(255,255,255,.85); }
+#s5 .wings { flex: 1; display: flex; flex-direction: column; gap: 24px; justify-content: center; }
+#s5 .wing { background: #fff; border-radius: 10px; padding: 28px 32px; border-left: 5px solid var(--green); }
+#s5 .wing-title { font-size: 30px; font-weight: 700; color: var(--green-dark); margin-bottom: 8px; }
+#s5 .wing-body  { font-size: 26px; color: var(--gray-600); line-height: 1.4; }
+
+/* ─────────────────────────────────────────── */
+/* SLIDE 6 — TROIS PILIERS vue d'ensemble */
+/* ─────────────────────────────────────────── */
+#s6 { background: #fff; }
+#s6 .pillars { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 32px; margin-top: 52px; flex: 1; }
+#s6 .pillar { border-radius: 10px; padding: 40px 32px; display: flex; flex-direction: column; gap: 20px; }
+#s6 .pillar.p1 { background: var(--green); }
+#s6 .pillar.p2 { background: var(--green); }
+#s6 .pillar.p3 { background: var(--green-dark); }
+#s6 .p-num  { font-size: 72px; font-weight: 700; color: rgba(255,255,255,.25); line-height: 1; font-family: var(--font-logo); }
+#s6 .p-name { font-size: 36px; font-weight: 700; color: #fff; line-height: 1.2; }
+#s6 .p-items { list-style: none; display: flex; flex-direction: column; gap: 12px; margin-top: auto; }
+#s6 .p-items li { font-size: 26px; color: rgba(255,255,255,.85); line-height: 1.3; padding-left: 20px; position: relative; }
+#s6 .p-items li::before { content: '–'; position: absolute; left: 0; color: rgba(255,255,255,.5); }
+
+/* ─────────────────────────────────────────── */
+/* SLIDE 7 — FORMATION & DIY */
+/* ─────────────────────────────────────────── */
+#s7 { background: #fff; }
+#s7 .two-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 52px; flex: 1; }
+#s7 .service-list { display: flex; flex-direction: column; gap: 24px; }
+#s7 .svc { background: var(--green-light); border: 1px solid var(--green); border-radius: 10px; padding: 28px 32px; }
+#s7 .svc-title { font-size: 30px; font-weight: 700; color: var(--green-dark); margin-bottom: 8px; }
+#s7 .svc-body  { font-size: 26px; color: var(--gray-600); line-height: 1.4; }
+#s7 .quote-box { background: var(--gray-100); border: 1px solid var(--gray-200); border-radius: 10px; padding: 36px 40px; display: flex; flex-direction: column; justify-content: center; }
+#s7 .q-text { font-size: 30px; font-style: italic; color: var(--gray-800); line-height: 1.5; }
+#s7 .q-attr { font-size: 24px; color: var(--gray-600); margin-top: 20px; }
+
+/* ─────────────────────────────────────────── */
+/* SLIDE 8 — R&D */
+/* ─────────────────────────────────────────── */
+#s8 { background: var(--gray-100); }
+#s8 .rd-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 36px; flex: 1; }
+#s8 .proj-list { display: flex; flex-direction: column; gap: 14px; }
+#s8 .proj { background: #fff; border-radius: 10px; padding: 18px 22px; border: 1px solid var(--gray-200); display: flex; gap: 20px; align-items: flex-start; }
+#s8 .proj-badge { background: var(--green-light); color: var(--green-dark); font-size: 24px; font-weight: 700; border-radius: 6px; padding: 6px 14px; white-space: nowrap; flex-shrink: 0; }
+#s8 .proj-info {}
+#s8 .proj-name { font-size: 28px; font-weight: 700; color: var(--gray-800); margin-bottom: 6px; }
+#s8 .proj-desc { font-size: 24px; color: var(--gray-600); line-height: 1.4; }
+#s8 .highlight { background: var(--green); border-radius: 10px; padding: 36px; display: flex; flex-direction: column; justify-content: center; gap: 16px; }
+#s8 .hl-title  { font-size: 36px; font-weight: 700; color: #fff; }
+#s8 .hl-body   { font-size: 28px; color: rgba(255,255,255,.85); line-height: 1.5; }
+
+/* ─────────────────────────────────────────── */
+/* SLIDE 9 — SÉMINAIRES & ACCUEIL */
+/* ─────────────────────────────────────────── */
+#s9 { background: var(--gray-100); }
+#s9 .seminar-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 52px; flex: 1; }
+#s9 .card { background: #fff; border: 1px solid var(--gray-200); border-radius: 10px; padding: 32px; }
+#s9 .card-icon  { font-size: 32px; margin-bottom: 14px; }
+#s9 .card-title { font-size: 30px; font-weight: 700; color: var(--green-dark); margin-bottom: 10px; }
+#s9 .card-body  { font-size: 26px; color: var(--gray-600); line-height: 1.4; }
+#s9 .infra { background: var(--green-light); border-radius: 10px; padding: 28px 32px; margin-top: 28px; }
+#s9 .infra-title { font-size: 26px; font-weight: 700; color: var(--green-dark); margin-bottom: 12px; }
+#s9 .infra-items { display: flex; gap: 16px; flex-wrap: wrap; }
+#s9 .infra-badge { background: #fff; border: 1px solid var(--green); border-radius: 20px; padding: 6px 20px; font-size: 24px; color: var(--green-dark); }
+
+/* ─────────────────────────────────────────── */
+/* SLIDE 10 — JUMEAU NUMÉRIQUE (section) */
+/* ─────────────────────────────────────────── */
+#s10 { background: var(--green-light); }
+#s10 .photo {
+  position: absolute; inset: 0;
+  background: url('/assets/img/images-1777110131446.jpg') center 40%/cover no-repeat;
+  opacity: .2;
+}
+#s10 .inner { z-index: 1; }
+#s10 .big-label { font-size: 26px; font-weight: 300; color: var(--gray-600); letter-spacing: .15em; text-transform: uppercase; margin-bottom: 20px; }
+#s10 .headline  { font-size: 80px; font-weight: 700; color: var(--green-dark); line-height: 1.05; margin-bottom: 32px; font-family: var(--font-logo); }
+#s10 .intro     { font-size: 36px; color: var(--gray-800); line-height: 1.5; max-width: 1000px; margin-bottom: 48px; }
+#s10 .tags-row  { display: flex; gap: 16px; flex-wrap: wrap; }
+#s10 .itag { background: #fff; border: 1px solid var(--green); border-radius: 20px; padding: 8px 24px; font-size: 26px; color: var(--green-dark); }
+
+/* ─────────────────────────────────────────── */
+/* SLIDE 11 — QUATRE INTERFACES */
+/* ─────────────────────────────────────────── */
+#s11 { background: var(--green-light); }
+#s11 .ifaces { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 52px; flex: 1; }
+#s11 .iface { border-radius: 10px; padding: 32px; display: flex; flex-direction: column; gap: 12px; }
+#s11 .iface.if1 { background: var(--green); }
+#s11 .iface.if2 { background: var(--green); }
+#s11 .iface.if3 { background: var(--green-dark); }
+#s11 .iface.if4 { background: var(--gray-800); }
+#s11 .if-label { font-size: 24px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: rgba(255,255,255,.6); }
+#s11 .if-title { font-size: 38px; font-weight: 700; color: #fff; }
+#s11 .if-body  { font-size: 26px; color: rgba(255,255,255,.8); line-height: 1.4; margin-top: 4px; }
+
+/* ─────────────────────────────────────────── */
+/* SLIDE 12 — SERVICES NUMÉRIQUES */
+/* ─────────────────────────────────────────── */
+#s12 { background: #fff; }
+#s12 .svcs { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 28px; margin-top: 52px; flex: 1; }
+#s12 .svc-card { border-radius: 10px; padding: 36px 28px; display: flex; flex-direction: column; gap: 16px; }
+#s12 .svc-card.sc1 { background: var(--green-light); border: 1px solid var(--green); }
+#s12 .svc-card.sc2 { background: var(--green-light); border: 1px solid var(--green); }
+#s12 .svc-card.sc3 { background: var(--green-light); border: 1px solid var(--green-dark); }
+#s12 .sc-label { font-size: 24px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
+#s12 .svc-card.sc1 .sc-label { color: var(--green-dark); }
+#s12 .svc-card.sc2 .sc-label { color: var(--green-dark); }
+#s12 .svc-card.sc3 .sc-label { color: var(--green-dark); }
+#s12 .sc-title { font-size: 34px; font-weight: 700; color: var(--gray-800); line-height: 1.2; }
+#s12 .sc-body  { font-size: 26px; color: var(--gray-600); line-height: 1.5; flex: 1; }
+#s12 .sc-tech  { display: flex; gap: 8px; flex-wrap: wrap; }
+#s12 .sc-badge { font-size: 24px; font-weight: 700; border-radius: 6px; padding: 4px 12px; }
+#s12 .svc-card.sc1 .sc-badge { background: var(--green); color: #fff; }
+#s12 .svc-card.sc2 .sc-badge { background: var(--green); color: #fff; }
+#s12 .svc-card.sc3 .sc-badge { background: var(--green-dark); color: #fff; }
+
+/* ─────────────────────────────────────────── */
+/* SLIDE 13 — SECONDE NATURE */
+/* ─────────────────────────────────────────── */
+#s13 { background: var(--gray-100); }
+#s13 .partner-row { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-top: 52px; flex: 1; align-items: center; }
+#s13 .partner-logo-box { background: #fff; border-radius: 12px; border: 2px solid var(--gray-200); display: flex; align-items: center; justify-content: center; padding: 60px; flex-direction: column; gap: 24px; }
+#s13 .partner-name  { font-size: 52px; font-weight: 700; color: var(--gray-800); font-family: var(--font-logo); }
+#s13 .partner-type  { font-size: 28px; color: var(--gray-600); text-align: center; }
+#s13 .partner-sub   { font-size: 24px; color: var(--gray-600); text-align: center; margin-top: 8px; }
+#s13 .partner-text  { display: flex; flex-direction: column; gap: 24px; justify-content: center; }
+#s13 .synergy { background: #fff; border-radius: 10px; padding: 28px 32px; border-left: 5px solid var(--green); }
+#s13 .synergy-title { font-size: 28px; font-weight: 700; color: var(--gray-800); margin-bottom: 8px; }
+#s13 .synergy-body  { font-size: 26px; color: var(--gray-600); line-height: 1.4; }
+
+/* ─────────────────────────────────────────── */
+/* SLIDE 14 — ANCRAGE TERRITORIAL */
+/* ─────────────────────────────────────────── */
+#s14 { background: var(--gray-100); }
+#s14 .territory { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 52px; flex: 1; }
+#s14 .t-stats { display: flex; flex-direction: column; gap: 24px; }
+#s14 .t-stat  { background: #fff; border: 1px solid var(--gray-200); border-radius: 10px; padding: 24px 28px; }
+#s14 .t-val   { font-size: 56px; font-weight: 700; color: var(--green); line-height: 1; }
+#s14 .t-lbl   { font-size: 26px; color: var(--gray-600); margin-top: 6px; }
+#s14 .t-right { display: flex; flex-direction: column; gap: 24px; justify-content: center; }
+#s14 .t-card  { background: #fff; border: 1px solid var(--gray-200); border-radius: 10px; padding: 28px 32px; }
+#s14 .t-card-title { font-size: 28px; font-weight: 700; color: var(--green-dark); margin-bottom: 8px; }
+#s14 .t-card-body  { font-size: 26px; color: var(--gray-600); line-height: 1.4; }
+
+/* ─────────────────────────────────────────── */
+/* SLIDE 15 — FINANCEMENT */
+/* ─────────────────────────────────────────── */
+#s15 { background: #fff; }
+#s15 .finance-layout { display: grid; grid-template-columns: 1.2fr 1fr; gap: 28px; margin-top: 28px; flex: 1; }
+#s15 .budget-total { background: var(--green); border-radius: 12px; padding: 28px; display: flex; flex-direction: column; justify-content: center; gap: 12px; }
+#s15 .bt-label { font-size: 26px; color: rgba(255,255,255,.75); font-weight: 300; text-transform: uppercase; letter-spacing: .08em; }
+#s15 .bt-amount { font-size: 72px; font-weight: 700; color: #fff; line-height: 1; font-family: var(--font-logo); }
+#s15 .bt-note { font-size: 28px; color: rgba(255,255,255,.75); }
+#s15 .sources { display: flex; flex-direction: column; gap: 14px; justify-content: center; }
+#s15 .source { background: var(--gray-100); border-radius: 10px; padding: 18px 24px; border-left: 5px solid var(--green); }
+#s15 .src-name { font-size: 30px; font-weight: 700; color: var(--gray-800); margin-bottom: 6px; }
+#s15 .src-desc { font-size: 26px; color: var(--gray-600); }
+#s15 .source.rebus-src { border-left-color: var(--green); }
+
+/* ─────────────────────────────────────────── */
+/* SLIDE 16 — CALENDRIER */
+/* ─────────────────────────────────────────── */
+#s16 { background: var(--gray-100); }
+#s16 .timeline { display: flex; flex-direction: column; gap: 0; margin-top: 52px; flex: 1; }
+#s16 .phase { display: grid; grid-template-columns: 180px 1fr; gap: 32px; align-items: stretch; }
+#s16 .phase + .phase { margin-top: 4px; }
+#s16 .ph-time { background: var(--green); color: #fff; border-radius: 8px; padding: 20px 24px; display: flex; align-items: center; justify-content: center; font-size: 26px; font-weight: 700; text-align: center; line-height: 1.3; }
+#s16 .ph-time.rebus-ph { background: var(--green); }
+#s16 .ph-time.blue-ph  { background: var(--green-dark); }
+#s16 .ph-body { background: #fff; border-radius: 8px; padding: 20px 28px; display: flex; flex-direction: column; gap: 8px; border: 1px solid var(--gray-200); }
+#s16 .ph-title { font-size: 30px; font-weight: 700; color: var(--gray-800); }
+#s16 .ph-items { display: flex; gap: 10px; flex-wrap: wrap; }
+#s16 .ph-badge { font-size: 24px; background: var(--green-light); color: var(--green-dark); border-radius: 6px; padding: 4px 12px; font-weight: 700; }
+#s16 .ph-badge.rb { background: var(--green-light); color: var(--green-dark); }
+#s16 .ph-badge.bl { background: var(--green-light); color: var(--green-dark); }
+
+/* ─────────────────────────────────────────── */
+/* SLIDE 17 — INDICATEURS */
+/* ─────────────────────────────────────────── */
+#s17 { background: #fff; }
+#s17 .kpis { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; margin-top: 40px; }
+#s17 .kpi  { background: var(--green-light); border: 1px solid var(--green); border-radius: 10px; padding: 24px; text-align: center; }
+#s17 .kpi-val { font-size: 72px; font-weight: 700; color: var(--green); line-height: 1; font-family: var(--font-logo); }
+#s17 .kpi-lbl { font-size: 28px; color: var(--gray-600); margin-top: 10px; line-height: 1.3; }
+#s17 .kpi-unit { font-size: 28px; font-weight: 300; color: var(--gray-600); }
+#s17 .impact { background: var(--gray-100); border: 1px solid var(--gray-200); border-radius: 10px; padding: 24px 36px; margin-top: 20px; }
+#s17 .impact-text { font-size: 34px; color: var(--gray-800); line-height: 1.5; font-style: italic; }
+
+/* ─────────────────────────────────────────── */
+/* SLIDE 18 — COURRIERS DE SOUTIEN */
+/* ─────────────────────────────────────────── */
+#s18s { background: var(--gray-100); }
+#s18s .letters { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 32px; margin-top: 52px; flex: 1; }
+#s18s .letter {
+  background: #fff; border-radius: 12px;
+  border: 1px solid var(--gray-200);
+  display: flex; flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,.06);
+}
+#s18s .letter-header { padding: 32px 36px 24px; border-bottom: 3px solid var(--green); }
+#s18s .letter-header.rebus-h { border-bottom-color: var(--green); }
+#s18s .letter-header.blue-h  { border-bottom-color: var(--green-dark); }
+#s18s .letter-org  { font-size: 40px; font-weight: 700; color: var(--gray-800); font-family: var(--font-logo); line-height: 1.1; margin-bottom: 8px; }
+#s18s .letter-type { font-size: 26px; color: var(--gray-600); }
+#s18s .letter-body { padding: 28px 36px; flex: 1; display: flex; flex-direction: column; gap: 16px; }
+#s18s .letter-date { font-size: 24px; font-weight: 700; color: var(--gray-600); text-transform: uppercase; letter-spacing: .06em; }
+#s18s .letter-text { font-size: 28px; color: var(--gray-600); line-height: 1.5; flex: 1; font-style: italic; }
+#s18s .letter-footer { padding: 20px 36px; background: var(--gray-100); border-top: 1px solid var(--gray-200); }
+#s18s .letter-status { display: inline-flex; align-items: center; gap: 10px; font-size: 24px; font-weight: 700; color: var(--green); }
+#s18s .letter-status.rebus-s { color: var(--green); }
+#s18s .letter-status.blue-s  { color: var(--green-dark); }
+#s18s .letter-status::before { content: ''; width: 12px; height: 12px; border-radius: 50%; background: currentColor; flex-shrink: 0; }
+
+/* ─────────────────────────────────────────── */
+/* SLIDE 19 — CTA */
+/* ─────────────────────────────────────────── */
+#s18 { background: var(--green-light); }
+#s18 .photo {
+  position: absolute; inset: 0;
+  background: url('/assets/img/images-1777110131446.jpg') center/cover no-repeat;
+  opacity: .22;
+}
+#s18 .inner { z-index: 1; }
+#s18 .tagline1 { font-size: 40px; font-weight: 300; color: var(--gray-600); margin-bottom: 16px; }
+#s18 .tagline2 { font-family: var(--font-logo); font-size: 80px; font-weight: 700; color: var(--green-dark); line-height: 1.1; margin-bottom: 40px; }
+#s18 .divider  { width: 100px; height: 4px; background: var(--green); border-radius: 2px; margin-bottom: 40px; }
+#s18 .contacts { display: flex; gap: 28px; flex-wrap: wrap; }
+#s18 .contact  { background: #fff; border: 1px solid var(--green); border-radius: 10px; padding: 20px 32px; }
+#s18 .c-label  { font-size: 24px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--gray-600); margin-bottom: 6px; }
+#s18 .c-val    { font-size: 28px; color: var(--gray-800); }
+#s18 .logos    { display: flex; align-items: center; gap: 32px; margin-top: 40px; }
+#s18 .logo-img { height: 52px; }
+#s18 .rebus-badge { background: var(--green); border: none; border-radius: 8px; padding: 10px 24px; font-size: 30px; font-weight: 700; color: #fff; font-family: var(--font-logo); }
+</style>
+</head>
+<body>
+<deck-stage width="1920" height="1080">
+
+<!-- ══════════════════════════════════════════ -->
+<!-- 01 TITRE -->
+<!-- ══════════════════════════════════════════ -->
+<section id="s1" data-screen-label="01 Titre">
+  <div class="photo"></div>
+  <div class="inner">
+    <div style="display:flex;align-items:center;gap:20px;margin-bottom:auto;padding-top:0">
+      <img src="assets/logo_white.png" style="height:52px;opacity:.85" alt="OSFarm">
+      <span style="font-size:26px;color:var(--gray-400,#ccc)">×</span>
+      <span style="font-size:26px;font-weight:700;color:var(--gray-600);letter-spacing:.05em">La Vauzelle</span>
+    </div>
+    <div class="eyebrow">Projet innovant — Saintonge Romane</div>
+    <div class="name">REBUS</div>
+    <div class="strapline">Un FarmLab au service de l'agriculture numérique ouverte</div>
+    <div class="pills">
+      <span class="pill">Formation & DIY</span>
+      <span class="pill">Recherche & Développement</span>
+      <span class="pill">Séminaires & Accueil</span>
+      <span class="pill">Jumeau numérique</span>
+    </div>
+  </div>
+  <div class="foot light">
+    <span>osfarm.org</span>
+    <span class="logo-txt green">OSFarm</span>
+    <span class="muted">2026</span>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- 02 CONTEXTE -->
+<!-- ══════════════════════════════════════════ -->
+<section id="s2" data-screen-label="02 Contexte">
+  <div class="inner">
+    <span class="tag green">Contexte</span>
+    <div class="t-title">Le numérique agricole : un marché en croissance,<br>des outils encore trop fermés</div>
+    <div class="cols">
+      <div class="col-left">
+        <div>
+          <div class="stat-big">33,7 Md$</div>
+          <div class="stat-lbl">marché mondial Smart Farming en 2030</div>
+        </div>
+        <div style="height:2px;background:var(--gray-200);width:80px"></div>
+        <ul class="blist" style="font-size:30px">
+          <li>45 % des agriculteurs français partent à la retraite d'ici 2026</li>
+          <li>Solutions propriétaires : coûteuses, non interopérables</li>
+          <li>Formations pratiques rares pour les utilisateurs finaux</li>
+        </ul>
+      </div>
+      <div class="col-right">
+        <div class="prob">
+          <div class="prob-title">Dépendance technologique</div>
+          <div class="prob-body">Matériels et logiciels propriétaires verrouillent les exploitations dans des écosystèmes fermés</div>
+        </div>
+        <div class="prob">
+          <div class="prob-title">Manque de lieux de pratique</div>
+          <div class="prob-body">Peu d'espaces dédiés pour expérimenter, se former et tester des solutions concrètement</div>
+        </div>
+        <div class="prob">
+          <div class="prob-title">Fracture numérique agricole</div>
+          <div class="prob-body">Les outils open source existent mais restent difficiles d'accès sans accompagnement</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="foot light">
+    <span>osfarm.org</span>
+    <span class="logo-txt green">OSFarm</span>
+    <span class="muted">02 / 18</span>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- 03 OSFARM -->
+<!-- ══════════════════════════════════════════ -->
+<section id="s3" data-screen-label="03 OSFarm">
+  <div class="inner">
+    <span class="tag green">Porteur du projet</span>
+    <div class="t-title white" style="margin-bottom:8px">OSFarm — les communs numériques agricoles</div>
+    <div class="t-small white" style="color:rgba(255,255,255,.7);margin-bottom:0;font-style:italic">« Cultivons l'ouverture, Récoltons le progrès »</div>
+    <div class="grid">
+      <div class="card">
+        <div class="card-title">Association loi 1901</div>
+        <div class="card-body">Fédère projets open source, open data et open hardware pour le monde agricole depuis Saint-Porchaire (17)</div>
+      </div>
+      <div class="card">
+        <div class="card-title">6 projets actifs</div>
+        <div class="card-body">GAIA, GORT, AOG+, Lexicon API, Agric, Tika — une communauté internationale de contributeurs</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Reconnaissance internationale</div>
+        <div class="card-body">GAIA, lauréat parmi 770 projets de 111 pays au Sommet pour l'Action sur l'IA — Paris 2025</div>
+      </div>
+    </div>
+    <div class="award">
+      <div>
+        <div class="award-num">4,5 M€</div>
+        <div class="award-text" style="font-size:24px;color:var(--gray-600)">financement ANR France 2030 — projet GORT</div>
+      </div>
+      <div style="width:2px;height:60px;background:var(--gray-200)"></div>
+      <div class="award-text">La Vauzelle est notre <strong>ferme de démonstration et d'expérimentation</strong> en conditions réelles</div>
+    </div>
+  </div>
+  <div class="foot light">
+    <span>osfarm.org</span>
+    <span class="logo-txt green">OSFarm</span>
+    <span class="muted">03 / 18</span>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- 04 LA VAUZELLE full-bleed -->
+<!-- ══════════════════════════════════════════ -->
+<section id="s4" data-screen-label="04 La Vauzelle">
+  <div class="photo"></div>
+  <div class="inner">
+    <div class="title-block">
+      <div style="font-size:26px;font-weight:300;color:rgba(255,255,255,.7);letter-spacing:.12em;text-transform:uppercase;margin-bottom:12px">Site d'implantation</div>
+      <div style="font-family:var(--font-logo);font-size:80px;font-weight:700;color:#fff;line-height:1">La Vauzelle</div>
+      <div style="font-size:34px;color:rgba(255,255,255,.8);margin-top:10px">Saint-Porchaire, Charente-Maritime</div>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="stat-val">32 Ha</div><div class="stat-lbl">agriculture biologique</div></div>
+      <div class="stat"><div class="stat-val">11 Ha</div><div class="stat-lbl">irrigables</div></div>
+      <div class="stat"><div class="stat-val">3 000 m²</div><div class="stat-lbl">bâtiments</div></div>
+      <div class="stat"><div class="stat-val">650 m²</div><div class="stat-lbl">habitation</div></div>
+      <div class="stat"><div class="stat-val">Fibre</div><div class="stat-lbl">+ WiFi longue portée</div></div>
+      <div class="stat"><div class="stat-val">RTK</div><div class="stat-lbl">borne centipède LAVZ</div></div>
+    </div>
+  </div>
+  <div class="foot dark">
+    <span>osfarm.org</span>
+    <span class="logo-txt white">OSFarm</span>
+    <span>04 / 18</span>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- 05 CONCEPT FARMLAB -->
+<!-- ══════════════════════════════════════════ -->
+<section id="s5" data-screen-label="05 Concept FarmLab">
+  <div class="inner">
+    <span class="tag green">Concept</span>
+    <div class="t-title rebus">REBUS : un FarmLab open source en conditions réelles</div>
+    <div class="concept-row">
+      <div class="center-circle">
+        <div class="c-title">REBUS</div>
+        <div class="c-sub">Farm<br>Lab</div>
+      </div>
+      <div class="wings">
+        <div class="wing">
+          <div class="wing-title">Un lieu, pas un laboratoire hors-sol</div>
+          <div class="wing-body">La Vauzelle est une ferme biologique en activité. Les services et outils sont testés, formés et démontrés dans des conditions agricoles réelles.</div>
+        </div>
+        <div class="wing">
+          <div class="wing-title">L'open source comme socle</div>
+          <div class="wing-body">Chaque outil proposé est libre, documenté, reproductible. Les agriculteurs repartent avec des solutions qu'ils peuvent maintenir eux-mêmes.</div>
+        </div>
+        <div class="wing">
+          <div class="wing-title">Un tiers-lieu agricole numérique</div>
+          <div class="wing-body">Formation, expérimentation, partage de compétences — REBUS fedère techniciens, agriculteurs, développeurs et chercheurs.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="foot light">
+    <span>osfarm.org</span>
+    <span class="logo-txt green">OSFarm</span>
+    <span class="muted">05 / 18</span>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- 06 TROIS PILIERS -->
+<!-- ══════════════════════════════════════════ -->
+<section id="s6" data-screen-label="06 Trois piliers">
+  <div class="inner">
+    <div class="t-title">Trois missions complémentaires</div>
+    <div class="pillars">
+      <div class="pillar p1">
+        <div class="p-num">01</div>
+        <div class="p-name">Formation & Do It Yourself</div>
+        <ul class="p-items">
+          <li>Montage de serveurs Linux de seconde main</li>
+          <li>Fabrication de capteurs hardware</li>
+          <li>Installation de solutions open source</li>
+          <li>Transfert de compétences autonomisant</li>
+        </ul>
+      </div>
+      <div class="pillar p2">
+        <div class="p-num">02</div>
+        <div class="p-name">Recherche & Développement</div>
+        <ul class="p-items">
+          <li>Tests en conditions réelles : GORT, GAIA, AOG+</li>
+          <li>Données issues du jumeau numérique</li>
+          <li>Collaboration avec les partenaires GORT</li>
+          <li>Protocoles reproductibles et publiés</li>
+        </ul>
+      </div>
+      <div class="pillar p3">
+        <div class="p-num">03</div>
+        <div class="p-name">Séminaires & Accueil</div>
+        <ul class="p-items">
+          <li>Agriculteurs et techniciens agricoles</li>
+          <li>Sessions BootCamp OSFarm</li>
+          <li>Accueil de groupes en immersion</li>
+          <li>Infrastructure de conférence sur site</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="foot light">
+    <span>osfarm.org</span>
+    <span class="logo-txt green">OSFarm</span>
+    <span class="muted">06 / 18</span>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- 07 FORMATION & DIY -->
+<!-- ══════════════════════════════════════════ -->
+<section id="s7" data-screen-label="07 Formation et DIY">
+  <div class="inner">
+    <span class="tag green">Pilier 01</span>
+    <div class="t-title white" style="margin-bottom:40px">Formation et Do It Yourself</div>
+    <div class="two-cols">
+      <div class="service-list">
+        <div class="svc">
+          <div class="svc-title">Serveurs de seconde main</div>
+          <div class="svc-body">Montage et configuration de serveurs reconditionnés sous distributions Linux — souveraineté numérique, coût maîtrisé.</div>
+        </div>
+        <div class="svc">
+          <div class="svc-title">Fabrication de capteurs hardware</div>
+          <div class="svc-body">Ateliers pratiques : stations météo, capteurs sol, LoRa — de la soudure à la mise en réseau.</div>
+        </div>
+        <div class="svc">
+          <div class="svc-title">Logiciels open source</div>
+          <div class="svc-body">Formation à l'installation et l'utilisation : AOG+, GAIA, Lexicon API, Tika et l'ensemble de la stack OSFarm.</div>
+        </div>
+      </div>
+      <div class="quote-box">
+        <div class="q-text">« Les robots, c'est bien mais c'est trop cher et ça avance à rien »</div>
+        <div class="q-attr">— Jean-Michel, Agriculteur Charentais</div>
+        <div style="height:2px;background:var(--gray-200);margin:28px 0"></div>
+        <div style="font-size:28px;color:var(--gray-800);line-height:1.5">REBUS répond à cette réalité : des solutions accessibles, que l'agriculteur peut comprendre, installer et maintenir lui-même.</div>
+      </div>
+    </div>
+  </div>
+  <div class="foot light">
+    <span>osfarm.org</span>
+    <span class="logo-txt green">OSFarm</span>
+    <span class="muted">07 / 18</span>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- 08 R&D -->
+<!-- ══════════════════════════════════════════ -->
+<section id="s8" data-screen-label="08 Recherche et développement">
+  <div class="inner">
+    <span class="tag green">Pilier 02</span>
+    <div class="t-title" style="margin-bottom:40px">Recherche et développement</div>
+    <div class="rd-grid">
+      <div class="proj-list">
+        <div class="proj">
+          <span class="proj-badge">GORT</span>
+          <div class="proj-info">
+            <div class="proj-name">Robots agroécologiques</div>
+            <div class="proj-desc">Tests en plein champ à La Vauzelle — voie variable, multi-capteurs, IA 27 décisions/seconde</div>
+          </div>
+        </div>
+        <div class="proj">
+          <span class="proj-badge">AOG+</span>
+          <div class="proj-info">
+            <div class="proj-name">Autoguidage open source</div>
+            <div class="proj-desc">Intégration borne RTK LAVZ — tests en conditions réelles sur les 32 Ha biologiques</div>
+          </div>
+        </div>
+        <div class="proj">
+          <span class="proj-badge">GAIA</span>
+          <div class="proj-info">
+            <div class="proj-name">IA agricole</div>
+            <div class="proj-desc">Entraînement et validation de modèles sur données réelles de la ferme via Lexicon API</div>
+          </div>
+        </div>
+        <div class="proj">
+          <span class="proj-badge">Lexicon</span>
+          <div class="proj-info">
+            <div class="proj-name">Données normalisées</div>
+            <div class="proj-desc">La Vauzelle comme source de données de référence — sols groies, cultures bio, irrigation</div>
+          </div>
+        </div>
+      </div>
+      <div class="highlight">
+        <div class="hl-title">Pourquoi La Vauzelle ?</div>
+        <div class="hl-body">32 Ha bio convertis dès 2017, sols groies argilo-calcaires, borne RTK propre, LoRa, fibre optique, WiFi longue portée, zone humide, bois — un écosystème complet pour tester les solutions en conditions charentaises réelles.</div>
+      </div>
+    </div>
+  </div>
+  <div class="foot light">
+    <span>osfarm.org</span>
+    <span class="logo-txt green">OSFarm</span>
+    <span class="muted">08 / 18</span>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- 09 SÉMINAIRES & ACCUEIL -->
+<!-- ══════════════════════════════════════════ -->
+<section id="s9" data-screen-label="09 Séminaires et accueil">
+  <div class="inner">
+    <span class="tag green" style="background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3)">Pilier 03</span>
+    <div class="t-title white" style="margin-bottom:40px">Séminaires et accueil</div>
+    <div class="seminar-grid">
+      <div class="card">
+        <div class="card-title">Agriculteurs & techniciens</div>
+        <div class="card-body">Sessions pratiques en immersion sur la ferme — découverte des outils numériques open source dans leur contexte d'usage</div>
+      </div>
+      <div class="card">
+        <div class="card-title">BootCamp OSFarm</div>
+        <div class="card-body">Sessions intensives de 2 à 5 jours : stack complète, prise en main autonome, projets personnalisés par exploitation</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Groupes & organisations</div>
+        <div class="card-body">Accueil de Chambres d'Agriculture, lycées agricoles, CUMA, coopératives — programme sur mesure</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Événements techniques</div>
+        <div class="card-body">Journées portes ouvertes, démonstrations GORT, présentations des résultats R&D en conditions réelles</div>
+      </div>
+    </div>
+    <div class="infra">
+      <div class="infra-title">Infrastructure d'accueil disponible sur site</div>
+      <div class="infra-items">
+        <span class="infra-badge">3 000 m² de bâtiments</span>
+        <span class="infra-badge">650 m² d'habitation</span>
+        <span class="infra-badge">Fibre optique</span>
+        <span class="infra-badge">WiFi longue portée</span>
+        <span class="infra-badge">Potager clos</span>
+        <span class="infra-badge">Zone humide & bois</span>
+      </div>
+    </div>
+  </div>
+  <div class="foot light">
+    <span>osfarm.org</span>
+    <span class="logo-txt green">OSFarm</span>
+    <span class="muted">09 / 18</span>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- 10 JUMEAU NUMÉRIQUE (section) -->
+<!-- ══════════════════════════════════════════ -->
+<section id="s10" data-screen-label="10 Jumeau numérique">
+  <div class="photo"></div>
+  <div class="inner">
+    <div class="big-label">Axe transversal</div>
+    <div class="headline">Le jumeau numérique<br>de La Vauzelle</div>
+    <div class="intro">Une représentation numérique complète de la ferme, actualisée en temps réel — outil de pilotage, de formation et de recherche partagé entre tous les usagers du FarmLab.</div>
+    <div class="tags-row">
+      <span class="itag">Temps réel</span>
+      <span class="itag">Planification</span>
+      <span class="itag">Production</span>
+      <span class="itag">Gestion</span>
+    </div>
+  </div>
+  <div class="foot light">
+    <span>osfarm.org</span>
+    <span class="logo-txt green">OSFarm</span>
+    <span class="muted">10 / 18</span>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- 11 QUATRE INTERFACES -->
+<!-- ══════════════════════════════════════════ -->
+<section id="s11" data-screen-label="11 Quatre interfaces">
+  <div class="inner">
+    <span class="tag green">Jumeau numérique</span>
+    <div class="t-title rebus">Quatre interfaces thématiques</div>
+    <div class="ifaces">
+      <div class="iface if1">
+        <div class="if-label">Interface 1</div>
+        <div class="if-title">Temps réel</div>
+        <div class="if-body">Météo en direct, objets en mouvement (robots, engins), état des cultures actuelle — visualisation cartographique des 32 Ha</div>
+      </div>
+      <div class="iface if2">
+        <div class="if-label">Interface 2</div>
+        <div class="if-title">Planification</div>
+        <div class="if-body">Historique et projection des actions culturales — semis, traitements, récoltes — sur l'ensemble des parcelles</div>
+      </div>
+      <div class="iface if3">
+        <div class="if-label">Interface 3</div>
+        <div class="if-title">Production</div>
+        <div class="if-body">Traçabilité complète des productions et suivi du cheptel — de la parcelle à la livraison</div>
+      </div>
+      <div class="iface if4">
+        <div class="if-label">Interface 4</div>
+        <div class="if-title">Gestion</div>
+        <div class="if-body">Ratios technico-économiques, coûts de production, indicateurs de rentabilité par culture et par parcelle</div>
+      </div>
+    </div>
+  </div>
+  <div class="foot light">
+    <span>osfarm.org</span>
+    <span class="logo-txt green">OSFarm</span>
+    <span class="muted">11 / 18</span>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- 12 SERVICES NUMÉRIQUES -->
+<!-- ══════════════════════════════════════════ -->
+<section id="s12" data-screen-label="12 Services numériques">
+  <div class="inner">
+    <div class="t-title" style="margin-bottom:8px">Services numériques open source proposés</div>
+    <div class="t-small muted" style="margin-bottom:0">Chaque service est libre, documenté et réplicable</div>
+    <div class="svcs">
+      <div class="svc-card sc1">
+        <div class="sc-label">Matériel</div>
+        <div class="sc-title">Serveurs reconditionnés sous Linux</div>
+        <div class="sc-body">Montage, configuration et déploiement de serveurs de seconde main — infrastructure numérique souveraine à coût réduit pour les exploitations</div>
+        <div class="sc-tech">
+          <span class="sc-badge">Debian</span>
+          <span class="sc-badge">Ubuntu Server</span>
+          <span class="sc-badge">Proxmox</span>
+        </div>
+      </div>
+      <div class="svc-card sc1">
+        <div class="sc-label">Hardware DIY</div>
+        <div class="sc-title">Capteurs & stations de mesure</div>
+        <div class="sc-body">Ateliers de fabrication : stations météo, capteurs d'humidité sol, réseaux LoRa et intégration dans la stack de données OSFarm</div>
+        <div class="sc-tech">
+          <span class="sc-badge">LoRa</span>
+          <span class="sc-badge">Arduino</span>
+          <span class="sc-badge">RTK</span>
+        </div>
+      </div>
+      <div class="svc-card sc1">
+        <div class="sc-label">Logiciels</div>
+        <div class="sc-title">Stack complète OSFarm</div>
+        <div class="sc-body">Formation à l'installation et l'usage : autoguidage AOG+, IA agronomique GAIA, données Lexicon API, visualisation Tika</div>
+        <div class="sc-tech">
+          <span class="sc-badge">AOG+</span>
+          <span class="sc-badge">GAIA</span>
+          <span class="sc-badge">Tika</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="foot light">
+    <span>osfarm.org</span>
+    <span class="logo-txt green">OSFarm</span>
+    <span class="muted">12 / 18</span>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- 13 SECONDE NATURE -->
+<!-- ══════════════════════════════════════════ -->
+<section id="s13" data-screen-label="13 Seconde Nature">
+  <div class="inner">
+    <span class="tag green">Partenaire stratégique</span>
+    <div class="t-title" style="margin-bottom:40px">Seconde Nature — le réemploi au cœur du FarmLab</div>
+    <div class="partner-row">
+      <div class="partner-logo-box">
+        <div class="partner-name">Seconde Nature</div>
+        <div class="partner-type">Association de réemploi<br>Charente-Maritime</div>
+        <div style="font-size:24px;color:var(--gray-600);text-align:center;margin-top:8px">Co-partenaire REBUS</div>
+      </div>
+      <div class="partner-text">
+        <div class="synergy">
+          <div class="synergy-title">Approvisionnement en matériel</div>
+          <div class="synergy-body">Serveurs et équipements informatiques reconditionnés — réduire les coûts d'infrastructure et valoriser le matériel en fin de vie</div>
+        </div>
+        <div class="synergy">
+          <div class="synergy-title">Cohérence avec les valeurs open source</div>
+          <div class="synergy-body">Le réemploi du matériel et la liberté logicielle partagent la même philosophie : durabilité, accès et autonomie</div>
+        </div>
+        <div class="synergy">
+          <div class="synergy-title">Ancrage territorial commun</div>
+          <div class="synergy-body">Deux associations enracinées en Saintonge Romane, au service des acteurs locaux</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="foot light">
+    <span>osfarm.org</span>
+    <span class="logo-txt green">OSFarm</span>
+    <span class="muted">13 / 18</span>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- 14 ANCRAGE TERRITORIAL -->
+<!-- ══════════════════════════════════════════ -->
+<section id="s14" data-screen-label="14 Ancrage territorial">
+  <div class="inner">
+    <span class="tag green">Territoire</span>
+    <div class="t-title white" style="margin-bottom:40px">Un FarmLab enraciné en Saintonge Romane</div>
+    <div class="territory">
+      <div class="t-stats">
+        <div class="t-stat">
+          <div class="t-val">17 250</div>
+          <div class="t-lbl">Saint-Porchaire — cœur de la Saintonge Romane</div>
+        </div>
+        <div class="t-stat">
+          <div class="t-val">Bio depuis 2017</div>
+          <div class="t-lbl">La Vauzelle, exploitation certifiée agriculture biologique</div>
+        </div>
+        <div class="t-stat">
+          <div class="t-val">FEADER</div>
+          <div class="t-lbl">Co-financeur via le Pays de Saintonge Romane</div>
+        </div>
+      </div>
+      <div class="t-right">
+        <div class="t-card">
+          <div class="t-card-title">Un territoire agricole à accompagner</div>
+          <div class="t-card-body">Polyculture, viticulture, élevage — des exploitations charentaises qui ont besoin de solutions numériques adaptées à leurs réalités pédologiques et climatiques</div>
+        </div>
+        <div class="t-card">
+          <div class="t-card-title">Rayonnement régional</div>
+          <div class="t-card-body">REBUS peut devenir le FarmLab de référence pour Nouvelle-Aquitaine — modèle duplicable et documenté open source</div>
+        </div>
+        <div class="t-card">
+          <div class="t-card-title">Infrastructure unique</div>
+          <div class="t-card-body">Borne RTK centipède LAVZ, réseau LoRa, fibre, WiFi — une connectivité rare en milieu rural</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="foot light">
+    <span>osfarm.org</span>
+    <span class="logo-txt green">OSFarm</span>
+    <span class="muted">14 / 18</span>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- 15 FINANCEMENT -->
+<!-- ══════════════════════════════════════════ -->
+<section id="s15" data-screen-label="15 Financement">
+  <div class="inner">
+    <div class="t-title" style="margin-bottom:40px">Plan de financement</div>
+    <div class="finance-layout">
+      <div style="display:flex;flex-direction:column;gap:24px;flex:1">
+        <div class="budget-total">
+          <div class="bt-label">Budget prévisionnel total</div>
+          <div class="bt-amount">218 700 €</div>
+          <div class="bt-note">Dossier en cours de structuration avec les co-financeurs</div>
+        </div>
+        <div style="background:var(--gray-100);border-radius:10px;padding:28px 32px;border:1px solid var(--gray-200)">
+          <div style="font-size:28px;font-weight:700;color:var(--gray-800);margin-bottom:16px">Dépenses principales</div>
+          <ul class="blist" style="font-size:26px">
+            <li>Aménagement bâtiments (espace formation, salle serveurs)</li>
+            <li>Équipement matériel (serveurs reconditionnés, capteurs)</li>
+            <li>Développement jumeau numérique La Vauzelle</li>
+            <li>Animation et ingénierie de formation</li>
+          </ul>
+        </div>
+      </div>
+      <div class="sources">
+        <div class="source">
+          <div class="src-name">FEADER — 109 000 €</div>
+          <div class="src-desc">Fonds Européen Agricole pour le Développement Rural — via le Pays de Saintonge Romane</div>
+        </div>
+        <div class="source">
+          <div class="src-name">Région Nouvelle-Aquitaine — 64 200 €</div>
+          <div class="src-desc">Soutien à l'innovation et à la transition numérique agricole</div>
+        </div>
+
+        <div class="source" style="border-left-color:var(--gray-600)">
+          <div class="src-name">Autofinancement & Adhésions — 45 500 €</div>
+          <div class="src-desc">Services de formation, hébergement séminaires, prestations membres</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="foot light">
+    <span>osfarm.org</span>
+    <span class="logo-txt green">OSFarm</span>
+    <span class="muted">15 / 18</span>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- 16 CALENDRIER -->
+<!-- ══════════════════════════════════════════ -->
+<section id="s16" data-screen-label="16 Calendrier">
+  <div class="inner">
+    <div class="t-title" style="margin-bottom:40px">Calendrier prévisionnel</div>
+    <div class="timeline">
+      <div class="phase">
+        <div class="ph-time">2026<br>T3–T4</div>
+        <div class="ph-body">
+          <div class="ph-title">Structuration et aménagement</div>
+          <div class="ph-items">
+            <span class="ph-badge">Dossier FEADER</span>
+            <span class="ph-badge">Plans bâtiments</span>
+            <span class="ph-badge">Partenariat Seconde Nature</span>
+            <span class="ph-badge">Recrutement équipe</span>
+          </div>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="ph-time rebus-ph">2027<br>T1–T4</div>
+        <div class="ph-body">
+          <div class="ph-title">Déploiement jumeau numérique et premiers services</div>
+          <div class="ph-items">
+            <span class="ph-badge">Jumeau numérique v1</span>
+            <span class="ph-badge">Salle formation opérationnelle</span>
+            <span class="ph-badge dk">Premiers BootCamps</span>
+          </div>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="ph-time rebus-ph">2028<br>T3–T4</div>
+        <div class="ph-body">
+          <div class="ph-title">Montée en charge — R&D et séminaires</div>
+          <div class="ph-items">
+            <span class="ph-badge">Tests sur site</span>
+            <span class="ph-badge">Interfaces JN complètes</span>
+            <span class="ph-badge dk">Programme séminaires annuel</span>
+          </div>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="ph-time blue-ph">2028</div>
+        <div class="ph-body">
+          <div class="ph-title">Consolidation et essaimage</div>
+          <div class="ph-items">
+            <span class="ph-badge dk">Documentation open source du modèle REBUS</span>
+            <span class="ph-badge">Réseau de FarmLabs</span>
+            <span class="ph-badge">Bilan FEADER</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="foot light">
+    <span>osfarm.org</span>
+    <span class="logo-txt green">OSFarm</span>
+    <span class="muted">16 / 18</span>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- 17 INDICATEURS -->
+<!-- ══════════════════════════════════════════ -->
+<section id="s17" data-screen-label="17 Indicateurs">
+  <div class="inner">
+    <span class="tag green" style="background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3)">Mesure d'impact</span>
+    <div class="t-title white" style="margin-bottom:40px">Les indicateurs de succès de REBUS</div>
+    <div class="kpis">
+      <div class="kpi">
+        <div class="kpi-val">50<span class="kpi-unit">+</span></div>
+        <div class="kpi-lbl">agriculteurs et techniciens formés par an</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-val">10<span class="kpi-unit">+</span></div>
+        <div class="kpi-lbl">séminaires et BootCamps organisés par an</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-val">4</div>
+        <div class="kpi-lbl">interfaces jumeau numérique opérationnelles</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-val">100 %</div>
+        <div class="kpi-lbl">des solutions documentées en open source</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-val">3</div>
+        <div class="kpi-lbl">projets ANR actifs testés sur site</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-val">1</div>
+        <div class="kpi-lbl">modèle REBUS duplicable et publié</div>
+      </div>
+    </div>
+    <div class="impact">
+      <div class="impact-text">REBUS vise à devenir la référence française du FarmLab open source — un modèle que chaque territoire agricole pourra s'approprier et adapter.</div>
+    </div>
+  </div>
+  <div class="foot light">
+    <span>osfarm.org</span>
+    <span class="logo-txt green">OSFarm</span>
+    <span class="muted">17 / 18</span>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- 18 COURRIERS DE SOUTIEN -->
+<!-- ══════════════════════════════════════════ -->
+<section id="s18s" data-screen-label="18 Courriers de soutien">
+  <div class="inner">
+    <span class="tag green">Soutiens institutionnels</span>
+    <div class="t-title">Trois courriers de soutien au projet REBUS</div>
+    <div class="letters">
+
+      <div class="letter">
+        <div class="letter-header">
+          <div class="letter-org">Seconde Nature</div>
+          <div class="letter-type">Association de réemploi — Charente-Maritime</div>
+        </div>
+        <div class="letter-body">
+          <div class="letter-date">Avril 2025</div>
+          <div class="letter-text">Soutien à la démarche REBUS et à son approche de réemploi du matériel informatique comme levier d'accès au numérique pour les agriculteurs</div>
+        </div>
+        <div class="letter-footer">
+          <span class="letter-status">Co-partenaire officiel</span>
+        </div>
+      </div>
+
+      <div class="letter">
+        <div class="letter-header">
+          <div class="letter-org">Ocealia</div>
+          <div class="letter-type">Coopérative agricole — Nouvelle-Aquitaine</div>
+        </div>
+        <div class="letter-body">
+          <div class="letter-date">Mars 2025</div>
+          <div class="letter-text">Soutien au développement d'un tiers-lieu numérique agricole open source et à la mise en œuvre de formations pratiques pour les adhérents</div>
+        </div>
+        <div class="letter-footer">
+          <span class="letter-status">Soutien exprimé</span>
+        </div>
+      </div>
+
+      <div class="letter">
+        <div class="letter-header green-h">
+          <div class="letter-org">Cyclad</div>
+          <div class="letter-type">Syndicat mixte — Charente-Maritime</div>
+        </div>
+        <div class="letter-body">
+          <div class="letter-date">Avril 2025</div>
+          <div class="letter-text">Soutien au projet REBUS et à sa vocation de diffusion des outils numériques open source auprès des acteurs agricoles du territoire</div>
+        </div>
+        <div class="letter-footer">
+          <span class="letter-status dark-s">Soutien exprimé</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="foot light">
+    <span>osfarm.org</span>
+    <span class="logo-txt green">OSFarm</span>
+    <span class="muted">18 / 19</span>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- 19 CTA -->
+<!-- ══════════════════════════════════════════ -->
+<section id="s18" data-screen-label="19 CTA">
+  <div class="photo"></div>
+  <div class="inner center">
+    <div class="tagline1">Cultivons l'ouverture,</div>
+    <div class="tagline2">Récoltons le progrès</div>
+    <div class="divider"></div>
+    <div style="font-size:36px;color:var(--gray-800);max-width:900px;line-height:1.5;margin-bottom:48px;font-weight:300">
+      Rejoignez REBUS — construisons ensemble le premier FarmLab open source de Saintonge Romane.
+    </div>
+    <div class="contacts">
+      <div class="contact">
+        <div class="c-label">Email</div>
+        <div class="c-val"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="20434f4e54414354604f534641524d0e4f5247">[email&#160;protected]</a></div>
+      </div>
+      <div class="contact">
+        <div class="c-label">Président</div>
+        <div class="c-val">David JOULIN</div>
+      </div>
+      <div class="contact">
+        <div class="c-label">Site</div>
+        <div class="c-val">osfarm.org</div>
+      </div>
+      <div class="contact">
+        <div class="c-label">Adresse</div>
+        <div class="c-val">8 rue du bouil bleu · 17250 Saint-Porchaire</div>
+      </div>
+    </div>
+    <div class="logos">
+      <img src="assets/logo.png" class="logo-img" alt="OSFarm">
+      <div class="rebus-badge">REBUS</div>
+      <div style="font-size:24px;color:var(--gray-400,#bbb)">×</div>
+      <div style="font-size:26px;color:rgba(255,255,255,.6);font-weight:300">Pays de Saintonge Romane</div>
+    </div>
+  </div>
+  <div class="foot light">
+    <span>osfarm.org</span>
+    <span class="logo-txt green">OSFarm</span>
+    <span class="muted">19 / 19</span>
+  </div>
+</section>
+
+</deck-stage>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
