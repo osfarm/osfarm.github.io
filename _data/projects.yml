@@ -141,6 +141,12 @@ Farm Management Systems and Record Keeping:
     github_org: LiteFarmOrg
     demo: https://github.com/LiteFarmOrg/LiteFarm
     img: "/assets/img/projects/litefarm.png"
+  - name: gr33n
+    website: https://github.com/dgang0404/gr33n
+    github: dgang0404/gr33n
+    github_org: dgang0404
+    demo: https://github.com/dgang0404/gr33n#screenshots
+    img: "/assets/img/projects/gr33n.png"
   - name: Frappe
     website: https://frappe.io/
     github: frappe/frappe
