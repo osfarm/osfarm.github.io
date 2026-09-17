@@ -1,0 +1,1248 @@
+# Lot du radar OSFarm. Passer « publier » à false pour écarter une fiche,
+# corriger « resume » au besoin. La fusion de la pull request publie le reste.
+date: '2026-09-17'
+examines: 351
+retenus: 32
+rejets:
+  deja_vu: 0
+  deja_sur_le_site: 3
+  licence: 123
+  score: 4
+pannes: []
+candidats:
+- id: da2c672d153b
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: farmOS/farmOS
+  url: https://github.com/farmOS/farmOS
+  description: 'farmOS: A web-based farm record keeping application.'
+  licence: gpl-2.0
+  date_maj: '2026-09-16'
+  techno: PHP
+  popularite: 1351
+  mots_cles:
+  - agriculture
+  - crops
+  - drupal
+  - equipment
+  - farm
+  - livestock
+  - mapping
+  - sensors
+  score: 100
+  raisons:
+  - licence gpl-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farm, livestock, crop'
+  propose_le: '2026-09-17'
+  publier: true
+  resume: farmOS est une application web de gestion des données agricoles pour enregistrer et suivre les
+    activités, les cultures, le bétail et le matériel sur une exploitation. Elle permet aux agriculteurs
+    et conseillers agricoles de centraliser leurs données opérationnelles.
+  interet: Ce logiciel est largement utilisé dans la communauté agricole francophone pour sa flexibilité
+    et son approche open source.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - gestion
+  - exploitation agricole
+  - suivi
+  - cultures
+  - bétail
+- id: c06242af2862
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: ekylibre/ekylibre
+  url: https://github.com/ekylibre/ekylibre
+  description: Open source Farm management Information System (FMIS) - Connecting farms to the world
+  licence: agpl-3.0
+  date_maj: '2026-09-16'
+  techno: Ruby
+  popularite: 491
+  mots_cles:
+  - agriculture
+  - agtech
+  - erp
+  - farming
+  - fmis
+  - management
+  - mapping
+  - open-source
+  score: 98
+  raisons:
+  - licence agpl-3.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, agtech, farm, farming'
+  propose_le: '2026-09-17'
+  publier: true
+  resume: ekylibre est un système d'information de gestion agricole (FMIS) open source qui connecte les
+    exploitations au reste du monde. Il permet de gérer les ressources, les tâches et les données financières
+    des fermes.
+  interet: Ce projet intéresse les agriculteurs et conseillers en gestion souhaitant un outil complet
+    et modulaire pour leur exploitation.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - gestion
+  - fmis
+  - erp
+  - ressources agricoles
+  - suivi financier
+- id: b3d5683097c3
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: delsDin/kadipy
+  url: https://github.com/delsDin/kadipy
+  description: Une bibliothèque Python conçue pour les agronomes, chercheurs et développeurs travaillant
+    sur les données agricoles au Bénin et en Afrique de l'Ouest.
+  licence: mit
+  date_maj: '2026-09-16'
+  techno: Python
+  popularite: 5
+  mots_cles:
+  - africa
+  - agriculture
+  - agritech
+  - agritech-project
+  - benin-geo-data
+  - benin-republic
+  - data-analysis
+  - kadipy
+  score: 95
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agricole, agriculture, agritech'
+  propose_le: '2026-09-17'
+  publier: true
+  resume: kadipy est une bibliothèque Python destinée aux agronomes et chercheurs pour analyser des données
+    agricoles au Bénin et en Afrique de l'Ouest. Elle facilite le traitement de données géospatiales et
+    agricoles.
+  interet: Ce projet est particulièrement utile pour les acteurs de la recherche et du développement agricole
+    en Afrique francophone.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - bénin
+  - afrique de l'ouest
+  - agronomie
+  - données géospatiales
+  - recherche
+- id: d91a27332190
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: microsoft/farmvibes-ai
+  url: https://github.com/microsoft/farmvibes-ai
+  description: 'FarmVibes.AI: Multi-Modal GeoSpatial ML Models for Agriculture and Sustainability'
+  licence: mit
+  date_maj: '2026-09-09'
+  techno: Jupyter Notebook
+  popularite: 897
+  mots_cles:
+  - agriculture
+  - ai
+  - geospatial
+  - geospatial-analytics
+  - multi-modal
+  - remote-sensing
+  - stac
+  - sustainability
+  score: 95
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, geospatial, remote-sensing, sustainability'
+  propose_le: '2026-09-17'
+  publier: true
+  resume: FarmVibes.AI propose des modèles d'apprentissage automatique géospatial multimodal pour l'agriculture
+    et la durabilité. Il permet d'analyser des données satellites et de fournir des insights pour l'optimisation
+    des pratiques agricoles.
+  interet: Ce projet intéresse les acteurs de l'agritech et de la recherche en agriculture de précision,
+    notamment pour son approche innovante.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - agriculture de précision
+  - apprentissage automatique
+  - géospatial
+  - satellite
+  - durabilité
+- id: b359187bebd4
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: muend/agri-dss
+  url: https://github.com/muend/agri-dss
+  description: Spatial Decision Support System (Agri-DSS) for the Western Antalya Corridor. Vectorized
+    regional suitability analytics engine powered by FastAPI, GeoPandas, NumPy, and React.
+  licence: apache-2.0
+  date_maj: '2026-06-29'
+  techno: HTML
+  popularite: 6
+  mots_cles:
+  - agriculture
+  - agritech
+  - agronomy
+  - antalya
+  - crop-recommendation
+  - data-driven
+  - decision-support-system
+  - dss
+  score: 95
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, agritech, agronomy'
+  propose_le: '2026-09-17'
+  publier: true
+  resume: Agri-DSS est un système d'aide à la décision spatiale pour la région de l'Antalya en Turquie.
+    Il recommande des cultures en fonction des données locales et des analyses géospatiales.
+  interet: ''
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - décision spatiale
+  - recommandation de cultures
+  - géospatial
+  - analyse de données
+  - turquie
+- id: cb9aa159ce42
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: superzero11/OpenFarm
+  url: https://github.com/superzero11/OpenFarm
+  description: Open Intelligence for Every Farm - Monitor crop health with satellite imagery, detect anomalies
+    early, and make data-driven decisions.
+  licence: bsd-3-clause
+  date_maj: '2026-08-14'
+  techno: TypeScript
+  popularite: 36
+  mots_cles:
+  - agriculture
+  - agriculture-data
+  - agtech
+  - earth
+  - farming
+  - geoai
+  - geojson
+  - geospatial
+  score: 95
+  raisons:
+  - licence bsd-3-clause
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, agtech, farm, farming, crop, geospatial'
+  propose_le: '2026-09-17'
+  publier: true
+  resume: OpenFarm permet de surveiller la santé des cultures via l'imagerie satellite et de détecter
+    des anomalies précocement. Il aide les agriculteurs à prendre des décisions basées sur des données.
+  interet: Ce projet intéresse les agriculteurs et conseillers en agriculture de précision pour son approche
+    accessible et basée sur l'imagerie satellite.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - surveillance des cultures
+  - imagerie satellite
+  - agriculture de précision
+  - détection d'anomalies
+  - décision data-driven
+- id: cee2b6e345e8
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: ishandutta2007/Awesome-Precision-Agriculture
+  url: https://github.com/ishandutta2007/Awesome-Precision-Agriculture
+  description: Top Precision Agriculture (Opensource) 🌟 Star if you like it! 🌟
+  licence: mit
+  date_maj: '2026-09-01'
+  techno: ''
+  popularite: 6
+  mots_cles:
+  - agtech
+  - awesome-list
+  - curated-list
+  - farm-management
+  - precision-agriculture
+  - remote-sensing
+  - smart-farming
+  score: 93
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, agtech, farm, farming, remote-sensing'
+  propose_le: '2026-09-17'
+  publier: true
+  resume: Ce dépôt recense des ressources open source dédiées à l'agriculture de précision. Il permet
+    d'accéder à une sélection organisée de logiciels et outils utiles pour les acteurs du secteur.
+  interet: Ce projet intéresse la communauté agricole francophone en centralisant des ressources techniques
+    accessibles et adaptées aux besoins locaux.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - agriculture de précision
+  - ressources open source
+  - outils techniques
+  - agtech
+  - liste curated
+- id: 21072f6bce2a
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: osmanhadzic/agronode
+  url: https://github.com/osmanhadzic/agronode
+  description: ESP32 IoT monitoring platform with MQTT, real-time telemetry, and dynamic sensors.
+  licence: mit
+  date_maj: '2026-09-16'
+  techno: Go
+  popularite: 3
+  mots_cles:
+  - agriculture
+  - esp32
+  - iot
+  - monitoring
+  - mqtt
+  - smart-farming
+  score: 92
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farm, farming'
+  propose_le: '2026-09-17'
+  publier: true
+  resume: Cette plateforme IoT basée sur ESP32 permet de surveiller en temps réel des paramètres agricoles
+    via MQTT. Elle collecte et transmet des données de capteurs pour le suivi des cultures ou élevages.
+  interet: Ce projet intéresse les agriculteurs et éleveurs francophones cherchant des solutions matérielles
+    et logicielles pour le monitoring en temps réel.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - iot
+  - esp32
+  - monitoring
+  - mqtt
+  - agriculture intelligente
+- id: 776437274d91
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-viti
+  titre: andrew-waters/orchard
+  url: https://github.com/andrew-waters/orchard
+  description: The native UI for Apple Containers and (o)MLX sandboxes, written in swift as a replacement
+    for docker desktop
+  licence: mit
+  date_maj: '2026-09-16'
+  techno: Swift
+  popularite: 1569
+  mots_cles:
+  - apple
+  - containerization
+  - containers
+  - gui
+  - mlx-lm
+  - swift
+  - ui
+  - wwdc25
+  score: 89
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : orchard, water'
+  propose_le: '2026-09-17'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - apple
+  - containerization
+  - swift
+  - gui
+  - mlx-lm
+- id: c98506bca1a4
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-viti
+  titre: OrchardCMS/OrchardCore
+  url: https://github.com/OrchardCMS/OrchardCore
+  description: Orchard Core is an open-source modular and multi-tenant application framework built with
+    ASP.NET Core, and a content management system (CMS) built on top of that framework.
+  licence: bsd-3-clause
+  date_maj: '2026-09-16'
+  techno: C#
+  popularite: 8184
+  mots_cles:
+  - asp-net
+  - c-sharp
+  - cms
+  - dotnet-core
+  - modular
+  - orchard-cms
+  - orchardcore
+  score: 86
+  raisons:
+  - licence bsd-3-clause
+  - actif (moins de 3 mois)
+  - 'vocabulaire : orchard'
+  propose_le: '2026-09-17'
+  publier: false
+  resume: Orchard Core est un framework open source modulaire pour applications web et un système de gestion
+    de contenu (CMS) basé sur ASP.NET Core. Il permet de créer des sites web ou applications personnalisables.
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - cms
+  - asp.net core
+  - framework modulaire
+  - dotnet
+  - orchard
+- id: f7e488e78bba
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-elevage
+  titre: epicpast/nsip-example
+  url: https://github.com/epicpast/nsip-example
+  description: GitHub-powered farm management with NSIP sheep breeding intelligence. Issue-based records,
+    automated genetic enrichment, ecological outcome verification, and step-by-step guides for non-technical
+    users.
+  licence: mit
+  date_maj: '2026-07-27'
+  techno: ''
+  popularite: 3
+  mots_cles:
+  - agriculture
+  - breeding-records
+  - copilot
+  - demo
+  - ecological-outcome-verification
+  - eov
+  - farm-management
+  - github-actions
+  score: 85
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farm'
+  propose_le: '2026-09-17'
+  publier: true
+  resume: Ce projet propose un système de gestion d'élevage ovin basé sur GitHub et des outils d'intelligence
+    artificielle pour le suivi génétique et écologique. Il inclut des guides pour les utilisateurs non
+    techniques.
+  interet: Ce projet intéresse les éleveurs ovins francophones souhaitant optimiser la gestion génétique
+    et écologique de leurs troupeaux avec des outils accessibles.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - élevage ovin
+  - gestion génétique
+  - intelligence artificielle
+  - suivi écologique
+  - outil non technique
+- id: 42eba7f9ae2b
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-elevage
+  titre: larry-athey/climate-czar
+  url: https://github.com/larry-athey/climate-czar
+  description: Universal remote climate monitoring and management system for greenhouses and indoor grow
+    operations. No hardware brand dependencies, if you can read or control a sensor or smart switch from
+    the command line, then it's compatible with Climate Czar.
+  licence: lgpl-2.1
+  date_maj: '2026-08-26'
+  techno: PHP
+  popularite: 9
+  mots_cles:
+  - aquaculture
+  - aquaponics
+  - automation
+  - climate-control
+  - cooling-control
+  - esp32-arduino
+  - farming
+  - gardening
+  score: 85
+  raisons:
+  - licence lgpl-2.1
+  - actif (moins de 3 mois)
+  - 'vocabulaire : farming, greenhouse'
+  propose_le: '2026-09-17'
+  publier: true
+  resume: Ce système permet de surveiller et contrôler à distance le climat dans les serres et cultures
+    indoor via des capteurs et actionneurs compatibles. Il fonctionne sans dépendance à une marque matérielle
+    spécifique.
+  interet: Ce projet intéresse les producteurs en serres ou cultures indoor francophones cherchant une
+    solution flexible pour l'automatisation climatique.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - serres
+  - climatisation
+  - automatisation
+  - capteurs
+  - cultures indoor
+- id: 4b34f19545cd
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-elevage
+  titre: Rhizomatic-Systems/Grow-Dojo-Stack
+  url: https://github.com/Rhizomatic-Systems/Grow-Dojo-Stack
+  description: Rhizomatic Systems management of the @Grow-Dojo project, a modular agricultural automation
+    system with a focus on high security and broad range of deployment options. Hydroponics, Aquaponics,
+    Traditional Farming, Closed Environment Agriculture, Greenhouse, etc...
+  licence: lgpl-3.0
+  date_maj: '2026-02-17'
+  techno: ''
+  popularite: 4
+  mots_cles:
+  - agriculture
+  - agtech
+  - aquaculture
+  - aquaponics
+  - arduino
+  - automation
+  - cea
+  - crop-analytics
+  score: 85
+  raisons:
+  - licence lgpl-3.0
+  - actif (moins d'un an)
+  - 'vocabulaire : agriculture, agtech, farming, greenhouse'
+  propose_le: '2026-09-17'
+  publier: true
+  resume: Système modulaire d'automatisation agricole développé par Rhizomatic Systems, compatible avec
+    l'hydroponie, l'aquaponie et l'agriculture traditionnelle. Il permet de gérer différents modes de
+    culture via une interface sécurisée et adaptable.
+  interet: Ce projet intéresse la communauté agricole francophone pour son approche modulaire et sécurisée
+    de l'automatisation, applicable à divers systèmes de production.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - agriculture
+  - automatisation
+  - hydroponie
+  - aquaponie
+  - sécurité
+- id: 3cf912ac5204
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-viti
+  titre: WorasitSangjan/Grow-Tube-Microclimate-Analysis
+  url: https://github.com/WorasitSangjan/Grow-Tube-Microclimate-Analysis
+  description: This repository contains the complete analytical workflow for studying the thermal effects
+    of different grow tube materials and installation configurations on young grapevine microclimates
+    during dormancy periods.
+  licence: mit
+  date_maj: '2026-08-20'
+  techno: R
+  popularite: 3
+  mots_cles:
+  - agriculture
+  - data-analysis
+  - python
+  - r
+  - research-paper
+  - vineyard
+  - weather-data
+  score: 85
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, vineyard'
+  propose_le: '2026-09-17'
+  publier: true
+  resume: Outil d'analyse des effets thermiques des matériaux et configurations de tubes de culture sur
+    le microclimat des jeunes plants de vigne pendant la dormance. Il fournit une méthodologie complète
+    pour étudier ces impacts.
+  interet: Ce projet intéresse les viticulteurs et chercheurs en agronomie pour son application directe
+    dans l'optimisation des pratiques culturales en viticulture.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - viticulture
+  - microclimat
+  - analyse de données
+  - python
+  - recherche
+- id: fe62f3dd902b
+  famille: logiciel
+  relecteur: jancelin
+  source: github-materiel-agri
+  titre: FarmBot/farmbot_os
+  url: https://github.com/FarmBot/farmbot_os
+  description: The operating system and all related software that runs on FarmBot's Raspberry Pi.
+  licence: mit
+  date_maj: '2026-07-22'
+  techno: Elixir
+  popularite: 1173
+  mots_cles:
+  - elixir
+  - farmbot
+  - nerves
+  score: 77
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  propose_le: '2026-09-17'
+  publier: true
+  resume: Système d'exploitation et logiciels associés fonctionnant sur le Raspberry Pi de FarmBot, permettant
+    le contrôle de l'appareil. Il gère les commandes et les interactions avec le matériel.
+  interet: ''
+  pertinence: oui
+  redige_par: mistral-small-latest
+  famille_initiale: materiel
+  mots_cles_fr:
+  - farmbot
+  - raspberry pi
+  - automatisation
+  - contrôle
+- id: 4ba1415fa9a1
+  famille: logiciel
+  relecteur: jancelin
+  source: github-materiel-agri
+  titre: FarmBot/Farmbot-Web-App
+  url: https://github.com/FarmBot/Farmbot-Web-App
+  description: Setup, customize, and control FarmBot from any device
+  licence: mit
+  date_maj: '2026-09-06'
+  techno: TypeScript
+  popularite: 973
+  mots_cles:
+  - farmbot
+  score: 75
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  propose_le: '2026-09-17'
+  publier: true
+  resume: Application web permettant de configurer, personnaliser et contrôler FarmBot depuis n'importe
+    quel appareil. Elle offre une interface pour gérer les paramètres et les actions du dispositif.
+  interet: ''
+  pertinence: oui
+  redige_par: mistral-small-latest
+  famille_initiale: materiel
+  mots_cles_fr:
+  - farmbot
+  - interface web
+  - contrôle à distance
+  - automatisation
+- id: f56546dd6dc3
+  famille: logiciel
+  relecteur: jancelin
+  source: github-materiel-agri
+  titre: FarmBot/farmbot-arduino-firmware
+  url: https://github.com/FarmBot/farmbot-arduino-firmware
+  description: Arduino firmware that executes g-code like commands over a serial line to move the FarmBot
+    and operate the tool mount
+  licence: mit
+  date_maj: '2026-07-22'
+  techno: C++
+  popularite: 447
+  mots_cles:
+  - farmbot
+  score: 73
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  propose_le: '2026-09-17'
+  publier: true
+  resume: Firmware Arduino exécutant des commandes de type G-code pour piloter les mouvements et les outils
+    de FarmBot. Il assure la communication série avec le système principal.
+  interet: ''
+  pertinence: oui
+  redige_par: mistral-small-latest
+  famille_initiale: materiel
+  mots_cles_fr:
+  - farmbot
+  - arduino
+  - firmware
+  - mouvements
+- id: 3fbddb3731f9
+  famille: logiciel
+  relecteur: jancelin
+  source: github-materiel-agri
+  titre: FarmBot/farmbot-js
+  url: https://github.com/FarmBot/farmbot-js
+  description: Javascript wrapper for FarmBot's authentication and RPC instructions
+  licence: mit
+  date_maj: '2026-09-10'
+  techno: TypeScript
+  popularite: 120
+  mots_cles:
+  - farmbot
+  score: 71
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  propose_le: '2026-09-17'
+  publier: true
+  resume: Bibliothèque JavaScript facilitant l'authentification et l'envoi d'instructions RPC à FarmBot.
+    Elle simplifie l'intégration et l'interaction avec l'API du dispositif.
+  interet: ''
+  pertinence: oui
+  redige_par: mistral-small-latest
+  famille_initiale: materiel
+  mots_cles_fr:
+  - farmbot
+  - javascript
+  - api
+  - authentification
+- id: 0f9f451e065a
+  famille: logiciel
+  relecteur: jancelin
+  source: github-materiel-agri
+  titre: marty-mcgee/threed-garden
+  url: https://github.com/marty-mcgee/threed-garden
+  description: '🥕 ThreeD Garden: WebGL 3D Environment Interface for Next.JS React TypeScript Three.JS
+    React-Three Physics, 2D Paper.JS, APIs: Apollo GraphQL, WordPress, CSS: Tailwind, Radix-UI, Libraries:
+    FarmBot React 3D'
+  licence: mit
+  date_maj: '2026-04-20'
+  techno: JavaScript
+  popularite: 39
+  mots_cles:
+  - apollo-client
+  - farmbot
+  - graphql
+  - javascript
+  - next
+  - nextjs
+  - open-ai
+  - paperjs
+  score: 63
+  raisons:
+  - licence mit
+  - actif (moins d'un an)
+  propose_le: '2026-09-17'
+  publier: true
+  resume: ThreeD Garden est une interface web 3D en temps réel pour visualiser des environnements agricoles,
+    développée avec React, Three.js et Next.js. Elle permet de simuler des interactions avec des outils
+    agricoles comme FarmBot.
+  interet: Ce projet intéresse les développeurs et chercheurs en agriculture numérique souhaitant explorer
+    des interfaces 3D pour la gestion des cultures.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  famille_initiale: materiel
+  mots_cles_fr:
+  - agriculture numérique
+  - simulation 3d
+  - react
+  - three.js
+  - webgl
+- id: 5f0b769462f2
+  famille: materiel
+  relecteur: jancelin
+  source: github-materiel-agri
+  titre: FarmBot-Docs/farmbot-genesis
+  url: https://github.com/FarmBot-Docs/farmbot-genesis
+  description: FarmBot Genesis hardware documentation
+  licence: mit
+  date_maj: '2026-05-05'
+  techno: Ruby
+  popularite: 11
+  mots_cles:
+  - farmbot
+  score: 61
+  raisons:
+  - licence mit
+  - actif (moins d'un an)
+  propose_le: '2026-09-17'
+  publier: true
+  resume: FarmBot Genesis est la documentation technique du matériel du robot agricole FarmBot, incluant
+    ses spécifications et son assemblage. Elle permet de construire et configurer ce robot de culture
+    automatisé.
+  interet: Ce projet intéresse les agriculteurs, makers et techniciens souhaitant déployer des solutions
+    d'agriculture automatisée.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - agriculture automatisée
+  - farmbot
+  - robot agricole
+  - documentation technique
+- id: a6e26b50aa3c
+  famille: materiel
+  relecteur: jancelin
+  source: github-materiel-agri
+  titre: FarmBot-Docs/farmbot-meta
+  url: https://github.com/FarmBot-Docs/farmbot-meta
+  description: FarmBot Inc business documentation
+  licence: mit
+  date_maj: '2026-05-05'
+  techno: JavaScript
+  popularite: 3
+  mots_cles:
+  - farmbot
+  score: 58
+  raisons:
+  - licence mit
+  - actif (moins d'un an)
+  propose_le: '2026-09-17'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - farmbot
+  - documentation commerciale
+- id: fa9fd9520b8f
+  famille: materiel
+  relecteur: jancelin
+  source: github-materiel-agri
+  titre: FarmBot-Docs/farmbot-express
+  url: https://github.com/FarmBot-Docs/farmbot-express
+  description: FarmBot Express hardware documentation
+  licence: mit
+  date_maj: '2026-05-05'
+  techno: Ruby
+  popularite: 3
+  mots_cles:
+  - farmbot
+  score: 58
+  raisons:
+  - licence mit
+  - actif (moins d'un an)
+  propose_le: '2026-09-17'
+  publier: true
+  resume: FarmBot Express est la documentation technique du matériel du robot agricole FarmBot Express,
+    incluant ses spécifications et son assemblage. Elle permet de construire et configurer ce robot de
+    culture automatisé.
+  interet: Ce projet intéresse les agriculteurs, makers et techniciens souhaitant déployer des solutions
+    d'agriculture automatisée.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - agriculture automatisée
+  - farmbot
+  - robot agricole
+  - documentation technique
+- id: 6c11ca879a6f
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: Hydr'eau en Provence-Alpes-Côte d'Azur
+  url: https://www.data.gouv.fr/datasets/hydr-eau-en-provence-alpes-cote-d-azur
+  description: Objectifs de la démarche mené par le CRIGE PACA * Réaliser un audit de la base Hydra afin
+    d’actualiser/optimiser les données et son modèle * Mettre en place un réseau d’utilisateurs/contributeurs
+    de cette base commune et ouverte * Créer une application simple et souple de consultation et contribution
+    à la base de données, répondant aux problématiques de la ressource en eau en région. Pour en savoi
+  licence: etalab-2.0
+  date_maj: '2026-09-14'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculteurs
+  - agriculture
+  - cours-d-eau
+  - eau
+  - eau-agricole
+  - foncier-agricole
+  - hydraulique
+  - hydraulique-agricole
+  score: 92
+  raisons:
+  - licence etalab-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agricole, agriculteur, agriculture'
+  propose_le: '2026-09-17'
+  publier: true
+  resume: Hydr'eau en Provence-Alpes-Côte d'Azur est une base de données ouverte sur la ressource en eau,
+    incluant un audit et une application de consultation pour les acteurs agricoles. Elle permet de partager
+    et actualiser des données sur l'eau agricole.
+  interet: Ce projet intéresse les agriculteurs, gestionnaires de l'eau et collectivités pour une gestion
+    collaborative et transparente de la ressource en eau.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - eau agricole
+  - ressource en eau
+  - agriculteurs
+  - données ouvertes
+  - paca
+- id: 154b3e2f57f8
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: Délais et distances réglementaires des produits phytosanitaires autorisés en vigne (extraction
+    E-Phy)
+  url: https://www.data.gouv.fr/datasets/delais-et-distances-reglementaires-des-produits-phytosanitaires-autorises-en-vigne-extraction-e-phy
+  description: 'Extraction, **filtrée sur la vigne**, du catalogue officiel E-Phy de l''Anses : pour chaque
+    usage vigne encore autorisé, les délais et distances utiles au moment du traitement. ## Pourquoi ce
+    jeu Le catalogue E-Phy est complet mais difficile à exploiter sur le terrain : les informations d''un
+    même produit sont réparties sur plusieurs fichiers (usages, conditions d''emploi, classes et mentions
+    de dang'
+  licence: etalab-2.0
+  date_maj: '2026-07-30'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - delai-avant-recolte
+  - ephy
+  - pesticides
+  - produits-phytosanitaires
+  - reglementation
+  - vigne
+  - viticulture
+  score: 92
+  raisons:
+  - licence etalab-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, viticulture, pesticide, phytosanitaire, recolte'
+  propose_le: '2026-09-17'
+  publier: true
+  resume: Ce jeu de données extrait les délais et distances réglementaires pour l'usage de produits phytosanitaires
+    en vigne depuis le catalogue E-Phy de l'Anses. Il facilite l'accès aux informations réglementaires
+    pour les viticulteurs.
+  interet: Ce projet intéresse les viticulteurs et conseillers agricoles pour une application directe
+    des règles phytosanitaires en vigne.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - ephy
+  - pesticides
+  - réglementation
+  - viticulture
+  - délais avant récolte
+- id: 33496b925a05
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: Ventes de pesticides par département
+  url: https://www.data.gouv.fr/datasets/ventes-de-pesticides-par-departement-1
+  description: La Loi sur l’Eau et les Milieux Aquatiques a institué l’obligation pour les distributeurs
+    de produits phytosanitaires de déclarer leurs ventes annuelles (année n) de produits phytosanitaires
+    avant le 31 mars (année n+1) auprès des agences et offices de l’eau dont dépendent leurs sièges dans
+    les conditions fixées par ces dernières. Cette déclaration doit permettre de suivre les ventes sur
+    le territ
+  licence: etalab-2.0
+  date_maj: '2026-06-24'
+  techno: ''
+  popularite: 1
+  mots_cles:
+  - agriculture
+  - agriculture-peche-sylviculture-et-alimentation
+  - environnement
+  - france-entiere
+  - pesticides
+  - pollutions-diffuses
+  - produits-phytopharmaceutiques
+  - produits-phytosanitaires
+  score: 92
+  raisons:
+  - licence etalab-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, pesticide, phytosanitaire, sylviculture'
+  propose_le: '2026-09-17'
+  publier: true
+  resume: Ce jeu de données recense les ventes annuelles de pesticides par département en France. Il permet
+    de suivre les quantités vendues et d'analyser les tendances d'utilisation des produits phytosanitaires.
+  interet: Il intéresse les acteurs agricoles et environnementaux pour évaluer l'impact des pratiques
+    phytosanitaires et orienter les politiques publiques.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - pesticides
+  - ventes
+  - département
+  - phytosanitaires
+  - suivi
+- id: b88251f3f756
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: Achats de pesticides par code postal
+  url: https://www.data.gouv.fr/datasets/achats-de-pesticides-par-code-postal-1
+  description: La Loi sur l’Eau et les Milieux Aquatiques a institué l’obligation pour les distributeurs
+    de produits phytosanitaires de déclarer leurs ventes annuelles (année n) de produits phytosanitaires
+    avant le 31 mars (année n+1) auprès des agences et offices de l’eau dont dépendent leurs sièges dans
+    les conditions fixées par ces dernières. Cette déclaration doit permettre de suivre les ventes sur
+    le territ
+  licence: etalab-2.0
+  date_maj: '2026-06-24'
+  techno: ''
+  popularite: 1
+  mots_cles:
+  - achats
+  - agriculture
+  - agriculture-peche-sylviculture-et-alimentation
+  - environnement
+  - france-entiere
+  - pesticides
+  - pollutions-diffuses
+  - produits-phytopharmaceutiques
+  score: 92
+  raisons:
+  - licence etalab-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, pesticide, phytosanitaire, sylviculture'
+  propose_le: '2026-09-17'
+  publier: true
+  resume: Ce jeu de données recense les achats de pesticides par code postal en France. Il permet d'identifier
+    les zones géographiques où les produits phytosanitaires sont les plus utilisés.
+  interet: Il intéresse les acteurs locaux et les chercheurs pour analyser la répartition spatiale des
+    usages de pesticides et adapter les actions de réduction.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - pesticides
+  - achats
+  - code postal
+  - phytosanitaires
+  - répartition
+- id: 418fd35c853a
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: Base de connaissances sur les produits phytopharmaceutiques à partir de sources ouvertes (C3PO)
+  url: https://www.data.gouv.fr/datasets/base-de-connaissances-sur-les-produits-phytopharmaceutiques-a-partir-de-sources-ouvertes-c3po-3
+  description: '----------- Contexte ----------- De nombreuses substances entrant dans la composition
+    des produits phytopharmaceutiques (PPP) ont un impact démontré sur la santé et l’environnement. Les
+    études s’intéressant à ces impacts peuvent mobiliser plusieurs sources de données de référence gérées
+    par différentes structures et ne reposant pas systématiquement sur des référentiels communs. Différents
+    acteurs '
+  licence: etalab-2.0
+  date_maj: '2026-08-10'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - agriculture-sylviculture-et-peche
+  - chimie
+  - eau
+  - environnement
+  - impact-sur-lenvironnement
+  - moyens-de-production-agricole
+  - pesticide
+  score: 92
+  raisons:
+  - licence etalab-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agricole, agriculture, pesticide, sylviculture'
+  propose_le: '2026-09-17'
+  publier: true
+  resume: Cette base de connaissances compile des données ouvertes sur les produits phytopharmaceutiques
+    et leurs impacts. Elle agrège des informations issues de différentes sources pour faciliter l'analyse
+    des risques.
+  interet: Elle intéresse les acteurs de la santé publique et de l'environnement pour évaluer les dangers
+    liés aux substances actives et orienter les réglementations.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - phytopharmaceutiques
+  - impacts
+  - santé
+  - environnement
+  - substances actives
+- id: c6c62295bb1e
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: Petites régions agricoles (source Ministère de l'agriculture 2017)
+  url: https://www.data.gouv.fr/datasets/petites-regions-agricoles-source-ministere-de-lagriculture-2017
+  description: Les régions agricoles (RA) et petites régions agricoles (PRA) ont été définies à partir
+    de 1946 pour caractériser des zones agricoles homogènes. La RA couvre un nombre entier de communes
+    et peut s’étendre sur plusieurs départements. La France métropolitaine est découpée en 432 RA (hors
+    Paris). La PRA est constituée par le croisement du département et de la RA. On compte 713 PRA.
+  licence: etalab-2.0
+  date_maj: '2026-09-13'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - action-damenagement
+  - agriculture
+  - code-officiel-geographique-cog
+  - developpement-de-lagriculture
+  - inspire
+  - occupation-des-terres
+  - peche-cultures-marines-agriculture-foresterie
+  - zonage-statistique
+  score: 91
+  raisons:
+  - licence etalab-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agricole, agriculture, culture'
+  propose_le: '2026-09-17'
+  publier: true
+  resume: Ce jeu de données décrit les petites régions agricoles (PRA) en France métropolitaine, définies
+    par croisement du département et de la région agricole. Il permet de caractériser des zones agricoles
+    homogènes.
+  interet: Il intéresse les acteurs de l'aménagement du territoire et du développement agricole pour adapter
+    les politiques locales aux spécificités des territoires.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - régions agricoles
+  - territoire
+  - aménagement
+  - développement agricole
+  - homogénéité
+- id: dfaa8673abfd
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: Surface agricole utilisée par type de culture et par EPCI en 2020
+  url: https://www.data.gouv.fr/datasets/surface-agricole-utilisee-par-type-de-culture-et-par-epci-en-2020
+  description: '**Motivations pour la création du jeu de données**\ Cet indicateur détaille la composition
+    de la surface agricole utilisée par type de culture (grandes cultures, cultures permanentes, prairies)
+    à l''échelle intercommunale. **Composition du jeu de données**\ 1 255 lignes, une ligne par EPCI.
+    La surface agricole utilisée totale par EPCI varie de 187 à 140897 hectares, pour un nombre d''exploitations
+    v'
+  licence: etalab-2.0
+  date_maj: '2026-07-15'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - cultures
+  - recensement-agricole
+  - secteur-agricole
+  - surface-agricole
+  - type-de-culture
+  score: 91
+  raisons:
+  - licence etalab-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agricole, agriculture, culture'
+  propose_le: '2026-09-17'
+  publier: true
+  resume: Ce jeu de données détaille la surface agricole utilisée par type de culture et par EPCI en 2020.
+    Il permet d'analyser la répartition des cultures à l'échelle intercommunale.
+  interet: Il intéresse les acteurs agricoles et les collectivités pour planifier les politiques de développement
+    rural et évaluer les dynamiques territoriales.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - surface agricole
+  - cultures
+  - EPCI
+  - intercommunalité
+  - répartition
+- id: '778970822789'
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: Pesticides - Nombre de doses unités (NODU)
+  url: https://www.data.gouv.fr/datasets/pesticides-nombre-de-doses-unites-nodu
+  description: Cet indicateur, exprimé en hectares, est calculé pour chaque substance active présente
+    dans les produits phytosanitaires (pesticides) en faisant le ratio de la quantité de substances actives
+    (QSA) avec la Dose Unité (DU) de la substance active. Cette DU correspond à la dose maximale autorisée
+    pour traiter un hectare. La somme sur toutes les substances est ensuite réalisée. Le calcul du NODU
+    permet
+  licence: odbl-1.0
+  date_maj: '2026-09-17'
+  techno: ''
+  popularite: 1
+  mots_cles:
+  - achats-de-pesticides
+  - agriculture
+  - intrants
+  - pesticides
+  - pollution
+  - pollution-de-leau
+  - sante
+  - utilisation-des-pesticides
+  score: 88
+  raisons:
+  - licence odbl-1.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, pesticide, phytosanitaire'
+  propose_le: '2026-09-17'
+  publier: true
+  resume: Cet indicateur calcule le nombre de doses unités (NODU) pour chaque substance active des pesticides
+    en France. Il permet d'évaluer l'intensité d'utilisation des produits phytosanitaires.
+  interet: Il intéresse les acteurs environnementaux et les décideurs pour mesurer l'impact des pratiques
+    phytosanitaires et orienter les politiques de réduction des intrants.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - nodu
+  - pesticides
+  - doses unités
+  - phytosanitaires
+  - intensité d'utilisation
+- id: aa4052ddabda
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: v8shanth/india-crop-yield-prediction
+  url: https://huggingface.co/datasets/v8shanth/india-crop-yield-prediction
+  description: 🇮🇳 India Crop Yield Prediction Dataset (2000–2026) A comprehensive dataset for building
+    crop yield prediction models for Indian agriculture, covering 27 years (2000–2026), 31 states/UTs,
+    and 62 crop types. Dataset Summary Metric Value Total Records 21,750 Y
+  licence: apache-2.0
+  date_maj: '2026-09-10'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - india
+  - crop-yield
+  - prediction
+  - regression
+  - time-series
+  score: 88
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, crop, yield'
+  propose_le: '2026-09-17'
+  publier: true
+  resume: Ce jeu de données contient des informations sur les rendements agricoles en Inde de 2000 à 2026,
+    couvrant 31 États et 62 types de cultures. Il permet d'entraîner des modèles de prédiction de rendement
+    pour l'agriculture indienne.
+  interet: Ce projet intéresse la communauté agricole francophone pour son approche de modélisation des
+    rendements agricoles, bien que centrée sur l'Inde.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  famille_initiale: modele
+  mots_cles_fr:
+  - inde
+  - rendement agricole
+  - prédiction
+  - jeu de données
+  - modèle
+- id: 30fd807fe8fb
+  famille: modele
+  relecteur: ionosphere
+  source: hf-modeles-agri
+  titre: brimbim/agriculture-crop-disease-model-v2
+  url: https://huggingface.co/brimbim/agriculture-crop-disease-model-v2
+  description: peft safetensors mixtral agriculture crop-disease autoscientist-challenge lora mistral
+    smallholder-farming en
+  licence: apache-2.0
+  date_maj: '2026-06-15'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - peft
+  - safetensors
+  - mixtral
+  - agriculture
+  - crop-disease
+  - autoscientist-challenge
+  - lora
+  - mistral
+  score: 85
+  raisons:
+  - licence apache-2.0
+  - actif (moins d'un an)
+  - 'vocabulaire : agriculture, farm, farming, crop'
+  propose_le: '2026-09-17'
+  publier: true
+  resume: ''
+  interet: ''
+  pertinence: inconnu
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - peft
+  - safetensors
+  - mixtral
+  - agriculture
+  - maladie des cultures
+resume_genere_le: 2026-09-17 07:11

@@ -1,0 +1,473 @@
+{
+ "0f9f451e065a": {
+  "famille": "logiciel",
+  "id": "0f9f451e065a",
+  "interet": "Ce projet intéresse les développeurs et chercheurs en agriculture numérique souhaitant explorer des interfaces 3D pour la gestion des cultures.",
+  "mots_cles": [
+   "agriculture numérique",
+   "simulation 3d",
+   "react",
+   "three.js",
+   "webgl"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "ThreeD Garden est une interface web 3D en temps réel pour visualiser des environnements agricoles, développée avec React, Three.js et Next.js. Elle permet de simuler des interactions avec des outils agricoles comme FarmBot."
+ },
+ "154b3e2f57f8": {
+  "famille": "donnees",
+  "id": "154b3e2f57f8",
+  "interet": "Ce projet intéresse les viticulteurs et conseillers agricoles pour une application directe des règles phytosanitaires en vigne.",
+  "mots_cles": [
+   "ephy",
+   "pesticides",
+   "réglementation",
+   "viticulture",
+   "délais avant récolte"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce jeu de données extrait les délais et distances réglementaires pour l'usage de produits phytosanitaires en vigne depuis le catalogue E-Phy de l'Anses. Il facilite l'accès aux informations réglementaires pour les viticulteurs."
+ },
+ "21072f6bce2a": {
+  "famille": "logiciel",
+  "id": "21072f6bce2a",
+  "interet": "Ce projet intéresse les agriculteurs et éleveurs francophones cherchant des solutions matérielles et logicielles pour le monitoring en temps réel.",
+  "mots_cles": [
+   "iot",
+   "esp32",
+   "monitoring",
+   "mqtt",
+   "agriculture intelligente"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Cette plateforme IoT basée sur ESP32 permet de surveiller en temps réel des paramètres agricoles via MQTT. Elle collecte et transmet des données de capteurs pour le suivi des cultures ou élevages."
+ },
+ "30fd807fe8fb": {
+  "famille": "modele",
+  "id": "30fd807fe8fb",
+  "interet": "",
+  "mots_cles": [
+   "peft",
+   "safetensors",
+   "mixtral",
+   "agriculture",
+   "maladie des cultures"
+  ],
+  "pertinence": "inconnu",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
+ "33496b925a05": {
+  "famille": "donnees",
+  "id": "33496b925a05",
+  "interet": "Il intéresse les acteurs agricoles et environnementaux pour évaluer l'impact des pratiques phytosanitaires et orienter les politiques publiques.",
+  "mots_cles": [
+   "pesticides",
+   "ventes",
+   "département",
+   "phytosanitaires",
+   "suivi"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce jeu de données recense les ventes annuelles de pesticides par département en France. Il permet de suivre les quantités vendues et d'analyser les tendances d'utilisation des produits phytosanitaires."
+ },
+ "3cf912ac5204": {
+  "famille": "logiciel",
+  "id": "3cf912ac5204",
+  "interet": "Ce projet intéresse les viticulteurs et chercheurs en agronomie pour son application directe dans l'optimisation des pratiques culturales en viticulture.",
+  "mots_cles": [
+   "viticulture",
+   "microclimat",
+   "analyse de données",
+   "python",
+   "recherche"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Outil d'analyse des effets thermiques des matériaux et configurations de tubes de culture sur le microclimat des jeunes plants de vigne pendant la dormance. Il fournit une méthodologie complète pour étudier ces impacts."
+ },
+ "3fbddb3731f9": {
+  "famille": "logiciel",
+  "id": "3fbddb3731f9",
+  "interet": "",
+  "mots_cles": [
+   "farmbot",
+   "javascript",
+   "api",
+   "authentification"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Bibliothèque JavaScript facilitant l'authentification et l'envoi d'instructions RPC à FarmBot. Elle simplifie l'intégration et l'interaction avec l'API du dispositif."
+ },
+ "418fd35c853a": {
+  "famille": "donnees",
+  "id": "418fd35c853a",
+  "interet": "Elle intéresse les acteurs de la santé publique et de l'environnement pour évaluer les dangers liés aux substances actives et orienter les réglementations.",
+  "mots_cles": [
+   "phytopharmaceutiques",
+   "impacts",
+   "santé",
+   "environnement",
+   "substances actives"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Cette base de connaissances compile des données ouvertes sur les produits phytopharmaceutiques et leurs impacts. Elle agrège des informations issues de différentes sources pour faciliter l'analyse des risques."
+ },
+ "42eba7f9ae2b": {
+  "famille": "logiciel",
+  "id": "42eba7f9ae2b",
+  "interet": "Ce projet intéresse les producteurs en serres ou cultures indoor francophones cherchant une solution flexible pour l'automatisation climatique.",
+  "mots_cles": [
+   "serres",
+   "climatisation",
+   "automatisation",
+   "capteurs",
+   "cultures indoor"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce système permet de surveiller et contrôler à distance le climat dans les serres et cultures indoor via des capteurs et actionneurs compatibles. Il fonctionne sans dépendance à une marque matérielle spécifique."
+ },
+ "4b34f19545cd": {
+  "famille": "logiciel",
+  "id": "4b34f19545cd",
+  "interet": "Ce projet intéresse la communauté agricole francophone pour son approche modulaire et sécurisée de l'automatisation, applicable à divers systèmes de production.",
+  "mots_cles": [
+   "agriculture",
+   "automatisation",
+   "hydroponie",
+   "aquaponie",
+   "sécurité"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Système modulaire d'automatisation agricole développé par Rhizomatic Systems, compatible avec l'hydroponie, l'aquaponie et l'agriculture traditionnelle. Il permet de gérer différents modes de culture via une interface sécurisée et adaptable."
+ },
+ "4ba1415fa9a1": {
+  "famille": "logiciel",
+  "id": "4ba1415fa9a1",
+  "interet": "",
+  "mots_cles": [
+   "farmbot",
+   "interface web",
+   "contrôle à distance",
+   "automatisation"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Application web permettant de configurer, personnaliser et contrôler FarmBot depuis n'importe quel appareil. Elle offre une interface pour gérer les paramètres et les actions du dispositif."
+ },
+ "5f0b769462f2": {
+  "famille": "matériel",
+  "id": "5f0b769462f2",
+  "interet": "Ce projet intéresse les agriculteurs, makers et techniciens souhaitant déployer des solutions d'agriculture automatisée.",
+  "mots_cles": [
+   "agriculture automatisée",
+   "farmbot",
+   "robot agricole",
+   "documentation technique"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "FarmBot Genesis est la documentation technique du matériel du robot agricole FarmBot, incluant ses spécifications et son assemblage. Elle permet de construire et configurer ce robot de culture automatisé."
+ },
+ "6c11ca879a6f": {
+  "famille": "donnees",
+  "id": "6c11ca879a6f",
+  "interet": "Ce projet intéresse les agriculteurs, gestionnaires de l'eau et collectivités pour une gestion collaborative et transparente de la ressource en eau.",
+  "mots_cles": [
+   "eau agricole",
+   "ressource en eau",
+   "agriculteurs",
+   "données ouvertes",
+   "paca"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Hydr'eau en Provence-Alpes-Côte d'Azur est une base de données ouverte sur la ressource en eau, incluant un audit et une application de consultation pour les acteurs agricoles. Elle permet de partager et actualiser des données sur l'eau agricole."
+ },
+ "776437274d91": {
+  "famille": "logiciel",
+  "id": "776437274d91",
+  "interet": "",
+  "mots_cles": [
+   "apple",
+   "containerization",
+   "swift",
+   "gui",
+   "mlx-lm"
+  ],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
+ "778970822789": {
+  "famille": "donnees",
+  "id": "778970822789",
+  "interet": "Il intéresse les acteurs environnementaux et les décideurs pour mesurer l'impact des pratiques phytosanitaires et orienter les politiques de réduction des intrants.",
+  "mots_cles": [
+   "nodu",
+   "pesticides",
+   "doses unités",
+   "phytosanitaires",
+   "intensité d'utilisation"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Cet indicateur calcule le nombre de doses unités (NODU) pour chaque substance active des pesticides en France. Il permet d'évaluer l'intensité d'utilisation des produits phytosanitaires."
+ },
+ "a6e26b50aa3c": {
+  "famille": "materiel",
+  "id": "a6e26b50aa3c",
+  "interet": "",
+  "mots_cles": [
+   "farmbot",
+   "documentation commerciale"
+  ],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
+ "aa4052ddabda": {
+  "famille": "donnees",
+  "id": "aa4052ddabda",
+  "interet": "Ce projet intéresse la communauté agricole francophone pour son approche de modélisation des rendements agricoles, bien que centrée sur l'Inde.",
+  "mots_cles": [
+   "inde",
+   "rendement agricole",
+   "prédiction",
+   "jeu de données",
+   "modèle"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce jeu de données contient des informations sur les rendements agricoles en Inde de 2000 à 2026, couvrant 31 États et 62 types de cultures. Il permet d'entraîner des modèles de prédiction de rendement pour l'agriculture indienne."
+ },
+ "b359187bebd4": {
+  "famille": "logiciel",
+  "id": "b359187bebd4",
+  "interet": "",
+  "mots_cles": [
+   "décision spatiale",
+   "recommandation de cultures",
+   "géospatial",
+   "analyse de données",
+   "turquie"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Agri-DSS est un système d'aide à la décision spatiale pour la région de l'Antalya en Turquie. Il recommande des cultures en fonction des données locales et des analyses géospatiales."
+ },
+ "b3d5683097c3": {
+  "famille": "logiciel",
+  "id": "b3d5683097c3",
+  "interet": "Ce projet est particulièrement utile pour les acteurs de la recherche et du développement agricole en Afrique francophone.",
+  "mots_cles": [
+   "bénin",
+   "afrique de l'ouest",
+   "agronomie",
+   "données géospatiales",
+   "recherche"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "kadipy est une bibliothèque Python destinée aux agronomes et chercheurs pour analyser des données agricoles au Bénin et en Afrique de l'Ouest. Elle facilite le traitement de données géospatiales et agricoles."
+ },
+ "b88251f3f756": {
+  "famille": "donnees",
+  "id": "b88251f3f756",
+  "interet": "Il intéresse les acteurs locaux et les chercheurs pour analyser la répartition spatiale des usages de pesticides et adapter les actions de réduction.",
+  "mots_cles": [
+   "pesticides",
+   "achats",
+   "code postal",
+   "phytosanitaires",
+   "répartition"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce jeu de données recense les achats de pesticides par code postal en France. Il permet d'identifier les zones géographiques où les produits phytosanitaires sont les plus utilisés."
+ },
+ "c06242af2862": {
+  "famille": "logiciel",
+  "id": "c06242af2862",
+  "interet": "Ce projet intéresse les agriculteurs et conseillers en gestion souhaitant un outil complet et modulaire pour leur exploitation.",
+  "mots_cles": [
+   "gestion",
+   "fmis",
+   "erp",
+   "ressources agricoles",
+   "suivi financier"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "ekylibre est un système d'information de gestion agricole (FMIS) open source qui connecte les exploitations au reste du monde. Il permet de gérer les ressources, les tâches et les données financières des fermes."
+ },
+ "c6c62295bb1e": {
+  "famille": "donnees",
+  "id": "c6c62295bb1e",
+  "interet": "Il intéresse les acteurs de l'aménagement du territoire et du développement agricole pour adapter les politiques locales aux spécificités des territoires.",
+  "mots_cles": [
+   "régions agricoles",
+   "territoire",
+   "aménagement",
+   "développement agricole",
+   "homogénéité"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce jeu de données décrit les petites régions agricoles (PRA) en France métropolitaine, définies par croisement du département et de la région agricole. Il permet de caractériser des zones agricoles homogènes."
+ },
+ "c98506bca1a4": {
+  "famille": "logiciel",
+  "id": "c98506bca1a4",
+  "interet": "",
+  "mots_cles": [
+   "cms",
+   "asp.net core",
+   "framework modulaire",
+   "dotnet",
+   "orchard"
+  ],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": "Orchard Core est un framework open source modulaire pour applications web et un système de gestion de contenu (CMS) basé sur ASP.NET Core. Il permet de créer des sites web ou applications personnalisables."
+ },
+ "cb9aa159ce42": {
+  "famille": "logiciel",
+  "id": "cb9aa159ce42",
+  "interet": "Ce projet intéresse les agriculteurs et conseillers en agriculture de précision pour son approche accessible et basée sur l'imagerie satellite.",
+  "mots_cles": [
+   "surveillance des cultures",
+   "imagerie satellite",
+   "agriculture de précision",
+   "détection d'anomalies",
+   "décision data-driven"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "OpenFarm permet de surveiller la santé des cultures via l'imagerie satellite et de détecter des anomalies précocement. Il aide les agriculteurs à prendre des décisions basées sur des données."
+ },
+ "cee2b6e345e8": {
+  "famille": "logiciel",
+  "id": "cee2b6e345e8",
+  "interet": "Ce projet intéresse la communauté agricole francophone en centralisant des ressources techniques accessibles et adaptées aux besoins locaux.",
+  "mots_cles": [
+   "agriculture de précision",
+   "ressources open source",
+   "outils techniques",
+   "agtech",
+   "liste curated"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce dépôt recense des ressources open source dédiées à l'agriculture de précision. Il permet d'accéder à une sélection organisée de logiciels et outils utiles pour les acteurs du secteur."
+ },
+ "d91a27332190": {
+  "famille": "logiciel",
+  "id": "d91a27332190",
+  "interet": "Ce projet intéresse les acteurs de l'agritech et de la recherche en agriculture de précision, notamment pour son approche innovante.",
+  "mots_cles": [
+   "agriculture de précision",
+   "apprentissage automatique",
+   "géospatial",
+   "satellite",
+   "durabilité"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "FarmVibes.AI propose des modèles d'apprentissage automatique géospatial multimodal pour l'agriculture et la durabilité. Il permet d'analyser des données satellites et de fournir des insights pour l'optimisation des pratiques agricoles."
+ },
+ "da2c672d153b": {
+  "famille": "logiciel",
+  "id": "da2c672d153b",
+  "interet": "Ce logiciel est largement utilisé dans la communauté agricole francophone pour sa flexibilité et son approche open source.",
+  "mots_cles": [
+   "gestion",
+   "exploitation agricole",
+   "suivi",
+   "cultures",
+   "bétail"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "farmOS est une application web de gestion des données agricoles pour enregistrer et suivre les activités, les cultures, le bétail et le matériel sur une exploitation. Elle permet aux agriculteurs et conseillers agricoles de centraliser leurs données opérationnelles."
+ },
+ "dfaa8673abfd": {
+  "famille": "donnees",
+  "id": "dfaa8673abfd",
+  "interet": "Il intéresse les acteurs agricoles et les collectivités pour planifier les politiques de développement rural et évaluer les dynamiques territoriales.",
+  "mots_cles": [
+   "surface agricole",
+   "cultures",
+   "EPCI",
+   "intercommunalité",
+   "répartition"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce jeu de données détaille la surface agricole utilisée par type de culture et par EPCI en 2020. Il permet d'analyser la répartition des cultures à l'échelle intercommunale."
+ },
+ "f56546dd6dc3": {
+  "famille": "logiciel",
+  "id": "f56546dd6dc3",
+  "interet": "",
+  "mots_cles": [
+   "farmbot",
+   "arduino",
+   "firmware",
+   "mouvements"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Firmware Arduino exécutant des commandes de type G-code pour piloter les mouvements et les outils de FarmBot. Il assure la communication série avec le système principal."
+ },
+ "f7e488e78bba": {
+  "famille": "logiciel",
+  "id": "f7e488e78bba",
+  "interet": "Ce projet intéresse les éleveurs ovins francophones souhaitant optimiser la gestion génétique et écologique de leurs troupeaux avec des outils accessibles.",
+  "mots_cles": [
+   "élevage ovin",
+   "gestion génétique",
+   "intelligence artificielle",
+   "suivi écologique",
+   "outil non technique"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce projet propose un système de gestion d'élevage ovin basé sur GitHub et des outils d'intelligence artificielle pour le suivi génétique et écologique. Il inclut des guides pour les utilisateurs non techniques."
+ },
+ "fa9fd9520b8f": {
+  "famille": "matériel",
+  "id": "fa9fd9520b8f",
+  "interet": "Ce projet intéresse les agriculteurs, makers et techniciens souhaitant déployer des solutions d'agriculture automatisée.",
+  "mots_cles": [
+   "agriculture automatisée",
+   "farmbot",
+   "robot agricole",
+   "documentation technique"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "FarmBot Express est la documentation technique du matériel du robot agricole FarmBot Express, incluant ses spécifications et son assemblage. Elle permet de construire et configurer ce robot de culture automatisé."
+ },
+ "fe62f3dd902b": {
+  "famille": "logiciel",
+  "id": "fe62f3dd902b",
+  "interet": "",
+  "mots_cles": [
+   "farmbot",
+   "raspberry pi",
+   "automatisation",
+   "contrôle"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Système d'exploitation et logiciels associés fonctionnant sur le Raspberry Pi de FarmBot, permettant le contrôle de l'appareil. Il gère les commandes et les interactions avec le matériel."
+ }
+}
