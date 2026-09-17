@@ -52,7 +52,7 @@ CONSIGNE = """Tu prépares la veille quotidienne de l'association OSFarm, qui re
 
 Pour chaque projet fourni, produis :
 - resume : deux phrases en français, factuelles, sans superlatif ni formule promotionnelle. Première phrase : ce que c'est et ce que ça fait. Deuxième phrase : pour qui c'est utile concrètement.
-- interet : une phrase courte expliquant à quoi ce projet peut servir en agriculture, ou la chaîne vide si l'intérêt est faible. Déduis-la uniquement de ce que fait le projet : n'affirme jamais qu'il est utilisé, connu, populaire, adopté ou reconnu, et ne parle ni de langue ni de francophonie, car le texte fourni n'en dit rien.
+- interet : une phrase courte expliquant à quoi ce projet peut servir en agriculture, ou la chaîne vide si l'intérêt est faible. Déduis-la uniquement de ce que fait le projet : n'affirme jamais qu'il est utilisé, connu, populaire, adopté ou reconnu, ne parle ni de langue ni de francophonie, et ne donne en exemple aucune tâche, culture ou opération que le texte fourni ne cite pas.
 - famille : logiciel, materiel, donnees ou modele.
 - pertinence : « oui » si le projet concerne réellement l'agriculture, l'élevage, la viticulture, la forêt ou l'alimentation ; « non » sinon (par exemple un projet de finance, de jeu vidéo ou d'infrastructure informatique qui emploie le mot « farm » dans un autre sens).
 - mots_cles : trois à cinq mots-clés en français, en minuscules.
@@ -174,6 +174,8 @@ def ecrire_corps_pr(contenu: dict, fichier: Path) -> None:
             if c.get("pertinence") == "non":
                 lignes.append("  ⚠️ Le modèle juge ce projet hors sujet agricole : "
                               "écarté par défaut.")
+            elif not c.get("resume"):
+                lignes.append("  ⚠️ Le modèle n'a pas rédigé de résumé : écarté par défaut.")
         lignes.append("")
 
     pannes = contenu.get("pannes") or []
@@ -226,7 +228,7 @@ def main() -> int:
     _, sources = charger_configuration()
     familles_fixes = {src.get("id") for src in sources if src.get("famille_fixe")}
 
-    hors_sujet = 0
+    hors_sujet = sans_resume = 0
     for c in candidats:
         if "resume" in c:
             continue
@@ -244,6 +246,11 @@ def main() -> int:
         if c["pertinence"] == "non":
             c["publier"] = False      # le relecteur peut revenir dessus
             hors_sujet += 1
+        elif not c["resume"]:
+            # Sans résumé, la page afficherait la description brute, souvent en
+            # anglais et tronquée ; le modèle ne la juge pas toujours « inconnu ».
+            c["publier"] = False
+            sans_resume += 1
 
     contenu["candidats"] = candidats
     contenu["resume_genere_le"] = datetime.now().strftime("%Y-%m-%d %H:%M")
@@ -255,6 +262,8 @@ def main() -> int:
     print(f"écrit : {fichier} et {CORPS_PR.relative_to(RACINE)}")
     if hors_sujet:
         print(f"{hors_sujet} fiche(s) écartée(s) par défaut : jugées hors sujet agricole")
+    if sans_resume:
+        print(f"{sans_resume} fiche(s) écartée(s) par défaut : aucun résumé rédigé")
     return 0
 
 

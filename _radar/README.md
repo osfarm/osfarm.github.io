@@ -100,11 +100,15 @@ popularité, public, pays, partenaires. Au premier lot, avant ce resserrement,
 il avait écrit de farmOS qu'il était « largement utilisé dans la communauté
 agricole francophone ». Au deuxième lot, il plaquait encore « pour les acteurs
 francophones » sur des projets qui n'en disent rien, par écho à la consigne,
-qui ne mentionne plus la francophonie. La ligne « intérêt » reste celle à
+qui ne mentionne plus la francophonie. Au troisième, il illustrait l'intérêt
+de tâches absentes du texte (FarmBot « pour le désherbage ou la récolte ») :
+la consigne interdit désormais ces exemples. La ligne « intérêt » reste celle à
 relire en priorité.
 
 Il décide aussi `pertinence` (« non » écarte la fiche par défaut) et peut
-changer la `famille`, sauf pour les sources en `famille_fixe`.
+changer la `famille`, sauf pour les sources en `famille_fixe`. Une fiche sans
+résumé est aussi écartée par défaut, quelle que soit sa pertinence : la page
+afficherait sinon la description brute, souvent en anglais et tronquée.
 
 ## Mémoire
 
