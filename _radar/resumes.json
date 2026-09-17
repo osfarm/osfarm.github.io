@@ -1,0 +1,464 @@
+{
+ "0f9f451e065a": {
+  "famille": "logiciel",
+  "id": "0f9f451e065a",
+  "interet": "",
+  "mots_cles": [
+   "farmbot",
+   "javascript",
+   "nextjs",
+   "webgl"
+  ],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
+ "154b3e2f57f8": {
+  "famille": "donnees",
+  "id": "154b3e2f57f8",
+  "interet": "Ce projet simplifie l'accès aux réglementations phytosanitaires pour les viticulteurs en organisant les données par usage.",
+  "mots_cles": [
+   "vigne",
+   "phytosanitaires",
+   "réglementation",
+   "ephy",
+   "délais-de-traitement"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Extraction filtrée des délais et distances réglementaires pour les traitements phytosanitaires en vigne. Elle synthétise les informations du catalogue E-Phy."
+ },
+ "1b8a2abb9b86": {
+  "famille": "modele",
+  "id": "1b8a2abb9b86",
+  "interet": "Ce projet permet d'identifier automatiquement des maladies végétales à partir d'images, ce qui peut aider à la surveillance sanitaire des cultures.",
+  "mots_cles": [
+   "maladie végétale",
+   "classification d'images",
+   "apprentissage par transfert",
+   "efficientnet",
+   "grad-cam"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Modèle de classification d'images pour détecter des maladies sur des plantes à partir de photos. Il utilise une architecture EfficientNet avec un apprentissage par transfert et des visualisations Grad-CAM."
+ },
+ "30fd807fe8fb": {
+  "famille": "modele",
+  "id": "30fd807fe8fb",
+  "interet": "",
+  "mots_cles": [],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
+ "33496b925a05": {
+  "famille": "donnees",
+  "id": "33496b925a05",
+  "interet": "Ce projet permet de suivre les ventes de pesticides à l'échelle départementale pour évaluer les pratiques agricoles.",
+  "mots_cles": [
+   "pesticides",
+   "ventes",
+   "département",
+   "environnement",
+   "agriculture"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Données annuelles des ventes de pesticides par département en France. Elles proviennent des déclarations obligatoires des distributeurs."
+ },
+ "3cf912ac5204": {
+  "famille": "logiciel",
+  "id": "3cf912ac5204",
+  "interet": "Ce projet fournit des outils d'analyse pour étudier l'impact des matériaux sur le microclimat des vignes, utile pour la recherche ou les viticulteurs.",
+  "mots_cles": [
+   "viticulture",
+   "analyse de données",
+   "microclimat",
+   "vigne",
+   "recherche"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce dépôt contient une méthodologie d'analyse des effets thermiques des tubes de culture sur le microclimat des jeunes vignes pendant leur dormance."
+ },
+ "3fbddb3731f9": {
+  "famille": "logiciel",
+  "id": "3fbddb3731f9",
+  "interet": "Cette bibliothèque permet aux développeurs d'interfacer des applications avec FarmBot, utile pour des solutions agricoles automatisées.",
+  "mots_cles": [
+   "farmbot",
+   "javascript",
+   "authentification",
+   "rpc",
+   "développement"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Bibliothèque JavaScript pour l'authentification et les instructions RPC de FarmBot. Elle facilite l'intégration et la communication avec le système."
+ },
+ "418fd35c853a": {
+  "famille": "donnees",
+  "id": "418fd35c853a",
+  "interet": "Ce projet peut aider à évaluer les risques environnementaux et sanitaires liés aux produits phytopharmaceutiques pour les acteurs agricoles.",
+  "mots_cles": [
+   "phytopharmaceutiques",
+   "substances actives",
+   "impacts environnementaux",
+   "santé",
+   "sources ouvertes"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Base de données agrégeant des informations sur les produits phytopharmaceutiques à partir de sources ouvertes. Elle permet de croiser des données sur les substances actives et leurs impacts."
+ },
+ "42eba7f9ae2b": {
+  "famille": "logiciel",
+  "id": "42eba7f9ae2b",
+  "interet": "Ce projet offre une solution modulaire pour le contrôle climatique des cultures sous serre, utile pour les agriculteurs ou gestionnaires de systèmes indoor.",
+  "mots_cles": [
+   "climatisation",
+   "contrôle à distance",
+   "serre",
+   "automatisation",
+   "capteurs"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce système open source permet de surveiller et contrôler à distance le climat dans les serres et cultures indoor. Il est compatible avec divers capteurs et actionneurs accessibles en ligne de commande."
+ },
+ "4b34f19545cd": {
+  "famille": "logiciel",
+  "id": "4b34f19545cd",
+  "interet": "Ce projet propose une architecture flexible pour l'automatisation agricole, pouvant intéresser les développeurs ou agriculteurs francophones cherchant des solutions adaptables.",
+  "mots_cles": [
+   "automatisation agricole",
+   "hydroponie",
+   "aquaponie",
+   "modularité",
+   "arduino"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce projet décrit une pile logicielle modulaire pour l'automatisation agricole, adaptée à différents systèmes comme l'hydroponie, l'aquaponie ou les cultures traditionnelles."
+ },
+ "4ba1415fa9a1": {
+  "famille": "logiciel",
+  "id": "4ba1415fa9a1",
+  "interet": "Cette application facilite la gestion à distance des cultures ou expériences agricoles automatisées pour les utilisateurs.",
+  "mots_cles": [
+   "farmbot",
+   "interface web",
+   "contrôle à distance",
+   "agriculture"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Application web permettant de configurer, personnaliser et contrôler FarmBot depuis n'importe quel appareil. Elle sert d'interface entre l'utilisateur et le matériel."
+ },
+ "502e950907ae": {
+  "famille": "logiciel",
+  "id": "502e950907ae",
+  "interet": "Ce projet offre une assistance technique automatisée pour la conception de systèmes aquaponiques, utile pour les agriculteurs ou porteurs de projets francophones.",
+  "mots_cles": [
+   "aquaponie",
+   "assistant ia",
+   "conception de systèmes",
+   "agriculture locale",
+   "télégram"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Cet agent d'IA open source conçu pour l'agronomie fonctionne localement et propose des calculs de conception de systèmes aquaponiques. Il communique via Telegram et WhatsApp."
+ },
+ "5f0b769462f2": {
+  "famille": "materiel",
+  "id": "5f0b769462f2",
+  "interet": "Cette documentation technique est utile pour comprendre, construire ou réparer le matériel agricole automatisé FarmBot.",
+  "mots_cles": [
+   "farmbot",
+   "documentation",
+   "matériel",
+   "agriculture",
+   "automatisation"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Documentation matérielle du matériel FarmBot Genesis. Elle décrit les composants et leur assemblage."
+ },
+ "6c11ca879a6f": {
+  "famille": "donnees",
+  "id": "6c11ca879a6f",
+  "interet": "Ce projet facilite l'accès à des données hydrologiques utiles pour la gestion de l'eau en agriculture.",
+  "mots_cles": [
+   "eau-agricole",
+   "ressource-en-eau",
+   "hydrologie",
+   "audit-donnees",
+   "paca"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Base de données régionale sur la ressource en eau en Provence-Alpes-Côte d'Azur. Elle permet d'auditer, actualiser et consulter les données hydrologiques."
+ },
+ "778970822789": {
+  "famille": "donnees",
+  "id": "778970822789",
+  "interet": "Ce projet peut servir à mesurer l'intensité de l'usage des pesticides et ses impacts potentiels.",
+  "mots_cles": [
+   "pesticides",
+   "doses unités",
+   "substances actives",
+   "usage",
+   "impacts environnementaux"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Indicateur calculant le nombre de doses unités (NODU) pour les pesticides en fonction des substances actives. Il permet d'évaluer l'usage des pesticides."
+ },
+ "8c8ba87de1f1": {
+  "famille": "modele",
+  "id": "8c8ba87de1f1",
+  "interet": "Ce projet facilite la détection précoce de maladies foliaires, utile pour la gestion des cultures et la prévention des épidémies.",
+  "mots_cles": [
+   "détection d'objets",
+   "maladie foliaire",
+   "rt-detr v2",
+   "transformers",
+   "safetensors"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Modèle de détection d'objets pour identifier des maladies foliaires sur des plantes à partir d'images. Il repose sur l'architecture RT-DETR v2 et est compatible avec des endpoints."
+ },
+ "a6e26b50aa3c": {
+  "famille": "materiel",
+  "id": "a6e26b50aa3c",
+  "interet": "",
+  "mots_cles": [
+   "farmbot",
+   "documentation",
+   "matériel-agricole"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Documentation technique et commerciale de FarmBot Inc. Elle décrit les aspects métiers et organisationnels de l'entreprise."
+ },
+ "aa4052ddabda": {
+  "famille": "modele",
+  "id": "aa4052ddabda",
+  "interet": "",
+  "mots_cles": [],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
+ "b359187bebd4": {
+  "famille": "modele",
+  "id": "b359187bebd4",
+  "interet": "Ce projet aide à identifier les cultures adaptées à un territoire en s'appuyant sur des données et des modèles analytiques.",
+  "mots_cles": [
+   "décision",
+   "analyse spatiale",
+   "cultures",
+   "recommandation",
+   "territoire"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Système d'aide à la décision spatiale pour évaluer la pertinence des cultures dans une région donnée. Il combine analyse vectorielle et outils de visualisation."
+ },
+ "b3d5683097c3": {
+  "famille": "logiciel",
+  "id": "b3d5683097c3",
+  "interet": "Ce projet soutient le développement de solutions locales d'analyse agricole adaptées aux contextes ouest-africains.",
+  "mots_cles": [
+   "bénin",
+   "afrique de l'ouest",
+   "données agricoles",
+   "analyse",
+   "python"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Bibliothèque Python dédiée à l'analyse et au traitement de données agricoles pour les acteurs du Bénin et de l'Afrique de l'Ouest. Elle fournit des outils pour manipuler des jeux de données géographiques agricoles."
+ },
+ "b88251f3f756": {
+  "famille": "donnees",
+  "id": "b88251f3f756",
+  "interet": "Ce projet permet d'analyser les achats de pesticides à l'échelle locale pour évaluer les pratiques agricoles.",
+  "mots_cles": [
+   "pesticides",
+   "achats",
+   "code-postal",
+   "environnement",
+   "agriculture"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Données annuelles des achats de pesticides par code postal en France. Elles proviennent des déclarations obligatoires des distributeurs."
+ },
+ "c06242af2862": {
+  "famille": "logiciel",
+  "id": "c06242af2862",
+  "interet": "Ce projet offre une solution modulaire pour optimiser la gestion technique et économique des exploitations agricoles.",
+  "mots_cles": [
+   "gestion",
+   "planification",
+   "erp",
+   "agricole",
+   "fmis"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Système d'information de gestion agricole open source pour piloter les exploitations. Il relie les fermes aux outils de gestion et de planification."
+ },
+ "c6c62295bb1e": {
+  "famille": "donnees",
+  "id": "c6c62295bb1e",
+  "interet": "Ce projet permet de mieux comprendre la répartition spatiale des activités agricoles pour l'aménagement du territoire.",
+  "mots_cles": [
+   "régions agricoles",
+   "petites régions agricoles",
+   "zonage",
+   "aménagement du territoire",
+   "France métropolitaine"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Jeu de données décrivant les régions agricoles et petites régions agricoles en France métropolitaine. Il classe les zones selon des critères homogènes."
+ },
+ "cb9aa159ce42": {
+  "famille": "logiciel",
+  "id": "cb9aa159ce42",
+  "interet": "Ce projet permet aux agriculteurs de suivre l'état de leurs cultures à distance et d'anticiper les risques.",
+  "mots_cles": [
+   "satellite",
+   "surveillance",
+   "cultures",
+   "anomalies",
+   "décision"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Plateforme d'intelligence agricole utilisant l'imagerie satellite pour surveiller la santé des cultures. Elle détecte les anomalies et aide à la prise de décision."
+ },
+ "cee2b6e345e8": {
+  "famille": "logiciel",
+  "id": "cee2b6e345e8",
+  "interet": "Ce projet facilite l'accès à des ressources techniques pour les acteurs francophones souhaitant développer ou utiliser des solutions d'agriculture de précision.",
+  "mots_cles": [
+   "agtech",
+   "agriculture de précision",
+   "liste curatée",
+   "ressources open source",
+   "gestion de ferme"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce projet est une liste curatée de ressources open source dédiées à l'agriculture de précision. Il recense des outils, logiciels et bibliothèques utiles pour la gestion des exploitations agricoles."
+ },
+ "d91a27332190": {
+  "famille": "modele",
+  "id": "d91a27332190",
+  "interet": "Ce projet permet d'exploiter des données géospatiales et d'IA pour améliorer les pratiques agricoles et environnementales.",
+  "mots_cles": [
+   "ia",
+   "géospatial",
+   "télédétection",
+   "modèles",
+   "durabilité"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Modèles d'apprentissage automatique géospatial pour l'agriculture et la durabilité. Ils analysent des données multisources pour fournir des insights agricoles."
+ },
+ "da2c672d153b": {
+  "famille": "logiciel",
+  "id": "da2c672d153b",
+  "interet": "Ce projet facilite la traçabilité et la gestion des exploitations agricoles grâce à une solution open source adaptable.",
+  "mots_cles": [
+   "gestion",
+   "traçabilité",
+   "bétail",
+   "cultures",
+   "enregistrement"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Application web de gestion des enregistrements agricoles pour suivre les cultures, le matériel et le bétail. Elle permet de centraliser les données de production et d'équipement sur une ferme."
+ },
+ "dfaa8673abfd": {
+  "famille": "donnees",
+  "id": "dfaa8673abfd",
+  "interet": "Ce projet permet d'analyser la diversité des cultures et leur répartition géographique pour les acteurs locaux.",
+  "mots_cles": [
+   "surface agricole",
+   "types de culture",
+   "EPCI",
+   "recensement agricole",
+   "répartition géographique"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Jeu de données détaillant la surface agricole utilisée par type de culture et par EPCI en 2020. Il fournit des informations sur la répartition des cultures à l'échelle intercommunale."
+ },
+ "f56546dd6dc3": {
+  "famille": "logiciel",
+  "id": "f56546dd6dc3",
+  "interet": "Ce firmware permet de contrôler les actions physiques des robots agricoles automatisés, utile aux développeurs ou utilisateurs techniques.",
+  "mots_cles": [
+   "farmbot",
+   "arduino",
+   "firmware",
+   "mouvements",
+   "automatisation"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Firmware Arduino exécutant des commandes de type G-code pour déplacer FarmBot et actionner l'outil monté. Il gère les mouvements et les opérations mécaniques."
+ },
+ "f7e488e78bba": {
+  "famille": "logiciel",
+  "id": "f7e488e78bba",
+  "interet": "Ce projet permet d'explorer des méthodes de gestion génétique et écologique pour l'élevage ovin, pertinentes pour les acteurs francophones du secteur.",
+  "mots_cles": [
+   "élevage ovin",
+   "gestion de ferme",
+   "intelligence artificielle",
+   "enrichissement génétique",
+   "écologie"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce dépôt présente un exemple de gestion de ferme ovine intégrant des outils d'intelligence artificielle pour l'élevage. Il inclut des guides pas à pas pour les utilisateurs non techniques."
+ },
+ "fa9fd9520b8f": {
+  "famille": "materiel",
+  "id": "fa9fd9520b8f",
+  "interet": "",
+  "mots_cles": [
+   "farmbot",
+   "robot-agricole",
+   "matériel-agricole"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Documentation technique du matériel FarmBot Express. Elle détaille les spécifications et la conception du robot agricole."
+ },
+ "fe62f3dd902b": {
+  "famille": "logiciel",
+  "id": "fe62f3dd902b",
+  "interet": "Ce projet fournit les outils techniques pour piloter des systèmes agricoles automatisés, utiles aux développeurs ou utilisateurs techniques.",
+  "mots_cles": [
+   "farmbot",
+   "raspberry pi",
+   "automatisation",
+   "contrôle",
+   "agriculture"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Système d'exploitation et logiciels associés exécutés sur le Raspberry Pi de FarmBot. Il permet de contrôler et gérer le matériel FarmBot."
+ }
+}
