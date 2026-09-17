@@ -98,7 +98,10 @@ mots-clés de chaque fiche, rien d'autre. La consigne (`CONSIGNE`, en tête du
 script) lui interdit donc d'affirmer ce que ces champs ne disent pas : usage,
 popularité, public, pays, partenaires. Au premier lot, avant ce resserrement,
 il avait écrit de farmOS qu'il était « largement utilisé dans la communauté
-agricole francophone ». La ligne « intérêt » reste celle à relire en priorité.
+agricole francophone ». Au deuxième lot, il plaquait encore « pour les acteurs
+francophones » sur des projets qui n'en disent rien, par écho à la consigne,
+qui ne mentionne plus la francophonie. La ligne « intérêt » reste celle à
+relire en priorité.
 
 Il décide aussi `pertinence` (« non » écarte la fiche par défaut) et peut
 changer la `famille`, sauf pour les sources en `famille_fixe`.

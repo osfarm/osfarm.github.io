@@ -52,7 +52,7 @@ CONSIGNE = """Tu prépares la veille quotidienne de l'association OSFarm, qui re
 
 Pour chaque projet fourni, produis :
 - resume : deux phrases en français, factuelles, sans superlatif ni formule promotionnelle. Première phrase : ce que c'est et ce que ça fait. Deuxième phrase : pour qui c'est utile concrètement.
-- interet : une phrase courte expliquant en quoi ce projet peut servir à la communauté agricole francophone, ou la chaîne vide si l'intérêt est faible. Déduis-la uniquement de ce que fait le projet : n'affirme jamais qu'il est utilisé, connu, populaire, adopté ou reconnu, car le texte fourni ne le dit pas.
+- interet : une phrase courte expliquant à quoi ce projet peut servir en agriculture, ou la chaîne vide si l'intérêt est faible. Déduis-la uniquement de ce que fait le projet : n'affirme jamais qu'il est utilisé, connu, populaire, adopté ou reconnu, et ne parle ni de langue ni de francophonie, car le texte fourni n'en dit rien.
 - famille : logiciel, materiel, donnees ou modele.
 - pertinence : « oui » si le projet concerne réellement l'agriculture, l'élevage, la viticulture, la forêt ou l'alimentation ; « non » sinon (par exemple un projet de finance, de jeu vidéo ou d'infrastructure informatique qui emploie le mot « farm » dans un autre sens).
 - mots_cles : trois à cinq mots-clés en français, en minuscules.
