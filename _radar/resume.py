@@ -34,7 +34,8 @@ from pathlib import Path
 import requests
 import yaml
 
-from collecte import DOSSIER_BROUILLON, DOSSIER_LOTS, FAMILLES, RACINE, ecrire_lot
+from collecte import (DOSSIER_BROUILLON, DOSSIER_LOTS, FAMILLES, RACINE,
+                      charger_configuration, ecrire_lot)
 
 FICHIER_CACHE = RACINE / "_radar" / "resumes.json"
 CORPS_PR = RACINE / "_radar" / "pr_body.md"
@@ -51,12 +52,12 @@ CONSIGNE = """Tu prépares la veille quotidienne de l'association OSFarm, qui re
 
 Pour chaque projet fourni, produis :
 - resume : deux phrases en français, factuelles, sans superlatif ni formule promotionnelle. Première phrase : ce que c'est et ce que ça fait. Deuxième phrase : pour qui c'est utile concrètement.
-- interet : une phrase courte expliquant en quoi ce projet intéresse la communauté agricole francophone, ou la chaîne vide si l'intérêt est faible.
+- interet : une phrase courte expliquant en quoi ce projet peut servir à la communauté agricole francophone, ou la chaîne vide si l'intérêt est faible. Déduis-la uniquement de ce que fait le projet : n'affirme jamais qu'il est utilisé, connu, populaire, adopté ou reconnu, car le texte fourni ne le dit pas.
 - famille : logiciel, materiel, donnees ou modele.
 - pertinence : « oui » si le projet concerne réellement l'agriculture, l'élevage, la viticulture, la forêt ou l'alimentation ; « non » sinon (par exemple un projet de finance, de jeu vidéo ou d'infrastructure informatique qui emploie le mot « farm » dans un autre sens).
 - mots_cles : trois à cinq mots-clés en français, en minuscules.
 
-N'invente aucune information absente du texte fourni. Si la description est trop pauvre pour résumer, écris resume: "" et pertinence: "inconnu".
+N'invente aucune information absente du texte fourni : ni usage, ni nombre d'utilisateurs, ni public, ni pays, ni partenaire. Si la description est trop pauvre pour résumer, écris resume: "" et pertinence: "inconnu".
 
 Réponds uniquement par un objet JSON de la forme :
 {"fiches": [{"id": "...", "resume": "...", "interet": "...", "famille": "...", "pertinence": "oui", "mots_cles": ["...", "..."]}]}"""
@@ -222,6 +223,9 @@ def main() -> int:
                 cache[ident] = reponses[ident] = r
             time.sleep(1)
 
+    _, sources = charger_configuration()
+    familles_fixes = {src.get("id") for src in sources if src.get("famille_fixe")}
+
     hors_sujet = 0
     for c in candidats:
         if "resume" in c:
@@ -231,7 +235,8 @@ def main() -> int:
         c["interet"] = r.get("interet") or ""
         c["pertinence"] = r.get("pertinence") or "inconnu"
         c["redige_par"] = r.get("redige_par") or "aucun"
-        if r.get("famille") in FAMILLES and r["famille"] != c.get("famille"):
+        if (c.get("source") not in familles_fixes and r.get("famille") in FAMILLES
+                and r["famille"] != c.get("famille")):
             c["famille_initiale"] = c.get("famille")
             c["famille"] = r["famille"]
         if r.get("mots_cles"):

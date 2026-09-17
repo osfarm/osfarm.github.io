@@ -76,12 +76,32 @@ le script ralentit en conséquence.
 - `seuil_score` (55) : monter à 65 si les lots sont trop bruyants, descendre à 45
   si les fiches intéressantes sont rares ;
 - `max_par_relecteur` (8) : plafond par lot ; le surplus revient au lot suivant ;
-- `filtres.etoiles_min` : le plus efficace contre les dépôts GitHub vides.
+- `filtres.etoiles_min` : le plus efficace contre les dépôts GitHub vides ;
+- `famille_fixe: true` sur une source : le modèle ne peut plus reclasser ses
+  fiches. Activé pour les sources de matériel, que le modèle a tendance à
+  ranger en « logiciel » dès qu'un dépôt contient du code.
+
+Chaque requête GitHub doit viser juste : un mot seul ramène ses homonymes
+(« orchard » ramenait surtout le CMS OrchardCore, d'où son retrait). Un faux
+positif isolé n'est pas grave, le modèle le marque hors sujet et le passe à
+`publier: false`, mais il consomme une place du plafond par relecteur.
 
 Le vocabulaire agricole, les faux amis (« yield farming », « server farm », les
 jeux vidéo) et la liste des licences acceptées sont en tête de `collecte.py`.
 Les projets dont l'URL figure déjà dans un fichier `_data/*.yml` du site ne
 sont jamais proposés.
+
+## Ce que le modèle rédige, et ses limites
+
+`resume.py` envoie au modèle le titre, la description, la licence et les
+mots-clés de chaque fiche, rien d'autre. La consigne (`CONSIGNE`, en tête du
+script) lui interdit donc d'affirmer ce que ces champs ne disent pas : usage,
+popularité, public, pays, partenaires. Au premier lot, avant ce resserrement,
+il avait écrit de farmOS qu'il était « largement utilisé dans la communauté
+agricole francophone ». La ligne « intérêt » reste celle à relire en priorité.
+
+Il décide aussi `pertinence` (« non » écarte la fiche par défaut) et peut
+changer la `famille`, sauf pour les sources en `famille_fixe`.
 
 ## Mémoire
 

@@ -71,7 +71,7 @@ The `fr/` directory contains French-language pages; `index.html` and other root 
 
 ### Radar des communs
 
-`_radar/` holds a daily watch (Python, French) that finds open-licence farming projects. `.github/workflows/radar.yml` runs `collecte.py` + `resume.py` and opens a PR adding a lot file `_data/radar/YYYY-MM-DD.yml`; merging that PR is the publication step — `docs/fr/communs.html`, `docs/fr/actualites.html` and `data/communs.{json,csv}` render every entry with `publier: true` via `_includes/radar-fiches.html`. No script writes pages. Details in `_radar/README.md`; try locally with `python _radar/collecte.py --blanc` (writes to the git-ignored `_radar/brouillon/`).
+`_radar/` holds a daily watch (Python, French) that finds open-licence farming projects. `.github/workflows/radar.yml` runs `collecte.py` + `resume.py` and opens a PR adding a lot file `_data/radar/YYYY-MM-DD.yml`; merging that PR is the publication step — `docs/fr/communs.html`, `docs/fr/actualites.html` and `data/communs.{json,csv}` render every entry with `publier: true` via `_includes/radar-fiches.html`. No script writes pages. Only one lot PR is open at a time (the workflow skips collection while one is pending and closes it after 3 days). Details in `_radar/README.md`; try locally with `python _radar/collecte.py --blanc` (writes to the git-ignored `_radar/brouillon/`).
 
 ### Deployment
 
