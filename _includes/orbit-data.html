@@ -1,0 +1,22 @@
+{% comment %}
+  Orbit data for the animated header mark, built from _data/header_orbits.yml.
+{% endcomment %}
+<script type="application/json" id="osfarm-orbit-data">
+  {
+    "groups": [
+      {%- for group in site.data.header_orbits %}
+      {%- if group.items %}
+        {%- assign names = group.items %}
+        {%- assign curated = true %}
+      {%- elsif group.category %}
+        {%- assign names = site.data[group.source][group.category] | map: "name" %}
+        {%- assign curated = false %}
+      {%- else %}
+        {%- assign names = site.data[group.source] | map: "name" %}
+        {%- assign curated = false %}
+      {%- endif %}
+      { "color": {{ group.color | jsonify }}, "curated": {{ curated }}, "items": {{ names | jsonify }} }{% unless forloop.last %},{% endunless %}
+      {%- endfor %}
+    ]
+  }
+</script>

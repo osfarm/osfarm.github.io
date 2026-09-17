@@ -1,0 +1,24 @@
+---
+layout: null
+permalink: /data/communs.json
+sitemap: false
+---
+{%- include radar-fiches.html -%}
+[
+{%- for f in radar_fiches %}
+  {
+    "id": {{ f.id | jsonify }},
+    "titre": {{ f.titre | jsonify }},
+    "url": {{ f.url | jsonify }},
+    "famille": {{ f.famille | jsonify }},
+    "licence": {{ f.licence | jsonify }},
+    "resume": {{ f.resume | default: f.description | jsonify }},
+    "interet": {{ f.interet | default: "" | jsonify }},
+    "mots_cles": {{ f.mots_cles_fr | default: f.mots_cles | jsonify }},
+    "techno": {{ f.techno | default: "" | jsonify }},
+    "derniere_activite": {{ f.date_maj | jsonify }},
+    "ajoute_le": {{ f.propose_le | jsonify }},
+    "source": {{ f.source | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+{%- endfor %}
+]

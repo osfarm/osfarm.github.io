@@ -1,0 +1,14 @@
+{% comment %}
+  Radar des communs agricoles : rassemble dans `radar_fiches` toutes les fiches
+  validées des lots de _data/radar/ (un fichier par lot, écrit par _radar/).
+  Une fiche est publiée dès que son lot est fusionné et qu'elle n'a pas été
+  passée à `publier: false` pendant la relecture.
+{% endcomment %}
+{%- assign radar_fiches = "" | split: "" -%}
+{%- for lot in site.data.radar -%}
+  {%- assign valides = lot[1].candidats | where: "publier", true -%}
+  {%- if valides -%}
+    {%- assign radar_fiches = radar_fiches | concat: valides -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign radar_fiches = radar_fiches | sort_natural: "titre" -%}

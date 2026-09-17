@@ -1,0 +1,153 @@
+# Radar OSFarm — sources surveillées
+# Ajouter une source = ajouter un bloc. Rien d'autre à modifier.
+#
+# type       github_search | huggingface | datagouv | zenodo | oshwa | rss | api
+# famille    logiciel | materiel | donnees | modele
+# relecteur  identifiant GitHub de la personne qui valide cette famille ;
+#            elle est mentionnée dans la pull request du jour
+# actif      false pour désactiver sans supprimer
+
+reglages:
+  seuil_score: 55          # en dessous, mise en quarantaine
+  max_par_relecteur: 8     # plafond par lot : la relecture doit tenir en 3 min
+  quarantaine_jours: 90    # délai avant de réexaminer un projet écarté
+  pause_entre_sources: 1
+
+sources:
+
+  # ---------------------------------------------------------------- logiciels
+  # La recherche GitHub n'accepte pas de OR entre qualificateurs : une requête
+  # par ligne. etoiles_min est le filtre le plus efficace contre les dépôts vides.
+  - id: github-agri
+    famille: logiciel
+    type: github_search
+    requetes:
+      - topic:agriculture
+      - topic:agritech
+      - topic:precision-agriculture
+      - topic:agroecology
+    filtres: { pousse_depuis: 180j, etoiles_min: 3 }
+    limite: 30
+    relecteur: alaabenfatma
+
+  - id: github-elevage
+    famille: logiciel
+    type: github_search
+    requetes:
+      - topic:livestock
+      - topic:dairy
+      - topic:beekeeping
+      - topic:aquaculture
+    filtres: { pousse_depuis: 365j, etoiles_min: 3 }
+    limite: 20
+    relecteur: ionosphere
+
+  - id: github-viti
+    famille: logiciel
+    type: github_search
+    requetes:
+      - "viticulture in:name,description,topics"
+      - "vineyard in:name,description,topics"
+      - "orchard in:name,description,topics"
+    filtres: { pousse_depuis: 365j, etoiles_min: 3 }
+    limite: 20
+    relecteur: ionosphere
+
+  - id: joss
+    famille: logiciel
+    type: rss
+    url: https://joss.theoj.org/papers/published.atom
+    filtres: { licence_par_defaut: osi-approuvee }   # JOSS exige une licence OSI
+    limite: 40
+    relecteur: alaabenfatma
+
+  # ----------------------------------------------------------------- matériel
+  - id: oshwa
+    famille: materiel
+    type: oshwa
+    url: https://certificationapi.oshwa.org/api/projects
+    filtres:
+      mots_cles: [farm, agri, soil, crop, livestock, garden, irrigation, greenhouse, bee]
+    limite: 200
+    relecteur: jancelin
+    # nécessite OSHWA_TOKEN ; sans jeton la source est simplement ignorée
+
+  - id: github-materiel-agri
+    famille: materiel
+    type: github_search
+    requetes:
+      - "topic:open-hardware agriculture"
+      - topic:farmbot
+      - topic:agopengps
+    filtres: { pousse_depuis: 540j, etoiles_min: 3 }
+    limite: 20
+    relecteur: jancelin
+
+  # ------------------------------------------------------------------ données
+  - id: datagouv-agriculture
+    famille: donnees
+    type: datagouv
+    url: https://www.data.gouv.fr/api/1/datasets/?tag=agriculture&sort=-created
+    limite: 40
+    relecteur: bertrandgorge
+
+  - id: datagouv-agroalimentaire
+    famille: donnees
+    type: datagouv
+    url: https://www.data.gouv.fr/api/1/datasets/?tag=agroalimentaire&sort=-created
+    limite: 20
+    relecteur: bertrandgorge
+
+  - id: zenodo-agri
+    famille: donnees
+    type: zenodo
+    url: https://zenodo.org/api/records?q=agriculture%20AND%20access_right:open&type=dataset
+    limite: 25     # maximum accepté par Zenodo sans authentification
+    relecteur: bertrandgorge
+
+  - id: europa-agri
+    famille: donnees
+    type: api
+    url: https://data.europa.eu/api/hub/search/search
+    parametres: { q: agriculture, limit: 30, sort: "modified+desc" }
+    liste: result.results
+    champs:
+      titre: title.fr
+      url: resource
+      description: description.fr
+      licence: distributions.0.license.resource
+      date: modified
+    relecteur: bertrandgorge
+    actif: false   # activer après vérification du format de réponse
+
+  # ------------------------------------------------------------ modèles et IA
+  - id: hf-modeles-agri
+    famille: modele
+    type: huggingface
+    url: https://huggingface.co/api/models?search=agriculture
+    limite: 40
+    relecteur: ionosphere
+
+  - id: hf-modeles-plantes
+    famille: modele
+    type: huggingface
+    url: https://huggingface.co/api/models?search=plant%20disease
+    limite: 30
+    relecteur: ionosphere
+
+  - id: hf-datasets-agri
+    famille: modele
+    type: huggingface
+    url: https://huggingface.co/api/datasets?search=crop
+    limite: 30
+    relecteur: ionosphere
+
+  # Flux sans information de licence : toutes leurs entrées seraient écartées.
+  # À n'activer qu'avec un licence_par_defaut vérifié pour la source.
+  - id: hackaday-agri
+    famille: materiel
+    type: rss
+    url: https://hackaday.com/tag/agriculture/feed/
+    limite: 20
+    relecteur: ""
+    actif: false

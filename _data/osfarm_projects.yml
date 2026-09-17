@@ -45,7 +45,6 @@
     logo: "/assets/img/teams/ekylibre.svg"
 - name: Gort
   logo: "/assets/img/projects/gort.png"
-  repository: ""
   description_en: "Generic, agnostic and interoperable robots for massive technological tranformations"
   description_fr: "Robots interopérables pour la transformation agro-écologique"
   project_leader: "XLIM"

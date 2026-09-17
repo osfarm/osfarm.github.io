@@ -1,0 +1,12 @@
+---
+layout: null
+permalink: /data/communs.csv
+sitemap: false
+---
+{%- include radar-fiches.html -%}
+id,titre,url,famille,licence,resume,interet,mots_cles,techno,derniere_activite,ajoute_le,source
+{% for f in radar_fiches -%}
+{%- assign mots = f.mots_cles_fr | default: f.mots_cles | join: "|" -%}
+{%- assign resume = f.resume | default: f.description -%}
+"{{ f.id }}","{{ f.titre | strip_newlines | replace: '"', '""' }}","{{ f.url }}","{{ f.famille }}","{{ f.licence }}","{{ resume | strip_newlines | replace: '"', '""' }}","{{ f.interet | strip_newlines | replace: '"', '""' }}","{{ mots | replace: '"', '""' }}","{{ f.techno }}","{{ f.date_maj }}","{{ f.propose_le }}","{{ f.source }}"
+{% endfor -%}

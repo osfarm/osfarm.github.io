@@ -1,0 +1,61 @@
+---
+title: Actualités des communs agricoles
+layout: fr-support-page
+permalink: /fr/actualites/
+description: "Les derniers logiciels, matériels, données et modèles agricoles sous licence ouverte validés par l'association"
+lang: fr
+---
+{%- assign mois = "janvier,février,mars,avril,mai,juin,juillet,août,septembre,octobre,novembre,décembre" | split: "," -%}
+{%- assign familles = "logiciel:Logiciels,materiel:Matériels,donnees:Données,modele:Modèles et IA" | split: "," -%}
+{%- assign publies = 0 -%}
+
+<div class="col-md-8 mx-auto mb-6">
+
+  <p class="f4 text-gray">
+    Chaque lot du radar est relu par des bénévoles de l'association avant
+    publication. Tous les projets sont aussi dans
+    l'<a href="{{ "/fr/communs/" | relative_url }}">annuaire des communs</a>.
+  </p>
+
+  {% for lot in site.data.radar reversed %}
+  {%- assign valides = lot[1].candidats | where: "publier", true -%}
+  {%- if valides == nil or valides.size == 0 %}{% continue %}{% endif -%}
+  {%- assign publies = publies | plus: 1 -%}
+  {%- assign date_lot = lot[1].date | default: lot[0] -%}
+  {%- assign index_mois = date_lot | date: "%-m" | minus: 1 %}
+  <article class="border-top py-5" id="radar-{{ date_lot }}">
+    <h2 class="alt-h3 mb-2">
+      Radar du {{ date_lot | date: "%-d" }} {{ mois[index_mois] }} {{ date_lot | date: "%Y" }}
+    </h2>
+    <p class="text-gray">
+      {{ valides.size }} {% if valides.size > 1 %}nouveaux communs agricoles{% else %}nouveau commun agricole{% endif %}
+      sous licence ouverte.
+    </p>
+
+    {% for paire in familles %}
+    {%- assign cle = paire | split: ":" | first -%}
+    {%- assign fiches = valides | where: "famille", cle -%}
+    {%- if fiches.size == 0 %}{% continue %}{% endif %}
+    <h3 class="f4 mt-4 mb-2">{{ paire | split: ":" | last }}</h3>
+    <ul class="list-style-none pl-0">
+      {% for f in fiches %}
+      <li class="mb-3">
+        <a href="{{ f.url }}" target="_blank" rel="noopener"><strong>{{ f.titre }}</strong></a>
+        <span class="f6 text-gray">· <code>{{ f.licence }}</code> ·
+          <a href="{{ "/fr/communs/" | relative_url }}#commun-{{ f.id }}">dans l'annuaire</a></span>
+        <br>{{ f.resume | default: f.description }}
+        {% if f.interet and f.interet != "" %}<br><em class="text-gray">{{ f.interet }}</em>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    {% endfor %}
+  </article>
+  {% endfor %}
+
+  {% if publies == 0 %}
+  <div class="blankslate">
+    <p>Aucune actualité pour le moment : le premier lot du radar est en cours de relecture.</p>
+  </div>
+  {% endif %}
+
+</div>

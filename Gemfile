@@ -13,7 +13,7 @@ end
 
 group :development, :test do
   gem 'html-proofer', '~> 4.0'
-  gem 'parallel'
   gem 'rake'
+  gem 'rubocop', require: false
   gem 'typhoeus'
 end

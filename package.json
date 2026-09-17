@@ -1,24 +1,17 @@
 {
-  "name": "government.github.com",
+  "name": "osfarm.github.io",
   "version": "1.0.0",
-  "description": "![screenshot](assets/img/screenshot.png)",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "Open source projects and communities in farming and agriculture",
+  "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/github/government.github.com.git"
+    "url": "git+https://github.com/osfarm/osfarm.github.io.git"
   },
-  "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/github/government.github.com/issues"
+    "url": "https://github.com/osfarm/osfarm.github.io/issues"
   },
-  "homepage": "https://government.github.com",
+  "homepage": "https://osfarm.org",
   "dependencies": {
     "octicons": "^5.0.1",
     "primer-core": "^6.2.0",

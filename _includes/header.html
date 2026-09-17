@@ -20,7 +20,11 @@
     </nav>
     <div class="container-lg">
       <div class="text-center">
-        <a href="{{ "/" | relative_url}}"><img class="logo py-3" src="{{ "/assets/img/logo_white.png" | relative_url}}" alt="OSFarm"></a>
+        <div class="logo-stage">
+          <a href="{{ "/" | relative_url}}" class="logo-link"><img class="logo" src="{{ "/assets/img/logo_white.png" | relative_url}}" alt="OSFarm"></a>
+        </div>
+        {% include orbit-data.html %}
+        <script type="module" src="{{ "/assets/js/header-banner.js" | relative_url }}"></script>
         <ul>
           <li class="text-center d-block d-sm-inline-block px-1 px-md-3"><a href="{{ "/why" | relative_url}}" class="text-white">Why</a></li>
           <li class="text-center d-block d-sm-inline-block px-1 px-md-3"><a href="{{ "/community/" | relative_url}}" class="text-white">Solutions</a></li>

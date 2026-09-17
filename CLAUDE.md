@@ -10,8 +10,8 @@ OSFarm is a static Jekyll site showcasing open source projects and communities i
 
 ### Setup
 ```bash
-script/bootstrap      # Install Ruby gems via bundler
-# Or manually: sudo gem install bundler jekyll && bundle install
+script/bootstrap      # Install node packages + Ruby gems
+# Or manually: npm install && sudo gem install bundler jekyll && bundle install
 ```
 
 ### Development
@@ -27,13 +27,11 @@ script/build          # Production build (runs npm install + jekyll build)
 
 ### Tests & Validation (CI)
 ```bash
-script/cibuild              # Full CI: build + all validations (what GitHub Actions runs)
-bundle exec rake test       # HTML link validation via html-proofer
-bundle exec rubocop -D -S   # Ruby style checks
-bundle exec script/ensure-orgs    # Verify all orgs exist on GitHub (uses GITHUB_TOKEN)
-bundle exec script/ensure-unique  # Check for duplicate entries in data files
-script/alphabetize          # Sort YAML data files alphabetically
+script/cibuild              # Build + validations
+bundle exec rake test       # Jekyll build + HTML/link validation via html-proofer
+bundle exec rubocop -D -S   # Ruby style checks (Rakefile)
 ```
+Set `GITHUB_TOKEN` before `rake test` to avoid GitHub rate limits on external link checks.
 
 ## Architecture
 
@@ -48,7 +46,7 @@ Key data files:
 - `_data/publications.yml` — research and publication references
 - `_data/showcases.yml` — featured case studies
 
-After editing YAML, run `script/alphabetize` to keep files sorted consistently.
+`projects.yml` is a map of category → list of entries; the other files are flat lists of entries. Keep entries sorted alphabetically by name within their group.
 
 ### Multilingual Setup
 
@@ -60,21 +58,21 @@ The `fr/` directory contains French-language pages; `index.html` and other root 
 
 ### Layout & Includes
 
-- `_layouts/` — page templates; `home.html` for landing pages, `support-page.html` for content pages, `form-page.html` for contact/submission
-- `_includes/` — reusable components: `header.html`, `footer.html`, `org-table.html`, `project-table.html`, `form.html`
+- `_layouts/` — page templates; `home.html` for landing pages, `support-page.html` for content pages (each with an `fr-` twin)
+- `_includes/` — reusable components: `header.html`, `footer.html`, `project-table.html` (each with an `fr-` twin where language-specific)
 
 ### Styling
 
 - Main stylesheet: `assets/css/style.scss` — imports Primer CSS (GitHub's design system)
 - Custom styles: `assets/css/custom.scss`
-- Bootstrap 5.3.3 and HighCharts are loaded via CDN (not bundled)
-- Node packages (`primer-core`, `primer-marketing`, `octicons`) are installed via `npm install` at build time
+- Bootstrap 5.3.3, jQuery 3.7.1 and HighCharts are loaded via CDN (not bundled)
+- CoffeeScript in `assets/js/*.coffee` is compiled by `jekyll-coffeescript` and needs jQuery
+- Node packages (`primer-core`, `primer-marketing`, `octicons`) are committed to `node_modules/` because the GitHub Pages builder does not run `npm install`
 
-### Data Validation
+### Radar des communs
 
-The `script/` directory contains Ruby validation scripts run in CI:
-- `ensure-orgs` — verifies organizations are real GitHub orgs (set `GITHUB_TOKEN` to avoid rate limits)
-- `ensure-unique` — prevents the same org appearing in multiple data files
-- `alphabetize` — normalizes YAML sort order
+`_radar/` holds a daily watch (Python, French) that finds open-licence farming projects. `.github/workflows/radar.yml` runs `collecte.py` + `resume.py` and opens a PR adding a lot file `_data/radar/YYYY-MM-DD.yml`; merging that PR is the publication step — `docs/fr/communs.html`, `docs/fr/actualites.html` and `data/communs.{json,csv}` render every entry with `publier: true` via `_includes/radar-fiches.html`. No script writes pages. Details in `_radar/README.md`; try locally with `python _radar/collecte.py --blanc` (writes to the git-ignored `_radar/brouillon/`).
 
-Generated output goes to `_site/` (git-ignored); GitHub Pages builds automatically on push to `main`.
+### Deployment
+
+Generated output goes to `_site/` (git-ignored); GitHub Pages builds and deploys automatically on push to `main`.

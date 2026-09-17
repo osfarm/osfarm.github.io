@@ -8,13 +8,8 @@ vendor/
 .jekyll-metadata
 tmp/
 Gemfile.lock
-vendor/
-assets/vendor/jquery/build
-assets/vendor/jquery/speed
-assets/vendor/jquery/src
-assets/vendor/jquery/test
-assets/vendor/octicons/svg
-assets/vendor/**/*.md
-assets/vendor/**/*.txt
-assets/vendor/bootstrap-sass/assets/javascripts/
 .DS_Store
+# Radar des communs : essais locaux et corps de pull request généré
+_radar/brouillon/
+_radar/pr_body.md
+__pycache__/

@@ -6,7 +6,7 @@ url: https://osfarm.github.io
 relative_permalinks: false
 
 # build settings
-exclude: ["script", "vendor", "bower.json", "Gemfile", "Gemfile.lock", "Rakefile", "readme.md", "package.json", "node_modules"]
+exclude: ["script", "vendor", "CLAUDE.md", "Gemfile", "Gemfile.lock", "Rakefile", "readme.md", "package.json", "package-lock.json", "node_modules"]
 markdown: kramdown
 plugins:
   - jekyll-avatar

@@ -1,0 +1,24 @@
+# Animated header mark (assets/js/header-banner.js): what orbits each of the
+# three planets of the OSFarm logo.
+#
+# Exactly three entries, in the logo's left-to-right order (yellow, blue, teal);
+# the banner falls back to the static logo otherwise.
+#
+# Each entry:
+#   color     colour of the satellite dots, ideally the planet's own
+#   items     explicit list of satellite names, shown in this order
+#   source    OR a file in _data/ whose entries' `name` become the satellites;
+#             the shortest names are preferred so they stay readable in motion
+#   category  with `source`, the key to read inside a file grouped by category
+#
+# At most 4 satellites are shown per planet; longer names are cut at 18 chars.
+
+- color: "#FFCC00"
+  source: osfarm_projects
+
+- color: "#5BA2D2"
+  source: projects
+  category: Data Standardization, Open Data, Interoperability and APIs
+
+- color: "#008080"
+  source: teams
