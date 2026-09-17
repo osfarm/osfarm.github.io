@@ -124,6 +124,13 @@ sources:
     relecteur: bertrandgorge
     actif: false   # activer après vérification du format de réponse
 
+  - id: hf-datasets-agri
+    famille: donnees
+    type: huggingface
+    url: https://huggingface.co/api/datasets?search=crop
+    limite: 30
+    relecteur: ionosphere
+
   # ------------------------------------------------------------ modèles et IA
   - id: hf-modeles-agri
     famille: modele
@@ -136,13 +143,6 @@ sources:
     famille: modele
     type: huggingface
     url: https://huggingface.co/api/models?search=plant%20disease
-    limite: 30
-    relecteur: ionosphere
-
-  - id: hf-datasets-agri
-    famille: modele
-    type: huggingface
-    url: https://huggingface.co/api/datasets?search=crop
     limite: 30
     relecteur: ionosphere
 
