@@ -2,8 +2,38 @@
 title: "OSFarm"
 description: "Building together a new innovative ecosystem for farms"
 permalink: pretty
-url: https://osfarm.github.io
+# Public address: osfarm.org and osfarm.github.io both redirect here (301).
+# Canonical links, the sitemap and robots.txt are built from it.
+url: https://www.osfarm.org
+baseurl: ""
 relative_permalinks: false
+
+# Search engines and social cards (jekyll-seo-tag, see _includes/header.html)
+logo: /assets/img/osfarm-logo-carre.png
+social:
+  name: OSFarm
+  links:
+    - https://github.com/osfarm
+twitter:
+  card: summary_large_image
+# Google Analytics 4 measurement ID (G-XXXXXXXXXX). Loaded only in production
+# builds, and only once set.
+google_analytics: G-832L2YLP8Z
+# Google Search Console: prefer a "Domain" property verified by a DNS TXT record
+# on osfarm.org. If an HTML tag is used instead, set its content here:
+# webmaster_verifications:
+#  google: ""
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      lang: en
+      image: /assets/img/osfarm-partage.jpg
+  - scope:
+      path: "fr"
+    values:
+      lang: fr
 
 # build settings
 exclude: ["script", "spec", "vendor", "CLAUDE.md", "Gemfile", "Gemfile.lock", "Rakefile", "readme.md", "package.json", "package-lock.json", "node_modules"]

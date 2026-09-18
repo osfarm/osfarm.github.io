@@ -3,6 +3,9 @@
         <div class="d-flex flex-justify-between">
           <ul class="list-style-none float-right text-small">
             <li class="d-inline-block ml-lg-2"><a href="mailto:contact@osfarm.org">Nous écrire</a></li>
+            {%- if site.google_analytics %}
+            <li class="d-inline-block ml-2"><a href="#consentement" data-consentement-ouvrir>Cookies</a></li>
+            {%- endif %}
           </ul>
 
           <a href="{{ "/fr/" | relative_url }}" class="text-center">
@@ -30,6 +33,7 @@
     {% elsif page.url == "/" %}
       <script src="{{ "/assets/js/home.js" | relative_url}}"></script>
     {% endif %}
+    {% include google-analytics.html lang="fr" %}
   </body>
 </html>
 <!-- Proudly powered by GitHub Pages ~ Generated {{ site.time }} -->

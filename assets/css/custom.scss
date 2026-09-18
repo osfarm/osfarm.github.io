@@ -1169,3 +1169,63 @@ $radar-rayon:    12px;
   .catalogue-module-meta { flex-basis: 100%; }
   .catalogue-formulaire { padding: 18px; }
 }
+
+// Bannière de consentement (_includes/google-analytics.html) : posée en bas de
+// l'écran sans masquer la page. « Refuser » et « Accepter » ont le même poids,
+// comme l'exige la CNIL : aucun des deux n'est mis en avant.
+.consentement {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  left: 16px;
+  z-index: 1050;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  align-items: center;
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 16px 20px;
+  color: #fff;
+  background: $osfarm-encre;
+  border-radius: 10px;
+  box-shadow: 0 8px 28px rgba(22, 33, 15, .35);
+
+  &[hidden] { display: none; }
+}
+
+.consentement-texte {
+  flex: 1 1 420px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.consentement-choix {
+  display: flex;
+  gap: 10px;
+}
+
+.consentement-bouton {
+  min-width: 110px;
+  padding: 8px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  color: $osfarm-encre;
+  background: $osfarm-green-light;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+
+  &:hover { background: #fff; }
+
+  &:focus-visible {
+    outline: 3px solid $osfarm-soleil;
+    outline-offset: 2px;
+  }
+}
+
+@media (max-width: 543px) {
+  .consentement-choix { width: 100%; }
+  .consentement-bouton { flex: 1; }
+}

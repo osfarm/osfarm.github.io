@@ -3,6 +3,9 @@
         <div class="d-flex flex-justify-between">
           <ul class="list-style-none float-right text-small">
             <li class="d-inline-block ml-lg-2"><a href="mailto:contact@osfarm.org">Contact Us</a></li>
+            {%- if site.google_analytics %}
+            <li class="d-inline-block ml-2"><a href="#consentement" data-consentement-ouvrir>Cookies</a></li>
+            {%- endif %}
           </ul>
 
           <a href="/" class="text-center">
@@ -28,6 +31,7 @@
       <script src="{{ "/assets/js/home.js" | relative_url}}"></script>
     {% endif %}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    {% include google-analytics.html lang="en" %}
   </body>
 </html>
 <!-- Proudly powered by GitHub Pages ~ Generated {{ site.time }} -->

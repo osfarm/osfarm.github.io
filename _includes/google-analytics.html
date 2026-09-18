@@ -1,0 +1,32 @@
+{%- comment -%}
+  Google Analytics 4 behind a consent banner, included at the end of
+  footer.html / fr-footer.html with lang="en" or lang="fr".
+
+  Nothing reaches Google before the visitor clicks "Accept": the banner only
+  carries the measurement ID, and assets/js/consentement.js loads gtag.js
+  after consent. The banner shows as soon as `google_analytics` is set in
+  _config.yml, so it can be tried locally; GA itself only loads in the
+  production build (GitHub Pages sets JEKYLL_ENV=production).
+{%- endcomment -%}
+{%- if site.google_analytics -%}
+{%- if include.lang == "fr" -%}
+  {%- assign etiquette = "Mesure d’audience" -%}
+  {%- capture texte -%}Nous aimerions mesurer l’audience de ce site avec Google Analytics, pour savoir quelles pages sont utiles. Cela dépose des cookies et transmet des données de navigation à Google. Le site fonctionne de la même façon si vous refusez, et vous pouvez changer d’avis à tout moment depuis le lien « Cookies » en bas de page.{%- endcapture -%}
+  {%- assign refuser = "Refuser" -%}
+  {%- assign accepter = "Accepter" -%}
+{%- else -%}
+  {%- assign etiquette = "Audience measurement" -%}
+  {%- capture texte -%}We would like to measure this site’s audience with Google Analytics, to learn which pages are useful. This sets cookies and sends browsing data to Google. The site works the same if you decline, and you can change your mind at any time from the “Cookies” link at the bottom of the page.{%- endcapture -%}
+  {%- assign refuser = "Decline" -%}
+  {%- assign accepter = "Accept" -%}
+{%- endif %}
+    <div class="consentement" id="consentement" role="region" aria-label="{{ etiquette }}"
+         data-ga="{{ site.google_analytics }}" data-actif="{% if jekyll.environment == "production" %}oui{% else %}non{% endif %}" hidden>
+      <p class="consentement-texte">{{ texte }}</p>
+      <div class="consentement-choix">
+        <button type="button" class="consentement-bouton" data-choix="refuse">{{ refuser }}</button>
+        <button type="button" class="consentement-bouton" data-choix="accepte">{{ accepter }}</button>
+      </div>
+    </div>
+    <script src="{{ "/assets/js/consentement.js" | relative_url }}" defer></script>
+{%- endif -%}

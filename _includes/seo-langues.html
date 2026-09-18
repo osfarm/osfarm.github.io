@@ -1,0 +1,31 @@
+{%- comment -%}
+  Tells Google which page is the other-language version of this one
+  (hreflang). The French twin of /x/ is /fr/x/ and the other way round; when
+  the slugs differ, the page names its twin in front matter with
+  `traduction: /fr/…/`. Nothing is written when there is no twin; the stubs
+  jekyll-redirect-from leaves at old addresses do not count as one.
+{%- endcomment -%}
+{%- assign debut = page.url | slice: 0, 4 -%}
+{%- if debut == "/fr/" -%}
+  {%- assign langue = "fr" -%}
+  {%- assign autre_langue = "en" -%}
+  {%- assign autre = page.url | remove_first: "/fr" -%}
+{%- else -%}
+  {%- assign langue = "en" -%}
+  {%- assign autre_langue = "fr" -%}
+  {%- assign autre = "/fr" | append: page.url -%}
+{%- endif -%}
+{%- if page.traduction -%}
+  {%- assign autre = page.traduction -%}
+{%- endif -%}
+{%- assign jumelle = site.pages | where: "url", autre | first -%}
+{%- if jumelle and jumelle.redirect == nil -%}
+  {%- if langue == "en" -%}
+    {%- assign version_en = page.url -%}
+  {%- else -%}
+    {%- assign version_en = autre -%}
+  {%- endif %}
+  <link rel="alternate" hreflang="{{ langue }}" href="{{ page.url | absolute_url }}">
+  <link rel="alternate" hreflang="{{ autre_langue }}" href="{{ autre | absolute_url }}">
+  <link rel="alternate" hreflang="x-default" href="{{ version_en | absolute_url }}">
+{%- endif -%}
