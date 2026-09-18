@@ -1,4 +1,5 @@
 # Add OSFarm open source project
+# repere_fr, repere_en: optional milestone shown on /fr/collectif/ and /collective/
 - name: Agric
   logo: "/assets/img/projects/agric-icon.svg"
   repository: https://github.com/ekylibre/agric
@@ -44,6 +45,8 @@
   - name: "Ekylibre"
     logo: "/assets/img/teams/ekylibre.svg"
 - name: Gort
+  repere_fr: "4,5 M€ de financement de l’ANR dans le cadre de France 2030."
+  repere_en: "€4.5M of ANR funding under the France 2030 plan."
   logo: "/assets/img/projects/gort.png"
   description_en: "Generic, agnostic and interoperable robots for massive technological tranformations"
   description_fr: "Robots interopérables pour la transformation agro-écologique"
@@ -110,6 +113,8 @@
   - name: "Région NA"
     logo: "/assets/img/teams/region_na.png"
 - name: GAIA
+  repere_fr: "Lauréat parmi 770 projets de 111 pays au Sommet pour l’action sur l’IA, Paris 2025."
+  repere_en: "Winner among 770 projects from 111 countries at the AI Action Summit, Paris 2025."
   logo: "/assets/img/projects/gaia-square.png"
   repository: "https://huggingface.co/gaia-mistral"
   project_url: "https://www.gaia-ia.org/"

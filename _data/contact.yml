@@ -1,0 +1,191 @@
+# ---------------------------------------------------------------------------
+# OSFarm — Formulaire de contact (/fr/contact/ et /contact/,
+# docs/fr/contact.html et docs/en/contact.html)
+#
+# Le visiteur choisit d'abord son profil ; la liste « Votre demande » et le
+# champ de précision s'adaptent au profil choisi (assets/js/contact.js).
+# Le message part au workflow n8n « Site — formulaire de contact », qui le
+# transmet à contact@osfarm.org avec l'adresse du visiteur en « Répondre à ».
+#
+# Pour chaque profil, chaque texte existe en français et en anglais (_en) :
+#   id                 identifiant technique, sans accent ni espace
+#   libelle, aide      ce que le visiteur lit, et une phrase sous le libellé
+#   demandes           les choix de la liste « Votre demande » (« Autre » /
+#                      « Other » est ajouté) ; demandes_en dans le même ordre
+#   precision          un champ de plus, propre au profil : libelle, exemple,
+#                      type (text ou url) ; à omettre si inutile
+# ---------------------------------------------------------------------------
+
+meta:
+  webhook: "https://automation.osfarm.org/webhook/site-contact"
+  courriel: "contact@osfarm.org"
+  discord: "https://discord.gg/AtY5ZxCsWM"
+
+profils:
+  - id: agriculteur
+    libelle: "Agriculteur ou agricultrice"
+    libelle_en: "Farmer"
+    aide: "Vous cherchez des outils ouverts pour votre ferme."
+    aide_en: "You are looking for open tools for your farm."
+    demandes:
+      - "Trouver un outil adapté à ma ferme"
+      - "Être formé ou accompagné"
+      - "Partager un retour d’expérience"
+      - "Adhérer à l’association"
+    demandes_en:
+      - "Find a tool that suits my farm"
+      - "Get training or support"
+      - "Share my experience"
+      - "Join the association"
+    precision:
+      libelle: "Votre production et votre département"
+      libelle_en: "What you grow and where"
+      exemple: "ex. grandes cultures, Charente-Maritime"
+      exemple_en: "e.g. arable crops, Charente-Maritime"
+      type: text
+
+  - id: developpeur
+    libelle: "Développeur, éditeur ou start-up"
+    libelle_en: "Developer, software vendor or start-up"
+    aide: "Vous écrivez du logiciel pour l’agriculture."
+    aide_en: "You write software for agriculture."
+    demandes:
+      - "Référencer un projet dans l’annuaire"
+      - "Rendre mon outil interopérable"
+      - "Contribuer à un projet OSFarm"
+      - "Proposer une formation au catalogue"
+    demandes_en:
+      - "List a project in the directory"
+      - "Make my tool interoperable"
+      - "Contribute to an OSFarm project"
+      - "Offer a training course in the catalogue"
+    precision:
+      libelle: "Lien vers votre projet ou votre dépôt"
+      libelle_en: "Link to your project or repository"
+      exemple: "https://"
+      exemple_en: "https://"
+      type: url
+
+  - id: cooperative
+    libelle: "Coopérative, CUMA ou organisation agricole"
+    libelle_en: "Cooperative or farm organisation"
+    aide: "Vous accompagnez des exploitations."
+    aide_en: "You support farms."
+    demandes:
+      - "Équiper nos adhérents en outils ouverts"
+      - "Former nos équipes"
+      - "Monter un projet commun"
+      - "Adhérer à l’association"
+    demandes_en:
+      - "Equip our members with open tools"
+      - "Train our teams"
+      - "Set up a joint project"
+      - "Join the association"
+    precision:
+      libelle: "Nombre d’adhérents ou d’exploitations"
+      libelle_en: "Number of members or farms"
+      exemple: "ex. 120"
+      exemple_en: "e.g. 120"
+      type: text
+
+  - id: fabricant
+    libelle: "Fabricant ou constructeur de matériel"
+    libelle_en: "Equipment manufacturer"
+    aide: "Vous concevez des machines, des capteurs ou des robots."
+    aide_en: "You design machines, sensors or robots."
+    demandes:
+      - "Ouvrir les plans ou le logiciel d’une machine"
+      - "Rendre un matériel interopérable (ISOBUS, API…)"
+      - "Rejoindre un projet OSFarm"
+    demandes_en:
+      - "Open the designs or software of a machine"
+      - "Make equipment interoperable (ISOBUS, API…)"
+      - "Join an OSFarm project"
+    precision:
+      libelle: "Lien vers votre matériel"
+      libelle_en: "Link to your equipment"
+      exemple: "https://"
+      exemple_en: "https://"
+      type: url
+
+  - id: recherche
+    libelle: "Recherche ou enseignement"
+    libelle_en: "Research or education"
+    aide: "Vous travaillez dans un laboratoire, une école ou un institut technique."
+    aide_en: "You work in a lab, a school or a technical institute."
+    demandes:
+      - "Monter un projet de recherche"
+      - "Utiliser les communs en formation"
+      - "Publier des données ou des modèles"
+    demandes_en:
+      - "Set up a research project"
+      - "Use the commons in teaching"
+      - "Publish data or models"
+    precision:
+      libelle: "Votre établissement"
+      libelle_en: "Your institution"
+      exemple: "ex. INRAE, lycée agricole, institut technique"
+      exemple_en: "e.g. INRAE, agricultural college, technical institute"
+      type: text
+
+  - id: collectivite
+    libelle: "Collectivité ou institution publique"
+    libelle_en: "Local authority or public body"
+    aide: "Vous agissez pour un territoire."
+    aide_en: "You act for a territory."
+    demandes:
+      - "Soutenir les communs agricoles sur notre territoire"
+      - "Ouvrir des données publiques agricoles"
+      - "Organiser un événement"
+    demandes_en:
+      - "Support agricultural commons in our area"
+      - "Open public agricultural data"
+      - "Organise an event"
+    precision:
+      libelle: "Votre territoire"
+      libelle_en: "Your territory"
+      exemple: "ex. région Nouvelle-Aquitaine"
+      exemple_en: "e.g. Nouvelle-Aquitaine region"
+      type: text
+
+  - id: presse
+    libelle: "Presse et médias"
+    libelle_en: "Press and media"
+    aide: "Vous préparez un article, un reportage ou une émission."
+    aide_en: "You are preparing an article, a report or a programme."
+    demandes:
+      - "Demande d’interview"
+      - "Informations sur l’association"
+    demandes_en:
+      - "Interview request"
+      - "Information about the association"
+    precision:
+      libelle: "Votre média"
+      libelle_en: "Your outlet"
+      exemple: "ex. La France Agricole"
+      exemple_en: "e.g. Farmers Weekly"
+      type: text
+
+  - id: soutien
+    libelle: "Mécène ou financeur"
+    libelle_en: "Sponsor or funder"
+    aide: "Vous voulez soutenir les communs agricoles."
+    aide_en: "You want to support agricultural commons."
+    demandes:
+      - "Mécénat financier"
+      - "Mécénat de compétences"
+      - "Financer un projet"
+    demandes_en:
+      - "Financial sponsorship"
+      - "Skills sponsorship"
+      - "Fund a project"
+
+  - id: autre
+    libelle: "Autre"
+    libelle_en: "Other"
+    aide: "Votre profil n’est pas dans la liste."
+    aide_en: "Your profile is not in the list."
+    demandes:
+      - "Question générale"
+    demandes_en:
+      - "General question"

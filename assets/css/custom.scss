@@ -98,6 +98,15 @@ $osfarm-encre:  #16210f;
   }
 }
 
+// Sur tablette, le menu se resserre pour tenir sur une ligne avec la langue et
+// le bouton d'adhésion.
+@media (min-width: 768px) and (max-width: 1011px) {
+  .site-nav-inner { gap: 8px 12px; }
+  .site-nav-links { gap: 2px; }
+  .site-nav-links a { padding: 6px 8px; font-size: 15px; }
+  .site-nav-actions { gap: 12px; }
+}
+
 .site-nav-fr {
   margin-left: 4px;
   padding: 0 4px;
@@ -824,7 +833,6 @@ $radar-rayon:    12px;
 }
 
 .catalogue-intro {
-  max-width: 68ch;
   font-size: 16px;
   color: $radar-attenue;
 }
@@ -856,7 +864,6 @@ $radar-rayon:    12px;
 // de l'opérateur, formulaire de candidature) : il respire et s'arrête à la
 // largeur du texte.
 .catalogue-titre-section {
-  max-width: 68ch;
   padding-bottom: 6px;
   margin: 36px 0 14px;
   font-size: 15px;
@@ -929,7 +936,6 @@ $radar-rayon:    12px;
 }
 
 .catalogue-module-corps {
-  max-width: 68ch;
   padding: 0 4px 20px;
   font-size: 15px;
   color: $radar-texte;
@@ -1007,7 +1013,6 @@ $radar-rayon:    12px;
 }
 
 .catalogue-missions-intro {
-  max-width: 68ch;
   font-size: 15px;
   color: $radar-attenue;
 }
@@ -1157,7 +1162,6 @@ $radar-rayon:    12px;
 
 // Charte de l'opérateur : une liste numérotée qui se lit comme un contrat.
 .catalogue-charte {
-  max-width: 68ch;
   padding-left: 22px;
   font-size: 15px;
   color: $radar-texte;
@@ -1228,4 +1232,1399 @@ $radar-rayon:    12px;
 @media (max-width: 543px) {
   .consentement-choix { width: 100%; }
   .consentement-bouton { flex: 1; }
+}
+
+// Page Pourquoi (docs/fr/why.html) : le manifeste d'OSFarm. Les titres sont en
+// Ubuntu, la police du mot « OSFarm » du logo, servie depuis le site (licence
+// dans assets/fonts/UFL.txt) pour ne rien demander à Google. La famille porte
+// un nom propre : la pile de Primer cite déjà « Ubuntu », qu'elle ne doit pas capter. La seule audace est
+// la phrase centrale du manifeste ; le registre reprend les couleurs de famille
+// de l'annuaire des communs, et ses filets rappellent les rangs d'une parcelle.
+@font-face {
+  font-family: "OSFarm Ubuntu";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/ubuntu-500-latin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "OSFarm Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/ubuntu-700-latin.woff2") format("woff2");
+}
+
+$osfarm-titres: "OSFarm Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+.pourquoi {
+  color: $osfarm-encre;
+
+  a { color: $osfarm-green-dark; }
+
+  a:focus-visible,
+  button:focus-visible {
+    outline: 3px solid $osfarm-soleil;
+    outline-offset: 3px;
+  }
+}
+
+.pourquoi-manifeste {
+  margin: 8px auto 0;
+
+  p { margin: 0; }
+}
+
+.pourquoi-hier {
+  font-family: $osfarm-titres;
+  font-weight: 500;
+  font-size: clamp(20px, 2.3vw, 26px);
+  line-height: 1.4;
+  color: $radar-attenue;
+}
+
+.pourquoi-aujourdhui {
+  margin: 18px 0 28px !important;
+  font-family: $osfarm-titres;
+  font-weight: 700;
+  font-size: clamp(30px, 4.6vw, 50px);
+  line-height: 1.1;
+  letter-spacing: -.01em;
+  color: $osfarm-encre;
+}
+
+.pourquoi-cap {
+  padding-left: 20px;
+  font-size: 19px;
+  line-height: 1.6;
+  border-left: 4px solid $osfarm-soleil;
+}
+
+.pourquoi-section { margin-top: 96px; }
+
+.pourquoi-h2 {
+  margin: 0 0 10px;
+  font-family: $osfarm-titres;
+  font-weight: 700;
+  font-size: clamp(24px, 2.6vw, 30px);
+  line-height: 1.2;
+  color: $osfarm-encre;
+}
+
+.pourquoi-intro {
+  margin: 0 0 28px;
+  font-size: 17px;
+  line-height: 1.6;
+  color: $radar-attenue;
+}
+
+// Registre : une ligne par famille, un filet entre chaque comme entre deux rangs.
+.registre {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15.5px;
+  line-height: 1.55;
+
+  thead th {
+    padding: 0 16px 10px;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: left;
+    color: $radar-attenue;
+    border-bottom: 2px solid $osfarm-encre;
+  }
+
+  tbody th,
+  td {
+    padding: 22px 16px;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid $radar-bordure;
+  }
+
+  tbody th {
+    width: 150px;
+    font-family: $osfarm-titres;
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--famille);
+    border-left: 5px solid var(--famille);
+  }
+
+  td:nth-of-type(1) { width: 34%; color: $radar-attenue; }
+  td:nth-of-type(2) { width: 34%; font-weight: 500; }
+
+  td:nth-of-type(3) a {
+    font-weight: 600;
+    color: var(--famille);
+  }
+}
+
+.registre-ligne--materiel { --famille: #6e5600; }
+.registre-ligne--donnees  { --famille: #2c6590; }
+.registre-ligne--logiciel { --famille: #{$osfarm-green-dark}; }
+.registre-ligne--modele   { --famille: #5b4a8b; }
+
+// Réparer son tracteur : le texte, puis la vidéo, qui n'appelle YouTube qu'au clic.
+.pourquoi-reparer {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+  gap: 40px;
+  align-items: center;
+
+  p {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+}
+
+.pourquoi-lecteur {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 12px;
+  background: linear-gradient(rgba(22, 33, 15, .55), rgba(22, 33, 15, .9)),
+              url("../img/header-field.jpg") center 60% / cover $osfarm-encre;
+
+  iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+}
+
+.pourquoi-lecteur-bouton {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 6px;
+  width: 100%;
+  height: 100%;
+  padding: 24px;
+  text-align: left;
+  color: #fff;
+  background: none;
+  border: 0;
+  cursor: pointer;
+
+  &:hover .pourquoi-lecteur-icone circle { fill: #fff; }
+}
+
+.pourquoi-lecteur-icone {
+  width: 56px;
+  height: 56px;
+  margin-bottom: auto;
+
+  circle { fill: $osfarm-soleil; }
+  path { fill: $osfarm-encre; }
+}
+
+.pourquoi-lecteur-titre {
+  font-family: $osfarm-titres;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.pourquoi-lecteur-source {
+  font-size: 14px;
+  color: $radar-bordure;
+}
+
+.pourquoi-lecteur-note {
+  position: absolute;
+  top: 28px;
+  right: 24px;
+  max-width: 200px;
+  margin: 0 !important;
+  font-size: 13px !important;
+  line-height: 1.4 !important;
+  text-align: right;
+  color: $radar-bordure;
+}
+
+// Valeurs : quatre principes, chacun posé sur son filet vert.
+.valeurs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 36px 56px;
+  margin: 28px 0 0;
+
+  dt {
+    font-family: $osfarm-titres;
+    font-size: 21px;
+    font-weight: 700;
+  }
+
+  dd {
+    margin: 8px 0 0;
+    font-size: 16.5px;
+    line-height: 1.6;
+    color: #3b4a35;
+  }
+}
+
+.valeur {
+  padding-top: 14px;
+  border-top: 3px solid $osfarm-green;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px;
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+
+  h3 {
+    margin: 0 0 8px;
+    font-family: $osfarm-titres;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  p {
+    margin: 0 0 12px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #3b4a35;
+  }
+
+  a {
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
+.sources {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    padding: 14px 0;
+    border-bottom: 1px solid $radar-bordure;
+  }
+
+  a { font-weight: 500; }
+
+  span {
+    display: block;
+    margin-top: 2px;
+    font-size: 14px;
+    color: $radar-attenue;
+  }
+}
+
+.pourquoi-appel {
+  margin: 104px 0 48px;
+  padding: 48px;
+  color: #fff;
+  background: $osfarm-encre;
+  border-radius: 14px;
+
+  p {
+    margin: 0 0 28px;
+    font-size: 17px;
+    line-height: 1.6;
+    color: $radar-bordure;
+  }
+}
+
+.pourquoi-appel-titre {
+  margin: 0 0 12px;
+  font-family: $osfarm-titres;
+  font-size: clamp(26px, 3.4vw, 38px);
+  font-weight: 700;
+  line-height: 1.15;
+  color: #fff;
+}
+
+.pourquoi-appel-liens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+
+@media (max-width: 767px) {
+  .pourquoi-section { margin-top: 72px; }
+  .pourquoi-reparer { grid-template-columns: minmax(0, 1fr); }
+  .valeurs { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .actions { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .pourquoi-appel { padding: 32px 24px; }
+
+  // Le registre passe en fiches empilées : chaque cellule reprend son en-tête.
+  .registre {
+    thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+
+    tbody, tr, tbody th, td { display: block; width: auto !important; }
+
+    tr {
+      padding: 18px 0 18px 16px;
+      border-left: 5px solid var(--famille);
+      border-bottom: 1px solid $radar-bordure;
+    }
+
+    tbody th,
+    td {
+      padding: 0;
+      border: 0;
+    }
+
+    tbody th { margin-bottom: 10px; }
+    td + td { margin-top: 10px; }
+
+    td::before {
+      content: attr(data-col);
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      color: $radar-attenue;
+    }
+  }
+
+  .pourquoi-lecteur-note { display: none; }
+}
+
+// Page d'accueil (fr/index.html). Même vocabulaire que la page Pourquoi :
+// titres en Ubuntu, filets verts, encre et jaune soleil. La seule audace est le
+// « plateau » des solutions de la communauté : leurs logos rangés en alvéoles,
+// comme les mottes d'un plateau de semis.
+.accueil {
+  color: $osfarm-encre;
+
+  a { color: $osfarm-green-dark; }
+
+  a:focus-visible,
+  button:focus-visible {
+    outline: 3px solid $osfarm-soleil;
+    outline-offset: 3px;
+  }
+}
+
+.accueil-ouverture {
+  padding-top: 72px;
+  padding-bottom: 64px;
+}
+
+.accueil-titre {
+  max-width: 17em;
+  margin: 0;
+  font-family: $osfarm-titres;
+  font-size: clamp(34px, 5.4vw, 60px);
+  font-weight: 700;
+  line-height: 1.06;
+  letter-spacing: -.01em;
+  color: $osfarm-encre;
+}
+
+.accueil-chapo {
+  margin: 24px 0 0;
+  font-size: 20px;
+  line-height: 1.55;
+  color: #3b4a35;
+}
+
+// Les six qualités, en une ligne typographique séparée de filets. Quand la
+// ligne se replie, le filet qui ouvrirait chaque ligne dépasse à gauche de la
+// liste et disparaît avec son débordement.
+.accueil-qualites {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 6px;
+  margin: 28px 0 0 -16px;
+  padding: 0;
+  overflow: hidden;
+  list-style: none;
+
+  li {
+    margin-left: -1px;
+    padding: 2px 16px;
+    font-family: $osfarm-titres;
+    font-size: 17px;
+    font-weight: 500;
+    color: $osfarm-green-dark;
+    border-left: 1px solid $radar-bordure;
+  }
+}
+
+.accueil-liens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.accueil-h2 {
+  margin: 0 0 10px;
+  font-family: $osfarm-titres;
+  font-size: clamp(24px, 2.6vw, 30px);
+  font-weight: 700;
+  line-height: 1.2;
+  color: $osfarm-encre;
+}
+
+.accueil-intro {
+  margin: 0 0 28px;
+  font-size: 17px;
+  line-height: 1.6;
+  color: $radar-attenue;
+}
+
+.accueil-section { margin-top: 96px; }
+
+// Temps forts : une bande claire, quatre liens avec leur vignette.
+.accueil-une {
+  padding: 28px 0 32px;
+  background: #f3f8ef;
+  border-top: 1px solid $radar-bordure;
+  border-bottom: 1px solid $radar-bordure;
+
+  .accueil-h2 {
+    margin-bottom: 18px;
+    font-size: 20px;
+  }
+}
+
+.temps-forts {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px 28px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+  }
+
+  img {
+    flex: none;
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    background: #fff;
+    border: 1px solid $radar-bordure;
+    border-radius: 8px;
+  }
+
+  a {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+}
+
+.exigences {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 36px 48px;
+  margin: 0;
+
+  dt {
+    font-family: $osfarm-titres;
+    font-size: 21px;
+    font-weight: 700;
+  }
+
+  dd {
+    margin: 8px 0 0;
+    font-size: 16.5px;
+    line-height: 1.6;
+    color: #3b4a35;
+  }
+}
+
+.exigence {
+  padding-top: 14px;
+  border-top: 3px solid $osfarm-green;
+}
+
+// Le plateau : chaque logo dans son alvéole blanche, sur le vert du plateau.
+.plateau {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(92px, 1fr));
+  gap: 8px;
+  margin: 0;
+  padding: 8px;
+  list-style: none;
+  background: $osfarm-green-light;
+  border-radius: 14px;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 1px rgba(36, 92, 0, .08);
+
+    &:hover { box-shadow: inset 0 0 0 2px $osfarm-green; }
+  }
+
+  img {
+    max-width: 68%;
+    max-height: 68%;
+    object-fit: contain;
+  }
+}
+
+.plateau a.plateau-sombre { background: $osfarm-encre; }
+
+.plateau-nom {
+  padding: 0 8px;
+  font-family: $osfarm-titres;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  color: $osfarm-green-dark;
+}
+
+// Étiquette « FR » d'un lien vers une page en français, sur fond clair.
+.accueil .accueil-fr {
+  color: $osfarm-green-dark;
+  border-color: $osfarm-green-dark;
+}
+
+.accueil-suite {
+  margin: 18px 0 0;
+  font-weight: 600;
+
+  a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
+// Les communs en action : une vignette par vidéo, YouTube n'est appelé qu'au clic.
+.demonstrations {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px 28px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  p {
+    margin: 10px 0 0;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #3b4a35;
+  }
+}
+
+.demonstration {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 12px;
+  background: linear-gradient(rgba(22, 33, 15, .45), rgba(22, 33, 15, .88)),
+              url("../img/header-field.jpg") center 60% / cover $osfarm-encre;
+
+  button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 16px 18px;
+    text-align: left;
+    color: #fff;
+    background: none;
+    border: 0;
+    cursor: pointer;
+  }
+
+  svg {
+    width: 44px;
+    height: 44px;
+
+    circle { fill: $osfarm-soleil; }
+    path { fill: $osfarm-encre; }
+  }
+
+  button:hover svg circle { fill: #fff; }
+
+  iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+}
+
+.demonstration-logo {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 52px;
+  height: 52px;
+  padding: 6px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+.demonstration-nom {
+  font-family: $osfarm-titres;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.experts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(112px, 1fr));
+  gap: 24px 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: $osfarm-encre;
+    text-decoration: none;
+
+    &:hover span { text-decoration: underline; }
+  }
+
+  img {
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #fff, 0 0 0 4px $radar-bordure;
+  }
+}
+
+.accueil-rejoindre { margin-top: 104px; margin-bottom: 48px; }
+
+.accueil-rejoindre-cadre {
+  padding: 48px;
+  color: $radar-bordure;
+  background: $osfarm-encre;
+  border-radius: 14px;
+}
+
+.accueil-rejoindre-titre {
+  margin: 0;
+  font-family: $osfarm-titres;
+  font-size: clamp(26px, 3.4vw, 38px);
+  font-weight: 700;
+  line-height: 1.15;
+  color: #fff;
+}
+
+.profils {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px 40px;
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 16px;
+  line-height: 1.55;
+
+  strong { color: #fff; }
+}
+
+@media (max-width: 1011px) {
+  .temps-forts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .exigences { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .demonstrations { gap: 28px 20px; }
+}
+
+@media (max-width: 767px) {
+  .accueil-ouverture { padding-top: 48px; padding-bottom: 48px; }
+  .accueil-chapo { font-size: 18px; }
+  .accueil-section { margin-top: 72px; }
+  .temps-forts,
+  .exigences,
+  .profils { grid-template-columns: minmax(0, 1fr); }
+  .demonstrations { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .plateau { grid-template-columns: repeat(auto-fill, minmax(84px, 1fr)); gap: 6px; padding: 6px; }
+  .accueil-rejoindre-cadre { padding: 32px 24px; }
+}
+
+@media (max-width: 543px) {
+  .demonstrations { grid-template-columns: minmax(0, 1fr); }
+  .plateau { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .experts { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px 8px; }
+  .experts a { font-size: 14px; text-align: center; }
+  .experts img { width: 76px; height: 76px; }
+}
+
+// Page Contact (docs/fr/contact.html) : le formulaire par profil à gauche, les
+// autres canaux à droite, puis les mentions légales. Même vocabulaire que les
+// pages Pourquoi et Accueil. Le profil choisi s'allume en vert.
+.contact {
+  color: $osfarm-encre;
+
+  a { color: $osfarm-green-dark; }
+
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
+    outline: 3px solid $osfarm-soleil;
+    outline-offset: 2px;
+  }
+}
+
+.contact-h2 {
+  margin: 0 0 16px;
+  padding: 0;
+  font-family: $osfarm-titres;
+  font-size: clamp(22px, 2.4vw, 28px);
+  font-weight: 700;
+  line-height: 1.2;
+  color: $osfarm-encre;
+}
+
+.contact-h3 {
+  margin: 0 0 14px;
+  font-family: $osfarm-titres;
+  font-size: 20px;
+  font-weight: 700;
+  color: $osfarm-encre;
+}
+
+.contact-grille {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  gap: 56px;
+  align-items: start;
+}
+
+.contact-profils {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.contact-profils-grille {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.contact-profil {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0;
+  padding: 14px 14px 14px 42px;
+  font-weight: 400;
+  background: #fff;
+  border: 1px solid $radar-bordure;
+  border-radius: 10px;
+  cursor: pointer;
+
+  input {
+    position: absolute;
+    top: 17px;
+    left: 14px;
+    margin: 0;
+    accent-color: $osfarm-green;
+  }
+
+  &:hover { border-color: $osfarm-green; }
+
+  &:has(input:checked) {
+    background: $osfarm-green-light;
+    border-color: $osfarm-green;
+    box-shadow: inset 0 0 0 1px $osfarm-green;
+  }
+
+  &:has(input:focus-visible) {
+    outline: 3px solid $osfarm-soleil;
+    outline-offset: 2px;
+  }
+}
+
+.contact-profil-nom {
+  font-family: $osfarm-titres;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.contact-profil-aide {
+  font-size: 14px;
+  line-height: 1.4;
+  color: $radar-attenue;
+}
+
+.contact-champs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px 20px;
+  margin-top: 32px;
+}
+
+.contact-champ--large { grid-column: 1 / -1; }
+
+.contact-champ {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0;
+
+  > span {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  small {
+    font-weight: 400;
+    color: $radar-attenue;
+  }
+
+  &[hidden] { display: none; }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px 12px;
+    font: inherit;
+    font-size: 16px;
+    color: $osfarm-encre;
+    background: #fff;
+    border: 1px solid #c3d2ba;
+    border-radius: 8px;
+  }
+
+  select:disabled {
+    color: $radar-attenue;
+    background: #f3f5f1;
+  }
+
+  textarea { resize: vertical; }
+}
+
+.contact-accord {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #3b4a35;
+
+  input {
+    flex: none;
+    margin-top: 3px;
+    accent-color: $osfarm-green;
+  }
+}
+
+.contact-envoi {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  align-items: center;
+}
+
+.contact-envoyer {
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  color: $osfarm-encre;
+  background: $osfarm-soleil;
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+
+  &:hover { background: $osfarm-encre; color: #fff; }
+  &:disabled { opacity: .6; cursor: wait; }
+}
+
+.contact-etat {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+
+  &[data-etat="ok"] { color: $osfarm-green-dark; }
+  &[data-etat="erreur"] { color: #a4262c; }
+}
+
+.contact-autres {
+  padding: 24px;
+  background: #f3f8ef;
+  border: 1px solid $radar-bordure;
+  border-radius: 12px;
+
+  dl { margin: 0; }
+
+  div + div {
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid $radar-bordure;
+  }
+
+  dt {
+    font-size: 14px;
+    font-weight: 600;
+    color: $radar-attenue;
+  }
+
+  dd {
+    margin: 4px 0 0;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+}
+
+.contact-sans-js {
+  margin-top: 24px;
+  font-weight: 600;
+}
+
+.contact-legal {
+  margin: 96px 0 48px;
+  padding-top: 32px;
+  border-top: 3px solid $osfarm-green;
+
+  p,
+  li {
+    font-size: 15.5px;
+    line-height: 1.6;
+    color: #3b4a35;
+  }
+}
+
+.mentions {
+  margin: 0 0 40px;
+
+  div {
+    display: grid;
+    grid-template-columns: 240px minmax(0, 1fr);
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid $radar-bordure;
+  }
+
+  dt { font-weight: 600; }
+
+  dd {
+    margin: 0;
+    line-height: 1.55;
+  }
+}
+
+.contact-donnees {
+  margin: 0 0 16px;
+  padding-left: 20px;
+
+  li + li { margin-top: 8px; }
+}
+
+@media (max-width: 1011px) {
+  .contact-grille { grid-template-columns: minmax(0, 1fr); gap: 40px; }
+  .contact-profils-grille { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 543px) {
+  .contact-profils-grille,
+  .contact-champs { grid-template-columns: minmax(0, 1fr); }
+  .mentions div { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+  .contact-legal { margin-top: 72px; }
+}
+
+// Page Le collectif (docs/fr/collectif.html) : la ferme de La Vauzelle en
+// grand, sa fiche, le projet REBUS, le bureau et les projets en cours. Même
+// vocabulaire que les pages Pourquoi, Accueil et Contact.
+.collectif {
+  color: $osfarm-encre;
+
+  a { color: $osfarm-green-dark; }
+
+  a:focus-visible {
+    outline: 3px solid $osfarm-soleil;
+    outline-offset: 3px;
+  }
+}
+
+.collectif-h2 {
+  margin: 0 0 12px;
+  font-family: $osfarm-titres;
+  font-size: clamp(24px, 2.6vw, 30px);
+  font-weight: 700;
+  line-height: 1.2;
+  color: $osfarm-encre;
+}
+
+.collectif-intro {
+  margin: 0 0 28px;
+  font-size: 17px;
+  line-height: 1.6;
+  color: $radar-attenue;
+}
+
+.collectif-section { margin-top: 96px; }
+
+.vauzelle-photo {
+  margin: 0;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 7;
+    object-fit: cover;
+    object-position: center 55%;
+    border-radius: 14px;
+  }
+
+  figcaption {
+    margin-top: 8px;
+    font-size: 14px;
+    color: $radar-attenue;
+  }
+}
+
+.vauzelle-corps {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
+  gap: 56px;
+  margin-top: 40px;
+}
+
+.vauzelle-texte p {
+  font-size: 17px;
+  line-height: 1.65;
+  color: #3b4a35;
+}
+
+.vauzelle-adresse {
+  padding-left: 16px;
+  font-weight: 600;
+  border-left: 4px solid $osfarm-soleil;
+}
+
+// La fiche de la ferme : une ligne par caractéristique, comme un relevé parcellaire.
+.vauzelle-fiche {
+  margin: 0;
+  border-top: 2px solid $osfarm-encre;
+
+  div {
+    display: grid;
+    grid-template-columns: 130px minmax(0, 1fr);
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid $radar-bordure;
+  }
+
+  dt {
+    font-family: $osfarm-titres;
+    font-weight: 700;
+    color: $osfarm-green-dark;
+  }
+
+  dd {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.rebus-encart {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+  gap: 48px;
+  padding: 40px;
+  background: #f3f8ef;
+  border: 1px solid $radar-bordure;
+  border-radius: 14px;
+
+  p {
+    font-size: 16.5px;
+    line-height: 1.6;
+    color: #3b4a35;
+  }
+
+  p a {
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
+.rebus-missions {
+  margin: 0 0 20px;
+  padding-left: 20px;
+
+  li {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #3b4a35;
+  }
+
+  li + li { margin-top: 8px; }
+
+  strong { color: $osfarm-encre; }
+}
+
+.rebus-calendrier {
+  h3 {
+    margin: 0 0 14px;
+    font-family: $osfarm-titres;
+    font-size: 19px;
+    font-weight: 700;
+  }
+
+  ol {
+    margin: 0 0 20px;
+    padding: 0;
+    list-style: none;
+    border-left: 3px solid $osfarm-green;
+  }
+
+  li {
+    position: relative;
+    padding: 0 0 16px 20px;
+    font-size: 15.5px;
+    line-height: 1.5;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: -8px;
+      width: 13px;
+      height: 13px;
+      background: $osfarm-soleil;
+      border: 2px solid #f3f8ef;
+      border-radius: 50%;
+    }
+  }
+
+  span {
+    display: block;
+    font-family: $osfarm-titres;
+    font-weight: 700;
+    color: $osfarm-green-dark;
+  }
+
+  p { font-size: 14.5px; }
+}
+
+.bureau {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 32px 24px;
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  a {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: $osfarm-encre;
+    text-decoration: none;
+
+    &:hover .bureau-nom { text-decoration: underline; }
+  }
+
+  img {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 8px;
+    object-fit: cover;
+    border-radius: 14px;
+  }
+}
+
+.bureau-nom {
+  font-family: $osfarm-titres;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.bureau-fonction {
+  font-size: 15px;
+  color: $radar-attenue;
+}
+
+.projets {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px 36px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.projet {
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+  border-top: 3px solid $osfarm-green;
+
+  p {
+    margin: 0 0 10px;
+    font-size: 15.5px;
+    line-height: 1.55;
+    color: #3b4a35;
+  }
+}
+
+.projet-tete {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 12px;
+
+  img {
+    flex: none;
+    width: 56px;
+    height: 56px;
+    padding: 6px;
+    object-fit: contain;
+    background: #fff;
+    border: 1px solid $radar-bordure;
+    border-radius: 10px;
+  }
+
+  h3 {
+    margin: 0;
+    font-family: $osfarm-titres;
+    font-size: 21px;
+    font-weight: 700;
+  }
+}
+
+.projet .projet-repere {
+  padding-left: 12px;
+  font-weight: 600;
+  color: $osfarm-encre;
+  border-left: 3px solid $osfarm-soleil;
+}
+
+.projet .projet-porteur {
+  font-size: 14px;
+  color: $radar-attenue;
+}
+
+.projet-equipe {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 14px;
+  padding: 0;
+  list-style: none;
+
+  li + li { margin-left: -8px; }
+
+  img {
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    border: 2px solid #fff;
+    border-radius: 50%;
+  }
+}
+
+.projet .projet-liens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  margin-top: auto;
+
+  a {
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
+.collectif-fin {
+  margin: 88px 0 48px;
+  padding: 24px 0;
+  font-family: $osfarm-titres;
+  font-size: 22px;
+  font-weight: 700;
+  border-top: 1px solid $radar-bordure;
+  border-bottom: 1px solid $radar-bordure;
+}
+
+@media (max-width: 1011px) {
+  .vauzelle-corps,
+  .rebus-encart { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .projets { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 543px) {
+  .vauzelle-photo img { aspect-ratio: 4 / 3; }
+  .rebus-encart { padding: 24px; }
+  .projets { grid-template-columns: minmax(0, 1fr); }
+  .vauzelle-fiche div { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+  .bureau { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .bureau img { width: 100%; height: auto; aspect-ratio: 1; }
+  .collectif-section { margin-top: 72px; }
+}
+
+// Boutons d'appel partagés par les pages Pourquoi et Accueil. Ils viennent en
+// dernier pour passer devant la couleur de lien de ces pages. Sur fond clair,
+// ajouter --clair ; --plein marque l'action principale.
+a.bouton-osfarm {
+  display: inline-block;
+  padding: 11px 24px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid rgba(255, 255, 255, .7);
+  border-radius: 999px;
+
+  &:hover { color: #fff; text-decoration: none; border-color: #fff; }
+}
+
+a.bouton-osfarm.bouton-osfarm--clair {
+  color: $osfarm-encre;
+  border-color: $osfarm-encre;
+
+  &:hover { color: #fff; background: $osfarm-encre; }
+}
+
+a.bouton-osfarm.bouton-osfarm--plein {
+  color: $osfarm-encre;
+  background: $osfarm-soleil;
+  border-color: $osfarm-soleil;
+
+  &:hover { color: $osfarm-encre; background: #fff; border-color: #fff; }
+}
+
+a.bouton-osfarm.bouton-osfarm--clair.bouton-osfarm--plein:hover {
+  background: $osfarm-encre;
+  border-color: $osfarm-encre;
+  color: #fff;
 }

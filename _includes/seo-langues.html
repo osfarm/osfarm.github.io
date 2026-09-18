@@ -4,6 +4,8 @@
   the slugs differ, the page names its twin in front matter with
   `traduction: /fr/…/`. Nothing is written when there is no twin; the stubs
   jekyll-redirect-from leaves at old addresses do not count as one.
+  The header's language switch reuses `jumelle` and `autre` set here, so this
+  include must come before the menu.
 {%- endcomment -%}
 {%- assign debut = page.url | slice: 0, 4 -%}
 {%- if debut == "/fr/" -%}

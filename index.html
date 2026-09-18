@@ -1,194 +1,166 @@
 ---
 layout: home
 title: OSFarm
-description: Make farms better, together. Stories of open source, open data, and open hardware on farms.
-org_count: 60
+description: "Open and interoperable solutions for tomorrow’s agriculture: a community of farmers, developers and makers building agricultural commons."
 permalink: /
 ---
-  <div class="container-lg p-responsive py-4 py-lg-6 my-xl-4 text-center">
-    <h1 class="alt-h1 mb-2 text-white">Awesome stack for smart farming</h1>
-    <p class="f2-light text-white">Open source, Sustainable, Full, Affordable, Resilient, Merger.</p>
-  </div>
+{%- comment -%}
+  English home, twin of fr/index.html (same sections, same styles). The logo
+  tray lists the community projects (_data/radar/communaute.yml), each linking
+  to its entry on /community/ (#commun-<id>); experts come from
+  _data/teams.yml, videos from _data/showcases.yml and load on click.
+  Styles: « Page d'accueil » section of assets/css/custom.scss.
+{%- endcomment -%}
+{%- assign nb_communs = 0 -%}
+{%- for lot in site.data.radar -%}
+  {%- assign valides = lot[1].candidats | where: "publier", true -%}
+  {%- assign nb_communs = nb_communs | plus: valides.size -%}
+{%- endfor -%}
+{%- assign solutions = site.data.radar.communaute.candidats | where: "publier", true | sort_natural: "titre" -%}
+{%- assign communaute = "/community/" | relative_url -%}
+{%- assign adhesion = "https://www.helloasso.com/associations/osfarm/adhesions/adhesion-osfarm-2024" -%}
 </div><!-- ends .full-width that started in header.html -->
-<section id="news" class="mini-section mt-6 bg-gray-light">
-  <div class="container-lg p-responsive">
-    <div class="mt-md-6 clearfix gutter-spacious">
-      <div class="mb-4 col-md-6 float-left">
-        <img class="d-block pr-4 float-left" style="width: 80px;" alt="SIA Logo" src="{{"/assets/img/sia.jpg" | relative_url}}">
-        <h2 class="alt-h3 mb-2">
-          OSFarm co-manage GAIA at SIA 2025
-          <a href="{{"/sia2025/" | relative_url}}">Learn More {% octicon chevron-right height:18 class:"d-inline fill-blue ml-1" %}</a>
-        </h2>
+
+<div class="accueil">
+
+  <section class="accueil-ouverture container-xl p-responsive">
+    <h1 class="accueil-titre">Open and interoperable solutions for tomorrow’s agriculture.</h1>
+    <p class="accueil-chapo">OSFarm brings farmers, developers, makers and researchers together around agricultural commons: software, machines, data and models that anyone can use, repair and improve.</p>
+    <ul class="accueil-qualites" aria-label="Our requirements">
+      <li>Open source</li>
+      <li>Sustainable</li>
+      <li>Complete</li>
+      <li>Affordable</li>
+      <li>Resilient</li>
+      <li>Interoperable</li>
+    </ul>
+    <div class="accueil-liens">
+      <a class="bouton-osfarm bouton-osfarm--clair bouton-osfarm--plein" href="{{ communaute }}">Explore the commons</a>
+      <a class="bouton-osfarm bouton-osfarm--clair" href="{{ "/why/" | relative_url }}">Why OSFarm</a>
+    </div>
+  </section>
+
+  <section class="accueil-une" aria-labelledby="une-titre">
+    <div class="container-xl p-responsive">
+      <h2 id="une-titre" class="accueil-h2">Highlights</h2>
+      <ul class="temps-forts">
+        <li>
+          <img src="{{ "/assets/img/osfarm_paris.png" | relative_url }}" alt="" width="64" height="64" loading="lazy">
+          <a href="{{ "/fr/ag2026/" | relative_url }}" hreflang="fr">OSFarm general assembly and meetings, 28 May 2026 in Paris <span class="site-nav-fr accueil-fr">FR</span></a>
+        </li>
+        <li>
+          <img src="{{ "/assets/img/sia.jpg" | relative_url }}" alt="" width="64" height="64" loading="lazy">
+          <a href="{{ "/fr/sia2026/" | relative_url }}" hreflang="fr">8th GAIA hackathon, co-organised at the Paris International Agricultural Show 2026 <span class="site-nav-fr accueil-fr">FR</span></a>
+        </li>
+        <li>
+          <img src="{{ "/assets/img/france_2030.png" | relative_url }}" alt="" width="64" height="64" loading="lazy">
+          <a href="{{ "/france2030/" | relative_url }}">OSFarm takes part in France&nbsp;2030</a>
+        </li>
+        <li>
+          <img src="{{ "/assets/img/osxp.png" | relative_url }}" alt="" width="64" height="64" loading="lazy">
+          <a href="{{ "/osxp2023/" | relative_url }}">OSFarm talk at OSXP 2023, Paris</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="accueil-section container-xl p-responsive" aria-labelledby="exigences-titre">
+    <h2 id="exigences-titre" class="accueil-h2">Six requirements for every solution</h2>
+    <p class="accueil-intro">What we expect from the tools we list, build and install on farms.</p>
+    <dl class="exigences">
+      <div class="exigence">
+        <dt>Open source</dt>
+        <dd>Code, designs and data are published: anyone can study, change and share them.</dd>
       </div>
-      <div class="mb-4 col-md-6 float-left">
-        <img class="d-block pr-4 float-left" style="width: 80px;" alt="ADI Logo" src="{{"/assets/img/adi.png" | relative_url}}">
-        <h2 class="alt-h3 mb-2">
-          ADI introduce OSFarm for robotics
-          <a href="{{"/agritech_adi/" | relative_url}}">Learn More {% octicon chevron-right height:18 class:"d-inline fill-blue ml-1" %}</a>
-        </h2>
+      <div class="exigence">
+        <dt>Sustainable</dt>
+        <dd>An open tool outlives the company that built it, and gets repaired instead of replaced.</dd>
       </div>
-    </div>
-    <div class="mb-md-6 clearfix gutter-spacious">
-      <div class="mb-4 col-md-6 float-left">
-        <img class="d-block pr-4 float-left" style="width: 80px;" alt="France 2030 Logo" src="{{"/assets/img/france_2030.png" | relative_url}}">
-        <h2 class="alt-h3 mb-2">
-          OSFarm make a deposit on France 2030
-          <a href="{{"/france2030/" | relative_url}}">Learn More {% octicon chevron-right height:18 class:"d-inline fill-blue ml-1" %}</a>
-        </h2>
+      <div class="exigence">
+        <dt>Complete</dt>
+        <dd>Software, hardware, electronics, data: everything needed for an end-to-end solution.</dd>
       </div>
-      <div class="mb-4 col-md-6 float-left">
-        <img class="d-block pr-4 float-left" style="width: 80px;" alt="OSXP Logo" src="{{"/assets/img/osxp.png" | relative_url}}">
-        <h2 class="alt-h3 mb-2">
-          OSFarm talk at OSXP Paris 2023
-          <a href="{{"/osxp2023/" | relative_url}}">Learn More {% octicon chevron-right height:18 class:"d-inline fill-blue ml-1" %}</a>
-        </h2>
+      <div class="exigence">
+        <dt>Affordable</dt>
+        <dd>No licence to pay: you pay for service and support, not for the right to use.</dd>
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="bg-gray-light">
-  <div class="container-lg p-responsive py-5 py-md-6 ">
-
-    <h2 class="alt-h2 text-center mb-3 mt-lg-6" id="more-than-just-code">Some project than make our farm stack better</h2>
-    <p class="alt-lead text-gray text-center col-md-10 mx-auto">OSFarm make a selection of functionnal and strong open source project to add it to the interoperable stack</p>
-      <div class="my-4 my-lg-6 clearfix gutter-spacious">
-        {% for org in site.data.showcases %}
-          <div class="col-md-4 float-left animate-out mb-4">
-            <h3 class="alt-h3 mb-3">{{ org.name }}</h3>
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item"
-                src="{{ org.video }}" frameborder="0" allowfullscreen="">
-              </iframe>
-            </div>
-            <small>{{ org.description }}</small>
-          </div>
-        {% endfor %}
+      <div class="exigence">
+        <dt>Resilient</dt>
+        <dd>Installed on the farm, on your own server or with the host of your choice: you depend on no one.</dd>
       </div>
-  </div>
-</section>
-
-<section class="container-lg p-responsive py-5 py-md-6 my-lg-6">
-  <h2 class="alt-h2 text-center mb-3 mt-lg-6">6 reasons to join us</h2>
-  <div class="clearfix gutter-spacious">
-    <div class="mb-3 mb-md-5 col-md-6 float-left">
-      <h2 class="alt-h3 mb-2">
-        {% octicon terminal height:28 class:"fill-blue d-inline mr-2" aria-label:terminal %}
-        Collaborate on sustainable project
-      </h2>
-      <p class="text-gray">Share work, discuss changes, and get feedback in one place to save time and be sure not reinvented the wheel.</p>
-    </div>
-    <div class="mb-3 mb-md-5 col-md-6 float-left">
-      <h2 class="alt-h3 mb-2">
-        {% octicon server height:28 class:"fill-blue d-inline mr-2" aria-label:server %}
-        On your farm, on your servers or in the cloud
-      </h2>
-      <p class="text-gray">Run OSFarm stack on your servers as a virtual appliance, or let us host the stack for you, whatever your security requires.</p>
-    </div>
-  </div>
-
-  <div class="clearfix gutter-spacious">
-    <div class="mb-3 mb-md-5 col-md-6 float-left">
-      <h2 class="alt-h3 mb-2">
-        {% octicon beaker height:28 class:"fill-blue d-inline mr-2" aria-label:beaker %}
-        Foster innovation
-      </h2>
-      <p class="text-gray">OSFarm enables you to rapidly deploy new ideas to build better solutions, faster.</p>
-    </div>
-    <div class="mb-3 mb-md-5 col-md-6 float-left">
-      <h2 class="alt-h3 mb-2">
-        {% octicon tools height:28 class:"fill-blue d-inline mr-2" aria-label:tools %}
-        Software, Hardware built your way
-      </h2>
-      <p class="text-gray">Integrate and Customize third party tools, to deploy solution in the way that works best for your farm.</p>
-    </div>
-  </div>
-
-  <div class="clearfix gutter-spacious">
-    <div class="mb-3 mb-md-5 col-md-6 float-left">
-      <h2 class="alt-h3 mb-2">
-        {% octicon globe height:28 class:"fill-blue d-inline mr-2" aria-label:globe %}
-        Engage community by training & testing in a real farm
-      </h2>
-      <p class="text-gray">Test your project on real farm to engage farmer, or train your agtech developers with ease.</p>
-    </div>
-    <div class="mb-3 mb-md-5 col-md-6 float-left">
-      <h2 class="alt-h3 mb-2">
-        {% octicon checklist height:28 class:"fill-blue d-inline mr-2" aria-label:checklist %}
-        Skip the longtime paperwork on project
-      </h2>
-      <p class="text-gray">No more procrastination on project, look at our community and start building your stack</p>
-    </div>
-  </div>
-
-  <p class="text-center">
-    <a href="{{ "/community/" | relative_url}}" class="btn btn-outline">Show me the community &rarr;</a>
-  </p>
-</section>
-
-<section class="">
-  <div class="container-lg p-responsive py-5 py-md-6 ">
-    <h2 class="alt-h2 text-center mb-3 mt-lg-6" id="join-the-revolution">Join the Revolution</h2>
-    <p class="alt-lead text-gray text-center col-md-10 mx-auto">Join peoples, projects, organizations around the world who collaborate on code, data, hardware, and more for farming future. See the rest of the <a href="/community"> OSFarm community</a>.</p>
-  </div>
-    <div class="featured-orgs text-center p-2 m-2">
-      {% for org in site.data.radar.communaute.candidats %}
-        {% if org.github_org %}
-          <a href="https://github.com/{{ org.github_org }}" class="animate-in">{% avatar user=org.github_org size=80 %}</a>
-        {% endif  %}
-      {% endfor %}
-    </div>
-</section>
-
-<section id="get-started" class="mini-section mt-6">
-  <div class="container-lg p-responsive">
-    <h2 class="alt-h2 text-center mb-3 mt-lg-6">Get started today</h2>
-    <p class="alt-lead text-gray text-center col-md-10 mx-auto">Interessted by something around farming and open source <a href="mailto:contact@osfarm.org">Contact us</a> to learn more about how to be involved</p>
-
-    <div class="mt-md-6 clearfix gutter-spacious">
-      <div class="mb-4 col-md-6 float-left">
-        <h3 class="alt-h3 mb-2">Join as Contributor</h3>
-        <p class="text-gray">Coding and developpement on open source projets link to Agtech.</p>
+      <div class="exigence">
+        <dt>Interoperable</dt>
+        <dd>Open formats and shared standards: tools talk to each other and data flows between them.</dd>
       </div>
-      <div class="mb-4 col-md-6 float-left">
-        <h3 class="alt-h3 mb-2">Join as Farmer</h3>
-        <p class="text-gray">I use solution and want to customize and build it.</p>
+    </dl>
+  </section>
+
+  <section class="accueil-section container-xl p-responsive" aria-labelledby="solutions-titre">
+    <h2 id="solutions-titre" class="accueil-h2">{{ solutions.size }}&nbsp;solutions backed by the community</h2>
+    <p class="accueil-intro">Each logo leads to its entry on the community page. The full directory, in French, lists {{ nb_communs }}&nbsp;agricultural commons.</p>
+    <ul class="plateau">
+      {%- for s in solutions %}
+      <li><a href="{{ communaute }}#commun-{{ s.id }}" title="{{ s.titre | escape }}"{% if s.img_fond == "sombre" %} class="plateau-sombre"{% endif %}>
+        {%- if s.img and s.img contains "/default." -%}
+          <span class="plateau-nom">{{ s.titre }}</span>
+        {%- else -%}
+          <img src="{{ s.img | relative_url }}" alt="{{ s.titre | escape }}" loading="lazy">
+        {%- endif -%}
+      </a></li>
+      {%- endfor %}
+    </ul>
+    <p class="accueil-suite"><a href="{{ communaute }}">Browse all community projects</a> or <a href="{{ "/fr/communs/" | relative_url }}" hreflang="fr">the full directory (French)</a></p>
+  </section>
+
+  <section class="accueil-section container-xl p-responsive" aria-labelledby="action-titre">
+    <h2 id="action-titre" class="accueil-h2">Commons in action</h2>
+    <p class="accueil-intro">Open machines and tools, filmed in the field. Videos load from YouTube when you click.</p>
+    <ul class="demonstrations">
+      {%- for demo in site.data.showcases %}
+      {%- assign id_video = demo.video | split: "/embed/" | last | split: "?" | first %}
+      <li>
+        <div class="demonstration" data-video="{{ id_video }}" data-titre="{{ demo.name | escape }}">
+          <button type="button">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="23"/><path d="M19 15v18l15-9z"/></svg>
+            <span class="sr-only">Play the video: </span><span class="demonstration-nom">{{ demo.name }}</span>
+          </button>
+          {%- if demo.img %}
+          <img class="demonstration-logo" src="{{ demo.img | relative_url }}" alt="" loading="lazy">
+          {%- endif %}
+        </div>
+        <p>{{ demo.description }}</p>
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+
+  <section class="accueil-section container-xl p-responsive" id="contact-a-human" aria-labelledby="experts-titre">
+    <h2 id="experts-titre" class="accueil-h2">The association’s experts</h2>
+    <p class="accueil-intro">Agronomists, developers, researchers and entrepreneurs: they lead OSFarm’s projects and answer your questions.</p>
+    <ul class="experts">
+      {%- for p in site.data.teams %}
+      <li><a href="{{ p.url }}" target="_blank" rel="noopener"><img src="{{ p.img | relative_url }}" alt="" width="96" height="96" loading="lazy"><span>{{ p.name }}</span></a></li>
+      {%- endfor %}
+    </ul>
+  </section>
+
+  <section class="accueil-rejoindre container-xl p-responsive" aria-labelledby="rejoindre-titre">
+    <div class="accueil-rejoindre-cadre">
+      <h2 id="rejoindre-titre" class="accueil-rejoindre-titre">Join OSFarm.</h2>
+      <ul class="profils">
+        <li><strong>You farm</strong> and want tools you can choose, repair and adapt.</li>
+        <li><strong>You develop or build</strong> an open solution and want to make it known and connect it to others.</li>
+        <li><strong>You represent a farm organisation</strong> and want to make your tools interoperable.</li>
+        <li><strong>You want to support</strong> agricultural commons, through financial or skills sponsorship.</li>
+      </ul>
+      <div class="accueil-liens">
+        <a class="bouton-osfarm bouton-osfarm--plein" href="{{ adhesion }}" target="_blank" rel="noopener">Join</a>
+        <a class="bouton-osfarm" href="https://discord.gg/AtY5ZxCsWM" target="_blank" rel="noopener">Chat on Discord</a>
+        <a class="bouton-osfarm" href="{{ "/contact/" | relative_url }}">Contact us</a>
       </div>
     </div>
-    <div class="mb-md-6 clearfix gutter-spacious">
-      <div class="mb-4 col-md-6 float-left">
-        <h3 class="alt-h3 mb-2">Join as Farmer Organization</h3>
-        <p class="text-gray">We want to promote and sell services aroud open source solutions for Agtech.</p>
-      </div>
-      <div class="mb-4 col-md-6 float-left">
-        <h3 class="alt-h3 mb-2">Join as a sponsort partner</h3>
-        <p class="text-gray">We want to promote and support open source Agtech solutions.</p>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section id="contact-a-human" class="bg-gray-light">
-  <div class="container-lg p-responsive py-5 py-md-6 text-center">
-    <h2 class="alt-h2 text-center mb-3 mt-lg-6">Awesome experts for smart farming</h2>
-    <div class="featured-orgs text-center p-2 m-2">
-      {% for people in site.data.teams %}
-      <a href="{{ people.url }}" class="animate-in">
-        <img class="avatar" src="{{ people.img | relative_url }}" alt="{{ people.name }}" width="80" height="80"/>
-        <div class="caption">{{ people.name }}</div>
-      </a>
-      {% endfor %}
-    </div>
-    <h3 class="alt-h2 mb-4">Talk to the core team</h3>
-    <a href="mailto:contact@osfarm.org" class="text-center">
-      <span class="sr-only">Email</span>
-      {% octicon inbox height:24 class:"fill-gray-light d-inline" aria-label:github-logo %}
-    </a>
-    <a href="https://discord.gg/AtY5ZxCsWM" target="_blank" class="text-center">
-      <span class="sr-only">Discord</span>
-      {% octicon comment-discussion height:24 class:"fill-gray-light d-inline" aria-label:github-logo %}
-    </a>
-    
+</div>
 
-  </div>
-</section>
+<script src="{{ "/assets/js/lecteur-video.js" | relative_url }}" defer></script>

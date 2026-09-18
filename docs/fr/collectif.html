@@ -1,0 +1,118 @@
+---
+title: Le collectif
+layout: fr-support-page
+permalink: /fr/collectif/
+description: "Une association d’agriculteurs, de développeurs et de chercheurs, installée sur une ferme biologique de Charente-Maritime."
+lang: fr
+traduction: /collective/
+large: true
+---
+{%- comment -%}
+  Page « Le collectif » : la ferme de La Vauzelle (siège de l'association), le
+  projet REBUS qui s'y prépare, le bureau (_data/bureau.yml) et les projets en
+  cours (_data/osfarm_projects.yml, champ repere_fr pour un jalon).
+  Chiffres de la ferme et de REBUS : dossier REBUS (docs/fr/rebus.md).
+  Styles : section « Page Le collectif » de assets/css/custom.scss.
+{%- endcomment -%}
+{%- assign asso = site.data.association -%}
+
+<div class="collectif">
+
+  <section class="vauzelle" aria-labelledby="vauzelle-titre">
+    <figure class="vauzelle-photo">
+      <img src="{{ "/assets/img/la-vauzelle.jpg" | relative_url }}"
+           srcset="{{ "/assets/img/la-vauzelle-900.jpg" | relative_url }} 900w, {{ "/assets/img/la-vauzelle.jpg" | relative_url }} 1600w"
+           sizes="(max-width: 1280px) 100vw, 1248px"
+           width="1600" height="902"
+           alt="Vue aérienne de La Vauzelle : les bâtiments de la ferme, le potager, les parcelles de maraîchage, le bois de chênes verts et la mare.">
+      <figcaption>La Vauzelle, à Saint-Porchaire, en Charente-Maritime.</figcaption>
+    </figure>
+
+    <div class="vauzelle-corps">
+      <div class="vauzelle-texte">
+        <h2 id="vauzelle-titre" class="collectif-h2">La Vauzelle, notre ferme</h2>
+        <p>Le siège de l’association est une ferme en activité, en Saintonge romane, conduite en agriculture biologique depuis 2017. C’est là que les outils de la communauté sont testés, montrés et enseignés, dans les conditions d’une vraie exploitation charentaise&nbsp;: ses sols, son climat, ses contraintes.</p>
+        <p class="vauzelle-adresse">{{ asso.siege }}</p>
+      </div>
+      <dl class="vauzelle-fiche">
+        <div><dt>Surface</dt><dd>32&nbsp;ha en agriculture biologique, dont 11&nbsp;ha irrigables</dd></div>
+        <div><dt>Sols</dt><dd>Groies argilo-calcaires et terres rouges à châtaigniers</dd></div>
+        <div><dt>Milieux</dt><dd>2&nbsp;ha de bois de chênes verts, 1&nbsp;ha de zone humide, un puits et un potager clos</dd></div>
+        <div><dt>Bâtiments</dt><dd>3&nbsp;000&nbsp;m² de bâtiments agricoles et 650&nbsp;m² d’habitation</dd></div>
+        <div><dt>Réseaux</dt><dd>Fibre optique, wifi longue portée et réseau LoRa pour les capteurs</dd></div>
+        <div><dt>Guidage</dt><dd>Une borne RTK du réseau Centipède, «&nbsp;LAVZ&nbsp;», pour le positionnement centimétrique</dd></div>
+        <div><dt>Énergie</dt><dd>Production photovoltaïque sur place</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="collectif-section rebus-encart" aria-labelledby="rebus-titre">
+    <div class="rebus-texte">
+      <h2 id="rebus-titre" class="collectif-h2">REBUS, un FarmLab en préparation</h2>
+      <p>OSFarm prépare à La Vauzelle un tiers-lieu de l’agriculture numérique ouverte&nbsp;: un lieu pour se former, expérimenter et partager des outils libres sur une ferme en activité, et non dans un laboratoire hors-sol. Chaque outil y sera documenté et reproductible, pour que les agriculteurs repartent avec des solutions qu’ils savent entretenir eux-mêmes.</p>
+      <ul class="rebus-missions">
+        <li><strong>Formation et fabrication.</strong> Serveurs de seconde main sous Linux, capteurs et stations météo, installation des logiciels de la communauté.</li>
+        <li><strong>Recherche et développement.</strong> Essais en plein champ de GORT, GAIA et AOG+, avec les données d’un jumeau numérique de la ferme.</li>
+        <li><strong>Accueil.</strong> Stages de deux à cinq jours, groupes de chambres d’agriculture, de lycées agricoles, de CUMA et de coopératives, journées de démonstration.</li>
+      </ul>
+      <p><a href="{{ "/fr/rebus/" | relative_url }}">Découvrir le projet REBUS</a></p>
+    </div>
+    <div class="rebus-calendrier">
+      <h3>Calendrier prévu</h3>
+      <ol>
+        <li><span>2026</span> Structuration du projet et aménagement des bâtiments</li>
+        <li><span>2027</span> Premiers services, jumeau numérique et premiers stages</li>
+        <li><span>2028</span> Consolidation et publication du modèle en open source</li>
+      </ol>
+      <p>Budget prévisionnel de 218&nbsp;700&nbsp;€, avec le FEADER via le Pays de Saintonge Romane et la Région Nouvelle-Aquitaine&nbsp;; le plan de financement est en cours de montage.</p>
+    </div>
+  </section>
+
+  <section class="collectif-section" aria-labelledby="bureau-titre">
+    <h2 id="bureau-titre" class="collectif-h2">Le bureau</h2>
+    <ul class="bureau">
+      {%- for m in site.data.bureau %}
+      <li>
+        {%- if m.url %}<a href="{{ m.url }}" target="_blank" rel="noopener">{% endif %}
+        <img src="{{ m.img | relative_url }}" alt="" width="160" height="160" loading="lazy">
+        <span class="bureau-nom">{{ m.nom }}</span>
+        {%- if m.url %}</a>{% endif %}
+        <span class="bureau-fonction">{{ m.fonction }}</span>
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+
+  <section class="collectif-section" aria-labelledby="projets-titre">
+    <h2 id="projets-titre" class="collectif-h2">Les projets en cours</h2>
+    <p class="collectif-intro">Des communs développés par les adhérents, chacun avec son équipe et son groupe de travail. Écrivez au groupe pour y participer.</p>
+    <ul class="projets">
+      {%- for p in site.data.osfarm_projects %}
+      <li class="projet">
+        <div class="projet-tete">
+          {%- if p.logo %}<img src="{{ p.logo | relative_url }}" alt="" width="56" height="56" loading="lazy">{% endif %}
+          <h3>{{ p.name }}</h3>
+        </div>
+        <p>{{ p.description_fr }}</p>
+        {%- if p.repere_fr %}<p class="projet-repere">{{ p.repere_fr }}</p>{% endif %}
+        <p class="projet-porteur">Porté par {{ p.project_leader }}</p>
+        {%- if p.teams %}
+        <ul class="projet-equipe" aria-label="Équipe">
+          {%- for t in p.teams %}
+          <li><img src="{{ t.img | relative_url }}" alt="{{ t.name | escape }}" title="{{ t.name | escape }}, {{ t.role | escape }}" width="36" height="36" loading="lazy"></li>
+          {%- endfor %}
+        </ul>
+        {%- endif %}
+        <p class="projet-liens">
+          {%- if p.repository %}<a href="{{ p.repository }}" target="_blank" rel="noopener">Code<span class="sr-only"> de {{ p.name }}</span></a>{% endif %}
+          {%- if p.project_url %}<a href="{{ p.project_url }}" target="_blank" rel="noopener">Site<span class="sr-only"> de {{ p.name }}</span></a>{% endif %}
+          {%- if p.email %}<a href="mailto:{{ p.email }}">Rejoindre le groupe<span class="sr-only"> {{ p.name }}</span></a>{% endif %}
+        </p>
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+
+  <p class="collectif-fin">Envie de venir à La Vauzelle ou de rejoindre un projet&nbsp;? <a href="{{ "/fr/contact/" | relative_url }}">Écrivez-nous</a>.</p>
+
+</div>

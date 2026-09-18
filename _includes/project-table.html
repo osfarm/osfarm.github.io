@@ -18,7 +18,7 @@
               <div class="org-row clearfix gutter">
             {% endif %}
 
-            <div class="col-sm-3 float-left org">
+            <div class="col-sm-3 float-left org"{% if org.id %} id="commun-{{ org.id }}"{% endif %}>
               <div class="border d-block text-center px-2 py-4 mb-4">
                 {% if org.img %}
                   <img class="avatar" src="{{ org.img | relative_url }}" width="100" height="auto" alt="" loading="lazy"/>

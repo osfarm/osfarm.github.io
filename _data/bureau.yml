@@ -1,0 +1,32 @@
+# ---------------------------------------------------------------------------
+# OSFarm — Bureau de l'association, affiché sur /fr/collectif/ et /collective/.
+#
+# Un membre par entrée, dans l'ordre du bureau :
+#   nom        prénom et nom
+#   fonction   président·e, vice-président·e, trésorier·ère, secrétaire…
+#   fonction_en  la fonction en anglais, si la page anglaise ne la traduit pas
+#              d'elle-même (président, trésorier, secrétaire et administrateur le sont)
+#   img        photo carrée dans /assets/img/teams/ (celles des experts servent)
+#   url        profil public, facultatif
+# ---------------------------------------------------------------------------
+
+- nom: "David"
+  fonction: "Président"
+  img: "/assets/img/teams/david.jpg"
+  url: "https://www.linkedin.com/in/david-joulin-9b629790"
+- nom: Olivier
+  fonction: Trésorier
+  img: "/assets/img/teams/olivier.jpeg"
+  url: "https://www.linkedin.com/in/crapougnax"
+- nom: Laurent
+  fonction: Secretaire
+  img: "/assets/img/teams/laurent.jpeg"
+  url: "https://www.linkedin.com/in/laurenttripied"
+- nom: Bertrand
+  fonction: Administrateur
+  img: "/assets/img/teams/bertrand.jpeg"
+  url: "https://www.linkedin.com/in/bertrandgorge"
+- nom: Cyril
+  fonction: Administrateur
+  img: "/assets/img/teams/cyril.jpeg"
+  url: "https://www.linkedin.com/in/cyril-roudot-63a56587"

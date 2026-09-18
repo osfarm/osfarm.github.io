@@ -1,0 +1,154 @@
+---
+title: Why OSFarm
+layout: support-page
+permalink: /why/
+description: "Because farm tools should belong to the people who farm."
+lang: en
+---
+{%- comment -%}
+  English “Why” page, twin of docs/fr/why.html (same sections, same styles).
+  The register follows the four families of the commons directory and links
+  to the community page (#commun-<id>). Figures are computed from _data/ at
+  build time. Styles: « Page Pourquoi » section of assets/css/custom.scss.
+{%- endcomment -%}
+{%- assign nb_communs = 0 -%}
+{%- for lot in site.data.radar -%}
+  {%- assign valides = lot[1].candidats | where: "publier", true -%}
+  {%- assign nb_communs = nb_communs | plus: valides.size -%}
+{%- endfor -%}
+{%- assign nb_adherents = site.data.operateurs | where_exp: "o", "o.role != 'partenaire'" | size -%}
+{%- assign catalogue = site.data.catalogue -%}
+{%- assign communaute = "/community/" | relative_url -%}
+
+<div class="pourquoi">
+
+  <section class="pourquoi-manifeste" aria-label="Manifesto">
+    <p class="pourquoi-hier">For centuries, villages shared their pastures, their ovens and their seeds. These were the commons.</p>
+    <p class="pourquoi-aujourdhui">Today, it is farm machines, farm data and farm software that are being fenced off.</p>
+    <p class="pourquoi-cap">OSFarm stands for the opposite: open tools, maintained in common, so that farmers stay in charge of their work, their choices and their data.</p>
+  </section>
+
+  <section class="pourquoi-section" aria-labelledby="registre-titre">
+    <h2 id="registre-titre" class="pourquoi-h2">What is closing, what we reopen</h2>
+    <p class="pourquoi-intro">The four families of the commons directory are the four fields where agriculture loses control, and where it can take it back.</p>
+
+    <table class="registre">
+      <thead>
+        <tr>
+          <th scope="col"><span class="sr-only">Family</span></th>
+          <th scope="col">What is closing</th>
+          <th scope="col">What the commons make possible</th>
+          <th scope="col">In the directory</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="registre-ligne registre-ligne--materiel">
+          <th scope="row">Hardware</th>
+          <td data-col="What is closing">On many recent machines, a repair can only be validated with the manufacturer’s software, reserved for its dealers.</td>
+          <td data-col="What the commons make possible">Published designs, parts and code: the machine gets repaired on the farm, at the village workshop or between neighbours.</td>
+          <td data-col="In the directory"><a href="{{ communaute }}#commun-projet-l-atelier-paysan">L’Atelier Paysan</a>, <a href="{{ communaute }}#commun-projet-agopengps">AgOpenGPS</a></td>
+        </tr>
+        <tr class="registre-ligne registre-ligne--donnees">
+          <th scope="row">Data</th>
+          <td data-col="What is closing">Data produced on the farm goes to the manufacturer or the vendor, in formats other tools cannot read.</td>
+          <td data-col="What the commons make possible">Open formats and public reference data: the data stays with the farmer and moves from one tool to another.</td>
+          <td data-col="In the directory"><a href="{{ communaute }}#commun-projet-meteo-france">Météo-France</a>, <a href="{{ communaute }}#commun-projet-data-food-consortium">Data Food Consortium</a></td>
+        </tr>
+        <tr class="registre-ligne registre-ligne--logiciel">
+          <th scope="row">Software</th>
+          <td data-col="What is closing">Subscriptions, in-house formats, and tools that vanish when the vendor changes strategy.</td>
+          <td data-col="What the commons make possible">Free software outlives the company that wrote it, and anyone can adapt it to their farm.</td>
+          <td data-col="In the directory"><a href="{{ communaute }}#commun-projet-ekylibre">Ekylibre</a>, <a href="{{ communaute }}#commun-projet-farmos">farmOS</a>, <a href="{{ communaute }}#commun-projet-qgis">QGIS</a></td>
+        </tr>
+        <tr class="registre-ligne registre-ligne--modele">
+          <th scope="row">AI models</th>
+          <td data-col="What is closing">Advice produced by models whose data and reasoning nobody can check.</td>
+          <td data-col="What the commons make possible">Open, frugal models, trained on known data, running on servers you control.</td>
+          <td data-col="In the directory"><a href="{{ communaute }}#commun-projet-plant-cv">PlantCV</a>, <a href="{{ communaute }}#commun-projet-mistral-ai">Mistral AI</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="pourquoi-section pourquoi-reparer" aria-labelledby="reparer-titre">
+    <div class="pourquoi-reparer-texte">
+      <h2 id="reparer-titre" class="pourquoi-h2">Repairing your own tractor, a right to win back</h2>
+      <p>In the United States, farmers wait for the dealer to fix breakdowns they could repair themselves, because they have no access to the machine’s software. More Perfect Union’s report puts the bill at $4&nbsp;billion a year.</p>
+      <p>Hardware with open designs and open code leaves no one in that position.</p>
+    </div>
+    <div class="pourquoi-lecteur" data-video="jaOS6bGta7M" data-titre="How John Deere Robs Farmers Of $4 Billion A Year">
+      <button type="button" class="pourquoi-lecteur-bouton">
+        <svg class="pourquoi-lecteur-icone" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="23"/><path d="M19 15v18l15-9z"/></svg>
+        <span class="pourquoi-lecteur-titre">How John Deere Robs Farmers Of $4&nbsp;Billion A Year</span>
+        <span class="pourquoi-lecteur-source">A report by More Perfect Union</span>
+      </button>
+      <p class="pourquoi-lecteur-note">The video loads from YouTube when you click.</p>
+    </div>
+  </section>
+
+  <section class="pourquoi-section" aria-labelledby="valeurs-titre">
+    <h2 id="valeurs-titre" class="pourquoi-h2">What guides us</h2>
+    <dl class="valeurs">
+      <div class="valeur">
+        <dt>Openness</dt>
+        <dd>Code, designs and data are published under free licences: anyone can use, study, change and share them.</dd>
+      </div>
+      <div class="valeur">
+        <dt>The commons</dt>
+        <dd>A shared resource only lives if a community maintains it and sets its rules. We connect, document and support the communities that do.</dd>
+      </div>
+      <div class="valeur">
+        <dt>Farm autonomy</dt>
+        <dd>Farmers choose their tools, repair their machines and keep control of their data. Changing supplier should cost them nothing.</dd>
+      </div>
+      <div class="valeur">
+        <dt>Cooperation</dt>
+        <dd>Farmers, companies, researchers and local authorities build once, together, what each used to reinvent alone.</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="pourquoi-section" aria-labelledby="actions-titre">
+    <h2 id="actions-titre" class="pourquoi-h2">What OSFarm does</h2>
+    <ul class="actions">
+      <li class="action">
+        <h3>List the commons</h3>
+        <p>The directory gathers {{ nb_communs }}&nbsp;agricultural commons, software, hardware, data and models, spotted by our watch and reviewed before publication.</p>
+        <a href="{{ communaute }}">Explore the commons</a>
+      </li>
+      <li class="action">
+        <h3>Train and support</h3>
+        <p>{{ catalogue.modules.size }}&nbsp;training courses and {{ catalogue.missions.size }}&nbsp;consulting assignments, delivered by {{ nb_adherents }}&nbsp;members. The association puts people in touch and takes no commission.</p>
+        <a href="{{ "/catalogue/" | relative_url }}">See the catalogue</a>
+      </li>
+      <li class="action">
+        <h3>Bring the makers together</h3>
+        <p>Farmers, software vendors, manufacturers and researchers meet in the association, at the Paris International Agricultural Show and at our yearly gatherings.</p>
+        <a href="{{ "/collective/" | relative_url }}">Meet the collective</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="pourquoi-section" aria-labelledby="sources-titre">
+    <h2 id="sources-titre" class="pourquoi-h2">What the FAO and the United Nations say</h2>
+    <p class="pourquoi-intro">The major institutions reach the same conclusion: without accessible, shared tools, most of the world’s small farms will stay out of reach of agricultural technology.</p>
+    <ul class="sources">
+      {%- for pub in site.data.publications %}
+      <li><a href="{{ pub.url }}" target="_blank" rel="noopener">{{ pub.title }}</a><span>{{ pub.author }}</span></li>
+      {%- endfor %}
+      <li><a href="https://www.youtube.com/watch?v=iZC-kWKPY_M" target="_blank" rel="noopener">SOFA 2022: Leveraging automation in agriculture for transforming agrifood systems</a><span>Food and Agriculture Organization, video</span></li>
+    </ul>
+  </section>
+
+  <section class="pourquoi-appel" aria-labelledby="appel-titre">
+    <h2 id="appel-titre" class="pourquoi-appel-titre">A commons only exists if people look after it.</h2>
+    <p>Joining OSFarm keeps the watch, the directory and the gatherings alive, and gives you a vote at the general assembly.</p>
+    <div class="pourquoi-appel-liens">
+      <a class="bouton-osfarm bouton-osfarm--plein" href="https://www.helloasso.com/associations/osfarm/adhesions/adhesion-osfarm-2024" target="_blank" rel="noopener">Join OSFarm</a>
+      <a class="bouton-osfarm" href="{{ "/contact/" | relative_url }}">Contact us</a>
+    </div>
+  </section>
+
+</div>
+
+<script src="{{ "/assets/js/lecteur-video.js" | relative_url }}" defer></script>

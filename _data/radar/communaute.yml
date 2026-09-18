@@ -5,6 +5,7 @@
 #   titre, url        nom et site du projet
 #   depot             dépôt de code, s'il diffère de l'url
 #   demo, img         lien de démonstration, logo dans /assets/img/projects/
+#   img_fond          « sombre » pour un logo blanc, posé alors sur fond foncé
 #   github_org        compte GitHub, pour l'avatar des pages d'accueil
 #   famille           logiciel | materiel | donnees | modele
 #   categorie         catégorie en français (annuaire) ; category : en anglais (/community/)
@@ -830,6 +831,7 @@ candidats:
   depot: https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/CartoDB/cartodb
   demo: https://www.youtube.com/watch?v=4hoU2vNl6wE&t=6s
   img: /assets/img/projects/carto.svg
+  img_fond: sombre
   github_org: CartoDB
   famille: logiciel
   categorie: Cartographie et SIG
@@ -884,6 +886,7 @@ candidats:
   depot: https://github.com/opengisch/QField
   demo: https://www.opengis.ch/fr/category/gis-fr/qfield-fr/faits-saillants-de-qfield/
   img: /assets/img/projects/qfield.svg
+  img_fond: sombre
   github_org: opengisch
   famille: logiciel
   categorie: Cartographie et SIG

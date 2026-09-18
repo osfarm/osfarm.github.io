@@ -1,0 +1,159 @@
+---
+title: Contact
+layout: fr-support-page
+permalink: /fr/contact/
+description: "Une question, un projet, une envie de contribuer ? Dites-nous qui vous êtes : votre message arrive à l’équipe avec ce qu’il faut pour vous répondre."
+lang: fr
+large: true
+---
+{%- comment -%}
+  Page Contact : formulaire par profil et mentions légales.
+  Profils, demandes et adresse d'envoi : _data/contact.yml ; identité légale :
+  _data/association.yml. Le formulaire est piloté par assets/js/contact.js et
+  envoyé au workflow n8n « Site — formulaire de contact ».
+  Styles : section « Page Contact » de assets/css/custom.scss.
+{%- endcomment -%}
+{%- assign contact = site.data.contact -%}
+{%- assign asso = site.data.association -%}
+{%- assign adhesion = "https://www.helloasso.com/associations/osfarm/adhesions/adhesion-osfarm-2024" -%}
+
+<div class="contact">
+
+  <div class="contact-grille">
+    <form class="contact-formulaire" id="contact-formulaire" data-webhook="{{ contact.meta.webhook }}" data-repli="{{ contact.meta.courriel }}">
+      <fieldset class="contact-profils">
+        <legend class="contact-h2">Vous êtes…</legend>
+        <div class="contact-profils-grille">
+          {%- for p in contact.profils %}
+          <label class="contact-profil">
+            <input type="radio" name="profil" value="{{ p.id }}" required>
+            <span class="contact-profil-nom">{{ p.libelle }}</span>
+            <span class="contact-profil-aide">{{ p.aide }}</span>
+          </label>
+          {%- endfor %}
+        </div>
+      </fieldset>
+
+      <div class="contact-champs">
+        <label class="contact-champ contact-champ--large">
+          <span>Votre demande</span>
+          <select name="demande" required disabled>
+            <option value="">Choisissez d’abord votre profil</option>
+          </select>
+        </label>
+        <label class="contact-champ">
+          <span>Nom et prénom</span>
+          <input type="text" name="nom" required autocomplete="name" maxlength="120">
+        </label>
+        <label class="contact-champ">
+          <span>Courriel</span>
+          <input type="email" name="email" required autocomplete="email" maxlength="200">
+        </label>
+        <label class="contact-champ">
+          <span>Structure <small>(facultatif)</small></span>
+          <input type="text" name="organisation" autocomplete="organization" maxlength="200">
+        </label>
+        <label class="contact-champ contact-precision" hidden>
+          <span class="contact-precision-libelle"></span>
+          <input type="text" name="precision" maxlength="300">
+        </label>
+        <label class="contact-champ contact-champ--large">
+          <span>Votre message</span>
+          <textarea name="message" rows="6" required minlength="10" maxlength="6000"></textarea>
+        </label>
+        <input type="text" name="site_web" class="catalogue-leurre" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <label class="contact-accord contact-champ--large">
+          <input type="checkbox" name="rgpd" value="oui" required>
+          <span>J’accepte qu’OSFarm utilise ces informations pour répondre à mon message. <a href="#donnees-personnelles">Ce que nous faisons de vos données</a></span>
+        </label>
+        <div class="contact-envoi contact-champ--large">
+          <button type="submit" class="contact-envoyer">Envoyer le message</button>
+          <p class="contact-etat" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+      <script type="application/json" id="contact-profils">{{ contact.profils | jsonify }}</script>
+    </form>
+
+    <aside class="contact-autres" aria-labelledby="autres-titre">
+      <h2 id="autres-titre" class="contact-h3">Autres façons de nous joindre</h2>
+      <dl>
+        <div>
+          <dt>Par courriel</dt>
+          <dd><a href="mailto:{{ contact.meta.courriel }}">{{ contact.meta.courriel }}</a></dd>
+        </div>
+        <div>
+          <dt>Sur Discord</dt>
+          <dd><a href="{{ contact.meta.discord }}" target="_blank" rel="noopener">Rejoindre le serveur de la communauté</a></dd>
+        </div>
+        <div>
+          <dt>Pour une formation</dt>
+          <dd>Passez par le <a href="{{ "/fr/catalogue/" | relative_url }}">catalogue</a>&nbsp;: votre demande part directement à l’adhérent qui l’assure.</dd>
+        </div>
+        <div>
+          <dt>Pour un projet de l’annuaire</dt>
+          <dd>Proposez-le ou signalez une erreur <a href="https://github.com/osfarm/osfarm.github.io/issues/new" target="_blank" rel="noopener">sur GitHub</a>.</dd>
+        </div>
+        <div>
+          <dt>Pour adhérer</dt>
+          <dd><a href="{{ adhesion }}" target="_blank" rel="noopener">Adhérer à OSFarm sur HelloAsso</a></dd>
+        </div>
+      </dl>
+    </aside>
+  </div>
+
+  <noscript>
+    <p class="contact-sans-js">Le formulaire a besoin de JavaScript. Écrivez-nous directement à <a href="mailto:{{ contact.meta.courriel }}">{{ contact.meta.courriel }}</a>, en précisant qui vous êtes.</p>
+  </noscript>
+
+  <section class="contact-legal" id="mentions-legales" aria-labelledby="mentions-titre">
+    <h2 id="mentions-titre" class="contact-h2">Mentions légales</h2>
+    <dl class="mentions">
+      <div>
+        <dt>Éditeur du site</dt>
+        <dd>{{ asso.nom }}, {{ asso.forme | downcase }}</dd>
+      </div>
+      <div>
+        <dt>Siège social</dt>
+        <dd>{{ asso.siege }}</dd>
+      </div>
+      <div>
+        <dt>Identifiants</dt>
+        <dd>RNA {{ asso.rna }}<br>SIREN {{ asso.siren }}, SIRET {{ asso.siret }}</dd>
+      </div>
+      <div>
+        <dt>Directeur de la publication</dt>
+        <dd>{{ asso.directeur_publication | default: "Le président ou la présidente de l’association" }}</dd>
+      </div>
+      <div>
+        <dt>Contact</dt>
+        <dd><a href="mailto:{{ asso.courriel }}">{{ asso.courriel }}</a></dd>
+      </div>
+      <div>
+        <dt>Hébergement</dt>
+        <dd>{{ asso.hebergeur.nom }}, {{ asso.hebergeur.adresse }}</dd>
+      </div>
+      <div>
+        <dt>Formulaires</dt>
+        <dd>Les formulaires du site sont traités par le serveur d’automatisation de l’association, automation.osfarm.org.</dd>
+      </div>
+      <div>
+        <dt>Code et contenus</dt>
+        <dd>Le code du site est publié sous licence MIT <a href="https://github.com/osfarm/osfarm.github.io" target="_blank" rel="noopener">sur GitHub</a>. Les logos et marques cités restent la propriété de leurs titulaires&nbsp;; les fiches de l’annuaire reprennent les descriptions publiées par chaque projet.</dd>
+      </div>
+    </dl>
+
+    <h3 id="donnees-personnelles" class="contact-h3">Données personnelles</h3>
+    <p>Le responsable du traitement est l’association {{ asso.nom }}, joignable à <a href="mailto:{{ asso.courriel }}">{{ asso.courriel }}</a>.</p>
+    <ul class="contact-donnees">
+      <li><strong>Formulaire de contact.</strong> Votre message est transmis par courriel à l’équipe, qui s’en sert pour vous répondre. Il n’est pas enregistré sur le site&nbsp;; seule votre adresse IP est gardée au plus deux jours, pour limiter les envois abusifs.</li>
+      <li><strong>Catalogue de formations.</strong> Vos demandes de devis et vos candidatures d’opérateur sont transmises à l’adhérent concerné et conservées par l’association pour leur suivi&nbsp;: relances et évaluation.</li>
+      <li><strong>Adhésion.</strong> Elle se fait sur HelloAsso, qui traite le paiement et les données d’adhésion. L’association vérifie une adhésion à partir de l’adresse électronique donnée.</li>
+      <li><strong>Mesure d’audience.</strong> Google Analytics n’est chargé qu’avec votre accord, donné dans la bannière et valable six mois. Vous pouvez le retirer à tout moment&nbsp;: <a href="#consentement" data-consentement-ouvrir>gérer les cookies</a>.</li>
+      <li><strong>Vidéos.</strong> Les vidéos YouTube ne se chargent que si vous cliquez dessus.</li>
+    </ul>
+    <p>Vous pouvez demander l’accès à vos données, leur rectification ou leur effacement, ou vous opposer à leur traitement, en écrivant à <a href="mailto:{{ asso.courriel }}">{{ asso.courriel }}</a>. Si vous estimez que vos droits ne sont pas respectés, vous pouvez adresser une réclamation à la <a href="https://www.cnil.fr/fr/plaintes" target="_blank" rel="noopener">CNIL</a>.</p>
+  </section>
+
+</div>
+
+<script src="{{ "/assets/js/contact.js" | relative_url }}" defer></script>

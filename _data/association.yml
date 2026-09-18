@@ -1,0 +1,26 @@
+# ---------------------------------------------------------------------------
+# OSFarm — Identité légale de l'association, affichée dans les mentions légales
+# (/fr/contact/#mentions-legales).
+#
+# Sources : répertoire SIRENE et Répertoire national des associations, via
+# https://annuaire-entreprises.data.gouv.fr/entreprise/924649148 (consulté le
+# 18/09/2026). Le registre public ne donne pas les dirigeants : le directeur de
+# la publication est à compléter par le bureau.
+# ---------------------------------------------------------------------------
+
+nom: "OSFarm"
+forme: "Association déclarée, régie par la loi du 1er juillet 1901"
+rna: "W174007058"
+siren: "924 649 148"
+siret: "924 649 148 00013"
+siege: "8 rue du Bouil Bleu, 17250 Saint-Porchaire"
+courriel: "contact@osfarm.org"
+
+# Nom et qualité du directeur de la publication (en général le président ou
+# la présidente). Tant que ce champ est vide, la page indique « le président
+# ou la présidente de l'association ».
+directeur_publication: David Joulin, président de l'association
+
+hebergeur:
+  nom: "GitHub, Inc. (GitHub Pages)"
+  site: "https://github.com"

@@ -21,7 +21,7 @@
   description-fr: Desherbage autonome du maïs
 - name: Intel Iris
   video: https://www.youtube.com/embed/TBeyGvqpbxk
-  img: "/assets/img/projects/waziup.png"
+  img: "/assets/img/projects/intel-irris.png"
   description: Low-cost Autonomous Water Control
   description-fr: "Systeme de gestion d'irrigation"
 - name: Farmbot

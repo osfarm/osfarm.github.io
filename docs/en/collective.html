@@ -1,0 +1,127 @@
+---
+title: The collective
+layout: support-page
+permalink: /collective/
+description: "An association of farmers, developers and researchers, based on an organic farm in Charente-Maritime, France."
+lang: en
+traduction: /fr/collectif/
+large: true
+---
+{%- comment -%}
+  English twin of docs/fr/collectif.html: La Vauzelle (the association's
+  headquarters), the REBUS project, the board (_data/bureau.yml, roles
+  translated below or from fonction_en) and current projects
+  (_data/osfarm_projects.yml, description_en and repere_en).
+  Styles: « Page Le collectif » section of assets/css/custom.scss.
+{%- endcomment -%}
+{%- assign asso = site.data.association -%}
+
+<div class="collectif">
+
+  <section class="vauzelle" aria-labelledby="vauzelle-titre">
+    <figure class="vauzelle-photo">
+      <img src="{{ "/assets/img/la-vauzelle.jpg" | relative_url }}"
+           srcset="{{ "/assets/img/la-vauzelle-900.jpg" | relative_url }} 900w, {{ "/assets/img/la-vauzelle.jpg" | relative_url }} 1600w"
+           sizes="(max-width: 1280px) 100vw, 1248px"
+           width="1600" height="902"
+           alt="Aerial view of La Vauzelle: the farm buildings, the vegetable garden, the market-garden plots, the holm oak wood and the pond.">
+      <figcaption>La Vauzelle, in Saint-Porchaire, Charente-Maritime.</figcaption>
+    </figure>
+
+    <div class="vauzelle-corps">
+      <div class="vauzelle-texte">
+        <h2 id="vauzelle-titre" class="collectif-h2">La Vauzelle, our farm</h2>
+        <p>The association’s headquarters is a working farm in the Saintonge area of western France, farmed organically since 2017. This is where the community’s tools are tested, demonstrated and taught, under the conditions of a real farm in Charente: its soils, its climate, its constraints.</p>
+        <p class="vauzelle-adresse">{{ asso.siege }}, France</p>
+      </div>
+      <dl class="vauzelle-fiche">
+        <div><dt>Area</dt><dd>32&nbsp;ha of certified organic land, 11&nbsp;ha of it irrigable</dd></div>
+        <div><dt>Soils</dt><dd>Clay-limestone “groies” and red chestnut soils</dd></div>
+        <div><dt>Habitats</dt><dd>2&nbsp;ha of holm oak wood, 1&nbsp;ha of wetland, a well and a walled vegetable garden</dd></div>
+        <div><dt>Buildings</dt><dd>3,000&nbsp;m² of farm buildings and 650&nbsp;m² of living space</dd></div>
+        <div><dt>Networks</dt><dd>Fibre, long-range wifi and a LoRa network for sensors</dd></div>
+        <div><dt>Guidance</dt><dd>An RTK base station on the Centipède network, “LAVZ”, for centimetre positioning</dd></div>
+        <div><dt>Energy</dt><dd>On-site solar power</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="collectif-section rebus-encart" aria-labelledby="rebus-titre">
+    <div class="rebus-texte">
+      <h2 id="rebus-titre" class="collectif-h2">REBUS, a FarmLab in the making</h2>
+      <p>OSFarm is preparing a third place for open digital agriculture at La Vauzelle: somewhere to learn, experiment and share free tools on a working farm, not in a lab cut off from the field. Every tool will be documented and reproducible, so that farmers leave with solutions they can maintain themselves.</p>
+      <ul class="rebus-missions">
+        <li><strong>Training and making.</strong> Second-hand servers running Linux, sensors and weather stations, installing the community’s software.</li>
+        <li><strong>Research and development.</strong> Field trials of GORT, GAIA and AOG+, fed by the data of a digital twin of the farm.</li>
+        <li><strong>Hosting.</strong> Two- to five-day bootcamps, groups from chambers of agriculture, agricultural colleges, machinery cooperatives and farm cooperatives, demonstration days.</li>
+      </ul>
+      <p><a href="{{ "/fr/rebus/" | relative_url }}" hreflang="fr">Discover the REBUS project (in French)</a></p>
+    </div>
+    <div class="rebus-calendrier">
+      <h3>Planned timeline</h3>
+      <ol>
+        <li><span>2026</span> Project set-up and building works</li>
+        <li><span>2027</span> First services, digital twin and first bootcamps</li>
+        <li><span>2028</span> Consolidation and publication of the model as open source</li>
+      </ol>
+      <p>Provisional budget of €218,700, with the EU’s EAFRD fund through the Pays de Saintonge Romane and the Nouvelle-Aquitaine region; the funding plan is being put together.</p>
+    </div>
+  </section>
+
+  <section class="collectif-section" aria-labelledby="bureau-titre">
+    <h2 id="bureau-titre" class="collectif-h2">The board</h2>
+    <ul class="bureau">
+      {%- for m in site.data.bureau %}
+      {%- case m.fonction -%}
+        {%- when "Président", "Présidente" %}{% assign role = "President" -%}
+        {%- when "Vice-président", "Vice-présidente" %}{% assign role = "Vice-president" -%}
+        {%- when "Trésorier", "Trésorière" %}{% assign role = "Treasurer" -%}
+        {%- when "Secrétaire", "Secretaire" %}{% assign role = "Secretary" -%}
+        {%- when "Administrateur", "Administratrice" %}{% assign role = "Board member" -%}
+        {%- else %}{% assign role = m.fonction -%}
+      {%- endcase -%}
+      {%- assign role = m.fonction_en | default: role %}
+      <li>
+        {%- if m.url %}<a href="{{ m.url }}" target="_blank" rel="noopener">{% endif %}
+        <img src="{{ m.img | relative_url }}" alt="" width="160" height="160" loading="lazy">
+        <span class="bureau-nom">{{ m.nom }}</span>
+        {%- if m.url %}</a>{% endif %}
+        <span class="bureau-fonction">{{ role }}</span>
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+
+  <section class="collectif-section" aria-labelledby="projets-titre">
+    <h2 id="projets-titre" class="collectif-h2">Current projects</h2>
+    <p class="collectif-intro">Commons built by the members, each with its own team and working group. Write to the group to take part.</p>
+    <ul class="projets">
+      {%- for p in site.data.osfarm_projects %}
+      <li class="projet">
+        <div class="projet-tete">
+          {%- if p.logo %}<img src="{{ p.logo | relative_url }}" alt="" width="56" height="56" loading="lazy">{% endif %}
+          <h3>{{ p.name }}</h3>
+        </div>
+        <p>{{ p.description_en }}</p>
+        {%- if p.repere_en %}<p class="projet-repere">{{ p.repere_en }}</p>{% endif %}
+        <p class="projet-porteur">Led by {{ p.project_leader }}</p>
+        {%- if p.teams %}
+        <ul class="projet-equipe" aria-label="Team">
+          {%- for t in p.teams %}
+          <li><img src="{{ t.img | relative_url }}" alt="{{ t.name | escape }}" title="{{ t.name | escape }}, {{ t.role | escape }}" width="36" height="36" loading="lazy"></li>
+          {%- endfor %}
+        </ul>
+        {%- endif %}
+        <p class="projet-liens">
+          {%- if p.repository %}<a href="{{ p.repository }}" target="_blank" rel="noopener">Code<span class="sr-only"> of {{ p.name }}</span></a>{% endif %}
+          {%- if p.project_url %}<a href="{{ p.project_url }}" target="_blank" rel="noopener">Website<span class="sr-only"> of {{ p.name }}</span></a>{% endif %}
+          {%- if p.email %}<a href="mailto:{{ p.email }}">Join the group<span class="sr-only"> {{ p.name }}</span></a>{% endif %}
+        </p>
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+
+  <p class="collectif-fin">Want to visit La Vauzelle or join a project? <a href="{{ "/contact/" | relative_url }}">Get in touch</a>.</p>
+
+</div>

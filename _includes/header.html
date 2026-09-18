@@ -30,16 +30,17 @@
       <div class="site-nav-inner container-xl p-responsive">
         <ul class="site-nav-links">
           <li><a href="{{ "/why/" | relative_url}}"{% if page.url == "/why/" %} aria-current="page"{% endif %}>Why</a></li>
-          <li><a href="{{ "/community/" | relative_url}}"{% if page.url == "/community/" %} aria-current="page"{% endif %}>Projects</a></li>
-          <li><a href="{{ "/fr/communs/" | relative_url}}" lang="fr" hreflang="fr">Directory <span class="site-nav-fr">FR</span></a></li>
+          <li><a href="{{ "/collective/" | relative_url}}"{% if page.url == "/collective/" %} aria-current="page"{% endif %}>The collective</a></li>
+          <li><a href="{{ "/community/" | relative_url}}"{% if page.url == "/community/" %} aria-current="page"{% endif %}>Commons</a></li>
+          <li><a href="{{ "/fr/actualites/" | relative_url}}" hreflang="fr">News <span class="site-nav-fr">FR</span></a></li>
           <li><a href="{{ "/catalogue/" | relative_url}}"{% if page.url == "/catalogue/" %} aria-current="page"{% endif %}>Training</a></li>
-          <li><a href="{{ "/#contact-a-human" | relative_url}}">Contact</a></li>
+          <li><a href="{{ "/contact/" | relative_url}}"{% if page.url == "/contact/" %} aria-current="page"{% endif %}>Contact</a></li>
         </ul>
         <div class="site-nav-actions">
           <p class="site-nav-lang" aria-label="Site language">
-            <span aria-current="true">EN</span><a href="{{ "/fr/" | relative_url }}" lang="fr" hreflang="fr">FR</a>
+            <span aria-current="true">EN</span><a href="{% if jumelle and jumelle.redirect == nil %}{{ autre | relative_url }}{% else %}{{ "/fr/" | relative_url }}{% endif %}" lang="fr" hreflang="fr">FR</a>
           </p>
-          <a class="site-join" href="https://www.helloasso.com/associations/osfarm/adhesions/adhesion-osfarm-2024" target="_blank" rel="noopener">Join OSFarm</a>
+          <a class="site-join" href="https://www.helloasso.com/associations/osfarm/adhesions/adhesion-osfarm-2024" target="_blank" rel="noopener">Join</a>
         </div>
       </div>
     </nav>

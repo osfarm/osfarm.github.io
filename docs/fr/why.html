@@ -1,0 +1,155 @@
+---
+title: Pourquoi OSFarm
+layout: fr-support-page
+permalink: /fr/why/
+description: "Parce que les outils de la ferme doivent rester à ceux qui la cultivent."
+lang: fr
+---
+{%- comment -%}
+  Page « Pourquoi » : le manifeste d'OSFarm. Le registre reprend les quatre
+  familles de l'annuaire des communs (/fr/communs/) et leurs couleurs ; ses
+  exemples pointent vers les fiches de l'annuaire (#commun-<id>). Les chiffres
+  sont calculés à la construction depuis _data/, rien n'est à tenir à jour.
+  Styles : section « Page Pourquoi » de assets/css/custom.scss.
+{%- endcomment -%}
+{%- assign nb_communs = 0 -%}
+{%- for lot in site.data.radar -%}
+  {%- assign valides = lot[1].candidats | where: "publier", true -%}
+  {%- assign nb_communs = nb_communs | plus: valides.size -%}
+{%- endfor -%}
+{%- assign nb_adherents = site.data.operateurs | where_exp: "o", "o.role != 'partenaire'" | size -%}
+{%- assign catalogue = site.data.catalogue -%}
+{%- assign annuaire = "/fr/communs/" | relative_url -%}
+
+<div class="pourquoi">
+
+  <section class="pourquoi-manifeste" aria-label="Manifeste">
+    <p class="pourquoi-hier">Pendant des siècles, les villages ont partagé leurs pâtures, leurs fours et leurs semences. On appelait ces biens les communaux.</p>
+    <p class="pourquoi-aujourdhui">Aujourd’hui, ce sont les machines, les données et les logiciels des fermes qui se referment.</p>
+    <p class="pourquoi-cap">OSFarm défend le chemin inverse&nbsp;: des outils ouverts, entretenus en commun, pour que les agriculteurs restent maîtres de leur travail, de leurs choix et de leurs données.</p>
+  </section>
+
+  <section class="pourquoi-section" aria-labelledby="registre-titre">
+    <h2 id="registre-titre" class="pourquoi-h2">Ce qui se referme, ce que nous rouvrons</h2>
+    <p class="pourquoi-intro">Les quatre familles de l’annuaire des communs sont les quatre terrains où l’agriculture perd la main, et où elle peut la reprendre.</p>
+
+    <table class="registre">
+      <thead>
+        <tr>
+          <th scope="col"><span class="sr-only">Famille</span></th>
+          <th scope="col">Ce qui se referme</th>
+          <th scope="col">Ce que le commun rend possible</th>
+          <th scope="col">Dans l’annuaire</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="registre-ligne registre-ligne--materiel">
+          <th scope="row">Matériel</th>
+          <td data-col="Ce qui se referme">Sur beaucoup de machines récentes, une réparation ne se valide qu’avec le logiciel du constructeur, réservé à ses concessionnaires.</td>
+          <td data-col="Ce que le commun rend possible">Plans, pièces et code publiés&nbsp;: la machine se répare à la ferme, à l’atelier du village ou entre voisins.</td>
+          <td data-col="Dans l’annuaire"><a href="{{ annuaire }}#commun-projet-l-atelier-paysan">L’Atelier Paysan</a>, <a href="{{ annuaire }}#commun-projet-agopengps">AgOpenGPS</a></td>
+        </tr>
+        <tr class="registre-ligne registre-ligne--donnees">
+          <th scope="row">Données</th>
+          <td data-col="Ce qui se referme">Les données produites sur la ferme partent chez le fabricant ou l’éditeur, dans des formats que les autres outils ne savent pas lire.</td>
+          <td data-col="Ce que le commun rend possible">Formats ouverts et référentiels publics&nbsp;: les données restent à l’agriculteur et passent d’un outil à l’autre.</td>
+          <td data-col="Dans l’annuaire"><a href="{{ annuaire }}#commun-projet-meteo-france">Météo-France</a>, <a href="{{ annuaire }}#commun-projet-data-food-consortium">Data Food Consortium</a></td>
+        </tr>
+        <tr class="registre-ligne registre-ligne--logiciel">
+          <th scope="row">Logiciel</th>
+          <td data-col="Ce qui se referme">Abonnements, formats maison, et des outils qui disparaissent quand l’éditeur change de stratégie.</td>
+          <td data-col="Ce que le commun rend possible">Le code libre survit à l’entreprise qui l’a écrit, et chacun peut l’adapter à sa ferme.</td>
+          <td data-col="Dans l’annuaire"><a href="{{ annuaire }}#commun-projet-ekylibre">Ekylibre</a>, <a href="{{ annuaire }}#commun-projet-farmos">farmOS</a>, <a href="{{ annuaire }}#commun-projet-qgis">QGIS</a></td>
+        </tr>
+        <tr class="registre-ligne registre-ligne--modele">
+          <th scope="row">Modèles d’IA</th>
+          <td data-col="Ce qui se referme">Des conseils produits par des modèles dont personne ne peut vérifier les données ni le raisonnement.</td>
+          <td data-col="Ce que le commun rend possible">Des modèles ouverts et sobres, entraînés sur des données connues, qui tournent sur des serveurs qu’on maîtrise.</td>
+          <td data-col="Dans l’annuaire"><a href="{{ annuaire }}#commun-projet-plant-cv">PlantCV</a>, <a href="{{ annuaire }}#commun-projet-mistral-ai">Mistral AI</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="pourquoi-section pourquoi-reparer" aria-labelledby="reparer-titre">
+    <div class="pourquoi-reparer-texte">
+      <h2 id="reparer-titre" class="pourquoi-h2">Réparer son tracteur, un droit à reconquérir</h2>
+      <p>Aux États-Unis, des agriculteurs attendent le concessionnaire pour une panne qu’ils sauraient réparer eux-mêmes, faute d’accès au logiciel de la machine. Le reportage de More Perfect Union chiffre la facture à 4&nbsp;milliards de dollars par an.</p>
+      <p>Un matériel dont les plans et le code sont ouverts ne laisse personne dans cette situation.</p>
+    </div>
+    <div class="pourquoi-lecteur" data-video="jaOS6bGta7M" data-titre="How John Deere Robs Farmers Of $4 Billion A Year">
+      <button type="button" class="pourquoi-lecteur-bouton">
+        <svg class="pourquoi-lecteur-icone" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="23"/><path d="M19 15v18l15-9z"/></svg>
+        <span class="pourquoi-lecteur-titre">How John Deere Robs Farmers Of $4&nbsp;Billion A Year</span>
+        <span class="pourquoi-lecteur-source">Reportage de More Perfect Union, en anglais</span>
+      </button>
+      <p class="pourquoi-lecteur-note">La vidéo se charge depuis YouTube quand vous cliquez.</p>
+    </div>
+  </section>
+
+  <section class="pourquoi-section" aria-labelledby="valeurs-titre">
+    <h2 id="valeurs-titre" class="pourquoi-h2">Ce qui nous guide</h2>
+    <dl class="valeurs">
+      <div class="valeur">
+        <dt>L’ouverture</dt>
+        <dd>Code, plans et données sont publiés sous licence libre&nbsp;: chacun peut les utiliser, les étudier, les modifier et les partager.</dd>
+      </div>
+      <div class="valeur">
+        <dt>Les communs</dt>
+        <dd>Une ressource partagée ne vit que si une communauté l’entretient et en fixe les règles. Nous relions, documentons et soutenons celles qui le font.</dd>
+      </div>
+      <div class="valeur">
+        <dt>L’autonomie des fermes</dt>
+        <dd>L’agriculteur choisit ses outils, répare ses machines et garde la main sur ses données. Changer de fournisseur ne doit rien lui coûter.</dd>
+      </div>
+      <div class="valeur">
+        <dt>La coopération</dt>
+        <dd>Agriculteurs, entreprises, chercheurs et collectivités construisent une fois, ensemble, ce que chacun réinventait seul dans son coin.</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="pourquoi-section" aria-labelledby="actions-titre">
+    <h2 id="actions-titre" class="pourquoi-h2">Ce que fait OSFarm</h2>
+    <ul class="actions">
+      <li class="action">
+        <h3>Recenser les communs</h3>
+        <p>L’annuaire rassemble {{ nb_communs }}&nbsp;communs agricoles, logiciels, matériels, données et modèles, repérés par notre veille et relus avant publication.</p>
+        <a href="{{ annuaire }}">Explorer l’annuaire</a>
+      </li>
+      <li class="action">
+        <h3>Former et accompagner</h3>
+        <p>{{ catalogue.modules.size }}&nbsp;formations et {{ catalogue.missions.size }}&nbsp;missions de conseil, assurées par {{ nb_adherents }}&nbsp;adhérents. L’association met en relation sans prendre de commission.</p>
+        <a href="{{ "/fr/catalogue/" | relative_url }}">Voir le catalogue</a>
+      </li>
+      <li class="action">
+        <h3>Rassembler ceux qui les font</h3>
+        <p>Agriculteurs, éditeurs, fabricants et chercheurs se retrouvent dans l’association, au Salon de l’agriculture et lors de nos rencontres annuelles.</p>
+        <a href="{{ "/fr/collectif/" | relative_url }}">Découvrir le collectif</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="pourquoi-section" aria-labelledby="sources-titre">
+    <h2 id="sources-titre" class="pourquoi-h2">Ce que disent la FAO et les Nations unies</h2>
+    <p class="pourquoi-intro">Les grandes institutions font le même constat&nbsp;: sans outils accessibles et partagés, la plupart des petites fermes du monde resteront à l’écart des technologies agricoles.</p>
+    <ul class="sources">
+      {%- for pub in site.data.publications %}
+      <li><a href="{{ pub.url }}" target="_blank" rel="noopener" lang="en">{{ pub.title }}</a><span>{{ pub.author }}</span></li>
+      {%- endfor %}
+      <li><a href="https://www.youtube.com/watch?v=iZC-kWKPY_M" target="_blank" rel="noopener" lang="en">SOFA 2022 : Leveraging automation in agriculture for transforming agrifood systems</a><span>Food and Agriculture Organization, vidéo</span></li>
+    </ul>
+  </section>
+
+  <section class="pourquoi-appel" aria-labelledby="appel-titre">
+    <h2 id="appel-titre" class="pourquoi-appel-titre">Un commun n’existe que si on l’entretient.</h2>
+    <p>Adhérer à OSFarm, c’est faire vivre la veille, l’annuaire et les rencontres, et voter en assemblée générale.</p>
+    <div class="pourquoi-appel-liens">
+      <a class="bouton-osfarm bouton-osfarm--plein" href="https://www.helloasso.com/associations/osfarm/adhesions/adhesion-osfarm-2024" target="_blank" rel="noopener">Adhérer à OSFarm</a>
+      <a class="bouton-osfarm" href="{{ "/fr/contact/" | relative_url }}">Nous écrire</a>
+    </div>
+  </section>
+
+</div>
+
+<script src="{{ "/assets/js/lecteur-video.js" | relative_url }}" defer></script>

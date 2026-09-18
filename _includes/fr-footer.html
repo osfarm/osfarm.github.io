@@ -1,8 +1,9 @@
     <footer>
-      <div class="container-lg p-responsive py-4 ">
+      <div class="container-xl p-responsive py-4 ">
         <div class="d-flex flex-justify-between">
           <ul class="list-style-none float-right text-small">
-            <li class="d-inline-block ml-lg-2"><a href="mailto:contact@osfarm.org">Nous écrire</a></li>
+            <li class="d-inline-block ml-lg-2"><a href="{{ "/fr/contact/" | relative_url }}">Nous écrire</a></li>
+            <li class="d-inline-block ml-2"><a href="{{ "/fr/contact/#mentions-legales" | relative_url }}">Mentions légales</a></li>
             {%- if site.google_analytics %}
             <li class="d-inline-block ml-2"><a href="#consentement" data-consentement-ouvrir>Cookies</a></li>
             {%- endif %}
@@ -30,8 +31,6 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     {% if page.url == "/community/" %}
       <script src="{{ "/assets/js/community.js" | relative_url}}"></script>
-    {% elsif page.url == "/" %}
-      <script src="{{ "/assets/js/home.js" | relative_url}}"></script>
     {% endif %}
     {% include google-analytics.html lang="fr" %}
   </body>
