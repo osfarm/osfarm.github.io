@@ -19,6 +19,12 @@
   "statut": "sans_licence",
   "url": "https://github.com/abeerrai01/HAL-Harvest-Advisory-with-Linguistic-Intelligence"
  },
+ "0d5d953436ac": {
+  "examine_le": "2026-09-18",
+  "score": 85,
+  "statut": "propose",
+  "url": "https://www.data.gouv.fr/datasets/bilan-carbone-des-espaces-naturels-agricoles-et-forestiers-en-provence-alpes-cote-dazur"
+ },
  "0f506e6eb04f": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
@@ -86,6 +92,24 @@
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
   "url": "https://huggingface.co/dhvanit2026/agriculture"
+ },
+ "2072617884e2": {
+  "examine_le": "2026-09-18",
+  "score": 76,
+  "statut": "propose",
+  "url": "https://github.com/Ubada12/Deonar-AI"
+ },
+ "20bd7473ca95": {
+  "examine_le": "2026-09-18",
+  "score": 76,
+  "statut": "propose",
+  "url": "https://github.com/darkvolg/BeehiveScale-ESP32"
+ },
+ "21072f6bce2a": {
+  "examine_le": "2026-09-18",
+  "score": 92,
+  "statut": "propose",
+  "url": "https://github.com/osmanhadzic/agronode"
  },
  "23f9c5cf134e": {
   "examine_le": "2026-09-17",
@@ -292,6 +316,12 @@
   "statut": "sans_licence",
   "url": "https://adafruit.com/product/3787"
  },
+ "542e3b7210e7": {
+  "examine_le": "2026-09-18",
+  "score": 79,
+  "statut": "propose",
+  "url": "https://github.com/v6d-io/v6d"
+ },
  "54b962dc1814": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
@@ -302,6 +332,18 @@
   "statut": "sans_licence",
   "url": "https://github.com/DigiBanks99/livestock-tracker"
  },
+ "556181aa60a2": {
+  "examine_le": "2026-09-18",
+  "score": 82,
+  "statut": "propose",
+  "url": "https://doi.org/10.5281/zenodo.22825112"
+ },
+ "56992c730616": {
+  "examine_le": "2026-09-18",
+  "score": 85,
+  "statut": "propose",
+  "url": "https://doi.org/10.5281/zenodo.22810566"
+ },
  "57308f7a7322": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
@@ -311,6 +353,12 @@
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
   "url": "https://huggingface.co/Malak-W/plant-disease-model"
+ },
+ "5883c7a7667c": {
+  "examine_le": "2026-09-18",
+  "score": 85,
+  "statut": "propose",
+  "url": "https://doi.org/10.5281/zenodo.18461147"
  },
  "59956ff8194b": {
   "examine_le": "2026-09-17",
@@ -390,6 +438,12 @@
   "statut": "sans_licence",
   "url": "https://huggingface.co/Kashif786/gemma-270M-it-agriculture-qa"
  },
+ "713e478bf2a1": {
+  "examine_le": "2026-09-18",
+  "score": 77,
+  "statut": "propose",
+  "url": "https://github.com/qbcore-fivem/qb-vineyard"
+ },
  "72f11bdddd98": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
@@ -411,6 +465,12 @@
   "statut": "propose",
   "url": "https://www.data.gouv.fr/datasets/pesticides-nombre-de-doses-unites-nodu"
  },
+ "79ba5d012719": {
+  "examine_le": "2026-09-18",
+  "score": 88,
+  "statut": "propose",
+  "url": "https://github.com/geezacoleman/OpenWeedLocator"
+ },
  "7a856abced0e": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
@@ -421,10 +481,40 @@
   "statut": "sans_licence",
   "url": "https://huggingface.co/introspection-auditing/llama_3_3_70b_sandbagging_agriculture_6_epoch"
  },
+ "7b4c276adecc": {
+  "examine_le": "2026-09-18",
+  "score": 92,
+  "statut": "propose",
+  "url": "https://huggingface.co/datasets/DigiGreen/Crop-Disease-Image-Eval-Synthetic"
+ },
+ "7be94367f2cc": {
+  "examine_le": "2026-09-18",
+  "score": 85,
+  "statut": "propose",
+  "url": "https://www.data.gouv.fr/datasets/classification-enaf-dapres-ocs2d-2024"
+ },
  "7cbe569a4a26": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
   "url": "https://www.adafruit.com/product/6476"
+ },
+ "7d855e5c6e2a": {
+  "examine_le": "2026-09-18",
+  "score": 58,
+  "statut": "propose",
+  "url": "https://github.com/FarmBot-Docs/farmbot-docs"
+ },
+ "7e217735dfef": {
+  "examine_le": "2026-09-18",
+  "score": 92,
+  "statut": "propose",
+  "url": "https://github.com/AryanSinghh07/Cattle-Scoring-and-Breed-Selection"
+ },
+ "805909b8a7d3": {
+  "examine_le": "2026-09-18",
+  "score": 85,
+  "statut": "propose",
+  "url": "https://www.data.gouv.fr/datasets/part-des-chefs-dexploitation-de-55-ans-ou-plus-en-2020"
  },
  "84b5d43845aa": {
   "examine_le": "2026-09-17",
@@ -535,6 +625,18 @@
   "statut": "propose",
   "url": "https://huggingface.co/datasets/v8shanth/india-crop-yield-prediction"
  },
+ "ae5c78b46436": {
+  "examine_le": "2026-09-18",
+  "score": 87,
+  "statut": "propose",
+  "url": "https://github.com/Ryson-Theo/CropVector"
+ },
+ "af85050e5d73": {
+  "examine_le": "2026-09-18",
+  "score": 58,
+  "statut": "propose",
+  "url": "https://github.com/AOG-silrep/PCB-modules"
+ },
  "b359187bebd4": {
   "examine_le": "2026-09-17",
   "score": 95,
@@ -584,6 +686,12 @@
   "statut": "propose",
   "url": "https://github.com/ekylibre/ekylibre"
  },
+ "c1780243d021": {
+  "examine_le": "2026-09-18",
+  "score": 86,
+  "statut": "propose",
+  "url": "https://github.com/ProductOfAmerica/deere-sdk"
+ },
  "c2a67fefe8fe": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
@@ -615,6 +723,12 @@
   "statut": "sans_licence",
   "url": "https://huggingface.co/vaibhav1536/plant_disease_detection_vaibha1536"
  },
+ "c8b1344674e8": {
+  "examine_le": "2026-09-18",
+  "score": 91,
+  "statut": "propose",
+  "url": "https://github.com/Adilmunawar/ZD-claude-plugin"
+ },
  "c8d66abac7ea": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
@@ -630,6 +744,12 @@
   "score": 95,
   "statut": "propose",
   "url": "https://github.com/superzero11/OpenFarm"
+ },
+ "cc47ecf09d0a": {
+  "examine_le": "2026-09-18",
+  "score": 85,
+  "statut": "propose",
+  "url": "https://www.data.gouv.fr/datasets/specialisation-territoriale-de-la-production-agricole-par-commune-en-2020-otex-en-12-postes"
  },
  "cd56b50a0f3c": {
   "examine_le": "2026-09-17",
@@ -673,10 +793,33 @@
   "statut": "sans_licence",
   "url": "https://www.data.gouv.fr/datasets/petites-regions-agricoles-hauts-de-france"
  },
+ "d4c44d87cabb": {
+  "examine_le": "2026-09-18",
+  "score": 85,
+  "statut": "propose",
+  "url": "https://www.data.gouv.fr/datasets/aides-publiques-aux-agriculteurs-et-agricultrices"
+ },
+ "d4eda65c49be": {
+  "examine_le": "2026-09-18",
+  "score": 76,
+  "statut": "propose",
+  "url": "https://github.com/deaneeth/smart-beehive-monitor"
+ },
  "d602a6cfebf0": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
   "url": "https://github.com/AstroBesat-SoftW/Smart-Plant-IoT"
+ },
+ "d90aeaa302bc": {
+  "examine_le": "2026-09-18",
+  "score": 58,
+  "statut": "propose",
+  "url": "https://github.com/FarmBot-Docs/farmbot-developers"
+ },
+ "d91231e492b7": {
+  "examine_le": "2026-09-18",
+  "statut": "sans_licence",
+  "url": "https://github.com/Realistic-Farming/FS25_SeasonalCropStress"
  },
  "d91a27332190": {
   "examine_le": "2026-09-17",
@@ -694,6 +837,12 @@
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
   "url": "https://huggingface.co/divy-g-2005/plant-disease-model"
+ },
+ "dccc5b359f9b": {
+  "examine_le": "2026-09-18",
+  "score": 88,
+  "statut": "propose",
+  "url": "https://github.com/NRR385/CropTwin"
  },
  "dd767b9bf500": {
   "examine_le": "2026-09-17",
@@ -731,6 +880,12 @@
   "statut": "sans_licence",
   "url": "https://github.com/Undisciplined-alchemist8546/jiofarm"
  },
+ "ed382ff29f67": {
+  "examine_le": "2026-09-18",
+  "score": 92,
+  "statut": "propose",
+  "url": "https://github.com/peopleandpixel/agrocore-rs"
+ },
  "f1b263654b5b": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
@@ -745,6 +900,12 @@
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
   "url": "https://www.data.gouv.fr/datasets/cadastre-agricole-en-guadeloupe-1"
+ },
+ "f4f3083c6bc3": {
+  "examine_le": "2026-09-18",
+  "score": 76,
+  "statut": "propose",
+  "url": "https://github.com/MacNite/HiveHub"
  },
  "f56546dd6dc3": {
   "examine_le": "2026-09-17",
@@ -784,6 +945,12 @@
   "score": 77,
   "statut": "propose",
   "url": "https://github.com/FarmBot/farmbot_os"
+ },
+ "ff2d69f3a1be": {
+  "examine_le": "2026-09-18",
+  "score": 76,
+  "statut": "propose",
+  "url": "https://github.com/hmd83/tanen"
  },
  "ff4975e7feb5": {
   "examine_le": "2026-09-17",
