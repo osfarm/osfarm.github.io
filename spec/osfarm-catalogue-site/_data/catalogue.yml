@@ -1,0 +1,412 @@
+# ---------------------------------------------------------------------------
+# OSFarm — Catalogue formation & conseil
+# Source unique de vérité. Modifier ce fichier suffit : les pages
+# /fr/catalogue/ et /catalogue/ se régénèrent au build GitHub Pages.
+#
+# Modèle : l'association référence, les adhérents opèrent.
+# Aucune commission. Être adhérent est la seule condition de référencement.
+# ---------------------------------------------------------------------------
+
+meta:
+  remise_adherent_min: 20      # % de remise minimum imposée par la charte
+  delai_reponse_jours: 5       # engagement de réponse de l'opérateur
+  commission: 0                # service gratuit — ne pas modifier sans vote du bureau
+  devise: EUR
+
+familles:
+  - id: A
+    couleur: "#3C6B4C"
+    titre:
+      fr: "Données et interopérabilité"
+      en: "Data and interoperability"
+  - id: B
+    couleur: "#E5B10F"
+    titre:
+      fr: "Intelligence artificielle ouverte et frugale"
+      en: "Open and frugal artificial intelligence"
+  - id: C
+    couleur: "#9C4A21"
+    titre:
+      fr: "Machinisme, robotique et capteurs ouverts"
+      en: "Open machinery, robotics and sensors"
+  - id: D
+    couleur: "#2F6C86"
+    titre:
+      fr: "Gestion, connaissance et évaluation"
+      en: "Management, knowledge and assessment"
+
+# statut : "ouvert" (opérateur signataire) | "a_pourvoir" (appel à opérateur)
+modules:
+
+  - ref: A1
+    famille: A
+    statut: ouvert
+    duree_jours: 1
+    tarif_public: 1200
+    operateur: brad
+    secours: [ekylibre]
+    outils: [lexicon]
+    titre:
+      fr: "Exploiter les données agricoles ouvertes avec l'API Lexicon"
+      en: "Using open agricultural data through the Lexicon API"
+    resume:
+      fr: "Plus de cent sources normalisées derrière une seule API : parcellaire, météo, phytosanitaire, référentiels variétaux. Le participant repart avec une intégration fonctionnelle dans son propre outil."
+      en: "More than a hundred standardised sources behind a single API. Participants leave with a working integration in their own tool."
+    public:
+      fr: "Développeurs, DSI de coopératives et d'organismes agricoles, éditeurs."
+      en: "Developers, IT departments of cooperatives and farm organisations, software vendors."
+
+  - ref: A2
+    famille: A
+    statut: ouvert
+    duree_jours: 0.5
+    tarif_public: 700
+    operateur: ekylibre
+    secours: []
+    outils: [normes]
+    titre:
+      fr: "Normes et interopérabilité agricole : ISOBUS, ADAPT, AgGateway, AgroXML"
+      en: "Agricultural standards and interoperability: ISOBUS, ADAPT, AgGateway, AgroXML"
+    resume:
+      fr: "Savoir quelle norme s'applique à quel flux et arbitrer entre adopter un standard, l'étendre ou passer par une passerelle. Sortie de séance : la cartographie des flux de l'organisation."
+      en: "Know which standard applies to which data flow, and choose between adopting, extending or bridging. Output: a map of the organisation's data flows."
+    public:
+      fr: "Chefs de produit, responsables innovation, acheteurs de solutions."
+      en: "Product managers, innovation leads, solution buyers."
+
+  - ref: A3
+    famille: A
+    statut: ouvert
+    duree_jours: 2
+    tarif_public: 1900
+    operateur: centipede
+    secours: [troisliz]
+    outils: [qgis, qfield, postgis]
+    titre:
+      fr: "Géomatique libre : QGIS, QField et PostGIS au service de l'exploitation"
+      en: "Open geomatics: QGIS, QField and PostGIS on the farm"
+    resume:
+      fr: "De la saisie au champ sur tablette jusqu'à l'analyse spatiale, avec une chaîne entièrement libre et sans abonnement."
+      en: "From tablet field capture to spatial analysis, with a fully open toolchain and no subscription."
+    public:
+      fr: "Conseillers, techniciens, chambres d'agriculture, bureaux d'études."
+      en: "Advisors, technicians, chambers of agriculture, engineering firms."
+
+  - ref: B1
+    famille: B
+    statut: ouvert
+    duree_jours: 1
+    tarif_public: 1200
+    operateur: bziiit
+    secours: [ekylibre]
+    outils: [gaia]
+    titre:
+      fr: "IA générative en agriculture : cas d'usage réels, limites réelles"
+      en: "Generative AI in agriculture: real use cases, real limits"
+    resume:
+      fr: "Construit sur les huit éditions du hackathon GAIA : ce qui a marché, ce qui a échoué, pourquoi. Atelier de conception d'un assistant à partir d'un cas apporté par le participant."
+      en: "Built on eight editions of the GAIA hackathon. Includes a workshop designing an assistant from a case brought by the participant."
+    public:
+      fr: "Dirigeants et cadres d'organisations agricoles, conseillers, enseignants."
+      en: "Executives of farm organisations, advisors, teachers."
+
+  - ref: B2
+    famille: B
+    statut: ouvert
+    duree_jours: 2
+    tarif_public: 2400
+    operateur: ekylibre
+    secours: [bziiit]
+    outils: [mistral, vllm]
+    titre:
+      fr: "Déployer un modèle de langage souverain sur votre infrastructure"
+      en: "Deploying a sovereign language model on your own infrastructure"
+    resume:
+      fr: "Mistral, Ollama ou vLLM, quantification, recherche augmentée sur vos propres documents, dimensionnement matériel. Travaux pratiques sur l'infrastructure de La Vauzelle."
+      en: "Mistral, Ollama or vLLM, quantisation, retrieval-augmented generation on your own documents, hardware sizing. Hands-on at La Vauzelle."
+    public:
+      fr: "Équipes techniques, DSI, intégrateurs."
+      en: "Technical teams, IT departments, integrators."
+
+  - ref: B3
+    famille: B
+    statut: ouvert
+    duree_jours: 1
+    tarif_public: 1400
+    operateur: bziiit
+    secours: []
+    outils: []
+    titre:
+      fr: "Sobriété numérique et IA frugale : mesurer, arbitrer, communiquer"
+      en: "Digital sobriety and frugal AI: measure, decide, communicate"
+    resume:
+      fr: "Évaluer l'empreinte d'un service numérique, choisir entre un grand modèle distant et un petit modèle local, et communiquer sans greenwashing."
+      en: "Assess the footprint of a digital service, choose between a large remote model and a small local one, communicate without greenwashing."
+    public:
+      fr: "Directions RSE, directions numériques, marques agroalimentaires."
+      en: "CSR and digital leadership, food brands."
+
+  - ref: B4
+    famille: B
+    statut: ouvert
+    duree_jours: 0.5
+    tarif_public: 900
+    operateur: bziiit
+    secours: [aspexit]
+    outils: []
+    titre:
+      fr: "Charte IA et gouvernance de la donnée agricole"
+      en: "AI charter and agricultural data governance"
+    resume:
+      fr: "Atelier de production : la structure repart avec une charte d'usage de l'IA rédigée et une grille de gouvernance de ses données."
+      en: "A production workshop: the organisation leaves with a drafted AI usage charter and a data governance grid."
+    public:
+      fr: "Coopératives, négoces, instituts techniques, collectivités."
+      en: "Cooperatives, traders, technical institutes, local authorities."
+
+  - ref: C1
+    famille: C
+    statut: ouvert
+    duree_jours: 2
+    tarif_public: 1600
+    operateur: apuso
+    secours: [centipede]
+    outils: [agopengps, aog]
+    titre:
+      fr: "Autoguidage et RTK libres : AgOpenGPS, réseau Centipède, AOG+"
+      en: "Open autosteer and RTK: AgOpenGPS, Centipede network, AOG+"
+    resume:
+      fr: "Monter, calibrer et exploiter un autoguidage centimétrique en seconde monte, pour une fraction du prix d'une solution constructeur."
+      en: "Build, calibrate and operate centimetre-level retrofit autosteer at a fraction of the cost of a manufacturer system."
+    public:
+      fr: "Agriculteurs, CUMA, ateliers de machinisme, lycées agricoles."
+      en: "Farmers, machinery cooperatives, workshops, agricultural colleges."
+
+  - ref: C2
+    famille: C
+    statut: ouvert
+    duree_jours: 2
+    tarif_public: 2400
+    operateur: natuition
+    secours: []
+    partenaires: [xlim, elatec]
+    outils: [gort, ros]
+    titre:
+      fr: "Robotique agricole open source : ROS, GORT et jumeaux numériques"
+      en: "Open source farm robotics: ROS, GORT and digital twins"
+    resume:
+      fr: "Architecture d'un robot interopérable, fusion de capteurs, navigation autonome, et usage du jumeau numérique pour accélérer les essais. Adossé au projet GORT."
+      en: "Interoperable robot architecture, sensor fusion, autonomous navigation and digital twins to speed up field trials. Based on the GORT project."
+    public:
+      fr: "Bureaux d'études, constructeurs, laboratoires, écoles d'ingénieurs."
+      en: "Engineering firms, manufacturers, laboratories, engineering schools."
+
+  - ref: C3
+    famille: C
+    statut: ouvert
+    duree_jours: 1
+    tarif_public: 1200
+    operateur: furgo
+    secours: []
+    outils: []
+    titre:
+      fr: "Capteurs low-tech et interopérables : de la station météo au piège connecté"
+      en: "Low-tech interoperable sensors: from weather station to connected trap"
+    resume:
+      fr: "Assembler un réseau de capteurs abordable, réparable et indépendant d'un fournisseur unique, en s'appuyant sur les protocoles de la maison connectée."
+      en: "Build an affordable, repairable sensor network free of vendor lock-in, using smart-home protocols."
+    public:
+      fr: "Agriculteurs, techniciens, stations d'expérimentation."
+      en: "Farmers, technicians, experimental stations."
+
+  - ref: C4
+    famille: C
+    statut: ouvert
+    duree_jours: 3
+    tarif_public: 1800
+    operateur: prefabrique
+    secours: []
+    outils: []
+    lieu: "Fablab de La Vauzelle (itinérant avant ouverture)"
+    titre:
+      fr: "Concevoir et fabriquer son outil : open hardware agricole"
+      en: "Design and build your own implement: agricultural open hardware"
+    resume:
+      fr: "Co-conception itérative avec l'agriculteur, conception d'un outil modulaire, fabrication et essai."
+      en: "Iterative co-design with the farmer, modular implement design, build and field test."
+    public:
+      fr: "Agriculteurs bricoleurs, CUMA, ateliers de lycées agricoles, fablabs."
+      en: "Hands-on farmers, machinery cooperatives, college workshops, fablabs."
+
+  - ref: C5
+    famille: C
+    statut: a_pourvoir
+    duree_jours: 2
+    tarif_public: 1600
+    operateur: null
+    secours: []
+    outils: []
+    materiel: "Robot de maraîchage mis à disposition par OSFarm"
+    lieu: "La Vauzelle"
+    titre:
+      fr: "Prendre en main un robot de maraîchage et son jumeau numérique"
+      en: "Operating a market-gardening robot and its digital twin"
+    resume:
+      fr: "Conduite, entretien et personnalisation des outils portés, à partir du robot mis à disposition par l'association. Introduction au jumeau numérique pour simuler un itinéraire avant de l'engager au champ."
+      en: "Driving, maintenance and customisation of mounted implements, using the robot provided by the association, plus an introduction to digital twins."
+    public:
+      fr: "Maraîchers, groupements, conseillers en maraîchage."
+      en: "Market gardeners, producer groups, horticultural advisors."
+
+  - ref: D1
+    famille: D
+    statut: ouvert
+    duree_jours: 2
+    tarif_public: 1600
+    operateur: ekylibre
+    secours: []
+    outils: [ekylibre]
+    titre:
+      fr: "Piloter son exploitation avec un ERP libre"
+      en: "Running your farm on an open source ERP"
+    resume:
+      fr: "Traçabilité, cahier de plaine, stocks, facturation électronique. Répond frontalement à l'échéance réglementaire et au très faible taux d'équipement observé sur le terrain."
+      en: "Traceability, field records, stock, e-invoicing. A direct answer to the regulatory deadline and to low software adoption on farms."
+    public:
+      fr: "Agriculteurs, groupements, centres de gestion."
+      en: "Farmers, producer groups, farm accounting centres."
+
+  - ref: D2
+    famille: D
+    statut: ouvert
+    duree_jours: 1
+    tarif_public: 1200
+    operateur: tripleperformance
+    secours: []
+    partenaires: [usedesign]
+    outils: [tika]
+    titre:
+      fr: "Capitaliser et diffuser la connaissance agronomique"
+      en: "Capturing and sharing agronomic knowledge"
+    resume:
+      fr: "Formaliser un itinéraire technique, le rendre lisible et réutilisable, le publier. S'appuie sur Triple Performance et sur Tika."
+      en: "Formalise a cropping sequence, make it readable and reusable, publish it. Based on Triple Performance and Tika."
+    public:
+      fr: "Instituts techniques, conseillers, formateurs, réseaux agroécologiques."
+      en: "Technical institutes, advisors, trainers, agroecology networks."
+
+  - ref: D3
+    famille: D
+    statut: ouvert
+    duree_jours: 1
+    tarif_public: 1000
+    operateur: zandoly
+    secours: []
+    outils: [zandoly]
+    titre:
+      fr: "Gérer un groupement de producteurs avec Zandoly"
+      en: "Running a producer group with Zandoly"
+    resume:
+      fr: "Organisation des apports, planification, répartition et traçabilité pour un collectif de producteurs de fruits et légumes, avec une application libre."
+      en: "Deliveries, planning, allocation and traceability for a fruit and vegetable producer group, with open source software."
+    public:
+      fr: "Groupements et organisations de producteurs, circuits courts."
+      en: "Producer groups and organisations, short supply chains."
+
+  - ref: D4
+    famille: D
+    statut: ouvert
+    duree_jours: 1
+    tarif_public: 1400
+    operateur: aspexit
+    secours: []
+    outils: []
+    titre:
+      fr: "Évaluer une solution numérique agricole avant de l'acheter"
+      en: "Assessing a digital farming solution before you buy it"
+    resume:
+      fr: "Grille d'analyse des effets directs, indirects et systémiques : réversibilité, coût complet, dépendance, valeur agronomique réelle."
+      en: "An analysis grid for direct, indirect and systemic effects: reversibility, total cost, lock-in, real agronomic value."
+    public:
+      fr: "Acheteurs, directions d'organisations agricoles, financeurs publics, conseillers."
+      en: "Buyers, farm organisation leadership, public funders, advisors."
+
+  - ref: D5
+    famille: D
+    statut: a_pourvoir
+    duree_jours: 1
+    tarif_public: 1200
+    operateur: null
+    secours: [ekylibre, brad]
+    outils: []
+    titre:
+      fr: "Animer une communauté et un projet open source"
+      en: "Running an open source project and its community"
+    resume:
+      fr: "Choisir une licence, structurer un dépôt, accueillir des contributeurs, tenir une feuille de route partagée. Pour les organisations qui veulent ouvrir un projet sans le voir mourir six mois plus tard."
+      en: "Choose a licence, structure a repository, welcome contributors, maintain a shared roadmap."
+    public:
+      fr: "Instituts techniques, coopératives, collectivités, laboratoires."
+      en: "Technical institutes, cooperatives, local authorities, laboratories."
+
+missions:
+
+  - ref: P1
+    volume_jours: "5–10"
+    operateurs: [ekylibre, aspexit, brad]
+    titre:
+      fr: "Audit d'interopérabilité du système d'information"
+      en: "Information system interoperability audit"
+    livrable:
+      fr: "Cartographie des flux, points de verrouillage, plan de sortie de dépendance."
+      en: "Data flow map, lock-in points, exit plan."
+
+  - ref: P2
+    volume_jours: "10–20"
+    operateurs: [ekylibre, brad]
+    titre:
+      fr: "Sprint de preuve de concept sur la stack OSFarm"
+      en: "Proof-of-concept sprint on the OSFarm stack"
+    livrable:
+      fr: "Prototype fonctionnel, code ouvert, transfert à l'équipe interne."
+      en: "Working prototype, open code, handover to the in-house team."
+
+  - ref: P3
+    volume_jours: "8–15"
+    operateurs: [bziiit, aspexit]
+    titre:
+      fr: "Feuille de route souveraineté et IA"
+      en: "Sovereignty and AI roadmap"
+    livrable:
+      fr: "Diagnostic, arbitrages, charte IA, trajectoire à 24 mois."
+      en: "Assessment, trade-offs, AI charter, 24-month trajectory."
+
+  - ref: P4
+    volume_jours: "10–25"
+    operateurs: [ekylibre, apuso, furgo]
+    titre:
+      fr: "Déploiement d'une stack ouverte sur site et formation des équipes"
+      en: "On-site open stack deployment and team training"
+    livrable:
+      fr: "Environnement installé, équipe autonome, documentation."
+      en: "Installed environment, self-sufficient team, documentation."
+
+  - ref: P5
+    volume_jours: "2 j + prépa"
+    operateurs: [bziiit, tripleperformance, ekylibre]
+    titre:
+      fr: "Animation d'un hackathon ou d'un challenge interne"
+      en: "Running a hackathon or internal challenge"
+    livrable:
+      fr: "Format, coaching des équipes, restitution — méthode éprouvée sur huit éditions GAIA."
+      en: "Format, team coaching, final pitch session — a method proven over eight GAIA editions."
+
+  - ref: P6
+    volume_jours: "15–40"
+    operateurs: [prefabrique, natuition, furgo]
+    titre:
+      fr: "Conception d'un outil ou d'un robot sur mesure"
+      en: "Custom implement or robot design"
+    livrable:
+      fr: "Étude, prototype, essais au champ, plans ouverts."
+      en: "Study, prototype, field trials, open plans."

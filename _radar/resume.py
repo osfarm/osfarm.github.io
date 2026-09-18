@@ -34,8 +34,8 @@ from pathlib import Path
 import requests
 import yaml
 
-from collecte import (DOSSIER_BROUILLON, DOSSIER_LOTS, FAMILLES, RACINE,
-                      charger_configuration, ecrire_lot)
+from collecte import (DOSSIER_BROUILLON, FAMILLES, RACINE, charger_configuration,
+                      ecrire_lot, fichiers_lots)
 
 FICHIER_CACHE = RACINE / "_radar" / "resumes.json"
 CORPS_PR = RACINE / "_radar" / "pr_body.md"
@@ -66,7 +66,7 @@ Réponds uniquement par un objet JSON de la forme :
 # --------------------------------------------------------------------------
 
 def dernier_lot() -> Path | None:
-    fichiers = list(DOSSIER_LOTS.glob("*.yml")) + list(DOSSIER_BROUILLON.glob("*.yml"))
+    fichiers = fichiers_lots() + list(DOSSIER_BROUILLON.glob("*.yml"))
     return max(fichiers, key=lambda f: f.stat().st_mtime) if fichiers else None
 
 

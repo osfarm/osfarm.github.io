@@ -4,6 +4,7 @@ layout: fr-support-page
 permalink: /fr/actualites/
 description: "Les derniers logiciels, matériels, données et modèles agricoles sous licence ouverte validés par l'association"
 lang: fr
+large: true
 ---
 {%- assign mois = "janvier,février,mars,avril,mai,juin,juillet,août,septembre,octobre,novembre,décembre" | split: "," -%}
 {%- assign familles = "logiciel:Logiciels,materiel:Matériels,donnees:Données,modele:Modèles et IA" | split: "," -%}
@@ -18,6 +19,7 @@ lang: fr
   </p>
 
   {% for lot in site.data.radar reversed %}
+  {%- if lot[0] == "communaute" %}{% continue %}{% endif -%}
   {%- assign valides = lot[1].candidats | where: "publier", true -%}
   {%- if valides == nil or valides.size == 0 %}{% continue %}{% endif -%}
   {%- assign publies = publies | plus: 1 -%}

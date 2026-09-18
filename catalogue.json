@@ -1,0 +1,17 @@
+---
+layout: null
+permalink: /catalogue.json
+---
+{%- comment -%}
+  Flux JSON du catalogue formation & conseil, servi à /catalogue.json.
+  Lu par les workflows n8n pour router une demande vers son opérateur
+  (voir _catalogue/README.md), et téléchargeable comme les autres communs.
+{%- endcomment -%}
+{
+  "genere_le": "{{ site.time | date_to_xmlschema }}",
+  "meta": {{ site.data.catalogue.meta | jsonify }},
+  "familles": {{ site.data.catalogue.familles | jsonify }},
+  "operateurs": {{ site.data.operateurs | jsonify }},
+  "modules": {{ site.data.catalogue.modules | jsonify }},
+  "missions": {{ site.data.catalogue.missions | jsonify }}
+}

@@ -1,0 +1,146 @@
+# ---------------------------------------------------------------------------
+# OSFarm — Opérateurs du catalogue formation & conseil (_data/catalogue.yml)
+#
+# Ce qui s'affiche sur le site dépend du module, pas de cette liste : un module
+# propose un devis dès que son `statut` est `ouvert` et son `operateur`
+# renseigné. C'est au responsable catalogue de n'ouvrir un module qu'une fois
+# la charte signée par l'opérateur — `adherent`, `charte_signee` et `qualiopi`
+# sont la trace de ce contrôle, `qualiopi: true` s'affichant sur la fiche.
+#
+# Champs à compléter par le responsable catalogue : `url`, `qualiopi`, et
+# `charte_signee` (date AAAA-MM-JJ) au fur et à mesure des signatures.
+# Les entrées `role: partenaire` sont citées sur les fiches sans être
+# destinataires des demandes.
+# ---------------------------------------------------------------------------
+
+- id: ekylibre
+  nom: "Ekylibre"
+  contact: "David Joulin"
+  url: ""                 # à compléter
+  adherent: true
+  charte_signee: null     # date AAAA-MM-JJ une fois signée
+  qualiopi: null          # true / false — à vérifier
+  domaines: [erp, donnees, ia, interoperabilite]
+
+- id: brad
+  nom: "Brad Technology"
+  contact: "Olivier Lépine"
+  url: "https://www.brad.ag/fr"
+  adherent: true
+  charte_signee: null
+  qualiopi: null
+  domaines: [donnees, api, developpement]
+
+- id: bziiit
+  nom: "bziiit"
+  contact: "Laurent Tripied"
+  url: "https://piloterra.fr/"
+  adherent: true
+  charte_signee: null
+  qualiopi: true
+  domaines: [ia, sobriete, gouvernance]
+
+- id: bziiit_pa
+  nom: "bziiit"
+  contact: "Paul ARNON"
+  url: "https://piloterra.fr/"
+  adherent: true
+  charte_signee: null
+  qualiopi: true
+  domaines: [ia, sobriete, gouvernance]
+
+- id: apuso
+  nom: "Apuso Libre"
+  contact: "Nicolas de Kermel, Mehdi Jaber"
+  url: ""
+  adherent: true
+  charte_signee: null
+  qualiopi: null
+  domaines: [rtk, autoguidage, arpentage]
+
+- id: natuition
+  nom: "Natuition"
+  contact: "Cyril Roudot"
+  url: ""
+  adherent: true
+  charte_signee: null
+  qualiopi: null
+  domaines: [rtk, robotique, desherbage]
+
+- id: furgo
+  nom: "Furgo"
+  contact: "Nicolas Daüy"
+  url: ""
+  adherent: true
+  charte_signee: null
+  qualiopi: null
+  domaines: [capteurs, lowtech]
+
+- id: prefabrique
+  nom: "Le Pré Fabriqué"
+  contact: "Simon Richard"
+  url: ""
+  adherent: true
+  charte_signee: null
+  qualiopi: null
+  domaines: [openhardware, machinisme]
+
+- id: aspexit
+  nom: "Aspexit"
+  contact: "Corentin Leroux"
+  url: ""
+  adherent: true
+  charte_signee: null
+  qualiopi: null
+  domaines: [evaluation, donnees_spatiales, conseil]
+
+- id: tripleperformance
+  nom: "Triple Performance"
+  contact: "Bertrand Gorge"
+  url: ""
+  adherent: true
+  charte_signee: null
+  qualiopi: null
+  domaines: [connaissance, agronomie]
+
+- id: zandoly
+  nom: "Zandoly"
+  contact: "Martin de Reynal"
+  url: ""
+  adherent: true
+  charte_signee: null
+  qualiopi: null
+  domaines: [groupements, fruits_legumes]
+
+- id: centipede
+  nom: "Réseau Centipède"
+  contact: "Julien Ancelin"
+  url: ""
+  adherent: null          # à confirmer
+  charte_signee: null
+  qualiopi: null
+  domaines: [rtk, geomatique]
+
+- id: herve
+  nom: "Hervé PILLAUD"
+  contact: "Hervé PILLAUD"
+  url: "https://londonspeakerbureau.fr/conferenciers/herve-pillaud/"
+  adherent: true          # à confirmer
+  charte_signee: null
+  qualiopi: null
+  domaines: [ia, sobriete, gouvernance]
+
+# --- partenaires cités mais non opérateurs (affichés sans lien de devis) ---
+- id: xlim
+  nom: "XLIM"
+  role: partenaire
+- id: elatec
+  nom: "Elatec"
+  role: partenaire
+- id: usedesign
+  nom: "Use Design"
+  contact: "Vivien Gauthier"
+  role: partenaire
+- id: troisliz
+  nom: "3Liz"
+  role: partenaire

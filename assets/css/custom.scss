@@ -16,7 +16,12 @@ a {
   &:hover { color: $osfarm-green-dark; }
 }
 
+// Jaune, bleu et sarcelle des trois planètes du logo (_data/header_orbits.yml).
+$osfarm-soleil: #ffcc00;
+$osfarm-encre:  #16210f;
+
 .page-header {
+  position: relative;
   width: 100%;
   background-color: $osfarm-green;
   // The field from the 2026 AG deck: its pale sky is the backdrop the logo's
@@ -27,16 +32,153 @@ a {
   background-repeat: no-repeat;
   background-position: center 30%;
 
-  // White links and titles sit on a pale sky, so they carry their own contrast.
-  a.text-white,
-  h1, h2, p {
-    text-shadow: 0 1px 2px rgba(0, 0, 0, .7), 0 0 12px rgba(0, 0, 0, .4);
+  // Le texte se lisait à coups d'ombre portée sur un ciel pâle. À la place, un
+  // voile vert monte du bas de la photo : la navigation et le titre s'y posent,
+  // le ciel et le logo restent nets.
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 40% 0 0;
+    background: linear-gradient(to bottom, rgba(22, 33, 15, 0) 0%, rgba(22, 33, 15, .45) 45%, rgba(22, 33, 15, .8) 100%);
+    pointer-events: none;
+  }
+
+  > * { position: relative; }
+
+  h1, h2, .f2-light { color: #fff; }
+}
+
+// Bandeau de navigation, posé sur le voile : liens à gauche, langue et adhésion
+// à droite.
+.site-nav {
+  margin-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, .18);
+  border-bottom: 1px solid rgba(255, 255, 255, .18);
+  background: rgba(22, 33, 15, .6);
+  backdrop-filter: blur(6px);
+}
+
+.site-nav-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.site-nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  a {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+
+    &:hover {
+      color: #fff;
+      background: rgba(255, 255, 255, .14);
+    }
+
+    // La page en cours est soulignée du jaune du logo : pas de couleur seule.
+    &[aria-current="page"] {
+      font-weight: 700;
+      box-shadow: inset 0 -3px 0 $osfarm-soleil;
+    }
   }
 }
 
-.language-switcher{
-  width: 100%;
-  text-align: center;
+.site-nav-fr {
+  margin-left: 4px;
+  padding: 0 4px;
+  font-size: 11px;
+  font-weight: 700;
+  vertical-align: 1px;
+  border: 1px solid rgba(255, 255, 255, .5);
+  border-radius: 3px;
+}
+
+.site-nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.site-nav-lang {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .7);
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .6);
+
+    &:hover { color: $osfarm-soleil; border-bottom-color: $osfarm-soleil; }
+  }
+
+  span[aria-current] { color: $osfarm-soleil; }
+}
+
+// Adhérer : le seul élément chaud de la page, et la seule action du header.
+.site-join {
+  display: inline-block;
+  padding: 8px 18px;
+  font-size: 16px;
+  font-weight: 700;
+  color: $osfarm-encre;
+  white-space: nowrap;
+  background: $osfarm-soleil;
+  border-radius: 999px;
+  box-shadow: 0 1px 0 rgba(22, 33, 15, .25);
+
+  &:hover,
+  &:focus {
+    color: $osfarm-encre;
+    text-decoration: none;
+    background: lighten($osfarm-soleil, 10%);
+  }
+}
+
+.site-nav a:focus-visible,
+.site-join:focus-visible {
+  outline: 2px solid $osfarm-soleil;
+  outline-offset: 2px;
+}
+
+@media (max-width: 767px) {
+  .site-nav-inner {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .site-nav-links { justify-content: center; }
+}
+
+// Les gouttières négatives de Primer dépassaient de 8 px sur téléphone.
+@media (max-width: 543px) {
+  .gutter-spacious {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: .01ms !important; transition-duration: .01ms !important; }
 }
 
 
@@ -269,16 +411,761 @@ blockquote, .quote {
     margin: 10px auto;
   }
 }
-// Radar des communs agricoles (docs/fr/communs.html, docs/fr/actualites.html)
+// Annuaire des communs agricoles (docs/fr/communs.html) : cartes sur deux
+// colonnes, recherche et filtres en pastilles, d'après la partie « Sujets »
+// des hackathons GAIA.
+$radar-bordure:  #d6e2cf;
+$radar-attenue:  #5d6d58;
+$radar-texte:    #1f2d1a;
+$radar-rayon:    12px;
+
+.radar-icone {
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+}
+
+.radar-outils {
+  margin: 24px 0 8px;
+}
+
 .radar-recherche {
-  flex: 1 1 16rem;
+  position: relative;
   max-width: 28rem;
+  margin-bottom: 16px;
+
+  .radar-icone {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: $radar-attenue;
+  }
+
+  input {
+    width: 100%;
+    height: 40px;
+    padding: 8px 12px 8px 36px;
+    font-size: 15px;
+    color: $radar-texte;
+    background: #fff;
+    border: 1px solid $radar-bordure;
+    border-radius: 8px;
+
+    &:focus {
+      outline: none;
+      border-color: $osfarm-green;
+      box-shadow: 0 0 0 3px rgba($osfarm-green, .2);
+    }
+  }
+}
+
+.radar-filtres {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 8px;
+  margin-bottom: 10px;
+
+  &[hidden] { display: none; }
+}
+
+.radar-filtres-titre {
+  margin-right: 2px;
+  font-size: 14px;
+  color: $radar-attenue;
+}
+
+// Pastille de filtre : contour au repos, pleine une fois choisie.
+.radar-tag {
+  padding: 2px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: $radar-texte;
+  background: #fff;
+  border: 1px solid $radar-bordure;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color .15s, border-color .15s, color .15s;
+
+  &:hover { background: $osfarm-green-light; }
+
+  &.is-actif {
+    color: #fff;
+    background: $osfarm-green;
+    border-color: $osfarm-green;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $osfarm-green;
+    outline-offset: 2px;
+  }
+}
+
+.radar-compteur {
+  margin: 8px 0 16px;
+  font-size: 13px;
+  color: $radar-attenue;
+}
+
+.radar-grille {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  // Chaque carte s'arrête à son contenu : pas de vide au milieu des fiches
+  // courtes pour suivre la hauteur de leur voisine.
+  align-items: start;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  // Au-delà de 1200 px, une troisième colonne plutôt que des cartes étirées.
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.radar-carte {
+  display: flex;
+  flex-direction: column;
+  color: $radar-texte;
+  background: #fff;
+  border: 1px solid $radar-bordure;
+  border-radius: $radar-rayon;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+  transition: box-shadow .2s;
+  scroll-margin-top: 16px;
+
+  &:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1);
+  }
+
+  // Arrivée depuis le fil d'actualités (#commun-…).
+  &:target {
+    border-color: $osfarm-green;
+    box-shadow: 0 0 0 3px rgba($osfarm-green, .25);
+  }
+
+  &[hidden] { display: none; }
+}
+
+.radar-carte-tete {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px 24px 12px;
+}
+
+.radar-vignette {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  font-size: 28px;
+  border: 1px solid $radar-bordure;
+  border-radius: 8px;
+  color: $osfarm-green-dark;
+  background: $osfarm-green-light;
+
+  .radar-icone { stroke-width: 1.75; }
+
+  @media (max-width: 543px) {
+    width: 48px;
+    height: 48px;
+    font-size: 22px;
+  }
+}
+
+.radar-vignette--materiel { color: #6e5600; background: $osfarm-cream; }
+.radar-vignette--donnees  { color: #2c6590; background: #e3f0f9; }
+.radar-vignette--modele   { color: #5b4a8b; background: #ede8f6; }
+
+.radar-vignette.radar-vignette--logo {
+  padding: 6px;
+  background: #fff;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.radar-carte-titre {
+  flex: 1;
+  min-width: 0;
+
+  h2 {
+    margin: 0;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: -.01em;
+    overflow-wrap: anywhere;
+  }
+
+  a {
+    color: $radar-texte;
+    &:hover { color: $osfarm-green; }
+  }
+}
+
+.radar-auteur {
+  margin: 2px 0 0;
+  font-size: 14px;
+  color: $radar-attenue;
+  overflow-wrap: anywhere;
+}
+
+.radar-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 8px;
+  margin: 8px 0 0;
+  font-size: 12px;
+  color: $radar-attenue;
 }
 
 .radar-famille {
   display: inline-block;
-  padding: 0 $spacer-1;
-  border: $border-width $border-style $gray-300;
-  border-radius: 2em;
-  color: $gray-700;
+  padding: 0 8px;
+  font-weight: 600;
+  border: 1px solid $radar-bordure;
+  border-radius: 999px;
+}
+
+.radar-carte-corps {
+  flex: 1;
+  padding: 0 24px;
+  font-size: 15px;
+  line-height: 1.55;
+  color: $radar-attenue;
+
+  p { margin-bottom: 10px; }
+}
+
+.radar-interet {
+  padding-left: 10px;
+  font-style: italic;
+  border-left: 3px solid $osfarm-green-light;
+}
+
+.radar-carte-pied {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 8px 24px 24px;
+}
+
+// Bas de carte : dépôt et licence à gauche, démo à droite.
+.radar-carte-bas {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.radar-sources {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 14px;
+  min-width: 0;
+  font-size: 13px;
+  color: $radar-attenue;
+
+  code {
+    padding: 0 4px;
+    font-size: 12px;
+    color: $radar-texte;
+    background: #f3f6f1;
+    border-radius: 4px;
+  }
+}
+
+.radar-octicon {
+  flex-shrink: 0;
+  fill: currentColor;
+}
+
+.radar-depot,
+.radar-licence {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  min-width: 0;
+}
+
+.radar-depot {
+  color: $radar-attenue;
+
+  span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &:hover { color: $osfarm-green-dark; }
+}
+
+.radar-mots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+// Mot-clé d'une carte : un clic filtre l'annuaire sur ce mot.
+.radar-mot {
+  padding: 2px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: $osfarm-green-dark;
+  background: $osfarm-green-light;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color .15s;
+
+  &:hover { background: darken($osfarm-green-light, 6%); }
+
+  &.is-actif {
+    color: #fff;
+    background: $osfarm-green;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $osfarm-green;
+    outline-offset: 2px;
+  }
+}
+
+.radar-bouton {
+  display: inline-flex;
+  margin-left: auto;
+  align-items: center;
+  gap: 8px;
+  height: 36px;
+  padding: 0 12px;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  color: $radar-texte;
+  background: #fff;
+  border: 1px solid $radar-bordure;
+  border-radius: 8px;
+  transition: background-color .15s, border-color .15s;
+
+  &:hover {
+    color: $osfarm-green-dark;
+    text-decoration: none;
+    background: $osfarm-green-light;
+    border-color: $osfarm-green;
+  }
+}
+
+.radar-encart {
+  padding: 24px;
+  font-size: 15px;
+  color: $radar-attenue;
+  background: #f5f9f2;
+  border: 1px solid $radar-bordure;
+  border-radius: $radar-rayon;
+
+  h3 {
+    margin: 0 0 6px;
+    font-size: 16px;
+    font-weight: 600;
+    color: $radar-texte;
+  }
+
+  p { margin-bottom: 16px; }
+
+  ol { padding-left: 20px; }
+}
+
+.radar-encart-titre {
+  margin: 0 0 16px;
+  font-size: 20px;
+  font-weight: 700;
+  color: $radar-texte;
+}
+
+.radar-encart-colonnes {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px 32px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+// Sur téléphone, les cartes resserrent leurs marges.
+@media (max-width: 543px) {
+  .radar-carte-tete { gap: 12px; padding: 16px 16px 12px; }
+  .radar-carte-corps { padding: 0 16px; }
+  .radar-carte-pied { padding: 8px 16px 16px; }
+}
+
+// Catalogue formation & conseil (docs/{fr,en}/catalogue.html) : fiches
+// dépliantes classées par famille, tableau des missions et formulaire de
+// demande. Les pastilles de filtre (.radar-tag), les boutons (.radar-bouton)
+// et les encarts (.radar-encart) sont ceux de l'annuaire des communs : les
+// deux pages sont deux vues du même fonds.
+.catalogue {
+  --catalogue-famille: #{$osfarm-green};
+}
+
+.catalogue-intro {
+  max-width: 68ch;
+  font-size: 16px;
+  color: $radar-attenue;
+}
+
+.catalogue-claim {
+  margin-bottom: 8px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: $radar-texte;
+}
+
+.catalogue-famille {
+  margin: 0 0 32px;
+
+  &[hidden] { display: none; }
+}
+
+.catalogue-famille-titre {
+  padding-bottom: 6px;
+  margin: 0 0 4px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--catalogue-famille);
+  border-bottom: 2px solid var(--catalogue-famille);
+}
+
+// Même trait que les titres de famille, mais pour une section de page (charte
+// de l'opérateur, formulaire de candidature) : il respire et s'arrête à la
+// largeur du texte.
+.catalogue-titre-section {
+  max-width: 68ch;
+  padding-bottom: 6px;
+  margin: 36px 0 14px;
+  font-size: 15px;
+  font-weight: 700;
+  color: $osfarm-green;
+  border-bottom: 2px solid $osfarm-green;
+}
+
+// Une fiche = un <details>. Fermée, elle tient sur une ligne : référence,
+// titre, durée et tarif. C'est ce qui permet de lire dix-sept modules d'un
+// coup d'œil.
+.catalogue-module {
+  border-bottom: 1px solid $radar-bordure;
+
+  > summary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 12px;
+    align-items: baseline;
+    padding: 12px 4px;
+    font-size: 16px;
+    list-style: none;
+    cursor: pointer;
+
+    &::-webkit-details-marker { display: none; }
+
+    // Le triangle remplace le marqueur natif : il dit que la ligne se déplie,
+    // et pivote quand la fiche est ouverte.
+    &::before {
+      flex: 0 0 auto;
+      font-size: 11px;
+      color: var(--catalogue-famille);
+      content: "\25B8";
+      transition: transform .15s;
+    }
+
+    &:hover { background: $osfarm-green-light; }
+
+    &:focus-visible {
+      outline: 2px solid $osfarm-green;
+      outline-offset: -2px;
+    }
+  }
+
+  &[open] > summary {
+    font-weight: 600;
+    background: transparent;
+
+    &::before { transform: rotate(90deg); }
+  }
+}
+
+.catalogue-ref {
+  flex: 0 0 auto;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--catalogue-famille);
+}
+
+.catalogue-module-titre {
+  flex: 1 1 18rem;
+  color: $radar-texte;
+}
+
+.catalogue-module-meta {
+  flex: 0 0 auto;
+  font-size: 13px;
+  color: $radar-attenue;
+  white-space: nowrap;
+}
+
+.catalogue-module-corps {
+  max-width: 68ch;
+  padding: 0 4px 20px;
+  font-size: 15px;
+  color: $radar-texte;
+
+  p { margin-bottom: 8px; }
+}
+
+.catalogue-module-public {
+  font-size: 14px;
+  color: $radar-attenue;
+}
+
+.catalogue-tarif {
+  font-size: 14px;
+  font-weight: 600;
+  color: $radar-texte;
+}
+
+.catalogue-operateur {
+  font-size: 14px;
+
+  b { color: var(--catalogue-famille); }
+}
+
+.catalogue-module-appui {
+  display: block;
+  font-size: 13px;
+  color: $radar-attenue;
+}
+
+.catalogue-qualiopi {
+  padding: 1px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #6e5600;
+  white-space: nowrap;
+  background: $osfarm-cream;
+  border-radius: 999px;
+}
+
+// Module sans opérateur : pas de bouton de devis, un appel à opérateur.
+.catalogue-module-ouvert {
+  font-size: 14px;
+  font-style: italic;
+  color: $radar-attenue;
+}
+
+// .radar-bouton pousse le bouton à droite de la carte qui l'accueille ; ici
+// les boutons se suivent au fil du texte.
+.catalogue-bouton {
+  margin: 4px 8px 4px 0;
+  font-family: inherit;
+  cursor: pointer;
+
+  &.catalogue-bouton--plein {
+    color: #fff;
+    background: $osfarm-green;
+    border-color: $osfarm-green;
+
+    &:hover {
+      color: #fff;
+      background: $osfarm-green-dark;
+      border-color: $osfarm-green-dark;
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid $osfarm-green;
+    outline-offset: 2px;
+  }
+}
+
+.catalogue-missions {
+  margin: 40px 0 0;
+}
+
+.catalogue-missions-intro {
+  max-width: 68ch;
+  font-size: 15px;
+  color: $radar-attenue;
+}
+
+// Sur téléphone, le tableau défile plutôt que d'écraser ses colonnes.
+.catalogue-table-cadre {
+  overflow-x: auto;
+}
+
+.catalogue-table {
+  width: 100%;
+  font-size: 14px;
+  border-collapse: collapse;
+
+  th {
+    padding: 8px 12px 8px 0;
+    font-size: 13px;
+    font-weight: 600;
+    color: $radar-attenue;
+    text-align: left;
+    vertical-align: bottom;
+    border-bottom: 1px solid $radar-bordure;
+  }
+
+  td {
+    padding: 10px 12px 10px 0;
+    color: $radar-texte;
+    vertical-align: top;
+    border-bottom: 1px solid $radar-bordure;
+  }
+
+  .catalogue-bouton { margin: 0; }
+}
+
+.catalogue-nowrap { white-space: nowrap; }
+
+.catalogue-invisible {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+// Formulaires : la demande de devis dans un <dialog>, la candidature
+// d'opérateur à plat dans la page.
+.catalogue-dialogue {
+  width: calc(100% - 32px);
+  max-width: 34rem;
+  padding: 0;
+  color: $radar-texte;
+  background: #fff;
+  border: 1px solid $radar-bordure;
+  border-radius: $radar-rayon;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, .25);
+
+  &::backdrop { background: rgba(31, 45, 26, .55); }
+}
+
+.catalogue-formulaire {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 34rem;
+  padding: 24px;
+
+  h2 {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin: 0;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  input,
+  textarea,
+  select {
+    width: 100%;
+    padding: 8px 10px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 400;
+    color: $radar-texte;
+    background: #fff;
+    border: 1px solid $radar-bordure;
+    border-radius: 8px;
+
+    &:focus {
+      border-color: $osfarm-green;
+      outline: none;
+      box-shadow: 0 0 0 3px rgba($osfarm-green, .2);
+    }
+  }
+}
+
+.catalogue-aide {
+  margin: 0;
+  font-size: 13px;
+  color: $radar-attenue;
+}
+
+.catalogue-case {
+  flex-direction: row !important;
+  align-items: flex-start;
+  gap: 8px !important;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+
+  input {
+    width: auto !important;
+    margin-top: 3px;
+  }
+}
+
+.catalogue-formulaire-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 6px;
+}
+
+.catalogue-etat {
+  min-height: 1.2em;
+  margin: 0;
+  font-size: 14px;
+
+  &[data-etat="ok"] { font-weight: 600; color: $osfarm-green-dark; }
+  &[data-etat="erreur"] { font-weight: 600; color: #9c2b1e; }
+}
+
+// Piège à robots : invisible pour l'humain, rempli par les formulaires
+// automatiques, et l'envoi est alors abandonné.
+.catalogue-leurre {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+}
+
+// Charte de l'opérateur : une liste numérotée qui se lit comme un contrat.
+.catalogue-charte {
+  max-width: 68ch;
+  padding-left: 22px;
+  font-size: 15px;
+  color: $radar-texte;
+
+  li { margin-bottom: 8px; }
+}
+
+@media (max-width: 543px) {
+  .catalogue-module-meta { flex-basis: 100%; }
+  .catalogue-formulaire { padding: 18px; }
 }

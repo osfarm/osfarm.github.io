@@ -2,117 +2,204 @@
 title: Annuaire des communs agricoles
 layout: fr-support-page
 permalink: /fr/communs/
-description: "Logiciels, matériels, données et modèles agricoles sous licence ouverte, repérés par notre radar et vérifiés un par un"
+redirect_from: /fr/community/
+description: "Logiciels, matériels, données et modèles agricoles ouverts, choisis par la communauté OSFarm ou repérés par notre radar"
 lang: fr
+large: true
 ---
 {% include radar-fiches.html %}
-{%- assign etiquettes = "logiciel:Logiciel,materiel:Matériel,donnees:Données,modele:Modèle" | split: "," -%}
 
-<div class="col-md-10 mx-auto mb-6">
+<div class="mb-6">
 
   <p class="f4 text-gray">
-    {{ radar_fiches | size }} projets répertoriés, mis à jour chaque jour ouvré.
-    Le catalogue est lui-même un commun : téléchargez-le en
+    {{ radar_fiches.size }} projets répertoriés : ceux que la communauté OSFarm a choisis,
+    et ceux que notre radar repère chaque jour ouvré. Le catalogue est lui-même un commun : téléchargez-le en
     <a href="{{ "/data/communs.csv" | relative_url }}">CSV</a> ou en
     <a href="{{ "/data/communs.json" | relative_url }}">JSON</a>.
     Les nouveautés sont présentées dans le <a href="{{ "/fr/actualites/" | relative_url }}">fil d'actualités</a>.
+    Pour se faire accompagner sur ces outils, le
+    <a href="{{ "/fr/catalogue/" | relative_url }}">catalogue formation et conseil</a> rassemble
+    ce que les adhérents savent faire, sans commission pour l'association.
   </p>
 
   {% if radar_fiches.size > 0 %}
-  <div class="d-flex flex-wrap flex-items-center my-4">
-    <input type="search" id="radar-recherche" class="form-control mr-3 mb-2 radar-recherche"
-           placeholder="Rechercher un projet, un mot-clé" aria-label="Rechercher dans l'annuaire">
-    <div class="BtnGroup mb-2" role="group" aria-label="Filtrer par famille">
-      <button type="button" class="btn BtnGroup-item selected" data-famille="" aria-pressed="true">Tout</button>
-      <button type="button" class="btn BtnGroup-item" data-famille="logiciel" aria-pressed="false">Logiciels</button>
-      <button type="button" class="btn BtnGroup-item" data-famille="materiel" aria-pressed="false">Matériels</button>
-      <button type="button" class="btn BtnGroup-item" data-famille="donnees" aria-pressed="false">Données</button>
-      <button type="button" class="btn BtnGroup-item" data-famille="modele" aria-pressed="false">Modèles</button>
+  <div class="radar-outils">
+    <div class="radar-recherche">
+      {% include radar-icone.html nom="recherche" %}
+      <input type="search" id="radar-recherche" placeholder="Rechercher par nom, description ou mot-clé…"
+             aria-label="Rechercher dans l'annuaire">
+    </div>
+    <div class="radar-filtres" role="group" aria-label="Filtrer par famille">
+      <span class="radar-filtres-titre">Famille :</span>
+      <button type="button" class="radar-tag is-actif" data-famille="" aria-pressed="true">Tout</button>
+      <button type="button" class="radar-tag" data-famille="logiciel" aria-pressed="false">Logiciels</button>
+      <button type="button" class="radar-tag" data-famille="materiel" aria-pressed="false">Matériels</button>
+      <button type="button" class="radar-tag" data-famille="donnees" aria-pressed="false">Données</button>
+      <button type="button" class="radar-tag" data-famille="modele" aria-pressed="false">Modèles</button>
+    </div>
+    <div class="radar-filtres" id="radar-mots" role="group" aria-label="Filtrer par mot-clé" hidden>
+      <span class="radar-filtres-titre">Filtrer par mots-clés :</span>
     </div>
   </div>
 
-  <p id="radar-compteur" class="text-gray f6" aria-live="polite"></p>
+  <p id="radar-compteur" class="radar-compteur" aria-live="polite"></p>
 
-  <div class="Box radar-annuaire">
-    {% for f in radar_fiches %}
-    {%- assign mots = f.mots_cles_fr | default: f.mots_cles -%}
-    {%- assign mots_texte = mots | join: " " -%}
-    {%- assign etiquette = f.famille -%}
-    {%- for e in etiquettes -%}
-      {%- assign paire = e | split: ":" -%}
-      {%- if paire[0] == f.famille %}{% assign etiquette = paire[1] %}{% endif -%}
+  <div class="radar-grille">
+    {%- for f in radar_fiches -%}
+      {%- assign mots = f.mots_cles_fr | default: f.mots_cles -%}
+      {%- unless mots %}{% assign mots = "" | split: "" %}{% endunless -%}
+      {%- if f.categorie %}{% assign mots = f.categorie | downcase | split: "~" | concat: mots | uniq %}{% endif -%}
+      {%- assign resume = f.resume | default: f.description -%}
+      {%- comment -%} « auteur/depot » sur les forges : le dépôt en titre, l'auteur en sous-titre. {%- endcomment -%}
+      {%- assign segments_url = f.url | split: "/" -%}
+      {%- assign auteur = segments_url[2] | remove_first: "www." -%}
+      {%- assign nom = f.titre -%}
+      {%- if auteur == "github.com" or auteur == "huggingface.co" -%}
+        {%- assign segments_titre = f.titre | split: "/" -%}
+        {%- if segments_titre.size == 2 -%}
+          {%- assign auteur = segments_titre[0] -%}
+          {%- assign nom = segments_titre[1] -%}
+        {%- elsif auteur == "github.com" -%}
+          {%- assign auteur = segments_url[3] -%}
+        {%- endif -%}
+      {%- endif -%}
+      {%- assign auteur = f.github_org | default: auteur -%}
+      {%- assign id_carte = "commun-" | append: f.id -%}
+      {% include annuaire-carte.html id=id_carte famille=f.famille nom=nom auteur=auteur url=f.url logo=f.img
+         licence=f.licence techno=f.techno date=f.propose_le resume=resume
+         interet=f.interet mots=mots demo=f.demo depot=f.depot %}
     {%- endfor %}
-    <div class="Box-row radar-fiche" id="commun-{{ f.id }}"
-         data-famille="{{ f.famille }}"
-         data-index="{{ f.titre | append: ' ' | append: f.resume | append: ' ' | append: mots_texte | downcase | escape }}">
-      <h2 class="f4 mb-1">
-        <a href="{{ f.url }}" target="_blank" rel="noopener">{{ f.titre }}</a>
-      </h2>
-      <p class="f6 text-gray mb-2">
-        <span class="radar-famille mr-1">{{ etiquette }}</span>
-        <code>{{ f.licence }}</code>
-        {% if f.techno and f.techno != "" %} · {{ f.techno }}{% endif %}
-        {% if f.propose_le %} · ajouté le {{ f.propose_le | date: "%d/%m/%Y" }}{% endif %}
-      </p>
-      <p class="mb-1">{{ f.resume | default: f.description }}</p>
-      {% if f.interet and f.interet != "" %}<p class="mb-1 text-gray"><em>{{ f.interet }}</em></p>{% endif %}
-      {% if mots.size > 0 %}<p class="f6 text-gray mb-0">{{ mots | slice: 0, 5 | join: " · " }}</p>{% endif %}
-    </div>
-    {% endfor %}
   </div>
   {% else %}
   <div class="blankslate">
-    <p>Le radar n'a encore publié aucune fiche. Les premières arriveront après la prochaine relecture.</p>
+    <p>L'annuaire est vide pour le moment.</p>
   </div>
   {% endif %}
 
-  <div class="Box Box--blue mt-6 p-4">
-    <p class="mb-2"><strong>Comment cet annuaire est tenu.</strong></p>
-    <p class="mb-0 f5">
-      Chaque jour ouvré, un robot parcourt les forges logicielles, les portails de données
-      ouvertes et les dépôts de modèles. Il ne retient que ce qui porte une licence
-      réellement ouverte et propose ses trouvailles aux relecteurs de l'association.
-      Rien n'est publié ici sans validation humaine. Le code du radar est
-      <a href="https://github.com/osfarm/osfarm.github.io/tree/main/_radar">dans le dépôt du site</a>.
-      Un projet manque ?
-      <a href="https://github.com/osfarm/osfarm.github.io/issues/new">Signalez-le</a>.
-    </p>
+  <div class="radar-encart mt-6">
+    <h2 class="radar-encart-titre">Comment cet annuaire est tenu</h2>
+    <div class="radar-encart-colonnes">
+      <div>
+        <h3>Le radar</h3>
+        <p>
+          Chaque jour ouvré, un robot parcourt les forges logicielles, les portails de données
+          ouvertes et les dépôts de modèles. Il ne retient que ce qui porte une licence
+          réellement ouverte et propose ses trouvailles aux relecteurs de l'association.
+          Rien n'est publié sans validation humaine. Le code du radar est
+          <a href="https://github.com/osfarm/osfarm.github.io/tree/main/_radar">dans le dépôt du site</a>.
+        </p>
+        <h3>Ce que nous retenons</h3>
+        <p class="mb-0">
+          Des projets en phase de production, dont le code source ou les données sont publiés.
+          Si vous remarquez l'utilisation de votre logo sans votre accord, ou si vous souhaitez
+          retirer un projet, <a href="https://github.com/osfarm/osfarm.github.io/issues/new">faites-le nous savoir</a>.
+        </p>
+      </div>
+      <div>
+        <h3>Ajouter un projet</h3>
+        <p>
+          Ce site est <a href="https://github.com/osfarm/osfarm.github.io">open source</a> :
+          une personne de la communauté relira votre proposition.
+        </p>
+        <ol class="mb-0">
+          <li>Ouvrez la liste des projets de la communauté,
+            <a href="https://github.com/osfarm/osfarm.github.io/blob/main/_data/radar/communaute.yml">_data/radar/communaute.yml</a>.</li>
+          <li>Cliquez sur l'icône crayon (« Edit ») en haut à droite.</li>
+          <li>Ajoutez une fiche pour votre projet ; l'en-tête du fichier décrit chaque champ.</li>
+          <li>Cliquez sur « Propose changes » en bas de la page.</li>
+          <li>Décrivez votre contribution, puis cliquez sur « Create pull request ».</li>
+        </ol>
+      </div>
+    </div>
   </div>
 
 </div>
 
 <script>
 (function () {
-  var fiches = Array.prototype.slice.call(document.querySelectorAll('.radar-fiche'));
   var recherche = document.getElementById('radar-recherche');
-  var compteur = document.getElementById('radar-compteur');
-  var boutons = Array.prototype.slice.call(document.querySelectorAll('[data-famille]'))
-    .filter(function (b) { return b.tagName === 'BUTTON'; });
   if (!recherche) { return; }
+  var grille = document.querySelector('.radar-grille');
+  // Fiches radar et projets de la communauté arrivent en deux séries : un seul
+  // ordre alphabétique pour tout l'annuaire.
+  var fiches = Array.prototype.slice.call(grille.querySelectorAll('.radar-carte'))
+    .sort(function (a, b) {
+      return a.getAttribute('data-nom').localeCompare(b.getAttribute('data-nom'), 'fr');
+    });
+  fiches.forEach(function (f) { grille.appendChild(f); });
+  var compteur = document.getElementById('radar-compteur');
+  var barreMots = document.getElementById('radar-mots');
+  var boutonsFamille = Array.prototype.slice.call(document.querySelectorAll('.radar-filtres [data-famille]'));
   var famille = '';
+  var mot = '';
+
+  function motsDe(f) {
+    var brut = f.getAttribute('data-mots');
+    return brut ? brut.split('|') : [];
+  }
+
+  // Seuls les mots-clés partagés par plusieurs fiches font un filtre utile.
+  var frequences = {};
+  fiches.forEach(function (f) {
+    motsDe(f).forEach(function (m) { frequences[m] = (frequences[m] || 0) + 1; });
+  });
+  var motsCourants = Object.keys(frequences)
+    .filter(function (m) { return frequences[m] > 1; })
+    .sort(function (a, b) { return frequences[b] - frequences[a] || a.localeCompare(b, 'fr'); })
+    .slice(0, 20)
+    .sort(function (a, b) { return a.localeCompare(b, 'fr'); });
+  motsCourants.forEach(function (m) {
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'radar-tag';
+    b.setAttribute('data-mot', m);
+    b.setAttribute('aria-pressed', 'false');
+    b.textContent = m;
+    barreMots.appendChild(b);
+  });
+  barreMots.hidden = motsCourants.length === 0;
 
   function appliquer() {
     var terme = recherche.value.trim().toLowerCase();
     var visibles = 0;
     fiches.forEach(function (f) {
       var ok = (!famille || f.getAttribute('data-famille') === famille) &&
+               (!mot || motsDe(f).indexOf(mot) !== -1) &&
                (!terme || f.getAttribute('data-index').indexOf(terme) !== -1);
       f.hidden = !ok;
       if (ok) { visibles++; }
     });
     compteur.textContent = visibles + (visibles > 1 ? ' projets affichés' : ' projet affiché');
+    Array.prototype.forEach.call(document.querySelectorAll('[data-mot]'), function (b) {
+      var actif = b.getAttribute('data-mot') === mot;
+      b.classList.toggle('is-actif', actif);
+      if (b.hasAttribute('aria-pressed')) { b.setAttribute('aria-pressed', String(actif)); }
+    });
   }
 
-  boutons.forEach(function (b) {
+  boutonsFamille.forEach(function (b) {
     b.addEventListener('click', function () {
       famille = b.getAttribute('data-famille');
-      boutons.forEach(function (x) {
+      boutonsFamille.forEach(function (x) {
         x.setAttribute('aria-pressed', String(x === b));
-        x.classList.toggle('selected', x === b);
+        x.classList.toggle('is-actif', x === b);
       });
       appliquer();
     });
   });
+
+  // Un mot-clé se choisit dans la barre ou sur une carte ; un second clic le retire.
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest && e.target.closest('[data-mot]');
+    if (!b) { return; }
+    var choisi = b.getAttribute('data-mot');
+    mot = mot === choisi ? '' : choisi;
+    appliquer();
+    if (mot && b.classList.contains('radar-mot')) {
+      barreMots.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  });
+
   recherche.addEventListener('input', appliquer);
   appliquer();
 })();

@@ -1,8 +1,9 @@
 {% comment %}
-  Radar des communs agricoles : rassemble dans `radar_fiches` toutes les fiches
-  validées des lots de _data/radar/ (un fichier par lot, écrit par _radar/).
-  Une fiche est publiée dès que son lot est fusionné et qu'elle n'a pas été
-  passée à `publier: false` pendant la relecture.
+  Annuaire des communs agricoles : rassemble dans `radar_fiches` toutes les fiches
+  publiées de _data/radar/, c'est-à-dire les lots du radar (un fichier daté par
+  lot, écrit par _radar/) et les projets de la communauté (communaute.yml, tenu
+  à la main). Une fiche est publiée tant qu'elle n'est pas passée à
+  `publier: false`.
 {% endcomment %}
 {%- assign radar_fiches = "" | split: "" -%}
 {%- for lot in site.data.radar -%}

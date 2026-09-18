@@ -10,6 +10,9 @@
 #   source    OR a file in _data/ whose entries' `name` become the satellites;
 #             the shortest names are preferred so they stay readable in motion
 #   category  with `source`, the key to read inside a file grouped by category
+#   fichier   with `source` for a folder of files: the file to read, whose
+#             entries live under `candidats` (ex. radar + communaute)
+#   champ     the field holding the name, when it is not `name` (ex. titre)
 #
 # At most 4 satellites are shown per planet; longer names are cut at 18 chars.
 
@@ -17,8 +20,9 @@
   source: osfarm_projects
 
 - color: "#5BA2D2"
-  source: projects
-  category: Data Standardization, Open Data, Interoperability and APIs
+  source: radar
+  fichier: communaute
+  champ: titre
 
 - color: "#008080"
   source: teams

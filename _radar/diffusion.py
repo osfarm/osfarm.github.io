@@ -21,7 +21,7 @@ from datetime import datetime, timedelta
 
 import yaml
 
-from collecte import DOSSIER_LOTS, FAMILLES
+from collecte import FAMILLES, fichiers_lots
 
 SITE = "https://www.osfarm.org"
 ETIQUETTES = {"logiciel": "Logiciels", "materiel": "Matériels",
@@ -32,7 +32,7 @@ HASHTAGS = {"logiciel": "#LogicielLibre", "materiel": "#OpenHardware",
 
 def fiches_publiees(depuis: str) -> list[dict]:
     fiches = []
-    for fichier in sorted(DOSSIER_LOTS.glob("*.yml")):
+    for fichier in fichiers_lots():
         lot = yaml.safe_load(fichier.read_text(encoding="utf-8")) or {}
         if str(lot.get("date", fichier.stem)) < depuis:
             continue

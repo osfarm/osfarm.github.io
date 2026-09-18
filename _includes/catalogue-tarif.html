@@ -1,0 +1,14 @@
+{%- comment -%}
+  Prix en euros avec séparateur de milliers : « 1 200 € » en français,
+  « €1,200 » en anglais. Liquid ne sait pas grouper les chiffres, d'où le
+  découpage en milliers et unités.
+  Usage : {% include catalogue-tarif.html montant=1200 lang="fr" %}
+{%- endcomment -%}
+{%- assign montant = include.montant | round -%}
+{%- assign milliers = montant | divided_by: 1000 -%}
+{%- assign unites = montant | modulo: 1000 | prepend: "00" | slice: -3, 3 -%}
+{%- if include.lang == "en" -%}
+€{% if milliers > 0 %}{{ milliers }},{{ unites }}{% else %}{{ montant }}{% endif %}
+{%- else -%}
+{% if milliers > 0 %}{{ milliers }}&nbsp;{{ unites }}{% else %}{{ montant }}{% endif %}&nbsp;€
+{%- endif -%}

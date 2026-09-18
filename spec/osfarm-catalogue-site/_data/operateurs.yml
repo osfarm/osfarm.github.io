@@ -1,0 +1,119 @@
+# ---------------------------------------------------------------------------
+# OSFarm — Opérateurs référencés
+# Un opérateur n'apparaît au catalogue que si : adherent = true ET charte_signee.
+# Le champ "url" et "qualiopi" sont à compléter par le responsable catalogue.
+# ---------------------------------------------------------------------------
+
+- id: ekylibre
+  nom: "Ekylibre"
+  contact: "David Joulin"
+  url: ""                 # à compléter
+  adherent: true
+  charte_signee: null     # date AAAA-MM-JJ une fois signée
+  qualiopi: null          # true / false — à vérifier
+  domaines: [erp, donnees, ia, interoperabilite]
+
+- id: brad
+  nom: "Brad Technology"
+  contact: "Olivier Lépine"
+  url: ""
+  adherent: true
+  charte_signee: null
+  qualiopi: null
+  domaines: [donnees, api, developpement]
+
+- id: bziiit
+  nom: "bziiit"
+  contact: "Laurent Tripied"
+  url: ""
+  adherent: true
+  charte_signee: null
+  qualiopi: null
+  domaines: [ia, sobriete, gouvernance]
+
+- id: apuso
+  nom: "Apuso Libre"
+  contact: "Nicolas de Kermel, Mehdi Jaber"
+  url: ""
+  adherent: true
+  charte_signee: null
+  qualiopi: null
+  domaines: [rtk, autoguidage, arpentage]
+
+- id: natuition
+  nom: "Natuition"
+  contact: "Cyril Roudot"
+  url: ""
+  adherent: true
+  charte_signee: null
+  qualiopi: null
+  domaines: [robotique, desherbage]
+
+- id: furgo
+  nom: "Furgo"
+  contact: "Nicolas Daüy"
+  url: ""
+  adherent: true
+  charte_signee: null
+  qualiopi: null
+  domaines: [capteurs, lowtech]
+
+- id: prefabrique
+  nom: "Le Pré Fabriqué"
+  contact: "Simon Richard"
+  url: ""
+  adherent: true
+  charte_signee: null
+  qualiopi: null
+  domaines: [openhardware, machinisme]
+
+- id: aspexit
+  nom: "Aspexit"
+  contact: "Corentin Leroux"
+  url: ""
+  adherent: true
+  charte_signee: null
+  qualiopi: null
+  domaines: [evaluation, donnees_spatiales, conseil]
+
+- id: tripleperformance
+  nom: "Triple Performance"
+  contact: "Bertrand Gorge"
+  url: ""
+  adherent: true
+  charte_signee: null
+  qualiopi: null
+  domaines: [connaissance, agronomie]
+
+- id: zandoly
+  nom: "Zandoly"
+  contact: "Martin de Reynal"
+  url: ""
+  adherent: true
+  charte_signee: null
+  qualiopi: null
+  domaines: [groupements, fruits_legumes]
+
+- id: centipede
+  nom: "Réseau Centipède"
+  contact: "Julien Ancelin"
+  url: ""
+  adherent: null          # à confirmer
+  charte_signee: null
+  qualiopi: null
+  domaines: [rtk, geomatique]
+
+# --- partenaires cités mais non opérateurs (affichés sans lien de devis) ---
+- id: xlim
+  nom: "XLIM"
+  role: partenaire
+- id: elatec
+  nom: "Elatec"
+  role: partenaire
+- id: usedesign
+  nom: "Use Design"
+  contact: "Vivien Gauthier"
+  role: partenaire
+- id: troisliz
+  nom: "3Liz"
+  role: partenaire

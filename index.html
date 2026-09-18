@@ -132,12 +132,10 @@ permalink: /
     <p class="alt-lead text-gray text-center col-md-10 mx-auto">Join peoples, projects, organizations around the world who collaborate on code, data, hardware, and more for farming future. See the rest of the <a href="/community"> OSFarm community</a>.</p>
   </div>
     <div class="featured-orgs text-center p-2 m-2">
-      {% for orgs in site.data.projects %}
-        {% for org in orgs[1] %}
-          {% if org.github_org %}
-            <a href="https://github.com/{{ org.github_org }}" class="animate-in">{% avatar user=org.github_org size=80 %}</a>
-          {% endif  %}
-        {% endfor %}
+      {% for org in site.data.radar.communaute.candidats %}
+        {% if org.github_org %}
+          <a href="https://github.com/{{ org.github_org }}" class="animate-in">{% avatar user=org.github_org size=80 %}</a>
+        {% endif  %}
       {% endfor %}
     </div>
 </section>

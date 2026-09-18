@@ -1,0 +1,1526 @@
+# Projets choisis par la communauté OSFarm, affichés dans l'annuaire des communs
+# (/fr/communs/), sur la page /community/ et sur les pages d'accueil.
+# Ce fichier se tient à la main ; les autres fichiers de ce dossier sont les lots
+# du radar. Pour ajouter un projet, copier une fiche et l'adapter :
+#   titre, url        nom et site du projet
+#   depot             dépôt de code, s'il diffère de l'url
+#   demo, img         lien de démonstration, logo dans /assets/img/projects/
+#   github_org        compte GitHub, pour l'avatar des pages d'accueil
+#   famille           logiciel | materiel | donnees | modele
+#   categorie         catégorie en français (annuaire) ; category : en anglais (/community/)
+#   licence, techno   identifiant SPDX en minuscules ; langage principal du dépôt
+#   description       texte d'origine publié par le projet
+#   resume, interet   deux phrases en français ; une phrase « Permet de… »
+#   mots_cles_fr      trois à cinq mots-clés en minuscules
+#   date_maj          dernière activité du dépôt ; propose_le : date d'ajout
+# Le radar ne repropose pas un projet dont l'url ou le dépôt figure ici.
+titre: Projets de la communauté OSFarm
+candidats:
+- id: projet-agopengps
+  titre: Agopengps
+  url: https://github.com/AgOpenGPS-Official/AgOpenGPS
+  demo: https://www.youtube.com/watch?v=I7qKnWaY5tg
+  img: /assets/img/projects/agopengps.png
+  github_org: AgOpenGPS-Official
+  famille: materiel
+  categorie: Robotique et automatisation
+  category: Automation and Robotics
+  licence: apache-2.0
+  techno: C#
+  description: Ag Precision Mapping, Section Control and Guidance Software
+  resume: AgOpenGPS est un logiciel de cartographie de précision, de guidage et de contrôle de sections
+    pour engins agricoles. Il s'adresse aux agriculteurs et aux équipementiers qui veulent doter un tracteur
+    d'un guidage et d'un contrôle de sections.
+  interet: Permet de guider un tracteur et de cartographier les passages pour limiter les recouvrements
+    lors des travaux au champ.
+  mots_cles_fr:
+  - autoguidage
+  - gnss
+  - contrôle de sections
+  - agriculture de précision
+  - tracteur
+  date_maj: '2026-09-14'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-autoplant
+  titre: Autoplant
+  url: https://www.rhoban.com/post/autoplan
+  depot: https://github.com/Rhoban
+  demo: https://youtu.be/2Ybtjoabz_g
+  img: /assets/img/projects/agrogeovisio.png
+  github_org: Rhoban
+  famille: materiel
+  categorie: Robotique et automatisation
+  category: Automation and Robotics
+  description: Autoplan is a fully autonomous truck aiming at planting trees (poplars). The truck moves
+    autonomously in the field, the user gives poplars to it, and it plants them with a centimetric precision.
+  resume: Autoplan (ou Autoplant) est un porteur autonome qui se déplace seul dans la parcelle et plante
+    des peupliers avec une précision centimétrique, l'opérateur se contentant de lui fournir les plants.
+    Il concerne les planteurs de peupleraies et les gestionnaires forestiers qui cherchent à mécaniser
+    la plantation.
+  interet: Permet de mécaniser la plantation de peupliers en confiant à un engin autonome le creusement
+    et la mise en terre des plants.
+  mots_cles_fr:
+  - robot autonome
+  - plantation
+  - peuplier
+  - sylviculture
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-agisostack
+  titre: AgIsoStack
+  url: https://github.com/Open-Agriculture/AgIsoStack-plus-plus
+  demo: https://isobus-plus-plus.readthedocs.io/en/latest/
+  img: /assets/img/projects/agisostack.png
+  famille: materiel
+  categorie: Robotique et automatisation
+  category: Automation and Robotics
+  licence: mit
+  techno: C++
+  description: AgIsoStack++ is the completely free open-source C++ ISOBUS library for everyone
+  resume: AgIsoStack++ est une bibliothèque C++ qui implémente la pile de communication CAN ISO 11783
+    (ISOBUS) utilisée entre tracteurs et outils. Elle sert aux développeurs de calculateurs, de terminaux
+    ou d'outils agricoles qui doivent dialoguer en ISOBUS.
+  interet: Permet de développer des équipements et terminaux capables d'échanger avec les tracteurs et
+    outils via le protocole ISOBUS.
+  mots_cles_fr:
+  - isobus
+  - iso 11783
+  - bus can
+  - interopérabilité
+  - machinisme
+  date_maj: '2026-09-16'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-ecoterrabot
+  titre: Ecoterrabot
+  url: https://ecoterrabot.com/
+  demo: https://www.youtube.com/watch?v=PbUobvAS0MM
+  img: /assets/img/projects/ecoterra.png
+  famille: materiel
+  categorie: Robotique et automatisation
+  category: Automation and Robotics
+  description: AI-powered autonomous mechanical weeding robot to optimize farming efficiency by precisely
+    identifying and removing unwanted plants
+  resume: EcoTerrabot est un robot autonome de désherbage mécanique qui repère les adventices par vision
+    et les arrache entre les rangs de culture. Il concerne les producteurs qui cherchent une alternative
+    au désherbage chimique sur cultures en rangs.
+  interet: Aide à désherber mécaniquement entre les rangs en distinguant la culture des adventices.
+  mots_cles_fr:
+  - désherbage mécanique
+  - robot autonome
+  - vision par ordinateur
+  - adventices
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-e-tract
+  titre: E-tract
+  url: https://www.rhoban.com/post/e-tract
+  depot: https://github.com/Rhoban
+  demo: https://youtu.be/l4sHiCAmqXs
+  img: /assets/img/projects/agrogeovisio.png
+  famille: materiel
+  categorie: Robotique et automatisation
+  category: Automation and Robotics
+  description: The E-Tract is a light electric powered autonomous platform. The aim of the platform is
+    to support light autonomous tools, dedicated for instance to weed within ranks of cultures.
+  resume: E-Tract est une plateforme autonome légère à propulsion électrique, conçue pour porter des outils
+    autonomes légers comme des outils de désherbage sur le rang. Elle est issue du projet ANR BipBip et
+    concerne les équipes de recherche et les constructeurs travaillant sur la robotique de désherbage.
+  interet: Permet de porter et déplacer de façon autonome des outils légers, par exemple pour désherber
+    dans le rang.
+  mots_cles_fr:
+  - plateforme autonome
+  - tracteur électrique
+  - désherbage
+  - robotique agricole
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-farmbot
+  titre: Farmbot
+  url: https://farm.bot
+  depot: https://github.com/FarmBot/farmbot_os
+  demo: https://www.youtube.com/watch?v=qwSbWy_1f8w
+  img: /assets/img/projects/farmbot.png
+  github_org: FarmBot
+  famille: materiel
+  categorie: Robotique et automatisation
+  category: Automation and Robotics
+  licence: mit
+  techno: Elixir
+  description: Humanity's open-source CNC farming machine
+  resume: FarmBot est une machine à commande numérique de type portique équipée d'outils comme un semoir
+    et une buse d'arrosage, qui travaille une planche de culture, pilotée par un logiciel embarqué sur
+    Raspberry Pi et une application web. Elle s'adresse aux jardiniers, aux établissements d'enseignement
+    et aux producteurs qui veulent automatiser une petite surface cultivée.
+  interet: Permet d'automatiser le semis et l'arrosage sur une planche de culture.
+  mots_cles_fr:
+  - robot cartésien
+  - potager
+  - semis
+  - arrosage
+  - matériel libre
+  date_maj: '2026-07-22'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-natuition
+  titre: Natuition
+  url: https://natuition.com
+  depot: https://github.com/natuition/field
+  demo: https://www.youtube.com/watch?v=ojdT-zIs6Po
+  img: /assets/img/projects/natuition.png
+  github_org: natuition
+  famille: materiel
+  categorie: Robotique et automatisation
+  category: Automation and Robotics
+  techno: Python
+  description: Le désherbage autonome, pensé pour vos terrains sportifs
+  resume: Natuition conçoit des robots de désherbage autonomes, dont Violette, qui repèrent les adventices
+    par intelligence artificielle et guidage GPS RTK et les extraient mécaniquement sans produit chimique.
+    Ses machines visent les terrains de sport, les voies ferrées et l'agriculture.
+  interet: Aide à désherber mécaniquement sans herbicide grâce à un robot guidé par GPS RTK.
+  mots_cles_fr:
+  - désherbage mécanique
+  - robot autonome
+  - gps rtk
+  - intelligence artificielle
+  date_maj: '2026-09-04'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-open-rmf
+  titre: Open rmf
+  url: https://www.open-rmf.org/
+  depot: https://github.com/open-rmf/rmf
+  img: /assets/img/projects/openrmf.png
+  github_org: open-rmf
+  famille: materiel
+  categorie: Robotique et automatisation
+  category: Automation and Robotics
+  licence: apache-2.0
+  techno: Python
+  description: A Common Language for Robot Interoperability
+  resume: Open-RMF est un ensemble logiciel libre et modulaire, basé sur ROS 2, qui permet de faire coopérer
+    plusieurs flottes de robots et avec les infrastructures physiques d'un site. Il sert aux intégrateurs
+    et développeurs qui doivent coordonner des robots de fabricants différents sur un même site.
+  interet: Permet de coordonner plusieurs flottes de robots hétérogènes partageant un même espace de travail.
+  mots_cles_fr:
+  - interopérabilité
+  - flotte de robots
+  - ros 2
+  - coordination
+  date_maj: '2026-08-25'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-super-green-os
+  titre: Super green os
+  url: https://www.supergreenlab.com/app
+  depot: https://github.com/supergreenlab/SuperGreenOS
+  img: /assets/img/projects/supergreenos.png
+  github_org: supergreenlab
+  famille: materiel
+  categorie: Robotique et automatisation
+  category: Automation and Robotics
+  licence: gpl-3.0
+  techno: C
+  description: SuperGreenOS home farming automation software for esp32, all in one package, and controllable
+    from your smartphone, pc, mac, linux, toaster, plumbus, whatnot...
+  resume: SuperGreenOS est un micrologiciel pour microcontrôleur ESP32 qui automatise une culture d'intérieur
+    (éclairage LED, ventilation, capteurs de température et d'humidité) et se pilote depuis une application.
+    Il s'adresse aux personnes qui construisent ou équipent une chambre de culture domestique.
+  interet: Permet d'automatiser l'éclairage, la ventilation et le suivi climatique d'une culture sous
+    abri.
+  mots_cles_fr:
+  - culture en intérieur
+  - esp32
+  - éclairage led
+  - capteurs
+  - automatisation
+  date_maj: '2024-06-05'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-agro-monitoring
+  titre: Agro monitoring
+  url: https://agromonitoring.com/
+  demo: https://agromonitoring.com/map#12/41.978/-93.3977
+  img: /assets/img/projects/agromonitoring.jpeg
+  famille: donnees
+  categorie: Climat, imagerie et météo
+  category: Climate, Environment, Imagery and Weather
+  description: Satellite and weather data for precision farming in fast and easy ways
+  resume: Agromonitoring est un service en ligne qui fournit, via une API et un tableau de bord, des images
+    satellite, des indices de végétation et des données météo par parcelle. Il sert aux développeurs d'outils
+    agricoles et aux exploitants qui veulent suivre l'état de leurs cultures à distance.
+  interet: Permet de suivre l'état des cultures à la parcelle à partir d'indices de végétation satellitaires
+    et de données météo.
+  mots_cles_fr:
+  - imagerie satellite
+  - indices de végétation
+  - météo
+  - api
+  - suivi des cultures
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-ign
+  titre: IGN
+  url: https://ign.fr
+  demo: https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html#bd-topo
+  img: /assets/img/projects/ign.png
+  famille: donnees
+  categorie: Climat, imagerie et météo
+  category: Climate, Environment, Imagery and Weather
+  licence: etalab-2.0
+  description: 'IGN : produire et diffuser les données géographiques et forestières en France'
+  resume: L'IGN est l'établissement public qui produit et diffuse les données géographiques et forestières
+    de référence en France, comme la BD TOPO, les orthophotographies ou le Plan IGN. Ces données servent
+    aux agriculteurs, conseillers et éditeurs de logiciels qui ont besoin de fonds de carte, de parcellaire
+    ou de topographie.
+  interet: Permet de disposer de référentiels cartographiques et topographiques pour localiser et décrire
+    les parcelles.
+  mots_cles_fr:
+  - données géographiques
+  - cartographie
+  - topographie
+  - données ouvertes
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-meteo-france
+  titre: Météo France
+  url: https://meteofrance.com/
+  demo: https://meteo.data.gouv.fr/
+  img: /assets/img/projects/meteo_france.png
+  famille: donnees
+  categorie: Climat, imagerie et météo
+  category: Climate, Environment, Imagery and Weather
+  licence: etalab-2.0
+  description: Météo-France, service météorologique et climatique national, est un établissement public
+    de l'Etat.
+  resume: Météo-France est le service météorologique et climatique national, qui publie en données ouvertes
+    ses observations, données climatologiques et sorties de modèles de prévision via meteo.data.gouv.fr.
+    Ces données servent aux agriculteurs, chercheurs et éditeurs d'outils agricoles qui ont besoin d'historiques
+    climatiques ou de prévisions.
+  interet: Permet d'exploiter des observations, des historiques climatiques et des prévisions météo pour
+    piloter les travaux et analyser les campagnes.
+  mots_cles_fr:
+  - météo
+  - climatologie
+  - prévisions
+  - données ouvertes
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-open-weather-map
+  titre: Open weather map
+  url: https://openweathermap.org/
+  demo: https://openweathermap.org/weathermap
+  img: /assets/img/projects/openweather.png
+  famille: donnees
+  categorie: Climat, imagerie et météo
+  category: Climate, Environment, Imagery and Weather
+  licence: odbl-1.0
+  description: Build smarter, plan better with the world's most flexible weather data platform
+  resume: OpenWeather est une plateforme de données météo qui fournit par API des conditions actuelles,
+    des prévisions, des historiques et des cartes. Elle sert aux développeurs d'applications, y compris
+    agricoles, qui doivent intégrer des données météo localisées.
+  interet: Permet d'intégrer des données météo localisées dans des outils de gestion ou de pilotage des
+    cultures.
+  mots_cles_fr:
+  - météo
+  - api
+  - prévisions
+  - données météorologiques
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-open-meteo
+  titre: Open meteo
+  url: https://open-meteo.com/
+  depot: https://github.com/open-meteo/open-meteo
+  demo: https://open-meteo.com/en/docs
+  img: /assets/img/projects/openmeteo.png
+  famille: donnees
+  categorie: Climat, imagerie et météo
+  category: Climate, Environment, Imagery and Weather
+  licence: cc-by-4.0
+  techno: Swift
+  description: Free weather forecast and historical weather API — 30+ models, historical weather from
+    1940, no API key required.
+  resume: Open-Meteo est une API météo qui redistribue les prévisions et historiques issus des services
+    météorologiques nationaux, sans clé d'API. Elle sert aux développeurs et analystes qui veulent intégrer
+    des prévisions ou des séries météo historiques dans leurs outils.
+  interet: Permet d'obtenir des prévisions et des historiques météo localisés pour alimenter des outils
+    d'aide à la décision agricole.
+  mots_cles_fr:
+  - météo
+  - api
+  - prévisions
+  - historique météo
+  - données ouvertes
+  date_maj: '2026-09-17'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-calculatrice-ift
+  titre: Calculatrice IFT
+  url: https://ecoagri.agriculture.gouv.fr/ift/
+  depot: https://github.com/minagri-initial/ift-api
+  img: /assets/img/projects/minalim.png
+  github_org: minagri-initial
+  famille: donnees
+  categorie: Données ouvertes et interopérabilité
+  category: Data Standardization, Open Data, Interoperability and APIs
+  licence: agpl-3.0
+  techno: Java
+  description: Atelier de calcul - IFT - Indicateur de Fréquence de Traitements phytopharmaceutiques
+  resume: L'atelier de calcul IFT du ministère de l'Agriculture permet de consulter les doses de référence
+    et de calculer l'indicateur de fréquence de traitements phytopharmaceutiques à la parcelle et à la
+    culture. Il s'adresse aux agriculteurs, conseillers et éditeurs de logiciels agricoles qui doivent
+    calculer ou intégrer cet indicateur.
+  interet: Permet de calculer l'indicateur de fréquence de traitements phytopharmaceutiques d'une parcelle
+    ou d'une culture.
+  mots_cles_fr:
+  - ift
+  - produits phytopharmaceutiques
+  - doses de référence
+  - indicateur
+  - api
+  date_maj: '2021-04-26'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-data-food-consortium
+  titre: Data Food Consortium
+  url: https://www.datafoodconsortium.org/
+  depot: https://github.com/datafoodconsortium/ontology
+  img: /assets/img/projects/dfc.png
+  github_org: datafoodconsortium
+  famille: donnees
+  categorie: Données ouvertes et interopérabilité
+  category: Data Standardization, Open Data, Interoperability and APIs
+  licence: agpl-3.0
+  description: Un standard numérique commun pour les circuits courts alimentaires
+  resume: Data Food Consortium développe un standard ouvert, fondé sur une ontologie OWL/RDF et des connecteurs
+    logiciels, pour permettre aux plateformes de circuits courts alimentaires de partager leurs catalogues
+    et de mutualiser leur logistique. Il sert aux plateformes de vente en circuit court et aux développeurs
+    qui veulent les rendre interopérables.
+  interet: Permet aux plateformes de circuits courts d'échanger leurs catalogues de produits et de mutualiser
+    la logistique.
+  mots_cles_fr:
+  - interopérabilité
+  - ontologie
+  - circuits courts
+  - standard
+  - web sémantique
+  date_maj: '2026-09-17'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-global-biodiversity-information-facility
+  titre: Global Biodiversity Information Facility
+  url: https://www.gbif.org/
+  depot: https://github.com/gbif/gbif-api
+  demo: https://www.gbif.org/developer/summary
+  img: /assets/img/projects/gbif.png
+  famille: donnees
+  categorie: Données ouvertes et interopérabilité
+  category: Data Standardization, Open Data, Interoperability and APIs
+  licence: apache-2.0
+  techno: Java
+  description: GBIF—the Global Biodiversity Information Facility—is an international network and data
+    infrastructure funded by the world's governments and aimed at providing anyone, anywhere, open access
+    to data about all types of life on Earth.
+  resume: Le GBIF est un réseau international et une infrastructure de données qui agrège et diffuse en
+    accès ouvert des données d'occurrence d'espèces provenant de musées, d'instituts de recherche et de
+    programmes de sciences participatives. Il sert aux chercheurs, naturalistes et développeurs qui ont
+    besoin de données sur la répartition des espèces, via le portail ou l'API.
+  interet: Permet d'accéder à des données d'occurrence d'espèces pour étudier la biodiversité présente
+    sur un territoire.
+  mots_cles_fr:
+  - biodiversité
+  - occurrences d'espèces
+  - données ouvertes
+  - api
+  date_maj: '2026-09-14'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-pl-ntnet
+  titre: Pl@ntNet
+  url: https://plantnet.org/
+  demo: https://identify.plantnet.org/fr
+  img: /assets/img/projects/plantnet.png
+  famille: donnees
+  categorie: Données ouvertes et interopérabilité
+  category: Data Standardization, Open Data, Interoperability and APIs
+  licence: cc-by-4.0
+  description: Avec l'application Pl@ntNet, identifiez une plante à partir d'une photo, et rejoignez un
+    projet de sciences participatives sur la biodiversité végétale
+  resume: Pl@ntNet est une application de sciences participatives qui identifie les plantes à partir de
+    photos grâce à l'apprentissage profond et partage les observations avec la communauté et le GBIF.
+    Elle est développée par le Cirad, l'INRAE, Inria et l'IRD et sert à toute personne, amateur ou professionnel,
+    qui veut reconnaître une espèce végétale à partir d'une photo.
+  interet: Aide à identifier une espèce végétale présente sur une parcelle à partir d'une photo.
+  mots_cles_fr:
+  - identification des plantes
+  - sciences participatives
+  - botanique
+  - apprentissage profond
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-fiware
+  titre: Fiware
+  url: https://www.fiware.org/
+  depot: https://github.com/telefonicaid/fiware-orion
+  demo: https://www.fiware.org/community/smart-agrifood/
+  img: /assets/img/projects/fiware.png
+  famille: donnees
+  categorie: Données ouvertes et interopérabilité
+  category: Data Standardization, Open Data, Interoperability and APIs
+  licence: agpl-3.0
+  techno: C++
+  description: A curated framework of Open Source Platform components to accelerate the development of
+    Smart Solutions.
+  resume: FIWARE est un ensemble de composants open source, organisé autour du courtier de contexte Orion
+    et des API NGSI, pour construire des applications qui gèrent des données en temps réel ; la fondation
+    propose aussi des modèles de données dédiés à l'agroalimentaire. Il sert aux développeurs et intégrateurs
+    qui conçoivent des solutions d'agriculture connectée interopérables.
+  interet: Permet de collecter et partager des données de capteurs et d'équipements agricoles selon des
+    API et modèles de données standardisés.
+  mots_cles_fr:
+  - interopérabilité
+  - iot
+  - courtier de contexte
+  - ngsi
+  - modèles de données
+  date_maj: '2026-09-14'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-open-food-facts
+  titre: Open Food Facts
+  url: https://fr.openfoodfacts.org
+  depot: https://github.com/openfoodfacts/openfoodfacts-server
+  demo: https://fr.openfoodfacts.org/data
+  img: /assets/img/projects/off.svg
+  famille: donnees
+  categorie: Données ouvertes et interopérabilité
+  category: Data Standardization, Open Data, Interoperability and APIs
+  licence: odbl-1.0
+  techno: Perl
+  description: Une base de données collaborative, libre et ouverte des produits alimentaires du monde
+    entier.
+  resume: Open Food Facts est une base de données collaborative des produits alimentaires (ingrédients,
+    valeurs nutritionnelles, informations sur les produits), consultable en ligne et réutilisable. Elle
+    sert aux personnes et organisations qui veulent consulter ou réutiliser des données sur les produits
+    alimentaires, y compris par l'API et les exports.
+  interet: Permet de relier la production agricole aux produits alimentaires transformés grâce à des données
+    ouvertes sur leur composition.
+  mots_cles_fr:
+  - base de données
+  - produits alimentaires
+  - données ouvertes
+  - nutrition
+  - contribution collaborative
+  date_maj: '2026-09-17'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-open-source-ecology
+  titre: Open source ecology
+  url: https://www.opensourceecology.org/
+  depot: https://github.com/OpenSourceEcology
+  demo: https://opensourceecology.dozuki.com/
+  img: /assets/img/projects/ose.jpeg
+  famille: materiel
+  categorie: Équipements et outils
+  category: Equipments and Tools
+  licence: cc-by-sa-4.0
+  description: Open Source Blueprints for Civilization. Build Yourself.
+  resume: Open Source Ecology conçoit des machines industrielles open source réalisables à coût réduit
+    et publie leurs plans en ligne gratuitement. Le projet s'adresse aux personnes et ateliers qui veulent
+    fabriquer eux-mêmes ces machines à partir de plans libres.
+  interet: Permet de fabriquer soi-même des machines, dont un tracteur (LifeTrac), à partir de plans ouverts.
+  mots_cles_fr:
+  - matériel libre
+  - machines
+  - autoconstruction
+  - plans ouverts
+  - tracteur
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-os-beehives
+  titre: OS Beehives
+  url: https://www.osbeehives.com/
+  depot: https://github.com/opensourcebeehives
+  demo: https://www.osbeehives.com/collections/source-files
+  img: /assets/img/projects/osbeehives.png
+  famille: materiel
+  categorie: Équipements et outils
+  category: Equipments and Tools
+  licence: cc-by-sa-4.0
+  description: The Open Source Beehives project is a collaborative response to the threat faced by bee
+    populations around the world.
+  resume: OSBeehives publie des plans de ruches à découper à la commande numérique (Barcelona Warré, Colorado
+    Top Bar) et du matériel électronique de suivi des colonies. Les fichiers servent aux apiculteurs et
+    ateliers de fabrication qui veulent construire des ruches ou des capteurs de ruche à partir de sources
+    ouvertes.
+  interet: Aide à fabriquer des ruches et des capteurs de suivi des colonies d'abeilles à partir de fichiers
+    ouverts.
+  mots_cles_fr:
+  - apiculture
+  - ruche
+  - matériel libre
+  - capteurs
+  - commande numérique
+  date_maj: '2018-08-03'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-le-pre-fabrique
+  titre: Le pré fabriqué
+  url: https://www.leprefabrique.com/
+  demo: https://www.youtube.com/watch?v=I_MMp7Jgzrw&t=42s
+  img: /assets/img/projects/leprefabrique.svg
+  famille: materiel
+  categorie: Équipements et outils
+  category: Equipments and Tools
+  licence: cc-by-nc-sa-3.0
+  description: Le matériel agricole résolument libre
+  resume: Le Pré Fabriqué conçoit et fabrique un châssis porte-outils modulable pour le travail du sol
+    et le semis, adaptable à la viticulture, au maraîchage et à l'arboriculture. Il s'adresse aux agriculteurs
+    qui veulent commander ce matériel ou s'appuyer sur ses plans publiés.
+  interet: Permet d'équiper une exploitation d'un porte-outils modulable dont les plans sont partagés.
+  mots_cles_fr:
+  - porte-outils
+  - machinisme agricole
+  - matériel libre
+  - travail du sol
+  - semis
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-l-atelier-paysan
+  titre: L atelier paysan
+  url: https://www.latelierpaysan.org
+  demo: https://www.latelierpaysan.org/Plans-et-Tutoriels
+  img: /assets/img/projects/atelier.png
+  famille: materiel
+  categorie: Équipements et outils
+  category: Equipments and Tools
+  licence: cc-by-nc-sa-3.0
+  description: Formations autoconstruction d'outils de travail agricole. Plateforme web du matériel libre
+    et de l'autoconstruction en agriculture.
+  resume: L'Atelier Paysan publie des plans et tutoriels d'outils agricoles à autoconstruire et organise
+    des formations à l'autoconstruction. Il s'adresse aux agriculteurs et agricultrices qui veulent fabriquer
+    ou adapter eux-mêmes leurs outils de travail.
+  interet: Permet de fabriquer et d'adapter ses outils agricoles à partir de plans et de tutoriels partagés.
+  mots_cles_fr:
+  - autoconstruction
+  - outils agricoles
+  - plans
+  - formation
+  - agroécologie
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-ekylibre
+  titre: Ekylibre
+  url: https://ekylibre.org
+  depot: https://github.com/ekylibre/ekylibre
+  demo: https://demo.ekylibre-dev.com
+  img: /assets/img/projects/ekylibre.svg
+  github_org: ekylibre
+  famille: logiciel
+  categorie: Gestion d'exploitation
+  category: Farm Management Systems and Record Keeping
+  licence: agpl-3.0
+  techno: Ruby
+  description: Open source Farm management Information System (FMIS) - Connecting farms to the world
+  resume: ekylibre est un système d'information de gestion agricole open source. Il permet de gérer les
+    données et processus d'une exploitation agricole.
+  interet: coordonner les activités et les ressources d'une exploitation agricole.
+  mots_cles_fr:
+  - gestion
+  - exploitation
+  - système
+  - agricole
+  - ressources
+  date_maj: '2026-09-16'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-farmos
+  titre: farmOS
+  url: https://farmos.org/
+  depot: https://github.com/farmOS/farmOS
+  demo: https://farmos-demo.rootedsolutions.io/
+  img: /assets/img/projects/farmos.png
+  github_org: farmOS
+  famille: logiciel
+  categorie: Gestion d'exploitation
+  category: Farm Management Systems and Record Keeping
+  licence: gpl-2.0
+  techno: PHP
+  description: 'farmOS: A web-based farm record keeping application.'
+  resume: farmOS est une application web de gestion des enregistrements agricoles. Elle permet de suivre
+    les activités, les cultures, le bétail et le matériel sur une exploitation.
+  interet: centraliser et organiser les données de gestion d'une exploitation agricole.
+  mots_cles_fr:
+  - gestion
+  - exploitation
+  - enregistrement
+  - cultures
+  - bétail
+  date_maj: '2026-09-16'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-tania
+  titre: Tania
+  url: https://usetania.org/
+  depot: https://github.com/usetania/tania-core
+  demo: https://usetania.org/docs/
+  img: /assets/img/projects/tania.svg
+  github_org: usetania
+  famille: logiciel
+  categorie: Gestion d'exploitation
+  category: Farm Management Systems and Record Keeping
+  licence: apache-2.0
+  techno: Go
+  description: Tania is a farm management software for the hobbyist and smallholder farmer.
+  resume: Tania est un logiciel de gestion d'exploitation agricole qui fait office de journal de ferme
+    pour suivre l'activité de l'exploitation. Il s'adresse aux jardiniers amateurs et aux petits exploitants
+    agricoles.
+  interet: Permet de tenir le journal d'une petite exploitation et de suivre son activité.
+  mots_cles_fr:
+  - gestion d'exploitation
+  - journal de ferme
+  - petite exploitation
+  - logiciel libre
+  date_maj: '2024-06-13'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-litefarm
+  titre: LiteFarm
+  url: https://www.litefarm.org/
+  depot: https://github.com/LiteFarmOrg/LiteFarm
+  img: /assets/img/projects/litefarm.png
+  github_org: LiteFarmOrg
+  famille: logiciel
+  categorie: Gestion d'exploitation
+  category: Farm Management Systems and Record Keeping
+  licence: gpl-3.0
+  techno: JavaScript
+  description: A free and open source farm management tool built for current and aspiring sustainable
+    farmers.
+  resume: LiteFarm est une plateforme libre de gestion d'exploitation agricole développée par des agriculteurs
+    et des chercheurs en coordination avec l'Université de la Colombie-Britannique. Elle s'adresse aux
+    agriculteurs, actuels ou en installation, qui pratiquent une agriculture durable, diversifiée, agroécologique
+    ou biologique.
+  interet: Aide à gérer une exploitation agricole diversifiée ou biologique au quotidien.
+  mots_cles_fr:
+  - gestion d'exploitation
+  - agriculture durable
+  - agroécologie
+  - agriculture biologique
+  date_maj: '2026-09-16'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-gr33n
+  titre: gr33n
+  url: https://github.com/dgang0404/gr33n
+  demo: https://github.com/dgang0404/gr33n#screenshots
+  img: /assets/img/projects/gr33n.png
+  github_org: dgang0404
+  famille: logiciel
+  categorie: Gestion d'exploitation
+  category: Farm Management Systems and Record Keeping
+  licence: gpl-3.0
+  techno: Go
+  description: A decentralized, open-source agricultural management platform built for offline-first deployment,
+    automation, and sustainable farming at any scale.
+  resume: gr33n est une plateforme de gestion agricole auto-hébergée qui réunit capteurs, zones, fertirrigation,
+    éclairage, tâches, coûts et un assistant IA local dans un tableau de bord fonctionnant sur le réseau
+    local, y compris hors connexion. Elle s'adresse aux petites fermes, maraîchers et petites cultures
+    commerciales qui veulent garder la maîtrise de leurs données.
+  interet: Permet de piloter capteurs, fertirrigation et éclairage d'une exploitation et d'en suivre les
+    tâches et les coûts.
+  mots_cles_fr:
+  - gestion d'exploitation
+  - capteurs
+  - fertirrigation
+  - automatisation
+  - hors connexion
+  date_maj: '2026-09-14'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-frappe
+  titre: Frappe
+  url: https://frappe.io/
+  depot: https://github.com/frappe/frappe
+  demo: https://docs.erpnext.com/docs/user/manual/en/crops-and-land-introduction
+  img: /assets/img/projects/frappe.png
+  github_org: frappe
+  famille: logiciel
+  categorie: Gestion d'exploitation
+  category: Farm Management Systems and Record Keeping
+  licence: mit
+  techno: Python
+  description: Low code web framework for real world applications, in Python and Javascript
+  resume: Frappe est un framework web low code en Python et JavaScript sur lequel repose l'ERP ERPNext,
+    dont un module agriculture permet d'enregistrer cultures et parcelles et de suivre analyses de sol,
+    d'eau et de météo, maladies et engrais. Il sert aux structures agricoles qui veulent utiliser ou adapter
+    un ERP libre à leurs activités.
+  interet: Permet de gérer une exploitation dans un ERP libre, avec suivi des cultures, des parcelles,
+    des maladies et des engrais.
+  mots_cles_fr:
+  - erp
+  - framework web
+  - gestion d'exploitation
+  - cultures
+  - parcelles
+  date_maj: '2026-09-17'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-brinjel
+  titre: Brinjel
+  url: https://brinjel.com/fr/
+  depot: https://framagit.org/brinjel/brinjel
+  demo: https://brinjel.com/fr/blog/
+  img: /assets/img/projects/brinjel.png
+  famille: logiciel
+  categorie: Gestion d'exploitation
+  category: Farm Management Systems and Record Keeping
+  licence: agpl-3.0
+  techno: Elixir
+  description: Planifiez votre saison et suivez vos cultures avec un logiciel libre fait par et pour des
+    maraichères et maraichers.
+  resume: Brinjel est un logiciel libre de planification des cultures et de suivi de production pour le
+    maraîchage. Il s'adresse aux maraîchères et maraîchers, des grands potagers aux fermes mécanisées,
+    ainsi qu'aux centres de formation agricole.
+  interet: Aide à planifier une saison maraîchère et à suivre les cultures.
+  mots_cles_fr:
+  - maraîchage
+  - planification des cultures
+  - suivi de production
+  - logiciel libre
+  date_maj: '2026-09-14'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-carto
+  titre: Carto
+  url: https://carto.com/
+  depot: https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/CartoDB/cartodb
+  demo: https://www.youtube.com/watch?v=4hoU2vNl6wE&t=6s
+  img: /assets/img/projects/carto.svg
+  github_org: CartoDB
+  famille: logiciel
+  categorie: Cartographie et SIG
+  category: Geospatial, GIS and Global Positionning System reference
+  licence: bsd-3-clause
+  techno: Ruby
+  description: Location Intelligence & Data Visualization tool
+  resume: CARTO (ex-CartoDB) était une plateforme web de visualisation et d'analyse de données géospatiales,
+    installable sur son propre serveur, permettant d'importer des données, de les interroger en SQL et
+    de les mettre en carte. Son code servait aux organisations qui voulaient héberger elles-mêmes cet
+    outil de cartographie.
+  interet: Permet de cartographier et d'analyser des données géolocalisées.
+  mots_cles_fr:
+  - cartographie
+  - sig
+  - visualisation de données
+  - données géospatiales
+  date_maj: '2023-09-15'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-qgis
+  titre: Qgis
+  url: https://qgis.org/en/site/
+  depot: https://github.com/qgis/QGIS
+  demo: https://qgis.org/en/site/about/screenshots.html
+  img: /assets/img/projects/qgis.png
+  github_org: qgis
+  famille: logiciel
+  categorie: Cartographie et SIG
+  category: Geospatial, GIS and Global Positionning System reference
+  licence: gpl-2.0
+  techno: C++
+  description: QGIS is a free, open source, cross platform (lin/win/mac) geographical information system
+    (GIS)
+  resume: QGIS est un système d'information géographique libre et multiplateforme qui permet de visualiser,
+    éditer et analyser des données spatiales. Il sert aux personnes qui produisent ou exploitent des cartes
+    et des données géographiques sur Linux, Windows ou macOS.
+  interet: Permet de cartographier et d'analyser des données géographiques liées aux territoires agricoles.
+  mots_cles_fr:
+  - sig
+  - cartographie
+  - données spatiales
+  - analyse géographique
+  date_maj: '2026-09-17'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-qfield
+  titre: Qfield
+  url: https://qfield.org/
+  depot: https://github.com/opengisch/QField
+  demo: https://www.opengis.ch/fr/category/gis-fr/qfield-fr/faits-saillants-de-qfield/
+  img: /assets/img/projects/qfield.svg
+  github_org: opengisch
+  famille: logiciel
+  categorie: Cartographie et SIG
+  category: Geospatial, GIS and Global Positionning System reference
+  licence: gpl-2.0
+  techno: C++
+  description: Efficient field work built for QGIS
+  resume: QField est une application mobile de saisie de données géographiques sur le terrain, avec une
+    interface tactile simplifiée pour les projets QGIS. Elle sert aux personnes qui collectent et mettent
+    à jour des données géolocalisées sur le terrain à partir de projets QGIS.
+  interet: Permet de relever et mettre à jour sur le terrain des données géographiques issues de projets
+    QGIS.
+  mots_cles_fr:
+  - sig mobile
+  - saisie terrain
+  - qgis
+  - cartographie
+  date_maj: '2026-09-17'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-centipede
+  titre: Centipede
+  url: https://centipede.fr
+  depot: https://github.com/CentipedeRTK/centipede
+  demo: https://centipede.fr/index.php/view/map/?repository=cent&project=centipede
+  img: /assets/img/projects/centipede.png
+  github_org: CentipedeRTK
+  famille: logiciel
+  categorie: Cartographie et SIG
+  category: Geospatial, GIS and Global Positionning System reference
+  licence: agpl-3.0
+  techno: PLpgSQL
+  description: 'Centipède: un réseau collaboratif de Bases GNSS RTK low-cost'
+  resume: Centipède est un réseau collaboratif de bases GNSS RTK à bas coût qui diffuse librement des
+    corrections RTK pour un positionnement centimétrique. Il sert à toute personne située dans la zone
+    de couverture, notamment aux agriculteurs qui automatisent la conduite de leurs engins agricoles.
+  interet: Permet d'obtenir un positionnement centimétrique pour guider les engins agricoles et améliorer
+    la précision et la traçabilité des travaux au champ.
+  mots_cles_fr:
+  - rtk
+  - gnss
+  - guidage
+  - positionnement
+  - agriculture de précision
+  date_maj: '2022-05-17'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-openstreetmap
+  titre: OpenStreetMap
+  url: https://www.openstreetmap.fr/
+  depot: https://github.com/openstreetmap/openstreetmap-website
+  demo: https://www.openstreetmap.org/#map=6/46.449/2.210
+  img: /assets/img/projects/osm.png
+  github_org: openstreetmap
+  famille: logiciel
+  categorie: Cartographie et SIG
+  category: Geospatial, GIS and Global Positionning System reference
+  licence: odbl-1.0
+  techno: Ruby
+  description: OpenStreetMap est la carte ouverte et collaborative du Monde. Elle est améliorée chaque
+    jour par plus d’un million de contributrices et contributeurs.
+  resume: OpenStreetMap est une base de données cartographique mondiale, collaborative et libre, que chacun
+    peut compléter avec des données de terrain vérifiables. Elle sert aux personnes et organisations qui
+    veulent consulter, contribuer ou réutiliser des données géographiques, y compris à des fins commerciales.
+  interet: Permet de réutiliser et de compléter des données cartographiques libres.
+  mots_cles_fr:
+  - cartographie collaborative
+  - données ouvertes
+  - carte
+  - données géographiques
+  date_maj: '2026-09-17'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-lizmap
+  titre: Lizmap
+  url: https://www.lizmap.com/
+  depot: https://github.com/3liz/lizmap-web-client
+  demo: https://demo.lizmap.com/lizmap/
+  img: /assets/img/projects/lizmap.png
+  github_org: 3liz
+  famille: logiciel
+  categorie: Cartographie et SIG
+  category: Geospatial, GIS and Global Positionning System reference
+  licence: mpl-2.0
+  techno: JavaScript
+  description: Lizmap est une application Open Source basée sur QGIS et QGIS Serveur
+  resume: Lizmap Web Client publie sur le web des projets QGIS via QGIS Server et fournit l'interface
+    cartographique pour les consulter. Il sert aux personnes qui veulent diffuser en ligne des cartes
+    préparées dans QGIS, sur leur propre serveur ou via l'hébergement proposé par 3Liz.
+  interet: Permet de publier en ligne des cartes préparées dans QGIS.
+  mots_cles_fr:
+  - cartographie web
+  - qgis
+  - publication de cartes
+  - sig
+  date_maj: '2026-09-17'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-agric
+  titre: Agric
+  url: https://ekylibre.com/innovation/
+  depot: https://github.com/ekylibre/agric
+  demo: https://github.com/ekylibre/agric
+  img: /assets/img/projects/agric.svg
+  famille: donnees
+  categorie: Icônes
+  category: Icons
+  licence: mit
+  techno: SCSS
+  description: Agricultural font based on Font Awesome and Fontello tools
+  resume: Agric est une police d'icônes web orientée agriculture, basée sur Font Awesome 4, qui regroupe
+    des glyphes SVG compilés en une police et publiée en gem Ruby. Elle sert aux développeurs d'applications
+    agricoles qui ont besoin d'icônes pour leurs interfaces.
+  interet: Permet d'illustrer les interfaces de logiciels agricoles avec des icônes dédiées.
+  mots_cles_fr:
+  - icônes
+  - police web
+  - interface
+  - logiciel agricole
+  date_maj: '2026-09-13'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-lex-icon-food-icon-project
+  titre: Lex Icon / Food icon project
+  url: https://foodicons.org/
+  demo: https://thenounproject.com/foodiconscollection/
+  img: /assets/img/projects/foodicon.png
+  famille: donnees
+  categorie: Icônes
+  category: Icons
+  licence: cc-by-4.0
+  description: Foodicons - A global visual language for food
+  resume: Foodicons (Lex Icons) est une bibliothèque d'icônes qui illustrent les termes et notions des
+    systèmes alimentaires, dont l'agriculture, réalisée par The Lexicon avec Adobe et des designers du
+    monde entier. Elle sert aux personnes qui ont besoin de pictogrammes pour expliquer les systèmes agricoles
+    et alimentaires, et est aussi diffusée sur The Noun Project.
+  interet: Permet d'illustrer des supports sur l'agriculture et l'alimentation avec des icônes réutilisables.
+  mots_cles_fr:
+  - icônes
+  - pictogrammes
+  - systèmes alimentaires
+  - communication visuelle
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-home-assistant
+  titre: Home assistant
+  url: https://www.home-assistant.io/
+  depot: https://github.com/home-assistant/core
+  demo: https://demo.home-assistant.io/
+  img: /assets/img/projects/home-assistant.png
+  github_org: home-assistant
+  famille: materiel
+  categorie: Capteurs et supervision
+  category: IoT, Sensors for tracking, isobus and supervising
+  licence: apache-2.0
+  techno: Python
+  description: Open source home automation that puts local control and privacy first. Powered by a worldwide
+    community of tinkerers and DIY enthusiasts.
+  resume: Home Assistant est un logiciel de domotique à héberger soi-même qui relie des appareils et capteurs
+    connectés et automatise leur fonctionnement en local. Il est utile à qui veut centraliser la supervision
+    et la commande d'équipements connectés sur son propre serveur, sans dépendre d'un service distant.
+  interet: Permet de centraliser les relevés de capteurs et de déclencher des automatismes sur les équipements
+    connectés d'une exploitation.
+  mots_cles_fr:
+  - domotique
+  - automatisation
+  - capteurs
+  - supervision
+  - auto-hébergement
+  date_maj: '2026-09-17'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-frigate
+  titre: Frigate
+  url: https://frigate.video/
+  depot: https://github.com/blakeblackshear/frigate
+  demo: https://demo.frigate.video/
+  img: /assets/img/projects/freegate.png
+  famille: materiel
+  categorie: Capteurs et supervision
+  category: IoT, Sensors for tracking, isobus and supervising
+  licence: mit
+  techno: TypeScript
+  description: Frigate is an open source NVR built around real-time AI object detection. All processing
+    is performed locally on your own hardware, and your camera feeds never leave your home.
+  resume: Frigate est un enregistreur vidéo réseau pour caméras IP qui détecte des objets en temps réel
+    par intelligence artificielle, avec un traitement effectué localement sur le matériel de l'utilisateur.
+    Il s'adresse à qui veut surveiller des caméras sans envoyer les flux vidéo vers un service extérieur.
+  interet: Permet de surveiller par caméra des bâtiments ou des parcelles avec une détection automatique
+    d'objets, sans sortir les images de l'exploitation.
+  mots_cles_fr:
+  - vidéosurveillance
+  - caméras
+  - détection d'objets
+  - intelligence artificielle
+  date_maj: '2026-09-17'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-isoblue
+  titre: Isoblue
+  url: https://isoblue.org/
+  depot: https://github.com/oats-center/isoblue
+  demo: https://isoblue.org/docs/
+  img: /assets/img/projects/isoblue.png
+  github_org: oats-center
+  famille: materiel
+  categorie: Capteurs et supervision
+  category: IoT, Sensors for tracking, isobus and supervising
+  licence: mit
+  techno: Python
+  description: Open-Source Agricultural Machinery Sensor Hub
+  resume: ISOBlue est un boîtier ouvert qui se branche sur la prise de diagnostic ISOBUS d'un engin agricole
+    pour collecter ses données CAN et GPS, accompagné du logiciel Avena et de fichiers de déploiement.
+    Il sert aux chercheurs et aux utilisateurs qui veulent récupérer et exploiter les données de fonctionnement
+    de leurs machines.
+  interet: Permet de collecter les données CAN et GPS des machines agricoles depuis leur prise ISOBUS.
+  mots_cles_fr:
+  - isobus
+  - machinisme
+  - capteurs
+  - gps
+  - données machines
+  date_maj: '2023-10-03'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-traccar
+  titre: Traccar
+  url: https://www.traccar.org/
+  depot: https://github.com/traccar/traccar
+  demo: https://www.traccar.org/demo-server/
+  img: /assets/img/projects/traccar.png
+  github_org: traccar
+  famille: materiel
+  categorie: Capteurs et supervision
+  category: IoT, Sensors for tracking, isobus and supervising
+  licence: apache-2.0
+  techno: Java
+  description: Open source GPS tracking platform - self-hosted or managed, 200+ device protocols
+  resume: Traccar est une plateforme de suivi GPS qui reçoit les positions de balises et de téléphones
+    compatibles avec plus de 200 protocoles, à héberger soi-même ou en service géré. Elle est utile à
+    qui doit localiser et suivre des véhicules ou du matériel en temps réel.
+  interet: Permet de localiser et de suivre les déplacements des véhicules et engins équipés de traceurs
+    GPS.
+  mots_cles_fr:
+  - gps
+  - géolocalisation
+  - suivi de flotte
+  - traceurs
+  date_maj: '2026-09-17'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-intel-iris
+  titre: Intel-Iris
+  url: https://intel-irris.eu/
+  depot: https://github.com/CongducPham/PRIMA-Intel-IrriS
+  demo: https://youtu.be/z5NL3dBHQ6c
+  img: /assets/img/projects/intel-irris.png
+  famille: materiel
+  categorie: Capteurs sol et irrigation
+  category: IoT, Sensors for soil and irrigation
+  licence: gpl-3.0
+  techno: C
+  description: Intelligent Irrigation System for Low-cost Autonomous Water Control in Small-scale Agriculture
+  resume: INTEL-IRRIS est un projet de recherche européen (programme PRIMA) qui a conçu un système de
+    pilotage de l'irrigation ouvert et peu coûteux, fondé sur des capteurs d'humidité du sol LoRa et une
+    passerelle IoT. Il s'adresse aux petites exploitations qui veulent ajuster leurs apports d'eau à partir
+    de mesures de terrain.
+  interet: Aide à piloter l'irrigation à partir de mesures d'humidité du sol transmises par des capteurs
+    à bas coût.
+  mots_cles_fr:
+  - irrigation
+  - humidité du sol
+  - lora
+  - iot
+  - gestion de l'eau
+  date_maj: '2025-03-23'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-brad-technology
+  titre: Brad Technology
+  url: https://brad.ag/
+  depot: https://github.com/bradtech/lora2db
+  demo: https://www.brad.ag/la-solution-agritech-brad/
+  img: assets/img/projects/brad-technology.png
+  github_org: bradtech
+  famille: materiel
+  categorie: Capteurs sol et irrigation
+  category: IoT, Sensors for soil and irrigation
+  licence: mit
+  techno: TypeScript
+  description: Brad Agritech gives soil an AI voice to empower farmers and build resilient food systems
+    — real-time soil health insights and global agronomic vision.
+  resume: Brad est une entreprise qui propose une sonde de sol portable associée à des données satellite
+    et à une intelligence artificielle vocale pour produire des indicateurs de santé des sols ; elle publie
+    lora2db, une bibliothèque TypeScript qui transfère les messages LoRaWAN vers des bases de données
+    de séries temporelles. La bibliothèque sert aux développeurs qui doivent stocker les mesures de capteurs
+    LoRaWAN dans InfluxDB ou Timestream.
+  interet: Permet d'acheminer les mesures de capteurs LoRaWAN vers une base de données pour les exploiter.
+  mots_cles_fr:
+  - capteurs
+  - lorawan
+  - santé des sols
+  - séries temporelles
+  date_maj: '2024-06-17'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-open-remote
+  titre: Open remote
+  url: https://www.openremote.io/
+  depot: https://github.com/openremote/openremote
+  demo: https://www.openremote.io/demo/
+  img: /assets/img/projects/openremote.png
+  famille: materiel
+  categorie: Capteurs sol et irrigation
+  category: IoT, Sensors for soil and irrigation
+  licence: agpl-3.0
+  techno: Java
+  description: 100% open-source IoT Platform - Integrate your devices, add intelligence, build custom
+    apps
+  resume: OpenRemote est une plateforme IoT qui connecte des appareils, applique des règles d'automatisation
+    et permet de construire des applications de supervision. Son site cite l'agriculture parmi ses domaines,
+    pour l'irrigation pilotée par capteurs, le suivi de santé du bétail et le contrôle climatique des
+    serres.
+  interet: Permet de relier les capteurs d'une exploitation et d'automatiser l'irrigation, le suivi du
+    bétail ou le climat des serres.
+  mots_cles_fr:
+  - iot
+  - plateforme
+  - automatisation
+  - capteurs
+  - supervision
+  date_maj: '2026-09-17'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-agiot
+  titre: AgIot
+  url: https://agiot.inesctec.pt/
+  demo: http://vcriis01.inesctec.pt:1880/ui/#/0
+  img: /assets/img/projects/default.png
+  famille: materiel
+  categorie: Capteurs sol et irrigation
+  category: IoT, Sensors for soil and irrigation
+  description: AgIoT is modular and open source IoT solution for agrofood domain
+  resume: AgIoT est une solution IoT modulaire pour le secteur agroalimentaire, compatible avec les normes
+    ISOBUS et FIWARE, développée par la ligne de R&D AgRob de l'INESC TEC dans le cadre des projets SmartFarming
+    et Water4Ever. Elle s'adresse aux équipes de recherche et d'ingénierie qui veulent moderniser des
+    machines et outils agricoles en y ajoutant des modules de capteurs.
+  interet: Permet d'ajouter des capteurs connectés aux machines et outils agricoles et d'en remonter les
+    données.
+  mots_cles_fr:
+  - iot
+  - isobus
+  - fiware
+  - capteurs
+  - agriculture de précision
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-opensprinkler
+  titre: OpenSprinkler
+  url: https://opensprinkler.com/
+  depot: https://github.com/OpenSprinkler/OpenSprinkler-Firmware
+  demo: https://github.com/OpenSprinkler
+  img: /assets/img/projects/opensprinkler.jpeg
+  github_org: OpenSprinkler
+  famille: materiel
+  categorie: Capteurs sol et irrigation
+  category: IoT, Sensors for soil and irrigation
+  licence: gpl-3.0
+  techno: C++
+  description: Improve your lawn, garden, or farm irrigation. Create custom programs. Use automatic weather-driven
+    algorithms. Access and control your sprinklers from anywhere.
+  resume: OpenSprinkler est un programmateur d'arrosage connecté dont le micrologiciel, le matériel et
+    l'application sont publiés, qui permet de créer des programmes d'irrigation, de les ajuster selon
+    la météo et de les commander à distance. Il est utile aux jardins, espaces verts et exploitations
+    qui veulent automatiser et piloter leur arrosage depuis un navigateur ou un téléphone.
+  interet: Permet de programmer l'irrigation par zones, de l'ajuster selon la météo et de la commander
+    à distance.
+  mots_cles_fr:
+  - irrigation
+  - arrosage
+  - programmateur
+  - météo
+  - matériel ouvert
+  date_maj: '2026-09-17'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-agrolink
+  titre: Agrolink
+  url: https://blog.pepinature.com/2023/07/23/module-dirrigation-automatise-open-source/
+  demo: https://pepinature.org/fr/gestion_de_l_eau/programmation_avancee_et_automatisation_de_l_irrigation
+  img: /assets/img/projects/default.png
+  famille: materiel
+  categorie: Capteurs sol et irrigation
+  category: IoT, Sensors for soil and irrigation
+  licence: cc-by-4.0
+  description: AgroLink - Programmeur d'irrigation modulable, automatisable, extensible - open source
+  resume: AgroLink est un guide de montage d'un programmateur d'irrigation assemblé à partir de logiciels
+    libres existants (micrologiciel OpenSprinkler, Home Assistant, MQTT, Tasmota) sur un Raspberry Pi,
+    qui arrose selon les prévisions météo, la température, l'humidité du sol et la détection de pluie.
+    L'auteur le destine aux jardiniers amateurs et aux maraîchers qui veulent automatiser et ajuster leur
+    arrosage sans abonnement à un service tiers.
+  interet: Aide à monter soi-même un programmateur d'irrigation piloté par la météo et l'humidité du sol.
+  mots_cles_fr:
+  - irrigation
+  - raspberry pi
+  - home assistant
+  - opensprinkler
+  - tutoriel
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-triple-performance
+  titre: Triple performance
+  url: https://wiki.tripleperformance.fr/wiki/Triple_Performance
+  depot: https://github.com/neayi/tripleperformance
+  demo: https://forum.tripleperformance.fr/
+  img: /assets/img/projects/tp.svg
+  github_org: neayi
+  famille: donnees
+  categorie: Bases de connaissances
+  category: Knowledgebases and Learning Resources
+  licence: cc-by-sa-4.0
+  techno: PHP
+  description: 'Réussir votre transition Agro-écologique - Pour atteindre la Triple Performance dans votre
+    exploitation : économique, environnementale et sociale.'
+  resume: Triple Performance est un wiki collaboratif, porté par Neayi, qui rassemble des pratiques et
+    retours d'expérience sur la transition agroécologique, accompagné d'un forum. Il sert aux agriculteurs
+    et conseillers qui cherchent ou partagent des connaissances sur des pratiques visant la performance
+    économique, environnementale et sociale.
+  interet: Aide à trouver et partager des pratiques agroécologiques documentées par d'autres agriculteurs.
+  mots_cles_fr:
+  - agroécologie
+  - wiki
+  - partage de connaissances
+  - pratiques agricoles
+  date_maj: '2026-09-09'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-acp-admin
+  titre: Acp admin
+  url: https://acp-admin.ch/
+  depot: https://github.com/csa-admin-org/csa-admin
+  demo: https://github.com/acp-admin/acp-admin
+  img: /assets/img/projects/acp.png
+  github_org: acp-admin
+  famille: logiciel
+  categorie: Vente et relation client
+  category: Sales and Customers links
+  techno: Ruby
+  description: Web application to manage CSA (Community Supported Agriculture), ACP (Agriculture Contractuelle
+    de Proximité) or Solawi (Solidarische Landwirtschaft) organizations.
+  resume: 'CSA Admin (anciennement ACP Admin) est une application web de gestion des organisations d''agriculture
+    contractuelle de proximité : membres, abonnements, paniers et facturation. Elle s''adresse aux ACP,
+    CSA et Solawi qui gèrent la distribution de paniers à leurs membres.'
+  interet: Permet de gérer les membres, les abonnements et les livraisons de paniers d'une agriculture
+    contractuelle de proximité.
+  mots_cles_fr:
+  - acp
+  - circuits courts
+  - paniers
+  - gestion des membres
+  - facturation
+  date_maj: '2026-09-16'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-oseille
+  titre: Oseille
+  url: https://www.oseille.app/
+  depot: https://github.com/monsieurpigeon/oseille
+  img: /assets/img/projects/oseille.jpeg
+  github_org: monsieurpigeon
+  famille: logiciel
+  categorie: Vente et relation client
+  category: Sales and Customers links
+  techno: TypeScript
+  description: Oseille vous permet de gérer la facturation de votre ferme. L'app est gratuite, open-source
+    et fonctionne même sans internet
+  resume: Oseille est une application web gratuite, utilisable sans connexion internet, qui gère les produits,
+    les clients, les livraisons et la facturation d'une ferme. Elle s'adresse aux maraîchers qui veulent
+    établir leurs factures à partir de leurs livraisons.
+  interet: Permet d'enregistrer les livraisons aux clients et d'en tirer les factures de la ferme.
+  mots_cles_fr:
+  - facturation
+  - maraîchage
+  - livraisons
+  - hors ligne
+  date_maj: '2025-06-09'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-wordpress
+  titre: Wordpress
+  url: https://wordpress.org/
+  depot: https://github.com/WordPress/WordPress
+  demo: https://www.hartzlerdairy.com/
+  img: /assets/img/projects/wp.png
+  github_org: WordPress
+  famille: logiciel
+  categorie: Vente et relation client
+  category: Sales and Customers links
+  licence: gpl-2.0
+  techno: PHP
+  description: Open source software which you can use to easily create a beautiful website, blog, or app.
+  resume: WordPress est un logiciel de publication de sites web, de blogs et d'applications. Il permet
+    à une exploitation ou à un collectif de créer et gérer son propre site sans développement.
+  interet: Permet à une exploitation de créer et gérer son propre site web.
+  mots_cles_fr:
+  - site web
+  - publication
+  - cms
+  - blog
+  date_maj: '2026-09-17'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-ag-ml
+  titre: Ag ML
+  url: https://project-agml.github.io
+  depot: https://github.com/Project-AgML/AgML
+  demo: https://github.com/Project-AgML/AgML
+  img: /assets/img/projects/agml.png
+  github_org: Project-AgML
+  famille: modele
+  categorie: IA et apprentissage automatique
+  category: Machine Learning and AI
+  licence: apache-2.0
+  techno: Python
+  description: AgML is a centralized framework for agricultural machine learning. AgML provides access
+    to public agricultural datasets for common agricultural deep learning tasks, with standard benchmarks
+    and pretrained models, as well the ability to generate synthetic data and annotations.
+  resume: AgML est une bibliothèque Python d'apprentissage automatique pour l'agriculture qui donne accès
+    à des jeux de données agricoles publics, à des bancs d'essai, à des modèles pré-entraînés et à la
+    génération de données synthétiques annotées. Elle s'adresse aux chercheurs et développeurs qui entraînent
+    des modèles d'apprentissage profond sur des tâches agricoles.
+  interet: Aide à entraîner et comparer des modèles d'apprentissage profond sur des jeux de données agricoles
+    publics.
+  mots_cles_fr:
+  - apprentissage automatique
+  - jeux de données
+  - vision par ordinateur
+  - modèles pré-entraînés
+  date_maj: '2026-09-16'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-gaia
+  titre: Gaia
+  url: https://www.gaia-ia.org
+  depot: https://huggingface.co/spaces/gaia-mistral/chatbot-g-rag
+  demo: https://huggingface.co/spaces/gaia-mistral/chatbot-g-rag
+  img: /assets/img/projects/gaia.png
+  famille: modele
+  categorie: IA et apprentissage automatique
+  category: Machine Learning and AI
+  licence: mit
+  techno: Python
+  description: Generative Artificial Intelligence for Agriculture
+  resume: GAIA est un projet collaboratif ouvert porté par La Ferme Digitale et OSFarm pour créer des
+    solutions d'IA générative adaptées au secteur agricole, avec des démonstrateurs publiés sur Hugging
+    Face comme des chatbots. Il s'adresse aux acteurs agricoles et développeurs qui veulent expérimenter
+    l'IA générative à partir de briques ouvertes.
+  interet: Permet d'expérimenter des assistants d'IA générative appliqués à des questions agricoles à
+    partir de démonstrateurs ouverts.
+  mots_cles_fr:
+  - intelligence artificielle
+  - ia générative
+  - chatbot
+  - hugging face
+  date_maj: '2024-06-06'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-mistral-ai
+  titre: Mistral AI
+  url: https://mistral.ai/
+  demo: https://docs.mistral.ai/
+  img: /assets/img/projects/mistralai.png
+  github_org: mistralai
+  famille: modele
+  categorie: IA et apprentissage automatique
+  category: Machine Learning and AI
+  licence: apache-2.0
+  description: The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants,
+    autonomous agents, and multimodal AI with open models.
+  resume: Mistral AI est une entreprise qui développe des grands modèles de langage, dont une partie est
+    publiée en poids ouverts, et une plateforme pour les personnaliser et les déployer en assistants ou
+    agents. Elle s'adresse aux organisations et développeurs qui veulent construire des applications d'IA
+    sur des modèles réutilisables.
+  interet: Permet de bâtir des assistants ou outils d'IA sur des modèles de langage ouverts, déployables
+    sur sa propre infrastructure.
+  mots_cles_fr:
+  - intelligence artificielle
+  - modèles de langage
+  - poids ouverts
+  - ia générative
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+- id: projet-plant-cv
+  titre: Plant CV
+  url: https://plantcv.danforthcenter.org/
+  depot: https://github.com/danforthcenter/plantcv
+  demo: https://github.com/danforthcenter/plantcv
+  img: /assets/img/projects/plantcv.png
+  famille: modele
+  categorie: IA et apprentissage automatique
+  category: Machine Learning and AI
+  licence: mpl-2.0
+  techno: Python
+  description: Plant phenotyping with image analysis
+  resume: PlantCV est une bibliothèque Python open source d'analyse d'images destinée au phénotypage des
+    plantes. Elle sert aux chercheurs et techniciens qui mesurent des caractères de plantes à partir de
+    photographies.
+  interet: Permet de mesurer des caractères de plantes à partir d'images pour des travaux de phénotypage.
+  mots_cles_fr:
+  - phénotypage
+  - analyse d'images
+  - vision par ordinateur
+  - plantes
+  date_maj: '2026-09-17'
+  propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true

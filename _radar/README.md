@@ -8,8 +8,9 @@ fusion publie. Tout vit dans ce dépôt, sans serveur ni second projet.
 
     _radar/                       scripts, sources et mémoire (Jekyll ignore ce dossier)
     _data/radar/AAAA-MM-JJ.yml    un fichier par lot : c'est ce que le site affiche
-    _includes/radar-fiches.html   rassemble les fiches validées de tous les lots
-    docs/fr/communs.html          /fr/communs/    annuaire filtrable
+    _data/radar/communaute.yml    projets choisis par la communauté, tenus à la main
+    _includes/radar-fiches.html   rassemble les fiches publiées de ce dossier
+    docs/fr/communs.html          /fr/communs/    annuaire filtrable (lots et communauté)
     docs/fr/actualites.html       /fr/actualites/ un article par lot publié
     data/communs.json, .csv       /data/communs.* le catalogue en données ouvertes
     .github/workflows/radar.yml   le passage quotidien
@@ -88,8 +89,10 @@ positif isolé n'est pas grave, le modèle le marque hors sujet et le passe à
 
 Le vocabulaire agricole, les faux amis (« yield farming », « server farm », les
 jeux vidéo) et la liste des licences acceptées sont en tête de `collecte.py`.
-Les projets dont l'URL figure déjà dans un fichier `_data/*.yml` du site ne
-sont jamais proposés.
+Les projets dont l'URL figure déjà dans un fichier `_data/*.yml` du site ou
+dans `_data/radar/communaute.yml` (url, dépôt ou démo) ne sont jamais proposés.
+`fichiers_lots()` (dans `collecte.py`) écarte ce dernier fichier : ce n'est pas
+un lot, et ni `resume.py` ni `diffusion.py` ne le traitent.
 
 ## Ce que le modèle rédige, et ses limites
 

@@ -1,0 +1,153 @@
+{%- comment -%}
+  Charte de l'opérateur référencé et formulaire de candidature.
+
+  Usage  : {% include catalogue-candidature.html lang="fr" %}
+  Données : _data/catalogue.yml (charte chiffrée par `meta`, liste des modules
+            et des missions proposables).
+
+  Le catalogue renvoie ici avec ?module=C5 depuis une fiche sans opérateur ;
+  assets/js/catalogue.js présélectionne alors le module dans la liste.
+{%- endcomment -%}
+{%- assign lang = include.lang | default: "fr" -%}
+{%- assign cat = site.data.catalogue -%}
+{%- if lang == "fr" -%}
+  {%- assign url_catalogue = "/fr/catalogue/" | relative_url -%}
+{%- else -%}
+  {%- assign url_catalogue = "/catalogue/" | relative_url -%}
+{%- endif -%}
+
+<div class="catalogue">
+
+  {%- if lang == "fr" %}
+  <div class="catalogue-intro">
+    <p class="catalogue-claim">Gratuit, sans commission. La seule condition est d'être adhérent.</p>
+    <p>
+      OSFarm ne vend rien et ne prélève rien sur vos missions. L'association tient le
+      <a href="{{ url_catalogue }}">catalogue</a>, oriente les demandes et garantit le cadre ;
+      vous contractez et facturez en direct avec le client. En contrepartie du référencement,
+      vous publiez votre support sous licence libre : c'est ce qui fait du catalogue un commun
+      plutôt qu'un annuaire de prestataires.
+    </p>
+  </div>
+
+  <h2 class="catalogue-titre-section">La charte de l'opérateur référencé</h2>
+  <ol class="catalogue-charte">
+    <li><b>Être adhérent d'OSFarm</b> et le rester pendant toute la durée du référencement.</li>
+    <li><b>Former sur des outils ouverts.</b> Le module porte sur des solutions libres ou sur des standards ouverts.</li>
+    <li><b>Publier le support</b> sous licence libre (CC BY-SA ou équivalent) sur la forge, dans les trois mois suivant la première session.</li>
+    <li><b>Appliquer un tarif adhérent</b> d'au moins {{ cat.meta.remise_adherent_min }} % inférieur au tarif public.</li>
+    <li><b>Répondre sous {{ cat.meta.delai_reponse_jours }} jours ouvrés</b> à toute demande transmise, ne serait-ce que pour décliner.</li>
+    <li><b>Assumer seul</b> le contrat, la responsabilité pédagogique, l'assurance et, le cas échéant, la certification Qualiopi. L'association n'est ni partie au contrat, ni garante, ni rémunérée.</li>
+    <li><b>Accepter l'évaluation.</b> Une moyenne inférieure à 3,5 sur 5 sur trois sessions consécutives entraîne un retrait du catalogue, après échange.</li>
+  </ol>
+
+  <h2 class="catalogue-titre-section">Votre proposition</h2>
+  {%- else %}
+  <div class="catalogue-intro">
+    <p class="catalogue-claim">Free, commission-free. The only condition is to be a member.</p>
+    <p>
+      OSFarm sells nothing and takes nothing from your assignments. The association keeps the
+      <a href="{{ url_catalogue }}">catalogue</a>, routes requests and guarantees the framework;
+      you contract and invoice the client directly. In return for being listed, you publish your
+      materials under an open licence: that is what makes the catalogue a common good rather than
+      a list of suppliers.
+    </p>
+  </div>
+
+  <h2 class="catalogue-titre-section">The listed operator charter</h2>
+  <ol class="catalogue-charte">
+    <li><b>Be an OSFarm member</b>, and remain one for as long as you are listed.</li>
+    <li><b>Teach open tools.</b> The module covers open source solutions or open standards.</li>
+    <li><b>Publish your materials</b> under an open licence (CC BY-SA or equivalent) on the forge, within three months of the first session.</li>
+    <li><b>Grant a member rate</b> at least {{ cat.meta.remise_adherent_min }}% below the public rate.</li>
+    <li><b>Answer within {{ cat.meta.delai_reponse_jours }} working days</b> to every request passed on to you, if only to decline it.</li>
+    <li><b>Carry it alone</b>: the contract, the teaching, the insurance and, where it applies, the French Qualiopi certification. The association is neither a party to the contract, nor a guarantor, nor paid.</li>
+    <li><b>Accept assessment.</b> An average below 3.5 out of 5 over three consecutive sessions means removal from the catalogue, after discussion.</li>
+  </ol>
+
+  <h2 class="catalogue-titre-section">Your proposal</h2>
+  {%- endif %}
+
+  <form class="catalogue-formulaire" id="catalogue-candidature"
+        data-lang="{{ lang }}"
+        data-webhook="{{ cat.meta.webhook_candidature }}"
+        data-repli="{{ cat.meta.courriel_repli }}">
+    {%- comment %} Champ leurre : rempli, la candidature n'est pas envoyée. {% endcomment %}
+    <input type="text" name="site_web" class="catalogue-leurre" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <input type="hidden" name="type" value="candidature_operateur">
+    <input type="hidden" name="lang" value="{{ lang }}">
+
+    <label>{% if lang == "fr" %}Structure{% else %}Organisation{% endif %}
+      <input type="text" name="structure" required autocomplete="organization"></label>
+    <label>{% if lang == "fr" %}Contact{% else %}Contact{% endif %}
+      <input type="text" name="contact" required autocomplete="name"></label>
+    <label>{% if lang == "fr" %}Courriel{% else %}Email{% endif %}
+      <input type="email" name="email" required autocomplete="email"></label>
+    <label>{% if lang == "fr" %}Module ou mission visé{% else %}Module or assignment{% endif %}
+      <select name="module" required>
+        <option value="">{% if lang == "fr" %}— choisir —{% else %}— choose —{% endif %}</option>
+        {%- for m in cat.modules %}
+        <option value="{{ m.ref }}">{{ m.ref }} — {{ m.titre[lang] }}{% if m.statut == "a_pourvoir" %} ({% if lang == "fr" %}ouvert{% else %}open{% endif %}){% endif %}</option>
+        {%- endfor %}
+        {%- for p in cat.missions %}
+        <option value="{{ p.ref }}">{{ p.ref }} — {{ p.titre[lang] }}</option>
+        {%- endfor %}
+        <option value="NOUVEAU">{% if lang == "fr" %}Un nouveau module, absent du catalogue{% else %}A new module, not in the catalogue{% endif %}</option>
+      </select></label>
+    <label>{% if lang == "fr" %}Si nouveau module : titre proposé{% else %}If new: proposed title{% endif %}
+      <input type="text" name="titre_propose"></label>
+    <label>{% if lang == "fr" %}Ce que vous apportez, en quelques lignes{% else %}What you bring, in a few lines{% endif %}
+      <textarea name="message" rows="4" required></textarea></label>
+    <label>{% if lang == "fr" %}Tarif public envisagé (€ par journée-groupe){% else %}Intended public rate (€ per group-day){% endif %}
+      <input type="number" name="tarif" min="0" step="50"></label>
+    <label class="catalogue-case">
+      <input type="checkbox" name="qualiopi" value="oui">
+      {% if lang == "fr" %}Ma structure est certifiée Qualiopi{% else %}My organisation holds the Qualiopi certification{% endif %}
+    </label>
+    <label class="catalogue-case">
+      <input type="checkbox" name="charte" value="oui" required>
+      {% if lang == "fr" %}J'ai lu la charte ci-dessus et je m'engage à la respecter{% else %}I have read the charter above and undertake to follow it{% endif %}
+    </label>
+    <label class="catalogue-case">
+      <input type="checkbox" name="rgpd" value="oui" required>
+      {% if lang == "fr" %}J'accepte que ces informations soient traitées par l'association{% else %}I agree that this information is processed by the association{% endif %}
+    </label>
+    <p class="catalogue-aide">
+      {%- if lang == "fr" %}
+      Ces informations servent uniquement à instruire votre candidature. Destinataire : le
+      responsable catalogue de l'association. Conservation : 24 mois. Suppression sur simple
+      demande à <a href="mailto:{{ cat.meta.courriel_repli }}">{{ cat.meta.courriel_repli }}</a>.
+      {%- else %}
+      This information is used only to assess your application. Recipient: the association's
+      catalogue manager. Retention: 24 months. Deletion on request at
+      <a href="mailto:{{ cat.meta.courriel_repli }}">{{ cat.meta.courriel_repli }}</a>.
+      {%- endif %}
+    </p>
+
+    <div class="catalogue-formulaire-actions" style="justify-content: flex-start">
+      <button type="submit" class="radar-bouton catalogue-bouton catalogue-bouton--plein">
+        {% if lang == "fr" %}Envoyer ma candidature{% else %}Send my application{% endif %}
+      </button>
+    </div>
+    <p class="catalogue-etat" role="status" aria-live="polite"></p>
+  </form>
+
+  <div class="radar-encart mt-5">
+    {%- if lang == "fr" %}
+    <h2 class="radar-encart-titre">Pas encore adhérent ?</h2>
+    <p class="mb-0">
+      <a href="{{ cat.meta.adhesion_url }}" target="_blank" rel="noopener">L'adhésion se fait ici</a>.
+      Votre candidature est conservée et instruite dès qu'elle est enregistrée : une adhésion
+      manquante met la candidature en attente, elle ne la rejette pas.
+    </p>
+    {%- else %}
+    <h2 class="radar-encart-titre">Not a member yet?</h2>
+    <p class="mb-0">
+      <a href="{{ cat.meta.adhesion_url }}" target="_blank" rel="noopener">Join here</a>.
+      Your application is kept and assessed as soon as the membership is recorded: a missing
+      membership puts the application on hold, it does not reject it.
+    </p>
+    {%- endif %}
+  </div>
+
+</div>

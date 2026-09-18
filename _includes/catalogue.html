@@ -1,0 +1,289 @@
+{%- comment -%}
+  Catalogue formation & conseil : filtres par famille, fiches de modules,
+  missions de conseil et formulaire de demande.
+
+  Usage  : {% include catalogue.html lang="fr" %}
+  Données : _data/catalogue.yml (modules, missions, tarifs) et
+            _data/operateurs.yml (les adhérents qui opèrent).
+
+  Un module n'affiche le bouton de devis que si `statut: ouvert` et
+  `operateur` renseigné : c'est le garde-fou qui empêche de promettre une
+  formation que personne n'anime. Sinon la fiche appelle un opérateur.
+{%- endcomment -%}
+{%- assign lang = include.lang | default: "fr" -%}
+{%- assign cat = site.data.catalogue -%}
+{%- assign ops = site.data.operateurs -%}
+{%- assign coef = 100 | minus: cat.meta.remise_adherent_min -%}
+{%- if lang == "fr" -%}
+  {%- assign url_proposer = "/fr/proposer-un-module/" | relative_url -%}
+{%- else -%}
+  {%- assign url_proposer = "/propose-a-module/" | relative_url -%}
+{%- endif -%}
+
+<section class="catalogue" id="catalogue"
+         data-lang="{{ lang }}"
+         data-webhook="{{ cat.meta.webhook_demande }}"
+         data-repli="{{ cat.meta.courriel_repli }}"
+         data-delai="{{ cat.meta.delai_reponse_jours }}">
+
+  <div class="catalogue-intro">
+    {%- if lang == "fr" %}
+    <p class="catalogue-claim">L'association référence, les adhérents opèrent.</p>
+    <p>
+      OSFarm ne vend ni formation ni prestation et ne prend aucune commission. Le catalogue
+      rassemble ce que ses adhérents savent faire autour des outils communs de l'annuaire.
+      Vous choisissez un module, la demande part directement à l'opérateur, qui vous répond
+      sous {{ cat.meta.delai_reponse_jours }} jours ouvrés et contractualise avec vous.
+      Les adhérents bénéficient d'au moins {{ cat.meta.remise_adherent_min }} % de remise.
+      Le catalogue est lui-même un commun : il se télécharge en
+      <a href="{{ "/catalogue.json" | relative_url }}">JSON</a>.
+    </p>
+    {%- else %}
+    <p class="catalogue-claim">The association lists, its members deliver.</p>
+    <p>
+      OSFarm sells no training and no consulting, and takes no commission. The catalogue
+      gathers what its members can do around the shared tools of the directory. Pick a module
+      and your request goes straight to the operator, who answers within
+      {{ cat.meta.delai_reponse_jours }} working days and contracts directly with you.
+      Members get at least {{ cat.meta.remise_adherent_min }}% off. The catalogue is itself a
+      common good: download it as <a href="{{ "/catalogue.json" | relative_url }}">JSON</a>.
+    </p>
+    {%- endif %}
+  </div>
+
+  <noscript>
+    <p class="catalogue-aide">
+      {%- if lang == "fr" %}
+      Les filtres et le formulaire de demande ont besoin de JavaScript. Sans lui, écrivez à
+      <a href="mailto:{{ cat.meta.courriel_repli }}">{{ cat.meta.courriel_repli }}</a> en précisant
+      la référence du module ou de la mission.
+      {%- else %}
+      The filters and the request form need JavaScript. Without it, email
+      <a href="mailto:{{ cat.meta.courriel_repli }}">{{ cat.meta.courriel_repli }}</a>, quoting the
+      reference of the module or assignment.
+      {%- endif %}
+    </p>
+  </noscript>
+
+  <div class="radar-outils">
+    <div class="radar-filtres" role="group" aria-label="{% if lang == 'fr' %}Filtrer par famille{% else %}Filter by family{% endif %}">
+      <span class="radar-filtres-titre">{% if lang == "fr" %}Famille :{% else %}Family:{% endif %}</span>
+      <button type="button" class="radar-tag is-actif" data-famille="" aria-pressed="true">{% if lang == "fr" %}Tout{% else %}All{% endif %}</button>
+      {%- for f in cat.familles %}
+      <button type="button" class="radar-tag" data-famille="{{ f.id }}" aria-pressed="false">{{ f.titre[lang] }}</button>
+      {%- endfor %}
+    </div>
+  </div>
+
+  <p id="catalogue-compteur" class="radar-compteur" aria-live="polite"></p>
+
+  {%- for f in cat.familles %}
+  <div class="catalogue-famille" data-famille="{{ f.id }}" style="--catalogue-famille:{{ f.couleur }}">
+    <h2 class="catalogue-famille-titre">{{ f.titre[lang] }}</h2>
+
+    {%- assign modules = cat.modules | where: "famille", f.id -%}
+    {%- for m in modules -%}
+      {%- assign op = nil -%}
+      {%- if m.operateur -%}{%- assign op = ops | where: "id", m.operateur | first -%}{%- endif -%}
+      {%- assign ouvert = false -%}
+      {%- if m.statut == "ouvert" and op -%}{%- assign ouvert = true -%}{%- endif -%}
+      {%- assign tarif_adherent = m.tarif_public | times: coef | divided_by: 100 %}
+    <details class="catalogue-module" id="module-{{ m.ref | downcase }}" data-ref="{{ m.ref }}">
+      <summary>
+        <span class="catalogue-ref">{{ m.ref }}</span>
+        <span class="catalogue-module-titre">{{ m.titre[lang] }}</span>
+        <span class="catalogue-module-meta">
+          {% if m.duree_jours < 1 %}½{% else %}{{ m.duree_jours | round }}{% endif %}&nbsp;{% if lang == "fr" %}j{% else %}d{% endif %}
+          · {% include catalogue-tarif.html montant=m.tarif_public lang=lang %}
+        </span>
+      </summary>
+      <div class="catalogue-module-corps">
+        <p>{{ m.resume[lang] }}</p>
+        <p class="catalogue-module-public">
+          <b>{% if lang == "fr" %}Pour qui&nbsp;:{% else %}Who for:{% endif %}</b> {{ m.public[lang] }}
+        </p>
+        {%- if m.lieu %}
+        <p class="catalogue-module-public"><b>{% if lang == "fr" %}Lieu&nbsp;:{% else %}Location:{% endif %}</b> {{ m.lieu }}</p>
+        {%- endif %}
+        {%- if m.materiel %}
+        <p class="catalogue-module-public"><b>{% if lang == "fr" %}Matériel&nbsp;:{% else %}Equipment:{% endif %}</b> {{ m.materiel }}</p>
+        {%- endif %}
+
+        <p class="catalogue-tarif">
+          {%- if lang == "fr" %}
+          Tarif public {% include catalogue-tarif.html montant=m.tarif_public lang=lang %} ·
+          tarif adhérent à partir de {% include catalogue-tarif.html montant=tarif_adherent lang=lang %}
+          {%- else %}
+          Public rate {% include catalogue-tarif.html montant=m.tarif_public lang=lang %} ·
+          member rate from {% include catalogue-tarif.html montant=tarif_adherent lang=lang %}
+          {%- endif %}
+        </p>
+
+        {%- if ouvert %}
+        <p class="catalogue-operateur">
+          {% if lang == "fr" %}Opéré par{% else %}Delivered by{% endif %}
+          {% if op.url != "" and op.url %}<a href="{{ op.url }}"><b>{{ op.nom }}</b></a>{% else %}<b>{{ op.nom }}</b>{% endif %}
+          {%- if op.contact %} — {{ op.contact }}{% endif %}
+          {%- if op.qualiopi %} <span class="catalogue-qualiopi">{% if lang == "fr" %}certifié Qualiopi{% else %}Qualiopi certified{% endif %}</span>{% endif %}
+          {%- if m.partenaires and m.partenaires.size > 0 %}
+          <span class="catalogue-module-appui">
+            {% if lang == "fr" %}Avec{% else %}With{% endif %}
+            {% for pid in m.partenaires %}{% assign partenaire = ops | where: "id", pid | first %}{{ partenaire.nom | default: pid }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+          </span>
+          {%- endif %}
+          {%- if m.secours and m.secours.size > 0 %}
+          <span class="catalogue-module-appui">
+            {% if lang == "fr" %}Autres opérateurs possibles&nbsp;:{% else %}Other possible operators:{% endif %}
+            {% for sid in m.secours %}{% assign secours = ops | where: "id", sid | first %}{{ secours.nom | default: sid }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+          </span>
+          {%- endif %}
+        </p>
+        <button type="button" class="radar-bouton catalogue-bouton js-devis"
+                data-ref="{{ m.ref }}" data-titre="{{ m.titre[lang] | escape }}">
+          {% if lang == "fr" %}Demander un devis{% else %}Request a quote{% endif %}
+        </button>
+        {%- else %}
+        <p class="catalogue-module-ouvert">
+          {%- if lang == "fr" %}
+          Module ouvert : aucun opérateur référencé pour l'instant. Vous êtes adhérent et vous
+          savez l'animer ?
+          {%- else %}
+          Open module: no operator listed yet. Are you a member who could deliver it?
+          {%- endif %}
+        </p>
+        <a class="radar-bouton catalogue-bouton" href="{{ url_proposer }}?module={{ m.ref }}">
+          {% if lang == "fr" %}Me proposer comme opérateur{% else %}Apply as operator{% endif %}
+        </a>
+        {%- endif %}
+      </div>
+    </details>
+    {%- endfor %}
+  </div>
+  {%- endfor %}
+
+  <div class="catalogue-missions">
+    <h2 class="catalogue-famille-titre">{% if lang == "fr" %}Missions de conseil{% else %}Consulting assignments{% endif %}</h2>
+    <p class="catalogue-missions-intro">
+      {%- if lang == "fr" %}
+      Plusieurs opérateurs par mission : la liste complète vous est transmise, vous choisissez.
+      {%- else %}
+      Several operators per assignment: you get the full list and you choose.
+      {%- endif %}
+    </p>
+    <div class="catalogue-table-cadre">
+      <table class="catalogue-table">
+        <thead>
+          <tr>
+            <th scope="col">{% if lang == "fr" %}Réf.{% else %}Ref.{% endif %}</th>
+            <th scope="col">{% if lang == "fr" %}Mission{% else %}Assignment{% endif %}</th>
+            <th scope="col">{% if lang == "fr" %}Livrable{% else %}Deliverable{% endif %}</th>
+            <th scope="col">{% if lang == "fr" %}Volume (jours){% else %}Volume (days){% endif %}</th>
+            <th scope="col">{% if lang == "fr" %}Opérateurs{% else %}Operators{% endif %}</th>
+            <th scope="col"><span class="catalogue-invisible">{% if lang == "fr" %}Action{% else %}Action{% endif %}</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          {%- for p in cat.missions %}
+          <tr id="mission-{{ p.ref | downcase }}">
+            <td class="catalogue-ref">{{ p.ref }}</td>
+            <td><b>{{ p.titre[lang] }}</b></td>
+            <td>{{ p.livrable[lang] }}</td>
+            <td class="catalogue-nowrap">{{ p.volume_jours }}</td>
+            <td>{% for oid in p.operateurs %}{% assign o = ops | where: "id", oid | first %}{{ o.nom | default: oid }}{% unless forloop.last %}, {% endunless %}{% endfor %}</td>
+            <td>
+              <button type="button" class="radar-bouton catalogue-bouton js-devis"
+                      data-ref="{{ p.ref }}" data-titre="{{ p.titre[lang] | escape }}">
+                {% if lang == "fr" %}Être mis en relation{% else %}Get connected{% endif %}
+              </button>
+            </td>
+          </tr>
+          {%- endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="radar-encart mt-6">
+    <h2 class="radar-encart-titre">
+      {% if lang == "fr" %}Vous êtes adhérent et vous voulez figurer au catalogue ?{% else %}Are you a member who wants to be listed?{% endif %}
+    </h2>
+    <p>
+      {%- if lang == "fr" %}
+      Le référencement est gratuit et sans commission : vous contractez et facturez en direct.
+      Les seules conditions sont d'être adhérent, de signer la charte de l'opérateur et de
+      publier votre support sous licence libre.
+      {%- else %}
+      Listing is free and commission-free: you contract and invoice directly. The only
+      conditions are to be a member, to sign the operator charter, and to publish your
+      materials under an open licence.
+      {%- endif %}
+    </p>
+    <a class="radar-bouton catalogue-bouton" href="{{ url_proposer }}">
+      {% if lang == "fr" %}Proposer un module ou une mission{% else %}Propose a module or an assignment{% endif %}
+    </a>
+    <a class="radar-bouton catalogue-bouton" href="{{ cat.meta.adhesion_url }}" target="_blank" rel="noopener">
+      {% if lang == "fr" %}Adhérer d'abord{% else %}Become a member first{% endif %}
+    </a>
+  </div>
+
+  <dialog class="catalogue-dialogue" id="catalogue-devis" aria-labelledby="catalogue-devis-titre">
+    <form method="dialog" class="catalogue-formulaire" id="catalogue-devis-form">
+      <h2 id="catalogue-devis-titre"></h2>
+      <p class="catalogue-aide">
+        {%- if lang == "fr" %}
+        Votre demande part directement à l'opérateur, avec copie à l'association.
+        Réponse sous {{ cat.meta.delai_reponse_jours }} jours ouvrés.
+        {%- else %}
+        Your request goes straight to the operator, copied to the association.
+        Answer within {{ cat.meta.delai_reponse_jours }} working days.
+        {%- endif %}
+      </p>
+
+      <input type="hidden" name="ref" id="catalogue-devis-ref">
+      <input type="hidden" name="lang" value="{{ lang }}">
+      {%- comment %} Champ leurre : rempli, la demande n'est pas envoyée. {% endcomment %}
+      <input type="text" name="site_web" class="catalogue-leurre" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <label>{% if lang == "fr" %}Nom et prénom{% else %}Full name{% endif %}
+        <input type="text" name="nom" required autocomplete="name"></label>
+      <label>{% if lang == "fr" %}Organisation{% else %}Organisation{% endif %}
+        <input type="text" name="organisation" autocomplete="organization"></label>
+      <label>{% if lang == "fr" %}Courriel{% else %}Email{% endif %}
+        <input type="email" name="email" required autocomplete="email"></label>
+      <label>{% if lang == "fr" %}Téléphone{% else %}Phone{% endif %}
+        <input type="tel" name="telephone" autocomplete="tel"></label>
+      <label>{% if lang == "fr" %}Nombre de participants{% else %}Number of participants{% endif %}
+        <input type="number" name="participants" min="1" max="30"></label>
+      <label>{% if lang == "fr" %}Période souhaitée{% else %}Preferred period{% endif %}
+        <input type="text" name="periode" placeholder="{% if lang == 'fr' %}ex. printemps 2027{% else %}e.g. spring 2027{% endif %}"></label>
+      <label>{% if lang == "fr" %}Votre besoin en quelques lignes{% else %}Your need, in a few lines{% endif %}
+        <textarea name="message" rows="4"></textarea></label>
+      <label class="catalogue-case">
+        <input type="checkbox" name="adherent" value="oui">
+        {% if lang == "fr" %}Je suis déjà adhérent d'OSFarm (tarif adhérent){% else %}I am already an OSFarm member (member rate){% endif %}
+      </label>
+      <label class="catalogue-case">
+        <input type="checkbox" name="rgpd" value="oui" required>
+        {% if lang == "fr" %}J'accepte que ces informations soient transmises à l'opérateur.{% else %}I agree that this information is passed on to the operator.{% endif %}
+      </label>
+      <p class="catalogue-aide">
+        {%- if lang == "fr" %}
+        Ces informations servent uniquement à traiter votre demande. Destinataires :
+        l'opérateur choisi et l'association. Conservation : 24 mois. Suppression sur simple
+        demande à <a href="mailto:{{ cat.meta.courriel_repli }}">{{ cat.meta.courriel_repli }}</a>.
+        {%- else %}
+        This information is used only to handle your request. Recipients: the chosen operator
+        and the association. Retention: 24 months. Deletion on request at
+        <a href="mailto:{{ cat.meta.courriel_repli }}">{{ cat.meta.courriel_repli }}</a>.
+        {%- endif %}
+      </p>
+
+      <div class="catalogue-formulaire-actions">
+        <button type="button" class="radar-bouton catalogue-bouton js-fermer">{% if lang == "fr" %}Annuler{% else %}Cancel{% endif %}</button>
+        <button type="submit" class="radar-bouton catalogue-bouton catalogue-bouton--plein">{% if lang == "fr" %}Envoyer la demande{% else %}Send request{% endif %}</button>
+      </div>
+      <p class="catalogue-etat" role="status" aria-live="polite"></p>
+    </form>
+  </dialog>
+
+</section>

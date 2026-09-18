@@ -1,0 +1,218 @@
+{%- comment -%}
+  OSFarm — bloc catalogue formation & conseil
+  Usage :  {% include catalogue.html lang="fr" %}
+  Données : _data/catalogue.yml et _data/operateurs.yml
+{%- endcomment -%}
+
+{% assign lang = include.lang | default: "fr" %}
+{% assign cat = site.data.catalogue %}
+{% assign ops = site.data.operateurs %}
+
+<section class="osf-cat" id="catalogue" data-lang="{{ lang }}">
+
+  <div class="osf-cat__intro">
+    {% if lang == "fr" %}
+      <p class="osf-cat__claim">L'association référence, les adhérents opèrent.</p>
+      <p>OSFarm ne vend ni formation ni prestation et ne prend aucune commission.
+      Le catalogue rassemble ce que ses adhérents savent faire autour des outils communs.
+      Vous choisissez un module, la demande part directement à l'opérateur, qui vous répond
+      sous {{ cat.meta.delai_reponse_jours }} jours ouvrés et contractualise avec vous.
+      Les adhérents bénéficient d'au moins {{ cat.meta.remise_adherent_min }} % de remise.</p>
+    {% else %}
+      <p class="osf-cat__claim">The association lists, its members deliver.</p>
+      <p>OSFarm sells no training and takes no commission. The catalogue gathers what its
+      members can do around the shared tools. Pick a module, your request goes straight to the
+      operator, who answers within {{ cat.meta.delai_reponse_jours }} working days and contracts
+      directly with you. Members get at least {{ cat.meta.remise_adherent_min }}% off.</p>
+    {% endif %}
+  </div>
+
+  <!-- filtres ------------------------------------------------------------ -->
+  <div class="osf-cat__filters" role="group" aria-label="{% if lang == 'fr' %}Filtrer le catalogue{% else %}Filter the catalogue{% endif %}">
+    <button type="button" class="osf-chip is-on" data-famille="*">
+      {% if lang == "fr" %}Tout{% else %}All{% endif %}
+    </button>
+    {% for f in cat.familles %}
+      <button type="button" class="osf-chip" data-famille="{{ f.id }}" style="--osf-fam:{{ f.couleur }}">
+        {{ f.titre[lang] }}
+      </button>
+    {% endfor %}
+  </div>
+
+  <!-- modules ------------------------------------------------------------ -->
+  {% for f in cat.familles %}
+    <div class="osf-fam" data-famille="{{ f.id }}" style="--osf-fam:{{ f.couleur }}">
+      <h3 class="osf-fam__t">{{ f.titre[lang] }}</h3>
+
+      {% assign mods = cat.modules | where: "famille", f.id %}
+      {% for m in mods %}
+        {% assign op = ops | where: "id", m.operateur | first %}
+        {% assign remise = cat.meta.remise_adherent_min %}
+        {% assign coef = 100 | minus: remise %}
+        {% assign tarif_adh = m.tarif_public | times: coef | divided_by: 100 %}
+
+        <details class="osf-mod" id="module-{{ m.ref | downcase }}" data-ref="{{ m.ref }}">
+          <summary>
+            <span class="osf-mod__ref">{{ m.ref }}</span>
+            <span class="osf-mod__t">{{ m.titre[lang] }}</span>
+            <span class="osf-mod__meta">
+              {{ m.duree_jours }}&nbsp;{% if lang == "fr" %}j{% else %}d{% endif %}
+              · {{ m.tarif_public }}&nbsp;€
+            </span>
+          </summary>
+          <div class="osf-mod__body">
+            <p>{{ m.resume[lang] }}</p>
+            <p class="osf-mod__public">{{ m.public[lang] }}</p>
+
+            {% if m.lieu %}<p class="osf-mod__note">{% if lang == "fr" %}Lieu{% else %}Location{% endif %} : {{ m.lieu }}</p>{% endif %}
+            {% if m.materiel %}<p class="osf-mod__note">{{ m.materiel }}</p>{% endif %}
+
+            <p class="osf-mod__price">
+              {% if lang == "fr" %}
+                Tarif public {{ m.tarif_public }} € · tarif adhérent à partir de {{ tarif_adh }} €
+              {% else %}
+                Public rate €{{ m.tarif_public }} · member rate from €{{ tarif_adh }}
+              {% endif %}
+            </p>
+
+            {% if m.statut == "ouvert" and op %}
+              <p class="osf-mod__op">
+                <span>{% if lang == "fr" %}Opéré par{% else %}Delivered by{% endif %}</span>
+                <b>{{ op.nom }}</b>{% if op.contact %} — {{ op.contact }}{% endif %}
+                {% if m.secours and m.secours.size > 0 %}
+                  <span class="osf-mod__backup">
+                    {% if lang == "fr" %}Autres opérateurs{% else %}Other operators{% endif %} :
+                    {% for sid in m.secours %}{% assign so = ops | where: "id", sid | first %}{{ so.nom }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+                  </span>
+                {% endif %}
+              </p>
+              <button type="button" class="osf-btn js-devis"
+                      data-ref="{{ m.ref }}"
+                      data-titre="{{ m.titre[lang] | escape }}">
+                {% if lang == "fr" %}Demander un devis{% else %}Request a quote{% endif %}
+              </button>
+            {% else %}
+              <p class="osf-mod__open">
+                {% if lang == "fr" %}
+                  Module ouvert : aucun opérateur référencé pour l'instant.
+                  Vous êtes adhérent et vous savez l'animer ?
+                {% else %}
+                  Open module: no operator listed yet. Are you a member who could deliver it?
+                {% endif %}
+              </p>
+              <a class="osf-btn osf-btn--ghost" href="{% if lang == 'fr' %}/fr/proposer-un-module/{% else %}/propose-a-module/{% endif %}?module={{ m.ref }}">
+                {% if lang == "fr" %}Me proposer comme opérateur{% else %}Apply as operator{% endif %}
+              </a>
+            {% endif %}
+          </div>
+        </details>
+      {% endfor %}
+    </div>
+  {% endfor %}
+
+  <!-- missions de conseil ------------------------------------------------ -->
+  <div class="osf-miss">
+    <h3 class="osf-fam__t">{% if lang == "fr" %}Missions de conseil{% else %}Consulting assignments{% endif %}</h3>
+    <p>{% if lang == "fr" %}Plusieurs opérateurs par mission. La liste complète vous est transmise, vous choisissez.{% else %}Several operators per assignment. You get the full list and you choose.{% endif %}</p>
+    <table class="osf-table">
+      <thead>
+        <tr>
+          <th>{% if lang == "fr" %}Réf.{% else %}Ref.{% endif %}</th>
+          <th>{% if lang == "fr" %}Mission{% else %}Assignment{% endif %}</th>
+          <th>{% if lang == "fr" %}Livrable{% else %}Deliverable{% endif %}</th>
+          <th>{% if lang == "fr" %}Volume{% else %}Volume{% endif %}</th>
+          <th>{% if lang == "fr" %}Opérateurs{% else %}Operators{% endif %}</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+      {% for p in cat.missions %}
+        <tr id="mission-{{ p.ref | downcase }}">
+          <td>{{ p.ref }}</td>
+          <td><b>{{ p.titre[lang] }}</b></td>
+          <td>{{ p.livrable[lang] }}</td>
+          <td class="osf-nowrap">{{ p.volume_jours }}</td>
+          <td>{% for oid in p.operateurs %}{% assign o = ops | where: "id", oid | first %}{{ o.nom }}{% unless forloop.last %}, {% endunless %}{% endfor %}</td>
+          <td>
+            <button type="button" class="osf-btn osf-btn--sm js-devis"
+                    data-ref="{{ p.ref }}" data-titre="{{ p.titre[lang] | escape }}">
+              {% if lang == "fr" %}Être mis en relation{% else %}Get connected{% endif %}
+            </button>
+          </td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <!-- appel à opérateurs -------------------------------------------------- -->
+  <div class="osf-cta">
+    <h3>{% if lang == "fr" %}Vous êtes adhérent et vous voulez figurer au catalogue ?{% else %}Are you a member who wants to be listed?{% endif %}</h3>
+    <p>
+      {% if lang == "fr" %}
+        Le référencement est gratuit et sans commission. La seule condition est d'être adhérent,
+        de signer la charte et de publier votre support sous licence libre.
+      {% else %}
+        Listing is free and commission-free. The only conditions: be a member, sign the charter,
+        and publish your materials under an open licence.
+      {% endif %}
+    </p>
+    <a class="osf-btn" href="{% if lang == 'fr' %}/fr/proposer-un-module/{% else %}/propose-a-module/{% endif %}">
+      {% if lang == "fr" %}Proposer un module ou une mission{% else %}Propose a module or an assignment{% endif %}
+    </a>
+    <a class="osf-btn osf-btn--ghost" href="https://www.helloasso.com/associations/osfarm">
+      {% if lang == "fr" %}Adhérer d'abord{% else %}Become a member first{% endif %}
+    </a>
+  </div>
+
+  <!-- formulaire de demande (dialogue) ------------------------------------ -->
+  <dialog class="osf-dlg" id="osf-devis">
+    <form method="dialog" class="osf-dlg__form" id="osf-devis-form">
+      <h3 id="osf-devis-title"></h3>
+      <p class="osf-dlg__hint">
+        {% if lang == "fr" %}
+          Votre demande part directement à l'opérateur, avec copie à l'association.
+          Réponse sous {{ cat.meta.delai_reponse_jours }} jours ouvrés.
+        {% else %}
+          Your request goes straight to the operator, copied to the association.
+          Answer within {{ cat.meta.delai_reponse_jours }} working days.
+        {% endif %}
+      </p>
+
+      <input type="hidden" name="ref" id="osf-devis-ref">
+      <input type="hidden" name="lang" value="{{ lang }}">
+      <!-- anti-spam : champ leurre, doit rester vide -->
+      <input type="text" name="site_web" class="osf-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <label>{% if lang == "fr" %}Nom et prénom{% else %}Full name{% endif %}
+        <input type="text" name="nom" required autocomplete="name"></label>
+      <label>{% if lang == "fr" %}Organisation{% else %}Organisation{% endif %}
+        <input type="text" name="organisation" autocomplete="organization"></label>
+      <label>{% if lang == "fr" %}Courriel{% else %}Email{% endif %}
+        <input type="email" name="email" required autocomplete="email"></label>
+      <label>{% if lang == "fr" %}Téléphone{% else %}Phone{% endif %}
+        <input type="tel" name="telephone" autocomplete="tel"></label>
+      <label>{% if lang == "fr" %}Nombre de participants{% else %}Number of participants{% endif %}
+        <input type="number" name="participants" min="1" max="30"></label>
+      <label>{% if lang == "fr" %}Période souhaitée{% else %}Preferred period{% endif %}
+        <input type="text" name="periode" placeholder="{% if lang == 'fr' %}ex. printemps 2027{% else %}e.g. spring 2027{% endif %}"></label>
+      <label>{% if lang == "fr" %}Votre besoin en quelques lignes{% else %}Your need, in a few lines{% endif %}
+        <textarea name="message" rows="4"></textarea></label>
+      <label class="osf-check">
+        <input type="checkbox" name="adherent" value="oui">
+        {% if lang == "fr" %}Je suis déjà adhérent d'OSFarm (tarif adhérent){% else %}I am already an OSFarm member (member rate){% endif %}
+      </label>
+      <label class="osf-check">
+        <input type="checkbox" name="rgpd" value="oui" required>
+        {% if lang == "fr" %}J'accepte que ces informations soient transmises à l'opérateur et conservées 24 mois.{% else %}I agree that this information is passed to the operator and kept for 24 months.{% endif %}
+      </label>
+
+      <div class="osf-dlg__actions">
+        <button type="button" class="osf-btn osf-btn--ghost js-close">{% if lang == "fr" %}Annuler{% else %}Cancel{% endif %}</button>
+        <button type="submit" class="osf-btn">{% if lang == "fr" %}Envoyer la demande{% else %}Send request{% endif %}</button>
+      </div>
+      <p class="osf-dlg__status" role="status" aria-live="polite"></p>
+    </form>
+  </dialog>
+
+</section>

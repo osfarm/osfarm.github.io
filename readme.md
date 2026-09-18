@@ -26,7 +26,7 @@ If you see an error or a place where content should be updated or improved, just
 
 #### Add Organization
 
-If you know of an organization, people or project that should be added to the community list that generates the matrix of avatars on the [Community](https://osfarm.org/community/) page: fork this repository, open the [_data/projects.yml](_data/projects.yml), file and add it to the appropriate section of the list in the format being used. Commit your change and submit a pull request to us!
+If you know of an organization, people or project that should be added to the community list that generates the matrix of avatars on the [Community](https://osfarm.org/community/) page: fork this repository, open [_data/radar/communaute.yml](_data/radar/communaute.yml) and add an entry in the format described at the top of the file. Commit your change and submit a pull request to us!
 
 ---
 

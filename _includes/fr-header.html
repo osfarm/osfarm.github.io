@@ -13,25 +13,32 @@
 </head>
 <body{% if page.id %} id="{{ page.id }}"{% endif %} class="{{ page.layout }}">
 
-  <div class="page-header pt-4 pb-5">
-    <nav class="language-switcher">
-      <a href="{{ site.baseurl }}/" class="text-white">EN</a>
-    </nav>
-    <div class="container-lg">
+  <div class="page-header pt-4">
+    <div class="container-xl p-responsive">
       <div class="text-center">
         <div class="logo-stage">
           <a href="{{ "/fr/" | relative_url}}" class="logo-link"><img class="logo" src="{{ "/assets/img/logo_white.png" | relative_url}}" alt="OSFarm"></a>
         </div>
         {% include orbit-data.html %}
         <script type="module" src="{{ "/assets/js/header-banner.js" | relative_url }}"></script>
-        <ul>
-          <li class="text-center d-block d-sm-inline-block px-1 px-md-3"><a href="{{ "/fr/why" | relative_url}}" class="text-white">Pourquoi</a></li>
-          <li class="text-center d-block d-sm-inline-block px-1 px-md-3"><a href="{{ "/fr/community/" | relative_url}}" class="text-white">Solutions</a></li>
-          <li class="text-center d-block d-sm-inline-block px-1 px-md-3"><a href="{{ "/fr/communs/" | relative_url}}" class="text-white">Communs</a></li>
-          <li class="text-center d-block d-sm-inline-block px-1 px-md-3"><a href="{{ "/fr/actualites/" | relative_url}}" class="text-white">Actualités</a></li>
-          <li class="text-center d-block d-sm-inline-block px-1 px-md-3"><a href="{{ "/fr/#contact-a-human" | relative_url}}" class="text-white">Contactez nous</a></li>
-          <li class="text-center d-block d-sm-inline-block px-1 px-md-3"><a href="https://www.helloasso.com/associations/osfarm/adhesions/adhesion-osfarm-2024" target="_blank" class="text-white">Adhésion</a></li>
-        </ul>
       </div>
     </div>
+
+    <nav class="site-nav" aria-label="Navigation principale">
+      <div class="site-nav-inner container-xl p-responsive">
+        <ul class="site-nav-links">
+          <li><a href="{{ "/fr/why/" | relative_url}}"{% if page.url == "/fr/why/" %} aria-current="page"{% endif %}>Pourquoi</a></li>
+          <li><a href="{{ "/fr/communs/" | relative_url}}"{% if page.url == "/fr/communs/" %} aria-current="page"{% endif %}>Communs</a></li>
+          <li><a href="{{ "/fr/actualites/" | relative_url}}"{% if page.url == "/fr/actualites/" %} aria-current="page"{% endif %}>Actualités</a></li>
+          <li><a href="{{ "/fr/catalogue/" | relative_url}}"{% if page.url == "/fr/catalogue/" %} aria-current="page"{% endif %}>Formation</a></li>
+          <li><a href="{{ "/fr/#contact-a-human" | relative_url}}">Contact</a></li>
+        </ul>
+        <div class="site-nav-actions">
+          <p class="site-nav-lang" aria-label="Langue du site">
+            <span aria-current="true">FR</span><a href="{{ site.baseurl }}/" lang="en" hreflang="en">EN</a>
+          </p>
+          <a class="site-join" href="https://www.helloasso.com/associations/osfarm/adhesions/adhesion-osfarm-2024" target="_blank" rel="noopener">Adhérer</a>
+        </div>
+      </div>
+    </nav>
     <!-- .full-width here gets closed on support-page.html and home.html layouts -->

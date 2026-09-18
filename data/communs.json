@@ -6,15 +6,18 @@ sitemap: false
 {%- include radar-fiches.html -%}
 [
 {%- for f in radar_fiches %}
+  {%- assign mots = f.mots_cles_fr | default: f.mots_cles -%}
+  {%- unless mots %}{% assign mots = "" | split: "" %}{% endunless %}
   {
     "id": {{ f.id | jsonify }},
     "titre": {{ f.titre | jsonify }},
     "url": {{ f.url | jsonify }},
     "famille": {{ f.famille | jsonify }},
-    "licence": {{ f.licence | jsonify }},
-    "resume": {{ f.resume | default: f.description | jsonify }},
+    "categorie": {{ f.categorie | default: "" | jsonify }},
+    "licence": {{ f.licence | default: "" | jsonify }},
+    "resume": {{ f.resume | default: f.description | default: "" | jsonify }},
     "interet": {{ f.interet | default: "" | jsonify }},
-    "mots_cles": {{ f.mots_cles_fr | default: f.mots_cles | jsonify }},
+    "mots_cles": {{ mots | jsonify }},
     "techno": {{ f.techno | default: "" | jsonify }},
     "derniere_activite": {{ f.date_maj | jsonify }},
     "ajoute_le": {{ f.propose_le | jsonify }},

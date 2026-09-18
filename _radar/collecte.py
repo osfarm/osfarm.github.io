@@ -48,6 +48,8 @@ RACINE = Path(__file__).resolve().parent.parent
 FICHIER_SOURCES = RACINE / "_radar" / "sources.yml"
 FICHIER_MEMOIRE = RACINE / "_radar" / "memoire.json"
 DOSSIER_LOTS = RACINE / "_data" / "radar"
+# Projets choisis par la communauté, tenus à la main à côté des lots du radar.
+FICHIER_COMMUNAUTE = DOSSIER_LOTS / "communaute.yml"
 DOSSIER_BROUILLON = RACINE / "_radar" / "brouillon"
 
 DELAI_REQUETE = 20  # secondes
@@ -572,10 +574,18 @@ def ecrire_lot(fichier: Path, contenu: dict) -> None:
         encoding="utf-8")
 
 
+def fichiers_lots() -> list[Path]:
+    """Lots datés du radar, sans le fichier des projets de la communauté."""
+    return sorted(f for f in DOSSIER_LOTS.glob("*.yml") if f != FICHIER_COMMUNAUTE)
+
+
 def urls_du_site() -> set[str]:
-    """Liens déjà présents dans les fichiers _data/*.yml tenus à la main."""
+    """Liens déjà présents dans les fichiers tenus à la main : _data/*.yml et
+    les projets de la communauté (url, depot, demo)."""
     urls = set()
-    for fichier in (RACINE / "_data").glob("*.yml"):
+    for fichier in [*(RACINE / "_data").glob("*.yml"), FICHIER_COMMUNAUTE]:
+        if not fichier.exists():
+            continue
         for url in re.findall(r"https?://[^\s\"'<>]+", fichier.read_text(encoding="utf-8")):
             urls.add(url.lower().rstrip("/").removesuffix(".git"))
     return urls

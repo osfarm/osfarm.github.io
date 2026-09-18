@@ -8,6 +8,11 @@
       {%- if group.items %}
         {%- assign names = group.items %}
         {%- assign curated = true %}
+      {%- elsif group.fichier %}
+        {%- assign champ = group.champ | default: "name" %}
+        {%- assign fiches = site.data[group.source][group.fichier].candidats | where: "publier", true %}
+        {%- assign names = fiches | map: champ %}
+        {%- assign curated = false %}
       {%- elsif group.category %}
         {%- assign names = site.data[group.source][group.category] | map: "name" %}
         {%- assign curated = false %}

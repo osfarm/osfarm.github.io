@@ -1,0 +1,67 @@
+{%- comment -%}
+  Une carte de l'annuaire des communs (/fr/communs/), pour une fiche du radar
+  comme pour un projet de la communauté. Paramètres : id, famille, nom, auteur, url,
+  logo, licence, techno, date, resume, interet, mots (tableau), demo, depot.
+{%- endcomment -%}
+{%- assign etiquette = include.famille -%}
+{%- case include.famille -%}
+  {%- when "logiciel" %}{% assign etiquette = "Logiciel" -%}
+  {%- when "materiel" %}{% assign etiquette = "Matériel" -%}
+  {%- when "donnees" %}{% assign etiquette = "Données" -%}
+  {%- when "modele" %}{% assign etiquette = "Modèle" -%}
+{%- endcase -%}
+{%- assign mots_carte = include.mots | slice: 0, 5 -%}
+{%- capture index_carte -%}{{ include.nom }} {{ include.auteur }} {{ include.resume }} {{ mots_carte | join: " " }}{%- endcapture %}
+<article class="radar-carte" id="{{ include.id }}"
+         data-famille="{{ include.famille }}"
+         data-nom="{{ include.nom | downcase | escape }}"
+         data-mots="{{ mots_carte | join: '|' | downcase | escape }}"
+         data-index="{{ index_carte | strip_newlines | downcase | escape }}">
+  <div class="radar-carte-tete">
+    <div class="radar-vignette radar-vignette--{{ include.famille }}{% if include.logo %} radar-vignette--logo{% endif %}" title="{{ etiquette }}">
+      {%- if include.logo %}
+      <img src="{{ include.logo | relative_url }}" alt="" loading="lazy">
+      {%- else %}
+      {% include radar-icone.html nom=include.famille %}
+      {%- endif %}
+    </div>
+    <div class="radar-carte-titre">
+      <h2><a href="{{ include.url }}" target="_blank" rel="noopener">{{ include.nom }}</a></h2>
+      {% if include.auteur and include.auteur != "" %}<p class="radar-auteur">{{ include.auteur }}</p>{% endif %}
+      <p class="radar-meta">
+        <span class="radar-famille">{{ etiquette }}</span>
+        {%- if include.techno and include.techno != "" %}<span>{{ include.techno }}</span>{% endif -%}
+        {%- if include.date %}<span>ajouté le {{ include.date | date: "%d/%m/%Y" }}</span>{% endif %}
+      </p>
+    </div>
+  </div>
+
+  <div class="radar-carte-corps">
+    {% if include.resume and include.resume != "" %}<p>{{ include.resume }}</p>{% endif %}
+    {% if include.interet and include.interet != "" %}<p class="radar-interet">{{ include.interet }}</p>{% endif %}
+  </div>
+
+  <div class="radar-carte-pied">
+    {% if mots_carte.size > 0 %}
+    <div class="radar-mots">
+      {% for m in mots_carte %}<button type="button" class="radar-mot" data-mot="{{ m | downcase | escape }}">{{ m }}</button>{% endfor %}
+    </div>
+    {% endif %}
+    <div class="radar-carte-bas">
+      <div class="radar-sources">
+        {%- if include.depot and include.depot != "" -%}
+          {%- assign hote_depot = include.depot | split: "/" -%}
+          {%- assign libelle_depot = include.depot | remove_first: "https://" | remove_first: "http://" | remove_first: "github.com/" -%}
+          <a class="radar-depot" href="{{ include.depot }}" target="_blank" rel="noopener" title="Dépôt de code : {{ include.depot }}">
+            {%- if hote_depot[2] == "github.com" %}{% octicon mark-github height:14 class:"radar-octicon" aria-hidden:true %}{% else %}{% octicon repo height:14 class:"radar-octicon" aria-hidden:true %}{% endif -%}
+            <span>{{ libelle_depot | truncate: 36 }}</span>
+          </a>
+        {%- endif -%}
+        {%- if include.licence and include.licence != "" %}
+          <span class="radar-licence" title="Licence">{% octicon law height:14 class:"radar-octicon" aria-hidden:true %}<code>{{ include.licence }}</code></span>
+        {%- endif %}
+      </div>
+      {% if include.demo %}<a class="radar-bouton" href="{{ include.demo }}" target="_blank" rel="noopener">Démo</a>{% endif %}
+    </div>
+  </div>
+</article>

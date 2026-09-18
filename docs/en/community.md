@@ -11,7 +11,14 @@ lang: en
   </div>
 </div>
 
-{% include project-table.html orgs=site.data.projects id="projects" name="Projects" %}
+<p class="text-gray">
+  Need help with these tools? The <a href="{{ "/catalogue/" | relative_url }}">training and
+  consulting catalogue</a> gathers what OSFarm members can deliver around them — free to list,
+  and commission-free.
+</p>
+
+{% assign groupes = site.data.radar.communaute.candidats | where: "publier", true | group_by: "category" %}
+{% include project-table.html groupes=groupes id="projects" name="Projects" %}
 
 <div id="add-org" class="border-top pt-4 pt-md-6">
   <div class="clearfix gutter-spacious">
@@ -22,14 +29,14 @@ lang: en
         <li class="mb-2">Navigate to the appropriate project list:
           <ul class="ml-3">
             <li>
-              <a href="https://github.com/osfarm/osfarm.github.io/blob/main/_data/projects.yml">
-                _data/projects.yml
-              </a>, for open source projects
+              <a href="https://github.com/osfarm/osfarm.github.io/blob/main/_data/radar/communaute.yml">
+                _data/radar/communaute.yml
+              </a>, for open source projects (the file header describes each field)
             </li>
           </ul>
         </li>
         <li class="mb-2">Click the edit (pencil) icon in the top right corner.</li>
-        <li class="mb-2">Add your project to the list in the appropriate section</li>
+        <li class="mb-2">Add an entry for your project, with its English <code>category</code></li>
         <li class="mb-2">Click "propose file change" at the bottom of the page</li>
         <li class="mb-2">Click "create pull request"</li>
         <li class="mb-2">Provide a brief description of what you're proposing</li>

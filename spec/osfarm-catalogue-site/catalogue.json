@@ -1,0 +1,16 @@
+---
+layout: null
+permalink: /catalogue.json
+---
+{% comment %}
+  Flux JSON du catalogue, consommé par n8n pour router les demandes.
+  Déposer ce fichier à la racine du dépôt sous le nom "catalogue.json"
+  (Jekyll le traite comme une page et écrit /catalogue.json au build).
+{% endcomment %}
+{
+  "genere_le": "{{ site.time | date_to_xmlschema }}",
+  "meta": {{ site.data.catalogue.meta | jsonify }},
+  "operateurs": {{ site.data.operateurs | jsonify }},
+  "modules": {{ site.data.catalogue.modules | jsonify }},
+  "missions": {{ site.data.catalogue.missions | jsonify }}
+}
