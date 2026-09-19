@@ -125,14 +125,22 @@
   email: "projet-gaia@osfarm.org"
   stack: "HugginFace, Llama, Mistral, Gradio, Python, Docker"
   teams:
-  - name: Laurent - Bziiit
-    role: Front / API
-    img: "/assets/img/teams/laurent.jpeg"
-    url: "https://www.linkedin.com/in/laurenttripied"
+  - name: Herve
+    role: Co-createur / animateur
+    img: "/assets/img/teams/herve.jpeg"
+    url: "https://fr.linkedin.com/in/herv%C3%A9-pillaud-0186193b"
   - name: David - Ekylibre
-    role: Data / API
+    role: Co-createur / animateur
     img: "/assets/img/teams/david.jpg"
     url: "https://www.linkedin.com/in/david-joulin-9b629790"
+  - name: Laurent - Bziiit
+    role: coach
+    img: "/assets/img/teams/laurent.jpeg"
+    url: "https://www.linkedin.com/in/laurenttripied"
+  - name: Olivier - Brad
+    role: coach
+    img: "/assets/img/teams/olivier.jpeg"
+    url: "https://www.linkedin.com/in/crapougnax"
   companies:
   - name: "Bziiit"
     logo: "/assets/img/projects/bziiit.png"
