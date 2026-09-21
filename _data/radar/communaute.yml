@@ -293,6 +293,20 @@ candidats:
   propose_le: '2024-06-01'
   source: communaute-osfarm
   publier: true
+- id: projet-opensourceagriculture
+  titre: OpenSourceAgriculture
+  url: https://github.com/geezacoleman/OpenSourceAgriculture
+  github_org: geezacoleman
+  famille: donnees
+  categorie: Données ouvertes et interopérabilité
+  category: Data Standardization, Open Data, Interoperability and APIs
+  licence: mit license
+  description: Collating all open-source datasets, software tools and deployment platforms related to open-source agriculture.
+  resume: Un repo Github avec plein de sous repos data et logiciels
+  date_maj: '2026-06-05'
+  propose_le: '2026-09-21'
+  source: proposition-site
+  publier: true
 - id: projet-super-green-os
   titre: Super green os
   url: https://www.supergreenlab.com/app
