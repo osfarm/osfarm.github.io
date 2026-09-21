@@ -168,6 +168,26 @@ candidats:
   propose_le: '2024-06-01'
   source: communaute-osfarm
   publier: true
+- id: projet-birdnet-go
+  titre: Birdnet-Go
+  url: https://github.com/tphakala/birdnet-go
+  github_org: tphakala
+  famille: logiciel
+  categorie: Capteurs et supervision
+  category: IoT, Sensors for tracking, isobus and supervising
+  techno: Go
+  description: Self-hosted realtime soundscape analyser for birds, bats and other wildlife. Multi-model local AI inference, runs 24/7 on a Raspberry Pi.
+  resume: Birdnet-Go encapsule le moteur birdnet et le fait tourner en continue sur des caméras de surveillance connectées pour faire de l'identification et de la quantification continue des oiseaux
+  mots_cles_fr:
+  - artificial-intelligence
+  - audio
+  - bats
+  - bioacoustics
+  - birdnet
+  date_maj: '2026-09-20'
+  propose_le: '2026-09-21'
+  source: proposition-site
+  publier: true
 - id: projet-ecoterrabot
   titre: Ecoterrabot
   url: https://ecoterrabot.com/
