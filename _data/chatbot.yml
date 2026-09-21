@@ -1,0 +1,68 @@
+# ---------------------------------------------------------------------------
+# OSFarm — Bulle d'assistance (/fr/communs/, /community/ et toutes les pages)
+#
+# Source unique de vérité pour le formulaire de chat : assets/js/chatbot.js ne
+# code aucune adresse ni aucun texte en dur, tout arrive par attributs data-.
+# Déplacer le webhook ici suffit.
+#
+# Le SOCLE, lui, n'est pas ici : il est généré par Jekyll dans data/socle.txt et
+# lu directement par n8n. Ce fichier ne porte que ce que le visiteur voit.
+#
+# Les PLAFONDS (requêtes par heure, par jour, par mois) ne sont pas ici non
+# plus : ce sont des réglages d'exploitation, ils vivent dans le workflow n8n
+# « Chatbot de l'annuaire ». Même séparation que pour le catalogue : l'éditorial
+# au site, l'opérationnel à n8n.
+# ---------------------------------------------------------------------------
+
+meta:
+  # Vide = la bulle ne s'affiche pas. C'est l'interrupteur : aucun déploiement
+  # n'est nécessaire pour éteindre l'assistant, il suffit de vider cette ligne.
+  webhook: "https://automation.osfarm.org/webhook/annuaire-chat"
+  courriel_repli: "contact@osfarm.org"
+  # Nombre d'échanges renvoyés au modèle pour garder le fil. Le navigateur seul
+  # tient la conversation : rien n'est conservé côté serveur.
+  tours_memorises: 3
+  longueur_max: 500
+
+# Textes vus par le visiteur, dans les deux langues servies par le site.
+textes:
+  fr:
+    bouton: "Poser une question"
+    titre: "Assistant de l'annuaire"
+    intro: "Je réponds à partir du contenu de ce site : l'annuaire des communs, le catalogue et les pages de l'association. Je cite toujours mes sources."
+    exemples:
+      - "Quel logiciel libre pour gérer mon exploitation ?"
+      - "Quelles formations sur les données ouvertes ?"
+      - "Comment adhérer à OSFarm ?"
+    champ: "Votre question"
+    envoyer: "Envoyer"
+    fermer: "Fermer"
+    envoi: "Recherche en cours…"
+    sources: "Sources"
+    repos: "L'assistant est au repos pour aujourd'hui. La recherche de l'annuaire reste ouverte, et vous pouvez nous écrire."
+    abus: "Trop de questions depuis cette connexion. Réessayez dans une heure."
+    secours: "Réponse établie en mode dégradé : vérifiez-la sur les fiches citées."
+    echec: "L'assistant n'est pas joignable. Utilisez la recherche de l'annuaire, ou écrivez-nous à %m."
+    lien_annuaire: "Rechercher dans l'annuaire"
+    lien_contact: "Nous écrire"
+    avertissement: "Réponses générées automatiquement à partir du site. En cas de doute, la fiche du projet fait foi."
+  en:
+    bouton: "Ask a question"
+    titre: "Directory assistant"
+    intro: "I answer from this site's own content: the directory of commons, the catalogue and the association pages. I always cite my sources."
+    exemples:
+      - "Which open source software can manage my farm?"
+      - "What training is available on open data?"
+      - "How do I join OSFarm?"
+    champ: "Your question"
+    envoyer: "Send"
+    fermer: "Close"
+    envoi: "Searching…"
+    sources: "Sources"
+    repos: "The assistant is resting for today. The directory search is still open, and you can write to us."
+    abus: "Too many questions from this connection. Please try again in an hour."
+    secours: "Answer produced in degraded mode: please check it against the entries cited."
+    echec: "The assistant is unreachable. Use the directory search, or email us at %m."
+    lien_annuaire: "Search the directory"
+    lien_contact: "Contact us"
+    avertissement: "Answers are generated automatically from this site. When in doubt, the project entry prevails."

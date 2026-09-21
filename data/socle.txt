@@ -1,0 +1,177 @@
+---
+layout: null
+permalink: /data/socle.txt
+sitemap: false
+---
+{%- comment -%}
+  Socle de connaissance du chatbot de l'annuaire (/data/socle.txt).
+
+  C'est le SEUL contenu que le chatbot a le droit d'utiliser. Il est public et
+  versionné : « ce que le chatbot peut dire » se relit dans un fichier et se
+  corrige par une pull request.
+
+  Régénéré par Jekyll à chaque fusion, comme /data/communs.json : aucune
+  réindexation à lancer, aucune base à tenir. Une fiche fusionnée est connue du
+  chatbot au build suivant, soit environ une minute.
+
+  L'ORDRE DES SECTIONS N'EST PAS COSMÉTIQUE. Le préfixe est stable et placé en
+  tête pour que la mise en cache de prompt (prompt_cache_key, côté n8n) porte
+  sur lui ; la question de l'usager est ajoutée à la fin, par le workflow.
+
+  Extension .txt et non .md : un fichier .md à front matter serait converti en
+  HTML par kramdown. Ici Liquid s'exécute, le texte sort tel quel.
+{%- endcomment -%}
+{%- include radar-fiches.html -%}
+{%- assign cat = site.data.catalogue -%}
+{%- assign asso = site.data.association -%}
+{%- assign ops = site.data.operateurs -%}
+# SOCLE DE CONNAISSANCE — OSFarm
+# Généré le {{ site.time | date: "%Y-%m-%d" }} depuis www.osfarm.org. Version faisant foi.
+
+## CONSIGNE
+
+Tu es l'assistant du site d'OSFarm. Tu réponds aux visiteurs à partir de ce
+document, et de rien d'autre.
+
+Règles, sans exception :
+1. N'affirme que ce qui est écrit ci-dessous. Tu n'as aucune autre source.
+2. Cite toujours le nom et l'URL des fiches ou des pages sur lesquelles tu
+   t'appuies. Une réponse sans source est une réponse à refaire.
+3. Ne qualifie jamais un projet au-delà de sa fiche : pas de popularité, pas de
+   public visé, pas de pays, pas de maturité, pas d'usage qui n'y figure pas.
+   Si la fiche ne dit pas à qui un outil s'adresse, ne l'invente pas.
+4. Si la réponse n'est pas dans ce document, dis-le franchement et renvoie vers
+   {{ site.url }}/fr/contact/. Ne devine pas, ne comble pas, ne suppose pas.
+5. Réponds dans la langue de la question. Le français et l'anglais sont tous
+   deux servis par ce site.
+6. Sois bref : trois à six phrases, puis les liens. L'usager lira les fiches.
+7. Tu n'inscris personne, ne prends aucune commande, n'engage l'association en
+   rien. Tu orientes vers les formulaires du site.
+8. OSFarm référence des communs ; elle ne vend pas de logiciel et ne prend
+   aucune commission. Ne laisse jamais croire le contraire.
+
+## L'ASSOCIATION
+
+{{ asso.nom }} — {{ asso.forme | downcase }}. Siège : {{ asso.siege }}.
+Contact : {{ asso.courriel }} — {{ site.url }}/fr/contact/
+Le site est open source : https://github.com/osfarm/osfarm.github.io
+
+Objet : rassembler et faire connaître les communs numériques de l'agriculture
+— logiciels, matériels, données et modèles publiés sous licence ouverte —, et
+mettre en relation ceux qui les font avec ceux qui s'en servent.
+
+Ce qu'OSFarm fait : tenir l'annuaire des communs, tenir un catalogue de
+formations et de missions opérées par ses adhérents, animer la communauté.
+Ce qu'OSFarm ne fait pas : vendre des logiciels, prendre une commission sur les
+prestations de ses adhérents, être partie aux contrats, garantir les
+prestations.
+
+Adhésion : {{ cat.meta.adhesion_url }}
+L'adhésion est la seule condition pour opérer un module du catalogue et donne
+droit à une remise d'au moins {{ cat.meta.remise_adherent_min }} % sur les
+tarifs publics.
+
+Bureau :
+{%- for m in site.data.bureau %}
+- {{ m.nom }}, {{ m.fonction | downcase }}
+{%- endfor %}
+
+Pages utiles :
+- Annuaire des communs : {{ site.url }}/fr/communs/ (EN : {{ site.url }}/community/)
+- Catalogue formation et conseil : {{ site.url }}/fr/catalogue/ (EN : {{ site.url }}/catalogue/)
+- Proposer un module : {{ site.url }}/fr/proposer-un-module/
+- Actualités du radar : {{ site.url }}/fr/actualites/
+- Contact et mentions légales : {{ site.url }}/fr/contact/
+- Données ouvertes de l'annuaire : {{ site.url }}/data/communs.json et /data/communs.csv
+
+## CATALOGUE FORMATION ET CONSEIL
+
+Modèle : l'association référence, les adhérents opèrent. Service gratuit,
+aucune commission, l'association n'est ni partie au contrat ni garante.
+Un module ne propose un devis que s'il a un opérateur ; sinon il appelle un
+opérateur via {{ site.url }}/fr/proposer-un-module/.
+Engagement de réponse de l'opérateur : {{ cat.meta.delai_reponse_jours }} jours ouvrés.
+Remise adhérent : au moins {{ cat.meta.remise_adherent_min }} %.
+
+Familles :
+{%- for f in cat.familles %}
+- {{ f.id }} — {{ f.titre.fr }} / {{ f.titre.en }}
+{%- endfor %}
+
+Modules ({{ cat.modules | size }}) — référence, famille, durée, tarif public, statut, opérateur :
+{%- for m in cat.modules %}
+{%- assign op = ops | where: "id", m.operateur | first %}
+- {{ m.ref }} ({{ m.famille }}) {{ m.titre.fr }} / {{ m.titre.en }} | {{ m.duree_jours }} j | {{ m.tarif_public }} € public | {% if m.statut == "ouvert" and m.operateur %}opéré par {{ op.nom | default: m.operateur }}{% else %}opérateur à pourvoir{% endif %}{% if m.outils.size > 0 %} | outils : {{ m.outils | join: ", " }}{% endif %}
+  {{ m.resume.fr | strip_newlines }}
+  Public : {{ m.public.fr | strip_newlines }}
+  Fiche : {{ site.url }}/fr/catalogue/#module-{{ m.ref | downcase }}
+{%- endfor %}
+
+Missions de conseil ({{ cat.missions | size }}) :
+{%- for p in cat.missions %}
+- {{ p.ref }} {{ p.titre.fr }} / {{ p.titre.en }} | {{ p.volume_jours }} jours | opérateurs possibles : {{ p.operateurs | join: ", " }}
+  Livrable : {{ p.livrable.fr | strip_newlines }}
+{%- endfor %}
+
+{%- comment -%}
+  Les partenaires cités sur les fiches ne sont pas des opérateurs. Et une même
+  structure peut avoir deux entrées (deux identifiants, un seul nom) : on ne la
+  cite qu'une fois, le chatbot n'a que faire des identifiants internes.
+{%- endcomment -%}
+Opérateurs référencés :
+{%- assign vus = "|" -%}
+{%- for o in ops -%}
+{%- assign cle = "|" | append: o.nom | append: "|" -%}
+{%- unless o.role == "partenaire" or vus contains cle %}
+- {{ o.nom }}{% if o.domaines.size > 0 %} — domaines : {{ o.domaines | join: ", " }}{% endif %}{% if o.qualiopi %} — certifié Qualiopi{% endif %}
+{%- assign vus = vus | append: o.nom | append: "|" -%}
+{%- endunless -%}
+{%- endfor %}
+
+## ANNUAIRE DES COMMUNS ({{ radar_fiches | size }} projets)
+
+Chaque ligne est une fiche. Format :
+Nom | famille | catégorie | licence | technologie | dernière activité
+  résumé
+  URL
+
+Les familles sont : logiciel, materiel, donnees, modele.
+Les fiches viennent soit de la communauté, soit du radar quotidien qui repère
+les projets sous licence ouverte. Toutes ont été relues par un humain avant
+publication. L'annuaire complet est aussi à {{ site.url }}/data/communs.json
+
+{% for f in radar_fiches -%}
+{%- assign resume = f.resume | default: f.description | strip_newlines -%}
+{%- comment -%}
+  Un champ absent et un champ vide doivent produire le même résultat : rien,
+  pas un séparateur orphelin. « if f.techno » ne suffit pas — en Liquid une
+  chaîne vide est vraie — et le littéral « blank » n'est pas reconnu par cette
+  version, il y passerait pour une variable indéfinie. Le filtre strip, lui,
+  ramène nil comme "" à une chaîne vide, qui se teste sans ambiguïté.
+{%- endcomment -%}
+{%- assign f_cat = f.categorie | strip -%}
+{%- assign f_lic = f.licence | strip -%}
+{%- assign f_tec = f.techno | strip -%}
+{%- assign f_maj = f.date_maj | strip -%}
+{{ f.titre }} | {{ f.famille }}{% if f_cat != "" %} | {{ f_cat }}{% endif %}{% if f_lic != "" %} | {{ f_lic }}{% endif %}{% if f_tec != "" %} | {{ f_tec }}{% endif %}{% if f_maj != "" %} | actif au {{ f_maj }}{% endif %}
+  {{ resume | truncate: 240 }}
+  {{ f.url }}
+{% endfor %}
+
+## OÙ ORIENTER L'USAGER
+
+- Chercher ou filtrer soi-même dans l'annuaire : {{ site.url }}/fr/communs/
+- Proposer un projet pour l'annuaire : le formulaire en bas de {{ site.url }}/fr/communs/
+- Demander un devis pour une formation : la fiche du module sur {{ site.url }}/fr/catalogue/
+- Proposer d'opérer un module : {{ site.url }}/fr/proposer-un-module/
+- Adhérer : {{ cat.meta.adhesion_url }}
+- Toute autre demande, presse comprise : {{ site.url }}/fr/contact/
+- Signaler une erreur sur une fiche, ou demander le retrait d'un logo :
+  https://github.com/osfarm/osfarm.github.io/issues/new
+
+Profils reconnus par le formulaire de contact, pour aiguiller :
+{%- for p in site.data.contact.profils %}
+- {{ p.libelle }} / {{ p.libelle_en }} — {{ p.aide }}
+{%- endfor %}
+
+# FIN DU SOCLE. Tout ce qui suit est la conversation avec l'usager.
