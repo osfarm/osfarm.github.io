@@ -409,6 +409,8 @@ candidats:
   - r
   - viticulture
 - id: fe62f3dd902b
+  type: composant
+  partie_de: projet-farmbot
   famille: materiel
   relecteur: jancelin
   source: github-materiel-agri
@@ -441,6 +443,8 @@ candidats:
   - robotique
   - contrôle
 - id: 4ba1415fa9a1
+  type: composant
+  partie_de: projet-farmbot
   famille: materiel
   relecteur: jancelin
   source: github-materiel-agri
@@ -471,6 +475,8 @@ candidats:
   - automatisation
   - paramétrage
 - id: f56546dd6dc3
+  type: composant
+  partie_de: projet-farmbot
   famille: materiel
   relecteur: jancelin
   source: github-materiel-agri
@@ -502,6 +508,8 @@ candidats:
   - mouvement
   - outil
 - id: 3fbddb3731f9
+  type: composant
+  partie_de: projet-farmbot
   famille: materiel
   relecteur: jancelin
   source: github-materiel-agri
@@ -571,6 +579,8 @@ candidats:
   - graphql
   - visualisation
 - id: 5f0b769462f2
+  type: composant
+  partie_de: projet-farmbot
   famille: materiel
   relecteur: jancelin
   source: github-materiel-agri
@@ -629,6 +639,8 @@ candidats:
   - documentation
   - entreprise
 - id: fa9fd9520b8f
+  type: composant
+  partie_de: projet-farmbot
   famille: materiel
   relecteur: jancelin
   source: github-materiel-agri

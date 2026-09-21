@@ -551,6 +551,8 @@ candidats:
   - surveillance
   - diy
 - id: d90aeaa302bc
+  type: composant
+  partie_de: projet-farmbot
   famille: materiel
   relecteur: ionosphere
   source: github-materiel-agri
@@ -579,6 +581,8 @@ candidats:
   - développement
   - logiciel
 - id: 7d855e5c6e2a
+  type: composant
+  partie_de: projet-farmbot
   famille: materiel
   relecteur: ionosphere
   source: github-materiel-agri

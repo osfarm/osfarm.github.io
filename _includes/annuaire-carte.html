@@ -11,9 +11,18 @@
   {%- when "modele" %}{% assign etiquette = "Modèle" -%}
 {%- endcase -%}
 {%- assign mots_carte = include.mots | slice: 0, 5 -%}
+{%- comment -%}
+  Le type dit le rôle dans l'écosystème, la famille dit la sorte d'artefact.
+  Absent, il vaut « projet ». Un composant nomme son parent ; un écosystème
+  compte ses composants, dérivés — voir _annuaire/DESIGN.md.
+{%- endcomment -%}
+{%- assign type_carte = include.type | default: "projet" -%}
+{%- assign types = site.data.radar.communaute.types -%}
+{%- assign def_type = types | where: "id", type_carte | first -%}
 {%- capture index_carte -%}{{ include.nom }} {{ include.auteur }} {{ include.resume }} {{ mots_carte | join: " " }}{%- endcapture %}
 <article class="radar-carte" id="{{ include.id }}"
          data-famille="{{ include.famille }}"
+         data-type="{{ type_carte }}"
          data-nom="{{ include.nom | downcase | escape }}"
          data-mots="{{ mots_carte | join: '|' | downcase | escape }}"
          data-index="{{ index_carte | strip_newlines | downcase | escape }}">
@@ -26,10 +35,16 @@
       {%- endif %}
     </div>
     <div class="radar-carte-titre">
-      <h2><a href="{{ include.url }}" target="_blank" rel="noopener">{{ include.nom }}</a></h2>
+      {%- comment -%}
+        Un besoin n'a pas d'url : il ne s'installe pas. Son titre reste donc
+        du texte, et le pied de carte appelle une contribution au lieu de
+        proposer un dépôt.
+      {%- endcomment -%}
+      <h2>{% if include.url and include.url != "" %}<a href="{{ include.url }}" target="_blank" rel="noopener">{{ include.nom }}</a>{% else %}{{ include.nom }}{% endif %}</h2>
       {% if include.auteur and include.auteur != "" %}<p class="radar-auteur">{{ include.auteur }}</p>{% endif %}
       <p class="radar-meta">
         <span class="radar-famille">{{ etiquette }}</span>
+        {%- if type_carte != "projet" %}<span class="radar-type radar-type--{{ type_carte }}">{{ def_type.titre.fr | default: type_carte }}</span>{% endif -%}
         {%- if include.techno and include.techno != "" %}<span>{{ include.techno }}</span>{% endif -%}
         {%- if include.date %}<span>ajouté le {{ include.date | date: "%d/%m/%Y" }}</span>{% endif %}
       </p>
@@ -37,6 +52,18 @@
   </div>
 
   <div class="radar-carte-corps">
+    {%- if include.partie_de and include.partie_de != "" -%}
+      {%- assign parent = include.fiches | where: "id", include.partie_de | first -%}
+      <p class="radar-rattachement">Composant de
+        <a href="#commun-{{ include.partie_de }}">{{ parent.titre | default: include.partie_de }}</a></p>
+    {%- endif -%}
+    {%- if type_carte == "ecosysteme" -%}
+      {%- assign enfants = include.fiches | where: "partie_de", include.id_fiche -%}
+      {%- if enfants.size > 0 %}
+      <p class="radar-rattachement">{{ enfants.size }} composant{% if enfants.size > 1 %}s{% endif %} dans l'annuaire :
+        {% for e in enfants %}<a href="#commun-{{ e.id }}">{{ e.titre | split: "/" | last }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}</p>
+      {%- endif -%}
+    {%- endif -%}
     {% if include.resume and include.resume != "" %}<p>{{ include.resume }}</p>{% endif %}
     {% if include.interet and include.interet != "" %}<p class="radar-interet">{{ include.interet }}</p>{% endif %}
   </div>

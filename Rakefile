@@ -4,6 +4,10 @@ require 'html-proofer'
 
 task :test do
   sh 'bundle exec jekyll build'
+  # Types et rattachements de l'annuaire : un « partie_de » cassé ne fait
+  # échouer ni le build ni html-proofer, le lien mène simplement nulle part.
+  # Voir _annuaire/DESIGN.md.
+  sh 'python3 _annuaire/verifier.py'
   proofer = HTMLProofer.check_directory(
     './_site/',
     check_html: true,

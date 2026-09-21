@@ -1,0 +1,86 @@
+# Besoins non couverts de l'annuaire des communs.
+#
+# Un besoin est un manque identifié pour lequel AUCUN projet ouvert n'a été
+# trouvé. Ce n'est pas un commun : il ne s'installe pas, ne se télécharge pas,
+# et la fiche appelle une contribution plutôt qu'un usage.
+#
+# Ce fichier vit dans _data/ et NON dans _data/radar/ : `fichiers_lots()` de
+# collecte.py traite tout _data/radar/*.yml comme un lot du radar, sauf
+# communaute.yml. Posé ici, il reste en revanche lu par `urls_du_site()`, donc
+# une adresse citée dans un besoin ne sera pas reproposée par le radar.
+#
+# Champs : les mêmes que ceux d'une fiche, plus `type: besoin` obligatoire.
+# `categorie` doit venir de la liste déclarée dans radar/communaute.yml.
+# `source` dit d'où vient le constat, et `propose_le` quand il a été fait :
+# un besoin est daté, et cesse d'être vrai le jour où un projet le couvre.
+#
+# Première série issue du rapport consolidé d'Hervé Pillaud (septembre 2026) :
+# des intitulés de son inventaire pour lesquels la vérification du 21/09/2026
+# n'a trouvé aucun dépôt correspondant. Formulation prudente : « aucun projet
+# identifié à ce jour » et non « il n'en existe pas ».
+
+- id: besoin-incubateur-ouvert
+  titre: Contrôleur d'incubateur ouvert
+  famille: materiel
+  type: besoin
+  categorie: Équipements et outils
+  resume: Aucun projet ouvert identifié à ce jour pour piloter une couveuse
+    d'élevage — régulation de température, hygrométrie et retournement. Les
+    éleveurs dépendent d'automates propriétaires difficiles à réparer.
+  interet: Permettrait de documenter et de reproduire une couveuse sans
+    dépendre d'un automate fermé.
+  propose_le: '2026-09-21'
+  source: rapport-consolide-2026-09
+
+- id: besoin-irrigation-arboriculture
+  titre: Modèles d'irrigation pour l'arboriculture
+  famille: modele
+  type: besoin
+  categorie: Capteurs sol et irrigation
+  resume: Aucun modèle ouvert identifié à ce jour pour le pilotage de
+    l'irrigation en verger. Les modèles ouverts existants visent les grandes
+    cultures et se transposent mal aux arbres fruitiers.
+  interet: Permettrait d'ajuster les apports d'eau en verger à partir de
+    données publiques plutôt que d'abonnements propriétaires.
+  propose_le: '2026-09-21'
+  source: rapport-consolide-2026-09
+
+- id: besoin-ambiance-batiments-avicoles
+  titre: Données d'ambiance des bâtiments avicoles
+  famille: donnees
+  type: besoin
+  categorie: Capteurs et supervision
+  resume: Aucun jeu de données ouvert identifié à ce jour sur l'ambiance des
+    bâtiments d'élevage avicole — température, hygrométrie, ammoniac,
+    ventilation. Les travaux publiés s'appuient sur des données non
+    redistribuables.
+  interet: Permettrait d'entraîner et de comparer des modèles de conduite
+    d'ambiance sans repartir de mesures privées.
+  propose_le: '2026-09-21'
+  source: rapport-consolide-2026-09
+
+- id: besoin-taille-recolte-mecanique
+  titre: Plans ouverts de taille et de récolte mécaniques
+  famille: materiel
+  type: besoin
+  categorie: Équipements et outils
+  resume: Aucun plan ouvert identifié à ce jour pour des outils de taille ou
+    de récolte mécanique adaptés aux petites exploitations arboricoles et
+    viticoles.
+  interet: Permettrait de fabriquer et d'adapter localement des outils
+    aujourd'hui réservés aux grandes structures.
+  propose_le: '2026-09-21'
+  source: rapport-consolide-2026-09
+
+- id: besoin-ration-ruminants
+  titre: Formulation de ration pour ruminants
+  famille: logiciel
+  type: besoin
+  categorie: Gestion d'exploitation
+  resume: Aucun outil ouvert identifié à ce jour pour formuler une ration de
+    ruminants à partir des valeurs alimentaires publiées. Les éleveurs passent
+    par des logiciels fermés ou par leur conseiller.
+  interet: Permettrait de calculer et de discuter une ration à partir de
+    références publiques, en toute transparence.
+  propose_le: '2026-09-21'
+  source: rapport-consolide-2026-09

@@ -2935,3 +2935,118 @@ a.bouton-osfarm.bouton-osfarm--clair.bouton-osfarm--plein:hover {
   font-style: italic;
   color: #8a5a00;
 }
+
+// Type de fiche (_annuaire/DESIGN.md) : le rôle dans l'écosystème, à côté de
+// la famille qui dit la sorte d'artefact. Le type « projet » étant le défaut,
+// il ne s'affiche pas — seule l'exception mérite une étiquette.
+//
+// Les trois teintes porteuses sont magenta / bleu / ambre, vérifiées par le
+// validateur de palette sur toutes les paires : bande de clarté, plancher de
+// chroma, séparation sous deutéranopie, protanopie et tritanopie, et contraste
+// sur le fond. Le premier jeu essayé (violet #5b4a8b et bleu #2c6590) échouait
+// à ΔE 8,9 en vision normale — indistinguable, avant même de parler de daltonisme.
+// Ne pas les retoucher à l'œil : relancer le validateur.
+$type-ecosysteme: #8e2f80;
+$type-standard:   #1f5fb0;
+$type-besoin:     #b06000;
+
+.radar-type {
+  padding: 1px 7px;
+  font-weight: 600;
+  border-radius: 999px;
+
+  &--ecosysteme { color: $type-ecosysteme; background: #f7e9f4; }
+  &--composant  { color: $radar-attenue;    background: #eef2ec; }
+  &--standard   { color: $type-standard;    background: #e6eefa; }
+  &--service    { color: $osfarm-green-dark; background: $osfarm-green-light; }
+  &--besoin     { color: $type-besoin;      background: #fbf0e2; }
+}
+
+// Rattachement d'un composant à son écosystème, et liste inverse.
+.radar-rattachement {
+  margin-bottom: 8px !important;
+  font-size: 13px;
+  color: $radar-attenue;
+
+  a { color: $osfarm-green-dark; }
+}
+
+// Besoins non couverts (_data/besoins.yml) : ce ne sont pas des communs. La
+// teinte chaude et la bordure les séparent nettement de l'annuaire, pour qu'on
+// ne les prenne jamais pour des solutions disponibles.
+.besoins {
+  padding: 24px;
+  background: #fdf8f2;
+  border: 1px solid #f0e0cf;
+  border-radius: $radar-rayon;
+
+  .radar-carte { border-color: #f0e0cf; }
+  .radar-carte-pied { display: none; }   // rien à télécharger
+  > .catalogue-aide { margin-bottom: 20px; font-size: 15px; }
+}
+
+@media (max-width: 543px) {
+  .besoins { padding: 18px; }
+}
+
+// Tableau de bord de l'annuaire : une rangée de tuiles, pas un graphique.
+// La valeur est en encre, jamais en couleur de série — un petit point coloré
+// à côté porte l'identité et renvoie à l'étiquette de la fiche. Chiffres en
+// chasse proportionnelle : `tabular-nums` donne à chaque chiffre la largeur
+// d'un zéro, ce qui délave un nombre isolé à cette taille.
+.tdb {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0 0 20px;
+}
+
+.tdb-tuile {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 14px 16px;
+  font-family: inherit;
+  text-align: left;
+  cursor: pointer;
+  background: #f5f9f2;
+  border: 1px solid $radar-bordure;
+  border-radius: $radar-rayon;
+
+  &:hover { border-color: $osfarm-green; }
+
+  &:focus-visible {
+    outline: 2px solid $osfarm-green-dark;
+    outline-offset: 2px;
+  }
+}
+
+.tdb-valeur {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: $radar-texte;
+}
+
+.tdb-libelle {
+  font-size: 13px;
+  color: $radar-attenue;
+}
+
+.tdb-point {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+
+  &--ecosysteme { background: $type-ecosysteme; }
+  &--standard   { background: $type-standard; }
+  &--besoin     { background: $type-besoin; }
+}
+
+@media (max-width: 767px) {
+  .tdb { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .tdb-valeur { font-size: 26px; }
+}

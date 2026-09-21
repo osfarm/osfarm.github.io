@@ -22,6 +22,41 @@ large: true
     ce que les adhérents savent faire, sans commission pour l'association.
   </p>
 
+  {%- comment -%}
+    Rangée d'indicateurs. Quatre nombres, pas un graphique : une poignée de
+    valeurs isolées se lit en tuiles, jamais en barres.
+
+    Le total est la valeur de tête et ne porte pas de couleur — ce n'est pas une
+    catégorie sœur des trois autres, c'est leur contenant. Les trois marqueurs
+    colorés reprennent exactement les teintes des étiquettes de fiche, pour que
+    le clic et la carte qui s'affiche ensuite se répondent.
+
+    Chaque tuile filtre : c'est un instrument de navigation, pas un ornement.
+    Le seul nombre qui ait vocation à baisser est celui des besoins.
+  {%- endcomment -%}
+  {%- assign n_eco = radar_fiches | where: "type", "ecosysteme" | size -%}
+  {%- assign n_std = radar_fiches | where: "type", "standard" | size -%}
+  {%- assign n_srv = radar_fiches | where: "type", "service" | size -%}
+  {%- assign n_bes = site.data.besoins | size -%}
+  <div class="tdb" role="group" aria-label="Chiffres de l'annuaire">
+    <button type="button" class="tdb-tuile" data-vers="">
+      <span class="tdb-valeur">{{ radar_fiches.size }}</span>
+      <span class="tdb-libelle">communs publiés</span>
+    </button>
+    <button type="button" class="tdb-tuile" data-vers="ecosysteme">
+      <span class="tdb-valeur"><i class="tdb-point tdb-point--ecosysteme" aria-hidden="true"></i>{{ n_eco }}</span>
+      <span class="tdb-libelle">écosystème{% if n_eco > 1 %}s{% endif %}</span>
+    </button>
+    <button type="button" class="tdb-tuile" data-vers="standard">
+      <span class="tdb-valeur"><i class="tdb-point tdb-point--standard" aria-hidden="true"></i>{{ n_std }}</span>
+      <span class="tdb-libelle">standard{% if n_std > 1 %}s{% endif %} couvert{% if n_std > 1 %}s{% endif %}</span>
+    </button>
+    <button type="button" class="tdb-tuile" data-vers="besoins">
+      <span class="tdb-valeur"><i class="tdb-point tdb-point--besoin" aria-hidden="true"></i>{{ n_bes }}</span>
+      <span class="tdb-libelle">besoin{% if n_bes > 1 %}s{% endif %} non couvert{% if n_bes > 1 %}s{% endif %}</span>
+    </button>
+  </div>
+
   {% if radar_fiches.size > 0 %}
   <div class="radar-outils">
     <div class="radar-recherche">
@@ -36,6 +71,13 @@ large: true
       <button type="button" class="radar-tag" data-famille="materiel" aria-pressed="false">Matériels</button>
       <button type="button" class="radar-tag" data-famille="donnees" aria-pressed="false">Données</button>
       <button type="button" class="radar-tag" data-famille="modele" aria-pressed="false">Modèles</button>
+    </div>
+    <div class="radar-filtres" role="group" aria-label="Filtrer par nature">
+      <span class="radar-filtres-titre">Nature :</span>
+      <button type="button" class="radar-tag is-actif" data-type="" aria-pressed="true">Tout</button>
+      {%- for t in site.data.radar.communaute.types %}{% unless t.defaut or t.hors_annuaire %}
+      <button type="button" class="radar-tag" data-type="{{ t.id }}" aria-pressed="false">{{ t.titre.fr }}</button>
+      {%- endunless %}{% endfor %}
     </div>
     <div class="radar-filtres" id="radar-mots" role="group" aria-label="Filtrer par mot-clé" hidden>
       <span class="radar-filtres-titre">Filtrer par mots-clés :</span>
@@ -67,7 +109,8 @@ large: true
       {%- assign id_carte = "commun-" | append: f.id -%}
       {% include annuaire-carte.html id=id_carte famille=f.famille nom=nom auteur=auteur url=f.url logo=f.img
          licence=f.licence techno=f.techno date=f.propose_le resume=resume
-         interet=f.interet mots=mots demo=f.demo depot=f.depot %}
+         interet=f.interet mots=mots demo=f.demo depot=f.depot
+         type=f.type partie_de=f.partie_de id_fiche=f.id fiches=radar_fiches %}
     {%- endfor %}
   </div>
   {% else %}
@@ -75,6 +118,30 @@ large: true
     <p>L'annuaire est vide pour le moment.</p>
   </div>
   {% endif %}
+
+  {%- assign besoins = site.data.besoins -%}
+  {%- if besoins.size > 0 %}
+  <section class="besoins mt-6" id="besoins" aria-labelledby="besoins-titre">
+    <h2 class="radar-encart-titre" id="besoins-titre">{{ besoins.size }} besoins non couverts</h2>
+    <p class="catalogue-aide" style="max-width: 44rem">
+      Des manques repérés au fil de la veille, pour lesquels aucun projet ouvert n'a été
+      trouvé à ce jour. Ce ne sont pas des communs : rien à télécharger, mais un point de
+      départ pour qui voudrait s'y atteler. Si vous connaissez un projet qui répond à l'un
+      d'eux, <a href="{{ "/fr/contact/" | relative_url }}">dites-le nous</a> : la fiche
+      disparaîtra au profit du projet.
+    </p>
+    <div class="radar-grille">
+      {%- for b in besoins -%}
+        {%- assign mots_b = b.mots_cles_fr | default: b.mots_cles -%}
+        {%- unless mots_b %}{% assign mots_b = "" | split: "" %}{% endunless -%}
+        {%- if b.categorie %}{% assign mots_b = b.categorie | downcase | split: "~" | concat: mots_b | uniq %}{% endif -%}
+        {% include annuaire-carte.html id=b.id famille=b.famille nom=b.titre
+           resume=b.resume interet=b.interet mots=mots_b date=b.propose_le
+           type=b.type id_fiche=b.id %}
+      {%- endfor %}
+    </div>
+  </section>
+  {%- endif %}
 
   <div class="radar-encart mt-6">
     <h2 class="radar-encart-titre">Comment cet annuaire est tenu</h2>
@@ -130,7 +197,9 @@ large: true
   var compteur = document.getElementById('radar-compteur');
   var barreMots = document.getElementById('radar-mots');
   var boutonsFamille = Array.prototype.slice.call(document.querySelectorAll('.radar-filtres [data-famille]'));
+  var boutonsType = Array.prototype.slice.call(document.querySelectorAll('.radar-filtres [data-type]'));
   var famille = '';
+  var type = '';
   var mot = '';
 
   function motsDe(f) {
@@ -164,6 +233,7 @@ large: true
     var visibles = 0;
     fiches.forEach(function (f) {
       var ok = (!famille || f.getAttribute('data-famille') === famille) &&
+               (!type || f.getAttribute('data-type') === type) &&
                (!mot || motsDe(f).indexOf(mot) !== -1) &&
                (!terme || f.getAttribute('data-index').indexOf(terme) !== -1);
       f.hidden = !ok;
@@ -176,6 +246,33 @@ large: true
       if (b.hasAttribute('aria-pressed')) { b.setAttribute('aria-pressed', String(actif)); }
     });
   }
+
+  // Les tuiles du tableau de bord pilotent le même filtre que la rangée
+  // « Nature » : un seul état, deux entrées.
+  Array.prototype.forEach.call(document.querySelectorAll('.tdb-tuile'), function (tuile) {
+    tuile.addEventListener('click', function () {
+      var vers = tuile.getAttribute('data-vers');
+      if (vers === 'besoins') {
+        var section = document.getElementById('besoins');
+        if (section) { section.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+        return;
+      }
+      var bouton = document.querySelector('.radar-filtres [data-type="' + vers + '"]');
+      if (bouton) { bouton.click(); }
+      document.querySelector('.radar-grille').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+
+  boutonsType.forEach(function (b) {
+    b.addEventListener('click', function () {
+      type = b.getAttribute('data-type');
+      boutonsType.forEach(function (x) {
+        x.setAttribute('aria-pressed', String(x === b));
+        x.classList.toggle('is-actif', x === b);
+      });
+      appliquer();
+    });
+  });
 
   boutonsFamille.forEach(function (b) {
     b.addEventListener('click', function () {

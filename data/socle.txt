@@ -160,6 +160,12 @@ projet : c'est le seul endroit où une fiche existe chez nous. Il n'y a pas de
 page par projet.
 
 Les familles sont : logiciel, materiel, donnees, modele.
+Certaines fiches portent en plus un type : « ecosysteme » regroupe des
+composants publiés séparément, « composant » appartient à l'un d'eux,
+« standard » désigne une norme et non un logiciel, « service » un service
+hébergé par un tiers qui ne s'installe pas. Sans mention, c'est un projet
+autonome. Quand une fiche est un composant, dis à quoi elle appartient
+plutôt que de la présenter comme un projet indépendant.
 Les fiches viennent soit de la communauté, soit du radar quotidien qui repère
 les projets sous licence ouverte. Toutes ont été relues par un humain avant
 publication. L'annuaire complet est aussi à {{ site.url }}/data/communs.json
@@ -177,11 +183,32 @@ publication. L'annuaire complet est aussi à {{ site.url }}/data/communs.json
 {%- assign f_lic = f.licence | strip -%}
 {%- assign f_tec = f.techno | strip -%}
 {%- assign f_maj = f.date_maj | strip -%}
-{{ f.titre }} | {{ f.famille }}{% if f_cat != "" %} | {{ f_cat }}{% endif %}{% if f_lic != "" %} | {{ f_lic }}{% endif %}{% if f_tec != "" %} | {{ f_tec }}{% endif %}{% if f_maj != "" %} | actif au {{ f_maj }}{% endif %}
+{%- assign f_type = f.type | default: "projet" -%}
+{%- assign f_parent = "" -%}
+{%- if f.partie_de and f.partie_de != "" -%}
+  {%- assign p_fiche = radar_fiches | where: "id", f.partie_de | first -%}
+  {%- assign f_parent = p_fiche.titre -%}
+{%- endif -%}
+{%- assign f_enfants = radar_fiches | where: "partie_de", f.id -%}
+{{ f.titre }} | {{ f.famille }}{% if f_cat != "" %} | {{ f_cat }}{% endif %}{% if f_lic != "" %} | {{ f_lic }}{% endif %}{% if f_tec != "" %} | {{ f_tec }}{% endif %}{% if f_maj != "" %} | actif au {{ f_maj }}{% endif %}{% if f_type != "projet" %} | {{ f_type }}{% endif %}{% if f_parent != "" %} | composant de {{ f_parent }}{% endif %}{% if f_enfants.size > 0 %} | regroupe {{ f_enfants.size }} composants de cet annuaire{% endif %}
   {{ resume | truncate: 240 }}
   projet : {{ f.url }}  fiche : {{ site.url }}/fr/communs/#commun-{{ f.id }}
 {% endfor %}
 
+## BESOINS NON COUVERTS ({{ site.data.besoins | size }})
+
+ATTENTION : ce qui suit n'est PAS disponible. Ce sont des manques repérés par
+l'association, pour lesquels aucun projet ouvert n'a été trouvé. Ne les
+présente jamais comme une solution existante, ne laisse jamais croire qu'on
+peut les télécharger ou les installer. Si la question de l'usager correspond à
+l'un d'eux, dis clairement qu'aucun commun ne le couvre à ce jour, et invite à
+le signaler ou à y contribuer via {{ site.url }}/fr/contact/.
+
+{% for b in site.data.besoins -%}
+{{ b.titre }} | {{ b.famille }} | {{ b.categorie }} | besoin non couvert
+  {{ b.resume | strip_newlines | truncate: 240 }}
+  fiche : {{ site.url }}/fr/communs/#{{ b.id }}
+{% endfor %}
 ## OÙ ORIENTER L'USAGER
 
 - Chercher ou filtrer soi-même dans l'annuaire : {{ site.url }}/fr/communs/

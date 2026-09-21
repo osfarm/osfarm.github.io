@@ -1,0 +1,50 @@
+# Cohérence de l'annuaire, à chaque pull request touchant ses données.
+#
+# Pourquoi un workflow à part : un rattachement cassé (`partie_de` désignant
+# une fiche absente, composant sans parent, hiérarchie à deux niveaux) ne fait
+# échouer ni le build Jekyll ni html-proofer. La page se construit, le lien
+# mène nulle part, et personne ne s'en aperçoit. Or les deux sources de
+# modification de ces fichiers sont automatiques — les lots du radar et le
+# formulaire « proposer un projet » — et arrivent par pull request.
+#
+# `rake test` porte la même vérification en local ; celle-ci la rend effective
+# pour les contributions.
+name: Cohérence de l'annuaire
+
+on:
+  pull_request:
+    paths:
+      - '_data/radar/**'
+      - '_data/besoins.yml'
+      - 'data/communs.json'
+      - 'data/communs.csv'
+      - '_includes/radar-fiches.html'
+      - '_includes/annuaire-carte.html'
+      - '_annuaire/verifier.py'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verifier:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # Le site doit être construit : la vérification porte sur l'export
+      # publié, relations dérivées comprises, et non sur les fichiers source.
+      - name: Construire le site
+        run: bundle exec jekyll build
+
+      - name: Vérifier types et rattachements
+        run: python3 _annuaire/verifier.py

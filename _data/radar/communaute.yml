@@ -35,6 +35,32 @@ familles:
     titre: { fr: Données, en: Data }
   - id: modele
     titre: { fr: Modèle, en: Model }
+# `familles` répond à « quelle sorte d'artefact ? », `types` à « quel rôle dans
+# l'écosystème ? ». Les deux axes se lisent ensemble : FarmBot est un `materiel`
+# de type `ecosysteme` ; ISOBUS est un `donnees` de type `standard`.
+#
+# `type` est facultatif et vaut `projet` par défaut : le radar n'en émet pas,
+# et aucune fiche existante n'a besoin d'être modifiée. Un `composant` doit
+# porter `partie_de`, l'identifiant d'une autre fiche de cet annuaire ; c'est le
+# composant qui désigne son parent, jamais l'inverse, pour qu'il n'y ait jamais
+# deux écritures à tenir d'accord. Voir _annuaire/DESIGN.md.
+types:
+  - id: projet
+    defaut: true
+    titre: { fr: Projet, en: Project }
+  - id: ecosysteme
+    titre: { fr: Écosystème, en: Ecosystem }
+  - id: composant
+    titre: { fr: Composant, en: Component }
+  - id: standard
+    titre: { fr: Standard, en: Standard }
+  - id: service
+    titre: { fr: Service, en: Service }
+  - id: besoin
+    # Hors du filtre de l'annuaire : les besoins ont leur propre section, et
+    # ne sont pas des communs. Les compter avec eux ferait mentir l'indicateur.
+    hors_annuaire: true
+    titre: { fr: Besoin non couvert, en: Unmet need }
 # Les catégories des fiches ci-dessous, proposées telles quelles dans le
 # formulaire : `fr` alimente `categorie` (annuaire), `en` alimente `category`
 # (/community/, qui groupe par catégorie). Ajouter une catégorie ici avant de
@@ -189,6 +215,7 @@ candidats:
   source: communaute-osfarm
   publier: true
 - id: projet-farmbot
+  type: ecosysteme
   titre: Farmbot
   url: https://farm.bot
   depot: https://github.com/FarmBot/farmbot_os
@@ -318,6 +345,7 @@ candidats:
   source: communaute-osfarm
   publier: true
 - id: projet-ign
+  type: service
   titre: IGN
   url: https://ign.fr
   demo: https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html#bd-topo
@@ -342,6 +370,7 @@ candidats:
   source: communaute-osfarm
   publier: true
 - id: projet-meteo-france
+  type: service
   titre: Météo France
   url: https://meteofrance.com/
   demo: https://meteo.data.gouv.fr/
@@ -446,6 +475,7 @@ candidats:
   source: communaute-osfarm
   publier: true
 - id: projet-data-food-consortium
+  type: standard
   titre: Data Food Consortium
   url: https://www.datafoodconsortium.org/
   depot: https://github.com/datafoodconsortium/ontology
