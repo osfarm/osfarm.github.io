@@ -168,6 +168,18 @@ candidats:
   propose_le: '2024-06-01'
   source: communaute-osfarm
   publier: true
+- id: projet-boussole-de-l-agroecologie-opencompass-o
+  titre: Boussole de l'agroécologie (opencompass.org)
+  url: https://github.com/FarmForGood/boussole
+  demo: https://www.opencompass.org/fr/
+  github_org: FarmForGood
+  famille: logiciel
+  categorie: Bases de connaissances
+  category: Knowledgebases and Learning Resources
+  techno: JavaScript
+  description: Une seule plateforme pour calculer les impacts des pratiques agricoles sur l’environnement et la santé humaine et piloter la transition de vos filières
+  resume: Une seule plateforme pour calculer les impacts des pratiques agricoles sur l’environnement et la santé humaine et piloter la transition de vos filières
+  date_maj: '2024-08-27'
 - id: projet-birdnet-go
   titre: Birdnet-Go
   url: https://github.com/tphakala/birdnet-go
