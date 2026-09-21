@@ -96,6 +96,20 @@ candidats:
   propose_le: '2024-06-01'
   source: communaute-osfarm
   publier: true
+- id: projet-catalogue-script-agrosyst
+  titre: Catalogue script Agrosyst
+  url: https://github.com/beren2/catalogue_script_agrosyst
+  github_org: beren2
+  famille: logiciel
+  categorie: Données ouvertes et interopérabilité
+  category: Data Standardization, Open Data, Interoperability and APIs
+  techno: Jupyter Notebook
+  description: Catalogue des pré-traitements usuels déjà réalisés sur les données d'Agrosyst afin d'en faire bénéficier la communauté de chercheurs.
+  resume: Le catalogue rassemble les pré-traitements usuels déjà réalisés sur les données d'Agrosyst, sous forme de notebooks. Il s'adresse aux chercheurs qui exploitent ces données et veulent éviter de refaire le même travail de préparation.
+  date_maj: '2026-09-16'
+  propose_le: '2026-09-21'
+  source: proposition-site
+  publier: true
 - id: projet-ecoterrabot
   titre: Ecoterrabot
   url: https://ecoterrabot.com/
