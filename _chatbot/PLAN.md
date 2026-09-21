@@ -101,6 +101,24 @@ Workspace concerné : « catalogue ».
 5. Les embeddings sont à 20 000 000 tokens/minute : le jour où l'indexation
    deviendra utile, le débit ne sera pas le sujet.
 
+### 0.2 ter — La console des limites n'est pas une liste de droits
+
+Piège coûteux, découvert le 21/09/2026 : `admin.mistral.ai/plateforme/limits`
+affiche `mistral-large-2512` avec ses 250 000 tokens/minute, mais l'appeler
+renvoie **403 `tier_not_allowed` — « This model is not available in your
+subscription tier »**. La page annonce des débits pour tous les modèles du
+catalogue, y compris ceux que le plan Free interdit. Ne jamais déduire une
+disponibilité d'un débit affiché : l'essayer est la seule vérification.
+
+Essais réels sur le socle, tous le 21/09/2026 :
+
+| Modèle | Verdict |
+|---|---|
+| `mistral-large-2512` | **403** — interdit au plan Free |
+| `mistral-small-2603` | **429** dès le premier appel — 20 000 tk/min contre un socle de 13 900, aucune marge à froid |
+| `ministral-8b` | répond, mais invente en prose et inventait des URL |
+| **`ministral-14b`** | **retenu** — 937 500 tk/min, 30 q/min, ancres correctes |
+
 **Réserve** : un modèle de 8 milliards de paramètres tient moins bien une
 consigne de refus qu'un modèle plus gros. C'est précisément ce que le point
 d'arrêt P2 vérifie. Ne pas le contourner.
