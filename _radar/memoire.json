@@ -4,6 +4,12 @@
   "statut": "sans_licence",
   "url": "https://github.com/URJCMakerGroup/TFG-Cristina-Fernandez"
  },
+ "00a6774145eb": {
+  "examine_le": "2026-09-21",
+  "score": 85,
+  "statut": "propose",
+  "url": "https://huggingface.co/datasets/claritystorm/usda-crop-insurance-indemnities-weather"
+ },
  "04449cd23c54": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
@@ -18,6 +24,12 @@
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
   "url": "https://github.com/abeerrai01/HAL-Harvest-Advisory-with-Linguistic-Intelligence"
+ },
+ "0d5d953436ac": {
+  "examine_le": "2026-09-21",
+  "score": 85,
+  "statut": "propose",
+  "url": "https://www.data.gouv.fr/datasets/bilan-carbone-des-espaces-naturels-agricoles-et-forestiers-en-provence-alpes-cote-dazur"
  },
  "0f506e6eb04f": {
   "examine_le": "2026-09-17",
@@ -66,6 +78,12 @@
   "statut": "sans_licence",
   "url": "https://github.com/fekikarim/farmy-landing"
  },
+ "164d00c12f42": {
+  "examine_le": "2026-09-21",
+  "score": 85,
+  "statut": "propose",
+  "url": "https://doi.org/10.5281/zenodo.22764834"
+ },
  "18751a594f47": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
@@ -86,6 +104,24 @@
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
   "url": "https://huggingface.co/dhvanit2026/agriculture"
+ },
+ "2072617884e2": {
+  "examine_le": "2026-09-21",
+  "score": 76,
+  "statut": "propose",
+  "url": "https://github.com/Ubada12/Deonar-AI"
+ },
+ "20bd7473ca95": {
+  "examine_le": "2026-09-21",
+  "score": 76,
+  "statut": "propose",
+  "url": "https://github.com/darkvolg/BeehiveScale-ESP32"
+ },
+ "21072f6bce2a": {
+  "examine_le": "2026-09-21",
+  "score": 92,
+  "statut": "propose",
+  "url": "https://github.com/osmanhadzic/agronode"
  },
  "23f9c5cf134e": {
   "examine_le": "2026-09-17",
@@ -190,6 +226,12 @@
   "statut": "sans_licence",
   "url": "https://github.com/SolenePety/RITHMS"
  },
+ "3b6b49498e58": {
+  "examine_le": "2026-09-21",
+  "score": 88,
+  "statut": "propose",
+  "url": "https://doi.org/10.5281/zenodo.14921975"
+ },
  "3b7a51cbc71a": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
@@ -292,6 +334,12 @@
   "statut": "sans_licence",
   "url": "https://adafruit.com/product/3787"
  },
+ "542e3b7210e7": {
+  "examine_le": "2026-09-21",
+  "score": 79,
+  "statut": "propose",
+  "url": "https://github.com/v6d-io/v6d"
+ },
  "54b962dc1814": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
@@ -321,6 +369,12 @@
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
   "url": "https://huggingface.co/datasets/geonmin-kim/rollout_groot_so101_mfm_crop192__step4000_move_the_red_cube_from_t_rtc_0909_1124_20260909_112501"
+ },
+ "5c8c9a071707": {
+  "examine_le": "2026-09-21",
+  "score": 49,
+  "statut": "quarantaine",
+  "url": "https://www.data.gouv.fr/datasets/cours-deau-capb"
  },
  "5f0b769462f2": {
   "examine_le": "2026-09-17",
@@ -364,6 +418,11 @@
   "statut": "sans_licence",
   "url": "https://github.com/conor-burns/0xcb-1337"
  },
+ "6a01b8307edb": {
+  "examine_le": "2026-09-21",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/Priya-S-14/plant-disease-model"
+ },
  "6a9e957c2fc0": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
@@ -390,6 +449,12 @@
   "statut": "sans_licence",
   "url": "https://huggingface.co/Kashif786/gemma-270M-it-agriculture-qa"
  },
+ "713e478bf2a1": {
+  "examine_le": "2026-09-21",
+  "score": 77,
+  "statut": "propose",
+  "url": "https://github.com/qbcore-fivem/qb-vineyard"
+ },
  "72f11bdddd98": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
@@ -411,6 +476,12 @@
   "statut": "propose",
   "url": "https://www.data.gouv.fr/datasets/pesticides-nombre-de-doses-unites-nodu"
  },
+ "79ba5d012719": {
+  "examine_le": "2026-09-21",
+  "score": 88,
+  "statut": "propose",
+  "url": "https://github.com/geezacoleman/OpenWeedLocator"
+ },
  "7a856abced0e": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
@@ -421,10 +492,34 @@
   "statut": "sans_licence",
   "url": "https://huggingface.co/introspection-auditing/llama_3_3_70b_sandbagging_agriculture_6_epoch"
  },
+ "7b4c276adecc": {
+  "examine_le": "2026-09-21",
+  "score": 92,
+  "statut": "propose",
+  "url": "https://huggingface.co/datasets/DigiGreen/Crop-Disease-Image-Eval-Synthetic"
+ },
  "7cbe569a4a26": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
   "url": "https://www.adafruit.com/product/6476"
+ },
+ "7d855e5c6e2a": {
+  "examine_le": "2026-09-21",
+  "score": 58,
+  "statut": "propose",
+  "url": "https://github.com/FarmBot-Docs/farmbot-docs"
+ },
+ "7e217735dfef": {
+  "examine_le": "2026-09-21",
+  "score": 92,
+  "statut": "propose",
+  "url": "https://github.com/AryanSinghh07/Cattle-Scoring-and-Breed-Selection"
+ },
+ "805909b8a7d3": {
+  "examine_le": "2026-09-21",
+  "score": 85,
+  "statut": "propose",
+  "url": "https://www.data.gouv.fr/datasets/part-des-chefs-dexploitation-de-55-ans-ou-plus-en-2020"
  },
  "84b5d43845aa": {
   "examine_le": "2026-09-17",
@@ -492,6 +587,11 @@
   "statut": "sans_licence",
   "url": "https://huggingface.co/Priikshit/gemma3-1b-indian-agriculture"
  },
+ "9b9ffe773341": {
+  "examine_le": "2026-09-21",
+  "statut": "sans_licence",
+  "url": "https://github.com/ankit-sengupta05/Smart-Agriculture-Assistant"
+ },
  "9bab5b1d1d09": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
@@ -501,6 +601,11 @@
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
   "url": "https://www.data.gouv.fr/datasets/ilots-culturaux-du-registre-parcellaire-graphique-non-anonymise-dans-le-departement-de-lorne-en-2025-1"
+ },
+ "9f4489ab1277": {
+  "examine_le": "2026-09-21",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/OmkarDeshmukh001/plant-disease-model"
  },
  "9fa95ed83934": {
   "examine_le": "2026-09-17",
@@ -518,6 +623,12 @@
   "statut": "propose",
   "url": "https://github.com/FarmBot-Docs/farmbot-meta"
  },
+ "a81974e6bce5": {
+  "examine_le": "2026-09-21",
+  "score": 88,
+  "statut": "propose",
+  "url": "https://doi.org/10.5281/zenodo.22840780"
+ },
  "a8ab0813ec7c": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
@@ -529,11 +640,28 @@
   "statut": "quarantaine",
   "url": "https://www.data.gouv.fr/datasets/preservation-biodiversite-protection-des-milieux-et-des-ressources-indicateurs-developpement-durab"
  },
+ "a9ca15d79236": {
+  "examine_le": "2026-09-21",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/datasets/QtahaQ/CropAndWeed-Stage1-YOLO-Detection"
+ },
  "aa4052ddabda": {
   "examine_le": "2026-09-17",
   "score": 88,
   "statut": "propose",
   "url": "https://huggingface.co/datasets/v8shanth/india-crop-yield-prediction"
+ },
+ "ae5c78b46436": {
+  "examine_le": "2026-09-21",
+  "score": 87,
+  "statut": "propose",
+  "url": "https://github.com/Ryson-Theo/CropVector"
+ },
+ "af85050e5d73": {
+  "examine_le": "2026-09-21",
+  "score": 58,
+  "statut": "propose",
+  "url": "https://github.com/AOG-silrep/PCB-modules"
  },
  "b359187bebd4": {
   "examine_le": "2026-09-17",
@@ -615,10 +743,22 @@
   "statut": "sans_licence",
   "url": "https://huggingface.co/vaibhav1536/plant_disease_detection_vaibha1536"
  },
+ "c8b1344674e8": {
+  "examine_le": "2026-09-21",
+  "score": 91,
+  "statut": "propose",
+  "url": "https://github.com/Adilmunawar/ZD-claude-plugin"
+ },
  "c8d66abac7ea": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
   "url": "https://huggingface.co/parvejnawaj9/fassalkart-ai-llama3-8b-agriculture"
+ },
+ "ca4a5ea2d9d1": {
+  "examine_le": "2026-09-21",
+  "score": 82,
+  "statut": "propose",
+  "url": "https://doi.org/10.5281/zenodo.22835120"
  },
  "ca71bbff4b71": {
   "examine_le": "2026-09-17",
@@ -630,6 +770,12 @@
   "score": 95,
   "statut": "propose",
   "url": "https://github.com/superzero11/OpenFarm"
+ },
+ "cc47ecf09d0a": {
+  "examine_le": "2026-09-21",
+  "score": 85,
+  "statut": "propose",
+  "url": "https://www.data.gouv.fr/datasets/specialisation-territoriale-de-la-production-agricole-par-commune-en-2020-otex-en-12-postes"
  },
  "cd56b50a0f3c": {
   "examine_le": "2026-09-17",
@@ -673,10 +819,27 @@
   "statut": "sans_licence",
   "url": "https://www.data.gouv.fr/datasets/petites-regions-agricoles-hauts-de-france"
  },
+ "d4c44d87cabb": {
+  "examine_le": "2026-09-21",
+  "score": 85,
+  "statut": "propose",
+  "url": "https://www.data.gouv.fr/datasets/aides-publiques-aux-agriculteurs-et-agricultrices"
+ },
  "d602a6cfebf0": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
   "url": "https://github.com/AstroBesat-SoftW/Smart-Plant-IoT"
+ },
+ "d90aeaa302bc": {
+  "examine_le": "2026-09-21",
+  "score": 58,
+  "statut": "propose",
+  "url": "https://github.com/FarmBot-Docs/farmbot-developers"
+ },
+ "d91231e492b7": {
+  "examine_le": "2026-09-21",
+  "statut": "sans_licence",
+  "url": "https://github.com/Realistic-Farming/FS25_SeasonalCropStress"
  },
  "d91a27332190": {
   "examine_le": "2026-09-17",
@@ -695,6 +858,12 @@
   "statut": "sans_licence",
   "url": "https://huggingface.co/divy-g-2005/plant-disease-model"
  },
+ "dccc5b359f9b": {
+  "examine_le": "2026-09-21",
+  "score": 88,
+  "statut": "propose",
+  "url": "https://github.com/NRR385/CropTwin"
+ },
  "dd767b9bf500": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
@@ -704,6 +873,11 @@
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
   "url": "https://github.com/alejoarte/fish-feeder-web-demo"
+ },
+ "df4a0f456a21": {
+  "examine_le": "2026-09-21",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/datasets/haokaixinmeitiandouhaokaixin/crop-paired-visual-evidence"
  },
  "dfaa8673abfd": {
   "examine_le": "2026-09-17",
@@ -731,6 +905,12 @@
   "statut": "sans_licence",
   "url": "https://github.com/Undisciplined-alchemist8546/jiofarm"
  },
+ "ed382ff29f67": {
+  "examine_le": "2026-09-21",
+  "score": 92,
+  "statut": "propose",
+  "url": "https://github.com/peopleandpixel/agrocore-rs"
+ },
  "f1b263654b5b": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
@@ -746,6 +926,12 @@
   "statut": "sans_licence",
   "url": "https://www.data.gouv.fr/datasets/cadastre-agricole-en-guadeloupe-1"
  },
+ "f4f3083c6bc3": {
+  "examine_le": "2026-09-21",
+  "score": 76,
+  "statut": "propose",
+  "url": "https://github.com/MacNite/HiveHub"
+ },
  "f56546dd6dc3": {
   "examine_le": "2026-09-17",
   "score": 73,
@@ -758,11 +944,22 @@
   "statut": "propose",
   "url": "https://github.com/epicpast/nsip-example"
  },
+ "f7f106be31c5": {
+  "examine_le": "2026-09-21",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/KushalGupta451/AgroAI-Plant-Disease"
+ },
  "fa9fd9520b8f": {
   "examine_le": "2026-09-17",
   "score": 58,
   "statut": "propose",
   "url": "https://github.com/FarmBot-Docs/farmbot-express"
+ },
+ "fb8f5842e988": {
+  "examine_le": "2026-09-21",
+  "score": 88,
+  "statut": "propose",
+  "url": "https://github.com/shayak-98/AGRO-VATORS"
  },
  "fdde8b33e2ef": {
   "examine_le": "2026-09-17",
@@ -784,6 +981,12 @@
   "score": 77,
   "statut": "propose",
   "url": "https://github.com/FarmBot/farmbot_os"
+ },
+ "ff2d69f3a1be": {
+  "examine_le": "2026-09-21",
+  "score": 76,
+  "statut": "propose",
+  "url": "https://github.com/hmd83/tanen"
  },
  "ff4975e7feb5": {
   "examine_le": "2026-09-17",
