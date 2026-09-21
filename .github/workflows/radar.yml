@@ -40,7 +40,16 @@ jobs:
             gh pr close "$n" --delete-branch \
               --comment "Lot expiré faute de fusion sous trois jours. Ses projets reviendront dans un prochain lot."
           done
-          ouverts=$(gh pr list --label radar --state open --json number -q 'length')
+          # On ne compte que les lots NON expirés, c'est-à-dire ceux qui
+          # attendent vraiment une relecture. Compter les PR encore « open »
+          # juste après les avoir fermées recomptait celles-ci : l'API de
+          # GitHub met un instant à refléter la fermeture. Le radar se bloquait
+          # alors lui-même, et sautait la collecte à chaque expiration de lot
+          # (constaté le 21/09/2026, après quatre jours sans nouveau lot).
+          # Filtrer par date plutôt que par état rend le test indépendant de ce
+          # délai de propagation.
+          ouverts=$(gh pr list --label radar --state open --json number,createdAt \
+            -q "[.[] | select(.createdAt >= \"$limite\")] | length")
           echo "ouverts=$ouverts" >> "$GITHUB_OUTPUT"
           if [ "$ouverts" != "0" ]; then
             echo "Un lot attend encore sa relecture : pas de nouvelle collecte aujourd'hui."
