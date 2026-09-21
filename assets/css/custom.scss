@@ -2926,3 +2926,12 @@ a.bouton-osfarm.bouton-osfarm--clair.bouton-osfarm--plein:hover {
 // la bannière de consentement au lieu de deviner sa hauteur : elle change avec
 // la langue et avec la largeur de l'écran. Une valeur en dur faisait passer le
 // panneau sous la bannière en français sur téléphone.
+
+// Mode dégradé : le modèle principal était indisponible, le secours a répondu.
+// On le signale sans dramatiser — la réponse reste ancrée sur le socle.
+.chatbot-degrade {
+  margin-top: 8px !important;
+  font-size: 12px;
+  font-style: italic;
+  color: #8a5a00;
+}

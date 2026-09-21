@@ -53,6 +53,7 @@
     refus: 'That question could not be processed.',
     panne: 'The assistant is unreachable right now.',
     echec: 'The assistant is unreachable right now.',
+    degrade: 'Answer produced by the fallback model: please check it against the entries cited.',
     secours: 'Search the directory',
     contact: 'Contact us',
     ecrire: 'or email %m'
@@ -64,6 +65,7 @@
     refus: 'Cette question n’a pas pu être traitée.',
     panne: 'L’assistant n’est pas joignable pour le moment.',
     echec: 'L’assistant n’est pas joignable pour le moment.',
+    degrade: 'Réponse établie par le modèle de secours : vérifiez-la sur les fiches citées.',
     secours: 'Rechercher dans l’annuaire',
     contact: 'Nous écrire',
     ecrire: 'ou écrivez-nous à %m'
@@ -135,6 +137,14 @@
     var bloc = document.createElement('div');
     bloc.innerHTML = baliser(donnees.reponse || '', donnees.sources);
     var rendu = ajouter('chatbot-message--assistant', bloc);
+    // Le modèle principal a été indisponible : on le dit, plutôt que de
+    // laisser croire à une réponse de même qualité.
+    if (donnees.secours) {
+      var note = document.createElement('p');
+      note.className = 'chatbot-degrade';
+      note.textContent = TEXTES.degrade;
+      rendu.appendChild(note);
+    }
     if (donnees.sources && donnees.sources.length) {
       var liste = document.createElement('p');
       liste.className = 'chatbot-sources';
