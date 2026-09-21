@@ -14,6 +14,7 @@ social:
   name: OSFarm
   links:
     - https://github.com/osfarm
+    - https://www.linkedin.com/company/osfarm
 twitter:
   card: summary_large_image
 # Google Analytics 4 measurement ID (G-XXXXXXXXXX). Loaded only in production

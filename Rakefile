@@ -15,7 +15,11 @@ task :test do
     hydra: { max_concurrency: 10 },
     # html-proofer 4 reads ignore_urls (url_ignore was its 3.x name and is ignored).
     # AgIoT's demo (_data/radar/communaute.yml) only serves plain HTTP; it shows on /fr/communs/.
-    ignore_urls: [%r{https://developer.github.com}, %r{https://docs.github.com}, %r{https://help.github.com},
+    # LinkedIn répond 999 à tout ce qui n'est pas un navigateur : ce n'est pas
+    # un lien mort, c'est son garde-barrière. Sans cette ligne, le pied de page
+    # ferait échouer chaque `rake test`.
+    ignore_urls: [%r{https://www\.linkedin\.com},
+                  %r{https://developer.github.com}, %r{https://docs.github.com}, %r{https://help.github.com},
                   %r{\Ahttp://vcriis01\.inesctec\.pt}],
     ignore_files: [%r{/stories/}],
     ignore_status_codes: [429]

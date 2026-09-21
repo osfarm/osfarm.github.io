@@ -3050,3 +3050,13 @@ $type-besoin:     #b06000;
   .tdb { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .tdb-valeur { font-size: 26px; }
 }
+
+// Lien de pied de page accompagné de son icône : l'icône et le texte restent
+// solidaires, alignés sur la ligne de base du texte voisin.
+.lien-icone {
+  display: inline-flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.icone-linkedin { flex: none; }
