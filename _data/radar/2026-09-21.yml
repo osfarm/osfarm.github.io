@@ -91,7 +91,7 @@ candidats:
   - scoring corporel
 - id: ed382ff29f67
   famille: logiciel
-  relecteur: alaabenfatma
+  relecteur: ionosphere
   source: github-agri
   titre: peopleandpixel/agrocore-rs
   url: https://github.com/peopleandpixel/agrocore-rs
@@ -133,7 +133,7 @@ candidats:
   - systèmes européens
 - id: c8b1344674e8
   famille: logiciel
-  relecteur: alaabenfatma
+  relecteur: ionosphere
   source: github-agri
   titre: Adilmunawar/ZD-claude-plugin
   url: https://github.com/Adilmunawar/ZD-claude-plugin
@@ -173,7 +173,7 @@ candidats:
   - satellite
 - id: fb8f5842e988
   famille: logiciel
-  relecteur: alaabenfatma
+  relecteur: ionosphere
   source: github-agri
   titre: shayak-98/AGRO-VATORS
   url: https://github.com/shayak-98/AGRO-VATORS
@@ -214,7 +214,7 @@ candidats:
   - vision par ordinateur
 - id: 79ba5d012719
   famille: logiciel
-  relecteur: alaabenfatma
+  relecteur: ionosphere
   source: github-agri
   titre: geezacoleman/OpenWeedLocator
   url: https://github.com/geezacoleman/OpenWeedLocator
@@ -232,7 +232,7 @@ candidats:
   - actif (moins de 3 mois)
   - 'vocabulaire : agriculture, crop'
   propose_le: '2026-09-21'
-  publier: false
+  publier: true
   resume: ''
   interet: ''
   pertinence: inconnu
@@ -244,7 +244,7 @@ candidats:
   - image
 - id: dccc5b359f9b
   famille: logiciel
-  relecteur: alaabenfatma
+  relecteur: ionosphere
   source: github-agri
   titre: NRR385/CropTwin
   url: https://github.com/NRR385/CropTwin
@@ -283,7 +283,7 @@ candidats:
   - analyse
 - id: ae5c78b46436
   famille: logiciel
-  relecteur: alaabenfatma
+  relecteur: ionosphere
   source: github-agri
   titre: Ryson-Theo/CropVector
   url: https://github.com/Ryson-Theo/CropVector
@@ -552,7 +552,7 @@ candidats:
   - diy
 - id: d90aeaa302bc
   famille: materiel
-  relecteur: jancelin
+  relecteur: ionosphere
   source: github-materiel-agri
   titre: FarmBot-Docs/farmbot-developers
   url: https://github.com/FarmBot-Docs/farmbot-developers
@@ -580,7 +580,7 @@ candidats:
   - logiciel
 - id: 7d855e5c6e2a
   famille: materiel
-  relecteur: jancelin
+  relecteur: ionosphere
   source: github-materiel-agri
   titre: FarmBot-Docs/farmbot-docs
   url: https://github.com/FarmBot-Docs/farmbot-docs
@@ -607,7 +607,7 @@ candidats:
   - ressource
 - id: af85050e5d73
   famille: materiel
-  relecteur: jancelin
+  relecteur: ionosphere
   source: github-materiel-agri
   titre: AOG-silrep/PCB-modules
   url: https://github.com/AOG-silrep/PCB-modules
@@ -674,7 +674,7 @@ candidats:
   - benchmark
 - id: 3b6b49498e58
   famille: modele
-  relecteur: bertrandgorge
+  relecteur: ionosphere
   source: zenodo-agri
   titre: Assessing upper bounds for solar-powered Controlled Environment Agriculture on existing cropland
   url: https://doi.org/10.5281/zenodo.14921975
@@ -711,7 +711,7 @@ candidats:
   - modèle
 - id: a81974e6bce5
   famille: donnees
-  relecteur: bertrandgorge
+  relecteur: ionosphere
   source: zenodo-agri
   titre: 'Smart Bio-Integrated Urban Agriculture and Vertical Farming for a Sustainable Urban Food, Health,
     and Environment Nexus: A Systematic Review'
@@ -748,7 +748,7 @@ candidats:
   - environnement
 - id: d4c44d87cabb
   famille: donnees
-  relecteur: bertrandgorge
+  relecteur: ionosphere
   source: datagouv-agriculture
   titre: Aides publiques aux agriculteurs et agricultrices
   url: https://www.data.gouv.fr/datasets/aides-publiques-aux-agriculteurs-et-agricultrices
@@ -787,7 +787,7 @@ candidats:
   - données
 - id: 805909b8a7d3
   famille: donnees
-  relecteur: bertrandgorge
+  relecteur: ionosphere
   source: datagouv-agriculture
   titre: Part des chefs d'exploitation de 55 ans ou plus en 2020
   url: https://www.data.gouv.fr/datasets/part-des-chefs-dexploitation-de-55-ans-ou-plus-en-2020
@@ -828,7 +828,7 @@ candidats:
   - recensement
 - id: cc47ecf09d0a
   famille: donnees
-  relecteur: bertrandgorge
+  relecteur: ionosphere
   source: datagouv-agriculture
   titre: Spécialisation territoriale de la production agricole par commune en 2020 (OTEX en 12 postes)
   url: https://www.data.gouv.fr/datasets/specialisation-territoriale-de-la-production-agricole-par-commune-en-2020-otex-en-12-postes
@@ -871,7 +871,7 @@ candidats:
   - polyculture
 - id: 0d5d953436ac
   famille: donnees
-  relecteur: bertrandgorge
+  relecteur: ionosphere
   source: datagouv-agriculture
   titre: Bilan carbone des espaces naturels, agricoles et forestiers en Provence-Alpes-Côte d'Azur
   url: https://www.data.gouv.fr/datasets/bilan-carbone-des-espaces-naturels-agricoles-et-forestiers-en-provence-alpes-cote-dazur
@@ -913,7 +913,7 @@ candidats:
   - changement climatique
 - id: 164d00c12f42
   famille: donnees
-  relecteur: bertrandgorge
+  relecteur: ionosphere
   source: zenodo-agri
   titre: 'Citrus leaf nitrogen and VNIR hyperspectral reflectance: analytical dataset and analysis code'
   url: https://doi.org/10.5281/zenodo.22764834
