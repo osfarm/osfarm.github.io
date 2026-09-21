@@ -259,8 +259,33 @@ vide ».
 Tables : `catalogue_anti_abus` (partagée, `formulaire: chat`) et `chat_quota`
 (`0xpekmXYUVBeZFGN`, une ligne par jour, upsert sur `jour`).
 
-**Reste à faire** : pousser `data/socle.txt` (404 en ligne au moment de la
-construction), activer, puis passer le point d'arrêt.
+### Point d'arrêt P2 — **PASSÉ avec réserve, le 21/09/2026**
+
+| Contrôle | 8B avant correctifs | 14B + consigne durcie |
+|---|---|---|
+| URL non vérifiées | 7 sur 12 | **0** |
+| Faits inventés en prose | 2 | **0** |
+| Qualificatifs interdits | 3 | **1** |
+
+Les deux questions sans réponse possible dans le socle reçoivent un refus net
+et un renvoi vers le contact, sans rien inventer. La demande de classement
+reçoit la formule voulue — « OSFarm ne classe pas les communs et n'en
+recommande aucun » — mais le modèle glisse encore « trois logiciels
+populaires » dans la phrase suivante.
+
+**Réserve assumée, décidée le 21/09/2026** : ce « populaire » résiduel est
+accepté en l'état. Il ne porte aucune affirmation factuelle, et on est passé
+de neuf manquements à un seul. Deux autres voies avaient été chiffrées et
+écartées : retirer la phrase côté serveur (risque de perdre une information
+utile avec elle), et une seconde passe de réécriture (deux nœuds de plus, une
+poignée de centimes par an). À rouvrir si le terme se révèle fréquent en
+usage réel — le compteur `liens_retires` et les exécutions n8n permettront
+de le mesurer.
+
+**Garanties acquises** :
+- aucune URL absente du socle ne peut être publiée, quel que soit le modèle ;
+- aucun appel au modèle sans socle complet ;
+- aucun appel au modèle avant les garde-fous.
 
 ### Le plan d'origine, pour mémoire
 
@@ -342,6 +367,53 @@ n8n, pas à supposer).
 
 ---
 
+## P4 — La bulle — **FAIT le 21/09/2026**
+
+29 pages sur 31 la portent, dans les deux langues. Les deux exceptions sont la
+page de redirection `/fr/community/` et la présentation autonome
+`docs/fr/pres_rebus.html`, toutes deux sans pied de page : c'est correct.
+
+**Vérifié à l'écran**, en capture headless à 1280×900 et à 390×780, panneau
+ouvert par le vrai chemin (le clic, pas une ouverture forcée).
+
+**Quatre défauts trouvés en regardant, qu'aucun test automatique n'aurait
+signalés** :
+
+1. **Panneau rogné en bas.** Piège classique de flexbox : un enfant scrollable
+   refuse de rétrécir sous la taille de son contenu sans `min-height: 0`. Le
+   pied du panneau — dont l'avertissement sur les réponses générées — sortait
+   du cadre.
+2. **Chevauchement avec la bannière de consentement.** Elle est fixée en bas,
+   centrée, large de 880 px au plus : sur 1 280 px elle occupe 200 à 1 080 et
+   passe donc sous la bulle ancrée à droite. Le problème n'était pas réservé
+   au mobile, comme je l'avais d'abord cru.
+3. **Panneau débordant par le haut sur téléphone**, en-tête et bouton de
+   fermeture hors écran, une fois la bulle remontée pour éviter la bannière.
+   La hauteur maximale ne tenait pas compte du décalage bas.
+4. **Un bouton mort sans JavaScript.** Le balisage se rendait, le script seul
+   lui donnait vie. La bulle est désormais masquée par défaut et révélée par
+   le script : mieux vaut pas de bouton qu'un bouton inerte.
+
+**Correctif de fond sur 2 et 3** : la hauteur de la bannière dépend de la
+langue et de la largeur. Deviner une valeur en pixels était faux en français
+sur téléphone. `assets/js/chatbot.js` la **mesure** et pose `--chatbot-bas`,
+dont le CSS déduit la hauteur maximale du panneau. Un `MutationObserver` suit
+l'attribut `hidden` de la bannière pour rendre la place dès que le visiteur a
+répondu.
+
+**Garantie côté navigateur** : la réponse est traitée comme du texte, jamais
+comme du HTML. Tout est échappé, puis un balisage minimal est réintroduit — et
+**seules les adresses présentes dans `sources`**, donc vérifiées par n8n contre
+le socle, deviennent cliquables. C'est la seconde serrure après celle du
+serveur.
+
+**Reste à faire** : l'essai de bout en bout depuis la vraie bulle ne peut avoir
+lieu qu'une fois le site poussé. Le webhook n'accepte que les origines
+`osfarm.org` et `osfarm.github.io` : une page servie depuis `127.0.0.1` est
+refusée par CORS, et c'est le comportement voulu.
+
+### Le plan d'origine, pour mémoire
+
 ## P4 — La bulle (parallélisable avec P1)
 
 **Objectif** : une bulle bilingue, accessible, qui dégrade proprement.
@@ -391,7 +463,7 @@ que la réponse arrive quand même, marquée `secours`.
 
 | # | Tâche |
 |---|---|
-| **6.0** | **REDESCENDRE `PAR_IP_HEURE` DE 30 À 5** dans le nœud « Valider la question ». Monté à 30 le 21/09/2026 pour la mise au point du point d'arrêt P2. |
+| ~~6.0~~ | ~~Redescendre `PAR_IP_HEURE` de 30 à 5~~ **FAIT le 21/09/2026**, dès la fin de la mise au point, pour ne pas laisser traîner une protection affaiblie. |
 | 6.1 | Ligne au bloc « Données personnelles » de `docs/fr/contact.html` et `docs/en/contact.html` : finalité, absence de conservation des échanges, destinataire |
 | 6.2 | Mention du traitement par `automation.osfarm.org` (le bloc « Formulaires » des mentions légales la couvre déjà — vérifier qu'elle suffit) |
 | 6.3 | `_chatbot/README.md` remplace ce plan : ce qui existe, comment l'éditer, où sont les plafonds |

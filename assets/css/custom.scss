@@ -2668,3 +2668,261 @@ a.bouton-osfarm.bouton-osfarm--clair.bouton-osfarm--plein:hover {
   border-color: $osfarm-encre;
   color: #fff;
 }
+
+// --------------------------------------------------------------------------
+// Bulle d'assistance (_includes/chatbot.html) : un bouton flottant en bas à
+// droite, et un panneau qui s'ouvre au-dessus. Posée sur toutes les pages par
+// les deux pieds de page.
+//
+// Elle emprunte la palette de l'annuaire ($radar-*) : c'est le même fonds
+// qu'elle donne à lire. Sur téléphone, le panneau prend toute la largeur et
+// s'ancre en bas, parce qu'un panneau flottant de 380 px y serait illisible.
+// --------------------------------------------------------------------------
+.chatbot {
+  // --chatbot-bas porte l'écart au bas de l'écran. La hauteur du panneau s'en
+  // déduit : sans ce lien, remonter la bulle pour éviter la bannière de
+  // consentement faisait déborder le panneau par le haut, en-tête et bouton
+  // de fermeture hors de l'écran.
+  --chatbot-bas: 16px;
+
+  // Masquée par défaut, révélée par assets/js/chatbot.js. Sans JavaScript, la
+  // bulle n'existe pas du tout : mieux vaut pas de bouton qu'un bouton mort.
+  display: none;
+  position: fixed;
+  right: 16px;
+  bottom: var(--chatbot-bas);
+  z-index: 60;                 // au-dessus des cartes, sous la bannière de consentement
+  font-size: 15px;
+  color: $radar-texte;
+}
+
+.chatbot.is-actif { display: block; }
+
+.chatbot-invisible {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.chatbot-appel {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 10px 16px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  background: $osfarm-green;
+  border: 0;
+  border-radius: 999px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, .22);
+
+  &:hover { background: $osfarm-green-dark; }
+
+  &:focus-visible {
+    outline: 2px solid $osfarm-green-dark;
+    outline-offset: 2px;
+  }
+}
+
+.chatbot.is-ouvert .chatbot-appel { display: none; }
+
+.chatbot-panneau {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  max-width: calc(100vw - 32px);
+  max-height: min(560px, calc(100vh - var(--chatbot-bas) - 16px));
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid $radar-bordure;
+  border-radius: $radar-rayon;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, .25);
+
+  &[hidden] { display: none; }
+}
+
+.chatbot-tete {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  background: #f5f9f2;
+  border-bottom: 1px solid $radar-bordure;
+}
+
+.chatbot-titre {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.chatbot-fermer {
+  display: flex;
+  padding: 4px;
+  color: $radar-attenue;
+  cursor: pointer;
+  background: none;
+  border: 0;
+  border-radius: 6px;
+
+  &:hover { color: $radar-texte; background: #fff; }
+}
+
+.chatbot-fil {
+  flex: 1;
+  // min-height: 0 est indispensable : sans lui, un enfant flex refuse de
+  // rétrécir sous la taille de son contenu, le panneau déborde de sa
+  // max-height et le pied de panneau se retrouve rogné.
+  min-height: 0;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.chatbot-intro {
+  margin: 0 0 12px;
+  font-size: 14px;
+  color: $radar-attenue;
+}
+
+.chatbot-exemples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 0;
+  margin: 0 0 4px;
+  list-style: none;
+}
+
+.chatbot-exemple {
+  padding: 6px 10px;
+  font-family: inherit;
+  font-size: 13px;
+  color: $osfarm-green-dark;
+  text-align: left;
+  cursor: pointer;
+  background: $osfarm-green-light;
+  border: 1px solid transparent;
+  border-radius: 999px;
+
+  &:hover { border-color: $osfarm-green; }
+}
+
+.chatbot-message {
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 1.5;
+
+  p { margin: 0 0 8px; }
+  p:last-child { margin-bottom: 0; }
+  ul { padding-left: 18px; margin: 0 0 8px; }
+  li { margin-bottom: 4px; }
+  a { color: $osfarm-green-dark; }
+}
+
+.chatbot-message--visiteur {
+  padding: 8px 12px;
+  margin-left: 32px;
+  background: $osfarm-green-light;
+  border-radius: 12px 12px 2px 12px;
+}
+
+.chatbot-message--attente {
+  font-style: italic;
+  color: $radar-attenue;
+}
+
+.chatbot-message--repli {
+  padding: 10px 12px;
+  background: #fdf3f1;
+  border: 1px solid #f0d5cf;
+  border-radius: 10px;
+}
+
+.chatbot-sources,
+.chatbot-replis {
+  margin-top: 8px !important;
+  font-size: 12px;
+  color: $radar-attenue;
+
+  span { font-weight: 600; }
+}
+
+.chatbot-formulaire {
+  display: flex;
+  gap: 8px;
+  padding: 12px 16px;
+  border-top: 1px solid $radar-bordure;
+}
+
+.chatbot-champ {
+  flex: 1;
+  margin: 0;
+
+  input {
+    width: 100%;
+    padding: 8px 10px;
+    font-family: inherit;
+    font-size: 15px;
+    color: $radar-texte;
+    border: 1px solid $radar-bordure;
+    border-radius: 8px;
+
+    &:focus {
+      border-color: $osfarm-green;
+      outline: none;
+      box-shadow: 0 0 0 3px rgba($osfarm-green, .2);
+    }
+  }
+}
+
+.chatbot-envoyer {
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  color: #fff;
+  cursor: pointer;
+  background: $osfarm-green;
+  border: 0;
+  border-radius: 8px;
+
+  &:hover { background: $osfarm-green-dark; }
+  &:disabled { cursor: default; opacity: .5; }
+}
+
+.chatbot-avertissement {
+  padding: 0 16px 12px;
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.4;
+  color: $radar-attenue;
+}
+
+// Piège à robots : invisible pour l'humain, rempli par les formulaires
+// automatiques, et l'envoi est alors abandonné.
+.chatbot-leurre {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+}
+
+@media (max-width: 543px) {
+  .chatbot { --chatbot-bas: 12px; right: 12px; left: 12px; }
+  .chatbot-appel { width: 100%; justify-content: center; }
+
+  .chatbot-panneau {
+    width: 100%;
+    max-width: none;
+    max-height: calc(100vh - var(--chatbot-bas) - 12px);
+  }
+}
+
+// L'écart au bas de l'écran est calculé par assets/js/chatbot.js, qui MESURE
+// la bannière de consentement au lieu de deviner sa hauteur : elle change avec
+// la langue et avec la largeur de l'écran. Une valeur en dur faisait passer le
+// panneau sous la bannière en français sur téléphone.
