@@ -1,4 +1,33 @@
 {
+ "00a6774145eb": {
+  "famille": "donnees",
+  "id": "00a6774145eb",
+  "interet": "",
+  "mots_cles": [
+   "assurance récolte",
+   "indemnités",
+   "usda",
+   "données historiques"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Jeu de données partiel sur les indemnisations d'assurance récolte aux États-Unis entre 1989 et 2023. Il contient un échantillon de 1 000 lignes extraites d'un jeu de 4 173 884 lignes."
+ },
+ "0d5d953436ac": {
+  "famille": "donnees",
+  "id": "0d5d953436ac",
+  "interet": "Ce jeu de données permet de suivre l'impact carbone des espaces naturels et agricoles pour orienter des actions face au changement climatique.",
+  "mots_cles": [
+   "bilan carbone",
+   "espaces naturels",
+   "agriculture",
+   "forêt",
+   "changement climatique"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce jeu de données présente un bilan carbone des espaces naturels, agricoles et forestiers en Provence-Alpes-Côte d'Azur. Il inclut des outils d'aide à la décision accompagnés par la Région."
+ },
  "0f9f451e065a": {
   "famille": "logiciel",
   "id": "0f9f451e065a",
@@ -29,6 +58,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Extraction filtrée des informations réglementaires sur les produits phytosanitaires autorisés en vigne, incluant délais et distances. Elle provient du catalogue officiel E-Phy."
  },
+ "164d00c12f42": {
+  "famille": "donnees",
+  "id": "164d00c12f42",
+  "interet": "Permet d'évaluer l'état nutritionnel des citrus pour ajuster les apports en engrais.",
+  "mots_cles": [
+   "citrus",
+   "azote foliaire",
+   "imagerie hyperspectrale",
+   "diagnostic foliaire",
+   "modèle"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Jeu de données et code d'analyse pour estimer la teneur en azote des feuilles de citrus par imagerie hyperspectrale. Il permet de développer des modèles de diagnostic foliaire non destructif."
+ },
  "1b8a2abb9b86": {
   "famille": "modele",
   "id": "1b8a2abb9b86",
@@ -43,6 +87,51 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Modèle de classification d'images pour détecter des maladies sur des plantes à partir de photos. Il identifie des maladies végétales via un réseau de neurones entraîné sur des images de plantes."
+ },
+ "2072617884e2": {
+  "famille": "logiciel",
+  "id": "2072617884e2",
+  "interet": "Permet de surveiller et gérer le bétail dans les abattoirs ou les élevages.",
+  "mots_cles": [
+   "détection de bétail",
+   "vision par ordinateur",
+   "comptage automatique",
+   "surveillance en temps réel",
+   "gestion des abattoirs"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Outil de détection et de comptage en temps réel du bétail à partir de flux vidéo. Il utilise des modèles de vision par ordinateur pour analyser les images de caméras de surveillance."
+ },
+ "20bd7473ca95": {
+  "famille": "matériel",
+  "id": "20bd7473ca95",
+  "interet": "Facilite le suivi des ruches pour les apiculteurs.",
+  "mots_cles": [
+   "ruche",
+   "balance",
+   "esp32",
+   "surveillance",
+   "diy"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Balance connectée pour ruches utilisant un ESP32, mesurant le poids et la température avec transmission via Wi-Fi. Projet DIY open source."
+ },
+ "21072f6bce2a": {
+  "famille": "logiciel",
+  "id": "21072f6bce2a",
+  "interet": "Automatiser la collecte et l'analyse de données environnementales ou agricoles pour optimiser les interventions.",
+  "mots_cles": [
+   "esp32",
+   "iot",
+   "monitoring",
+   "mqtt",
+   "télémétrie"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Plateforme de monitoring IoT basée sur ESP32 utilisant MQTT pour collecter des télémétries en temps réel via des capteurs dynamiques. Elle permet de surveiller des paramètres environnementaux ou agricoles à distance."
  },
  "30fd807fe8fb": {
   "famille": "modele",
@@ -73,6 +162,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Données annuelles de ventes de pesticides par département en France, déclarées par les distributeurs. Elles permettent de suivre les ventes sur le territoire."
+ },
+ "3b6b49498e58": {
+  "famille": "modele",
+  "id": "3b6b49498e58",
+  "interet": "Ce modèle permet d'estimer les besoins énergétiques des cultures en environnement contrôlé pour optimiser leur intégration avec des sources renouvelables.",
+  "mots_cles": [
+   "cea",
+   "énergie solaire",
+   "demande énergétique",
+   "cultures",
+   "modèle"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce projet propose un modèle d'évaluation de la demande énergétique des systèmes agricoles en environnement contrôlé (CEA) alimentés par énergie solaire. Il compare cette demande à la production agricole spécifique à l'échelle mondiale."
  },
  "3cf912ac5204": {
   "famille": "logiciel",
@@ -179,6 +283,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Cet agent d'IA open source conçu pour l'agronomie fonctionne localement et propose des conceptions de systèmes aquaponiques via des interfaces de messagerie. Il s'appuie sur des calculs déterministes et des sources citées."
  },
+ "542e3b7210e7": {
+  "famille": "logiciel",
+  "id": "542e3b7210e7",
+  "interet": "",
+  "mots_cles": [
+   "gestion de données",
+   "in-memory",
+   "stockage distribué",
+   "calcul distribué",
+   "cloud-native"
+  ],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
  "5f0b769462f2": {
   "famille": "materiel",
   "id": "5f0b769462f2",
@@ -209,6 +328,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Démarche visant à auditer, optimiser et partager une base de données régionale sur la ressource en eau. Elle inclut la création d'une application de consultation et contribution."
  },
+ "713e478bf2a1": {
+  "famille": "logiciel",
+  "id": "713e478bf2a1",
+  "interet": "",
+  "mots_cles": [
+   "jeu vidéo",
+   "simulation",
+   "roleplay",
+   "lua",
+   "infrastructure"
+  ],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
  "778970822789": {
   "famille": "donnees",
   "id": "778970822789",
@@ -223,6 +357,78 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Cet indicateur calcule le nombre de doses unités (NODU) pour les substances actives des pesticides. Il repose sur le ratio entre la quantité de substance active et la dose maximale autorisée par hectare."
+ },
+ "79ba5d012719": {
+  "famille": "logiciel",
+  "id": "79ba5d012719",
+  "interet": "",
+  "mots_cles": [
+   "agriculture",
+   "diy",
+   "détection de mauvaises herbes",
+   "image"
+  ],
+  "pertinence": "inconnu",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
+ "7b4c276adecc": {
+  "famille": "donnees",
+  "id": "7b4c276adecc",
+  "interet": "Peut servir à entraîner des modèles de détection de maladies ou ravageurs.",
+  "mots_cles": [
+   "maladie",
+   "ravageur",
+   "culture",
+   "image",
+   "benchmark"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Jeu de données de 11 057 images de cultures, maladies et ravageurs issues de photographies de petits agriculteurs."
+ },
+ "7d855e5c6e2a": {
+  "famille": "logiciel",
+  "id": "7d855e5c6e2a",
+  "interet": "",
+  "mots_cles": [
+   "farmbot",
+   "documentation",
+   "ressource"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ressource documentaire centralisant les informations sur FarmBot."
+ },
+ "7e217735dfef": {
+  "famille": "logiciel",
+  "id": "7e217735dfef",
+  "interet": "Évaluer rapidement la santé et la race des animaux pour orienter les décisions d'élevage.",
+  "mots_cles": [
+   "bétail",
+   "ia",
+   "marqueurs aruco",
+   "santé animale",
+   "scoring corporel"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Outil d'évaluation du bétail basé sur l'IA utilisant une photo et des marqueurs ArUco pour estimer la condition corporelle et identifier les races. Il fournit des conseils de santé à partir d'une seule image."
+ },
+ "805909b8a7d3": {
+  "famille": "donnees",
+  "id": "805909b8a7d3",
+  "interet": "Ce jeu de données aide à anticiper les enjeux de transmission et de renouvellement des exploitations agricoles.",
+  "mots_cles": [
+   "chefs d'exploitation",
+   "âge",
+   "transmission",
+   "communes",
+   "recensement"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce jeu de données mesure, à l'échelle communale, la proportion de responsables d'exploitations agricoles de 55 ans ou plus en 2020. Il contient 34 920 lignes, une par commune de France métropolitaine."
  },
  "8c8ba87de1f1": {
   "famille": "modele",
@@ -252,6 +458,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Documentation technique et commerciale de l'entreprise FarmBot Inc. Elle décrit l'organisation et les processus internes liés à la gestion de l'entreprise."
  },
+ "a81974e6bce5": {
+  "famille": "donnees",
+  "id": "a81974e6bce5",
+  "interet": "Ce jeu de données permet d'analyser les interactions entre systèmes agricoles urbains, santé et environnement pour éclairer des décisions d'aménagement.",
+  "mots_cles": [
+   "agriculture urbaine",
+   "fermes verticales",
+   "systèmes biologiques",
+   "technologies intelligentes",
+   "environnement"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce jeu de données compile des études sur l'agriculture urbaine et les fermes verticales intégrant des systèmes biologiques et des technologies intelligentes. Il synthétise des travaux sur leur lien avec l'alimentation, la santé et l'environnement."
+ },
  "aa4052ddabda": {
   "famille": "donnees",
   "id": "aa4052ddabda",
@@ -260,6 +481,35 @@
   "pertinence": "inconnu",
   "redige_par": "mistral-small-latest",
   "resume": ""
+ },
+ "ae5c78b46436": {
+  "famille": "logiciel",
+  "id": "ae5c78b46436",
+  "interet": "Aide à la planification et à la gestion des cultures en fournissant des insights et des alertes précoces.",
+  "mots_cles": [
+   "recommandation de cultures",
+   "tableau de bord",
+   "système d'aide à la décision",
+   "gestion des risques",
+   "alertes précoces"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Plateforme tout-en-un pour l'analyse des cultures, les services de marché et la consultation agricole experte. Elle propose des recommandations et des outils d'aide à la décision."
+ },
+ "af85050e5d73": {
+  "famille": "matériel",
+  "id": "af85050e5d73",
+  "interet": "Permet de concevoir des modules électroniques pour l'agriculture de précision.",
+  "mots_cles": [
+   "agopengps",
+   "circuit imprimé",
+   "fritzing",
+   "module"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Fichiers Fritzing pour la conception de modules de circuits imprimés compatibles avec AOG."
  },
  "b359187bebd4": {
   "famille": "modele",
@@ -336,6 +586,36 @@
   "redige_par": "mistral-small-latest",
   "resume": "Ce jeu de données décrit les régions agricoles et petites régions agricoles en France métropolitaine. Il fournit une cartographie des zones agricoles homogènes."
  },
+ "c8b1344674e8": {
+  "famille": "logiciel",
+  "id": "c8b1344674e8",
+  "interet": "",
+  "mots_cles": [
+   "agents ia",
+   "earth engine",
+   "géospatial",
+   "postgis",
+   "satellite"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ensemble de plugins pour l'ingénierie géospatiale agricole dans Claude Code. Il propose des agents, compétences et garde-fous pour le traitement d'images satellites, PostGIS et Earth Engine."
+ },
+ "ca4a5ea2d9d1": {
+  "famille": "donnees",
+  "id": "ca4a5ea2d9d1",
+  "interet": "Permet d'analyser la répartition spatiale et les volumes de production d'avocat au Mexique.",
+  "mots_cles": [
+   "avocat",
+   "production municipale",
+   "mexique",
+   "cultivars",
+   "géospatial"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Base de données géospatiale de la production d'avocat au Mexique en 2025, intégrant des données par cultivar. Elle fournit des variables de production au niveau municipal."
+ },
  "cb9aa159ce42": {
   "famille": "logiciel",
   "id": "cb9aa159ce42",
@@ -351,6 +631,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "OpenFarm permet de surveiller la santé des cultures via l'imagerie satellite. Il détecte des anomalies pour aider à la prise de décision."
  },
+ "cc47ecf09d0a": {
+  "famille": "donnees",
+  "id": "cc47ecf09d0a",
+  "interet": "Ce jeu de données permet de caractériser la spécialisation économique des territoires ruraux pour des analyses d'aménagement.",
+  "mots_cles": [
+   "spécialisation territoriale",
+   "filières agricoles",
+   "communes",
+   "otex",
+   "polyculture"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce jeu de données identifie, pour chaque commune, la filière agricole dominante en 2020 à partir de l'OTEX en 12 postes. Il contient 34 920 lignes, une par commune de France métropolitaine et d'outre-mer."
+ },
  "cee2b6e345e8": {
   "famille": "logiciel",
   "id": "cee2b6e345e8",
@@ -365,6 +660,35 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Ce projet est une liste curatée de ressources open source dédiées à l'agriculture de précision. Il recense des outils, bibliothèques et projets logiciels pour la gestion des exploitations agricoles."
+ },
+ "d4c44d87cabb": {
+  "famille": "donnees",
+  "id": "d4c44d87cabb",
+  "interet": "",
+  "mots_cles": [
+   "aides publiques",
+   "agriculteurs",
+   "dispositifs",
+   "csv",
+   "données"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce jeu de données recense les dispositifs d'aides publiques aux agriculteurs et agricultrices, mis à jour chaque semaine. Il propose deux exports CSV distincts pour faciliter l'échange et l'utilisation des données."
+ },
+ "d90aeaa302bc": {
+  "famille": "logiciel",
+  "id": "d90aeaa302bc",
+  "interet": "",
+  "mots_cles": [
+   "farmbot",
+   "documentation",
+   "développement",
+   "logiciel"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Documentation technique pour le développement de logiciels liés à FarmBot."
  },
  "d91a27332190": {
   "famille": "modele",
@@ -396,6 +720,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "farmOS est une application web de gestion des enregistrements agricoles. Elle permet de suivre les activités, les cultures, le bétail et le matériel sur une exploitation."
  },
+ "dccc5b359f9b": {
+  "famille": "logiciel",
+  "id": "dccc5b359f9b",
+  "interet": "Permet d'optimiser la gestion des cultures en fonction de données environnementales et agronomiques.",
+  "mots_cles": [
+   "agriculture de précision",
+   "jumeau numérique",
+   "simulation",
+   "données agricoles",
+   "analyse"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Plateforme de jumeau numérique pour l'agriculture de précision. Elle permet de simuler et analyser des données agricoles à grande échelle."
+ },
  "dfaa8673abfd": {
   "famille": "donnees",
   "id": "dfaa8673abfd",
@@ -410,6 +749,36 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Ce jeu de données détaille la répartition des surfaces agricoles utilisées par type de culture au niveau intercommunal. Il indique la composition des surfaces pour chaque EPCI."
+ },
+ "ed382ff29f67": {
+  "famille": "logiciel",
+  "id": "ed382ff29f67",
+  "interet": "Centraliser et organiser les données et opérations d'une exploitation agricole pour en faciliter la gestion.",
+  "mots_cles": [
+   "gestion d'exploitation",
+   "lpis",
+   "postgresql",
+   "rust",
+   "systèmes européens"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Plateforme locale de gestion des exploitations agricoles intégrant champs, tâches, bétail, finances, conformité et météo. Elle centralise plusieurs systèmes européens de parcelles (SIGPAC, BRP, RPG, etc.)."
+ },
+ "f4f3083c6bc3": {
+  "famille": "logiciel",
+  "id": "f4f3083c6bc3",
+  "interet": "Facilite le suivi des colonies d'abeilles et l'analyse des conditions environnementales des ruches.",
+  "mots_cles": [
+   "monitoring de ruches",
+   "abeilles",
+   "capteurs connectés",
+   "esp32",
+   "analyse environnementale"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Hub open source pour le monitoring de ruches utilisant un ESP32-C6. Il collecte des données de poids, climat, son, vibration et trafic d'abeilles via des capteurs connectés."
  },
  "f56546dd6dc3": {
   "famille": "logiciel",
@@ -456,6 +825,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Documentation technique du matériel FarmBot Express, un système de culture automatisé. Elle détaille les composants et leur assemblage."
  },
+ "fb8f5842e988": {
+  "famille": "logiciel",
+  "id": "fb8f5842e988",
+  "interet": "Automatiser la détection précoce de maladies et le suivi des cultures pour réduire les interventions manuelles.",
+  "mots_cles": [
+   "detection de maladies",
+   "esp32",
+   "ia",
+   "navigation autonome",
+   "vision par ordinateur"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Rover agricole intelligent utilisant l'IA pour détecter les maladies des plantes, naviguer de manière autonome et surveiller en temps réel via IoT. Il combine vision par ordinateur et capteurs ESP32."
+ },
  "fe62f3dd902b": {
   "famille": "logiciel",
   "id": "fe62f3dd902b",
@@ -470,5 +854,20 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Système d'exploitation et logiciels associés exécutés sur un Raspberry Pi pour contrôler un FarmBot. Il permet de gérer les instructions et les opérations du FarmBot."
+ },
+ "ff2d69f3a1be": {
+  "famille": "matériel",
+  "id": "ff2d69f3a1be",
+  "interet": "Permet de suivre l'état des ruches à distance pour optimiser la gestion apicole.",
+  "mots_cles": [
+   "ruche",
+   "lorawan",
+   "surveillance",
+   "batterie",
+   "embarqué"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Système de surveillance de ruches via LoRaWAN mesurant le poids, la température et l'état de la batterie. Il inclut un matériel embarqué et une application de configuration Bluetooth."
  }
 }

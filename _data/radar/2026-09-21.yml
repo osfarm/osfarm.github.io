@@ -1,0 +1,1027 @@
+# Lot du radar OSFarm. Passer « publier » à false pour écarter une fiche,
+# corriger « resume » au besoin. La fusion de la pull request publie le reste.
+date: '2026-09-21'
+examines: 333
+retenus: 27
+rejets:
+  deja_vu: 142
+  deja_sur_le_site: 6
+  licence: 7
+  score: 1
+pannes: []
+candidats:
+- id: 21072f6bce2a
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: osmanhadzic/agronode
+  url: https://github.com/osmanhadzic/agronode
+  description: ESP32 IoT monitoring platform with MQTT, real-time telemetry, and dynamic sensors.
+  licence: mit
+  date_maj: '2026-09-19'
+  techno: Go
+  popularite: 3
+  mots_cles:
+  - agriculture
+  - esp32
+  - iot
+  - monitoring
+  - mqtt
+  - smart-farming
+  score: 92
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farm, farming'
+  propose_le: '2026-09-21'
+  publier: true
+  resume: Plateforme de monitoring IoT basée sur ESP32 utilisant MQTT pour collecter des télémétries en
+    temps réel via des capteurs dynamiques. Elle permet de surveiller des paramètres environnementaux
+    ou agricoles à distance.
+  interet: Automatiser la collecte et l'analyse de données environnementales ou agricoles pour optimiser
+    les interventions.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - esp32
+  - iot
+  - monitoring
+  - mqtt
+  - télémétrie
+- id: 7e217735dfef
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: AryanSinghh07/Cattle-Scoring-and-Breed-Selection
+  url: https://github.com/AryanSinghh07/Cattle-Scoring-and-Breed-Selection
+  description: AI-powered cattle and buffalo evaluation for Indian farmers - body condition scoring, breed
+    identification, and health guidance from a single photo using ArUco markers. Supports the Rashtriya
+    Gokul Mission.
+  licence: mit
+  date_maj: '2026-07-11'
+  techno: TypeScript
+  popularite: 3
+  mots_cles:
+  - agriculture
+  - agritech
+  - artificial-intelligence
+  - aruco-markers
+  - body-condition-score
+  - cattle
+  - computer-vision
+  - dairy-farming
+  score: 92
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, agritech, farm, farmer, farming, cattle'
+  propose_le: '2026-09-21'
+  publier: true
+  resume: Outil d'évaluation du bétail basé sur l'IA utilisant une photo et des marqueurs ArUco pour estimer
+    la condition corporelle et identifier les races. Il fournit des conseils de santé à partir d'une seule
+    image.
+  interet: Évaluer rapidement la santé et la race des animaux pour orienter les décisions d'élevage.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - bétail
+  - ia
+  - marqueurs aruco
+  - santé animale
+  - scoring corporel
+- id: ed382ff29f67
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: peopleandpixel/agrocore-rs
+  url: https://github.com/peopleandpixel/agrocore-rs
+  description: Farm operations platform – fields, tasks, livestock, finance, compliance, weather, equipment
+    & admin in one local-first, open-source system. 8 European LPIS providers (SIGPAC, BRP, RPG, iLPIS,
+    SIAN, LPIS-DE, LPIS-PL, INVEKOS) built-in. Rust 2024 · Actix Web · Leptos · PostgreSQL/PostGIS · NATS.
+  licence: gpl-3.0
+  date_maj: '2026-09-21'
+  techno: Rust
+  popularite: 3
+  mots_cles:
+  - actix-web
+  - agriculture
+  - brp
+  - docker
+  - farm-management
+  - gpl-3
+  - i18n
+  - ilpis
+  score: 92
+  raisons:
+  - licence gpl-3.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farm, livestock, weather'
+  propose_le: '2026-09-21'
+  publier: true
+  resume: Plateforme locale de gestion des exploitations agricoles intégrant champs, tâches, bétail, finances,
+    conformité et météo. Elle centralise plusieurs systèmes européens de parcelles (SIGPAC, BRP, RPG,
+    etc.).
+  interet: Centraliser et organiser les données et opérations d'une exploitation agricole pour en faciliter
+    la gestion.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - gestion d'exploitation
+  - lpis
+  - postgresql
+  - rust
+  - systèmes européens
+- id: c8b1344674e8
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: Adilmunawar/ZD-claude-plugin
+  url: https://github.com/Adilmunawar/ZD-claude-plugin
+  description: Claude Code plugins for agricultural geospatial engineering. agents, skills and guardrails
+    for satellite ML, PostGIS/Earth Engine, Next.js and mobile apps, deployment and ops. One install,
+    14 modules, tested hooks, npm CLI.
+  licence: mit
+  date_maj: '2026-09-07'
+  techno: JavaScript
+  popularite: 8
+  mots_cles:
+  - agriculture
+  - agritech
+  - ai-agents
+  - anthropic
+  - claude
+  - claude-code
+  - claude-code-plugins
+  - developer-tools
+  score: 91
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, agritech, geospatial'
+  propose_le: '2026-09-21'
+  publier: true
+  resume: Ensemble de plugins pour l'ingénierie géospatiale agricole dans Claude Code. Il propose des
+    agents, compétences et garde-fous pour le traitement d'images satellites, PostGIS et Earth Engine.
+  interet: ''
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - agents ia
+  - earth engine
+  - géospatial
+  - postgis
+  - satellite
+- id: fb8f5842e988
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: shayak-98/AGRO-VATORS
+  url: https://github.com/shayak-98/AGRO-VATORS
+  description: AI-powered Smart Farming Rover for Plant Disease Detection, Autonomous Navigation, and
+    Real-time IoT Monitoring
+  licence: mit
+  date_maj: '2026-09-20'
+  techno: C
+  popularite: 5
+  mots_cles:
+  - agriculture
+  - ai
+  - computer-vision
+  - esp32
+  - esp32-cam
+  - iot
+  - plant-disease-detection
+  - python
+  score: 88
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farming'
+  propose_le: '2026-09-21'
+  publier: true
+  resume: Rover agricole intelligent utilisant l'IA pour détecter les maladies des plantes, naviguer de
+    manière autonome et surveiller en temps réel via IoT. Il combine vision par ordinateur et capteurs
+    ESP32.
+  interet: Automatiser la détection précoce de maladies et le suivi des cultures pour réduire les interventions
+    manuelles.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - detection de maladies
+  - esp32
+  - ia
+  - navigation autonome
+  - vision par ordinateur
+- id: 79ba5d012719
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: geezacoleman/OpenWeedLocator
+  url: https://github.com/geezacoleman/OpenWeedLocator
+  description: An open-source, low-cost, image-based weed detection device for in-crop and fallow scenarios.
+  licence: mit
+  date_maj: '2026-09-16'
+  techno: Python
+  popularite: 496
+  mots_cles:
+  - agriculture
+  - diy
+  score: 88
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, crop'
+  propose_le: '2026-09-21'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: inconnu
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - agriculture
+  - diy
+  - détection de mauvaises herbes
+  - image
+- id: dccc5b359f9b
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: NRR385/CropTwin
+  url: https://github.com/NRR385/CropTwin
+  description: 🌾 Digital Twin Platform for Precision Agriculture | AWS Serverless | TypeScript | Capable
+    of serving 1000+ farms in India
+  licence: mit
+  date_maj: '2026-06-12'
+  techno: TypeScript
+  popularite: 5
+  mots_cles:
+  - agriculture
+  - agritech
+  - aws
+  - digital-twin
+  - india
+  - nodejs
+  - serverless
+  - typescript
+  score: 88
+  raisons:
+  - licence mit
+  - actif (moins d'un an)
+  - 'vocabulaire : agriculture, agritech, farm'
+  propose_le: '2026-09-21'
+  publier: true
+  resume: Plateforme de jumeau numérique pour l'agriculture de précision. Elle permet de simuler et analyser
+    des données agricoles à grande échelle.
+  interet: Permet d'optimiser la gestion des cultures en fonction de données environnementales et agronomiques.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - agriculture de précision
+  - jumeau numérique
+  - simulation
+  - données agricoles
+  - analyse
+- id: ae5c78b46436
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: Ryson-Theo/CropVector
+  url: https://github.com/Ryson-Theo/CropVector
+  description: All-in-one ag-platform for crop insights, marketplace services, and expert farming consultation.
+  licence: mit
+  date_maj: '2026-05-28'
+  techno: JavaScript
+  popularite: 5
+  mots_cles:
+  - agriculture
+  - crop-recommendation
+  - dashboard
+  - decision-support-system
+  - disaster-management
+  - early-warning-systems
+  - full-stack
+  - marketplace
+  score: 87
+  raisons:
+  - licence mit
+  - actif (moins d'un an)
+  - 'vocabulaire : agriculture, farming, crop'
+  propose_le: '2026-09-21'
+  publier: true
+  resume: Plateforme tout-en-un pour l'analyse des cultures, les services de marché et la consultation
+    agricole experte. Elle propose des recommandations et des outils d'aide à la décision.
+  interet: Aide à la planification et à la gestion des cultures en fournissant des insights et des alertes
+    précoces.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - recommandation de cultures
+  - tableau de bord
+  - système d'aide à la décision
+  - gestion des risques
+  - alertes précoces
+- id: 542e3b7210e7
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-viti
+  titre: v6d-io/v6d
+  url: https://github.com/v6d-io/v6d
+  description: 'vineyard (v6d): an in-memory immutable data manager. (Project under CNCF, TAG-Storage)'
+  licence: apache-2.0
+  date_maj: '2026-01-22'
+  techno: C++
+  popularite: 964
+  mots_cles:
+  - big-data-analytics
+  - cloud-native
+  - cncf
+  - distributed
+  - distributed-comp
+  - distributed-systems
+  - graph-analytics
+  - in-memory-storage
+  score: 79
+  raisons:
+  - licence apache-2.0
+  - actif (moins d'un an)
+  - 'vocabulaire : vineyard'
+  propose_le: '2026-09-21'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - gestion de données
+  - in-memory
+  - stockage distribué
+  - calcul distribué
+  - cloud-native
+- id: 713e478bf2a1
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-viti
+  titre: qbcore-fivem/qb-vineyard
+  url: https://github.com/qbcore-fivem/qb-vineyard
+  description: Vineyard Job For QB-Core
+  licence: gpl-3.0
+  date_maj: '2026-08-25'
+  techno: Lua
+  popularite: 32
+  mots_cles:
+  - fivem
+  - gta5
+  - lua
+  - qbcore
+  - roleplay
+  score: 77
+  raisons:
+  - licence gpl-3.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : vineyard'
+  propose_le: '2026-09-21'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - jeu vidéo
+  - simulation
+  - roleplay
+  - lua
+  - infrastructure
+- id: 2072617884e2
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-elevage
+  titre: Ubada12/Deonar-AI
+  url: https://github.com/Ubada12/Deonar-AI
+  description: Real-time livestock detection & counting using YOLOv11 + ByteTrack on live CCTV. Built
+    for Deonar abattoir, dual-line counting, slot management API, WebRTC live preview.
+  licence: apache-2.0
+  date_maj: '2026-07-26'
+  techno: Python
+  popularite: 3
+  mots_cles:
+  - bytetrack
+  - cctv
+  - computer-vision
+  - deep-learning
+  - fastapi
+  - livestock
+  - object-detection
+  - object-tracking
+  score: 76
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : livestock'
+  propose_le: '2026-09-21'
+  publier: true
+  resume: Outil de détection et de comptage en temps réel du bétail à partir de flux vidéo. Il utilise
+    des modèles de vision par ordinateur pour analyser les images de caméras de surveillance.
+  interet: Permet de surveiller et gérer le bétail dans les abattoirs ou les élevages.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - détection de bétail
+  - vision par ordinateur
+  - comptage automatique
+  - surveillance en temps réel
+  - gestion des abattoirs
+- id: f4f3083c6bc3
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-elevage
+  titre: MacNite/HiveHub
+  url: https://github.com/MacNite/HiveHub
+  description: Open-source ESP32-C6 beehive monitoring hub for scales and sensors. Collects weight, climate,
+    sound, vibration and bee traffic from up to 16 hives, with BLE, OTA, FastAPI/PostgreSQL backend, dashboards,
+    MQTT and tested KiCad hardware.
+  licence: mit
+  date_maj: '2026-09-20'
+  techno: Python
+  popularite: 6
+  mots_cles:
+  - beehive
+  - beehive-monitoring
+  - beekeeping
+  - bluetooth-low-energy
+  - docker
+  - esp32
+  - esp32-c6
+  - fastapi
+  score: 76
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : beehive'
+  propose_le: '2026-09-21'
+  publier: true
+  resume: Hub open source pour le monitoring de ruches utilisant un ESP32-C6. Il collecte des données
+    de poids, climat, son, vibration et trafic d'abeilles via des capteurs connectés.
+  interet: Facilite le suivi des colonies d'abeilles et l'analyse des conditions environnementales des
+    ruches.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - monitoring de ruches
+  - abeilles
+  - capteurs connectés
+  - esp32
+  - analyse environnementale
+- id: ff2d69f3a1be
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-elevage
+  titre: hmd83/tanen
+  url: https://github.com/hmd83/tanen
+  description: 'LoRaWAN beehive monitor: hive weight, temperature and battery over TTN. Seeed XIAO nRF54LM20A
+    + SX1262, Zephyr/nRF Connect SDK. ~4 uA sleep, ~10 year life on 3X AAA cell. Includes KiCad hardware
+    and a Web Bluetooth config app.'
+  licence: apache-2.0
+  date_maj: '2026-09-13'
+  techno: JavaScript
+  popularite: 15
+  mots_cles:
+  - battery-powered
+  - beehive-monitoring
+  - beekeeping
+  - claude-code
+  - embedded
+  - iot
+  - kicad
+  - load-cell
+  score: 76
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : beehive'
+  propose_le: '2026-09-21'
+  publier: true
+  resume: Système de surveillance de ruches via LoRaWAN mesurant le poids, la température et l'état de
+    la batterie. Il inclut un matériel embarqué et une application de configuration Bluetooth.
+  interet: Permet de suivre l'état des ruches à distance pour optimiser la gestion apicole.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - ruche
+  - lorawan
+  - surveillance
+  - batterie
+  - embarqué
+- id: 20bd7473ca95
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-elevage
+  titre: darkvolg/BeehiveScale-ESP32
+  url: https://github.com/darkvolg/BeehiveScale-ESP32
+  description: Smart bee hive scale with ESP32. Weight, temperature, Wi-Fi, Telegram, charts, 26+ days
+    battery life. Open-source DIY project.
+  licence: mit
+  date_maj: '2026-09-12'
+  techno: C++
+  popularite: 5
+  mots_cles:
+  - apiary
+  - arduino
+  - beehive
+  - beekeeping
+  - deep-sleep
+  - diy
+  - esp32
+  - hardware
+  score: 76
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : beehive'
+  propose_le: '2026-09-21'
+  publier: true
+  resume: Balance connectée pour ruches utilisant un ESP32, mesurant le poids et la température avec transmission
+    via Wi-Fi. Projet DIY open source.
+  interet: Facilite le suivi des ruches pour les apiculteurs.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - ruche
+  - balance
+  - esp32
+  - surveillance
+  - diy
+- id: d90aeaa302bc
+  famille: materiel
+  relecteur: jancelin
+  source: github-materiel-agri
+  titre: FarmBot-Docs/farmbot-developers
+  url: https://github.com/FarmBot-Docs/farmbot-developers
+  description: FarmBot software developer documentation
+  licence: mit
+  date_maj: '2026-05-05'
+  techno: Ruby
+  popularite: 4
+  mots_cles:
+  - farmbot
+  score: 58
+  raisons:
+  - licence mit
+  - actif (moins d'un an)
+  propose_le: '2026-09-21'
+  publier: true
+  resume: Documentation technique pour le développement de logiciels liés à FarmBot.
+  interet: ''
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - farmbot
+  - documentation
+  - développement
+  - logiciel
+- id: 7d855e5c6e2a
+  famille: materiel
+  relecteur: jancelin
+  source: github-materiel-agri
+  titre: FarmBot-Docs/farmbot-docs
+  url: https://github.com/FarmBot-Docs/farmbot-docs
+  description: FarmBot Documentation Hub
+  licence: mit
+  date_maj: '2026-05-05'
+  techno: SCSS
+  popularite: 3
+  mots_cles:
+  - farmbot
+  score: 58
+  raisons:
+  - licence mit
+  - actif (moins d'un an)
+  propose_le: '2026-09-21'
+  publier: true
+  resume: Ressource documentaire centralisant les informations sur FarmBot.
+  interet: ''
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - farmbot
+  - documentation
+  - ressource
+- id: af85050e5d73
+  famille: materiel
+  relecteur: jancelin
+  source: github-materiel-agri
+  titre: AOG-silrep/PCB-modules
+  url: https://github.com/AOG-silrep/PCB-modules
+  description: Fritzing files for PCBs to use with AOG
+  licence: gpl-3.0
+  date_maj: '2026-04-19'
+  techno: ''
+  popularite: 4
+  mots_cles:
+  - agopengps
+  - fritzing
+  - pcb
+  score: 58
+  raisons:
+  - licence gpl-3.0
+  - actif (moins d'un an)
+  propose_le: '2026-09-21'
+  publier: true
+  resume: Fichiers Fritzing pour la conception de modules de circuits imprimés compatibles avec AOG.
+  interet: Permet de concevoir des modules électroniques pour l'agriculture de précision.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - agopengps
+  - circuit imprimé
+  - fritzing
+  - module
+- id: 7b4c276adecc
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: DigiGreen/Crop-Disease-Image-Eval-Synthetic
+  url: https://huggingface.co/datasets/DigiGreen/Crop-Disease-Image-Eval-Synthetic
+  description: Crop, Category, Disease and Pest Test Set 11,057 smallholder-farmer photographs sent to
+    FarmerChat from Ethiopia, India, Kenya and Nigeria, each labelled with the crop, whether the problem
+    is a disease or a pest, and which one. This is the held-out test split of a four-head classifica
+  licence: cc-by-4.0
+  date_maj: '2026-09-21'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - crop-disease
+  - pest-detection
+  - plant-pathology
+  - benchmark
+  score: 92
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farm, farmer, crop'
+  propose_le: '2026-09-21'
+  publier: true
+  resume: Jeu de données de 11 057 images de cultures, maladies et ravageurs issues de photographies de
+    petits agriculteurs.
+  interet: Peut servir à entraîner des modèles de détection de maladies ou ravageurs.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - maladie
+  - ravageur
+  - culture
+  - image
+  - benchmark
+- id: 3b6b49498e58
+  famille: modele
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: Assessing upper bounds for solar-powered Controlled Environment Agriculture on existing cropland
+  url: https://doi.org/10.5281/zenodo.14921975
+  description: Main data and methods used for Roberts&nbsp; et al. (2026) - " Assessing upper bounds for
+    solar-powered Controlled Environment Agriculture on existing cropland" Frontiers in Sustainable Food
+    Systems 10:1945186 &nbsp; Methods - CEA energy demand model setup To compare CEA powered by PV with
+    crop-specific production globally, we derived a spatially-explicit energy demand per CEA. This type
+    of compar
+  licence: cc-by-4.0
+  date_maj: '2026-09-21'
+  techno: ''
+  popularite: 0
+  mots_cles: []
+  score: 88
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, cropland, food'
+  propose_le: '2026-09-21'
+  publier: true
+  resume: Ce projet propose un modèle d'évaluation de la demande énergétique des systèmes agricoles en
+    environnement contrôlé (CEA) alimentés par énergie solaire. Il compare cette demande à la production
+    agricole spécifique à l'échelle mondiale.
+  interet: Ce modèle permet d'estimer les besoins énergétiques des cultures en environnement contrôlé
+    pour optimiser leur intégration avec des sources renouvelables.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  famille_initiale: donnees
+  mots_cles_fr:
+  - cea
+  - énergie solaire
+  - demande énergétique
+  - cultures
+  - modèle
+- id: a81974e6bce5
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: 'Smart Bio-Integrated Urban Agriculture and Vertical Farming for a Sustainable Urban Food, Health,
+    and Environment Nexus: A Systematic Review'
+  url: https://doi.org/10.5281/zenodo.22840780
+  description: 'This dataset supports the systematic review article "Smart Bio-Integrated Urban Agriculture
+    and Vertical Farming for a Sustainable Urban Food, Health, and Environment Nexus: A Systematic Review",
+    which synthesises evidence from thirty-eight (38) studies examining how the integration of biological
+    systems, smart technologies, architectural design, food engineering, and environmental management
+    in u'
+  licence: cc0-1.0
+  date_maj: '2026-09-19'
+  techno: ''
+  popularite: 0
+  mots_cles: []
+  score: 88
+  raisons:
+  - licence cc0-1.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farming, food'
+  propose_le: '2026-09-21'
+  publier: true
+  resume: Ce jeu de données compile des études sur l'agriculture urbaine et les fermes verticales intégrant
+    des systèmes biologiques et des technologies intelligentes. Il synthétise des travaux sur leur lien
+    avec l'alimentation, la santé et l'environnement.
+  interet: Ce jeu de données permet d'analyser les interactions entre systèmes agricoles urbains, santé
+    et environnement pour éclairer des décisions d'aménagement.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - agriculture urbaine
+  - fermes verticales
+  - systèmes biologiques
+  - technologies intelligentes
+  - environnement
+- id: d4c44d87cabb
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: Aides publiques aux agriculteurs et agricultrices
+  url: https://www.data.gouv.fr/datasets/aides-publiques-aux-agriculteurs-et-agricultrices
+  description: 'Ce jeu de données présente les dispositifs d’aides publiques aux agriculteurs et agricultrices,
+    telles que collectés et publiés sur la plateforme [Aides Agri](https://aides-agri.beta.gouv.fr). Il
+    contient deux exports CSV distincts, mis à jour chaque semaine (les lundis), qui présentent les mêmes
+    aides mais se distinguent par le schéma utilisé : * L’un (destiné à la circulation de la donnée au
+    sei'
+  licence: etalab-2.0
+  date_maj: '2026-09-21'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - aides
+  - aides-aux-entreprises
+  - aides-publiques
+  score: 85
+  raisons:
+  - licence etalab-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculteur, agriculture'
+  propose_le: '2026-09-21'
+  publier: true
+  resume: Ce jeu de données recense les dispositifs d'aides publiques aux agriculteurs et agricultrices,
+    mis à jour chaque semaine. Il propose deux exports CSV distincts pour faciliter l'échange et l'utilisation
+    des données.
+  interet: ''
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - aides publiques
+  - agriculteurs
+  - dispositifs
+  - csv
+  - données
+- id: 805909b8a7d3
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: Part des chefs d'exploitation de 55 ans ou plus en 2020
+  url: https://www.data.gouv.fr/datasets/part-des-chefs-dexploitation-de-55-ans-ou-plus-en-2020
+  description: '**Motivations pour la création du jeu de données**\ Cet indicateur mesure, à l''échelle
+    communale, la proportion de responsables d''exploitations agricoles proches de l''âge de la retraite,
+    un signal utile pour anticiper les enjeux de transmission et de renouvellement générationnel dans
+    l''agriculture des territoires. **Composition du jeu de données**\ 34 920 lignes, une ligne par commune
+    de France mé'
+  licence: etalab-2.0
+  date_maj: '2026-07-09'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - chef-dexploitation
+  - communautes-de-communes
+  - commune
+  - communes
+  - recensement-agricole
+  score: 85
+  raisons:
+  - licence etalab-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agricole, agriculture'
+  propose_le: '2026-09-21'
+  publier: true
+  resume: Ce jeu de données mesure, à l'échelle communale, la proportion de responsables d'exploitations
+    agricoles de 55 ans ou plus en 2020. Il contient 34 920 lignes, une par commune de France métropolitaine.
+  interet: Ce jeu de données aide à anticiper les enjeux de transmission et de renouvellement des exploitations
+    agricoles.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - chefs d'exploitation
+  - âge
+  - transmission
+  - communes
+  - recensement
+- id: cc47ecf09d0a
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: Spécialisation territoriale de la production agricole par commune en 2020 (OTEX en 12 postes)
+  url: https://www.data.gouv.fr/datasets/specialisation-territoriale-de-la-production-agricole-par-commune-en-2020-otex-en-12-postes
+  description: '**Motivations pour la création du jeu de données**\ Cet indicateur identifie, pour chaque
+    commune, la filière agricole dominante lorsqu''elle existe, permettant de caractériser la spécialisation
+    économique des territoires ruraux et de croiser cette information avec d''autres enjeux d''aménagement.
+    **Composition du jeu de données**\ 34 920 lignes, une ligne par commune de France métropolitaine et
+    d''ou'
+  licence: etalab-2.0
+  date_maj: '2026-07-09'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - communautes-de-communes
+  - commune
+  - communes
+  - otex
+  - polyculture
+  - polyelevage
+  - production-agricole
+  score: 85
+  raisons:
+  - licence etalab-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agricole, agriculture'
+  propose_le: '2026-09-21'
+  publier: true
+  resume: Ce jeu de données identifie, pour chaque commune, la filière agricole dominante en 2020 à partir
+    de l'OTEX en 12 postes. Il contient 34 920 lignes, une par commune de France métropolitaine et d'outre-mer.
+  interet: Ce jeu de données permet de caractériser la spécialisation économique des territoires ruraux
+    pour des analyses d'aménagement.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - spécialisation territoriale
+  - filières agricoles
+  - communes
+  - otex
+  - polyculture
+- id: 0d5d953436ac
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: Bilan carbone des espaces naturels, agricoles et forestiers en Provence-Alpes-Côte d'Azur
+  url: https://www.data.gouv.fr/datasets/bilan-carbone-des-espaces-naturels-agricoles-et-forestiers-en-provence-alpes-cote-dazur
+  description: 'Cette synthèse, publiée en mai 2026, dans la collection "A l''essentiel", s''intitule
+    "Suivre le bilan carbone dans les espaces naturels, agricoles et forestiers en Région Provence-Alpes-Côte
+    d''Azur ( ENAF ) pour faire face aux changement climatiques. Quels outils d''aide à la décision accompagnés
+    par la Région ?" Abstract: Les sols des espaces naturels, agricoles et forestiers constituent d''importan'
+  licence: cc-by-sa-4.0
+  date_maj: '2026-05-01'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - bilan-carbone
+  - carbone
+  - changement-climatique
+  - enaf
+  - espace-naturel
+  - foret
+  - planclimat
+  score: 85
+  raisons:
+  - licence cc-by-sa-4.0
+  - actif (moins d'un an)
+  - 'vocabulaire : agricole, agriculture, carbon, carbone, climat'
+  propose_le: '2026-09-21'
+  publier: true
+  resume: Ce jeu de données présente un bilan carbone des espaces naturels, agricoles et forestiers en
+    Provence-Alpes-Côte d'Azur. Il inclut des outils d'aide à la décision accompagnés par la Région.
+  interet: Ce jeu de données permet de suivre l'impact carbone des espaces naturels et agricoles pour
+    orienter des actions face au changement climatique.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - bilan carbone
+  - espaces naturels
+  - agriculture
+  - forêt
+  - changement climatique
+- id: 164d00c12f42
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: 'Citrus leaf nitrogen and VNIR hyperspectral reflectance: analytical dataset and analysis code'
+  url: https://doi.org/10.5281/zenodo.22764834
+  description: Analytical dataset and analysis code supporting the article "Leaf maturity and orchard-to-orchard
+    variability shape nondestructive hyperspectral estimation of nitrogen in citrus". The dataset contains
+    684 composite leaf samples collected from nine commercial citrus orchards in the province of Huelva,
+    southwestern Spain, spanning ten cultivars and ten sampling dates between 12 March and 18 June 202
+  licence: cc-by-4.0
+  date_maj: '2026-09-21'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - citrus, leaf nitrogen, hyperspectral imaging, VNIR, partial least squares regression, red edge, NDRE,
+    foliar diagnosis, leaf maturity, model transfer, precision agriculture
+  score: 85
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, orchard'
+  propose_le: '2026-09-21'
+  publier: true
+  resume: Jeu de données et code d'analyse pour estimer la teneur en azote des feuilles de citrus par
+    imagerie hyperspectrale. Il permet de développer des modèles de diagnostic foliaire non destructif.
+  interet: Permet d'évaluer l'état nutritionnel des citrus pour ajuster les apports en engrais.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - citrus
+  - azote foliaire
+  - imagerie hyperspectrale
+  - diagnostic foliaire
+  - modèle
+- id: 00a6774145eb
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: claritystorm/usda-crop-insurance-indemnities-weather
+  url: https://huggingface.co/datasets/claritystorm/usda-crop-insurance-indemnities-weather
+  description: USDA Crop Insurance Indemnities 1989–2023 This repository contains a 1,000-row inspection
+    sample from the corrected 4,173,884-row snapshot of USDA RMA Cause of Loss Summary of Business data.
+    All 35 commodity years, 1989–2023, are represented. Source files were retrieved and hashed Sep
+  licence: cc-by-4.0
+  date_maj: '2026-09-19'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - crop-insurance
+  - USDA
+  - indemnities
+  score: 85
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, crop, weather'
+  propose_le: '2026-09-21'
+  publier: true
+  resume: Jeu de données partiel sur les indemnisations d'assurance récolte aux États-Unis entre 1989
+    et 2023. Il contient un échantillon de 1 000 lignes extraites d'un jeu de 4 173 884 lignes.
+  interet: ''
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - assurance récolte
+  - indemnités
+  - usda
+  - données historiques
+- id: ca4a5ea2d9d1
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: Geospatial Database of Avocado Production at Municipal Level in Mexico, 2025 - Integrated from
+    SIAP and CONABIO (avocado, criollo, fuerte, and hass)
+  url: https://doi.org/10.5281/zenodo.22835120
+  description: 'Geospatial Database of Avocado Production at Municipal Level in Mexico, 2025 - Integrated
+    from SIAP and CONABIO (avocado, criollo, fuerte, and hass) &nbsp; This dataset provides a municipal-level
+    GeoPackage (GPKG) integrating agricultural production data for avocado in Mexico for the year 2025,
+    disaggregated by cultivar: avocado (all cultivars), criollo, fuerte, and hass. Production variables
+    (pla'
+  licence: cc-by-sa-4.0
+  date_maj: '2026-09-18'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - avocado
+  - persea americana
+  - municipal
+  - Mexico
+  - SIAP
+  - CONABIO
+  - agriculture
+  - GIS
+  score: 82
+  raisons:
+  - licence cc-by-sa-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, geospatial, gis'
+  propose_le: '2026-09-21'
+  publier: true
+  resume: Base de données géospatiale de la production d'avocat au Mexique en 2025, intégrant des données
+    par cultivar. Elle fournit des variables de production au niveau municipal.
+  interet: Permet d'analyser la répartition spatiale et les volumes de production d'avocat au Mexique.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - avocat
+  - production municipale
+  - mexique
+  - cultivars
+  - géospatial
+resume_genere_le: 2026-09-21 10:33
