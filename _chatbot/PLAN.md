@@ -373,6 +373,7 @@ que la réponse arrive quand même, marquée `secours`.
 
 | # | Tâche |
 |---|---|
+| **6.0** | **REDESCENDRE `PAR_IP_HEURE` DE 30 À 5** dans le nœud « Valider la question ». Monté à 30 le 21/09/2026 pour la mise au point du point d'arrêt P2. |
 | 6.1 | Ligne au bloc « Données personnelles » de `docs/fr/contact.html` et `docs/en/contact.html` : finalité, absence de conservation des échanges, destinataire |
 | 6.2 | Mention du traitement par `automation.osfarm.org` (le bloc « Formulaires » des mentions légales la couvre déjà — vérifier qu'elle suffit) |
 | 6.3 | `_chatbot/README.md` remplace ce plan : ce qui existe, comment l'éditer, où sont les plafonds |
