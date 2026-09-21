@@ -1,0 +1,158 @@
+{%- comment -%}
+  Formulaire « proposer un projet » de l'annuaire des communs.
+
+  Usage   : {% include communs-proposition.html lang="fr" %}
+  Données : _data/radar/communaute.yml (meta.webhook_proposition, meta.courriel_repli,
+            familles : les quatre familles de l'annuaire, en français et en anglais)
+
+  Le visiteur donne le strict nécessaire — un lien, un nom, une famille, deux
+  phrases. Le workflow n8n « Annuaire — proposition de projet » écarte ce qui
+  est déjà répertorié, complète licence, techno et date d'activité depuis la
+  forge, puis ouvre la pull request qui ajoute la fiche à
+  _data/radar/communaute.yml. La relecture humaine reste la fusion de cette
+  pull request : rien n'est publié par le formulaire.
+
+  Sans JavaScript ou sans n8n, la marche à suivre à la main est dépliée juste
+  en dessous : le formulaire est un raccourci, jamais le seul chemin.
+{%- endcomment -%}
+{%- assign lang = include.lang | default: "fr" -%}
+{%- assign meta = site.data.radar.communaute.meta -%}
+{%- assign familles = site.data.radar.communaute.familles -%}
+{%- assign categories = site.data.radar.communaute.categories -%}
+
+<section class="annuaire-proposition" id="proposer" aria-labelledby="proposer-titre">
+
+  {%- if lang == "fr" %}
+  <h2 class="radar-encart-titre" id="proposer-titre">Proposer un projet</h2>
+  <p class="catalogue-aide">
+    Votre projet manque à l'annuaire ? Donnez son lien et deux phrases : nous complétons
+    la licence, la technologie et la dernière activité depuis la forge, puis nous ouvrons
+    une pull request sur le dépôt du site. Un relecteur de la communauté la fusionne, et
+    la fiche est en ligne. Les projets déjà répertoriés sont reconnus et ne sont pas proposés deux fois.
+  </p>
+  {%- else %}
+  <h2 class="radar-encart-titre" id="proposer-titre">Suggest a project</h2>
+  <p class="catalogue-aide">
+    Is your project missing from the directory? Give us its link and two sentences: we fill in
+    the licence, the technology and the last activity from the forge, then open a pull request
+    on the website repository. A community reviewer merges it, and the entry goes live.
+    Projects already listed are recognised and never proposed twice.
+  </p>
+  {%- endif %}
+
+  <form class="catalogue-formulaire annuaire-formulaire" id="communs-proposition"
+        data-lang="{{ lang }}"
+        data-webhook="{{ meta.webhook_proposition }}"
+        data-repli="{{ meta.courriel_repli }}">
+    {%- comment %} Champ leurre : rempli, la proposition n'est pas envoyée. {% endcomment %}
+    <input type="text" name="site_web" class="catalogue-leurre" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <input type="hidden" name="type" value="proposition_commun">
+    <input type="hidden" name="lang" value="{{ lang }}">
+
+    <label>{% if lang == "fr" %}Lien du projet{% else %}Project link{% endif %}
+      <input type="url" name="url" required placeholder="https://github.com/…"
+             autocomplete="url"></label>
+    <p class="catalogue-aide">
+      {%- if lang == "fr" -%}
+      Le dépôt de code de préférence ; à défaut le site officiel, le jeu de données ou le modèle.
+      {%- else -%}
+      The code repository if there is one; otherwise the official website, dataset or model.
+      {%- endif -%}
+    </p>
+
+    <label>{% if lang == "fr" %}Nom du projet{% else %}Project name{% endif %}
+      <input type="text" name="titre" required maxlength="80"></label>
+
+    <label>{% if lang == "fr" %}Famille{% else %}Family{% endif %}
+      <select name="famille" required>
+        <option value="">{% if lang == "fr" %}— choisir —{% else %}— choose —{% endif %}</option>
+        {%- for f in familles %}
+        <option value="{{ f.id }}">{{ f.titre[lang] }}</option>
+        {%- endfor %}
+      </select></label>
+
+    {%- comment %} La catégorie est le vocabulaire de /community/ : la choisir
+      ici évite d'ouvrir un groupe d'un seul projet. {% endcomment %}
+    <label>{% if lang == "fr" %}Catégorie{% else %}Category{% endif %}
+      <select name="categorie" required>
+        <option value="">{% if lang == "fr" %}— choisir —{% else %}— choose —{% endif %}</option>
+        {%- for c in categories %}
+        <option value="{{ c.fr }}" data-en="{{ c.en }}">{{ c[lang] }}</option>
+        {%- endfor %}
+      </select></label>
+
+    <label>{% if lang == "fr" %}Ce que fait le projet, en deux phrases{% else %}What the project does, in two sentences{% endif %}
+      <textarea name="description" rows="4" required maxlength="600"></textarea></label>
+
+    <label>{% if lang == "fr" %}Licence (facultatif){% else %}Licence (optional){% endif %}
+      <input type="text" name="licence" maxlength="40" placeholder="AGPL-3.0, MIT, CC-BY-SA-4.0…"></label>
+    <label>{% if lang == "fr" %}Démonstration ou documentation (facultatif){% else %}Demo or documentation (optional){% endif %}
+      <input type="url" name="demo" placeholder="https://…"></label>
+
+    <label>{% if lang == "fr" %}Votre nom{% else %}Your name{% endif %}
+      <input type="text" name="contact" required autocomplete="name"></label>
+    <label>{% if lang == "fr" %}Votre courriel{% else %}Your email{% endif %}
+      <input type="email" name="email" required autocomplete="email"></label>
+
+    <label class="catalogue-case">
+      <input type="checkbox" name="licence_ouverte" value="oui" required>
+      {% if lang == "fr" %}Le projet est publié sous une licence libre ou ouverte{% else %}The project is published under a free or open licence{% endif %}
+    </label>
+    <label class="catalogue-case">
+      <input type="checkbox" name="rgpd" value="oui" required>
+      {% if lang == "fr" %}J'accepte que ces informations soient traitées par l'association{% else %}I agree that this information is processed by the association{% endif %}
+    </label>
+
+    <p class="catalogue-aide">
+      {%- if lang == "fr" %}
+      La fiche proposée est publique dès l'ouverture de la pull request ; votre nom et votre
+      courriel, eux, ne sont pas publiés : ils servent à vous prévenir de la suite. Conservation :
+      12 mois. Suppression sur simple demande à
+      <a href="mailto:{{ meta.courriel_repli }}">{{ meta.courriel_repli }}</a>.
+      {%- else %}
+      The proposed entry is public as soon as the pull request opens; your name and email are not
+      published — they are used to tell you what happens next. Retention: 12 months. Deletion on
+      request at <a href="mailto:{{ meta.courriel_repli }}">{{ meta.courriel_repli }}</a>.
+      {%- endif %}
+    </p>
+
+    <div class="catalogue-formulaire-actions" style="justify-content: flex-start">
+      <button type="submit" class="radar-bouton catalogue-bouton catalogue-bouton--plein">
+        {% if lang == "fr" %}Proposer ce projet{% else %}Suggest this project{% endif %}
+      </button>
+    </div>
+    <p class="catalogue-etat" role="status" aria-live="polite"></p>
+  </form>
+
+  <details class="annuaire-manuel">
+    <summary>
+      {%- if lang == "fr" -%}
+      Vous préférez ouvrir la pull request vous-même ?
+      {%- else -%}
+      Would you rather open the pull request yourself?
+      {%- endif -%}
+    </summary>
+    {%- if lang == "fr" %}
+    <ol class="mb-0">
+      <li>Ouvrez la liste des projets de la communauté,
+        <a href="https://github.com/osfarm/osfarm.github.io/blob/main/_data/radar/communaute.yml">_data/radar/communaute.yml</a>.</li>
+      <li>Cliquez sur l'icône crayon (« Edit ») en haut à droite.</li>
+      <li>Ajoutez une fiche pour votre projet ; l'en-tête du fichier décrit chaque champ.</li>
+      <li>Cliquez sur « Propose changes » en bas de la page.</li>
+      <li>Décrivez votre contribution, puis cliquez sur « Create pull request ».</li>
+    </ol>
+    {%- else %}
+    <ol class="mb-0">
+      <li>Open the community project list,
+        <a href="https://github.com/osfarm/osfarm.github.io/blob/main/_data/radar/communaute.yml">_data/radar/communaute.yml</a>.</li>
+      <li>Click the edit (pencil) icon in the top right corner.</li>
+      <li>Add an entry for your project, with its English <code>category</code>; the file header describes each field.</li>
+      <li>Click "Propose changes" at the bottom of the page.</li>
+      <li>Describe your contribution, then click "Create pull request".</li>
+    </ol>
+    {%- endif %}
+  </details>
+
+</section>
+
+<script src="{{ "/assets/js/communs-proposition.js" | relative_url }}" defer></script>

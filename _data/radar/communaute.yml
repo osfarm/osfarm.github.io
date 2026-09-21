@@ -15,7 +15,53 @@
 #   mots_cles_fr      trois à cinq mots-clés en minuscules
 #   date_maj          dernière activité du dépôt ; propose_le : date d'ajout
 # Le radar ne repropose pas un projet dont l'url ou le dépôt figure ici.
+#
+# `meta` et `familles` servent au formulaire « proposer un projet » de
+# /fr/communs/ et /community/ (_includes/communs-proposition.html) : la
+# proposition part sur le webhook, le workflow n8n « Annuaire — proposition de
+# projet » écarte les doublons, complète la fiche depuis la forge et ouvre la
+# pull request qui l'ajoute à `candidats`. Déplacer le webhook ici suffit :
+# rien n'est codé en dur dans assets/js/communs-proposition.js.
 titre: Projets de la communauté OSFarm
+meta:
+  webhook_proposition: "https://automation.osfarm.org/webhook/communs-proposition"
+  courriel_repli: "contact@osfarm.org"
+familles:
+  - id: logiciel
+    titre: { fr: Logiciel, en: Software }
+  - id: materiel
+    titre: { fr: Matériel, en: Hardware }
+  - id: donnees
+    titre: { fr: Données, en: Data }
+  - id: modele
+    titre: { fr: Modèle, en: Model }
+# Les catégories des fiches ci-dessous, proposées telles quelles dans le
+# formulaire : `fr` alimente `categorie` (annuaire), `en` alimente `category`
+# (/community/, qui groupe par catégorie). Ajouter une catégorie ici avant de
+# l'employer dans une fiche, pour ne pas ouvrir un groupe d'un seul projet.
+categories:
+  - fr: Robotique et automatisation
+    en: Automation and Robotics
+  - fr: Gestion d'exploitation
+    en: Farm Management Systems and Record Keeping
+  - fr: Données ouvertes et interopérabilité
+    en: Data Standardization, Open Data, Interoperability and APIs
+  - fr: Cartographie et SIG
+    en: Geospatial, GIS and Global Positionning System reference
+  - fr: Capteurs sol et irrigation
+    en: IoT, Sensors for soil and irrigation
+  - fr: Capteurs et supervision
+    en: IoT, Sensors for tracking, isobus and supervising
+  - fr: Climat, imagerie et météo
+    en: Climate, Environment, Imagery and Weather
+  - fr: IA et apprentissage automatique
+    en: Machine Learning and AI
+  - fr: Équipements et outils
+    en: Equipments and Tools
+  - fr: Vente et relation client
+    en: Sales and Customers links
+  - fr: Bases de connaissances
+    en: Knowledgebases and Learning Resources
 candidats:
 - id: projet-agopengps
   titre: Agopengps

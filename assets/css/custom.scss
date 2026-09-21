@@ -816,8 +816,48 @@ $radar-rayon:    12px;
   }
 }
 
+// Proposer un projet (_includes/communs-proposition.html) : l'encart posé en
+// bas de l'annuaire. Le formulaire lui-même est celui du catalogue
+// (.catalogue-formulaire et ses champs) — un seul formulaire dessiné pour tout
+// le site ; seules sa largeur et l'ouverture du chemin manuel changent ici.
+.annuaire-proposition {
+  padding: 24px;
+  margin-top: 24px;
+  background: #f5f9f2;
+  border: 1px solid $radar-bordure;
+  border-radius: $radar-rayon;
+
+  > .catalogue-aide { max-width: 44rem; margin-bottom: 20px; font-size: 15px; }
+}
+
+.annuaire-formulaire {
+  padding: 0;
+  background: none;
+  border: 0;
+
+  // Les aides intercalées entre deux champs se collent au champ du dessus.
+  .catalogue-aide { margin-top: -6px; }
+}
+
+.annuaire-manuel {
+  margin-top: 20px;
+  font-size: 14px;
+  color: $radar-attenue;
+
+  summary {
+    font-weight: 600;
+    color: $radar-texte;
+    cursor: pointer;
+  }
+
+  ol { padding-left: 20px; margin-top: 10px; }
+
+  li { margin-bottom: 4px; }
+}
+
 // Sur téléphone, les cartes resserrent leurs marges.
 @media (max-width: 543px) {
+  .annuaire-proposition { padding: 18px; }
   .radar-carte-tete { gap: 12px; padding: 16px 16px 12px; }
   .radar-carte-corps { padding: 0 16px; }
   .radar-carte-pied { padding: 8px 16px 16px; }

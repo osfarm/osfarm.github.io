@@ -24,24 +24,8 @@ lang: en
   <div class="clearfix gutter-spacious">
     <div class="col-md-6 float-left mb-4">
       <h3 class="alt-h3 mb-2">Add A Project to the List</h3>
-      <p class="text-gray">This website is <a href="https://github.com/osfarm/osfarm.github.io">open source</a>, therefore anyone in the community can submit edits through pull requests. If your project isn't on this list, but should be, please add it:</p>
-      <ol class="text-gray ml-3">
-        <li class="mb-2">Navigate to the appropriate project list:
-          <ul class="ml-3">
-            <li>
-              <a href="https://github.com/osfarm/osfarm.github.io/blob/main/_data/radar/communaute.yml">
-                _data/radar/communaute.yml
-              </a>, for open source projects (the file header describes each field)
-            </li>
-          </ul>
-        </li>
-        <li class="mb-2">Click the edit (pencil) icon in the top right corner.</li>
-        <li class="mb-2">Add an entry for your project, with its English <code>category</code></li>
-        <li class="mb-2">Click "propose file change" at the bottom of the page</li>
-        <li class="mb-2">Click "create pull request"</li>
-        <li class="mb-2">Provide a brief description of what you're proposing</li>
-        <li class="mb-2">Click "Create pull request"</li>
-      </ol>
+      <p class="text-gray">This website is <a href="https://github.com/osfarm/osfarm.github.io">open source</a>, therefore every addition goes through a pull request that someone in the community reviews before merging.</p>
+      <p class="text-gray">The <a href="#proposer">form below</a> opens that pull request for you: the project link and two sentences are enough. We fill in the licence, the technology and the last activity from the forge, and we leave out whatever is already listed.</p>
     </div>
 
     <div class="col-md-6 float-left">
@@ -61,3 +45,5 @@ lang: en
 
   </div>
 </div>
+
+{% include communs-proposition.html lang="en" %}

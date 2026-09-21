@@ -10,6 +10,8 @@ fusion publie. Tout vit dans ce dépôt, sans serveur ni second projet.
     _data/radar/AAAA-MM-JJ.yml    un fichier par lot : c'est ce que le site affiche
     _data/radar/communaute.yml    projets choisis par la communauté, tenus à la main
     _includes/radar-fiches.html   rassemble les fiches publiées de ce dossier
+    _includes/communs-proposition.html  « proposer un projet » (FR et EN)
+    assets/js/communs-proposition.js    son envoi au webhook n8n
     docs/fr/communs.html          /fr/communs/    annuaire filtrable (lots et communauté)
     docs/fr/actualites.html       /fr/actualites/ un article par lot publié
     data/communs.json, .csv       /data/communs.* le catalogue en données ouvertes
@@ -93,6 +95,32 @@ Les projets dont l'URL figure déjà dans un fichier `_data/*.yml` du site ou
 dans `_data/radar/communaute.yml` (url, dépôt ou démo) ne sont jamais proposés.
 `fichiers_lots()` (dans `collecte.py`) écarte ce dernier fichier : ce n'est pas
 un lot, et ni `resume.py` ni `diffusion.py` ne le traitent.
+
+## L'autre porte d'entrée : le formulaire de proposition
+
+Le radar cherche ; la communauté propose aussi. Le formulaire « proposer un
+projet », en bas de `/fr/communs/` et de `/community/`, poste sur le webhook
+n8n déclaré dans `meta.webhook_proposition` de `communaute.yml`. Le workflow
+n8n **Annuaire — proposition de projet** :
+
+1. écarte ce qui est déjà répertorié — il compare le lien aux fiches publiées
+   (`/data/communs.json`, lots du radar compris) et au `communaute.yml` de
+   `main`, à la casse, au « www. », au « .git » et à la barre finale près ;
+2. complète les champs manquants — licence SPDX, technologie, mots-clés et
+   dernière activité viennent de l'API du dépôt quand le projet est sur
+   GitHub ; hors GitHub, la fiche part avec ce que donne le formulaire ;
+3. écrit la fiche à sa place alphabétique dans `candidats` sur une branche
+   `annuaire/<slug>` et **ouvre la pull request**, avec sa liste de
+   vérification. Le slug vient du titre : un second envoi du même projet
+   retombe sur la même branche et reçoit « déjà proposé » au lieu d'une
+   deuxième pull request.
+
+La relecture reste la fusion de cette pull request : le formulaire ne publie
+rien, exactement comme le radar. `resume` et `interet` sont à relire en
+priorité — une proposition en anglais arrive sans résumé français plutôt
+qu'avec un résumé inventé. Les propositions sont journalisées dans la table
+n8n `annuaire_propositions` ; le courriel du proposant n'apparaît jamais dans
+la pull request, le dépôt étant public.
 
 ## Ce que le modèle rédige, et ses limites
 
