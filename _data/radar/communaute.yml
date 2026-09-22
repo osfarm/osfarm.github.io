@@ -275,6 +275,19 @@ candidats:
   propose_le: '2024-06-01'
   source: communaute-osfarm
   publier: true
+- id: projet-farmerchat
+  titre: FarmerChat
+  url: https://huggingface.co/datasets/DigiGreen/farmerchat-queries-large
+  demo: https://www.farmer.chat/
+  famille: modele
+  categorie: IA et apprentissage automatique
+  category: Machine Learning and AI
+  licence: cc-by-4.0
+  description: Utilisation de questions réponses mises dans un chat spécifique à l'agronomie de l'Est Africain
+  resume: Utilisation de questions réponses mises dans un chat spécifique à l'agronomie de l'Est Africain
+  propose_le: '2026-09-21'
+  source: proposition-site
+  publier: true
 - id: projet-natuition
   titre: Natuition
   url: https://natuition.com
