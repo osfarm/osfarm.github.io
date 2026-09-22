@@ -1,0 +1,934 @@
+# Lot du radar OSFarm. Passer « publier » à false pour écarter une fiche,
+# corriger « resume » au besoin. La fusion de la pull request publie le reste.
+date: '2026-09-22'
+examines: 335
+retenus: 24
+rejets:
+  deja_vu: 173
+  deja_sur_le_site: 6
+  licence: 5
+  score: 0
+pannes: []
+candidats:
+- id: c1780243d021
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: ProductOfAmerica/deere-sdk
+  url: https://github.com/ProductOfAmerica/deere-sdk
+  description: Unofficial TypeScript SDK for John Deere Operations Center API
+  licence: mit
+  date_maj: '2026-09-21'
+  techno: TypeScript
+  popularite: 11
+  mots_cles:
+  - agriculture
+  - api
+  - deere
+  - farming
+  - john-deere
+  - operations-center
+  - precision-agriculture
+  - sdk
+  score: 86
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farming'
+  propose_le: '2026-09-22'
+  publier: true
+  resume: Bibliothèque TypeScript non officielle pour interagir avec l'API du centre d'opérations John
+    Deere. Elle permet d'accéder aux données et fonctionnalités de gestion des équipements agricoles.
+  interet: Faciliter l'intégration et l'automatisation des données agricoles via une API standardisée.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - api
+  - john deere
+  - opérations agricoles
+  - typescript
+  - équipements agricoles
+- id: 396b20da67fd
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: Fields2Cover/Fields2Cover
+  url: https://github.com/Fields2Cover/Fields2Cover
+  description: Robust and efficient coverage paths for autonomous agricultural vehicles. A modular and
+    extensible Coverage Path Planning library
+  licence: bsd-3-clause
+  date_maj: '2026-09-22'
+  techno: C++
+  popularite: 897
+  mots_cles:
+  - agriculture
+  - autonomous-vehicles
+  - coverage-path-planning
+  - cpp17
+  - path-planning
+  score: 86
+  raisons:
+  - licence bsd-3-clause
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-09-22'
+  publier: true
+  resume: Bibliothèque de planification de trajectoires pour véhicules agricoles autonomes. Elle génère
+    des chemins de couverture optimisés et modulaires.
+  interet: Optimiser les déplacements des robots ou machines agricoles pour couvrir efficacement les surfaces.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - autonomie
+  - planification de trajectoire
+  - robots agricoles
+  - couverture de surface
+  - cpp
+- id: 6b45fa3a8093
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: 40rbidd3n/Hydro0x01
+  url: https://github.com/40rbidd3n/Hydro0x01
+  description: Secure, production-grade IoT hydroponic automation system with ESP32, MQTT telemetry, and
+    real-time dashboard
+  licence: mit
+  date_maj: '2026-08-18'
+  techno: TypeScript
+  popularite: 543
+  mots_cles:
+  - agritech
+  - arduino
+  - automation
+  - embedded-systems
+  - esp32
+  - hydroponic
+  - hydroponic-systems
+  - influxdb
+  score: 86
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agritech'
+  propose_le: '2026-09-22'
+  publier: true
+  resume: Système d'automatisation hydroponique sécurisé pour serres, basé sur ESP32 et MQTT. Il inclut
+    une interface de supervision en temps réel.
+  interet: Automatiser et surveiller les cultures hydroponiques en intérieur ou en environnement contrôlé.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - automatisation
+  - hydroponie
+  - esp32
+  - mqtt
+  - surveillance
+- id: 998da46bf898
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: CWWhitney/Decision_Analysis_Course
+  url: https://github.com/CWWhitney/Decision_Analysis_Course
+  description: 🎓 Uni-Bonn Decision Analysis graduate course, lectures and materials
+  licence: mit
+  date_maj: '2026-06-24'
+  techno: HTML
+  popularite: 27
+  mots_cles:
+  - agriculture
+  - agriculture-research
+  - agroecology
+  - bayesian-inference
+  - bayesian-statistics
+  - decision-analysis
+  - decision-theory
+  score: 86
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, agroecology'
+  propose_le: '2026-09-22'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+- id: 73e56b38d803
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: epicpast/nsip
+  url: https://github.com/epicpast/nsip
+  description: Sheep genetic evaluation CLI & MCP server -- search animals, compare EBVs, plan matings,
+    rank flocks via the NSIP database
+  licence: mit
+  date_maj: '2026-09-21'
+  techno: Rust
+  popularite: 3
+  mots_cles:
+  - agriculture
+  - animal-science
+  - api-client
+  - breeding
+  - cli
+  - ebv
+  - genetics
+  - livestock
+  score: 85
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, livestock'
+  propose_le: '2026-09-22'
+  publier: true
+  resume: Outil en ligne de commande et serveur MCP pour évaluer et comparer des animaux ovins via la
+    base de données NSIP. Il permet de planifier des accouplements et classer des troupeaux.
+  interet: Aider à la sélection génétique et à la gestion des troupeaux ovins en utilisant des évaluations
+    génomiques.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - élevage ovin
+  - sélection génétique
+  - ebv
+  - cli
+  - base de données
+- id: cdb3a7ee753d
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: FoodOntology/foodon
+  url: https://github.com/FoodOntology/foodon
+  description: The core repository for the FOODON food ontology project. This holds the key classes of
+    the ontology; larger files and the results of text-mining projects will be stored in other repos.
+  licence: cc-by-4.0
+  date_maj: '2026-09-20'
+  techno: Python
+  popularite: 240
+  mots_cles:
+  - agriculture
+  - food
+  - obofoundry
+  - ontology
+  - owl
+  score: 85
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, food'
+  propose_le: '2026-09-22'
+  publier: true
+  resume: Ontologie standardisée pour décrire les aliments et leurs composants dans un cadre sémantique
+    structuré. Elle sert de référence pour l'annotation et l'interopérabilité des données alimentaires.
+  interet: Structurer et partager des connaissances sur les aliments pour faciliter l'analyse et l'intégration
+    de données en agriculture et nutrition.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - alimentation
+  - ontologie
+  - données alimentaires
+  - interopérabilité
+  - owl
+- id: b2b1f2edac6a
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: PrinceDale99/TyFi
+  url: https://github.com/PrinceDale99/TyFi
+  description: An autonomous parametric insurance protocol protecting farmers against climate disasters
+  licence: mit
+  date_maj: '2026-09-15'
+  techno: TypeScript
+  popularite: 3
+  mots_cles:
+  - agriculture
+  - agriculture-technology
+  - blockchain
+  - insurance
+  - insuretech
+  - stellar
+  - web3
+  score: 85
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farmer'
+  propose_le: '2026-09-22'
+  publier: true
+  resume: Protocole d'assurance paramétrique autonome protégeant les agriculteurs contre les catastrophes
+    climatiques. Il déclenche des indemnisations automatiquement en fonction de données environnementales.
+  interet: Permet de couvrir les risques liés aux aléas climatiques en agriculture.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - assurance
+  - climat
+  - paramétrique
+  - risque
+  - catastrophe
+- id: f128a3168e57
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: nkz-os/nkz
+  url: https://github.com/nkz-os/nkz
+  description: 'Open-source FIWARE NGSI-LD platform for agriculture, industry and environment. Multi-tenant,
+    modular. Live demo: nekazari.robotika.cloud | Docs: nkz-os.org'
+  licence: agpl-3.0
+  date_maj: '2026-09-22'
+  techno: Python
+  popularite: 3
+  mots_cles:
+  - agritech
+  - cesiumjs
+  - digital-twin
+  - docker-compose
+  - fiware-ngsi
+  - iot-platform
+  - keycloak
+  - multi-tenant
+  score: 85
+  raisons:
+  - licence agpl-3.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, agritech'
+  propose_le: '2026-09-22'
+  publier: true
+  resume: Plateforme open source basée sur FIWARE NGSI-LD pour l'agriculture, l'industrie et l'environnement.
+    Elle permet de gérer des données en temps réel via une architecture modulaire et multi-locataires.
+  interet: Facilite l'intégration et l'analyse de données IoT pour des applications agricoles.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - iot
+  - plateforme
+  - données
+  - agriculture
+  - modulaire
+- id: d4eda65c49be
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-elevage
+  titre: deaneeth/smart-beehive-monitor
+  url: https://github.com/deaneeth/smart-beehive-monitor
+  description: ESP32-based IoT system for real-time beehive monitoring with temperature, humidity, bee
+    activity tracking, weight measurement, and Firebase integration. Complete with solar power and web
+    dashboard.
+  licence: mit
+  date_maj: '2026-08-11'
+  techno: C++
+  popularite: 20
+  mots_cles:
+  - arduino
+  - beehive
+  - beekeeping
+  - environmental-monitoring
+  - esp32
+  - firebase
+  - iot
+  - iot-device
+  score: 76
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : beehive'
+  propose_le: '2026-09-22'
+  publier: true
+  resume: Système IoT basé sur ESP32 pour surveiller en temps réel les ruches via des capteurs de température,
+    humidité, activité des abeilles et poids. Intègre une alimentation solaire et un tableau de bord web.
+  interet: Surveille les conditions environnementales des ruches pour optimiser la gestion apicole.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - ruche
+  - surveillance
+  - capteurs
+  - abeilles
+  - iot
+- id: fc45fa57a8d7
+  famille: modele
+  relecteur: ionosphere
+  source: github-elevage
+  titre: Alexandre-Delplanque/HerdNet
+  url: https://github.com/Alexandre-Delplanque/HerdNet
+  description: 'Code for paper "From Crowd to Herd Counting: How to Precisely Detect and Count African
+    Mammals using Aerial Imagery and Deep Learning?"'
+  licence: mit
+  date_maj: '2026-05-28'
+  techno: Python
+  popularite: 58
+  mots_cles:
+  - aerial-survey
+  - africa
+  - deep-learning
+  - livestock
+  - mammals
+  - object-counting
+  - object-detection
+  - wildlife
+  score: 75
+  raisons:
+  - licence mit
+  - actif (moins d'un an)
+  - 'vocabulaire : livestock'
+  propose_le: '2026-09-22'
+  publier: true
+  resume: Code associé à une étude utilisant l'imagerie aérienne et le deep learning pour compter des
+    mammifères africains. L'objectif est de détecter et compter précisément des animaux depuis des images
+    aériennes.
+  interet: Permet d'estimer des populations animales pour des études écologiques ou de gestion pastorale.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  famille_initiale: logiciel
+  mots_cles_fr:
+  - imagerie
+  - deep learning
+  - mammifères
+  - comptage
+  - aérien
+- id: 9874ac4db18f
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: Annual Cropland Maps for Northern Uganda, 2017-2024
+  url: https://doi.org/10.5281/zenodo.22880619
+  description: This dataset contains annual cropland maps for northern Uganda covering the eight-year
+    period from 2017-2024. The maps were developed to characterize spatial and temporal patterns of agricultural
+    land use in refugee-hosting and surrounding communities in northern Uganda, where population displacement
+    and changes in agricultural land use have significant implications for food security and livelihoo
+  licence: cc-by-4.0
+  date_maj: '2026-09-21'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - Smallholder Agriculture
+  - Cropland Mapping
+  - Satellite Foundation models
+  - Food Security
+  - Northern Uganda
+  - AlphaEarth
+  - Forced Displacement
+  - Land Use Change
+  score: 88
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, cropland, food'
+  propose_le: '2026-09-22'
+  publier: true
+  resume: Cartes annuelles des terres cultivées dans le nord de l'Ouganda de 2017 à 2024. Ces cartes caractérisent
+    les schémas spatiaux et temporels de l'utilisation des terres agricoles.
+  interet: ''
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - cartographie
+  - terres cultivées
+  - uganda
+  - agriculture
+  - sécurité alimentaire
+- id: cfc9a62d81fd
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: hiyanjongrai/CropNet
+  url: https://huggingface.co/datasets/hiyanjongrai/CropNet
+  description: An Open and Large-Scale Dataset for Multi-Modal Climate Change-aware Crop Yield Predictions
+    The CropNet dataset is an open, large-scale, and deep learning-ready dataset, specifically targeting
+    climate change-aware crop yield predictions for the contiguous United States (U.S.) contine
+  licence: cc-by-4.0
+  date_maj: '2026-09-22'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - climate
+  score: 88
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, crop, yield'
+  propose_le: '2026-09-22'
+  publier: true
+  resume: Jeu de données ouvert et à grande échelle pour prédire les rendements agricoles en tenant compte
+    du changement climatique aux États-Unis. Il est conçu pour des modèles de deep learning.
+  interet: Fournit des données pour modéliser l'impact du climat sur les rendements agricoles.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - rendement
+  - climat
+  - deep learning
+  - données
+  - prédiction
+- id: 9f1110fd8228
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: Dépassements de seuils règlementaires en pesticides dans les cours d'eau (diagnostics territoriaux
+    stratégie Ecophyto 2030)
+  url: https://www.data.gouv.fr/datasets/depassements-de-seuils-reglementaires-en-pesticides-dans-les-cours-deau-diagnostics-territoriaux-strategie-ecophyto-2030-1
+  description: '------------ Contexte ------------ La stratégie Ecophyto 2030 publiée le 6 mai 2024 prévoit
+    dans son axe 5 la réalisation d’un diagnostic territorial approfondi permettant d’identifier des territoires
+    prioritaires pour l’action au vu des quantités utilisées, des potentiels de réduction, de la mobilisation
+    des acteurs et des enjeux sanitaires et environnementaux. A l’issue du diagnostic territorial'
+  licence: etalab-2.0
+  date_maj: '2025-11-03'
+  techno: ''
+  popularite: 1
+  mots_cles:
+  - agriculture
+  - agriculture-peche-sylviculture-et-alimentation
+  - corse
+  - cours-deau
+  - directive-cadre-sur-leau
+  - eau
+  - environnement
+  - france-metropolitaine
+  score: 81
+  raisons:
+  - licence etalab-2.0
+  - actif (moins d'un an)
+  - 'vocabulaire : agriculture, pesticide, sylviculture'
+  propose_le: '2026-09-22'
+  publier: true
+  resume: Données sur les dépassements de seuils réglementaires en pesticides dans les cours d'eau issues
+    de diagnostics territoriaux liés à la stratégie Ecophyto 2030. Ces données permettent d'identifier
+    des territoires prioritaires pour l'action publique.
+  interet: Évaluer les risques de contamination des eaux par les pesticides en zone agricole.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - pesticides
+  - cours d'eau
+  - diagnostic territorial
+  - eau
+  - stratégie ecophyto
+- id: 35aa2713b2d9
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: Zones agricoles défavorisées de montagne en BFC
+  url: https://www.data.gouv.fr/datasets/zones-agricoles-defavorisees-de-montagne-en-bfc-1
+  description: Le classement des communes en zone de montagne (au sens des zones agricoles défavorisées
+    de montagne - zonage agriculture) repose sur les dispositions du règlement n°1257/1999 du Conseil
+    du 17 mai 1999 concernant le soutien au développement rural et plus particulièrement sur son article
+    18 pour la montagne, et la directive 76/401/CEE du Conseil du 6 avril 1976 (détermination précise
+    des critères p
+  licence: etalab-2.0
+  date_maj: '2026-04-29'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - zone-de-montagne
+  - zones-agricoles-dfavorises
+  score: 81
+  raisons:
+  - licence etalab-2.0
+  - actif (moins d'un an)
+  - 'vocabulaire : agricole, agriculture, rural'
+  propose_le: '2026-09-22'
+  publier: true
+  resume: Données géographiques classant les communes en zones agricoles défavorisées de montagne selon
+    des critères réglementaires européens. Ces données servent à identifier les territoires éligibles
+    à des aides spécifiques.
+  interet: Déterminer les zones agricoles de montagne éligibles à des soutiens publics.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - zone de montagne
+  - zones défavorisées
+  - classement communal
+  - aides agricoles
+  - règlement européen
+- id: 3a9656ecaf79
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: Indice de risque de ruissellement des écoulements superficiels vers les cours d’eau en zone agricole
+    - 2026
+  url: https://www.data.gouv.fr/datasets/indice-de-risque-de-ruissellement-des-ecoulements-superficiels-vers-les-cours-deau-en-zone-agricole-2026
+  description: 'Cet indice permet d''apprécier et de cartographier le risque de ruissellement des écoulements
+    superficiels vers les cours d’eau en zone agricole. C''est un outil d''aide à la prise de décision
+    et un outil de communication et de sensibilisation. Pour le millésime 2026, il est calculé sur l''ensemble
+    du département du Morbihan par maille de 1 ha à partir des critères suivants : - la pente du terrain
+    (RG'
+  licence: etalab-2.0
+  date_maj: '2026-06-19'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - agriculture-agri-environnement
+  - donnees-ouvertes
+  - eau
+  - haie
+  - inspire
+  - occupation-sol
+  - pente
+  score: 78
+  raisons:
+  - licence etalab-2.0
+  - actif (moins d'un an)
+  - 'vocabulaire : agricole, agriculture'
+  propose_le: '2026-09-22'
+  publier: true
+  resume: Indice cartographiant le risque de ruissellement des écoulements superficiels vers les cours
+    d’eau en zone agricole à l’échelle du Morbihan. Cet outil aide à la prise de décision et à la sensibilisation.
+  interet: Identifier les zones agricoles à risque d’érosion et de transfert de polluants vers les cours
+    d’eau.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - ruissellement
+  - cours d'eau
+  - érosion
+  - maille de 1 ha
+  - sensibilisation
+- id: dc378054aa4d
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: Transmission agricole en région Provence-Alpes-Côte d'Azur
+  url: https://www.data.gouv.fr/datasets/transmission-agricole-en-region-provence-alpes-cote-d-azur
+  description: '**Cette étude, *« Transmission Sud » : État des lieux et enjeux de transmission agricole
+    en région Sud*, a été réalisée par l''Institut national de recherche pour l''agriculture, l''alimentation
+    et l''environnement (Inrae), en partenariat avec la région Provence-Alpes-Côte d''Azur.** En 2020,
+    une exploitation sur deux est dirigée par au moins un exploitant de 55 ans ou plus, avec un pic de
+    départs en r'
+  licence: cc-by-sa-4.0
+  date_maj: '2026-05-21'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - exploitation-agricole
+  - retraite
+  score: 78
+  raisons:
+  - licence cc-by-sa-4.0
+  - actif (moins d'un an)
+  - 'vocabulaire : agricole, agriculture'
+  propose_le: '2026-09-22'
+  publier: true
+  resume: Étude analysant l’état des lieux et les enjeux de transmission des exploitations agricoles en
+    région Provence-Alpes-Côte d'Azur. Ces données décrivent la situation des exploitants et les défis
+    liés au renouvellement des générations.
+  interet: Comprendre les dynamiques de transmission des exploitations agricoles et les enjeux démographiques.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - transmission
+  - exploitation agricole
+  - retraite
+  - démographie
+  - région sud
+- id: dab4017c76b1
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: Recensement Géneral Agricole (RGA) dans les communes du Parc naturel régional du Morvan
+  url: https://www.data.gouv.fr/datasets/donnees-du-recensement-general-agricole-rga-dans-le-parc-naturel-regional-du-morvan-1
+  description: Données du Recensement Général Agricole dans les communes du Parc naturel régional du Morvan
+    (1988, 2000, 2010, 2020)
+  licence: etalab-2.0
+  date_maj: '2026-04-29'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - pnr-du-morvan
+  - recensement-agricole
+  - rga
+  score: 78
+  raisons:
+  - licence etalab-2.0
+  - actif (moins d'un an)
+  - 'vocabulaire : agricole, agriculture'
+  propose_le: '2026-09-22'
+  publier: true
+  resume: Données du Recensement Général Agricole (RGA) pour les communes du Parc naturel régional du
+    Morvan à différentes années (1988, 2000, 2010, 2020). Ces données fournissent des informations sur
+    la structure des exploitations agricoles.
+  interet: Analyser l'évolution de la structure agricole dans une région spécifique.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - recensement agricole
+  - parc naturel régional
+  - morvan
+  - évolution
+  - structure des exploitations
+- id: fd31e5fc5044
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: Occupation du sol multidate
+  url: https://www.data.gouv.fr/datasets/occupation-du-sol-multidate
+  description: Base de données d'Occupation du sol du territoire de la Communauté d'agglomération Lunel
+    Agglo, regroupant l'ensemble des millésimes. Chaque millésime a été réalisé en grande partie par PIAO
+    sur la base d'une nomenclature à 4 niveaux. Cette base de données a été produite dans le but de fournir
+    un outil d'analyse et d'observation du territoire.
+  licence: etalab-2.0
+  date_maj: '2026-09-09'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - artificialisation
+  - couverture
+  - evolution
+  - lunel-agglo
+  - naf
+  - nature
+  - occupation-du-sol
+  score: 76
+  raisons:
+  - licence etalab-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-09-22'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - occupation du sol
+  - artificialisation
+  - couverture
+  - évolution
+  - lunel agglo
+- id: 28d5143792b9
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: Occupation du sol 2024
+  url: https://www.data.gouv.fr/datasets/occupation-du-sol-2024
+  description: Base de données d'Occupation du sol du territoire de la Communauté d'agglomération Lunel
+    Agglo, millésime 2024. Elle a été réalisée en grande partie par PIAO sur la base d'une nomenclature
+    à 4 niveaux. Cette base de données a été produite dans le but de fournir un outil d'analyse et d'observation
+    du territoire.
+  licence: etalab-2.0
+  date_maj: '2026-09-09'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - '2024'
+  - agriculture
+  - artificialisation
+  - couverture
+  - evolution
+  - lunel-agglo
+  - naf
+  - nature
+  score: 76
+  raisons:
+  - licence etalab-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-09-22'
+  publier: true
+  resume: Cette base de données décrit l'occupation du sol sur le territoire de Lunel Agglo pour l'année
+    2024, avec une nomenclature détaillée à quatre niveaux. Elle permet d'analyser et d'observer les évolutions
+    du territoire.
+  interet: Elle sert à étudier les dynamiques d'artificialisation et les changements de couverture du
+    sol.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - occupation du sol
+  - territoire
+  - analyse territoriale
+  - nomenclature
+  - '2024'
+- id: fc1d8039e3c7
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: myy555/CropMath
+  url: https://huggingface.co/datasets/myy555/CropMath
+  description: CropMath English | 简体中文 CropMath contains agricultural mechanistic formula questions with
+    numeric reference answers and controlled knowledge conditions. The cropmath-v1 snapshot is publicly
+    available at myy555/CropMath; the accompanying prompt builders, scorer and validators are in th
+  licence: cc-by-4.0
+  date_maj: '2026-09-14'
+  techno: ''
+  popularite: 1
+  mots_cles:
+  - agriculture
+  - numerical-reasoning
+  score: 76
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-09-22'
+  publier: true
+  resume: CropMath propose des questions de raisonnement mécanique en agriculture avec des réponses numériques
+    et des conditions de connaissance contrôlées. Une version publique est disponible sous forme de snapshot.
+  interet: ''
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - raisonnement mécanique
+  - questions agricoles
+  - réponses numériques
+  - connaissances contrôlées
+- id: 2f1510da559b
+  famille: modele
+  relecteur: ionosphere
+  source: hf-modeles-agri
+  titre: surabhi08/dataset-genome-agriculture-benchmark-model
+  url: https://huggingface.co/surabhi08/dataset-genome-agriculture-benchmark-model
+  description: peft safetensors gpt_oss lora agriculture scientific-reasoning autoscientist dataset-genome
+    en
+  licence: mit
+  date_maj: '2026-08-06'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - peft
+  - safetensors
+  - gpt_oss
+  - lora
+  - agriculture
+  - scientific-reasoning
+  - autoscientist
+  - dataset-genome
+  score: 76
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-09-22'
+  publier: true
+  resume: Ce modèle utilise des techniques d'adaptation fine (LoRA) pour le raisonnement scientifique
+    en agriculture. Il est basé sur des architectures de type GPT et est distribué sous forme de safetensors.
+  interet: ''
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - peft
+  - lora
+  - raisonnement scientifique
+  - agriculture
+  - gpt_oss
+- id: 50667c588872
+  famille: modele
+  relecteur: ionosphere
+  source: hf-modeles-agri
+  titre: tojpaj/agriculture-routing-model
+  url: https://huggingface.co/tojpaj/agriculture-routing-model
+  description: safetensors bert autoscientist adaption agriculture intent-classification multilingual
+    hindi punjabi hi pa
+  licence: apache-2.0
+  date_maj: '2026-08-02'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - safetensors
+  - bert
+  - autoscientist
+  - adaption
+  - agriculture
+  - intent-classification
+  - multilingual
+  - hindi
+  score: 76
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-09-22'
+  publier: true
+  resume: Ce modèle adapte un modèle BERT pour la classification d'intentions multilingue en agriculture.
+    Il prend en charge les langues hindi et punjabi.
+  interet: ''
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - bert
+  - classification d'intentions
+  - agriculture
+  - multilingue
+  - adaptation
+- id: bfb76fbe677c
+  famille: modele
+  relecteur: ionosphere
+  source: hf-modeles-agri
+  titre: adaniele/Agriculture-DelAny-v2-Sentinel
+  url: https://huggingface.co/adaniele/Agriculture-DelAny-v2-Sentinel
+  description: ultralytics instance-segmentation field-boundary-delineation sentinel-2 remote-sensing
+    geospatial
+  licence: agpl-3.0
+  date_maj: '2026-07-28'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - ultralytics
+  - instance-segmentation
+  - field-boundary-delineation
+  - sentinel-2
+  - remote-sensing
+  - geospatial
+  score: 76
+  raisons:
+  - licence agpl-3.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : geospatial, remote-sensing, sentinel'
+  propose_le: '2026-09-22'
+  publier: true
+  resume: Ce modèle réalise une segmentation d'instances pour délimiter les parcelles agricoles à partir
+    d'images Sentinel-2. Il utilise l'architecture Ultralytics.
+  interet: Il permet de cartographier les limites des champs à partir de données de télédétection.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - segmentation d'instances
+  - délimitation de parcelles
+  - sentinel-2
+  - télédétection
+  - ultralytics
+- id: e412ded7b3d6
+  famille: modele
+  relecteur: ionosphere
+  source: hf-modeles-agri
+  titre: PatrickChikuse/qwen25-1.5b-malawi-agriculture
+  url: https://huggingface.co/PatrickChikuse/qwen25-1.5b-malawi-agriculture
+  description: transformers safetensors qwen2 text-generation agriculture malawi qwen lora conversational
+    en text-generation-inference endpoints_compatible
+  licence: apache-2.0
+  date_maj: '2026-07-02'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - transformers
+  - safetensors
+  - qwen2
+  - text-generation
+  - agriculture
+  - malawi
+  - qwen
+  - lora
+  score: 76
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-09-22'
+  publier: true
+  resume: Ce modèle génère du texte en continu pour des applications agricoles au Malawi. Il est basé
+    sur l'architecture Qwen2 et utilise des techniques d'adaptation fine.
+  interet: ''
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - qwen2
+  - génération de texte
+  - agriculture
+  - malawi
+  - adaptation fine
+resume_genere_le: 2026-09-22 09:40

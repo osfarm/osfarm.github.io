@@ -133,6 +133,36 @@
   "redige_par": "mistral-small-latest",
   "resume": "Plateforme de monitoring IoT basée sur ESP32 utilisant MQTT pour collecter des télémétries en temps réel via des capteurs dynamiques. Elle permet de surveiller des paramètres environnementaux ou agricoles à distance."
  },
+ "28d5143792b9": {
+  "famille": "donnees",
+  "id": "28d5143792b9",
+  "interet": "Elle sert à étudier les dynamiques d'artificialisation et les changements de couverture du sol.",
+  "mots_cles": [
+   "occupation du sol",
+   "territoire",
+   "analyse territoriale",
+   "nomenclature",
+   "2024"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Cette base de données décrit l'occupation du sol sur le territoire de Lunel Agglo pour l'année 2024, avec une nomenclature détaillée à quatre niveaux. Elle permet d'analyser et d'observer les évolutions du territoire."
+ },
+ "2f1510da559b": {
+  "famille": "modele",
+  "id": "2f1510da559b",
+  "interet": "",
+  "mots_cles": [
+   "peft",
+   "lora",
+   "raisonnement scientifique",
+   "agriculture",
+   "gpt_oss"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce modèle utilise des techniques d'adaptation fine (LoRA) pour le raisonnement scientifique en agriculture. Il est basé sur des architectures de type GPT et est distribué sous forme de safetensors."
+ },
  "30fd807fe8fb": {
   "famille": "modele",
   "id": "30fd807fe8fb",
@@ -162,6 +192,51 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Données annuelles de ventes de pesticides par département en France, déclarées par les distributeurs. Elles permettent de suivre les ventes sur le territoire."
+ },
+ "35aa2713b2d9": {
+  "famille": "donnees",
+  "id": "35aa2713b2d9",
+  "interet": "Déterminer les zones agricoles de montagne éligibles à des soutiens publics.",
+  "mots_cles": [
+   "zone de montagne",
+   "zones défavorisées",
+   "classement communal",
+   "aides agricoles",
+   "règlement européen"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Données géographiques classant les communes en zones agricoles défavorisées de montagne selon des critères réglementaires européens. Ces données servent à identifier les territoires éligibles à des aides spécifiques."
+ },
+ "396b20da67fd": {
+  "famille": "logiciel",
+  "id": "396b20da67fd",
+  "interet": "Optimiser les déplacements des robots ou machines agricoles pour couvrir efficacement les surfaces.",
+  "mots_cles": [
+   "autonomie",
+   "planification de trajectoire",
+   "robots agricoles",
+   "couverture de surface",
+   "cpp"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Bibliothèque de planification de trajectoires pour véhicules agricoles autonomes. Elle génère des chemins de couverture optimisés et modulaires."
+ },
+ "3a9656ecaf79": {
+  "famille": "donnees",
+  "id": "3a9656ecaf79",
+  "interet": "Identifier les zones agricoles à risque d’érosion et de transfert de polluants vers les cours d’eau.",
+  "mots_cles": [
+   "ruissellement",
+   "cours d'eau",
+   "érosion",
+   "maille de 1 ha",
+   "sensibilisation"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Indice cartographiant le risque de ruissellement des écoulements superficiels vers les cours d’eau en zone agricole à l’échelle du Morbihan. Cet outil aide à la prise de décision et à la sensibilisation."
  },
  "3b6b49498e58": {
   "famille": "modele",
@@ -283,6 +358,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Cet agent d'IA open source conçu pour l'agronomie fonctionne localement et propose des conceptions de systèmes aquaponiques via des interfaces de messagerie. Il s'appuie sur des calculs déterministes et des sources citées."
  },
+ "50667c588872": {
+  "famille": "modele",
+  "id": "50667c588872",
+  "interet": "",
+  "mots_cles": [
+   "bert",
+   "classification d'intentions",
+   "agriculture",
+   "multilingue",
+   "adaptation"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce modèle adapte un modèle BERT pour la classification d'intentions multilingue en agriculture. Il prend en charge les langues hindi et punjabi."
+ },
  "542e3b7210e7": {
   "famille": "logiciel",
   "id": "542e3b7210e7",
@@ -313,6 +403,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Documentation matérielle pour le FarmBot Genesis, décrivant les composants et leur assemblage. Elle sert de référence pour la construction et la maintenance du système."
  },
+ "6b45fa3a8093": {
+  "famille": "logiciel",
+  "id": "6b45fa3a8093",
+  "interet": "Automatiser et surveiller les cultures hydroponiques en intérieur ou en environnement contrôlé.",
+  "mots_cles": [
+   "automatisation",
+   "hydroponie",
+   "esp32",
+   "mqtt",
+   "surveillance"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Système d'automatisation hydroponique sécurisé pour serres, basé sur ESP32 et MQTT. Il inclut une interface de supervision en temps réel."
+ },
  "6c11ca879a6f": {
   "famille": "donnees",
   "id": "6c11ca879a6f",
@@ -342,6 +447,21 @@
   "pertinence": "non",
   "redige_par": "mistral-small-latest",
   "resume": ""
+ },
+ "73e56b38d803": {
+  "famille": "logiciel",
+  "id": "73e56b38d803",
+  "interet": "Aider à la sélection génétique et à la gestion des troupeaux ovins en utilisant des évaluations génomiques.",
+  "mots_cles": [
+   "élevage ovin",
+   "sélection génétique",
+   "ebv",
+   "cli",
+   "base de données"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Outil en ligne de commande et serveur MCP pour évaluer et comparer des animaux ovins via la base de données NSIP. Il permet de planifier des accouplements et classer des troupeaux."
  },
  "778970822789": {
   "famille": "donnees",
@@ -445,6 +565,45 @@
   "redige_par": "mistral-small-latest",
   "resume": "Modèle de détection d'objets pour identifier des maladies sur des feuilles de plantes à partir d'images. Il localise et classe des maladies végétales en utilisant une architecture de type RT-DETR."
  },
+ "9874ac4db18f": {
+  "famille": "donnees",
+  "id": "9874ac4db18f",
+  "interet": "",
+  "mots_cles": [
+   "cartographie",
+   "terres cultivées",
+   "uganda",
+   "agriculture",
+   "sécurité alimentaire"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Cartes annuelles des terres cultivées dans le nord de l'Ouganda de 2017 à 2024. Ces cartes caractérisent les schémas spatiaux et temporels de l'utilisation des terres agricoles."
+ },
+ "998da46bf898": {
+  "famille": "logiciel",
+  "id": "998da46bf898",
+  "interet": "",
+  "mots_cles": [],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
+ "9f1110fd8228": {
+  "famille": "donnees",
+  "id": "9f1110fd8228",
+  "interet": "Évaluer les risques de contamination des eaux par les pesticides en zone agricole.",
+  "mots_cles": [
+   "pesticides",
+   "cours d'eau",
+   "diagnostic territorial",
+   "eau",
+   "stratégie ecophyto"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Données sur les dépassements de seuils réglementaires en pesticides dans les cours d'eau issues de diagnostics territoriaux liés à la stratégie Ecophyto 2030. Ces données permettent d'identifier des territoires prioritaires pour l'action publique."
+ },
  "a6e26b50aa3c": {
   "famille": "materiel",
   "id": "a6e26b50aa3c",
@@ -511,6 +670,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Fichiers Fritzing pour la conception de modules de circuits imprimés compatibles avec AOG."
  },
+ "b2b1f2edac6a": {
+  "famille": "logiciel",
+  "id": "b2b1f2edac6a",
+  "interet": "Permet de couvrir les risques liés aux aléas climatiques en agriculture.",
+  "mots_cles": [
+   "assurance",
+   "climat",
+   "paramétrique",
+   "risque",
+   "catastrophe"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Protocole d'assurance paramétrique autonome protégeant les agriculteurs contre les catastrophes climatiques. Il déclenche des indemnisations automatiquement en fonction de données environnementales."
+ },
  "b359187bebd4": {
   "famille": "modele",
   "id": "b359187bebd4",
@@ -556,6 +730,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Données annuelles d'achats de pesticides par code postal en France, déclarées par les distributeurs. Elles permettent de suivre les achats sur le territoire."
  },
+ "bfb76fbe677c": {
+  "famille": "modele",
+  "id": "bfb76fbe677c",
+  "interet": "Il permet de cartographier les limites des champs à partir de données de télédétection.",
+  "mots_cles": [
+   "segmentation d'instances",
+   "délimitation de parcelles",
+   "sentinel-2",
+   "télédétection",
+   "ultralytics"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce modèle réalise une segmentation d'instances pour délimiter les parcelles agricoles à partir d'images Sentinel-2. Il utilise l'architecture Ultralytics."
+ },
  "c06242af2862": {
   "famille": "logiciel",
   "id": "c06242af2862",
@@ -570,6 +759,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "ekylibre est un système d'information de gestion agricole open source. Il permet de gérer les données et processus d'une exploitation agricole."
+ },
+ "c1780243d021": {
+  "famille": "logiciel",
+  "id": "c1780243d021",
+  "interet": "Faciliter l'intégration et l'automatisation des données agricoles via une API standardisée.",
+  "mots_cles": [
+   "api",
+   "john deere",
+   "opérations agricoles",
+   "typescript",
+   "équipements agricoles"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Bibliothèque TypeScript non officielle pour interagir avec l'API du centre d'opérations John Deere. Elle permet d'accéder aux données et fonctionnalités de gestion des équipements agricoles."
  },
  "c6c62295bb1e": {
   "famille": "donnees",
@@ -646,6 +850,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Ce jeu de données identifie, pour chaque commune, la filière agricole dominante en 2020 à partir de l'OTEX en 12 postes. Il contient 34 920 lignes, une par commune de France métropolitaine et d'outre-mer."
  },
+ "cdb3a7ee753d": {
+  "famille": "logiciel",
+  "id": "cdb3a7ee753d",
+  "interet": "Structurer et partager des connaissances sur les aliments pour faciliter l'analyse et l'intégration de données en agriculture et nutrition.",
+  "mots_cles": [
+   "alimentation",
+   "ontologie",
+   "données alimentaires",
+   "interopérabilité",
+   "owl"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ontologie standardisée pour décrire les aliments et leurs composants dans un cadre sémantique structuré. Elle sert de référence pour l'annotation et l'interopérabilité des données alimentaires."
+ },
  "cee2b6e345e8": {
   "famille": "logiciel",
   "id": "cee2b6e345e8",
@@ -661,6 +880,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Ce projet est une liste curatée de ressources open source dédiées à l'agriculture de précision. Il recense des outils, bibliothèques et projets logiciels pour la gestion des exploitations agricoles."
  },
+ "cfc9a62d81fd": {
+  "famille": "donnees",
+  "id": "cfc9a62d81fd",
+  "interet": "Fournit des données pour modéliser l'impact du climat sur les rendements agricoles.",
+  "mots_cles": [
+   "rendement",
+   "climat",
+   "deep learning",
+   "données",
+   "prédiction"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Jeu de données ouvert et à grande échelle pour prédire les rendements agricoles en tenant compte du changement climatique aux États-Unis. Il est conçu pour des modèles de deep learning."
+ },
  "d4c44d87cabb": {
   "famille": "donnees",
   "id": "d4c44d87cabb",
@@ -675,6 +909,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Ce jeu de données recense les dispositifs d'aides publiques aux agriculteurs et agricultrices, mis à jour chaque semaine. Il propose deux exports CSV distincts pour faciliter l'échange et l'utilisation des données."
+ },
+ "d4eda65c49be": {
+  "famille": "logiciel",
+  "id": "d4eda65c49be",
+  "interet": "Surveille les conditions environnementales des ruches pour optimiser la gestion apicole.",
+  "mots_cles": [
+   "ruche",
+   "surveillance",
+   "capteurs",
+   "abeilles",
+   "iot"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Système IoT basé sur ESP32 pour surveiller en temps réel les ruches via des capteurs de température, humidité, activité des abeilles et poids. Intègre une alimentation solaire et un tableau de bord web."
  },
  "d90aeaa302bc": {
   "famille": "logiciel",
@@ -720,6 +969,36 @@
   "redige_par": "mistral-small-latest",
   "resume": "farmOS est une application web de gestion des enregistrements agricoles. Elle permet de suivre les activités, les cultures, le bétail et le matériel sur une exploitation."
  },
+ "dab4017c76b1": {
+  "famille": "donnees",
+  "id": "dab4017c76b1",
+  "interet": "Analyser l'évolution de la structure agricole dans une région spécifique.",
+  "mots_cles": [
+   "recensement agricole",
+   "parc naturel régional",
+   "morvan",
+   "évolution",
+   "structure des exploitations"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Données du Recensement Général Agricole (RGA) pour les communes du Parc naturel régional du Morvan à différentes années (1988, 2000, 2010, 2020). Ces données fournissent des informations sur la structure des exploitations agricoles."
+ },
+ "dc378054aa4d": {
+  "famille": "donnees",
+  "id": "dc378054aa4d",
+  "interet": "Comprendre les dynamiques de transmission des exploitations agricoles et les enjeux démographiques.",
+  "mots_cles": [
+   "transmission",
+   "exploitation agricole",
+   "retraite",
+   "démographie",
+   "région sud"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Étude analysant l’état des lieux et les enjeux de transmission des exploitations agricoles en région Provence-Alpes-Côte d'Azur. Ces données décrivent la situation des exploitants et les défis liés au renouvellement des générations."
+ },
  "dccc5b359f9b": {
   "famille": "logiciel",
   "id": "dccc5b359f9b",
@@ -750,6 +1029,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Ce jeu de données détaille la répartition des surfaces agricoles utilisées par type de culture au niveau intercommunal. Il indique la composition des surfaces pour chaque EPCI."
  },
+ "e412ded7b3d6": {
+  "famille": "modele",
+  "id": "e412ded7b3d6",
+  "interet": "",
+  "mots_cles": [
+   "qwen2",
+   "génération de texte",
+   "agriculture",
+   "malawi",
+   "adaptation fine"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce modèle génère du texte en continu pour des applications agricoles au Malawi. Il est basé sur l'architecture Qwen2 et utilise des techniques d'adaptation fine."
+ },
  "ed382ff29f67": {
   "famille": "logiciel",
   "id": "ed382ff29f67",
@@ -764,6 +1058,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Plateforme locale de gestion des exploitations agricoles intégrant champs, tâches, bétail, finances, conformité et météo. Elle centralise plusieurs systèmes européens de parcelles (SIGPAC, BRP, RPG, etc.)."
+ },
+ "f128a3168e57": {
+  "famille": "logiciel",
+  "id": "f128a3168e57",
+  "interet": "Facilite l'intégration et l'analyse de données IoT pour des applications agricoles.",
+  "mots_cles": [
+   "iot",
+   "plateforme",
+   "données",
+   "agriculture",
+   "modulaire"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Plateforme open source basée sur FIWARE NGSI-LD pour l'agriculture, l'industrie et l'environnement. Elle permet de gérer des données en temps réel via une architecture modulaire et multi-locataires."
  },
  "f4f3083c6bc3": {
   "famille": "logiciel",
@@ -839,6 +1148,50 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Rover agricole intelligent utilisant l'IA pour détecter les maladies des plantes, naviguer de manière autonome et surveiller en temps réel via IoT. Il combine vision par ordinateur et capteurs ESP32."
+ },
+ "fc1d8039e3c7": {
+  "famille": "donnees",
+  "id": "fc1d8039e3c7",
+  "interet": "",
+  "mots_cles": [
+   "raisonnement mécanique",
+   "questions agricoles",
+   "réponses numériques",
+   "connaissances contrôlées"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "CropMath propose des questions de raisonnement mécanique en agriculture avec des réponses numériques et des conditions de connaissance contrôlées. Une version publique est disponible sous forme de snapshot."
+ },
+ "fc45fa57a8d7": {
+  "famille": "modele",
+  "id": "fc45fa57a8d7",
+  "interet": "Permet d'estimer des populations animales pour des études écologiques ou de gestion pastorale.",
+  "mots_cles": [
+   "imagerie",
+   "deep learning",
+   "mammifères",
+   "comptage",
+   "aérien"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Code associé à une étude utilisant l'imagerie aérienne et le deep learning pour compter des mammifères africains. L'objectif est de détecter et compter précisément des animaux depuis des images aériennes."
+ },
+ "fd31e5fc5044": {
+  "famille": "donnees",
+  "id": "fd31e5fc5044",
+  "interet": "",
+  "mots_cles": [
+   "occupation du sol",
+   "artificialisation",
+   "couverture",
+   "évolution",
+   "lunel agglo"
+  ],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
  },
  "fe62f3dd902b": {
   "famille": "logiciel",
