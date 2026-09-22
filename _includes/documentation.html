@@ -1,0 +1,136 @@
+{%- comment -%}
+  Rubrique Documentation : publications, rapports, ouvrages et portails de
+  veille sur l'IA et le numérique agricoles. Ce ne sont pas des communs : ils
+  n'entrent ni dans l'annuaire, ni dans son compteur, ni dans communs.json.
+
+  Usage   : {% include documentation.html lang="fr" %}
+  Données : _data/publications.yml — ajouter une entrée suffit à la publier
+            ici, dans les deux langues, et dans le socle du chatbot.
+  Cadrage : _documentation/EXIGENCES.md
+
+  Le titre reste dans la langue du document (attribut lang), seul le résumé
+  est traduit. Une prépublication ou un portail porte un avertissement visible :
+  le lecteur doit savoir ce qu'il lit avant de cliquer.
+{%- endcomment -%}
+{%- assign lang = include.lang | default: "fr" -%}
+{%- assign doc = site.data.publications -%}
+{%- assign courriel = site.data.association.courriel | default: "contact@osfarm.org" -%}
+
+<section class="documentation" id="documentation" data-lang="{{ lang }}">
+
+  <p class="f4 text-gray">
+    {%- if lang == "fr" %}
+    {{ doc.publications.size }} références sur l'intelligence artificielle et le numérique
+    en agriculture : rapports publics, études, ouvrages, articles et portails de veille.
+    Elles éclairent les communs de l'<a href="{{ "/fr/communs/" | relative_url }}">annuaire</a>
+    sans s'y confondre : on les lit, on ne les installe pas. Chaque notice renvoie au texte
+    chez son éditeur ; nous n'en republions aucun.
+    {%- else %}
+    {{ doc.publications.size }} references on artificial intelligence and digital technology in
+    agriculture: public reports, studies, books, papers and watch portals. They shed light on the
+    commons in the <a href="{{ "/community/" | relative_url }}">directory</a> without being part
+    of it: you read them, you don't install them. Each entry links to the text at its publisher;
+    we republish none of them.
+    {%- endif %}
+  </p>
+
+  <div class="radar-filtres" role="group" aria-label="{% if lang == "fr" %}Filtrer par nature{% else %}Filter by kind{% endif %}">
+    <span class="radar-filtres-titre">{% if lang == "fr" %}Nature :{% else %}Kind:{% endif %}</span>
+    <button type="button" class="radar-tag is-actif" data-nature="" aria-pressed="true">{% if lang == "fr" %}Tout{% else %}All{% endif %}</button>
+    {%- for n in doc.natures %}
+    {%- assign n_nb = doc.publications | where: "nature", n.id | size %}
+    {%- if n_nb > 0 %}
+    <button type="button" class="radar-tag" data-nature="{{ n.id }}" aria-pressed="false">{{ n.titre[lang] }}</button>
+    {%- endif %}
+    {%- endfor %}
+  </div>
+
+  <p class="radar-compteur" id="doc-compteur" aria-live="polite"></p>
+
+  {%- for g in doc.groupes %}
+  {%- assign pubs = doc.publications | where: "groupe", g.id | sort_natural: "titre" %}
+  {%- if pubs.size > 0 %}
+  <section class="doc-groupe" aria-labelledby="doc-{{ g.id }}">
+    <h2 class="radar-encart-titre" id="doc-{{ g.id }}">{{ g.titre[lang] }}</h2>
+    <div class="radar-grille">
+      {%- for p in pubs %}
+      {%- assign nat = doc.natures | where: "id", p.nature | first %}
+      {%- comment -%} Une version française officielle, quand l'éditeur en publie une, remplace l'originale sur la page française. {%- endcomment %}
+      {%- assign p_titre = p.titre -%}
+      {%- assign p_url = p.url -%}
+      {%- assign p_langue = p.langue -%}
+      {%- if lang == "fr" and p.url_fr -%}
+        {%- assign p_titre = p.titre_fr | default: p.titre -%}
+        {%- assign p_url = p.url_fr -%}
+        {%- assign p_langue = "fr" -%}
+      {%- endif %}
+      <article class="radar-carte doc-carte" id="pub-{{ p.id }}" data-nature="{{ p.nature }}">
+        <div class="radar-carte-tete">
+          <div class="radar-carte-titre">
+            <p class="radar-meta doc-meta">
+              <span class="radar-famille">{{ nat.titre[lang] | default: p.nature }}</span>
+              <span>{% if p.annee == "continu" %}{% if lang == "fr" %}mis à jour en continu{% else %}continuously updated{% endif %}{% else %}{{ p.annee }}{% endif %}</span>
+              <span>{{ p_langue | upcase }}</span>
+            </p>
+            <h2><a href="{{ p_url }}" target="_blank" rel="noopener"{% if p_langue != lang %} lang="{{ p_langue }}"{% endif %}>{{ p_titre }}</a></h2>
+            <p class="radar-auteur">{{ p.auteur }}</p>
+          </div>
+        </div>
+        <div class="radar-carte-corps">
+          {%- if nat.avertissement %}
+          <p class="doc-avertissement doc-avertissement--{{ p.nature }}">{{ nat.avertissement[lang] }}</p>
+          {%- endif %}
+          <p>{{ p.resume[lang] }}</p>
+        </div>
+        <div class="radar-carte-pied">
+          <div class="radar-carte-bas">
+            <div class="radar-sources">
+              {%- if p.acces == "ouvert" %}
+              <span>{% octicon unlock height:14 class:"radar-octicon" aria-hidden:true %} {% if lang == "fr" %}Texte en accès libre{% else %}Open access{% endif %}</span>
+              {%- elsif p.acces == "formulaire" %}
+              <span>{% octicon unlock height:14 class:"radar-octicon" aria-hidden:true %} {% if lang == "fr" %}Gratuit, sur formulaire{% else %}Free, on request form{% endif %}</span>
+              {%- elsif p.acces == "notice" %}
+              <span>{% octicon lock height:14 class:"radar-octicon" aria-hidden:true %} {% if lang == "fr" %}Notice seule{% else %}Abstract only{% endif %}</span>
+              {%- endif %}
+              <span>{% if lang == "fr" %}vérifié le {{ p.verifie_le | date: "%d/%m/%Y" }}{% else %}checked {{ p.verifie_le | date: "%Y-%m-%d" }}{% endif %}</span>
+            </div>
+            <a class="doc-signaler" href="mailto:{{ courriel }}?subject={% if lang == "fr" %}Lien%20mort%20%E2%80%94%20{% else %}Dead%20link%20%E2%80%94%20{% endif %}pub-{{ p.id }}">{% if lang == "fr" %}Signaler un lien mort{% else %}Report a dead link{% endif %}</a>
+          </div>
+        </div>
+      </article>
+      {%- endfor %}
+    </div>
+  </section>
+  {%- endif %}
+  {%- endfor %}
+
+  <div class="radar-encart mt-6">
+    {%- if lang == "fr" %}
+    <h2 class="radar-encart-titre">Comment cette documentation est tenue</h2>
+    <p>
+      Chaque lien est ouvert et daté avant publication, et l'année indiquée est celle du
+      document, non celle de sa page web. Les prépublications et les portails le disent
+      sur leur fiche. Les résumés sont rédigés par l'association ; ils ne remplacent pas
+      la lecture du texte.
+    </p>
+    <p class="mb-0">
+      Une référence à proposer, une erreur à corriger ?
+      <a href="{{ "/fr/contact/" | relative_url }}">Écrivez-nous</a>, ou ouvrez une pull request
+      sur <a href="https://github.com/osfarm/osfarm.github.io/blob/main/_data/publications.yml">_data/publications.yml</a>.
+    </p>
+    {%- else %}
+    <h2 class="radar-encart-titre">How this list is kept</h2>
+    <p>
+      Every link is opened and dated before publication, and the year shown is the
+      document's, not its web page's. Preprints and portals say so on their card. Summaries
+      are written by the association; they are no substitute for reading the text.
+    </p>
+    <p class="mb-0">
+      A reference to suggest, a mistake to fix?
+      <a href="{{ "/contact/" | relative_url }}">Write to us</a>, or open a pull request on
+      <a href="https://github.com/osfarm/osfarm.github.io/blob/main/_data/publications.yml">_data/publications.yml</a>.
+    </p>
+    {%- endif %}
+  </div>
+
+</section>

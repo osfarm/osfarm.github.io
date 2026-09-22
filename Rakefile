@@ -20,7 +20,13 @@ task :test do
     # ferait échouer chaque `rake test`.
     ignore_urls: [%r{https://www\.linkedin\.com},
                   %r{https://developer.github.com}, %r{https://docs.github.com}, %r{https://help.github.com},
-                  %r{\Ahttp://vcriis01\.inesctec\.pt}],
+                  %r{\Ahttp://vcriis01\.inesctec\.pt},
+                  # Documentation (_data/publications.yml) : ces trois sites
+                  # renvoient 403 à tout robot (Akamai, Cloudflare). Les liens ont
+                  # été lus à la main ou par Wayback le 22/09/2026 ; leur date de
+                  # contrôle est dans `verifie_le`.
+                  %r{\Ahttps://www\.oecd\.org/}, %r{\Ahttps://www\.usda\.gov/},
+                  %r{\Ahttps://www\.undp\.org/}],
     ignore_files: [%r{/stories/}],
     ignore_status_codes: [429]
   )

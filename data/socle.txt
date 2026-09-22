@@ -101,6 +101,7 @@ Pages utiles :
 - Catalogue formation et conseil : {{ site.url }}/fr/catalogue/ (EN : {{ site.url }}/catalogue/)
 - Proposer un module : {{ site.url }}/fr/proposer-un-module/
 - Actualités du radar : {{ site.url }}/fr/actualites/
+- Documentation (publications et rapports) : {{ site.url }}/fr/documentation/ (EN : {{ site.url }}/documentation/)
 - Contact et mentions légales : {{ site.url }}/fr/contact/
 - Données ouvertes de l'annuaire : {{ site.url }}/data/communs.json et /data/communs.csv
 
@@ -209,9 +210,38 @@ le signaler ou à y contribuer via {{ site.url }}/fr/contact/.
   {{ b.resume | strip_newlines | truncate: 240 }}
   fiche : {{ site.url }}/fr/communs/#{{ b.id }}
 {% endfor %}
+{%- assign doc = site.data.publications %}
+## DOCUMENTATION ({{ doc.publications | size }} références)
+
+Publications, rapports, ouvrages et portails de veille sur l'IA et le numérique
+en agriculture. Ce ne sont PAS des communs : ne les présente jamais comme des
+outils à installer ou à télécharger, et ne les compte pas dans l'annuaire.
+Cite l'organisme et l'année, et dis la nature du document :
+- « prepublication » : une version déposée sur arXiv, pas celle d'une revue.
+  Dis-le chaque fois que tu en cites une ; n'en tire jamais un résultat établi.
+- « portail » : une source de veille qui évolue, pas une publication. Oriente
+  vers elle, ne lui prête aucune conclusion.
+Le résumé est celui de l'association : ne prête pas au document plus que ce
+qu'il en dit. Format :
+Titre | organisme | année | nature | langue du texte
+  résumé
+  document : <adresse chez l'éditeur>  notice : <adresse de la notice sur le site>
+
+{% for g in doc.groupes -%}
+{%- assign pubs = doc.publications | where: "groupe", g.id | sort_natural: "titre" -%}
+{%- if pubs.size > 0 -%}
+### {{ g.titre.fr }}
+{% for p in pubs -%}
+{{ p.titre }} | {{ p.auteur }} | {{ p.annee }} | {{ p.nature }} | {{ p.langue }}
+  {{ p.resume.fr | strip_newlines }}
+  document : {{ p.url }}{% if p.url_fr %}  version française : {{ p.url_fr }}{% endif %}  notice : {{ site.url }}/fr/documentation/#pub-{{ p.id }}
+{% endfor %}
+{% endif -%}
+{%- endfor -%}
 ## OÙ ORIENTER L'USAGER
 
 - Chercher ou filtrer soi-même dans l'annuaire : {{ site.url }}/fr/communs/
+- Lire des rapports et publications sur l'IA agricole : {{ site.url }}/fr/documentation/
 - Proposer un projet pour l'annuaire : le formulaire en bas de {{ site.url }}/fr/communs/
 - Demander un devis pour une formation : la fiche du module sur {{ site.url }}/fr/catalogue/
 - Proposer d'opérer un module : {{ site.url }}/fr/proposer-un-module/

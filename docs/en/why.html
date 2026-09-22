@@ -133,11 +133,13 @@ lang: en
     <h2 id="sources-titre" class="pourquoi-h2">What the FAO and the United Nations say</h2>
     <p class="pourquoi-intro">The major institutions reach the same conclusion: without accessible, shared tools, most of the world’s small farms will stay out of reach of agricultural technology.</p>
     <ul class="sources">
-      {%- for pub in site.data.publications %}
-      <li><a href="{{ pub.url }}" target="_blank" rel="noopener">{{ pub.title }}</a><span>{{ pub.author }}</span></li>
+      {%- assign sources = site.data.publications.publications | where: "pourquoi", true | sort: "annee" %}
+      {%- for pub in sources %}
+      <li><a href="{{ pub.url }}" target="_blank" rel="noopener"{% if pub.langue != "en" %} lang="{{ pub.langue }}"{% endif %}>{{ pub.titre }}</a><span>{{ pub.auteur }}, {{ pub.annee }}</span></li>
       {%- endfor %}
       <li><a href="https://www.youtube.com/watch?v=iZC-kWKPY_M" target="_blank" rel="noopener">SOFA 2022: Leveraging automation in agriculture for transforming agrifood systems</a><span>Food and Agriculture Organization, video</span></li>
     </ul>
+    <p class="pourquoi-intro"><a href="{{ "/documentation/" | relative_url }}">All publications on AI and digital agriculture</a></p>
   </section>
 
   <section class="pourquoi-appel" aria-labelledby="appel-titre">

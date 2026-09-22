@@ -1,20 +1,519 @@
-# Add publications concerning technologies and agricultures
-- title: "Agriculture technology for sustainable development : leaving no one behind"
-  author: United Nations
-  url: "https://digitallibrary.un.org/record/3937125?ln=en#record-files-collapse-header"
-- title: "Frontier technologies for smallholder farmers: addressing information asymmetries and deficiencies"
-  author: United Nations
-  url: "https://www.un.org/development/desa/dpad/publication/frontier-technology-issues-frontier-technologies-for-smallholder-farmers-addressing-information-asymmetries-and-deficiencies/"
-- title: "Precision Agriculture for Smallholder Farmers"
-  author: United Nations Development Programme
-  url: "https://www.undp.org/publications/precision-agriculture-smallholder-farmers"
-- title: "The State of Food and Agriculture 2022"
-  author: Food and Agriculture Organisation
-  url: "https://www.fao.org/publications/home/fao-flagship-publications/the-state-of-food-and-agriculture/en"
-
-
-
-  
-
-
-  
+# Rubrique Documentation : /fr/documentation/ et /documentation/
+# (_includes/documentation.html), plus le socle du chatbot (data/socle.txt).
+# Cadrage : _documentation/EXIGENCES.md.
+#
+# Des lectures, pas des communs : rien ici n'entre dans l'annuaire, son
+# compteur ou /data/communs.json. Ajouter une entrée à `publications` suffit à
+# la publier sur les deux pages et à la rendre citable par l'assistant.
+#
+# Une entrée :
+#   id          stable, sert d'ancre #pub-<id> ; ne jamais le changer
+#   titre       dans la langue du document, jamais traduit
+#   auteur      auteurs ou organisme, sous le nom qu'ils portent sur le document
+#               (non traduit : la page anglaise le montre aussi)
+#   annee       année du DOCUMENT, pas de sa page web ; `continu` pour un portail
+#   nature      un `id` de `natures`
+#   groupe      un `id` de `groupes`
+#   langue      langue du texte : fr ou en
+#   resume      { fr, en } — rédigé par l'association, jamais copié de l'éditeur
+#   url         lien pérenne, DOI quand il existe
+#   acces       ouvert (texte librement lisible), formulaire (gratuit contre un
+#               formulaire) ou notice (présentation seule, texte ailleurs ou payant)
+#   verifie_le  date du dernier contrôle du lien
+#   pourquoi    true pour les sources citées sur /why/ et /fr/why/
+#   titre_fr, url_fr   facultatifs : la version française officielle, montrée
+#               sur la page française à la place de l'originale
+#
+# Entrées rangées par groupe, puis par titre.
+groupes:
+  - id: france
+    titre: { fr: Références françaises et recherche appliquée, en: French references and applied research }
+  - id: europe
+    titre: { fr: Études et politiques européennes, en: European studies and policies }
+  - id: etats-unis
+    titre: { fr: Instituts et universités des États-Unis, en: United States institutes and universities }
+  - id: international
+    titre: { fr: Organisations internationales, en: International organisations }
+  - id: recherche
+    titre: { fr: Recherche ouverte et évaluation des modèles, en: Open research and model evaluation }
+  - id: portails
+    titre: { fr: Portails et ressources vivantes, en: Portals and living resources }
+# `avertissement` s'affiche sur la carte : le lecteur doit savoir ce qu'il lit.
+natures:
+  - id: rapport
+    titre: { fr: Rapport, en: Report }
+  - id: etude
+    titre: { fr: Étude, en: Study }
+  - id: strategie
+    titre: { fr: Stratégie publique, en: Public strategy }
+  - id: ouvrage
+    titre: { fr: Ouvrage, en: Book }
+  - id: dossier
+    titre: { fr: Dossier, en: Feature }
+  - id: article
+    titre: { fr: Article évalué, en: Peer-reviewed paper }
+  - id: prepublication
+    titre: { fr: Prépublication, en: Preprint }
+    avertissement:
+      fr: Prépublication arXiv — la version liée n'est pas celle d'une revue ; à lire comme un travail en cours.
+      en: arXiv preprint — the linked version is not a journal version; read it as work in progress.
+  - id: portail
+    titre: { fr: Portail, en: Portal }
+    avertissement:
+      fr: Portail vivant — source de veille, non publication.
+      en: Living portal — a watch source, not a publication.
+publications:
+  # --- france
+  - id: cgaaer-ia-metiers-ministere
+    titre: "Analyse des impacts de l'intelligence artificielle sur les grands métiers du ministère et de ses opérateurs"
+    auteur: CGAAER
+    annee: 2024
+    nature: rapport
+    groupe: france
+    langue: fr
+    resume:
+      fr: Rapport de mission 24053 sur les usages administratifs de l'IA, la gouvernance des données, les compétences et les risques de l'IA générative au ministère de l'Agriculture et chez ses opérateurs.
+      en: Mission report 24053 on administrative uses of AI, data governance, skills and the risks of generative AI at the French Ministry of Agriculture and its agencies.
+    url: "https://agriculture.gouv.fr/analyse-des-impacts-de-lintelligence-artificielle-sur-les-grands-metiers-du-ministere-de"
+    acces: ouvert
+    verifie_le: 2026-09-22
+  - id: digitag-apprehender-agriculture-numerique
+    titre: "Appréhender l'agriculture numérique. 10 ans de recherche interdisciplinaire au sein de l'Institut #DigitAg"
+    auteur: V. Bellon-Maurel, K. Gauche, M.-L. Enriquez, N. Lyon-Caen (coord.), Institut DigitAg — Éditions Quæ
+    annee: 2026
+    nature: ouvrage
+    groupe: france
+    langue: fr
+    resume:
+      fr: Ouvrage collectif en accès ouvert couvrant capteurs, données, IA, aide à la décision et implications sociales de l'agriculture numérique.
+      en: An open-access collective book covering sensors, data, AI, decision support and the social implications of digital agriculture.
+    url: "https://doi.org/10.35690/978-2-7592-4255-9"
+    acces: ouvert
+    verifie_le: 2026-09-22
+  - id: acta-ia-generative
+    titre: "Intelligence artificielle générative en agriculture : enjeux, principes et applications"
+    auteur: Acta, Académie d'agriculture de France et Chaire AgroTIC
+    annee: 2026
+    nature: rapport
+    groupe: france
+    langue: fr
+    resume:
+      fr: Livre blanc centré sur les cas d'usage réels de l'IA générative dans les filières et le conseil agricole, et sur les principes de son utilisation.
+      en: A white paper on real use cases of generative AI in farming sectors and agricultural advice, and on the principles for using it.
+    url: "https://www.acta.asso.fr/realisations/intelligence-artificielle-generative-en-agriculture-quels-usages-quelles-opportunites-et-quels-defis-pour-les-filieres-agricoles/"
+    acces: formulaire
+    verifie_le: 2026-09-22
+  - id: ia-des-champs
+    titre: "L'IA des champs – Les graines d'un futur possible"
+    auteur: H. Pillaud, K. Cailleaux-Breton, D. Joulin — Éditions France Agricole
+    annee: 2026
+    nature: ouvrage
+    groupe: france
+    langue: fr
+    resume:
+      fr: Un livre sur l'IA en agriculture, préfacé par Julien Denormandie, et son site qui le prolonge en parcours de lecture et environnement pédagogique.
+      en: A book on AI in agriculture, with a foreword by Julien Denormandie, and its website extending it into a reading path and learning environment.
+    url: "https://ia-des-champs.com"
+    acces: notice
+    verifie_le: 2026-09-22
+  - id: inrae-ia-renouveau-pratiques
+    titre: "L'IA, outil du renouveau des pratiques agricoles"
+    auteur: INRAE
+    annee: 2025
+    nature: dossier
+    groupe: france
+    langue: fr
+    resume:
+      fr: Dossier de vulgarisation sur les usages de l'IA en production agricole et les conditions agronomiques de leur pertinence, accessible aux non-spécialistes.
+      en: A general-audience feature on uses of AI in farm production and the agronomic conditions under which they make sense.
+    url: "https://www.inrae.fr/dossiers/lia-peut-elle-rendre-lagriculture-plus-durable/lia-outil-du-renouveau-pratiques-agricoles"
+    acces: ouvert
+    verifie_le: 2026-09-22
+  - id: cgaaer-ia-agriculture
+    titre: "L'intelligence artificielle au service de l'agriculture et de l'agroalimentaire"
+    auteur: CGAAER
+    annee: 2025
+    nature: rapport
+    groupe: france
+    langue: fr
+    resume:
+      fr: Rapport de mission 25034 qui analyse les usages de l'IA en agriculture et en agroalimentaire, la souveraineté, les données publiques, la formation et les priorités d'action en France.
+      en: Mission report 25034 analysing uses of AI in farming and food processing, sovereignty, public data, training and priorities for action in France.
+    url: "https://agriculture.gouv.fr/lintelligence-artificielle-au-service-de-lagriculture-et-de-lagroalimentaire"
+    acces: ouvert
+    verifie_le: 2026-09-22
+  - id: acta-science-donnees-ia
+    titre: "La science des données et l'intelligence artificielle au service de l'agriculture : synthèse des travaux des instituts techniques agricoles"
+    auteur: Acta
+    annee: 2024
+    nature: dossier
+    groupe: france
+    langue: fr
+    resume:
+      fr: Synthèse des travaux des instituts techniques agricoles en science des données et en IA, pour repérer les applications expérimentées dans les filières françaises.
+      en: A summary of the work of French agricultural technical institutes on data science and AI, a way into applications already trialled in French farming sectors.
+    url: "https://www.acta.asso.fr/la-science-des-donnees-et-lintelligence-artificielle-au-service-de-lagriculture/"
+    acces: ouvert
+    verifie_le: 2026-09-22
+  - id: inrae-donnees-matiere-premiere
+    titre: "Les données, matière première des innovations agricoles"
+    auteur: INRAE
+    annee: 2025
+    nature: dossier
+    groupe: france
+    langue: fr
+    resume:
+      fr: Dossier sur les données, les capteurs et les jumeaux numériques, qui éclaire les exigences de qualité et de gouvernance des données avant toute promesse d'IA.
+      en: A feature on data, sensors and digital twins, setting out the data quality and governance prerequisites that come before any promise of AI.
+    url: "https://www.inrae.fr/dossiers/lia-peut-elle-rendre-lagriculture-plus-durable/donnees-matiere-premiere-innovations-agricoles"
+    acces: ouvert
+    verifie_le: 2026-09-22
+  # --- europe
+  - id: ce-ia-agriculture-durable
+    titre: "AI-enabled Decision-Making Support Tools (AI DMST) for Agriculture – Analysis of market dynamics, technical requirements, and stakeholder perspectives"
+    auteur: B. Rauch, R. Matar, J. Dörr (Fraunhofer IESE) for the European Commission
+    annee: 2025
+    nature: etude
+    groupe: europe
+    langue: en
+    resume:
+      fr: Étude sur les outils d'aide à la décision fondés sur l'IA, leur adoption inégale et les obstacles d'interopérabilité, de coût, de transparence et de données.
+      en: A study of AI-based decision-support tools, their uneven adoption and the barriers of interoperability, cost, transparency and data.
+    url: "https://digital-strategy.ec.europa.eu/en/library/unlocking-potential-artificial-intelligence-sustainable-agriculture"
+    acces: ouvert
+    verifie_le: 2026-09-22
+  - id: cap-network-digitalisation-psn
+    titre: "Assessing digitalisation under the CAP Strategic Plans"
+    auteur: European Evaluation Helpdesk for the CAP (EU CAP Network)
+    annee: 2025
+    nature: etude
+    groupe: europe
+    langue: en
+    resume:
+      fr: Cadre d'évaluation des politiques de numérisation agricole menées dans les plans stratégiques de la PAC et de leurs effets.
+      en: A framework for assessing the digitalisation policies of the CAP Strategic Plans and their effects.
+    url: "https://eu-cap-network.ec.europa.eu/publications/assessing-digitalisation-under-cap-strategic-plans_en"
+    acces: ouvert
+    verifie_le: 2026-09-22
+  - id: jrc-digital-transition
+    titre: "Digital Transition: Long-term Implications for EU Farmers and Rural Communities"
+    auteur: European Commission, Joint Research Centre (JRC)
+    annee: 2023
+    nature: etude
+    groupe: europe
+    langue: en
+    resume:
+      fr: Prospective sur les effets distributifs de la transition numérique, la résilience rurale et les choix publics, au-delà des seules performances techniques.
+      en: A foresight study on the distributional effects of the digital transition, rural resilience and public choices, beyond technical performance alone.
+    url: "https://publications.jrc.ec.europa.eu/repository/handle/JRC134571"
+    acces: ouvert
+    verifie_le: 2026-09-22
+  - id: cap-network-robotique-ia
+    titre: "EU CAP Network seminar 'Robotics and Artificial Intelligence in farming and forestry'"
+    auteur: EU CAP Network
+    annee: 2025
+    nature: rapport
+    groupe: europe
+    langue: en
+    resume:
+      fr: Rapport du séminaire tenu à Utrecht les 19 et 20 février 2025, avec ses annexes thématiques sur la robotique et l'IA dans l'agriculture et la forêt ; riche en cas d'usage et en acteurs.
+      en: Report of the seminar held in Utrecht on 19-20 February 2025, with thematic annexes on robotics and AI in farming and forestry; rich in use cases and actors.
+    url: "https://eu-cap-network.ec.europa.eu/publications/eu-cap-network-seminar-robotics-and-artificial-intelligence-farming-and-forestry_en"
+    acces: ouvert
+    verifie_le: 2026-09-22
+  - id: jrc-digital-smallholders
+    titre: "Knowledge Review: Digital technology for agriculture: What's in it for smallholder farmers?"
+    auteur: European Commission, Joint Research Centre (JRC)
+    annee: 2022
+    nature: etude
+    groupe: europe
+    langue: en
+    resume:
+      fr: Revue de 34 publications sur le numérique pour les petits producteurs des pays à revenu faible ou intermédiaire, utile pour interroger l'accessibilité et l'inclusion des outils.
+      en: A review of 34 publications on digital technology for smallholders in low- and middle-income countries, useful for questioning how accessible and inclusive tools are.
+    url: "https://publications.jrc.ec.europa.eu/repository/handle/JRC130473"
+    acces: ouvert
+    verifie_le: 2026-09-22
+  - id: jrc-etat-digitalisation-ue
+    titre: "The state of digitalisation in EU agriculture: Insights from farm surveys"
+    auteur: J. Tur Cardona, P. Ciaian, F. Antonioli, T. Fellmann et al. — European Commission, Joint Research Centre (JRC)
+    annee: 2025
+    nature: etude
+    groupe: europe
+    langue: en
+    resume:
+      fr: Enquête auprès de 1 444 exploitants dans neuf États membres, base empirique pour hiérarchiser besoins, connectivité, compétences et partage des données.
+      en: A survey of 1,444 farmers in nine Member States, an empirical basis for prioritising needs, connectivity, skills and data sharing.
+    url: "https://publications.jrc.ec.europa.eu/repository/handle/JRC141259"
+    acces: ouvert
+    verifie_le: 2026-09-22
+  # --- etats-unis
+  - id: extension-national-ai-report
+    titre: "2026 National AI Report"
+    auteur: A. Weibe, D. Patel, D. Warren, M. Locklear — Extension Foundation
+    annee: 2026
+    nature: etude
+    groupe: etats-unis
+    langue: en
+    resume:
+      fr: Enquête auprès du système américain de recherche et de conseil agricole (Extension) sur la gouvernance, la formation, les infrastructures et les pratiques de terrain liées à l'IA.
+      en: A survey of the US agricultural extension system on AI governance, training, infrastructure and field practice.
+    url: "https://extension.org/national-ai-report-2026/"
+    acces: ouvert
+    verifie_le: 2026-09-22
+  - id: usda-ai-strategy
+    titre: "FY 2025-2026 USDA AI Strategy"
+    auteur: USDA
+    annee: 2024
+    nature: strategie
+    groupe: etats-unis
+    langue: en
+    resume:
+      fr: Stratégie institutionnelle de l'USDA en matière d'IA — recherche, imagerie, prévision, gouvernance et usage responsable. Une stratégie publique, non la validation d'un produit.
+      en: The USDA's institutional AI strategy — research, imagery, forecasting, governance and responsible use. A public strategy, not an endorsement of any product.
+    url: "https://www.usda.gov/sites/default/files/documents/fy-2025-2026-usda-ai-strategy.pdf"
+    acces: ouvert
+    verifie_le: 2026-09-22
+  - id: ars-harnessing-ai
+    titre: "Harnessing AI to transform agriculture and inform agricultural research"
+    auteur: D. C. Peters et al. — IT Professional (IEEE)
+    annee: 2020
+    nature: article
+    groupe: etats-unis
+    langue: en
+    resume:
+      fr: Article paru dans IT Professional (IEEE, vol. 22, n° 3) sur la façon dont l'IA transforme l'agriculture et la recherche agronomique. La page de l'ARS en donne la notice et le résumé ; le texte intégral est chez l'éditeur (DOI 10.1109/MITP.2020.2986124).
+      en: A paper in IT Professional (IEEE, vol. 22, no. 3) on how AI is transforming agriculture and agricultural research. The ARS page gives its record and abstract; the full text is at the publisher (DOI 10.1109/MITP.2020.2986124).
+    url: "https://www.ars.usda.gov/research/publications/publication/?seqNo115=371138"
+    acces: notice
+    verifie_le: 2026-09-22
+  - id: ers-precision-agriculture
+    titre: "Precision Agriculture in the Digital Era: Recent Adoption on U.S. Farms"
+    auteur: J. McFadden, E. Njuki, T. Griffin — USDA Economic Research Service (ERS)
+    annee: 2023
+    nature: rapport
+    groupe: etats-unis
+    langue: en
+    resume:
+      fr: Rapport EIB-248 fondé sur les enquêtes agricoles américaines, qui mesure l'adoption réelle du guidage, des cartes de rendement et de la modulation des intrants.
+      en: Report EIB-248, based on US farm surveys, measuring actual adoption of guidance systems, yield maps and variable-rate input application.
+    url: "https://www.ers.usda.gov/publications/105893"
+    acces: ouvert
+    verifie_le: 2026-09-22
+  # --- international
+  - id: onu-agriculture-technology
+    titre: "Agriculture technology for sustainable development: leaving no one behind"
+    auteur: United Nations, Report of the Secretary-General
+    annee: 2021
+    nature: rapport
+    groupe: international
+    langue: en
+    resume:
+      fr: Rapport du Secrétaire général à l'Assemblée générale sur les tendances technologiques en agriculture, leurs bénéfices, leurs risques et les conditions pour que les zones rurales et les petits producteurs en profitent.
+      en: A report of the Secretary-General to the General Assembly on technology trends in agriculture, their benefits and risks, and the conditions for rural areas and smallholders to benefit.
+    url: "https://digitallibrary.un.org/record/3937125?ln=en"
+    acces: ouvert
+    verifie_le: 2026-09-22
+    pourquoi: true
+  - id: bm-digital-agricultural-profiles
+    titre: "Digital Agricultural Profiles for Argentina, Kenya, Turkey and Viet Nam"
+    auteur: World Bank
+    annee: 2021
+    nature: etude
+    groupe: international
+    langue: en
+    resume:
+      fr: Diagnostics nationaux des freins et des leviers de la transformation numérique agricole, pour comparer les contextes plutôt que transposer un outil tel quel. La page de présentation reste en ligne, mais ses liens vers les rapports ne mènent plus aux textes (constaté le 22/09/2026).
+      en: Country diagnostics of the barriers to and drivers of digital agricultural transformation, to compare contexts rather than transpose a tool as is. The landing page is still online, but its links to the reports no longer reach the texts (as of 22/09/2026).
+    url: "https://www.worldbank.org/en/topic/agriculture/publication/digital-agricultural-profiles-for-argentina-kenya-turkey-and-viet-nam"
+    acces: notice
+    verifie_le: 2026-09-22
+  - id: fao-uit-digital-agriculture-ia
+    titre: "Digital agriculture in action: Artificial intelligence for agriculture"
+    auteur: FAO and International Telecommunication Union (ITU)
+    annee: 2021
+    nature: rapport
+    groupe: international
+    langue: en
+    resume:
+      fr: Panorama international des applications de l'IA agricole et des conditions de leur déploiement.
+      en: An international overview of AI applications in agriculture and the conditions for deploying them.
+    url: "https://doi.org/10.4060/cb7142en"
+    acces: ouvert
+    verifie_le: 2026-09-22
+  - id: oecd-digital-opportunities
+    titre: "Digital Opportunities for Better Agricultural Policies"
+    auteur: OECD
+    annee: 2019
+    nature: rapport
+    groupe: international
+    langue: en
+    resume:
+      fr: Rapport sur les données, l'IA et le suivi des politiques agroenvironnementales, qui documente aussi les risques de fracture numérique et de gouvernance.
+      en: A report on data, AI and the monitoring of agri-environmental policies, which also documents the risks of a digital divide and of poor governance.
+    url: "https://www.oecd.org/en/publications/digital-opportunities-for-better-agricultural-policies_571a0812-en.html"
+    acces: ouvert
+    verifie_le: 2026-09-22
+  - id: bm-earth-observation
+    titre: "Earth Observation for Food Security"
+    auteur: World Bank
+    annee: 2023
+    nature: etude
+    groupe: international
+    langue: en
+    resume:
+      fr: Étude de l'observation de la Terre pour le suivi de la sécurité alimentaire et les politiques agricoles, à rapprocher des données satellitaires et géospatiales de l'annuaire.
+      en: A study of Earth observation for food security monitoring and agricultural policy, a companion to the satellite and geospatial data in the directory.
+    url: "https://documents.worldbank.org/en/publication/documents-reports/documentdetail/099110225213030704"
+    acces: ouvert
+    verifie_le: 2026-09-22
+  - id: onu-desa-frontier-smallholders
+    titre: "Frontier technologies for smallholder farmers: addressing information asymmetries and deficiencies"
+    auteur: United Nations Department of Economic and Social Affairs (UN DESA)
+    annee: 2021
+    nature: etude
+    groupe: international
+    langue: en
+    resume:
+      fr: Note sur les applications mobiles d'aide à la décision, capteurs, télédétection, drones et plateformes numériques, et sur la manière dont ils peuvent réduire les asymétries d'information dont souffrent les petits producteurs.
+      en: A brief on decision-support apps, sensors, remote sensing, drones and digital platforms, and how they can reduce the information asymmetries smallholders face.
+    url: "https://www.un.org/development/desa/dpad/wp-content/uploads/sites/45/publication/FTI_Nov2021.pdf"
+    acces: ouvert
+    verifie_le: 2026-09-22
+    pourquoi: true
+  - id: pnud-precision-agriculture
+    titre: "Precision Agriculture for Smallholder Farmers"
+    auteur: United Nations Development Programme (UNDP)
+    annee: 2021
+    nature: rapport
+    groupe: international
+    langue: en
+    resume:
+      fr: Cartographie des innovations de l'agriculture numérique pour les petits producteurs des pays en développement, des obstacles à leur adoption et des recommandations pour les lever.
+      en: A map of digital farming innovations for smallholders in developing countries, the obstacles to their adoption and recommendations to overcome them.
+    url: "https://www.undp.org/publications/precision-agriculture-smallholder-farmers"
+    acces: ouvert
+    verifie_le: 2026-09-22
+    pourquoi: true
+  - id: fao-sofa-2022
+    titre: "The State of Food and Agriculture 2022: Leveraging automation in agriculture for transforming agrifood systems"
+    auteur: FAO
+    annee: 2022
+    nature: rapport
+    groupe: international
+    langue: en
+    resume:
+      fr: Rapport mondial fondé sur 27 études de cas, qui analyse les bénéfices de l'automatisation agricole, ses risques d'inégalité et les conditions de son adoption. Existe aussi en français.
+      en: A global report built on 27 case studies, analysing the benefits of agricultural automation, its risks of inequality and the conditions for its adoption. Also available in French.
+    url: "https://www.fao.org/agrifood-economics/publications/detail/en/c/1613500/"
+    acces: ouvert
+    verifie_le: 2026-09-22
+    pourquoi: true
+    titre_fr: "La Situation mondiale de l'alimentation et de l'agriculture 2022. L'automatisation de l'agriculture au service de la transformation des systèmes agroalimentaires"
+    url_fr: "https://www.fao.org/agrifood-economics/publications/detail/fr/c/1629219/"
+  # --- recherche
+  - id: agribench
+    titre: "AgriBench: A Hierarchical Agriculture Benchmark for Multimodal Large Language Models"
+    auteur: Yutong Zhou, Masahiro Ryo
+    annee: 2024
+    nature: prepublication
+    groupe: recherche
+    langue: en
+    resume:
+      fr: Jeu d'évaluation hiérarchique des grands modèles de langage multimodaux sur des tâches agricoles. Présenté à l'atelier CVPPA d'ECCV 2024.
+      en: A hierarchical benchmark for evaluating multimodal large language models on agricultural tasks. Presented at the CVPPA workshop at ECCV 2024.
+    url: "https://arxiv.org/abs/2412.00465"
+    acces: ouvert
+    verifie_le: 2026-09-22
+  - id: agrobench
+    titre: "AgroBench: Vision-Language Model Benchmark in Agriculture"
+    auteur: Risa Shinoda et al.
+    annee: 2025
+    nature: prepublication
+    groupe: recherche
+    langue: en
+    resume:
+      fr: Évaluation de modèles vision-langage sur sept thèmes agricoles, annoncée pour ICCV 2025 ; utile pour concevoir des tests d'assistants, non pour certifier leur fiabilité.
+      en: An evaluation of vision-language models across seven agricultural topics, announced for ICCV 2025; useful for designing assistant tests, not for certifying their reliability.
+    url: "https://arxiv.org/abs/2507.20519"
+    acces: ouvert
+    verifie_le: 2026-09-22
+  - id: frontiers-ai-developing-nations
+    titre: "AI can empower agriculture for global food security: challenges and prospects in developing nations"
+    auteur: A. Ahmad et al. — Frontiers in Artificial Intelligence
+    annee: 2024
+    nature: article
+    groupe: recherche
+    langue: en
+    resume:
+      fr: Article en accès ouvert sur les conditions et les limites de l'IA agricole dans les pays en développement, pour une lecture critique des enjeux d'inclusion.
+      en: An open-access paper on the conditions for and limits of agricultural AI in developing countries, for a critical reading of inclusion issues.
+    url: "https://doi.org/10.3389/frai.2024.1328530"
+    acces: ouvert
+    verifie_le: 2026-09-22
+  - id: aiia-sustainable-agriculture
+    titre: "Towards sustainable agriculture: Harnessing AI for global food security"
+    auteur: D. K. Pandey, R. Mishra — Artificial Intelligence in Agriculture (KeAi)
+    annee: 2024
+    nature: article
+    groupe: recherche
+    langue: en
+    resume:
+      fr: Article de synthèse en accès ouvert reliant modélisation, agriculture de précision et sécurité alimentaire ; il expose des potentiels plus que des effets mesurés sur le terrain.
+      en: An open-access review linking modelling, precision agriculture and food security; it sets out potential more than effects measured in the field.
+    url: "https://doi.org/10.1016/j.aiia.2024.04.003"
+    acces: ouvert
+    verifie_le: 2026-09-22
+  # --- portails
+  - id: nifa-intelligence-artificielle
+    titre: "Artificial Intelligence — Data Science for Food and Agricultural Systems (DSFAS)"
+    auteur: USDA National Institute of Food and Agriculture (NIFA)
+    annee: continu
+    nature: portail
+    groupe: portails
+    langue: en
+    resume:
+      fr: Présentation des domaines de recherche et de vulgarisation en IA financés par l'USDA, de la télédétection à l'élevage et à l'aide à la décision ; porte d'entrée vers les projets financés.
+      en: An overview of the AI research and extension areas funded by the USDA, from remote sensing to livestock and decision support; a way into funded projects.
+    url: "https://www.nifa.usda.gov/grants/programs/data-science-food-agricultural-systems-dsfas/artificial-intelligence"
+    acces: ouvert
+    verifie_le: 2026-09-22
+  - id: hal-digitag
+    titre: "Collection des publications de l'Institut DigitAg"
+    auteur: Institut DigitAg — HAL INRAE
+    annee: continu
+    nature: portail
+    groupe: portails
+    langue: fr
+    resume:
+      fr: Le flux des publications de l'institut de convergence DigitAg, avec leurs notices, dates et identifiants HAL ou DOI.
+      en: The stream of publications from the DigitAg convergence institute, with their records, dates and HAL or DOI identifiers.
+    url: "https://hal.inrae.fr/DIGITAG/search/index/?q=%2A&rows=30&sort=producedDate_tdate+desc"
+    acces: ouvert
+    verifie_le: 2026-09-22
+  - id: ars-find-a-publication
+    titre: "Find a Publication"
+    auteur: USDA Agricultural Research Service (ARS)
+    annee: continu
+    nature: portail
+    groupe: portails
+    langue: en
+    resume:
+      fr: Base interrogeable des manuscrits scientifiques récents de l'ARS ; les résultats sont à sélectionner un par un.
+      en: A searchable database of recent ARS scientific manuscripts; results have to be picked one by one.
+    url: "https://www.ars.usda.gov/research/publications/find-a-publication/"
+    acces: ouvert
+    verifie_le: 2026-09-22
+  - id: oecd-innovation-digital
+    titre: "Innovation and digital in agriculture"
+    auteur: OECD
+    annee: continu
+    nature: portail
+    groupe: portails
+    langue: en
+    resume:
+      fr: Page thématique de l'OCDE qui réunit ses études et mises à jour sur l'innovation et le numérique en agriculture.
+      en: The OECD's topic page gathering its studies and updates on innovation and digital technology in agriculture.
+    url: "https://www.oecd.org/en/topics/innovation-and-digital-in-agriculture.html"
+    acces: ouvert
+    verifie_le: 2026-09-22

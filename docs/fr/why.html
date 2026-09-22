@@ -134,11 +134,17 @@ lang: fr
     <h2 id="sources-titre" class="pourquoi-h2">Ce que disent la FAO et les Nations unies</h2>
     <p class="pourquoi-intro">Les grandes institutions font le même constat&nbsp;: sans outils accessibles et partagés, la plupart des petites fermes du monde resteront à l’écart des technologies agricoles.</p>
     <ul class="sources">
-      {%- for pub in site.data.publications %}
-      <li><a href="{{ pub.url }}" target="_blank" rel="noopener" lang="en">{{ pub.title }}</a><span>{{ pub.author }}</span></li>
+      {%- assign sources = site.data.publications.publications | where: "pourquoi", true | sort: "annee" %}
+      {%- for pub in sources %}
+      {%- if pub.url_fr %}
+      <li><a href="{{ pub.url_fr }}" target="_blank" rel="noopener">{{ pub.titre_fr | default: pub.titre }}</a><span>{{ pub.auteur }}, {{ pub.annee }}</span></li>
+      {%- else %}
+      <li><a href="{{ pub.url }}" target="_blank" rel="noopener"{% if pub.langue != "fr" %} lang="{{ pub.langue }}"{% endif %}>{{ pub.titre }}</a><span>{{ pub.auteur }}, {{ pub.annee }}</span></li>
+      {%- endif %}
       {%- endfor %}
       <li><a href="https://www.youtube.com/watch?v=iZC-kWKPY_M" target="_blank" rel="noopener" lang="en">SOFA 2022 : Leveraging automation in agriculture for transforming agrifood systems</a><span>Food and Agriculture Organization, vidéo</span></li>
     </ul>
+    <p class="pourquoi-intro"><a href="{{ "/fr/documentation/" | relative_url }}">Toute la documentation sur l’IA et le numérique agricoles</a></p>
   </section>
 
   <section class="pourquoi-appel" aria-labelledby="appel-titre">

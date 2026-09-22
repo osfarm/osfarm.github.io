@@ -2989,6 +2989,35 @@ $type-besoin:     #b06000;
   .besoins { padding: 18px; }
 }
 
+// Rubrique Documentation (_includes/documentation.html) : des lectures, pas
+// des communs. Mêmes cartes que l'annuaire, sans vignette : il n'y a rien à
+// représenter, le titre et l'organisme suffisent. L'avertissement reprend la
+// teinte ambre des besoins — même message : « attention à ce que c'est ».
+.doc-groupe {
+  margin-top: 40px;
+
+  &[hidden] { display: none; }
+}
+
+.doc-meta { margin: 0 0 8px; }
+
+.doc-avertissement {
+  padding: 4px 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: $type-besoin;
+  background: #fbf0e2;
+  border-radius: 6px;
+}
+
+.doc-signaler {
+  font-size: 13px;
+  color: $radar-attenue;
+  text-decoration: underline;
+
+  &:hover { color: $osfarm-green-dark; }
+}
+
 // Tableau de bord de l'annuaire : une rangée de tuiles, pas un graphique.
 // La valeur est en encre, jamais en couleur de série — un petit point coloré
 // à côté porte l'identité et renvoie à l'étiquette de la fiche. Chiffres en
