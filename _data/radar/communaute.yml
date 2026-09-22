@@ -168,6 +168,38 @@ candidats:
   propose_le: '2024-06-01'
   source: communaute-osfarm
   publier: true
+- id: projet-boussole-de-l-agroecologie-opencompass-o
+  titre: Boussole de l'agroécologie (opencompass.org)
+  url: https://github.com/FarmForGood/boussole
+  demo: https://www.opencompass.org/fr/
+  github_org: FarmForGood
+  famille: logiciel
+  categorie: Bases de connaissances
+  category: Knowledgebases and Learning Resources
+  techno: JavaScript
+  description: Une seule plateforme pour calculer les impacts des pratiques agricoles sur l’environnement et la santé humaine et piloter la transition de vos filières
+  resume: Une seule plateforme pour calculer les impacts des pratiques agricoles sur l’environnement et la santé humaine et piloter la transition de vos filières
+  date_maj: '2024-08-27'
+- id: projet-birdnet-go
+  titre: Birdnet-Go
+  url: https://github.com/tphakala/birdnet-go
+  github_org: tphakala
+  famille: logiciel
+  categorie: Capteurs et supervision
+  category: IoT, Sensors for tracking, isobus and supervising
+  techno: Go
+  description: Self-hosted realtime soundscape analyser for birds, bats and other wildlife. Multi-model local AI inference, runs 24/7 on a Raspberry Pi.
+  resume: Birdnet-Go encapsule le moteur birdnet et le fait tourner en continue sur des caméras de surveillance connectées pour faire de l'identification et de la quantification continue des oiseaux
+  mots_cles_fr:
+  - artificial-intelligence
+  - audio
+  - bats
+  - bioacoustics
+  - birdnet
+  date_maj: '2026-09-20'
+  propose_le: '2026-09-21'
+  source: proposition-site
+  publier: true
 - id: projet-ecoterrabot
   titre: Ecoterrabot
   url: https://ecoterrabot.com/
@@ -243,6 +275,19 @@ candidats:
   propose_le: '2024-06-01'
   source: communaute-osfarm
   publier: true
+- id: projet-farmerchat
+  titre: FarmerChat
+  url: https://huggingface.co/datasets/DigiGreen/farmerchat-queries-large
+  demo: https://www.farmer.chat/
+  famille: modele
+  categorie: IA et apprentissage automatique
+  category: Machine Learning and AI
+  licence: cc-by-4.0
+  description: Utilisation de questions réponses mises dans un chat spécifique à l'agronomie de l'Est Africain
+  resume: Utilisation de questions réponses mises dans un chat spécifique à l'agronomie de l'Est Africain
+  propose_le: '2026-09-21'
+  source: proposition-site
+  publier: true
 - id: projet-natuition
   titre: Natuition
   url: https://natuition.com
@@ -292,6 +337,32 @@ candidats:
   date_maj: '2026-08-25'
   propose_le: '2024-06-01'
   source: communaute-osfarm
+  publier: true
+- id: projet-phytocheck
+  titre: Phytocheck
+  url: https://github.com/elkaou/phytocheck-app
+  demo: https://phytocheck.com/
+  github_org: elkaou
+  famille: logiciel
+  categorie: Bases de connaissances
+  category: Knowledgebases and Learning Resources
+  techno: TypeScript
+  description: Nouvelle version du 19022026
+  resume: PhytoCheck, un outil simple et rapide pour repérer les CMR, les toxiques, les PPNU ou un produit équivalent dans son local phyto. L'application vous permet également de faire votre inventaire conformément à la législation et de l'exporter en pdf ou fichier excel...
+  date_maj: '2026-09-15'
+- id: projet-opensourceagriculture
+  titre: OpenSourceAgriculture
+  url: https://github.com/geezacoleman/OpenSourceAgriculture
+  github_org: geezacoleman
+  famille: donnees
+  categorie: Données ouvertes et interopérabilité
+  category: Data Standardization, Open Data, Interoperability and APIs
+  licence: mit license
+  description: Collating all open-source datasets, software tools and deployment platforms related to open-source agriculture.
+  resume: Un repo Github avec plein de sous repos data et logiciels
+  date_maj: '2026-06-05'
+  propose_le: '2026-09-21'
+  source: proposition-site
   publier: true
 - id: projet-super-green-os
   titre: Super green os
