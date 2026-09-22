@@ -338,6 +338,18 @@ candidats:
   propose_le: '2024-06-01'
   source: communaute-osfarm
   publier: true
+- id: projet-phytocheck
+  titre: Phytocheck
+  url: https://github.com/elkaou/phytocheck-app
+  demo: https://phytocheck.com/
+  github_org: elkaou
+  famille: logiciel
+  categorie: Bases de connaissances
+  category: Knowledgebases and Learning Resources
+  techno: TypeScript
+  description: Nouvelle version du 19022026
+  resume: PhytoCheck, un outil simple et rapide pour repérer les CMR, les toxiques, les PPNU ou un produit équivalent dans son local phyto. L'application vous permet également de faire votre inventaire conformément à la législation et de l'exporter en pdf ou fichier excel...
+  date_maj: '2026-09-15'
 - id: projet-opensourceagriculture
   titre: OpenSourceAgriculture
   url: https://github.com/geezacoleman/OpenSourceAgriculture
