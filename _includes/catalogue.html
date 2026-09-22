@@ -92,12 +92,24 @@
       <summary>
         <span class="catalogue-ref">{{ m.ref }}</span>
         <span class="catalogue-module-titre">{{ m.titre[lang] }}</span>
+        {%- comment -%}
+          Qui anime, visible avant même d'ouvrir la fiche. Un module sans
+          opérateur montre un siège vide : c'est un appel, pas un manque.
+        {%- endcomment %}
+        <span class="catalogue-visages" aria-hidden="true">
+          {%- if ouvert -%}
+            {%- for i in op.intervenants limit: 3 -%}{% include catalogue-visage.html nom=i.nom img=i.img %}{%- endfor -%}
+          {%- else -%}
+            <span class="catalogue-visage catalogue-siege">+</span>
+          {%- endif -%}
+        </span>
         <span class="catalogue-module-meta">
           {% if m.duree_jours < 1 %}½{% else %}{{ m.duree_jours | round }}{% endif %}&nbsp;{% if lang == "fr" %}j{% else %}d{% endif %}
           · {% include catalogue-tarif.html montant=m.tarif_public lang=lang %}
         </span>
       </summary>
       <div class="catalogue-module-corps">
+        <div class="catalogue-module-texte">
         <p>{{ m.resume[lang] }}</p>
         <p class="catalogue-module-public">
           <b>{% if lang == "fr" %}Pour qui&nbsp;:{% else %}Who for:{% endif %}</b> {{ m.public[lang] }}
@@ -120,40 +132,56 @@
         </p>
 
         {%- if ouvert %}
-        <p class="catalogue-operateur">
-          {% if lang == "fr" %}Opéré par{% else %}Delivered by{% endif %}
-          {% if op.url != "" and op.url %}<a href="{{ op.url }}"><b>{{ op.nom }}</b></a>{% else %}<b>{{ op.nom }}</b>{% endif %}
-          {%- if op.contact %} — {{ op.contact }}{% endif %}
-          {%- if op.qualiopi %} <span class="catalogue-qualiopi">{% if lang == "fr" %}certifié Qualiopi{% else %}Qualiopi certified{% endif %}</span>{% endif %}
-          {%- if m.partenaires and m.partenaires.size > 0 %}
-          <span class="catalogue-module-appui">
-            {% if lang == "fr" %}Avec{% else %}With{% endif %}
-            {% for pid in m.partenaires %}{% assign partenaire = ops | where: "id", pid | first %}{{ partenaire.nom | default: pid }}{% unless forloop.last %}, {% endunless %}{% endfor %}
-          </span>
-          {%- endif %}
-          {%- if m.secours and m.secours.size > 0 %}
-          <span class="catalogue-module-appui">
-            {% if lang == "fr" %}Autres opérateurs possibles&nbsp;:{% else %}Other possible operators:{% endif %}
-            {% for sid in m.secours %}{% assign secours = ops | where: "id", sid | first %}{{ secours.nom | default: sid }}{% unless forloop.last %}, {% endunless %}{% endfor %}
-          </span>
-          {%- endif %}
-        </p>
-        <button type="button" class="radar-bouton catalogue-bouton js-devis"
+        <button type="button" class="radar-bouton catalogue-bouton catalogue-bouton--plein js-devis"
                 data-ref="{{ m.ref }}" data-titre="{{ m.titre[lang] | escape }}">
           {% if lang == "fr" %}Demander un devis{% else %}Request a quote{% endif %}
         </button>
-        {%- else %}
-        <p class="catalogue-module-ouvert">
-          {%- if lang == "fr" %}
-          Module ouvert : aucun opérateur référencé pour l'instant. Vous êtes adhérent et vous
-          savez l'animer ?
-          {%- else %}
-          Open module: no operator listed yet. Are you a member who could deliver it?
+        {%- endif %}
+        </div>
+
+        {%- if ouvert %}
+        <aside class="catalogue-equipe" aria-label="{% if lang == "fr" %}Qui anime ce module{% else %}Who delivers this module{% endif %}">
+          <ul class="catalogue-intervenants">
+            {%- for i in op.intervenants %}
+            <li>
+              {% include catalogue-visage.html nom=i.nom img=i.img classe="catalogue-visage--grand" %}
+              <span><b>{{ i.nom }}</b>
+                {% if op.url != "" and op.url %}<a href="{{ op.url }}">{{ op.nom }}</a>{% else %}{{ op.nom }}{% endif %}</span>
+            </li>
+            {%- else %}
+            <li><span><b>{% if op.url != "" and op.url %}<a href="{{ op.url }}">{{ op.nom }}</a>{% else %}{{ op.nom }}{% endif %}</b>{{ op.contact }}</span></li>
+            {%- endfor %}
+          </ul>
+          {%- if op.qualiopi %}
+          <p class="catalogue-qualiopi">{% if lang == "fr" %}Certifié Qualiopi{% else %}Qualiopi certified{% endif %}</p>
           {%- endif %}
-        </p>
-        <a class="radar-bouton catalogue-bouton" href="{{ url_proposer }}?module={{ m.ref }}">
-          {% if lang == "fr" %}Me proposer comme opérateur{% else %}Apply as operator{% endif %}
-        </a>
+          {%- if m.partenaires and m.partenaires.size > 0 %}
+          <p class="catalogue-module-appui">
+            {% if lang == "fr" %}Avec{% else %}With{% endif %}
+            {% for pid in m.partenaires %}{% assign partenaire = ops | where: "id", pid | first %}{% assign pi = partenaire.intervenants | first %}{% if pi %}{% include catalogue-visage.html nom=pi.nom img=pi.img classe="catalogue-visage--petit" %} {{ pi.nom }}, {% endif %}{{ partenaire.nom | default: pid }}{% unless forloop.last %} · {% endunless %}{% endfor %}
+          </p>
+          {%- endif %}
+          {%- if m.secours and m.secours.size > 0 %}
+          <p class="catalogue-module-appui">
+            {% if lang == "fr" %}Peut aussi l'animer&nbsp;:{% else %}Can also deliver it:{% endif %}
+            {% for sid in m.secours %}{% assign secours = ops | where: "id", sid | first %}{{ secours.nom | default: sid }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+          </p>
+          {%- endif %}
+        </aside>
+        {%- else %}
+        <aside class="catalogue-equipe catalogue-equipe--vide">
+          <span class="catalogue-visage catalogue-visage--grand catalogue-siege" aria-hidden="true">+</span>
+          <p>
+            {%- if lang == "fr" %}
+            Personne n'anime encore ce module. Vous êtes adhérent et vous savez le faire ?
+            {%- else %}
+            Nobody delivers this module yet. Are you a member who could?
+            {%- endif %}
+          </p>
+          <a class="radar-bouton catalogue-bouton" href="{{ url_proposer }}?module={{ m.ref }}">
+            {% if lang == "fr" %}Me proposer comme opérateur{% else %}Apply as operator{% endif %}
+          </a>
+        </aside>
         {%- endif %}
       </div>
     </details>

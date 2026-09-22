@@ -169,6 +169,113 @@ $osfarm-encre:  #16210f;
   outline-offset: 2px;
 }
 
+// Pied de page (_includes/pied-de-page.html) : la charte du bandeau de
+// navigation, en aplat. Encre pleine, liens blancs, jaune pour les titres de
+// colonne, la page en cours et l'adhésion — le jaune repère, il ne décore pas.
+.pied {
+  margin-top: 64px;
+  color: rgba(255, 255, 255, .78);
+  background: $osfarm-encre;
+  border-top: 4px solid $osfarm-soleil;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+
+    &:hover { color: $osfarm-soleil; }
+
+    &:focus-visible {
+      outline: 2px solid $osfarm-soleil;
+      outline-offset: 2px;
+    }
+  }
+
+  // L'adhésion garde sa pastille jaune, texte encre, comme dans le menu.
+  .site-join,
+  .site-join:hover { color: $osfarm-encre; }
+}
+
+.pied-grille {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 32px;
+  padding-top: 40px;
+  padding-bottom: 32px;
+
+  @media (min-width: 544px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    .pied-marque { grid-column: 1 / -1; }
+  }
+
+  @media (min-width: 1012px) {
+    grid-template-columns: minmax(0, 1.6fr) repeat(3, minmax(0, 1fr));
+
+    .pied-marque { grid-column: auto; }
+  }
+}
+
+.pied-marque {
+  p {
+    max-width: 22rem;
+    margin: 14px 0 18px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+}
+
+.pied-logo {
+  display: inline-block;
+
+  img {
+    display: block;
+    width: auto;
+    height: 56px;
+  }
+}
+
+.pied-colonne {
+  h2 {
+    margin: 0 0 12px;
+    font-size: 15px;
+    font-weight: 700;
+    color: $osfarm-soleil;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { margin-bottom: 8px; }
+
+  a {
+    font-size: 15px;
+
+    // Comme dans le menu : la page en cours est soulignée de jaune.
+    &[aria-current="page"] {
+      font-weight: 700;
+      box-shadow: inset 0 -2px 0 $osfarm-soleil;
+    }
+  }
+}
+
+.pied-icone {
+  flex: none;
+  fill: currentColor;
+}
+
+.pied-mentions {
+  margin: 0;
+  padding: 18px 0 24px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, .6);
+  border-top: 1px solid rgba(255, 255, 255, .14);
+
+  a { text-decoration: underline; }
+}
+
 @media (max-width: 767px) {
   .site-nav-inner {
     flex-direction: column;
@@ -922,7 +1029,7 @@ $radar-rayon:    12px;
     display: flex;
     flex-wrap: wrap;
     gap: 4px 12px;
-    align-items: baseline;
+    align-items: center;
     padding: 12px 4px;
     font-size: 16px;
     list-style: none;
@@ -975,12 +1082,123 @@ $radar-rayon:    12px;
   white-space: nowrap;
 }
 
+// Fiche ouverte : le contenu à gauche, les gens qui l'animent à droite. Sur
+// téléphone, l'encart passe sous le texte.
 .catalogue-module-corps {
-  padding: 0 4px 20px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px 32px;
+  padding: 4px 4px 24px 24px;
   font-size: 15px;
   color: $radar-texte;
 
   p { margin-bottom: 8px; }
+
+  @media (min-width: 768px) {
+    grid-template-columns: minmax(0, 1fr) 17rem;
+  }
+}
+
+.catalogue-module-texte { max-width: 42rem; }
+
+// Les visages. Sur la ligne fermée ils se chevauchent, cerclés de blanc
+// comme des jetons posés côte à côte ; dans la fiche ils prennent leur place.
+.catalogue-visages {
+  display: inline-flex;
+  flex: 0 0 auto;
+
+  .catalogue-visage + .catalogue-visage { margin-left: -8px; }
+}
+
+.catalogue-visage {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  object-fit: cover;
+  background: var(--catalogue-famille, #{$osfarm-green});
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px $radar-bordure;
+}
+
+.catalogue-visage--grand {
+  width: 64px;
+  height: 64px;
+  font-size: 20px;
+  border-width: 3px;
+}
+
+.catalogue-visage--petit {
+  width: 22px;
+  height: 22px;
+  margin-right: 2px;
+  font-size: 9px;
+  vertical-align: middle;
+  border-width: 1px;
+  box-shadow: none;
+}
+
+// Le siège vide d'un module sans opérateur : un cercle en pointillé de la
+// couleur de la famille, qui attend quelqu'un.
+.catalogue-siege {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--catalogue-famille);
+  background: #fff;
+  border: 2px dashed var(--catalogue-famille);
+  box-shadow: none;
+
+  &.catalogue-visage--grand { font-size: 30px; }
+}
+
+.catalogue-equipe {
+  align-self: start;
+  padding: 18px;
+  font-size: 14px;
+  background: #fff;
+  border: 1px solid $radar-bordure;
+  border-top: 3px solid var(--catalogue-famille);
+  border-radius: 10px;
+
+  p { margin: 12px 0 0; }
+}
+
+.catalogue-equipe--vide {
+  text-align: center;
+  border-style: dashed;
+  border-top-style: solid;
+
+  p { color: $radar-attenue; }
+  .catalogue-bouton { margin: 12px 0 0; }
+}
+
+.catalogue-intervenants {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+
+  b {
+    display: block;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $radar-texte;
+  }
+
+  a { color: var(--catalogue-famille); }
 }
 
 .catalogue-module-public {
@@ -994,12 +1212,6 @@ $radar-rayon:    12px;
   color: $radar-texte;
 }
 
-.catalogue-operateur {
-  font-size: 14px;
-
-  b { color: var(--catalogue-famille); }
-}
-
 .catalogue-module-appui {
   display: block;
   font-size: 13px;
@@ -1007,6 +1219,7 @@ $radar-rayon:    12px;
 }
 
 .catalogue-qualiopi {
+  display: inline-block;
   padding: 1px 8px;
   font-size: 12px;
   font-weight: 600;
@@ -1014,13 +1227,6 @@ $radar-rayon:    12px;
   white-space: nowrap;
   background: $osfarm-cream;
   border-radius: 999px;
-}
-
-// Module sans opérateur : pas de bouton de devis, un appel à opérateur.
-.catalogue-module-ouvert {
-  font-size: 14px;
-  font-style: italic;
-  color: $radar-attenue;
 }
 
 // .radar-bouton pousse le bouton à droite de la carte qui l'accueille ; ici
@@ -1058,7 +1264,11 @@ $radar-rayon:    12px;
 }
 
 // Sur téléphone, le tableau défile plutôt que d'écraser ses colonnes.
+// `position: relative` retient le libellé masqué (.catalogue-invisible) dans
+// le cadre défilant : sans lui, il en sortait et élargissait la page sur
+// téléphone.
 .catalogue-table-cadre {
+  position: relative;
   overflow-x: auto;
 }
 
@@ -1210,7 +1420,11 @@ $radar-rayon:    12px;
 }
 
 @media (max-width: 543px) {
-  .catalogue-module-meta { flex-basis: 100%; }
+  // Le titre prend toute la ligne ; visages, durée et tarif partagent la
+  // suivante, alignés sous le titre.
+  .catalogue-module-titre { flex-basis: calc(100% - 60px); }
+  .catalogue-visages { margin-left: 34px; }
+  .catalogue-module-corps { padding-left: 4px; }
   .catalogue-formulaire { padding: 18px; }
 }
 

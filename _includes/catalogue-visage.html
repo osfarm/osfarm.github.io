@@ -1,0 +1,13 @@
+{%- comment -%}
+  Un visage d'intervenant du catalogue : sa photo ronde, ou ses initiales
+  quand _data/operateurs.yml n'en donne pas. Décoratif : le nom est toujours
+  écrit à côté, ou dans la fiche ouverte.
+
+  Usage : {% include catalogue-visage.html nom=i.nom img=i.img classe="catalogue-visage--grand" %}
+{%- endcomment -%}
+{%- if include.img -%}
+<img class="catalogue-visage {{ include.classe }}" src="{{ include.img | relative_url }}" alt="" loading="lazy" decoding="async" width="72" height="72">
+{%- else -%}
+{%- assign mots = include.nom | split: " " -%}
+<span class="catalogue-visage catalogue-visage--initiales {{ include.classe }}">{{ mots.first | slice: 0 }}{% if mots.size > 1 %}{{ mots.last | slice: 0 }}{% endif %}</span>
+{%- endif -%}

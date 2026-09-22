@@ -1,32 +1,4 @@
-    <footer>
-      <div class="container-xl p-responsive py-4 ">
-        <div class="d-flex flex-justify-between">
-          <ul class="list-style-none float-right text-small">
-            <li class="d-inline-block ml-lg-2"><a href="{{ "/fr/contact/" | relative_url }}">Nous écrire</a></li>
-            <li class="d-inline-block ml-2"><a href="{{ "/fr/contact/#mentions-legales" | relative_url }}">Mentions légales</a></li>
-            {%- if site.google_analytics %}
-            <li class="d-inline-block ml-2"><a href="#consentement" data-consentement-ouvrir>Cookies</a></li>
-            {%- endif %}
-          </ul>
-
-          <a href="{{ "/fr/" | relative_url }}" class="text-center">
-            <span class="sr-only">Accueil</span>
-            {% octicon mark-github height:24 class:"fill-gray-light d-inline" aria-label:github-logo %}
-          </a>
-
-          <ul class="list-style-none float-left text-small">
-            <li class="d-inline-block mr-lg-2"><a href="https://github.com/osfarm">Sur GitHub</a></li>
-            <li class="d-inline-block mr-lg-2"><a href="https://www.linkedin.com/company/osfarm" class="lien-icone">{% include icone-linkedin.html %}Sur LinkedIn</a></li>
-            <li class="d-none d-lg-inline-block mr-lg-2"><a href="/fr/why">Pourquoi</a></li>
-            <li class="d-none d-lg-inline-block mr-lg-2"><a href="/fr/communs/">Communs</a></li>
-            <li class="d-none d-lg-inline-block mr-lg-2"><a href="/fr/actualites/">Actualités</a></li>
-          </ul>
-        </div>
-
-        <p class="border-top text-center f5 mt-4 pt-4">&copy; 2023 - {{ site.time | date: '%Y' }} <span>OSFarm</span>, Inc. and contributors</p>
-      </div>
-
-    </footer>
+    {% include pied-de-page.html lang="fr" %}
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>

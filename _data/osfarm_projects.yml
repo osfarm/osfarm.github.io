@@ -1,17 +1,22 @@
 # Add OSFarm open source project
 # repere_fr, repere_en: optional milestone shown on /fr/collectif/ and /collective/
-- name: Agric
-  logo: "/assets/img/projects/agric-icon.svg"
-  repository: https://github.com/ekylibre/agric
-  description_en: "Open source agricultural fonts and logo in many format"
-  description_fr: "Logos et polices sur le theme agricole"
-  project_leader: "Ekylibre"
-  project_leader_img: "/assets/img/projects/ekylibre.svg"
-  email: "projet-agric@osfarm.org"
-  stack: "SVG, FontAwesome, JS, FontForge"
+- name: IA des champs
+  repere_fr: "Premier ouvrage sur l'IA agricole préfacé par Julien Denormandie."
+  repere_en: "Winner of the INRAE and INRAE Transfert innovation competition."
+  project_url: "https://ia-des-champs.com/"
+  repository:
+  logo: "/assets/img/projects/iadeschamps.png"
+  repository: https://github.com/osfarm/ia-des-champs
+  description_en: "the seeds of a possible future"
+  description_fr: "les graines d'un futur possible"
+  stack: "Lovable, Supabase, NotebookLM"
   teams:
-  - name: David - Ekylibre
-    role: Data
+  - name: Herve
+    role: Co-auteur
+    img: "/assets/img/teams/herve.jpeg"
+    url: "https://fr.linkedin.com/in/herv%C3%A9-pillaud-0186193b"
+  - name: David
+    role: Co-auteur
     img: "/assets/img/teams/david.jpg"
     url: "https://www.linkedin.com/in/david-joulin-9b629790"
   companies:

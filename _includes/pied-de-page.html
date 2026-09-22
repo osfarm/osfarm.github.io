@@ -1,0 +1,71 @@
+{%- comment -%}
+  Pied de page, dans la charte du menu du haut : l'encre du bandeau, le blanc
+  des liens, le jaune du logo pour les repères et pour l'adhésion.
+
+  Usage : {% include pied-de-page.html lang="fr" %} (footer.html, fr-footer.html)
+  Les rubriques reprennent celles du menu ; la page en cours y est soulignée
+  de jaune, comme en haut.
+{%- endcomment -%}
+{%- assign lang = include.lang | default: "en" -%}
+{%- assign asso = site.data.association -%}
+{%- if lang == "fr" -%}
+  {%- assign rubriques = "/fr/why/|Pourquoi,/fr/collectif/|Le collectif,/fr/communs/|Communs,/fr/documentation/|Documentation,/fr/actualites/|Actualités,/fr/catalogue/|Formation" | split: "," -%}
+  {%- assign accueil = "/fr/" -%}
+{%- else -%}
+  {%- assign rubriques = "/why/|Why,/collective/|The collective,/community/|Commons,/documentation/|Publications,/catalogue/|Training" | split: "," -%}
+  {%- assign accueil = "/" -%}
+{%- endif -%}
+    <footer class="pied">
+      <div class="container-xl p-responsive pied-grille">
+        <div class="pied-marque">
+          <a href="{{ accueil | relative_url }}" class="pied-logo">
+            <img src="{{ "/assets/img/logo_white.png" | relative_url }}" alt="{% if lang == "fr" %}OSFarm, accueil{% else %}OSFarm, home{% endif %}" width="105" height="64">
+          </a>
+          <p>{% if lang == "fr" %}Les communs numériques de l'agriculture, faits et entretenus par ceux qui s'en servent.{% else %}The digital commons of agriculture, built and kept by the people who use them.{% endif %}</p>
+          <a class="site-join" href="{{ site.data.catalogue.meta.adhesion_url }}" target="_blank" rel="noopener">{% if lang == "fr" %}Adhérer{% else %}Join{% endif %}</a>
+        </div>
+
+        <nav class="pied-colonne" aria-label="{% if lang == "fr" %}Rubriques du site{% else %}Site sections{% endif %}">
+          <h2>{% if lang == "fr" %}Le site{% else %}The site{% endif %}</h2>
+          <ul>
+            {%- for r in rubriques %}
+            {%- assign r_parts = r | split: "|" %}
+            <li><a href="{{ r_parts[0] | relative_url }}"{% if page.url == r_parts[0] %} aria-current="page"{% endif %}>{{ r_parts[1] }}</a></li>
+            {%- endfor %}
+          </ul>
+        </nav>
+
+        <div class="pied-colonne">
+          <h2>{% if lang == "fr" %}L'association{% else %}The association{% endif %}</h2>
+          <ul>
+            {%- if lang == "fr" %}
+            <li><a href="{{ "/fr/contact/" | relative_url }}">Nous écrire</a></li>
+            <li><a href="{{ "/fr/contact/#mentions-legales" | relative_url }}">Mentions légales</a></li>
+            {%- else %}
+            <li><a href="{{ "/contact/" | relative_url }}">Contact us</a></li>
+            <li><a href="{{ "/contact/#legal-notice" | relative_url }}">Legal notice</a></li>
+            {%- endif %}
+            {%- if site.google_analytics %}
+            <li><a href="#consentement" data-consentement-ouvrir>Cookies</a></li>
+            {%- endif %}
+          </ul>
+        </div>
+
+        <div class="pied-colonne">
+          <h2>{% if lang == "fr" %}Nous suivre{% else %}Follow us{% endif %}</h2>
+          <ul>
+            <li><a href="https://github.com/osfarm" class="lien-icone">{% octicon mark-github height:16 class:"pied-icone" aria-hidden:true %}GitHub</a></li>
+            <li><a href="https://www.linkedin.com/company/osfarm" class="lien-icone">{% include icone-linkedin.html %}LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container-xl p-responsive">
+        <p class="pied-mentions">
+          &copy; 2023–{{ site.time | date: '%Y' }} {{ asso.nom }},
+          {% if lang == "fr" %}association loi 1901, et ses contributeurs. Le site est
+          <a href="https://github.com/osfarm/osfarm.github.io">open source</a>.{% else %}a French non-profit association, and contributors. This site is
+          <a href="https://github.com/osfarm/osfarm.github.io">open source</a>.{% endif %}
+        </p>
+      </div>
+    </footer>

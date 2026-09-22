@@ -1,31 +1,4 @@
-    <footer>
-      <div class="container-xl p-responsive py-4 ">
-        <div class="d-flex flex-justify-between">
-          <ul class="list-style-none float-right text-small">
-            <li class="d-inline-block ml-lg-2"><a href="{{ "/contact/" | relative_url }}">Contact us</a></li>
-            <li class="d-inline-block ml-2"><a href="{{ "/contact/#legal-notice" | relative_url }}">Legal notice</a></li>
-            {%- if site.google_analytics %}
-            <li class="d-inline-block ml-2"><a href="#consentement" data-consentement-ouvrir>Cookies</a></li>
-            {%- endif %}
-          </ul>
-
-          <a href="/" class="text-center">
-            <span class="sr-only">Back to Home</span>
-            {% octicon mark-github height:24 class:"fill-gray-light d-inline" aria-label:github-logo %}
-          </a>
-
-          <ul class="list-style-none float-left text-small">
-            <li class="d-inline-block mr-lg-2"><a href="https://github.com/osfarm">On GitHub</a></li>
-            <li class="d-inline-block mr-lg-2"><a href="https://www.linkedin.com/company/osfarm" class="lien-icone">{% include icone-linkedin.html %}On LinkedIn</a></li>
-            <li class="d-none d-lg-inline-block mr-lg-2"><a href="/why">Why</a></li>
-            <li class="d-none d-lg-inline-block mr-lg-2"><a href="/community/">Commons</a></li>
-          </ul>
-        </div>
-
-        <p class="border-top text-center f5 mt-4 pt-4">&copy; 2023 - {{ site.time | date: '%Y' }} <span>OSFarm</span>, Inc. and contributors</p>
-      </div>
-
-    </footer>
+    {% include pied-de-page.html lang="en" %}
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     {% if page.url == "/community/" %}
       <script src="{{ "/assets/js/community.js" | relative_url}}"></script>

@@ -11,11 +11,20 @@
 # `charte_signee` (date AAAA-MM-JJ) au fur et à mesure des signatures.
 # Les entrées `role: partenaire` sont citées sur les fiches sans être
 # destinataires des demandes.
+#
+# `intervenants` : les personnes qui animent, montrées avec leur photo sur les
+# fiches du catalogue. `img` est une photo carrée de /assets/img/teams/ ; sans
+# elle, la fiche affiche les initiales. Le champ s'ajoute à /catalogue.json,
+# qui publie toute cette liste et que lit n8n : `contact` y reste, ne pas le
+# supprimer.
 # ---------------------------------------------------------------------------
 
 - id: ekylibre
   nom: "Ekylibre"
   contact: "David Joulin"
+  intervenants:
+    - nom: "David Joulin"
+      img: "/assets/img/teams/david.jpg"
   url: ""                 # à compléter
   adherent: true
   charte_signee: null     # date AAAA-MM-JJ une fois signée
@@ -25,6 +34,9 @@
 - id: brad
   nom: "Brad Technology"
   contact: "Olivier Lépine"
+  intervenants:
+    - nom: "Olivier Lépine"
+      img: "/assets/img/teams/olivier.jpeg"
   url: "https://www.brad.ag/fr"
   adherent: true
   charte_signee: null
@@ -34,6 +46,9 @@
 - id: bziiit
   nom: "bziiit"
   contact: "Laurent Tripied"
+  intervenants:
+    - nom: "Laurent Tripied"
+      img: "/assets/img/teams/laurent.jpeg"
   url: "https://piloterra.fr/"
   adherent: true
   charte_signee: null
@@ -43,6 +58,8 @@
 - id: bziiit_pa
   nom: "bziiit"
   contact: "Paul ARNON"
+  intervenants:
+    - nom: "Paul Arnon"
   url: "https://piloterra.fr/"
   adherent: true
   charte_signee: null
@@ -52,6 +69,11 @@
 - id: apuso
   nom: "Apuso Libre"
   contact: "Nicolas de Kermel, Mehdi Jaber"
+  intervenants:
+    - nom: "Nicolas de Kermel"
+      img: "/assets/img/teams/nicolas_dk.jpeg"
+    - nom: "Mehdi Jaber"
+      img: "/assets/img/teams/mehdi.jpeg"
   url: ""
   adherent: true
   charte_signee: null
@@ -61,6 +83,9 @@
 - id: natuition
   nom: "Natuition"
   contact: "Cyril Roudot"
+  intervenants:
+    - nom: "Cyril Roudot"
+      img: "/assets/img/teams/cyril.jpeg"
   url: ""
   adherent: true
   charte_signee: null
@@ -70,6 +95,9 @@
 - id: furgo
   nom: "Furgo"
   contact: "Nicolas Daüy"
+  intervenants:
+    - nom: "Nicolas Daüy"
+      img: "/assets/img/teams/nicolas.jpeg"
   url: ""
   adherent: true
   charte_signee: null
@@ -79,6 +107,9 @@
 - id: prefabrique
   nom: "Le Pré Fabriqué"
   contact: "Simon Richard"
+  intervenants:
+    - nom: "Simon Richard"
+      img: "/assets/img/teams/simon.jpeg"
   url: ""
   adherent: true
   charte_signee: null
@@ -88,6 +119,9 @@
 - id: aspexit
   nom: "Aspexit"
   contact: "Corentin Leroux"
+  intervenants:
+    - nom: "Corentin Leroux"
+      img: "/assets/img/teams/corentin.jpeg"
   url: ""
   adherent: true
   charte_signee: null
@@ -97,6 +131,9 @@
 - id: tripleperformance
   nom: "Triple Performance"
   contact: "Bertrand Gorge"
+  intervenants:
+    - nom: "Bertrand Gorge"
+      img: "/assets/img/teams/bertrand.jpeg"
   url: ""
   adherent: true
   charte_signee: null
@@ -106,6 +143,8 @@
 - id: zandoly
   nom: "Zandoly"
   contact: "Martin de Reynal"
+  intervenants:
+    - nom: "Martin de Reynal"
   url: ""
   adherent: true
   charte_signee: null
@@ -115,6 +154,9 @@
 - id: centipede
   nom: "Réseau Centipède"
   contact: "Julien Ancelin"
+  intervenants:
+    - nom: "Julien Ancelin"
+      img: "/assets/img/teams/julien.jpeg"
   url: ""
   adherent: null          # à confirmer
   charte_signee: null
@@ -124,6 +166,9 @@
 - id: herve
   nom: "Hervé PILLAUD"
   contact: "Hervé PILLAUD"
+  intervenants:
+    - nom: "Hervé Pillaud"
+      img: "/assets/img/teams/herve.jpeg"
   url: "https://londonspeakerbureau.fr/conferenciers/herve-pillaud/"
   adherent: true          # à confirmer
   charte_signee: null
@@ -140,6 +185,9 @@
 - id: usedesign
   nom: "Use Design"
   contact: "Vivien Gauthier"
+  intervenants:
+    - nom: "Vivien Gauthier"
+      img: "/assets/img/teams/vivien_gauthier.jpeg"
   role: partenaire
 - id: troisliz
   nom: "3Liz"
