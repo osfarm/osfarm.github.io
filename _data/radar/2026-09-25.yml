@@ -1,0 +1,935 @@
+# Lot du radar OSFarm. Passer « publier » à false pour écarter une fiche,
+# corriger « resume » au besoin. La fusion de la pull request publie le reste.
+date: '2026-09-25'
+examines: 331
+retenus: 24
+rejets:
+  deja_vu: 163
+  deja_sur_le_site: 4
+  licence: 8
+  score: 0
+pannes: []
+candidats:
+- id: 8b015180c890
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: Lib1221/Smart_Gebere
+  url: https://github.com/Lib1221/Smart_Gebere
+  description: 🌱 Smart Gebere is a Flutter-based AI app that helps farmers diagnose and manage crop diseases.
+    Using machine learning, it analyzes plant images to detect diseases and provides tailored treatment
+    recommendations.
+  licence: mit
+  date_maj: '2026-09-24'
+  techno: Dart
+  popularite: 17
+  mots_cles:
+  - agriculture
+  - agritech
+  - ai
+  - crop-disease-detection
+  - dart
+  - ethiopia
+  - firebase
+  - flutter
+  score: 95
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, agritech, farmer, crop'
+  propose_le: '2026-09-25'
+  publier: true
+  resume: Application mobile utilisant l'intelligence artificielle pour diagnostiquer les maladies des
+    cultures à partir d'images de plantes. Elle propose des recommandations de traitement adaptées aux
+    maladies détectées.
+  interet: Permet d'identifier et de gérer les maladies des cultures pour limiter les pertes de rendement.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - agriculture
+  - diagnostic
+  - maladies
+  - intelligence artificielle
+  - images
+- id: 78c46482800d
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: 0-CYBERDYNE-SYSTEMS-0/FFT_nano
+  url: https://github.com/0-CYBERDYNE-SYSTEMS-0/FFT_nano
+  description: 'FFT_nano: autonomous farm hand that runs on your farm, learns your operation, and texts
+    you updates. No subscriptions. MIT licensed.'
+  licence: mit
+  date_maj: '2026-09-24'
+  techno: TypeScript
+  popularite: 4
+  mots_cles:
+  - agriculture
+  - ai-agents
+  - automation
+  - autonomous-agents
+  - farming
+  - llm
+  - llm-agents
+  - local-first-ai
+  score: 92
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farm, farming'
+  propose_le: '2026-09-25'
+  publier: true
+  resume: Outil autonome pour l'agriculture qui apprend le fonctionnement d'une exploitation et envoie
+    des mises à jour par SMS. Fonctionne sans abonnement.
+  interet: Automatise le suivi des opérations agricoles et facilite la gestion des tâches.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - agriculture
+  - automatisation
+  - suivi
+  - opérations
+  - sms
+- id: 06aa4105ce69
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: CreativeArun/AgriFlow
+  url: https://github.com/CreativeArun/AgriFlow
+  description: AgriFlow — An AI-powered agricultural intelligence platform that connects farmers and buyers
+    through AI-driven crop quality assessment, market price forecasting, demand prediction, intelligent
+    buyer matching, multilingual assistance, and logistics management.
+  licence: mit
+  date_maj: '2026-09-21'
+  techno: JavaScript
+  popularite: 3
+  mots_cles:
+  - agriculture
+  - agritech
+  - artificial-intelligence-algorithms
+  - computer-vision-opencv
+  - fastapi
+  - forecasting-time-series
+  - java
+  - machine-learning-algorithms
+  score: 92
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, agritech, farmer, crop'
+  propose_le: '2026-09-25'
+  publier: true
+  resume: Plateforme d'intelligence artificielle pour l'agriculture qui relie producteurs et acheteurs
+    via une évaluation automatisée de la qualité des cultures. Elle inclut des prévisions de prix, de
+    demande et une gestion logistique.
+  interet: Optimise les échanges entre producteurs et acheteurs en fournissant des informations sur la
+    qualité et les marchés.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - agriculture
+  - marché
+  - qualité
+  - prévision
+  - logistique
+- id: b3d8aa118723
+  famille: modele
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: MatteoBertagni/SMEW
+  url: https://github.com/MatteoBertagni/SMEW
+  description: 'Soil Model for Enhanced Weathering (SMEW): a dynamic, depth-averaged ecohydrological and
+    biogeochemical model for enhanced weathering dynamics in the upper soil layers.'
+  licence: agpl-3.0
+  date_maj: '2026-09-24'
+  techno: Jupyter Notebook
+  popularite: 8
+  mots_cles:
+  - agriculture
+  - basalt
+  - biogeochemical-models
+  - carbon
+  - carbon-removal
+  - climate-change-and-agriculture
+  - climate-change-mitigation
+  - co2-sequestration
+  score: 88
+  raisons:
+  - licence agpl-3.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, soil, carbon'
+  propose_le: '2026-09-25'
+  publier: true
+  resume: Modèle numérique simulant les dynamiques biogéochimiques et hydrologiques des sols pour l'étude
+    du stockage du carbone. Il se concentre sur les couches superficielles du sol.
+  interet: Évalue l'impact des pratiques agricoles sur le stockage du carbone dans les sols.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  famille_initiale: logiciel
+  mots_cles_fr:
+  - agriculture
+  - carbone
+  - sols
+  - modélisation
+  - biogéochimie
+- id: 1bc75d138758
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: brownag/py-soildb
+  url: https://github.com/brownag/py-soildb
+  description: Python client for USDA-NRCS Soil Data
+  licence: mit
+  date_maj: '2026-09-23'
+  techno: Python
+  popularite: 7
+  mots_cles:
+  - agriculture
+  - gis
+  - ncss
+  - nrcs
+  - python
+  - sda
+  - soil
+  - soil-data-access
+  score: 86
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, soil, gis'
+  propose_le: '2026-09-25'
+  publier: true
+  resume: Bibliothèque Python permettant d'accéder aux données pédologiques de l'USDA-NRCS. Elle facilite
+    l'intégration de ces données dans des applications ou analyses.
+  interet: Fournit des données sur les sols pour des analyses agricoles ou environnementales.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - agriculture
+  - sols
+  - données
+  - gis
+  - python
+- id: 396b20da67fd
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: Fields2Cover/Fields2Cover
+  url: https://github.com/Fields2Cover/Fields2Cover
+  description: Robust and efficient coverage paths for autonomous agricultural vehicles. A modular and
+    extensible Coverage Path Planning library
+  licence: bsd-3-clause
+  date_maj: '2026-09-22'
+  techno: C++
+  popularite: 900
+  mots_cles:
+  - agriculture
+  - autonomous-vehicles
+  - coverage-path-planning
+  - cpp17
+  - path-planning
+  score: 86
+  raisons:
+  - licence bsd-3-clause
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-09-25'
+  publier: true
+  resume: Bibliothèque logicielle pour planifier les trajectoires de couverture des véhicules agricoles
+    autonomes. Elle optimise les déplacements pour couvrir efficacement les champs.
+  interet: Améliore l'efficacité des opérations de couverture des champs par des véhicules autonomes.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - agriculture
+  - automatisation
+  - planification
+  - trajectoires
+  - champs
+- id: c1780243d021
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: ProductOfAmerica/deere-sdk
+  url: https://github.com/ProductOfAmerica/deere-sdk
+  description: Unofficial TypeScript SDK for John Deere Operations Center API
+  licence: mit
+  date_maj: '2026-09-22'
+  techno: TypeScript
+  popularite: 11
+  mots_cles:
+  - agriculture
+  - api
+  - deere
+  - farming
+  - john-deere
+  - operations-center
+  - precision-agriculture
+  - sdk
+  score: 86
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farming'
+  propose_le: '2026-09-25'
+  publier: true
+  resume: Bibliothèque TypeScript non officielle pour interagir avec l'API du John Deere Operations Center.
+    Elle permet d'accéder aux données et fonctionnalités de gestion des opérations agricoles de John Deere.
+  interet: Permet d'intégrer des outils logiciels aux systèmes de gestion des exploitations agricoles
+    utilisant du matériel John Deere.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - john deere
+  - operations center
+  - typescript
+  - api
+  - agriculture
+- id: 6b45fa3a8093
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: 40rbidd3n/Hydro0x01
+  url: https://github.com/40rbidd3n/Hydro0x01
+  description: Secure, production-grade IoT hydroponic automation system with ESP32, MQTT telemetry, and
+    real-time dashboard
+  licence: mit
+  date_maj: '2026-08-18'
+  techno: TypeScript
+  popularite: 542
+  mots_cles:
+  - agritech
+  - arduino
+  - automation
+  - embedded-systems
+  - esp32
+  - hydroponic
+  - hydroponic-systems
+  - influxdb
+  score: 86
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agritech'
+  propose_le: '2026-09-25'
+  publier: true
+  resume: Système automatisé d'irrigation hydroponique sécurisé basé sur ESP32 avec télémétrie MQTT et
+    tableau de bord en temps réel. Il contrôle les paramètres de culture en milieu hydroponique.
+  interet: Facilite le contrôle automatisé des conditions de culture en hydroponie pour une production
+    optimisée.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - hydroponie
+  - automatisation
+  - esp32
+  - télémétrie
+  - iot
+- id: d4eda65c49be
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-elevage
+  titre: deaneeth/smart-beehive-monitor
+  url: https://github.com/deaneeth/smart-beehive-monitor
+  description: ESP32-based IoT system for real-time beehive monitoring with temperature, humidity, bee
+    activity tracking, weight measurement, and Firebase integration. Complete with solar power and web
+    dashboard.
+  licence: mit
+  date_maj: '2026-08-11'
+  techno: C++
+  popularite: 20
+  mots_cles:
+  - arduino
+  - beehive
+  - beekeeping
+  - environmental-monitoring
+  - esp32
+  - firebase
+  - iot
+  - iot-device
+  score: 76
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : beehive'
+  propose_le: '2026-09-25'
+  publier: true
+  resume: Système IoT basé sur ESP32 pour surveiller en temps réel les ruches avec mesure de température,
+    humidité, activité des abeilles, poids et intégration Firebase. Fonctionne avec une alimentation solaire
+    et un tableau de bord web.
+  interet: Permet un suivi continu des paramètres environnementaux et de l'activité des ruches pour la
+    gestion apicole.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - ruche
+  - apiculture
+  - esp32
+  - surveillance
+  - firebase
+- id: fc45fa57a8d7
+  famille: modele
+  relecteur: ionosphere
+  source: github-elevage
+  titre: Alexandre-Delplanque/HerdNet
+  url: https://github.com/Alexandre-Delplanque/HerdNet
+  description: 'Code for paper "From Crowd to Herd Counting: How to Precisely Detect and Count African
+    Mammals using Aerial Imagery and Deep Learning?"'
+  licence: mit
+  date_maj: '2026-05-28'
+  techno: Python
+  popularite: 58
+  mots_cles:
+  - aerial-survey
+  - africa
+  - deep-learning
+  - livestock
+  - mammals
+  - object-counting
+  - object-detection
+  - wildlife
+  score: 75
+  raisons:
+  - licence mit
+  - actif (moins d'un an)
+  - 'vocabulaire : livestock'
+  propose_le: '2026-09-25'
+  publier: true
+  resume: Code associé à une publication scientifique pour compter des mammifères africains à partir d'images
+    aériennes à l'aide de l'apprentissage profond. L'objectif est de détecter et compter précisément des
+    animaux.
+  interet: ''
+  pertinence: oui
+  redige_par: mistral-small-latest
+  famille_initiale: logiciel
+  mots_cles_fr:
+  - mammifères
+  - comptage
+  - images aériennes
+  - apprentissage profond
+  - élevage
+- id: cfc9a62d81fd
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: hiyanjongrai/CropNet
+  url: https://huggingface.co/datasets/hiyanjongrai/CropNet
+  description: An Open and Large-Scale Dataset for Multi-Modal Climate Change-aware Crop Yield Predictions
+    The CropNet dataset is an open, large-scale, and deep learning-ready dataset, specifically targeting
+    climate change-aware crop yield predictions for the contiguous United States (U.S.) contine
+  licence: cc-by-4.0
+  date_maj: '2026-09-22'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - climate
+  score: 88
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, crop, yield'
+  propose_le: '2026-09-25'
+  publier: true
+  resume: Jeu de données ouvert et à grande échelle pour prédire les rendements agricoles en fonction
+    des changements climatiques aux États-Unis. Le jeu de données est conçu pour des modèles d'apprentissage
+    profond.
+  interet: Permet d'entraîner des modèles de prédiction des rendements agricoles en intégrant des données
+    climatiques.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - rendement agricole
+  - changement climatique
+  - dataset
+  - prédiction
+  - apprentissage profond
+- id: 106190affbfc
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: THE ROLE OF FEED AND FODDER SUPPLY IN THE DEVELOPMENT OF LIVESTOCK SECTORS
+  url: https://doi.org/10.5281/zenodo.22952076
+  description: This article analyzes the economic significance of feed and fodder supply in the development
+    of livestock sectors. The study examines the impact of feed provision on livestock productivity, production
+    costs, and profitability. In addition, key challenges in feed production are identified, and scientific
+    and practical recommendations are formulated to address these bottlenecks and strengthen the fo
+  licence: cc-by-4.0
+  date_maj: '2026-09-25'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - livestock farming, feed and fodder, feed base, agroeconomics, productivity, profitability.
+  score: 85
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : farming, livestock'
+  propose_le: '2026-09-25'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - élevage
+  - alimentation animale
+  - économie
+- id: b78b7fffd539
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: 'AI-DRIVEN FARMING: MACHINE VISION, PREDICTIVE AGRICULTURE, AUTONOMOUS FARMING, AND SMART HARVESTING'
+  url: https://doi.org/10.5281/zenodo.22950741
+  description: 'The rapid integration of artificial intelligence into agriculture is transforming farming
+    from a largely reactive production system into a data-driven, predictive, and increasingly autonomous
+    environment. This article examines four interconnected technological directions that define AI-driven
+    farming: machine vision, predictive agriculture, autonomous farming, and smart harvesting. The study
+    synth'
+  licence: cc-by-4.0
+  date_maj: '2026-09-25'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - artificial intelligence, smart farming, machine vision, predictive agriculture, autonomous farming,
+    agricultural robotics, smart harvesting, precision agriculture.
+  score: 85
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farming'
+  propose_le: '2026-09-25'
+  publier: true
+  resume: 'Cet article analyse l''intégration de l''intelligence artificielle dans l''agriculture à travers
+    quatre axes technologiques : vision par machine, agriculture prédictive, exploitation autonome et
+    récolte intelligente. Il synthétise des travaux sur l''automatisation et l''optimisation des pratiques
+    agricoles.'
+  interet: Permet d'évaluer des méthodes d'automatisation et d'optimisation des pratiques agricoles.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - intelligence artificielle
+  - agriculture prédictive
+  - vision par machine
+  - automatisation
+  - récolte intelligente
+- id: 63f4671c3a75
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: 'Gridded FADN Standard Results for the EU (2008–2020): a multi-resolution, disclosure-controlled
+    dataset'
+  url: https://doi.org/10.5281/zenodo.22940411
+  description: 'A gridded, disclosure-controlled release of Farm Accountancy Data Network (FADN) Standard
+    Results (SE) variables for the European Union, 2008-2020 (every second year). FADN is the EU''s harmonised
+    farm-level bookkeeping survey and the main source of micro-economic data on European agriculture.
+    Because FADN records are commercially and personally sensitive, they are normally released only at
+    coarse '
+  licence: cc-by-4.0
+  date_maj: '2026-09-24'
+  techno: ''
+  popularite: 0
+  mots_cles: []
+  score: 85
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farm'
+  propose_le: '2026-09-25'
+  publier: true
+  resume: Ce jeu de données propose des résultats standardisés du réseau FADN de l'UE, agrégés sur une
+    grille et contrôlés pour éviter toute divulgation, pour la période 2008-2020. Il s'agit de données
+    comptables harmonisées au niveau des exploitations agricoles européennes.
+  interet: Fournit des données économiques de référence pour analyser la performance des exploitations
+    agricoles.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - fadn
+  - données comptables
+  - exploitations agricoles
+  - ue
+  - performance économique
+- id: 2e8e2b7f10db
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: 'Reproducibility package for: Oasis-Effect Advection Controls the Agreement between Measured
+    and Modeled Evapotranspiration Across Irrigated Farms in Arizona'
+  url: https://doi.org/10.5281/zenodo.22865000
+  description: This package contains the processed data and Python scripts that reproduce the tables and
+    figures of Vivoni et al., "Oasis-Effect Advection Controls the Agreement between Measured and Modeled
+    Evapotranspiration Across Irrigated Farms in Arizona." Running the included scripts regenerates main-text
+    Figures 1&ndash;8 and Tables 1&ndash;5 and supporting-information Figures S1&ndash;S11 and Tables
+    S1&n
+  licence: cc-by-4.0
+  date_maj: '2026-09-24'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - evapotranspiration
+  - OpenET
+  - oasis effect
+  - lateral advection
+  - eddy covariance
+  - surface energy balance
+  - irrigated agriculture
+  - remote sensing
+  score: 85
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farm'
+  propose_le: '2026-09-25'
+  publier: true
+  resume: Ce paquet contient les données et scripts Python pour reproduire les résultats d'une étude sur
+    le contrôle de l'évapotranspiration par advection dans des exploitations irriguées en Arizona. Les
+    scripts régénèrent les figures et tableaux de l'article associé.
+  interet: Permet de vérifier et réutiliser des données sur l'évapotranspiration dans des contextes d'irrigation.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - évapotranspiration
+  - irrigation
+  - advection
+  - données mesurées
+  - modélisation
+- id: 1c1c147ecae1
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: Butterfly monitoring data in agricultural areas from Agroecology-Transect project, 2024-2025
+  url: https://doi.org/10.5281/zenodo.22916934
+  description: This deposit contains data from the citizen-science based butterfly monitoring efforts
+    in agricultural areas, carried out as part of Agroecology-Transect during the years 2024-2025 . The
+    work was led by members of UFZ/iDiv and conducted by project members and volunteers in Hungary, Bulgaria,
+    Slovenia and France.
+  licence: cc-by-4.0
+  date_maj: '2026-09-23'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - Butterflies, agriculture, agroecology, monitoring, citizen science
+  score: 85
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, agroecology'
+  propose_le: '2026-09-25'
+  publier: true
+  resume: Ce dépôt contient des données de monitoring citoyen de papillons dans des zones agricoles, collectées
+    entre 2024 et 2025 dans plusieurs pays européens. Les données proviennent d'un projet d'agroécologie.
+  interet: Fournit des données sur la biodiversité dans les zones agricoles pour évaluer l'impact des
+    pratiques.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - biodiversité
+  - papillons
+  - agroécologie
+  - monitoring
+  - zones agricoles
+- id: fe9e2d7f0d2e
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: Raw experimental data from a greenhouse study evaluating green manuring with Crotalaria juncea
+    and mineral nitrogen fertilization in lettuce
+  url: https://doi.org/10.5281/zenodo.22943998
+  description: This dataset contains raw experimental data from a greenhouse experiment evaluating the
+    effects of green manuring with Crotalaria juncea L. combined with mineral nitrogen fertilization on
+    lettuce ( Lactuca sativa L.). The experiment was conducted from May to December 2025 at the Luiz de
+    Queiroz College of Agriculture (ESALQ/USP), University of S&atilde;o Paulo, Piracicaba, S&atilde;o
+    Paulo, Brazil
+  licence: cc-by-4.0
+  date_maj: '2026-09-24'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - Lactuca sativa
+  - green manure
+  - green manuring
+  - nitrogen fertilization
+  - nitrogen use efficiency
+  - lettuce
+  - legume
+  - NUE
+  score: 82
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, greenhouse'
+  propose_le: '2026-09-25'
+  publier: true
+  resume: Ce jeu de données contient les résultats bruts d'une étude en serre évaluant l'effet du crotalaire
+    juncea et de la fertilisation azotée minérale sur la laitue. L'expérience a été menée au Brésil en
+    2025.
+  interet: Permet d'analyser l'impact de pratiques culturales sur la croissance et la qualité de la laitue.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - laitue
+  - crotalaire juncea
+  - fertilisation azotée
+  - serre
+  - efficience azotée
+- id: cc9e00b9dd1d
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: Draft genome sequences of eight fungal strains from arid-agriculture field soil in Arizona
+  url: https://doi.org/10.5281/zenodo.21896390
+  description: We report draft genome sequences for eight fungal isolates which include Aspergillus sp.,
+    Aureobasidium sp., Cladosporium sp., Coniochaeta sp., Fusarium spp. (two strains), Hysteriaceae sp.,
+    and Penicillium sp., collected from field soil at the Maricopa Agricultural Center in the Sonoran
+    Desert ( Arizona, USA) and sequenced by NovaSeq 6000 at &ge;30&times; coverage. &nbsp;
+  licence: cc-by-4.0
+  date_maj: '2026-09-23'
+  techno: ''
+  popularite: 0
+  mots_cles: []
+  score: 82
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, soil'
+  propose_le: '2026-09-25'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+- id: 9f1110fd8228
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: Dépassements de seuils règlementaires en pesticides dans les cours d'eau (diagnostics territoriaux
+    stratégie Ecophyto 2030)
+  url: https://www.data.gouv.fr/datasets/depassements-de-seuils-reglementaires-en-pesticides-dans-les-cours-deau-diagnostics-territoriaux-strategie-ecophyto-2030-1
+  description: '------------ Contexte ------------ La stratégie Ecophyto 2030 publiée le 6 mai 2024 prévoit
+    dans son axe 5 la réalisation d’un diagnostic territorial approfondi permettant d’identifier des territoires
+    prioritaires pour l’action au vu des quantités utilisées, des potentiels de réduction, de la mobilisation
+    des acteurs et des enjeux sanitaires et environnementaux. A l’issue du diagnostic territorial'
+  licence: etalab-2.0
+  date_maj: '2025-11-03'
+  techno: ''
+  popularite: 1
+  mots_cles:
+  - agriculture
+  - agriculture-peche-sylviculture-et-alimentation
+  - corse
+  - cours-deau
+  - directive-cadre-sur-leau
+  - eau
+  - environnement
+  - france-metropolitaine
+  score: 81
+  raisons:
+  - licence etalab-2.0
+  - actif (moins d'un an)
+  - 'vocabulaire : agriculture, pesticide, sylviculture'
+  propose_le: '2026-09-25'
+  publier: true
+  resume: Ce projet recense les dépassements de seuils réglementaires en pesticides dans les cours d'eau
+    dans le cadre de la stratégie Ecophyto 2030. Il identifie des territoires prioritaires pour des actions
+    de réduction des pesticides.
+  interet: Évaluer les risques environnementaux liés aux pesticides dans les milieux aquatiques.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - pesticides
+  - cours d'eau
+  - seuils réglementaires
+  - diagnostic territorial
+  - écophyto
+- id: fc1d8039e3c7
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: myy555/CropMath
+  url: https://huggingface.co/datasets/myy555/CropMath
+  description: CropMath English | 简体中文 CropMath contains agricultural mechanistic formula questions with
+    numeric reference answers and controlled knowledge conditions. The cropmath-v1 snapshot is publicly
+    available at myy555/CropMath; the accompanying prompt builders, scorer and validators are in th
+  licence: cc-by-4.0
+  date_maj: '2026-09-14'
+  techno: ''
+  popularite: 1
+  mots_cles:
+  - agriculture
+  - numerical-reasoning
+  score: 76
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-09-25'
+  publier: true
+  resume: CropMath propose des questions de raisonnement mécanique en agriculture avec des réponses numériques
+    de référence et des conditions de connaissances contrôlées. Il inclut des outils de construction de
+    prompts, de notation et de validation.
+  interet: Automatiser l'évaluation de raisonnements mécanistiques en agriculture.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - raisonnement mécanique
+  - agriculture
+  - questions numériques
+  - évaluation automatisée
+  - formules
+- id: 2f1510da559b
+  famille: modele
+  relecteur: ionosphere
+  source: hf-modeles-agri
+  titre: surabhi08/dataset-genome-agriculture-benchmark-model
+  url: https://huggingface.co/surabhi08/dataset-genome-agriculture-benchmark-model
+  description: peft safetensors gpt_oss lora agriculture scientific-reasoning autoscientist dataset-genome
+    en
+  licence: mit
+  date_maj: '2026-08-06'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - peft
+  - safetensors
+  - gpt_oss
+  - lora
+  - agriculture
+  - scientific-reasoning
+  - autoscientist
+  - dataset-genome
+  score: 76
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-09-25'
+  publier: true
+  resume: Ce projet fournit un jeu de données benchmark pour des modèles de raisonnement scientifique
+    en agriculture. Il inclut des modèles de type LoRA et des outils d'autoscientist.
+  interet: Entraîner ou évaluer des modèles de raisonnement scientifique appliqués à l'agriculture.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - benchmark
+  - raisonnement scientifique
+  - agriculture
+  - modèle loRA
+  - autoscientist
+- id: 50667c588872
+  famille: modele
+  relecteur: ionosphere
+  source: hf-modeles-agri
+  titre: tojpaj/agriculture-routing-model
+  url: https://huggingface.co/tojpaj/agriculture-routing-model
+  description: safetensors bert autoscientist adaption agriculture intent-classification multilingual
+    hindi punjabi hi pa
+  licence: apache-2.0
+  date_maj: '2026-08-02'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - safetensors
+  - bert
+  - autoscientist
+  - adaption
+  - agriculture
+  - intent-classification
+  - multilingual
+  - hindi
+  score: 76
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-09-25'
+  publier: true
+  resume: Ce modèle classifie les intentions en agriculture dans plusieurs langues (hindi, punjabi) en
+    utilisant des techniques d'adaptation de modèles BERT. Il est conçu pour des applications multilingues.
+  interet: Classer automatiquement des intentions ou requêtes en agriculture pour des systèmes multilingues.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - classification d'intentions
+  - agriculture
+  - multilingue
+  - bert
+  - adaptation
+- id: bfb76fbe677c
+  famille: modele
+  relecteur: ionosphere
+  source: hf-modeles-agri
+  titre: adaniele/Agriculture-DelAny-v2-Sentinel
+  url: https://huggingface.co/adaniele/Agriculture-DelAny-v2-Sentinel
+  description: ultralytics instance-segmentation field-boundary-delineation sentinel-2 remote-sensing
+    geospatial
+  licence: agpl-3.0
+  date_maj: '2026-07-28'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - ultralytics
+  - instance-segmentation
+  - field-boundary-delineation
+  - sentinel-2
+  - remote-sensing
+  - geospatial
+  score: 76
+  raisons:
+  - licence agpl-3.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : geospatial, remote-sensing, sentinel'
+  propose_le: '2026-09-25'
+  publier: true
+  resume: Ce modèle réalise une segmentation d'instances pour délimiter les parcelles agricoles à partir
+    d'images Sentinel-2. Il utilise des techniques de télédétection et de géospatial.
+  interet: Automatiser la cartographie des parcelles agricoles à partir d'images satellites.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - segmentation d'instances
+  - délimitation de parcelles
+  - sentinel-2
+  - télédétection
+  - géospatial
+- id: e412ded7b3d6
+  famille: modele
+  relecteur: ionosphere
+  source: hf-modeles-agri
+  titre: PatrickChikuse/qwen25-1.5b-malawi-agriculture
+  url: https://huggingface.co/PatrickChikuse/qwen25-1.5b-malawi-agriculture
+  description: transformers safetensors qwen2 text-generation agriculture malawi qwen lora conversational
+    en text-generation-inference endpoints_compatible
+  licence: apache-2.0
+  date_maj: '2026-07-02'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - transformers
+  - safetensors
+  - qwen2
+  - text-generation
+  - agriculture
+  - malawi
+  - qwen
+  - lora
+  score: 76
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-09-25'
+  publier: true
+  resume: Ce modèle de génération de texte est adapté à des applications agricoles au Malawi en utilisant
+    des techniques de fine-tuning (LoRA) sur Qwen2. Il est compatible avec des endpoints de génération
+    de texte.
+  interet: Générer du texte ou des réponses adaptées à des contextes agricoles spécifiques.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - génération de texte
+  - agriculture
+  - malawi
+  - qwen2
+  - fine-tuning
+resume_genere_le: 2026-09-25 10:02
