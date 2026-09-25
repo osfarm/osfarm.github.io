@@ -364,6 +364,17 @@ candidats:
   propose_le: '2026-09-21'
   source: proposition-site
   publier: true
+- id: projet-ppdb-pesticide-properties-database
+  titre: 'PPDB: Pesticide Properties DataBase'
+  url: https://sitem.herts.ac.uk/aeru/ppdb/en/
+  famille: donnees
+  categorie: Données ouvertes et interopérabilité
+  category: Data Standardization, Open Data, Interoperability and APIs
+  description: Base de données de pesticides avec de nombreuses infos associées
+  resume: Base de données de pesticides avec de nombreuses infos associées
+  propose_le: '2026-09-25'
+  source: proposition-site
+  publier: true
 - id: projet-super-green-os
   titre: Super green os
   url: https://www.supergreenlab.com/app
