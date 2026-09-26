@@ -600,7 +600,8 @@ candidats:
   curation: awesome-cropsteering
   titre: WEGA-HPG
   url: https://github.com/WEGA-project/wega-hpg
-  description: HPG Calculator
+  description: 'HPG Calculator — Hydroponic Profile Generator : calcul, correction et suivi des profils
+    de nutrition en hydroponie'
   licence: gpl-3.0
   date_maj: '2026-02-14'
   techno: HTML
@@ -613,14 +614,18 @@ candidats:
   - actif (moins d'un an)
   - retenu par la liste awesome-cropsteering
   propose_le: '2026-09-26'
-  publier: false
-  resume: ''
-  interet: ''
-  pertinence: inconnu
-  redige_par: mistral-small-latest
+  publier: true
+  resume: Calculateur de solutions nutritives pour l'hydroponie, qui établit, corrige et conserve des
+    profils de nutrition à partir des engrais disponibles. Il s'adresse aux cultivateurs hors-sol qui
+    préparent eux-mêmes leurs solutions.
+  interet: Permet de calculer la composition des solutions nutritives d'une culture hydroponique.
+  pertinence: oui
+  redige_par: relecture
   mots_cles_fr:
+  - hydroponie
+  - solution nutritive
+  - fertilisation
   - calculateur
-  - outil-numerique
 - id: 87d4dc7aa233
   famille: logiciel
   relecteur: ionosphere bertrandgorge
