@@ -28,6 +28,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Plateforme d'intelligence artificielle pour l'agriculture qui relie producteurs et acheteurs via une évaluation automatisée de la qualité des cultures. Elle inclut des prévisions de prix, de demande et une gestion logistique."
  },
+ "07d2fda70d33": {
+  "famille": "materiel",
+  "id": "07d2fda70d33",
+  "interet": "Permet d'analyser la qualité de l'eau en agriculture.",
+  "mots_cles": [
+   "qualité de l'eau",
+   "échantillonnage",
+   "iot",
+   "agriculture",
+   "mesures en temps réel"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Échantillonneur d'eau automatisé à faible coût, connecté par IoT, conçu pour la recherche sur la qualité de l'eau en temps quasi réel. Il permet de mesurer des paramètres de l'eau sur le terrain."
+ },
  "0d5d953436ac": {
   "famille": "donnees",
   "id": "0d5d953436ac",
@@ -191,6 +206,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Plateforme de monitoring IoT basée sur ESP32 utilisant MQTT pour collecter des télémétries en temps réel via des capteurs dynamiques. Elle permet de surveiller des paramètres environnementaux ou agricoles à distance."
  },
+ "28259dcd1b1b": {
+  "famille": "donnees",
+  "id": "28259dcd1b1b",
+  "interet": "Permet d'entraîner des modèles de détection et de classification des adventices et des cultures.",
+  "mots_cles": [
+   "jeu de données",
+   "segmentation sémantique",
+   "adventices",
+   "grandes cultures",
+   "rgb-d"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Jeu de données RGB-D annoté pour la segmentation sémantique d'espèces végétales en grandes cultures. Il contient des images haute résolution (1600×1140) avec des masques de vérité terrain manuels pour cinq espèces dont des adventices."
+ },
  "2e8e2b7f10db": {
   "famille": "donnees",
   "id": "2e8e2b7f10db",
@@ -235,6 +265,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Ce modèle prédit les maladies des cultures à partir de données agricoles. Il utilise des techniques d'apprentissage automatique pour identifier des risques pathogènes."
+ },
+ "322faf8de68d": {
+  "famille": "materiel",
+  "id": "322faf8de68d",
+  "interet": "Permet de surveiller les populations d'insectes en agriculture.",
+  "mots_cles": [
+   "insectes",
+   "surveillance",
+   "raspberry pi",
+   "caméra",
+   "analyse automatique"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Dispositif de surveillance d'insectes basé sur un Raspberry Pi et une caméra haute résolution, permettant une collecte et une analyse automatique d'images. Il facilite le suivi des populations d'insectes sur le terrain."
  },
  "33496b925a05": {
   "famille": "donnees",
@@ -371,6 +416,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Application web pour configurer, personnaliser et piloter un FarmBot depuis n'importe quel appareil. Elle centralise les commandes et les paramètres du système."
  },
+ "4bf7bdca11df": {
+  "famille": "donnees",
+  "id": "4bf7bdca11df",
+  "interet": "Permet d'entraîner des modèles de détection des mauvaises herbes dans les cultures de maïs.",
+  "mots_cles": [
+   "mauvaises herbes",
+   "maïs",
+   "détection d'objets",
+   "jeu de données",
+   "agriculture de précision"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Jeu de données d'images de mauvaises herbes dans les cultures de maïs, collecté sur des machines agricoles pour évaluer la détection des adventices. Il sert à entraîner des modèles de détection d'objets."
+ },
  "502e950907ae": {
   "famille": "logiciel",
   "id": "502e950907ae",
@@ -401,6 +461,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Ce modèle classifie les intentions en agriculture dans plusieurs langues (hindi, punjabi) en utilisant des techniques d'adaptation de modèles BERT. Il est conçu pour des applications multilingues."
  },
+ "52fd55c68cfd": {
+  "famille": "modele",
+  "id": "52fd55c68cfd",
+  "interet": "Permet de classer les mauvaises herbes dans les cultures.",
+  "mots_cles": [
+   "classification",
+   "mauvaises herbes",
+   "images multispectrales",
+   "drones",
+   "agriculture intelligente"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Modèle de classification dense des mauvaises herbes utilisant des images multispectrales et des drones pour l'agriculture intelligente. Il permet de distinguer les mauvaises herbes des cultures."
+ },
  "542e3b7210e7": {
   "famille": "logiciel",
   "id": "542e3b7210e7",
@@ -411,6 +486,19 @@
    "stockage distribué",
    "calcul distribué",
    "cloud-native"
+  ],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
+ "54c1bd1767eb": {
+  "famille": "donnees",
+  "id": "54c1bd1767eb",
+  "interet": "",
+  "mots_cles": [
+   "insectes",
+   "jeu de données",
+   "microscopie"
   ],
   "pertinence": "non",
   "redige_par": "mistral-small-latest",
@@ -593,6 +681,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Ce jeu de données mesure, à l'échelle communale, la proportion de responsables d'exploitations agricoles de 55 ans ou plus en 2020. Il contient 34 920 lignes, une par commune de France métropolitaine."
  },
+ "87b7b9534a19": {
+  "famille": "donnees",
+  "id": "87b7b9534a19",
+  "interet": "Permet d'entraîner des modèles de détection et de segmentation des fruits pour l'estimation de la récolte.",
+  "mots_cles": [
+   "pommes",
+   "détection",
+   "segmentation",
+   "estimation de rendement",
+   "comptage de fruits"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Jeu de données dédié à la détection et à la segmentation des pommes pour l'estimation du rendement. Contient des résultats représentatifs pour des algorithmes de comptage."
+ },
  "8b015180c890": {
   "famille": "logiciel",
   "id": "8b015180c890",
@@ -622,6 +725,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Modèle de détection d'objets pour identifier des maladies sur des feuilles de plantes à partir d'images. Il localise et classe des maladies végétales en utilisant une architecture de type RT-DETR."
+ },
+ "9a6daf1af2ab": {
+  "famille": "donnees",
+  "id": "9a6daf1af2ab",
+  "interet": "Fournit des données pour développer des outils de cartographie et de gestion des adventices.",
+  "mots_cles": [
+   "adventices",
+   "cartographie",
+   "imagerie multispectrale",
+   "désherbage de précision",
+   "réseau de neurones"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Jeu de données sémantique à grande échelle pour la cartographie des adventices à partir d'imagerie multispectrale aérienne. Utilise des réseaux de neurones profonds pour le désherbage de précision."
  },
  "9f1110fd8228": {
   "famille": "donnees",
@@ -968,6 +1086,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Système IoT basé sur ESP32 pour surveiller en temps réel les ruches avec mesure de température, humidité, activité des abeilles, poids et intégration Firebase. Fonctionne avec une alimentation solaire et un tableau de bord web."
  },
+ "d5c28f0fdfb4": {
+  "famille": "materiel",
+  "id": "d5c28f0fdfb4",
+  "interet": "Permet de surveiller les populations d'insectes en agriculture.",
+  "mots_cles": [
+   "insectes",
+   "détection automatique",
+   "caméra piège",
+   "apprentissage profond",
+   "surveillance"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Piège photographique pour insectes utilisant une caméra et l'apprentissage profond, permettant une détection automatisée. Il permet de surveiller les populations d'insectes sur le terrain."
+ },
  "d90aeaa302bc": {
   "famille": "logiciel",
   "id": "d90aeaa302bc",
@@ -1012,6 +1145,20 @@
   "redige_par": "mistral-small-latest",
   "resume": "farmOS est une application web de gestion des enregistrements agricoles. Elle permet de suivre les activités, les cultures, le bétail et le matériel sur une exploitation."
  },
+ "dc0f5c62e9ef": {
+  "famille": "donnees",
+  "id": "dc0f5c62e9ef",
+  "interet": "",
+  "mots_cles": [
+   "synthétique",
+   "tronc d'arbre",
+   "vision par ordinateur",
+   "jeu vidéo"
+  ],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
  "dccc5b359f9b": {
   "famille": "logiciel",
   "id": "dccc5b359f9b",
@@ -1026,6 +1173,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Plateforme de jumeau numérique pour l'agriculture de précision. Elle permet de simuler et analyser des données agricoles à grande échelle."
+ },
+ "dcf69f1c069d": {
+  "famille": "modele",
+  "id": "dcf69f1c069d",
+  "interet": "Permet de développer des outils d'analyse d'images pour le blé à partir de données labellisées.",
+  "mots_cles": [
+   "modèle de fondation",
+   "blé",
+   "vision transformer",
+   "entraînement enseignant-élève",
+   "analyse d'images"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Modèle de fondation basé sur Vision Transformer (ViT) pour le blé, utilisant une approche en deux étapes avec entraînement enseignant-élève. Optimisé pour des tâches spécifiques via un module léger."
  },
  "dfaa8673abfd": {
   "famille": "donnees",

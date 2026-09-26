@@ -1,0 +1,416 @@
+# Lot du radar OSFarm. Passer « publier » à false pour écarter une fiche,
+# corriger « resume » au besoin. La fusion de la pull request publie le reste.
+date: '2026-09-26'
+liste: OpenSourceAgriculture
+examines: 60
+retenus: 11
+rejets:
+  deja_vu: 0
+  deja_sur_le_site: 2
+  licence: 44
+  score: 3
+pannes: []
+candidats:
+- id: 322faf8de68d
+  famille: materiel
+  relecteur: ionosphere bertrandgorge
+  source: liste-osa
+  curation: OpenSourceAgriculture
+  titre: Mothbox
+  url: https://digital-naturalism-laboratories.github.io/Mothbox/
+  depot: https://github.com/Digital-Naturalism-Laboratories/Mothbox
+  description: A low-cost, high performance insect monitor based on the Rasoberry Pi, Arducam 64MP camera
+    with automatic image collection and analysis.
+  licence: mit
+  date_maj: '2026-09-20'
+  techno: Perl
+  popularite: 107
+  mots_cles:
+  - In-Field Deployment
+  score: 83
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - retenu par la liste OpenSourceAgriculture
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Dispositif de surveillance d'insectes basé sur un Raspberry Pi et une caméra haute résolution,
+    permettant une collecte et une analyse automatique d'images. Il facilite le suivi des populations
+    d'insectes sur le terrain.
+  interet: Permet de surveiller les populations d'insectes en agriculture.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - insectes
+  - surveillance
+  - raspberry pi
+  - caméra
+  - analyse automatique
+- id: 07d2fda70d33
+  famille: materiel
+  relecteur: ionosphere bertrandgorge
+  source: liste-osa
+  curation: OpenSourceAgriculture
+  titre: Low Cost Water Quality Sampler
+  url: https://github.com/CSU-Agricultural-Water-Quality-Program/low-cost-iot-water-sampler
+  description: A low-cost, automated water sampler over IoT for near-real-time water quality research
+    developed by the Colorado State University Agricultural Water Quality Program
+  licence: gpl-2.0
+  date_maj: '2025-06-09'
+  techno: C++
+  popularite: 4
+  mots_cles:
+  - In-Field Deployment
+  - agriculture
+  - flow-measurements
+  - iot
+  - particle-boron
+  - water
+  - water-quality
+  score: 72
+  raisons:
+  - licence gpl-2.0
+  - activité ancienne
+  - 'vocabulaire : agriculture, water'
+  - retenu par la liste OpenSourceAgriculture
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Échantillonneur d'eau automatisé à faible coût, connecté par IoT, conçu pour la recherche sur
+    la qualité de l'eau en temps quasi réel. Il permet de mesurer des paramètres de l'eau sur le terrain.
+  interet: Permet d'analyser la qualité de l'eau en agriculture.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - qualité de l'eau
+  - échantillonnage
+  - iot
+  - agriculture
+  - mesures en temps réel
+- id: d5c28f0fdfb4
+  famille: materiel
+  relecteur: ionosphere bertrandgorge
+  source: liste-osa
+  curation: OpenSourceAgriculture
+  titre: Insect Detect
+  url: https://maxsitt.github.io/insect-detect-docs/
+  depot: https://github.com/maxsitt/insect-detect-docs
+  description: Build your own insect-detecting camera trap for automated monitoring
+  licence: cc-by-sa-4.0
+  date_maj: '2026-04-16'
+  techno: ''
+  popularite: 31
+  mots_cles:
+  - In-Field Deployment
+  - camera-trap
+  - deep-learning
+  - diy
+  - documentation
+  - insect-detection
+  - insect-monitoring
+  - opencv-ai-kit
+  score: 71
+  raisons:
+  - licence cc-by-sa-4.0
+  - actif (moins d'un an)
+  - retenu par la liste OpenSourceAgriculture
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Piège photographique pour insectes utilisant une caméra et l'apprentissage profond, permettant
+    une détection automatisée. Il permet de surveiller les populations d'insectes sur le terrain.
+  interet: Permet de surveiller les populations d'insectes en agriculture.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - insectes
+  - détection automatique
+  - caméra piège
+  - apprentissage profond
+  - surveillance
+- id: dc0f5c62e9ef
+  famille: donnees
+  relecteur: ionosphere bertrandgorge
+  source: liste-osa
+  curation: OpenSourceAgriculture
+  titre: SynthTree43K
+  url: https://github.com/norlab-ulaval/PercepTreeV1
+  description: A synthetic dataset of tree trunks developed with the Unity game engine.
+  licence: apache-2.0
+  date_maj: '2024-12-17'
+  techno: Python
+  popularite: 109
+  mots_cles:
+  - Forestry
+  - computer-vision
+  - datasets
+  - forestry
+  score: 70
+  raisons:
+  - licence apache-2.0
+  - activité ancienne
+  - 'vocabulaire : forestry'
+  - retenu par la liste OpenSourceAgriculture
+  propose_le: '2026-09-26'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - synthétique
+  - tronc d'arbre
+  - vision par ordinateur
+  - jeu vidéo
+- id: 4bf7bdca11df
+  famille: donnees
+  relecteur: ionosphere bertrandgorge
+  source: liste-osa
+  curation: OpenSourceAgriculture
+  titre: CornWeed
+  url: https://zenodo.org/records/7961764
+  description: The CornWeed dataset was collected on farm machines for evaluating weed detection in corn
+    crops. A conference paper is available.
+  licence: cc-by-4.0
+  date_maj: '2023-05-25'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - Weeds
+  - Maize/Corn
+  - Weeds
+  - Selective weeding
+  - Object detection
+  - Agricultural training dataset
+  - CornWeed Dataset
+  score: 67
+  raisons:
+  - licence cc-by-4.0
+  - aucune activité récente
+  - 'vocabulaire : farm, crop'
+  - retenu par la liste OpenSourceAgriculture
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Jeu de données d'images de mauvaises herbes dans les cultures de maïs, collecté sur des machines
+    agricoles pour évaluer la détection des adventices. Il sert à entraîner des modèles de détection d'objets.
+  interet: Permet d'entraîner des modèles de détection des mauvaises herbes dans les cultures de maïs.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - mauvaises herbes
+  - maïs
+  - détection d'objets
+  - jeu de données
+  - agriculture de précision
+- id: 52fd55c68cfd
+  famille: donnees
+  relecteur: ionosphere bertrandgorge
+  source: liste-osa
+  curation: OpenSourceAgriculture
+  titre: WeedNet
+  url: https://github.com/inkyusa/weedNet
+  description: 'weedNet: Dense semantic weed classification using multispectral images and MAV for smart
+    farming'
+  licence: gpl-3.0
+  date_maj: '2018-09-28'
+  techno: Matlab
+  popularite: 58
+  mots_cles:
+  - Weeds
+  score: 67
+  raisons:
+  - licence gpl-3.0
+  - aucune activité récente
+  - 'vocabulaire : farming'
+  - retenu par la liste OpenSourceAgriculture
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Modèle de classification dense des mauvaises herbes utilisant des images multispectrales et
+    des drones pour l'agriculture intelligente. Il permet de distinguer les mauvaises herbes des cultures.
+  interet: Permet de classer les mauvaises herbes dans les cultures.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - classification
+  - mauvaises herbes
+  - images multispectrales
+  - drones
+  - agriculture intelligente
+- id: 28259dcd1b1b
+  famille: donnees
+  relecteur: ionosphere bertrandgorge
+  source: liste-osa
+  curation: OpenSourceAgriculture
+  titre: WE3DS
+  url: https://zenodo.org/records/7457983
+  description: First RGB-D dataset for multi-class plant species semantic segmentation in crop farming.
+    High-resolution (1600×1140) images with hand-annotated ground-truth masks. Achieved 70.7% mIoU. Includes
+    broad bean, soybean, corn, milk thistle and various weed species.
+  licence: cc-by-4.0
+  date_maj: '2023-03-10'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - Weeds
+  - crop farming
+  - weed detection
+  - semantic segmentation
+  - image dataset
+  - RGB-D
+  - stereo vision
+  score: 67
+  raisons:
+  - licence cc-by-4.0
+  - aucune activité récente
+  - 'vocabulaire : farming, crop'
+  - retenu par la liste OpenSourceAgriculture
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Jeu de données RGB-D annoté pour la segmentation sémantique d'espèces végétales en grandes cultures.
+    Il contient des images haute résolution (1600×1140) avec des masques de vérité terrain manuels pour
+    cinq espèces dont des adventices.
+  interet: Permet d'entraîner des modèles de détection et de classification des adventices et des cultures.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - jeu de données
+  - segmentation sémantique
+  - adventices
+  - grandes cultures
+  - rgb-d
+- id: 9a6daf1af2ab
+  famille: donnees
+  relecteur: ionosphere bertrandgorge
+  source: liste-osa
+  curation: OpenSourceAgriculture
+  titre: WeedMap
+  url: https://github.com/viariasv/weedMap
+  description: A Large-Scale Semantic Weed Mapping Framework Using Aerial Multispectral Imaging and Deep
+    Neural Network for Precision Farming
+  licence: mit
+  date_maj: '2022-12-08'
+  techno: Jupyter Notebook
+  popularite: 11
+  mots_cles:
+  - Weeds
+  score: 64
+  raisons:
+  - licence mit
+  - aucune activité récente
+  - 'vocabulaire : farming'
+  - retenu par la liste OpenSourceAgriculture
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Jeu de données sémantique à grande échelle pour la cartographie des adventices à partir d'imagerie
+    multispectrale aérienne. Utilise des réseaux de neurones profonds pour le désherbage de précision.
+  interet: Fournit des données pour développer des outils de cartographie et de gestion des adventices.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - adventices
+  - cartographie
+  - imagerie multispectrale
+  - désherbage de précision
+  - réseau de neurones
+- id: 87b7b9534a19
+  famille: donnees
+  relecteur: ionosphere bertrandgorge
+  source: liste-osa
+  curation: OpenSourceAgriculture
+  titre: MinneApple
+  url: https://rsn.umn.edu/projects/orchard-monitoring/minneapple
+  depot: https://github.com/nicolaihaeni/MinneApple
+  description: A comprehensive dataset for developing apple detection and segmentation algorithms. Representative
+    results are provided for yield estimation.
+  licence: mit
+  date_maj: '2020-10-05'
+  techno: Python
+  popularite: 137
+  mots_cles:
+  - Fruit Counting
+  score: 64
+  raisons:
+  - licence mit
+  - aucune activité récente
+  - 'vocabulaire : yield'
+  - retenu par la liste OpenSourceAgriculture
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Jeu de données dédié à la détection et à la segmentation des pommes pour l'estimation du rendement.
+    Contient des résultats représentatifs pour des algorithmes de comptage.
+  interet: Permet d'entraîner des modèles de détection et de segmentation des fruits pour l'estimation
+    de la récolte.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - pommes
+  - détection
+  - segmentation
+  - estimation de rendement
+  - comptage de fruits
+- id: 54c1bd1767eb
+  famille: donnees
+  relecteur: ionosphere bertrandgorge
+  source: liste-osa
+  curation: OpenSourceAgriculture
+  titre: BIOSCAN-1M
+  url: https://github.com/bioscan-ml/BIOSCAN-1M
+  description: The BIOSCAN-1M Insect dataset consists of specimens mostly collected from three countries
+    (Costa Rica, Canada, and South Africa) using Malaise traps. RGB images of the organisms were taken
+    with a Keyence VHX-7000 microscope.
+  licence: mit
+  date_maj: '2025-04-30'
+  techno: Python
+  popularite: 34
+  mots_cles:
+  - Insects
+  score: 63
+  raisons:
+  - licence mit
+  - activité ancienne
+  - retenu par la liste OpenSourceAgriculture
+  propose_le: '2026-09-26'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - insectes
+  - jeu de données
+  - microscopie
+- id: dcf69f1c069d
+  famille: modele
+  relecteur: ionosphere bertrandgorge
+  source: liste-osa
+  curation: OpenSourceAgriculture
+  titre: FoMo4Wheat
+  url: https://fomo4wheat.phenix-lab.com/
+  depot: https://github.com/PheniX-Lab/FoMo4Wheat
+  description: ViT-based, 2-stage. Pre-train ViT-G on all data with DinoV2 init weights. Teacher-student
+    training for L/B models. Freeze backbone, train lightweight adapter head on labelled data for specific
+    tasks.
+  licence: mit
+  date_maj: '2025-09-15'
+  techno: Python
+  popularite: 57
+  mots_cles:
+  - Foundation Models
+  score: 66
+  raisons:
+  - licence mit
+  - activité ancienne
+  - retenu par la liste OpenSourceAgriculture
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Modèle de fondation basé sur Vision Transformer (ViT) pour le blé, utilisant une approche en
+    deux étapes avec entraînement enseignant-élève. Optimisé pour des tâches spécifiques via un module
+    léger.
+  interet: Permet de développer des outils d'analyse d'images pour le blé à partir de données labellisées.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - modèle de fondation
+  - blé
+  - vision transformer
+  - entraînement enseignant-élève
+  - analyse d'images
+resume_genere_le: 2026-09-26 10:11
