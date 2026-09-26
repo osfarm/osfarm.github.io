@@ -116,6 +116,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Jeu de données et code d'analyse pour estimer la teneur en azote des feuilles de citrus par imagerie hyperspectrale. Il permet de développer des modèles de diagnostic foliaire non destructif."
  },
+ "18a20cd89e62": {
+  "famille": "donnees",
+  "id": "18a20cd89e62",
+  "interet": "Utile pour organiser et analyser les données de production végétale.",
+  "mots_cles": [
+   "base de données",
+   "suivi des cultures",
+   "agriculture",
+   "api",
+   "production végétale"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Base de données et outil de suivi des cultures avec une API. Permet d'enregistrer et de gérer des informations sur les cultures."
+ },
  "1b8a2abb9b86": {
   "famille": "modele",
   "id": "1b8a2abb9b86",
@@ -160,6 +175,19 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Ce dépôt contient des données de monitoring citoyen de papillons dans des zones agricoles, collectées entre 2024 et 2025 dans plusieurs pays européens. Les données proviennent d'un projet d'agroécologie."
+ },
+ "1c8a31bf6249": {
+  "famille": "logiciel",
+  "id": "1c8a31bf6249",
+  "interet": "",
+  "mots_cles": [
+   "météorologie",
+   "réseau de stations",
+   "données climatiques"
+  ],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": "Code source permettant le fonctionnement du réseau de stations météorologiques Iowa Environmental Mesonet. Il gère la collecte et la diffusion de données météorologiques."
  },
  "2072617884e2": {
   "famille": "logiciel",
@@ -220,6 +248,36 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Jeu de données RGB-D annoté pour la segmentation sémantique d'espèces végétales en grandes cultures. Il contient des images haute résolution (1600×1140) avec des masques de vérité terrain manuels pour cinq espèces dont des adventices."
+ },
+ "2abbce3fa1b0": {
+  "famille": "logiciel",
+  "id": "2abbce3fa1b0",
+  "interet": "Permet d'estimer les besoins en eau des cultures à partir de données météorologiques.",
+  "mots_cles": [
+   "évapotranspiration",
+   "besoins en eau",
+   "python",
+   "irrigation",
+   "météorologie"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Package Python pour calculer l'évapotranspiration de référence ou potentielle (ETo)."
+ },
+ "2cb7bccd97e4": {
+  "famille": "logiciel",
+  "id": "2cb7bccd97e4",
+  "interet": "Fournit des données climatiques utiles pour évaluer les conditions de croissance des cultures.",
+  "mots_cles": [
+   "climat",
+   "données agroclimatiques",
+   "nasa",
+   "ruby",
+   "rayonnement solaire"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Client Ruby pour interagir avec la ressource agroclimatologique NASA (POWER). Il permet d'accéder à des données climatiques et solaires."
  },
  "2e8e2b7f10db": {
   "famille": "donnees",
@@ -386,6 +444,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Ce système permet de surveiller et contrôler à distance le climat dans les serres et cultures indoor. Il est compatible avec divers capteurs et interrupteurs intelligents accessibles en ligne de commande."
  },
+ "4ad58db7a5f1": {
+  "famille": "logiciel",
+  "id": "4ad58db7a5f1",
+  "interet": "",
+  "mots_cles": [
+   "calculs",
+   "cultures",
+   "agriculture",
+   "wordpress",
+   "plugin"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Plugin WordPress permettant de calculer des données liées aux cultures et à l'agriculture. Il propose des outils de calcul spécifiques à ces domaines."
+ },
  "4b34f19545cd": {
   "famille": "logiciel",
   "id": "4b34f19545cd",
@@ -504,6 +577,21 @@
   "redige_par": "mistral-small-latest",
   "resume": ""
  },
+ "5b95fc1b97f1": {
+  "famille": "donnees",
+  "id": "5b95fc1b97f1",
+  "interet": "Aide à la sélection des cultures adaptées aux conditions climatiques locales.",
+  "mots_cles": [
+   "zones de rusticité",
+   "climat",
+   "plantes",
+   "données géographiques",
+   "usda"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Jeu de données, API et parseur Python fournissant les zones de rusticité des plantes selon la classification USDA. Il permet d'accéder à des informations climatiques utiles pour le choix des cultures."
+ },
  "5f0b769462f2": {
   "famille": "materiel",
   "id": "5f0b769462f2",
@@ -579,6 +667,21 @@
   "redige_par": "mistral-small-latest",
   "resume": ""
  },
+ "7502092a85dd": {
+  "famille": "donnees",
+  "id": "7502092a85dd",
+  "interet": "Ce projet peut servir à documenter et partager des savoirs agricoles et horticoles.",
+  "mots_cles": [
+   "base de données",
+   "plantes",
+   "pratiques culturales",
+   "agriculture",
+   "jardinage"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Base de données ouverte et collaborative dédiée aux connaissances en agriculture et jardinage. Elle centralise des informations sur les plantes et leurs pratiques associées."
+ },
  "778970822789": {
   "famille": "donnees",
   "id": "778970822789",
@@ -651,6 +754,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Ressource documentaire centralisant les informations sur FarmBot."
  },
+ "7d87f08ce439": {
+  "famille": "logiciel",
+  "id": "7d87f08ce439",
+  "interet": "",
+  "mots_cles": [
+   "imagerie",
+   "deep learning",
+   "classification",
+   "géospatial",
+   "télédétection"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Bibliothèque de deep learning dédiée à l'analyse d'images aériennes ou satellites. Elle permet de classer des zones géographiques à partir de ces images."
+ },
  "7e217735dfef": {
   "famille": "logiciel",
   "id": "7e217735dfef",
@@ -665,6 +783,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Outil d'évaluation du bétail basé sur l'IA utilisant une photo et des marqueurs ArUco pour estimer la condition corporelle et identifier les races. Il fournit des conseils de santé à partir d'une seule image."
+ },
+ "7f14bbdc5366": {
+  "famille": "logiciel",
+  "id": "7f14bbdc5366",
+  "interet": "",
+  "mots_cles": [
+   "api",
+   "oauth2",
+   "node.js",
+   "client",
+   "exemple"
+  ],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
  },
  "805909b8a7d3": {
   "famille": "donnees",
@@ -726,6 +859,49 @@
   "redige_par": "mistral-small-latest",
   "resume": "Modèle de détection d'objets pour identifier des maladies sur des feuilles de plantes à partir d'images. Il localise et classe des maladies végétales en utilisant une architecture de type RT-DETR."
  },
+ "8f4ea6f2e79e": {
+  "famille": "logiciel",
+  "id": "8f4ea6f2e79e",
+  "interet": "",
+  "mots_cles": [
+   "shapefiles",
+   "géomatique",
+   "format de données"
+  ],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
+ "920d318823f6": {
+  "famille": "matériel",
+  "id": "920d318823f6",
+  "interet": "Facilite la collecte de données environnementales ou agricoles dans des zones sans infrastructure réseau.",
+  "mots_cles": [
+   "iot",
+   "transmission de données",
+   "capteurs",
+   "zones isolées",
+   "agriculture"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Système utilisant ESP-NOW, LoRa et d'autres protocoles pour transmettre des données de capteurs en zones isolées sans WiFi."
+ },
+ "92d0a6be249b": {
+  "famille": "logiciel",
+  "id": "92d0a6be249b",
+  "interet": "Permet d'évaluer les besoins en irrigation des cultures en fonction des conditions climatiques.",
+  "mots_cles": [
+   "évapotranspiration",
+   "besoins en eau",
+   "climat",
+   "ruby",
+   "irrigation"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Bibliothèque Ruby calculant l'évapotranspiration de référence des cultures (ETo). Elle fournit des outils pour estimer les besoins en eau des plantes."
+ },
  "9a6daf1af2ab": {
   "famille": "donnees",
   "id": "9a6daf1af2ab",
@@ -784,6 +960,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Ce jeu de données compile des études sur l'agriculture urbaine et les fermes verticales intégrant des systèmes biologiques et des technologies intelligentes. Il synthétise des travaux sur leur lien avec l'alimentation, la santé et l'environnement."
  },
+ "a8a2b26459c8": {
+  "famille": "donnees",
+  "id": "a8a2b26459c8",
+  "interet": "Permet d'étudier la répartition des cultures à partir d'images satellites.",
+  "mots_cles": [
+   "imagerie satellite",
+   "cartographie des cultures",
+   "données labellisées",
+   "sécurité alimentaire",
+   "télédétection"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Jeu de données open source issu d'imagerie satellite pour cartographier les types de cultures à l'échelle mondiale. Il contient 95 186 points de données labellisés."
+ },
  "aa4052ddabda": {
   "famille": "donnees",
   "id": "aa4052ddabda",
@@ -821,6 +1012,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Fichiers Fritzing pour la conception de modules de circuits imprimés compatibles avec AOG."
+ },
+ "b03623b0ff74": {
+  "famille": "logiciel",
+  "id": "b03623b0ff74",
+  "interet": "Ce projet peut servir à documenter et analyser les caractéristiques des sols pour des usages agricoles ou environnementaux.",
+  "mots_cles": [
+   "sol",
+   "collecte de données",
+   "pédologie",
+   "agriculture",
+   "cartographie"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Application d'assistance à la collecte de données pédologiques. Elle facilite l'enregistrement et la gestion des informations sur les sols."
  },
  "b359187bebd4": {
   "famille": "modele",
@@ -897,6 +1103,19 @@
   "redige_par": "mistral-small-latest",
   "resume": "Données annuelles d'achats de pesticides par code postal en France, déclarées par les distributeurs. Elles permettent de suivre les achats sur le territoire."
  },
+ "bf026b463fac": {
+  "famille": "logiciel",
+  "id": "bf026b463fac",
+  "interet": "",
+  "mots_cles": [
+   "shapefile",
+   "géospatial",
+   "ruby"
+  ],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
  "bfb76fbe677c": {
   "famille": "modele",
   "id": "bfb76fbe677c",
@@ -972,6 +1191,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Ensemble de plugins pour l'ingénierie géospatiale agricole dans Claude Code. Il propose des agents, compétences et garde-fous pour le traitement d'images satellites, PostGIS et Earth Engine."
  },
+ "c9a1e573680a": {
+  "famille": "logiciel",
+  "id": "c9a1e573680a",
+  "interet": "Facilite la gestion et l'interopérabilité des données botaniques en agriculture.",
+  "mots_cles": [
+   "botanique",
+   "gestion de données",
+   "taxonomie",
+   "standardisation",
+   "interopérabilité"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Bibliothèque Rust pour la gestion de données botaniques professionnelles incluant une hiérarchie taxonomique et un suivi de culture. Elle permet de structurer et d'échanger des données botaniques selon des standards reconnus."
+ },
  "ca4a5ea2d9d1": {
   "famille": "donnees",
   "id": "ca4a5ea2d9d1",
@@ -1040,6 +1274,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Ce projet est une liste curatée de ressources open source dédiées à l'agriculture de précision. Il recense des outils, bibliothèques et projets logiciels pour la gestion des exploitations agricoles."
+ },
+ "cf80b1567c4d": {
+  "famille": "logiciel",
+  "id": "cf80b1567c4d",
+  "interet": "Permet d'exploiter des données pédologiques pour évaluer la qualité des sols en agriculture.",
+  "mots_cles": [
+   "sols",
+   "pédologie",
+   "bases de données",
+   "analyse de données",
+   "r"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Bibliothèque R pour accéder de manière simplifiée aux bases de données pédologiques du NCSS. Elle facilite l'extraction et l'analyse des données de sol."
  },
  "cfc9a62d81fd": {
   "famille": "donnees",
@@ -1159,6 +1408,21 @@
   "redige_par": "mistral-small-latest",
   "resume": ""
  },
+ "dc7c016fb424": {
+  "famille": "modele",
+  "id": "dc7c016fb424",
+  "interet": "Permet d'estimer les besoins en eau des cultures pour une gestion optimisée de l'irrigation.",
+  "mots_cles": [
+   "évapotranspiration",
+   "télédétection",
+   "flux d'énergie",
+   "eau",
+   "modélisation"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Modèle Python d'équilibre énergétique à deux sources pour estimer l'évapotranspiration à partir de données de télédétection. Il calcule les flux d'énergie et d'eau dans les couverts végétaux."
+ },
  "dccc5b359f9b": {
   "famille": "logiciel",
   "id": "dccc5b359f9b",
@@ -1263,6 +1527,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Firmware pour Arduino exécutant des commandes de type G-code pour déplacer un FarmBot et actionner l'outil monté. Il gère les mouvements et les opérations mécaniques."
+ },
+ "f743afcdbf75": {
+  "famille": "logiciel",
+  "id": "f743afcdbf75",
+  "interet": "Ce projet peut servir à informer sur les pratiques culturales et culinaires associées à des plantes spécifiques.",
+  "mots_cles": [
+   "culture",
+   "récolte",
+   "recettes",
+   "plantes",
+   "api"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Outil fournissant des informations sur la culture, la récolte et des recettes pour 45 plantes via une base de données et une API JSON. Il permet d'accéder à ces données de manière structurée."
  },
  "f7e488e78bba": {
   "famille": "logiciel",
