@@ -40,7 +40,7 @@ candidats:
   - 'vocabulaire : agriculture, farming'
   - retenu par la liste awesome-agriculture
   propose_le: '2026-09-26'
-  publier: true
+  publier: false
   resume: Bibliothèque Rust pour la gestion de données botaniques professionnelles incluant une hiérarchie
     taxonomique et un suivi de culture. Elle permet de structurer et d'échanger des données botaniques
     selon des standards reconnus.
@@ -645,7 +645,7 @@ candidats:
   - zones isolées
   - agriculture
 - id: 18a20cd89e62
-  famille: donnees
+  famille: logiciel
   relecteur: ionosphere bertrandgorge
   source: liste-awesome-agriculture
   curation: awesome-agriculture
