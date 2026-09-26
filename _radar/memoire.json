@@ -20,6 +20,12 @@
   "statut": "sans_licence",
   "url": "https://github.com/Realistic-Farming/FS25_SoilFertilizer"
  },
+ "051485381c9e": {
+  "examine_le": "2026-09-26",
+  "score": 83,
+  "statut": "propose",
+  "url": "https://github.com/JakeTheRabbit/HAGR"
+ },
  "06aa4105ce69": {
   "examine_le": "2026-09-25",
   "score": 92,
@@ -53,6 +59,11 @@
   "statut": "propose",
   "url": "https://github.com/Growstuff/growstuff"
  },
+ "0a96a8e2d481": {
+  "examine_le": "2026-09-26",
+  "statut": "sans_licence",
+  "url": "https://github.com/cropsteering/EC-POWERCONTROL"
+ },
  "0be0fd89cdde": {
   "examine_le": "2026-09-26",
   "statut": "sans_licence",
@@ -69,6 +80,12 @@
   "score": 53,
   "statut": "quarantaine",
   "url": "https://github.com/ZhangXG001/Real-Time-Crop-Recognition"
+ },
+ "0e418fdb1777": {
+  "examine_le": "2026-09-26",
+  "score": 83,
+  "statut": "propose",
+  "url": "https://github.com/NachtRaveVL/Simple-Hydroponics-Arduino"
  },
  "0e94c05b3052": {
   "examine_le": "2026-09-26",
@@ -112,10 +129,21 @@
   "statut": "sans_licence",
   "url": "https://github.com/APSIMInitiative/ApsimX"
  },
+ "128b761953a7": {
+  "examine_le": "2026-09-26",
+  "score": 61,
+  "statut": "propose",
+  "url": "https://github.com/Emperiusm/TDR-Sensor"
+ },
  "141a467c2a7c": {
   "examine_le": "2026-09-26",
   "statut": "sans_licence",
   "url": "https://www.global-rice.com"
+ },
+ "142b1ca98079": {
+  "examine_le": "2026-09-26",
+  "statut": "sans_licence",
+  "url": "https://github.com/JakeTheRabbit/Athena-Batch-Tank-Nutrient-Calculator"
  },
  "14967332dc31": {
   "examine_le": "2026-09-17",
@@ -227,6 +255,11 @@
   "statut": "propose",
   "url": "https://github.com/osmanhadzic/agronode"
  },
+ "219fe5f17ba9": {
+  "examine_le": "2026-09-26",
+  "statut": "sans_licence",
+  "url": "https://github.com/rbaron/b-parasite"
+ },
  "23f9c5cf134e": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
@@ -246,6 +279,11 @@
   "examine_le": "2026-09-26",
   "statut": "sans_licence",
   "url": "https://github.com/semanticsugarbeets/semanticsugarbeets"
+ },
+ "2741f041906c": {
+  "examine_le": "2026-09-26",
+  "statut": "sans_licence",
+  "url": "https://github.com/cropsteering/OS-SDI12"
  },
  "27cc2ce57864": {
   "examine_le": "2026-09-26",
@@ -318,6 +356,11 @@
   "statut": "propose",
   "url": "https://doi.org/10.5281/zenodo.22865000"
  },
+ "2ede20a33935": {
+  "examine_le": "2026-09-26",
+  "statut": "sans_licence",
+  "url": "https://www.adafruit.com/category/946"
+ },
  "2f1510da559b": {
   "examine_le": "2026-09-25",
   "score": 76,
@@ -350,6 +393,18 @@
   "statut": "sans_licence",
   "url": "https://github.com/totti0223/deep_learning_for_biologists_with_keras"
  },
+ "31c6c9f55417": {
+  "examine_le": "2026-09-26",
+  "score": 62,
+  "statut": "propose",
+  "url": "https://github.com/HarveyBates/ESP32-SDI12"
+ },
+ "31eeeefd3298": {
+  "examine_le": "2026-09-26",
+  "score": 77,
+  "statut": "propose",
+  "url": "https://github.com/JakeTheRabbit/Grownlink-Terralink-Substrate-Sensor-for-ESP-Home"
+ },
  "322faf8de68d": {
   "examine_le": "2026-09-26",
   "score": 83,
@@ -360,6 +415,12 @@
   "examine_le": "2026-09-26",
   "statut": "sans_licence",
   "url": "https://doc.sticky-pi.com/"
+ },
+ "32888cadfa8b": {
+  "examine_le": "2026-09-26",
+  "score": 81,
+  "statut": "propose",
+  "url": "https://github.com/cannlytics/cannlytics"
  },
  "32c85bbf2e79": {
   "examine_le": "2026-09-26",
@@ -396,6 +457,11 @@
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
   "url": "https://github.com/JoelDlima/AGRO-PROFIT"
+ },
+ "350efa8da43c": {
+  "examine_le": "2026-09-26",
+  "statut": "sans_licence",
+  "url": "https://github.com/EnviroDIY/ModularSensors"
  },
  "377e17ce834c": {
   "examine_le": "2026-09-17",
@@ -466,6 +532,17 @@
   "statut": "sans_licence",
   "url": "https://weed-ai.sydney.edu.au"
  },
+ "3fd29a1ddf82": {
+  "examine_le": "2026-09-26",
+  "score": 62,
+  "statut": "propose",
+  "url": "https://github.com/Miceuz/i2c-moisture-sensor"
+ },
+ "4039b6f8d9c0": {
+  "examine_le": "2026-09-26",
+  "statut": "sans_licence",
+  "url": "https://trym.io/vpd-calculator/"
+ },
  "4094cc030e06": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
@@ -487,10 +564,21 @@
   "statut": "propose",
   "url": "https://www.data.gouv.fr/datasets/base-de-connaissances-sur-les-produits-phytopharmaceutiques-a-partir-de-sources-ouvertes-c3po-3"
  },
+ "41cb3636c84d": {
+  "examine_le": "2026-09-26",
+  "statut": "sans_licence",
+  "url": "https://www.lilygo.cc/"
+ },
  "42262fd9b018": {
   "examine_le": "2026-09-25",
   "statut": "sans_licence",
   "url": "https://github.com/gauchitodev/sway-deere"
+ },
+ "42acfdb799ca": {
+  "examine_le": "2026-09-26",
+  "score": 56,
+  "statut": "propose",
+  "url": "https://github.com/pratikkayal/PlantDoc-Dataset"
  },
  "42eba7f9ae2b": {
   "examine_le": "2026-09-17",
@@ -531,6 +619,12 @@
   "statut": "propose",
   "url": "https://github.com/Rhizomatic-Systems/Grow-Dojo-Stack"
  },
+ "4b7611ddcb99": {
+  "examine_le": "2026-09-26",
+  "score": 61,
+  "statut": "propose",
+  "url": "https://github.com/WEGA-project/wega-mixer"
+ },
  "4ba1415fa9a1": {
   "examine_le": "2026-09-17",
   "score": 75,
@@ -548,6 +642,11 @@
   "statut": "sans_licence",
   "url": "https://discourse.agopengps.com/"
  },
+ "4d6815c83641": {
+  "examine_le": "2026-09-26",
+  "statut": "sans_licence",
+  "url": "https://m5stack.com/"
+ },
  "4df5badd8410": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
@@ -557,6 +656,11 @@
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
   "url": "https://huggingface.co/datasets/anhbui80103/crop"
+ },
+ "50069a9ea2da": {
+  "examine_le": "2026-09-26",
+  "statut": "sans_licence",
+  "url": "https://github.com/mudpi/mudpi-core"
  },
  "500a3e714c7c": {
   "examine_le": "2026-09-17",
@@ -579,6 +683,12 @@
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
   "url": "https://github.com/trbureiyan/MaqAgr"
+ },
+ "50d0999a074b": {
+  "examine_le": "2026-09-26",
+  "score": 61,
+  "statut": "propose",
+  "url": "https://github.com/WEGA-project/wegabox"
  },
  "51f3b42f751b": {
   "examine_le": "2026-09-17",
@@ -647,6 +757,12 @@
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
   "url": "https://huggingface.co/Malak-W/plant-disease-model"
+ },
+ "58805a970b6d": {
+  "examine_le": "2026-09-26",
+  "score": 52,
+  "statut": "quarantaine",
+  "url": "https://github.com/potnanny/application"
  },
  "58c09f325cbd": {
   "examine_le": "2026-09-26",
@@ -798,6 +914,12 @@
   "statut": "sans_licence",
   "url": "https://arxiv.org/abs/2405.02218"
  },
+ "6db5faba4465": {
+  "examine_le": "2026-09-26",
+  "score": 92,
+  "statut": "propose",
+  "url": "https://github.com/JakeTheRabbit/HA-Irrigation-Strategy"
+ },
  "6e9e4ec31186": {
   "examine_le": "2026-09-26",
   "statut": "sans_licence",
@@ -845,6 +967,11 @@
   "statut": "sans_licence",
   "url": "https://huggingface.co/akshat1363/v6-plant-disease-backup"
  },
+ "745c67b1da73": {
+  "examine_le": "2026-09-26",
+  "statut": "sans_licence",
+  "url": "https://pulsegrow.com/blogs/learn/vpd"
+ },
  "74bab0b644da": {
   "examine_le": "2026-09-26",
   "statut": "sans_licence",
@@ -876,6 +1003,17 @@
   "score": 88,
   "statut": "propose",
   "url": "https://www.data.gouv.fr/datasets/pesticides-nombre-de-doses-unites-nodu"
+ },
+ "786e6048477a": {
+  "examine_le": "2026-09-26",
+  "statut": "sans_licence",
+  "url": "https://github.com/hydromisc/hydromisc"
+ },
+ "7871be84126d": {
+  "examine_le": "2026-09-26",
+  "score": 74,
+  "statut": "propose",
+  "url": "https://github.com/WEGA-project/wega-hpg"
  },
  "78c46482800d": {
   "examine_le": "2026-09-25",
@@ -975,10 +1113,25 @@
   "statut": "sans_licence",
   "url": "https://data.mendeley.com/datasets/znsxdctwtt/1"
  },
+ "810774bc1541": {
+  "examine_le": "2026-09-26",
+  "statut": "sans_licence",
+  "url": "https://github.com/danielfppps/hydrobuddy"
+ },
+ "81e2b9ff0dbc": {
+  "examine_le": "2026-09-26",
+  "statut": "sans_licence",
+  "url": "https://github.com/morenoh149/plantdisease"
+ },
  "82c0a1534c14": {
   "examine_le": "2026-09-26",
   "statut": "sans_licence",
   "url": "https://openhydroponics.com/"
+ },
+ "84386342a004": {
+  "examine_le": "2026-09-26",
+  "statut": "sans_licence",
+  "url": "https://github.com/myduino/Industrial-Soil-Sensor-RS485"
  },
  "84b5d43845aa": {
   "examine_le": "2026-09-17",
@@ -1011,6 +1164,12 @@
   "statut": "propose",
   "url": "https://rsn.umn.edu/projects/orchard-monitoring/minneapple"
  },
+ "87d4dc7aa233": {
+  "examine_le": "2026-09-26",
+  "score": 70,
+  "statut": "propose",
+  "url": "https://github.com/LucidEye/Tasmota-Hydroponics-Controller"
+ },
  "88897eb1ba48": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
@@ -1031,11 +1190,22 @@
   "statut": "sans_licence",
   "url": "https://github.com/SAMBIT-318/AI-BASED-FERTILIZER-AND-INPUT-USAGE-OPTIMIZATION"
  },
+ "8af57000f157": {
+  "examine_le": "2026-09-26",
+  "score": 87,
+  "statut": "propose",
+  "url": "https://github.com/influxdata/telegraf"
+ },
  "8b015180c890": {
   "examine_le": "2026-09-25",
   "score": 95,
   "statut": "propose",
   "url": "https://github.com/Lib1221/Smart_Gebere"
+ },
+ "8b4ece0cf5c7": {
+  "examine_le": "2026-09-26",
+  "statut": "sans_licence",
+  "url": "https://www.seeedstudio.com/"
  },
  "8bd6ed6c9a5d": {
   "examine_le": "2026-09-17",
@@ -1076,6 +1246,12 @@
   "statut": "propose",
   "url": "https://github.com/brycejohnston/evapotranspiration"
  },
+ "933f78c13fae": {
+  "examine_le": "2026-09-26",
+  "score": 85,
+  "statut": "propose",
+  "url": "https://github.com/Olen/home-assistant-openplantbook"
+ },
  "9564f66ddc16": {
   "examine_le": "2026-09-26",
   "statut": "sans_licence",
@@ -1095,6 +1271,11 @@
   "examine_le": "2026-09-26",
   "statut": "sans_licence",
   "url": "https://www.kaggle.com/yuzhenlu/cottonweedid15"
+ },
+ "96eec5c18cb4": {
+  "examine_le": "2026-09-26",
+  "statut": "sans_licence",
+  "url": "https://github.com/OpenGrow-Box/OpenGrowBox-HA"
  },
  "973fc53d24cd": {
   "examine_le": "2026-09-17",
@@ -1234,6 +1415,11 @@
   "statut": "sans_licence",
   "url": "https://huggingface.co/datasets/QtahaQ/CropAndWeed-Stage1-YOLO-Detection"
  },
+ "aa3654ebb066": {
+  "examine_le": "2026-09-26",
+  "statut": "sans_licence",
+  "url": "https://github.com/TheRealFalseReality/Aquaponics_Pool_Kit-AtlasScientific"
+ },
  "aa4052ddabda": {
   "examine_le": "2026-09-17",
   "score": 88,
@@ -1250,6 +1436,11 @@
   "score": 87,
   "statut": "propose",
   "url": "https://github.com/Ryson-Theo/CropVector"
+ },
+ "af814b819dfa": {
+  "examine_le": "2026-09-26",
+  "statut": "sans_licence",
+  "url": "https://github.com/fraxinas/sdi12-esphome"
  },
  "af85050e5d73": {
   "examine_le": "2026-09-21",
@@ -1296,6 +1487,18 @@
   "statut": "propose",
   "url": "https://github.com/MatteoBertagni/SMEW"
  },
+ "b4d4c2caa2cb": {
+  "examine_le": "2026-09-26",
+  "score": 82,
+  "statut": "propose",
+  "url": "https://github.com/rgc99/irrigation_unlimited"
+ },
+ "b4e2bc39a2da": {
+  "examine_le": "2026-09-26",
+  "score": 87,
+  "statut": "propose",
+  "url": "https://github.com/kizniche/Mycodo"
+ },
  "b739e5146c9e": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
@@ -1339,6 +1542,12 @@
   "statut": "sans_licence",
   "url": "https://huggingface.co/uhuru-jonathan/agrisonic-plant-disease-yolov11x"
  },
+ "bbe91a559831": {
+  "examine_le": "2026-09-26",
+  "score": 55,
+  "statut": "propose",
+  "url": "https://github.com/adamalfath/sentsor-core-esp32embed"
+ },
  "bdbfef5aab7b": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
@@ -1370,6 +1579,12 @@
   "score": 76,
   "statut": "propose",
   "url": "https://huggingface.co/adaniele/Agriculture-DelAny-v2-Sentinel"
+ },
+ "c019b96c5529": {
+  "examine_le": "2026-09-26",
+  "score": 89,
+  "statut": "propose",
+  "url": "https://github.com/dwot/isley"
  },
  "c040763a4434": {
   "examine_le": "2026-09-26",
@@ -1417,6 +1632,18 @@
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
   "url": "https://github.com/ai-agriculture-circuits-and-systems/embrapa_wgisd_grape_detection"
+ },
+ "c52f90dd290a": {
+  "examine_le": "2026-09-26",
+  "score": 74,
+  "statut": "propose",
+  "url": "https://github.com/OpenSprinkler/OpenSprinkler-Hardware"
+ },
+ "c6999c288cc6": {
+  "examine_le": "2026-09-26",
+  "score": 87,
+  "statut": "propose",
+  "url": "https://github.com/Olen/homeassistant-plant"
  },
  "c6c62295bb1e": {
   "examine_le": "2026-09-17",
@@ -1540,6 +1767,17 @@
   "statut": "quarantaine",
   "url": "https://github.com/0xcb-dev/0xcb-1337"
  },
+ "d043f358cf95": {
+  "examine_le": "2026-09-26",
+  "score": 76,
+  "statut": "propose",
+  "url": "https://github.com/EnviroDIY/Arduino-SDI-12"
+ },
+ "d0542040c35b": {
+  "examine_le": "2026-09-26",
+  "statut": "sans_licence",
+  "url": "https://github.com/reef-pi/reef-pi"
+ },
  "d08b5b334edf": {
   "examine_le": "2026-09-26",
   "statut": "sans_licence",
@@ -1577,6 +1815,11 @@
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
   "url": "https://github.com/AstroBesat-SoftW/Smart-Plant-IoT"
+ },
+ "d71b62efe890": {
+  "examine_le": "2026-09-26",
+  "statut": "sans_licence",
+  "url": "https://github.com/Makerfabs/Lora-Soil-Moisture-Sensor"
  },
  "d90aeaa302bc": {
   "examine_le": "2026-09-21",
@@ -1650,6 +1893,11 @@
   "statut": "sans_licence",
   "url": "https://huggingface.co/datasets/haokaixinmeitiandouhaokaixin/crop-paired-visual-evidence"
  },
+ "dfa54119e237": {
+  "examine_le": "2026-09-26",
+  "statut": "sans_licence",
+  "url": "https://github.com/openthc/docker"
+ },
  "dfaa8673abfd": {
   "examine_le": "2026-09-17",
   "score": 91,
@@ -1666,6 +1914,12 @@
   "statut": "sans_licence",
   "url": "https://github.com/acidcanyonllc-byte/apisnode"
  },
+ "e3ba8834be42": {
+  "examine_le": "2026-09-26",
+  "score": 97,
+  "statut": "propose",
+  "url": "https://github.com/altmenorg/HAsmartirrigation"
+ },
  "e412ded7b3d6": {
   "examine_le": "2026-09-25",
   "score": 76,
@@ -1677,15 +1931,37 @@
   "statut": "sans_licence",
   "url": "https://github.com/farmbot-ros/"
  },
+ "e5b5fddf21ea": {
+  "examine_le": "2026-09-26",
+  "statut": "sans_licence",
+  "url": "https://github.com/cropsteering/OS-RS485"
+ },
  "e5ca783800cc": {
   "examine_le": "2026-09-26",
   "statut": "sans_licence",
   "url": "https://zenodo.org/record/7535814"
  },
+ "e6b9e8dd51b6": {
+  "examine_le": "2026-09-26",
+  "score": 60,
+  "statut": "propose",
+  "url": "https://github.com/ledgardener/gardenAutomation"
+ },
+ "e6d98f8bb1b8": {
+  "examine_le": "2026-09-26",
+  "score": 81,
+  "statut": "propose",
+  "url": "https://github.com/dalinicus/homeassistant-acinfinity"
+ },
  "e801865e94cb": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
   "url": "https://huggingface.co/kamal3501/gemma-4-agriculture-qa"
+ },
+ "e99c5568653d": {
+  "examine_le": "2026-09-26",
+  "statut": "sans_licence",
+  "url": "https://atlas-scientific.com/probes/"
  },
  "ec10ca910ba2": {
   "examine_le": "2026-09-17",
@@ -1697,6 +1973,11 @@
   "statut": "sans_licence",
   "url": "https://github.com/Undisciplined-alchemist8546/jiofarm"
  },
+ "ecad9e64fa42": {
+  "examine_le": "2026-09-26",
+  "statut": "sans_licence",
+  "url": "https://github.com/njhughes-01/nodeRed-HA-GrowingFunctions"
+ },
  "ed12b18e74bb": {
   "examine_le": "2026-09-26",
   "statut": "sans_licence",
@@ -1707,6 +1988,11 @@
   "score": 92,
   "statut": "propose",
   "url": "https://github.com/peopleandpixel/agrocore-rs"
+ },
+ "ed95ee3ae340": {
+  "examine_le": "2026-09-26",
+  "statut": "sans_licence",
+  "url": "https://www.rakwireless.com/en-us/products/wisblock"
  },
  "f1b263654b5b": {
   "examine_le": "2026-09-17",
@@ -1728,6 +2014,11 @@
   "statut": "sans_licence",
   "url": "https://www.data.gouv.fr/datasets/cadastre-agricole-en-guadeloupe-1"
  },
+ "f40a10f01103": {
+  "examine_le": "2026-09-26",
+  "statut": "sans_licence",
+  "url": "https://github.com/drolsen/DRO-Matic"
+ },
  "f46227891744": {
   "examine_le": "2026-09-26",
   "score": 71,
@@ -1745,6 +2036,12 @@
   "score": 73,
   "statut": "propose",
   "url": "https://github.com/FarmBot/farmbot-arduino-firmware"
+ },
+ "f62af1142116": {
+  "examine_le": "2026-09-26",
+  "score": 83,
+  "statut": "propose",
+  "url": "https://github.com/theyosh/TerrariumPI"
  },
  "f743afcdbf75": {
   "examine_le": "2026-09-26",

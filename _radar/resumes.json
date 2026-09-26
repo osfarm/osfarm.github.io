@@ -13,6 +13,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Jeu de données partiel sur les indemnisations d'assurance récolte aux États-Unis entre 1989 et 2023. Il contient un échantillon de 1 000 lignes extraites d'un jeu de 4 173 884 lignes."
  },
+ "051485381c9e": {
+  "famille": "logiciel",
+  "id": "051485381c9e",
+  "interet": "Centraliser et automatiser la gestion des environnements de culture.",
+  "mots_cles": [
+   "automatisation",
+   "culture",
+   "domotique",
+   "environnement",
+   "home assistant"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce projet centralise des automatisations liées à la culture dans Home Assistant. Il permet de gérer des environnements de culture automatisés."
+ },
  "06aa4105ce69": {
   "famille": "logiciel",
   "id": "06aa4105ce69",
@@ -58,6 +73,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Ce jeu de données présente un bilan carbone des espaces naturels, agricoles et forestiers en Provence-Alpes-Côte d'Azur. Il inclut des outils d'aide à la décision accompagnés par la Région."
  },
+ "0e418fdb1777": {
+  "famille": "logiciel",
+  "id": "0e418fdb1777",
+  "interet": "Gérer et automatiser des systèmes de culture hydroponique hors ligne.",
+  "mots_cles": [
+   "arduino",
+   "automatisation",
+   "hydroponie",
+   "microcontrôleur",
+   "système hors ligne"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce projet contrôle l'hydroponie via des microcontrôleurs Arduino compatibles, sans dépendance au cloud. Il permet de gérer des systèmes de culture hydroponique."
+ },
  "0f9f451e065a": {
   "famille": "logiciel",
   "id": "0f9f451e065a",
@@ -85,6 +115,21 @@
   "pertinence": "non",
   "redige_par": "mistral-small-latest",
   "resume": ""
+ },
+ "128b761953a7": {
+  "famille": "logiciel",
+  "id": "128b761953a7",
+  "interet": "Surveiller les conditions du substrat pour optimiser l'irrigation et la nutrition des plantes.",
+  "mots_cles": [
+   "capteur",
+   "substrat",
+   "humidité",
+   "conductivité électrique",
+   "température"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Outil logiciel pour mesurer l'humidité, la conductivité électrique et la température dans des substrats. Il traite les données des capteurs TDR."
  },
  "154b3e2f57f8": {
   "famille": "donnees",
@@ -324,6 +369,36 @@
   "redige_par": "mistral-small-latest",
   "resume": "Ce modèle prédit les maladies des cultures à partir de données agricoles. Il utilise des techniques d'apprentissage automatique pour identifier des risques pathogènes."
  },
+ "31c6c9f55417": {
+  "famille": "logiciel",
+  "id": "31c6c9f55417",
+  "interet": "Permet l'acquisition automatisée de données environnementales pour le suivi des cultures.",
+  "mots_cles": [
+   "esp32",
+   "sdi-12",
+   "capteurs-environnementaux",
+   "microcontrôleur",
+   "agriculture-numérique"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Bibliothèque SDI-12 pour microcontrôleurs ESP32. Elle permet de communiquer avec des capteurs environnementaux."
+ },
+ "31eeeefd3298": {
+  "famille": "logiciel",
+  "id": "31eeeefd3298",
+  "interet": "Permet de suivre et ajuster les conditions de culture en fonction des données des substrats.",
+  "mots_cles": [
+   "esp32",
+   "esphome",
+   "capteurs-substrat",
+   "home-assistant",
+   "surveillance-culture"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Configuration logicielle pour lire des capteurs de substrat via ESP32/ESPHome et transmettre les données à Home Assistant. Il permet de surveiller l'humidité, la conductivité électrique et la température des substrats comme la fibre de coco ou la laine de roche."
+ },
  "322faf8de68d": {
   "famille": "materiel",
   "id": "322faf8de68d",
@@ -338,6 +413,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Dispositif de surveillance d'insectes basé sur un Raspberry Pi et une caméra haute résolution, permettant une collecte et une analyse automatique d'images. Il facilite le suivi des populations d'insectes sur le terrain."
+ },
+ "32888cadfa8b": {
+  "famille": "logiciel",
+  "id": "32888cadfa8b",
+  "interet": "",
+  "mots_cles": [
+   "cannabis",
+   "données-laboratoire",
+   "analyse",
+   "flux-données",
+   "open-source"
+  ],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": "Outil open source de traitement de données et d'analyse pour les laboratoires spécialisés dans le cannabis. Il permet de gérer des flux de données et des analyses en lien avec la production de cannabis."
  },
  "33496b925a05": {
   "famille": "donnees",
@@ -414,6 +504,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Bibliothèque JavaScript pour authentifier et envoyer des instructions RPC à un FarmBot. Elle facilite l'interaction avec le système via des requêtes normalisées."
  },
+ "3fd29a1ddf82": {
+  "famille": "materiel",
+  "id": "3fd29a1ddf82",
+  "interet": "Mesurer précisément l'humidité du sol pour ajuster l'irrigation.",
+  "mots_cles": [
+   "capteur",
+   "humidité du sol",
+   "I2C",
+   "open-hardware",
+   "microcontrôleur"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Conception open-hardware d'un capteur capacitif d'humidité du sol en communication I2C. Il est compatible avec des microcontrôleurs AVR."
+ },
  "418fd35c853a": {
   "famille": "donnees",
   "id": "418fd35c853a",
@@ -428,6 +533,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Ce projet compile des données ouvertes sur les substances actives des produits phytopharmaceutiques et leurs impacts documentés. Il permet d'accéder à des références issues de sources variées pour analyser les risques associés."
+ },
+ "42acfdb799ca": {
+  "famille": "donnees",
+  "id": "42acfdb799ca",
+  "interet": "Entraîner des modèles de détection de maladies végétales pour améliorer la surveillance des cultures.",
+  "mots_cles": [
+   "maladie végétale",
+   "détection visuelle",
+   "dataset",
+   "images annotées",
+   "apprentissage automatique"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Jeu de données pour la détection visuelle de maladies végétales en conditions réelles. Il contient des images annotées de plantes malades."
  },
  "42eba7f9ae2b": {
   "famille": "logiciel",
@@ -473,6 +593,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Ce projet propose une pile logicielle modulaire pour l'automatisation agricole, adaptée à différents systèmes comme l'hydroponie, l'aquaponie ou l'agriculture traditionnelle. Il met l'accent sur la sécurité et la flexibilité."
+ },
+ "4b7611ddcb99": {
+  "famille": "matériel",
+  "id": "4b7611ddcb99",
+  "interet": "Automatiser la préparation de mélanges fertilisants adaptés à des besoins agricoles spécifiques.",
+  "mots_cles": [
+   "mélangeur",
+   "engrais",
+   "dosage",
+   "fertilisation",
+   "liquide"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "WEGA-Mixer est un appareil conçu pour préparer automatiquement des engrais liquides complexes à deux composants en mélangeant précisément leur composition. Il permet de doser et mélanger des solutions fertilisantes selon des proportions définies."
  },
  "4ba1415fa9a1": {
   "famille": "logiciel",
@@ -533,6 +668,20 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Ce modèle classifie les intentions en agriculture dans plusieurs langues (hindi, punjabi) en utilisant des techniques d'adaptation de modèles BERT. Il est conçu pour des applications multilingues."
+ },
+ "50d0999a074b": {
+  "famille": "logiciel",
+  "id": "50d0999a074b",
+  "interet": "Automatiser la gestion des cultures hors-sol en ajustant les conditions de croissance.",
+  "mots_cles": [
+   "hydroponie",
+   "automatisation",
+   "gestion",
+   "culture hors-sol"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Outil de gestion pour systèmes hydroponiques automatisés. Il permet de contrôler et surveiller les paramètres de culture hors-sol."
  },
  "52fd55c68cfd": {
   "famille": "modele",
@@ -652,6 +801,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Démarche visant à auditer, optimiser et partager une base de données régionale sur la ressource en eau. Elle inclut la création d'une application de consultation et contribution."
  },
+ "6db5faba4465": {
+  "famille": "logiciel",
+  "id": "6db5faba4465",
+  "interet": "Adapter l'irrigation aux différentes phases de croissance des plantes.",
+  "mots_cles": [
+   "irrigation",
+   "automatisation",
+   "phases de croissance",
+   "configuration",
+   "serre"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Stratégie d'irrigation automatisée pour cultures (phases P0-P3) avec interface graphique dans Home Assistant. Elle permet de configurer des règles d'arrosage."
+ },
  "713e478bf2a1": {
   "famille": "logiciel",
   "id": "713e478bf2a1",
@@ -696,6 +860,18 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Cet indicateur calcule le nombre de doses unités (NODU) pour les substances actives des pesticides. Il repose sur le ratio entre la quantité de substance active et la dose maximale autorisée par hectare."
+ },
+ "7871be84126d": {
+  "famille": "logiciel",
+  "id": "7871be84126d",
+  "interet": "",
+  "mots_cles": [
+   "calculateur",
+   "outil-numerique"
+  ],
+  "pertinence": "inconnu",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
  },
  "78c46482800d": {
   "famille": "logiciel",
@@ -829,6 +1005,36 @@
   "redige_par": "mistral-small-latest",
   "resume": "Jeu de données dédié à la détection et à la segmentation des pommes pour l'estimation du rendement. Contient des résultats représentatifs pour des algorithmes de comptage."
  },
+ "87d4dc7aa233": {
+  "famille": "logiciel",
+  "id": "87d4dc7aa233",
+  "interet": "Automatise le contrôle des conditions environnementales pour les cultures en intérieur ou hydroponiques.",
+  "mots_cles": [
+   "tasmota",
+   "berry",
+   "hydroponie",
+   "automatisation-culture",
+   "esp32"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Scripts pour contrôler des équipements de culture sous serre ou hydroponique via Tasmota Berry. Il permet de gérer l'éclairage, la pompe, l'humidificateur et les ventilateurs."
+ },
+ "8af57000f157": {
+  "famille": "logiciel",
+  "id": "8af57000f157",
+  "interet": "",
+  "mots_cles": [
+   "métriques",
+   "collecte de données",
+   "capteurs",
+   "transmission",
+   "systèmes"
+  ],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
  "8b015180c890": {
   "famille": "logiciel",
   "id": "8b015180c890",
@@ -901,6 +1107,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Bibliothèque Ruby calculant l'évapotranspiration de référence des cultures (ETo). Elle fournit des outils pour estimer les besoins en eau des plantes."
+ },
+ "933f78c13fae": {
+  "famille": "logiciel",
+  "id": "933f78c13fae",
+  "interet": "Automatiser la gestion des besoins spécifiques des plantes en fonction de leur espèce.",
+  "mots_cles": [
+   "automatisation",
+   "plantes",
+   "seuils",
+   "soins",
+   "domotique"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce projet récupère des seuils de soins par espèce depuis OpenPlantbook.io. Il permet d'automatiser des actions liées aux plantes dans un système domotique."
  },
  "9a6daf1af2ab": {
   "famille": "donnees",
@@ -1073,6 +1294,36 @@
   "redige_par": "mistral-small-latest",
   "resume": "Modèle numérique simulant les dynamiques biogéochimiques et hydrologiques des sols pour l'étude du stockage du carbone. Il se concentre sur les couches superficielles du sol."
  },
+ "b4d4c2caa2cb": {
+  "famille": "logiciel",
+  "id": "b4d4c2caa2cb",
+  "interet": "Automatiser et optimiser l'irrigation des cultures.",
+  "mots_cles": [
+   "arrosage",
+   "automatisation",
+   "irrigation",
+   "saisons",
+   "zones"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce projet contrôle l'irrigation avec de nombreuses zones, séquences et ajustements saisonniers. Il permet de gérer des systèmes d'arrosage automatisés."
+ },
+ "b4e2bc39a2da": {
+  "famille": "logiciel",
+  "id": "b4e2bc39a2da",
+  "interet": "Automatiser et optimiser les conditions de culture en fonction de données mesurées.",
+  "mots_cles": [
+   "automatisation",
+   "contrôle environnemental",
+   "culture",
+   "Raspberry Pi",
+   "surveillance"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Logiciel open source pour Raspberry Pi permettant de contrôler et surveiller des environnements de culture. Il relie des entrées et sorties pour agir sur l'environnement."
+ },
  "b78b7fffd539": {
   "famille": "donnees",
   "id": "b78b7fffd539",
@@ -1103,6 +1354,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Données annuelles d'achats de pesticides par code postal en France, déclarées par les distributeurs. Elles permettent de suivre les achats sur le territoire."
  },
+ "bbe91a559831": {
+  "famille": "matériel",
+  "id": "bbe91a559831",
+  "interet": "",
+  "mots_cles": [
+   "carte électronique",
+   "esp32",
+   "microcontrôleur",
+   "low-power",
+   "iot"
+  ],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": "SENTSOR Core ESP32-EMBED est une carte de développement tout-en-un à très faible consommation basée sur le microcontrôleur ESP32. Elle inclut des plans de circuit imprimé et une liste de composants pour une reproduction facile."
+ },
  "bf026b463fac": {
   "famille": "logiciel",
   "id": "bf026b463fac",
@@ -1130,6 +1396,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Ce modèle réalise une segmentation d'instances pour délimiter les parcelles agricoles à partir d'images Sentinel-2. Il utilise des techniques de télédétection et de géospatial."
+ },
+ "c019b96c5529": {
+  "famille": "logiciel",
+  "id": "c019b96c5529",
+  "interet": "Surveiller et ajuster les conditions de culture en temps réel.",
+  "mots_cles": [
+   "journal de culture",
+   "suivi de capteurs",
+   "auto-hébergement",
+   "plantes",
+   "environnement"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Journal de culture auto-hébergé pour plantes, incluant le suivi de capteurs pour contrôleurs et sondes de sol. Il enregistre les données environnementales."
  },
  "c06242af2862": {
   "famille": "logiciel",
@@ -1160,6 +1441,36 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Bibliothèque TypeScript non officielle pour interagir avec l'API du John Deere Operations Center. Elle permet d'accéder aux données et fonctionnalités de gestion des opérations agricoles de John Deere."
+ },
+ "c52f90dd290a": {
+  "famille": "materiel",
+  "id": "c52f90dd290a",
+  "interet": "Construire un système d'irrigation automatisé pour optimiser l'utilisation de l'eau.",
+  "mots_cles": [
+   "irrigation",
+   "automatisation",
+   "open-source",
+   "électronique",
+   "conception matérielle"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Fichiers de conception matérielle pour un système d'arrosage automatisé open-source. Il inclut les plans électroniques et mécaniques."
+ },
+ "c6999c288cc6": {
+  "famille": "logiciel",
+  "id": "c6999c288cc6",
+  "interet": "Adapter les soins aux besoins spécifiques des plantes en fonction de leur espèce.",
+  "mots_cles": [
+   "suivi des plantes",
+   "seuils",
+   "espèces",
+   "lumière",
+   "automatisation"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Composant alternatif pour Home Assistant dédié au suivi des plantes avec seuils et données d'espèces. Il calcule l'intégrale lumineuse quotidienne."
  },
  "c6c62295bb1e": {
   "famille": "donnees",
@@ -1304,6 +1615,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Jeu de données ouvert et à grande échelle pour prédire les rendements agricoles en fonction des changements climatiques aux États-Unis. Le jeu de données est conçu pour des modèles d'apprentissage profond."
+ },
+ "d043f358cf95": {
+  "famille": "logiciel",
+  "id": "d043f358cf95",
+  "interet": "Facilite la collecte automatisée de données environnementales pour le suivi des cultures.",
+  "mots_cles": [
+   "arduino",
+   "sdi-12",
+   "capteurs-environnementaux",
+   "mesures-automatisées",
+   "bibliothèque"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Bibliothèque Arduino pour communiquer avec des capteurs environnementaux via le protocole SDI-12. Elle permet de récupérer des mesures sans matériel supplémentaire."
  },
  "d4c44d87cabb": {
   "famille": "donnees",
@@ -1468,6 +1794,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Ce jeu de données détaille la répartition des surfaces agricoles utilisées par type de culture au niveau intercommunal. Il indique la composition des surfaces pour chaque EPCI."
  },
+ "e3ba8834be42": {
+  "famille": "logiciel",
+  "id": "e3ba8834be42",
+  "interet": "Optimiser l'apport en eau des cultures en fonction des conditions climatiques.",
+  "mots_cles": [
+   "irrigation",
+   "évapotranspiration",
+   "calcul",
+   "eau",
+   "culture"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Outil de calcul de la durée et du volume d'irrigation à partir de données d'évapotranspiration. Il détermine les besoins en eau des cultures."
+ },
  "e412ded7b3d6": {
   "famille": "modele",
   "id": "e412ded7b3d6",
@@ -1482,6 +1823,36 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Ce modèle de génération de texte est adapté à des applications agricoles au Malawi en utilisant des techniques de fine-tuning (LoRA) sur Qwen2. Il est compatible avec des endpoints de génération de texte."
+ },
+ "e6b9e8dd51b6": {
+  "famille": "logiciel",
+  "id": "e6b9e8dd51b6",
+  "interet": "Automatiser les tâches de jardinage pour maintenir des conditions de croissance optimales.",
+  "mots_cles": [
+   "automatisation",
+   "jardin",
+   "serre",
+   "arrosage",
+   "éclairage"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Outil d'automatisation pour jardins et cultures sous serre. Il permet de gérer des systèmes d'arrosage et d'éclairage."
+ },
+ "e6d98f8bb1b8": {
+  "famille": "logiciel",
+  "id": "e6d98f8bb1b8",
+  "interet": "Automatiser le contrôle des conditions dans des tentes de culture.",
+  "mots_cles": [
+   "automatisation",
+   "culture",
+   "domotique",
+   "tente de culture",
+   "home assistant"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce projet intègre les contrôleurs de tente de culture AC Infinity dans Home Assistant. Il permet de gérer des tentes de culture automatisées."
  },
  "ed382ff29f67": {
   "famille": "logiciel",
@@ -1527,6 +1898,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Firmware pour Arduino exécutant des commandes de type G-code pour déplacer un FarmBot et actionner l'outil monté. Il gère les mouvements et les opérations mécaniques."
+ },
+ "f62af1142116": {
+  "famille": "logiciel",
+  "id": "f62af1142116",
+  "interet": "Contrôler et optimiser les conditions de culture dans des environnements clos.",
+  "mots_cles": [
+   "automatisation",
+   "climat",
+   "culture",
+   "environnement clos",
+   "raspberry pi"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce projet automatise les environnements clos (climat, éclairage, arrosage, caméras) via un Raspberry Pi. Il permet de contrôler des espaces de culture fermés."
  },
  "f743afcdbf75": {
   "famille": "logiciel",
