@@ -1,0 +1,717 @@
+# Lot du radar OSFarm. Passer « publier » à false pour écarter une fiche,
+# corriger « resume » au besoin. La fusion de la pull request publie le reste.
+date: '2026-09-26'
+liste: awesome-agriculture
+examines: 62
+retenus: 19
+rejets:
+  deja_vu: 1
+  deja_sur_le_site: 1
+  licence: 39
+  score: 2
+pannes: []
+candidats:
+- id: c9a1e573680a
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: Botanica
+  url: https://github.com/Michael-A-Kuykendall/botanica
+  description: Production-ready Rust crate for professional botanical data management with taxonomic hierarchy,
+    cultivation tracking, and Darwin Core compliance.
+  licence: apache-2.0
+  date_maj: '2026-08-28'
+  techno: HTML
+  popularite: 21
+  mots_cles:
+  - Data Standardization, Interoperability and APIs
+  - agriculture
+  - botanical-classification
+  - botanical-research
+  - botany
+  - database
+  - farming
+  - greenhouse-management
+  score: 98
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farming'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-09-26'
+  publier: false
+  resume: Bibliothèque Rust pour la gestion de données botaniques professionnelles incluant une hiérarchie
+    taxonomique et un suivi de culture. Elle permet de structurer et d'échanger des données botaniques
+    selon des standards reconnus.
+  interet: Facilite la gestion et l'interopérabilité des données botaniques en agriculture.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - botanique
+  - gestion de données
+  - taxonomie
+  - standardisation
+  - interopérabilité
+- id: 5b95fc1b97f1
+  famille: donnees
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: frostline
+  url: https://github.com/waldoj/frostline
+  description: A dataset, API, and python parser for USDA plant hardiness zones.
+  licence: mit
+  date_maj: '2026-09-08'
+  techno: HTML
+  popularite: 165
+  mots_cles:
+  - Climate, Environment and Weather
+  - api
+  - farm
+  - garden
+  - plants
+  - usda
+  score: 93
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : farm, weather'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Jeu de données, API et parseur Python fournissant les zones de rusticité des plantes selon la
+    classification USDA. Il permet d'accéder à des informations climatiques utiles pour le choix des cultures.
+  interet: Aide à la sélection des cultures adaptées aux conditions climatiques locales.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  famille_initiale: logiciel
+  mots_cles_fr:
+  - zones de rusticité
+  - climat
+  - plantes
+  - données géographiques
+  - usda
+- id: dc7c016fb424
+  famille: modele
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: pyTSEB
+  url: https://github.com/hectornieto/pyTSEB
+  description: A python two source energy balance model for estimation of evapotranspiration with remote
+    sensing data.
+  licence: gpl-3.0
+  date_maj: '2026-09-24'
+  techno: Jupyter Notebook
+  popularite: 171
+  mots_cles:
+  - Climate, Environment and Weather
+  - canopy
+  - evapotranspiration
+  - heat
+  - radiometric-temperatures
+  - satellite-imagery
+  - soil
+  - source-energy-balance
+  score: 92
+  raisons:
+  - licence gpl-3.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : soil, weather'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Modèle Python d'équilibre énergétique à deux sources pour estimer l'évapotranspiration à partir
+    de données de télédétection. Il calcule les flux d'énergie et d'eau dans les couverts végétaux.
+  interet: Permet d'estimer les besoins en eau des cultures pour une gestion optimisée de l'irrigation.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  famille_initiale: logiciel
+  mots_cles_fr:
+  - évapotranspiration
+  - télédétection
+  - flux d'énergie
+  - eau
+  - modélisation
+- id: cf80b1567c4d
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: soilDB
+  url: https://github.com/ncss-tech/soilDB
+  description: R library for simplified access to NCSS soil databases.
+  licence: gpl-3.0
+  date_maj: '2026-09-18'
+  techno: R
+  popularite: 100
+  mots_cles:
+  - Climate, Environment and Weather
+  - kssl
+  - nasis
+  - nrcs
+  - r
+  - soil
+  - soil-data-access
+  - soil-survey
+  score: 90
+  raisons:
+  - licence gpl-3.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : soil, weather'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Bibliothèque R pour accéder de manière simplifiée aux bases de données pédologiques du NCSS.
+    Elle facilite l'extraction et l'analyse des données de sol.
+  interet: Permet d'exploiter des données pédologiques pour évaluer la qualité des sols en agriculture.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - sols
+  - pédologie
+  - bases de données
+  - analyse de données
+  - r
+- id: 8f4ea6f2e79e
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: pyshp
+  url: https://github.com/GeospatialPython/pyshp
+  description: Reads and writes ESRI Shapefiles in pure Python.
+  licence: mit
+  date_maj: '2026-08-18'
+  techno: Python
+  popularite: 1154
+  mots_cles:
+  - Shapefiles
+  score: 85
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-09-26'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - shapefiles
+  - géomatique
+  - format de données
+- id: 1c8a31bf6249
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: iem
+  url: https://github.com/akrherz/iem
+  description: Code that makes the Iowa Environmental Mesonet run.
+  licence: mit
+  date_maj: '2026-09-25'
+  techno: Python
+  popularite: 194
+  mots_cles:
+  - Climate, Environment and Weather
+  - iowa
+  - mesonet
+  - weather
+  score: 84
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : weather'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-09-26'
+  publier: false
+  resume: Code source permettant le fonctionnement du réseau de stations météorologiques Iowa Environmental
+    Mesonet. Il gère la collecte et la diffusion de données météorologiques.
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - météorologie
+  - réseau de stations
+  - données climatiques
+- id: f743afcdbf75
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: Harvest Helper
+  url: https://github.com/damwhit/harvest_helper
+  description: Provides growing, harvesting and recipe information for the 45 plants in the database as
+    well as a JSON API.
+  licence: mit
+  date_maj: '2023-06-06'
+  techno: Ruby
+  popularite: 89
+  mots_cles:
+  - Knowledgebases and Learning Resources
+  - agriculture
+  - farming
+  - recipes
+  - ruby
+  score: 82
+  raisons:
+  - licence mit
+  - aucune activité récente
+  - 'vocabulaire : agriculture, farming, harvest'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Outil fournissant des informations sur la culture, la récolte et des recettes pour 45 plantes
+    via une base de données et une API JSON. Il permet d'accéder à ces données de manière structurée.
+  interet: Ce projet peut servir à informer sur les pratiques culturales et culinaires associées à des
+    plantes spécifiques.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - culture
+  - récolte
+  - recettes
+  - plantes
+  - api
+- id: 7d87f08ce439
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: Raster Vision
+  url: https://github.com/azavea/raster-vision
+  description: Deep learning for aerial/satellite imagery.
+  licence: apache-2.0
+  date_maj: '2026-06-04'
+  techno: Python
+  popularite: 2242
+  mots_cles:
+  - Remote Sensing and Imagery
+  - classification
+  - computer-vision
+  - deep-learning
+  - geospatial
+  - machine-learning
+  - object-detection
+  - pytorch
+  score: 81
+  raisons:
+  - licence apache-2.0
+  - actif (moins d'un an)
+  - 'vocabulaire : geospatial'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Bibliothèque de deep learning dédiée à l'analyse d'images aériennes ou satellites. Elle permet
+    de classer des zones géographiques à partir de ces images.
+  interet: ''
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - imagerie
+  - deep learning
+  - classification
+  - géospatial
+  - télédétection
+- id: 7502092a85dd
+  famille: donnees
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: OpenFarm
+  url: https://github.com/openfarmcc/OpenFarm
+  description: A free and open database for farming and gardening knowledge built with Ruby on Rails.
+  licence: mit
+  date_maj: '2025-04-22'
+  techno: Ruby
+  popularite: 1734
+  mots_cles:
+  - Knowledgebases and Learning Resources
+  - farming
+  - gardening
+  - open-source
+  - plants
+  - rails
+  score: 79
+  raisons:
+  - licence mit
+  - activité ancienne
+  - 'vocabulaire : farming'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Base de données ouverte et collaborative dédiée aux connaissances en agriculture et jardinage.
+    Elle centralise des informations sur les plantes et leurs pratiques associées.
+  interet: Ce projet peut servir à documenter et partager des savoirs agricoles et horticoles.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  famille_initiale: logiciel
+  mots_cles_fr:
+  - base de données
+  - plantes
+  - pratiques culturales
+  - agriculture
+  - jardinage
+- id: 4ad58db7a5f1
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: farm-calculators
+  url: https://github.com/brycejohnston/farm-calculators
+  description: WordPress plugin for calculating various farming and crop related information.
+  licence: gpl-3.0
+  date_maj: '2017-05-01'
+  techno: PHP
+  popularite: 24
+  mots_cles:
+  - Calculators
+  - agriculture
+  - calculator
+  - wordpress-plugin
+  score: 77
+  raisons:
+  - licence gpl-3.0
+  - aucune activité récente
+  - 'vocabulaire : agriculture, farming, crop'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Plugin WordPress permettant de calculer des données liées aux cultures et à l'agriculture. Il
+    propose des outils de calcul spécifiques à ces domaines.
+  interet: ''
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - calculs
+  - cultures
+  - agriculture
+  - wordpress
+  - plugin
+- id: b03623b0ff74
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: Soil Mate
+  url: https://github.com/Open-Source-Agriculture/soil_mate
+  depot: https://github.com/Open-Source-Agriculture/soil_logr
+  description: Helper app designed to assist the collection of soil data.
+  licence: gpl-3.0
+  date_maj: '2021-04-05'
+  techno: Dart
+  popularite: 28
+  mots_cles:
+  - Farm Management Systems and Record Keeping
+  - agriculture
+  - environmental-science
+  - geology
+  - soil
+  - soil-mapping
+  - soil-properties
+  - soil-science
+  score: 77
+  raisons:
+  - licence gpl-3.0
+  - aucune activité récente
+  - 'vocabulaire : agriculture, farm, soil'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Application d'assistance à la collecte de données pédologiques. Elle facilite l'enregistrement
+    et la gestion des informations sur les sols.
+  interet: Ce projet peut servir à documenter et analyser les caractéristiques des sols pour des usages
+    agricoles ou environnementaux.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - sol
+  - collecte de données
+  - pédologie
+  - agriculture
+  - cartographie
+- id: 7f14bbdc5366
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: MyJohnDeereAPI-OAuth2-NodeJS-Example
+  url: https://github.com/JohnDeere/MyJohnDeereAPI-OAuth2-NodeJS-Example
+  depot: https://github.com/JohnDeere/OperationsCenterAPI-OAuth2-NodeJS-Example
+  description: Node.js MyJohnDeere API client example.
+  licence: apache-2.0
+  date_maj: '2026-09-25'
+  techno: JavaScript
+  popularite: 3
+  mots_cles:
+  - Data Standardization, Interoperability and APIs
+  score: 75
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-09-26'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - api
+  - oauth2
+  - node.js
+  - client
+  - exemple
+- id: 92d0a6be249b
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: evapotranspiration
+  url: https://github.com/brycejohnston/evapotranspiration
+  description: Ruby library for calculating reference crop evapotranspiration (ETo).
+  licence: bsd-3-clause
+  date_maj: '2017-08-30'
+  techno: Ruby
+  popularite: 15
+  mots_cles:
+  - Climate, Environment and Weather
+  - agriculture
+  - evapotranspiration
+  - ruby
+  score: 71
+  raisons:
+  - licence bsd-3-clause
+  - aucune activité récente
+  - 'vocabulaire : agriculture, crop, weather'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Bibliothèque Ruby calculant l'évapotranspiration de référence des cultures (ETo). Elle fournit
+    des outils pour estimer les besoins en eau des plantes.
+  interet: Permet d'évaluer les besoins en irrigation des cultures en fonction des conditions climatiques.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - évapotranspiration
+  - besoins en eau
+  - climat
+  - ruby
+  - irrigation
+- id: bf026b463fac
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: rgeo-shapefile
+  url: https://github.com/rgeo/rgeo-shapefile
+  description: RGeo Shapefile is an optional module for RGeo for reading geospatial data from ESRI shapefiles
+    in Ruby.
+  licence: bsd-3-clause
+  date_maj: '2024-10-10'
+  techno: Ruby
+  popularite: 98
+  mots_cles:
+  - Shapefiles
+  score: 69
+  raisons:
+  - licence bsd-3-clause
+  - activité ancienne
+  - 'vocabulaire : geospatial'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-09-26'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - shapefile
+  - géospatial
+  - ruby
+- id: 2cb7bccd97e4
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: agroclimatology
+  url: https://github.com/brycejohnston/agroclimatology
+  description: Ruby client for interacting with the NASA (POWER) Agroclimatology Web Resource.
+  licence: mit
+  date_maj: '2017-08-30'
+  techno: Ruby
+  popularite: 20
+  mots_cles:
+  - Climate, Environment and Weather
+  - agriculture
+  - climate
+  - nasa
+  - ruby
+  - solar-radiation
+  score: 65
+  raisons:
+  - licence mit
+  - aucune activité récente
+  - 'vocabulaire : agriculture, weather'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Client Ruby pour interagir avec la ressource agroclimatologique NASA (POWER). Il permet d'accéder
+    à des données climatiques et solaires.
+  interet: Fournit des données climatiques utiles pour évaluer les conditions de croissance des cultures.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - climat
+  - données agroclimatiques
+  - nasa
+  - ruby
+  - rayonnement solaire
+- id: 2abbce3fa1b0
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: PyETo
+  url: https://github.com/woodcrafty/PyETo
+  description: Python package for calculating reference/potential evapotranspiration (ETo).
+  licence: bsd-3-clause
+  date_maj: '2022-08-31'
+  techno: Python
+  popularite: 180
+  mots_cles:
+  - Climate, Environment and Weather
+  score: 59
+  raisons:
+  - licence bsd-3-clause
+  - aucune activité récente
+  - 'vocabulaire : weather'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Package Python pour calculer l'évapotranspiration de référence ou potentielle (ETo).
+  interet: Permet d'estimer les besoins en eau des cultures à partir de données météorologiques.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - évapotranspiration
+  - besoins en eau
+  - python
+  - irrigation
+  - météorologie
+- id: 920d318823f6
+  famille: materiel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: Farm-Data-Relay-System
+  url: https://github.com/timmbogner/Farm-Data-Relay-System
+  description: System using ESP-NOW, LoRa, and other protocols to transport sensor data in remote areas
+    without relying on WiFi.
+  licence: mit
+  date_maj: '2026-01-29'
+  techno: C
+  popularite: 624
+  mots_cles:
+  - IoT, Hardware
+  - agriculture
+  - agritech
+  - agtech
+  - arduino
+  - esp-now
+  - esp32
+  - esp32-arduino
+  score: 100
+  raisons:
+  - licence mit
+  - actif (moins d'un an)
+  - 'vocabulaire : agriculture, agritech, agtech'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Système utilisant ESP-NOW, LoRa et d'autres protocoles pour transmettre des données de capteurs
+    en zones isolées sans WiFi.
+  interet: Facilite la collecte de données environnementales ou agricoles dans des zones sans infrastructure
+    réseau.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - iot
+  - transmission de données
+  - capteurs
+  - zones isolées
+  - agriculture
+- id: 18a20cd89e62
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: Growstuff
+  url: https://www.growstuff.org/crops
+  depot: https://github.com/Growstuff/growstuff
+  description: Record keeping & crop database, nice API
+  licence: agpl-3.0
+  date_maj: '2026-09-24'
+  techno: Ruby
+  popularite: 474
+  mots_cles:
+  - Datasets
+  - food
+  - gardening
+  score: 90
+  raisons:
+  - licence agpl-3.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : crop, food'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Base de données et outil de suivi des cultures avec une API. Permet d'enregistrer et de gérer
+    des informations sur les cultures.
+  interet: Utile pour organiser et analyser les données de production végétale.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - base de données
+  - suivi des cultures
+  - agriculture
+  - api
+  - production végétale
+- id: a8a2b26459c8
+  famille: donnees
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: CropHarvest
+  url: https://github.com/nasaharvest/cropharvest
+  description: Open source remote sensing dataset for global crop type mapping with 95,186 labeled datapoints
+    from satellite imagery, supporting machine learning research for food security.
+  licence: cc-by-sa-4.0
+  date_maj: '2024-04-30'
+  techno: Jupyter Notebook
+  popularite: 240
+  mots_cles:
+  - Datasets
+  score: 67
+  raisons:
+  - licence cc-by-sa-4.0
+  - aucune activité récente
+  - 'vocabulaire : crop, food'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Jeu de données open source issu d'imagerie satellite pour cartographier les types de cultures
+    à l'échelle mondiale. Il contient 95 186 points de données labellisés.
+  interet: Permet d'étudier la répartition des cultures à partir d'images satellites.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - imagerie satellite
+  - cartographie des cultures
+  - données labellisées
+  - sécurité alimentaire
+  - télédétection
+resume_genere_le: 2026-09-26 10:18
