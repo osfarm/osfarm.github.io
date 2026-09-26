@@ -93,6 +93,22 @@ Elles ne reposent pas sur la bonne volonté du modèle, mais sur du code.
    — plausibles, et toutes en 404. La bulle applique la même règle une seconde
    fois côté navigateur : seules les adresses de `sources` deviennent
    cliquables.
+
+   **Une exception, vérifiée elle aussi : le lien de comparaison** (depuis le
+   26/09/2026, `_annuaire/COMPARATEUR.md`). Une adresse
+   `…/fr/communs/comparer/?fiches=<id>,<id>[,<id>]` est composée par le
+   modèle, donc jamais dans le socle telle quelle. Le nœud ne la garde que si
+   elle nomme deux ou trois fiches distinctes, chacune présente dans le socle
+   sous la forme `#commun-<id>` en entier (`projet-farm` ne passe pas grâce à
+   `projet-farmos`). Le préfixe est lu dans le socle, pas écrit dans le nœud ;
+   sans section COMPARATEUR dans le socle, aucune adresse de ce genre ne passe.
+
+   Ce contrôle est **strict et exclusif** : une adresse qui commence par ce
+   préfixe ne passe jamais par la règle générale. Celle-ci garde toute adresse
+   qui figure *quelque part* dans le socle, même comme simple morceau. Elle
+   aurait laissé passer le gabarit `?fiches=<id>` coupé au `<`, ou un exemple
+   tronqué. Cette faiblesse vaut encore pour les autres adresses (un préfixe
+   d'URL du socle passe), sans conséquence connue à ce jour.
 2. **Jamais de modèle sans socle.** Si `/data/socle.txt` est illisible ou
    tronqué, le workflow répond 502 au lieu d'interroger le modèle. Le contrôle
    porte sur le marqueur de fin du fichier : une page d'erreur passerait un

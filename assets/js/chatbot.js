@@ -55,6 +55,7 @@
     echec: 'The assistant is unreachable right now.',
     degrade: 'Answer produced by the fallback model: please check it against the entries cited.',
     secours: 'Search the directory',
+    comparaison: 'comparison',
     contact: 'Contact us',
     ecrire: 'or email %m'
   } : {
@@ -67,6 +68,7 @@
     echec: 'L’assistant n’est pas joignable pour le moment.',
     degrade: 'Réponse établie par le modèle de secours : vérifiez-la sur les fiches citées.',
     secours: 'Rechercher dans l’annuaire',
+    comparaison: 'comparaison',
     contact: 'Nous écrire',
     ecrire: 'ou écrivez-nous à %m'
   };
@@ -119,7 +121,10 @@
   }
 
   // « https://www.osfarm.org/fr/communs/#commun-projet-x » → « osfarm.org »
+  // Un lien de comparaison, que n8n n'a gardé qu'après avoir vérifié chacune
+  // de ses fiches (_annuaire/COMPARATEUR.md), se lit « comparaison ».
   function joli(url) {
+    if (/\/communs\/comparer\/\?fiches=/.test(url)) { return TEXTES.comparaison; }
     var m = /^https?:\/\/(?:www\.)?([^/]+)/.exec(url);
     return m ? m[1] : url;
   }

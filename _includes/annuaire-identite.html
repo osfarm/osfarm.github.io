@@ -1,0 +1,20 @@
+{%- comment -%}
+  Nom et auteur d'une fiche de l'annuaire, pour sa carte (/fr/communs/) et pour
+  le comparateur (/fr/communs/comparer/). Paramètre : fiche. Assigne `nom` et
+  `auteur` dans la page appelante.
+
+  « auteur/depot » sur les forges : le dépôt en titre, l'auteur en sous-titre.
+{%- endcomment -%}
+{%- assign segments_url = include.fiche.url | split: "/" -%}
+{%- assign auteur = segments_url[2] | remove_first: "www." -%}
+{%- assign nom = include.fiche.titre -%}
+{%- if auteur == "github.com" or auteur == "huggingface.co" -%}
+  {%- assign segments_titre = include.fiche.titre | split: "/" -%}
+  {%- if segments_titre.size == 2 -%}
+    {%- assign auteur = segments_titre[0] -%}
+    {%- assign nom = segments_titre[1] -%}
+  {%- elsif auteur == "github.com" -%}
+    {%- assign auteur = segments_url[3] -%}
+  {%- endif -%}
+{%- endif -%}
+{%- assign auteur = include.fiche.github_org | default: auteur -%}

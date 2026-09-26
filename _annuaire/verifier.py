@@ -29,6 +29,12 @@ RACINE = Path(__file__).resolve().parent.parent
 EXPORT = RACINE / "_site" / "data" / "communs.json"
 VOCABULAIRE = RACINE / "_data" / "radar" / "communaute.yml"
 BESOINS = RACINE / "_data" / "besoins.yml"
+COMPARATEUR = RACINE / "_data" / "comparateur.yml"
+
+# Forme d'un identifiant de fiche. C'est un contrat du comparateur
+# (_annuaire/COMPARATEUR.md) : ses liens séparent les fiches par des virgules,
+# et le workflow n8n de l'assistant ne reconnaît que cette forme.
+FORME_ID = re.compile(r"^[a-z0-9-]+$")
 
 
 def types_autorises() -> set[str]:
@@ -107,6 +113,28 @@ def controler_besoins() -> list[str]:
     return fautes
 
 
+def controler_comparateur(fiches: list[dict]) -> list[str]:
+    """Les liens de comparaison tiennent si chaque identifiant publié a la
+    forme attendue et si l'exemple de l'accueil désigne des fiches publiées.
+
+    `exemple` est lu au motif, sans PyYAML, comme `types_autorises()` : une
+    ligne « exemple: [a, b, c] » dans _data/comparateur.yml.
+    """
+    fautes = [f"{f.get('titre', '?')} ({f.get('id')}) : identifiant hors de "
+              "[a-z0-9-], inutilisable dans un lien de comparaison"
+              for f in fiches if not FORME_ID.match(str(f.get("id", "")))]
+    if not COMPARATEUR.exists():
+        return fautes
+    ligne = re.search(r"^exemple:\s*\[(.*)\]", COMPARATEUR.read_text(encoding="utf-8"), re.M)
+    if not ligne:
+        return fautes + [f"clé « exemple: [...] » introuvable dans {COMPARATEUR.name}"]
+    publies = {f["id"] for f in fiches}
+    for ident in (i.strip() for i in ligne.group(1).split(",") if i.strip()):
+        if ident not in publies:
+            fautes.append(f"exemple du comparateur : « {ident} » n'est pas une fiche publiée")
+    return fautes
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--json", default=str(EXPORT),
@@ -121,7 +149,7 @@ def main() -> int:
 
     fiches = json.loads(export.read_text(encoding="utf-8"))
     autorises = types_autorises()
-    fautes = controler(fiches, autorises) + controler_besoins()
+    fautes = controler(fiches, autorises) + controler_besoins() + controler_comparateur(fiches)
 
     repartition = {}
     for f in fiches:

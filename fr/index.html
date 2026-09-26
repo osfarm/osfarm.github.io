@@ -20,6 +20,24 @@ permalink: /fr/
 {%- endfor -%}
 {%- assign solutions = site.data.radar.communaute.candidats | where: "publier", true | sort_natural: "titre" -%}
 {%- assign annuaire = "/fr/communs/" | relative_url -%}
+{%- comment -%}
+  Exemple du comparateur (_data/comparateur.yml) : rendu seulement si toutes
+  ses fiches sont publiées, pour ne jamais montrer un lien à moitié vide.
+  _annuaire/verifier.py fait échouer la vérification dans ce cas.
+{%- endcomment -%}
+{%- assign exemple_noms = "" | split: "" -%}
+{%- for id_ex in site.data.comparateur.exemple -%}
+  {%- for lot in site.data.radar -%}
+    {%- assign trouvee = lot[1].candidats | where: "id", id_ex | where: "publier", true | first -%}
+    {%- if trouvee %}{% assign exemple_noms = exemple_noms | push: trouvee.titre %}{% break %}{% endif -%}
+  {%- endfor -%}
+{%- endfor -%}
+{%- assign exemple_complet = false -%}
+{%- if exemple_noms.size >= 2 and exemple_noms.size == site.data.comparateur.exemple.size -%}
+  {%- assign exemple_complet = true -%}
+  {%- assign n_debut = exemple_noms.size | minus: 1 -%}
+  {%- assign exemple_debut = exemple_noms | slice: 0, n_debut -%}
+{%- endif -%}
 {%- assign adhesion = "https://www.helloasso.com/associations/osfarm/adhesions/adhesion-osfarm-2024" -%}
 </div><!-- ends .full-width that started in fr-header.html -->
 
@@ -40,6 +58,9 @@ permalink: /fr/
       <a class="bouton-osfarm bouton-osfarm--clair bouton-osfarm--plein" href="{{ annuaire }}">Explorer les {{ nb_communs }}&nbsp;communs</a>
       <a class="bouton-osfarm bouton-osfarm--clair" href="{{ "/fr/why/" | relative_url }}">Pourquoi OSFarm</a>
     </div>
+    <p class="accueil-comparer">Vous hésitez entre plusieurs outils&nbsp;? Comparez jusqu'à
+      {{ site.data.comparateur.meta.max }}&nbsp;communs côte à côte{% if exemple_complet %}, par exemple
+      <a href="{{ "/fr/communs/comparer/" | relative_url }}?fiches={{ site.data.comparateur.exemple | join: "," }}">{{ exemple_debut | join: ", " }} et {{ exemple_noms | last }}</a>{% endif %}.</p>
   </section>
 
   <section class="accueil-une" aria-labelledby="une-titre">

@@ -1879,6 +1879,14 @@ $osfarm-titres: "OSFarm Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: $osfarm-encre;
 }
 
+.accueil-comparer {
+  margin: 16px 0 0;
+  font-size: 15px;
+  color: #3b4a35;
+
+  a { font-weight: 600; }
+}
+
 .accueil-chapo {
   margin: 24px 0 0;
   font-size: 20px;
@@ -3303,3 +3311,339 @@ $type-besoin:     #b06000;
 }
 
 .icone-linkedin { flex: none; }
+
+// --------------------------------------------------------------------------
+// Comparateur de fiches (/fr/communs/comparer/ et la sélection de l'annuaire).
+// Conception : _annuaire/COMPARATEUR.md. Il reprend la palette de l'annuaire
+// ($radar-*) et ses vignettes : on compare les mêmes cartes qu'on vient de lire.
+// --------------------------------------------------------------------------
+
+// Bas de carte : « Comparer » et « Démo » côte à côte, à droite.
+.radar-actions {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+
+  .radar-bouton { margin-left: 0; }
+}
+
+.radar-comparer {
+  cursor: pointer;
+
+  &.is-actif {
+    color: #fff;
+    background: $osfarm-green-dark;
+    border-color: $osfarm-green-dark;
+
+    &:hover { color: #fff; background: $osfarm-green; border-color: $osfarm-green; }
+  }
+}
+
+// La barre colle au bas de l'écran tant que l'annuaire défile. Elle laisse à
+// droite la place de la bulle de l'assistant (.chatbot), et passe au-dessus
+// d'elle sur téléphone, où la bulle prend toute la largeur.
+.comparateur-barre {
+  position: sticky;
+  bottom: 16px;
+  z-index: 50;                   // sous la bulle (60) et la bannière de consentement
+  margin: 24px 232px 0 0;
+  color: $radar-texte;
+  background: #fff;
+  border: 1px solid $osfarm-green;
+  border-radius: $radar-rayon;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .15), 0 4px 6px -4px rgba(0, 0, 0, .1);
+
+  &.is-pleine { animation: comparateur-refus .35s; }
+
+  @media (max-width: 543px) {
+    bottom: 72px;
+    margin-right: 0;
+  }
+}
+
+@keyframes comparateur-refus {
+  25% { transform: translateX(-6px); }
+  75% { transform: translateX(6px); }
+}
+
+.comparateur-barre-corps {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 16px;
+  padding: 12px 16px;
+}
+
+.comparateur-barre-titre {
+  margin: 0;
+  font-weight: 600;
+}
+
+.comparateur-barre-compte { font-weight: 400; color: $radar-attenue; }
+
+.comparateur-barre-liste {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    padding: 2px 4px 2px 10px;
+    font-size: 14px;
+    background: $osfarm-green-light;
+    border-radius: 999px;
+  }
+
+  a { color: $radar-texte; }
+}
+
+.comparateur-barre-retirer {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1;
+  color: $radar-attenue;
+  background: none;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover { color: $radar-texte; background: rgba(0, 0, 0, .08); }
+}
+
+.comparateur-barre-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: auto;
+}
+
+.comparateur-barre-vider {
+  padding: 0;
+  font-size: 14px;
+  color: $radar-attenue;
+  text-decoration: underline;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.comparateur-barre-aller {
+  display: inline-flex;
+  align-items: center;
+  height: 36px;
+  padding: 0 16px;
+  font-weight: 600;
+  white-space: nowrap;
+  color: #fff;
+  background: $osfarm-green-dark;
+  border-radius: 8px;
+
+  &:hover { color: #fff; text-decoration: none; background: $osfarm-green; }
+
+  &.is-inactif {
+    font-weight: 400;
+    color: $radar-attenue;
+    background: $osfarm-green-light;
+    cursor: default;
+  }
+}
+
+// Page de comparaison
+.comparateur-message {
+  padding: 8px 12px;
+  background: #fdf8f2;
+  border-left: 3px solid #d9a45b;
+}
+
+.comparateur-outils {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px 24px;
+  margin-bottom: 20px;
+}
+
+.comparateur-ajout {
+  position: relative;
+  flex: 1 1 320px;
+  max-width: 480px;
+}
+
+.comparateur-ajout-titre {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.comparateur-suggestions {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 20;
+  margin: 4px 0 0;
+  padding: 4px;
+  list-style: none;
+  background: #fff;
+  border: 1px solid $radar-bordure;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1);
+}
+
+.comparateur-suggestion {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+
+  &:hover, &[aria-selected="true"] { background: $osfarm-green-light; }
+
+  .radar-vignette { width: 32px; height: 32px; font-size: 16px; }
+}
+
+.comparateur-suggestion-vide { padding: 6px 8px; color: $radar-attenue; }
+
+.comparateur-bascule {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+// Le tableau défile de côté dans son cadre, jamais la page : la colonne des
+// critères reste collée à gauche.
+.comparateur-defile {
+  overflow-x: auto;
+  border: 1px solid $radar-bordure;
+  border-radius: $radar-rayon;
+
+  &:empty { display: none; }
+}
+
+// Colonnes égales. comparateur.js pose la largeur minimale à partir de ces
+// deux variables (critères + une colonne par fiche) ; en deçà, c'est le cadre
+// qui défile.
+.comparateur-table {
+  --comparateur-criteres: 11rem;
+  --comparateur-colonne: 14rem;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 15px;
+  color: $radar-texte;
+
+  th, td {
+    padding: 10px 14px;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid $radar-bordure;
+  }
+
+  // Colonne des critères
+  tbody th[scope="row"], .comparateur-coin {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    width: var(--comparateur-criteres);
+    font-weight: 600;
+    background: #fff;
+  }
+
+  code { padding: 0 4px; background: $osfarm-green-light; border-radius: 4px; }
+
+  // Sur téléphone, les critères cèdent de la place : une fiche et demie reste
+  // visible, ce qui fait deviner le défilement.
+  @media (max-width: 543px) {
+    --comparateur-criteres: 7.5rem;
+    --comparateur-colonne: 12rem;
+    font-size: 14px;
+
+    th, td { padding: 8px 10px; }
+  }
+}
+
+.comparateur-fiche {
+  font-weight: 400;
+  background: #fbfdf9;
+}
+
+.comparateur-fiche-tete {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  .radar-vignette { width: 48px; height: 48px; font-size: 22px; }
+}
+
+.comparateur-fiche-nom {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.comparateur-fiche-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 14px;
+  margin: 10px 0 0;
+  font-size: 14px;
+}
+
+.comparateur-retirer {
+  padding: 2px 10px;
+  font-size: 13px;
+  color: $radar-attenue;
+  background: #fff;
+  border: 1px solid $radar-bordure;
+  border-radius: 999px;
+  cursor: pointer;
+
+  &:hover { color: $radar-texte; border-color: $radar-attenue; }
+}
+
+.comparateur-groupe-titre th {
+  padding-top: 18px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: $osfarm-green-dark;
+  background: #fff;
+}
+
+// Une ligne qui diffère : un liseré et un fond, plus le marqueur « ≠ » lu
+// « diffère » par les lecteurs d'écran.
+.comparateur-ligne.is-differente {
+  th[scope="row"] { box-shadow: inset 3px 0 0 $osfarm-green; }
+  td, th[scope="row"] { background: #f4faef; }
+}
+
+.comparateur-marque {
+  margin-left: 6px;
+  font-weight: 700;
+  color: $osfarm-green;
+}
+
+.comparateur-absent { font-style: italic; color: $radar-attenue; }
+
+.comparateur-ligne.is-libre td { font-size: 14px; line-height: 1.5; }
+
+// « Seulement les différences » : les lignes identiques se retirent, pas le
+// contenu libre (résumé, intérêt, mots-clés), qui ne s'égale jamais.
+.comparateur-seules-differences .comparateur-ligne:not(.is-differente):not(.is-libre) { display: none; }
+
+.comparateur-vide { margin-bottom: 20px; }

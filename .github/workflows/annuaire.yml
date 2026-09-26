@@ -16,6 +16,7 @@ on:
     paths:
       - '_data/radar/**'
       - '_data/besoins.yml'
+      - '_data/comparateur.yml'
       - 'data/communs.json'
       - 'data/communs.csv'
       - '_includes/radar-fiches.html'

@@ -1,0 +1,53 @@
+# Comparateur de fiches de l'annuaire : /fr/communs/comparer/?fiches=<id>,<id>
+# Exigences et conception : _annuaire/COMPARATEUR.md. Tout ce qui se règle est
+# ici ; assets/js/comparateur.js ne code rien en dur.
+meta:
+  max: 3
+
+# Nature de la licence, dans l'ordre d'affichage. Les identifiants reprennent
+# LICENCES_OUVERTES de _radar/collecte.py ; une licence absente de ces listes
+# s'affiche « non classée », son identifiant reste visible sur la ligne Licence.
+licences:
+  - id: permissive
+    titre: Permissive
+    ids: [mit, isc, zlib, unlicense, bsd-2-clause, bsd-3-clause, apache-2.0, artistic-2.0, cc0-1.0, pddl-1.0]
+  - id: copyleft-faible
+    titre: Copyleft faible
+    ids: [lgpl-2.1, lgpl-3.0, mpl-2.0, epl-2.0, cecill-2.1]
+  - id: copyleft-fort
+    titre: Copyleft fort
+    ids: [gpl-2.0, gpl-3.0, agpl-3.0, eupl-1.2, osl-3.0]
+  - id: donnees
+    titre: Données ou contenu
+    ids: [cc-by-3.0, cc-by-4.0, cc-by-sa-3.0, cc-by-sa-4.0, odbl-1.0, odc-by-1.0, etalab-2.0, gfdl-1.3]
+  - id: materiel
+    titre: Matériel
+    ids: [cern-ohl-p-2.0, cern-ohl-w-2.0, cern-ohl-s-2.0, tapr-ohl-1.0, solderpad-2.1]
+
+# État d'activité, d'après la dernière activité du dépôt, en jours. Mêmes
+# seuils que noter() dans _radar/collecte.py : les modifier aux deux endroits.
+activite:
+  - { jusqu_a: 90, titre: actif }
+  - { jusqu_a: 365, titre: ralenti }
+  - { jusqu_a: 730, titre: en sommeil }
+  - { titre: sans activité récente }
+
+# Unité de la popularité, selon le début de `source`. Elle dépend du
+# connecteur qui a lu la fiche, pas de son adresse : data.gouv compte des
+# réutilisations, Hugging Face mêle likes et téléchargements / 100. Deux
+# popularités d'unités différentes ne se comparent pas.
+popularite:
+  github: étoiles GitHub
+  liste: étoiles
+  datagouv: réutilisations data.gouv
+  hf: indice Hugging Face (likes et téléchargements)
+
+# Provenance, selon `source` ; une fiche portant `curation` vient d'une liste.
+provenance:
+  communaute-osfarm: communauté OSFarm
+  proposition-site: proposée sur le site
+  defaut: radar OSFarm
+
+# Comparaison montrée sur l'accueil. Des fiches de la communauté, aux
+# identifiants stables ; _annuaire/verifier.py vérifie qu'elles sont publiées.
+exemple: [projet-farmos, projet-litefarm, projet-tania]

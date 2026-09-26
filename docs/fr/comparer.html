@@ -1,0 +1,112 @@
+---
+title: Comparer des communs agricoles
+layout: fr-support-page
+permalink: /fr/communs/comparer/
+description: "Mettez côte à côte deux ou trois communs de l'annuaire OSFarm : licence, activité, technologie, place dans un écosystème."
+lang: fr
+large: true
+---
+{%- comment -%}
+  Comparateur de fiches : l'adresse fait foi (?fiches=<id>,<id>[,<id>]).
+  Jekyll pose ici les fiches publiées de l'annuaire, les mêmes que sur
+  /fr/communs/ (radar-fiches.html), dans un îlot JSON que lit
+  assets/js/comparateur.js. data/communs.json, contrat public, n'est pas
+  touché. Réglages : _data/comparateur.yml. Conception : _annuaire/COMPARATEUR.md.
+{%- endcomment -%}
+{% include radar-fiches.html %}
+{%- assign reglages = site.data.comparateur -%}
+{%- assign annuaire = "/fr/communs/" | relative_url -%}
+
+<div class="comparateur mb-6">
+
+  <p class="f4 text-gray">
+    Mettez côte à côte jusqu'à {{ reglages.meta.max }} communs de
+    l'<a href="{{ annuaire }}">annuaire</a> : leur licence, leur activité, leur
+    technologie et leur place dans un écosystème. L'adresse de cette page garde
+    la comparaison : copiez-la pour la partager.
+  </p>
+
+  <p id="comparateur-message" class="comparateur-message" role="status" hidden></p>
+
+  <div class="comparateur-outils">
+    <div class="comparateur-ajout" id="comparateur-ajout">
+      <label for="comparateur-recherche" class="comparateur-ajout-titre">Ajouter un commun</label>
+      <div class="radar-recherche">
+        {% include radar-icone.html nom="recherche" %}
+        <input type="search" id="comparateur-recherche" autocomplete="off"
+               placeholder="Nom, description ou mot-clé…"
+               role="combobox" aria-expanded="false" aria-autocomplete="list"
+               aria-controls="comparateur-suggestions">
+      </div>
+      <ul id="comparateur-suggestions" class="comparateur-suggestions" role="listbox"
+          aria-label="Communs proposés" hidden></ul>
+    </div>
+    <label class="comparateur-bascule" hidden>
+      <input type="checkbox" id="comparateur-differences">
+      Seulement les différences
+    </label>
+  </div>
+
+  <div id="comparateur-vide" class="blankslate comparateur-vide" hidden>
+    <p>Choisissez au moins deux communs à comparer : cherchez-les ci-dessus, ou
+      utilisez le bouton « Comparer » des cartes de l'<a href="{{ annuaire }}">annuaire</a>.</p>
+  </div>
+
+  <div id="comparateur-tableau" class="comparateur-defile"></div>
+
+  <noscript>
+    <div class="blankslate">
+      <p>Le comparateur a besoin de JavaScript. Toutes les fiches restent
+        consultables dans l'<a href="{{ annuaire }}">annuaire</a>.</p>
+    </div>
+  </noscript>
+</div>
+
+{%- comment -%} Les icônes de famille sont des SVG rendus par Jekyll : le script les recopie. {%- endcomment %}
+{%- assign familles_icones = "logiciel,materiel,donnees,modele" | split: "," %}
+<template id="comparateur-icones">
+  {%- for fam in familles_icones %}
+  <span data-famille="{{ fam }}">{% include radar-icone.html nom=fam %}</span>
+  {%- endfor %}
+</template>
+
+<script type="application/json" id="comparateur-donnees">
+{
+  "annuaire": {{ annuaire | jsonify }},
+  "reglages": {{ reglages | jsonify }},
+  "fiches": [
+{%- for f in radar_fiches %}
+  {%- include annuaire-identite.html fiche=f -%}
+  {%- assign mots = f.mots_cles_fr | default: f.mots_cles -%}
+  {%- unless mots %}{% assign mots = "" | split: "" %}{% endunless -%}
+  {%- assign logo = "" -%}
+  {%- if f.img %}{% assign logo = f.img | relative_url %}{% endif %}
+    {
+      "id": {{ f.id | jsonify }},
+      "nom": {{ nom | jsonify }},
+      "auteur": {{ auteur | default: "" | jsonify }},
+      "url": {{ f.url | default: "" | jsonify }},
+      "depot": {{ f.depot | default: "" | jsonify }},
+      "demo": {{ f.demo | default: "" | jsonify }},
+      "logo": {{ logo | jsonify }},
+      "famille": {{ f.famille | jsonify }},
+      "type": {{ f.type | default: "projet" | jsonify }},
+      "partie_de": {{ f.partie_de | default: "" | jsonify }},
+      "categorie": {{ f.categorie | default: "" | jsonify }},
+      "licence": {{ f.licence | default: "" | jsonify }},
+      "date_maj": {{ f.date_maj | default: "" | jsonify }},
+      "popularite": {{ f.popularite | default: 0 | jsonify }},
+      "source": {{ f.source | default: "" | jsonify }},
+      "curation": {{ f.curation | default: "" | jsonify }},
+      "propose_le": {{ f.propose_le | default: "" | jsonify }},
+      "techno": {{ f.techno | default: "" | jsonify }},
+      "resume": {{ f.resume | default: f.description | default: "" | jsonify }},
+      "interet": {{ f.interet | default: "" | jsonify }},
+      "mots": {{ mots | slice: 0, 5 | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+{%- endfor %}
+  ],
+  "types": {{ site.data.radar.communaute.types | jsonify }}
+}
+</script>
+<script src="{{ "/assets/js/comparateur.js" | relative_url }}" defer></script>

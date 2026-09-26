@@ -1,7 +1,8 @@
 {%- comment -%}
   Une carte de l'annuaire des communs (/fr/communs/), pour une fiche du radar
   comme pour un projet de la communauté. Paramètres : id, famille, nom, auteur, url,
-  logo, licence, techno, date, resume, interet, mots (tableau), demo, depot.
+  logo, licence, techno, date, resume, interet, mots (tableau), demo, depot,
+  comparer (id de la fiche : ajoute le bouton « Comparer », absent des besoins).
 {%- endcomment -%}
 {%- assign etiquette = include.famille -%}
 {%- case include.famille -%}
@@ -88,7 +89,21 @@
           <span class="radar-licence" title="Licence">{% octicon law height:14 class:"radar-octicon" aria-hidden:true %}<code>{{ include.licence }}</code></span>
         {%- endif %}
       </div>
-      {% if include.demo %}<a class="radar-bouton" href="{{ include.demo }}" target="_blank" rel="noopener">Démo</a>{% endif %}
+      {%- if include.comparer or include.demo %}
+      <div class="radar-actions">
+        {%- comment -%}
+          Caché tant que assets/js/comparateur-selection.js ne l'a pas révélé :
+          sans JavaScript, pas de bouton inerte.
+        {%- endcomment -%}
+        {%- if include.comparer %}
+        <button type="button" class="radar-bouton radar-comparer" data-comparer="{{ include.comparer }}"
+                data-nom="{{ include.nom | escape }}" aria-pressed="false" hidden>Comparer</button>
+        {%- endif -%}
+        {%- if include.demo %}
+        <a class="radar-bouton" href="{{ include.demo }}" target="_blank" rel="noopener">Démo</a>
+        {%- endif %}
+      </div>
+      {%- endif %}
     </div>
   </div>
 </article>

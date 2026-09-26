@@ -92,24 +92,11 @@ large: true
       {%- unless mots %}{% assign mots = "" | split: "" %}{% endunless -%}
       {%- if f.categorie %}{% assign mots = f.categorie | downcase | split: "~" | concat: mots | uniq %}{% endif -%}
       {%- assign resume = f.resume | default: f.description -%}
-      {%- comment -%} « auteur/depot » sur les forges : le dépôt en titre, l'auteur en sous-titre. {%- endcomment -%}
-      {%- assign segments_url = f.url | split: "/" -%}
-      {%- assign auteur = segments_url[2] | remove_first: "www." -%}
-      {%- assign nom = f.titre -%}
-      {%- if auteur == "github.com" or auteur == "huggingface.co" -%}
-        {%- assign segments_titre = f.titre | split: "/" -%}
-        {%- if segments_titre.size == 2 -%}
-          {%- assign auteur = segments_titre[0] -%}
-          {%- assign nom = segments_titre[1] -%}
-        {%- elsif auteur == "github.com" -%}
-          {%- assign auteur = segments_url[3] -%}
-        {%- endif -%}
-      {%- endif -%}
-      {%- assign auteur = f.github_org | default: auteur -%}
+      {%- include annuaire-identite.html fiche=f -%}
       {%- assign id_carte = "commun-" | append: f.id -%}
       {% include annuaire-carte.html id=id_carte famille=f.famille nom=nom auteur=auteur url=f.url logo=f.img
          licence=f.licence techno=f.techno date=f.propose_le resume=resume
-         interet=f.interet mots=mots demo=f.demo depot=f.depot
+         interet=f.interet mots=mots demo=f.demo depot=f.depot comparer=f.id
          type=f.type partie_de=f.partie_de id_fiche=f.id fiches=radar_fiches %}
     {%- endfor %}
   </div>
@@ -179,6 +166,25 @@ large: true
   </div>
 
   {% include communs-proposition.html lang="fr" %}
+
+  {%- comment -%}
+    Barre du comparateur : révélée par assets/js/comparateur-selection.js dès
+    qu'une fiche est choisie. Réglages : _data/comparateur.yml.
+  {%- endcomment %}
+  <div class="comparateur-barre" id="comparateur-barre" role="region" aria-label="Sélection à comparer"
+       data-max="{{ site.data.comparateur.meta.max }}"
+       data-page="{{ "/fr/communs/comparer/" | relative_url }}" hidden>
+    <div class="comparateur-barre-corps">
+      <p class="comparateur-barre-titre">À comparer <span class="comparateur-barre-compte"></span></p>
+      <ul class="comparateur-barre-liste"></ul>
+      <div class="comparateur-barre-actions">
+        <button type="button" class="comparateur-barre-vider">Vider</button>
+        <a class="comparateur-barre-aller" href="#">Comparer</a>
+      </div>
+    </div>
+    <p class="sr-only" aria-live="polite" id="comparateur-annonce"></p>
+  </div>
+  <script src="{{ "/assets/js/comparateur-selection.js" | relative_url }}" defer></script>
 
 </div>
 
