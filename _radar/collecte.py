@@ -547,9 +547,14 @@ def premier_lien(texte: str) -> tuple[str, str] | None:
     return None
 
 
-def lire_liste(texte: str) -> list[Entree]:
+def lire_liste(texte: str, ignorees: tuple[str, ...] = ()) -> list[Entree]:
     """Entrées d'une liste Markdown, en tableaux ou en puces. Pure : aucun appel
-    réseau, pour pouvoir la vérifier sur un README enregistré."""
+    réseau, pour pouvoir la vérifier sur un README enregistré.
+
+    `ignorees` : titres exacts (casse indifférente) des sections propres à une
+    liste à laisser de côté. Seule la section la plus proche de l'entrée compte,
+    pour qu'ignorer « Node RED » garde sa sous-section « Node RED flows »."""
+    ignorees = tuple(t.lower() for t in ignorees)
     lignes = texte.splitlines()
     sections: list[str] = []
     col_description: int | None = None
@@ -566,6 +571,8 @@ def lire_liste(texte: str) -> list[Entree]:
         if any(s.lower().startswith(SECTIONS_IGNOREES) for s in sections if s):
             continue
         contexte = [s for s in sections if s]
+        if contexte and contexte[-1].lower() in ignorees:
+            continue
 
         if ligne.lstrip().startswith("|"):
             if RE_SEPARATEUR.match(ligne):
@@ -790,7 +797,7 @@ def connecteur_liste(src: dict) -> list[Candidat]:
     reponse = requests.get(src["url"], timeout=DELAI_REQUETE,
                            headers={"User-Agent": "radar-osfarm (+https://osfarm.org)"})
     reponse.raise_for_status()
-    entrees = lire_liste(reponse.text)
+    entrees = lire_liste(reponse.text, tuple(src.get("sections_ignorees") or ()))
     if not entrees:
         # Levée plutôt que liste vide : main() la range dans les pannes,
         # signalées dans la pull request et dans l'issue d'échec.

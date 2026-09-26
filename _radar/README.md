@@ -113,6 +113,11 @@ vient du dépôt que `resoudre()` retrouve à partir du lien de la liste :
 - sans dépôt, pas de licence vérifiée, donc pas de fiche. C'est le cas de
   Kaggle, de Mendeley, des pages d'université et des articles.
 
+Une licence ouverte et un dépôt actif suffisent à passer le seuil : un outil
+générique cité par une liste (Grafana, InfluxDB…) y passerait aussi. Sur une
+liste qui mêle agriculture et outillage général, `sections_ignorees` écarte
+les sections d'outillage par leur titre exact.
+
 Une liste s'importe **une fois** : Actions → Radar des communs → Run workflow,
 avec le champ « liste » rempli de son id (ou `collecte.py --import-liste <id>`
 en local, avec `--blanc` pour calibrer). L'import n'a pas de plafond, ouvre

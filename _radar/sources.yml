@@ -168,6 +168,9 @@ sources:
   #                         le plus proche au plus lointain ; sinon `famille`
   #   suivre_les_sites      false pour ne pas lire les sites vitrines à la
   #                         recherche de leur dépôt
+  #   sections_ignorees     titres exacts des sections à laisser de côté : une
+  #                         licence ouverte et un dépôt actif suffisent à passer
+  #                         le seuil, un outil générique aussi (Grafana, InfluxDB…)
   - id: liste-osa
     type: liste
     url: https://raw.githubusercontent.com/geezacoleman/OpenSourceAgriculture/main/README.md
@@ -192,8 +195,10 @@ sources:
       robotics: materiel
     relecteur: [ionosphere, bertrandgorge]
 
-  # Récente et active, mais orientée culture sous abri et domotique, avec une
-  # section de guides qui ne sont pas des communs : à calibrer en --blanc.
+  # Récente et active, orientée culture sous abri et domotique. Calibrée le
+  # 26/09/2026 : sans ses sections d'outils génériques (bases de séries
+  # temporelles, visualisation, domotique, protocoles), elle proposait Grafana,
+  # InfluxDB ou Node-RED avec des notes de 85 et plus.
   - id: liste-cropsteering
     type: liste
     url: https://raw.githubusercontent.com/Intergalactic-XYZ/awesome-cropsteering/main/README.md
@@ -206,5 +211,17 @@ sources:
       mcu: materiel
       relay: materiel
       mixers: materiel
+    sections_ignorees:
+      - Node RED
+      - Home Assistant
+      - Home Assistant UI
+      - ESPHome
+      - Tasmota
+      - MCU and SOC
+      - MQTT
+      - Storing Data
+      - Visualization Libraries
+      - Visualization platforms
+      - Zigbee
+      - Crop Steering Guides
     relecteur: [ionosphere, bertrandgorge]
-    actif: false

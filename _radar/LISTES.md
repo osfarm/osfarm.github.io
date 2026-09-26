@@ -369,6 +369,26 @@ bonus. Un second import de la même liste est refusé.
    Actions (champ « liste » = `liste-osa`), le relire et le fusionner.
 2. Même chose pour `liste-awesome-agriculture`. L'import reste bloqué tant
    qu'un lot du jour est ouvert, et inversement.
-3. Calibrer `liste-cropsteering` en `--blanc` avant de l'activer. Sa section
-   *Reading* (guides) n'apporte que du bruit : il faudra peut-être ajouter à
-   la source une liste de sections à ignorer.
+3. ~~Calibrer `liste-cropsteering`~~ : fait le 26/09/2026, voir ci-dessous.
+
+## Calibrage d'awesome-cropsteering (26/09/2026)
+
+Le premier essai proposait **41 fiches**, dont Grafana, InfluxDB, Node-RED,
+D3.js, Tasmota ou QuestDB, notés 85 et plus. La licence (40), l'activité (25),
+la popularité (10) et le bonus de liste (10) suffisent à passer le seuil de
+55 sans un seul mot agricole. La recherche GitHub y échappe, parce que ses
+requêtes ciblent déjà l'agriculture, mais une liste n'offre pas cette garantie.
+
+Exiger du vocabulaire agricole n'aurait pas marché : Mothbox, Insect Detect et
+FoMo4Wheat, déjà publiés, n'en ont pas, parce que le lexique ne connaît ni
+« insect » ni « hydroponics ». La source gagne donc `sections_ignorees`, qui
+écarte par leur titre exact les sections d'outillage général : Node RED, Home
+Assistant, ESPHome, Tasmota, MQTT, Storing Data, Visualization, Zigbee, MCU and
+SOC, et les guides. Seule compte la section la plus proche de l'entrée, pour
+qu'ignorer « Node RED » garde « Node RED flows ».
+
+Le second essai propose **26 fiches** : irrigation, hydroponie, capteurs de sol,
+automatisation de culture. Telegraf reste, parce que sa section « Metrics and
+Logging » contient aussi des capteurs de sol (SDI-12, TDR). Environ un quart des
+fiches est centré sur le cannabis ou la culture en tente d'intérieur : Isley,
+Cannlytics, l'intégration AC Infinity, HAGR.
