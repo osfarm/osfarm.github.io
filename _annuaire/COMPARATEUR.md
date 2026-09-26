@@ -541,14 +541,36 @@ Faite le 2026-09-26. Fichiers : ceux du tableau « Fichiers » ci-dessus, plus
 - **Provenance.** Deux fiches de `communaute.yml` n'ont pas de `source` ;
   elles sont lues « communauté OSFarm ».
 
+## En production, le 26/09/2026
+
+Premier essai après déploiement (exécution n8n 79) : « J'hésite entre farmOS et
+LiteFarm, peux-tu me donner un lien pour les comparer ? ». Le modèle a écrit
+`?fiches=commun-projet-farmos,projet-litefarm`, en recopiant l'ancre de la
+fiche au lieu de son identifiant. Le contrôle l'a retiré
+(`liens_retires: 1`) : la garantie a tenu, mais l'usager n'a reçu qu'un
+libellé sans lien.
+
+Correctifs, le même jour :
+- **Nœud n8n** (version `67953ebd…`) : le préfixe `commun-` est retiré et
+  l'adresse réécrite sous sa forme propre, puis passe par le même contrôle
+  strict. Quinze cas rejoués hors n8n, dont le doublon qui n'apparaît qu'après
+  réparation (`commun-projet-farmos,projet-farmos`, refusé).
+- **Socle** : l'extraction de l'identifiant est donnée avec deux exemples réels
+  (slug et hexadécimal) et la mention « APRÈS « #commun- », sans le recopier ».
+- **Page** : `comparateur.js` accepte aussi `commun-<id>` dans l'adresse.
+
+Second essai (exécution 80) : lien `?fiches=projet-farmos,projet-litefarm`
+gardé, cliquable, dans `sources` avec la page du comparateur.
+
 ## Reste à faire
 
-1. **Après le déploiement du site**, poser au chatbot une question de choix
-   entre deux fiches. Le lien de comparaison doit être cliquable et libellé
-   « comparaison ». Un lien forgé doit être retiré (`liens_retires` ≥ 1 dans
-   l'exécution n8n).
-2. Corriger dans `communaute.yml` les deux licences `cc-by-nc-sa-3.0` (L'Atelier
+1. Corriger dans `communaute.yml` les deux licences `cc-by-nc-sa-3.0` (L'Atelier
    Paysan, Le Pré Fabriqué), qui ne sont pas ouvertes, et « mit license »
    (OpenSourceAgriculture), qui doit s'écrire `mit`. Le comparateur les
    affiche « non classée » d'ici là.
+2. **Hors comparateur, à surveiller** : le socle pèse désormais 33 357 tokens
+   par question (environ 14 000 à la création de l'assistant), à cause surtout
+   des 47 fiches importées des listes le même jour. Deux appels successifs sur
+   le même socle ont donné `cached_tokens: 0` : le cache de `prompt_cache_key`
+   ne prend plus, alors qu'il ramenait le coût à ~400 tokens le 21/09/2026.
 

@@ -102,6 +102,9 @@ Elles ne reposent pas sur la bonne volonté du modèle, mais sur du code.
    sous la forme `#commun-<id>` en entier (`projet-farm` ne passe pas grâce à
    `projet-farmos`). Le préfixe est lu dans le socle, pas écrit dans le nœud ;
    sans section COMPARATEUR dans le socle, aucune adresse de ce genre ne passe.
+   Le modèle recopie parfois l'ancre au lieu de l'identifiant
+   (`commun-projet-farmos`) : ce préfixe est retiré, et l'adresse réécrite,
+   avant le contrôle.
 
    Ce contrôle est **strict et exclusif** : une adresse qui commence par ce
    préfixe ne passe jamais par la règle générale. Celle-ci garde toute adresse

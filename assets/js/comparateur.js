@@ -51,7 +51,9 @@
     var ids = [];
     var inconnus = [];
     demandes.forEach(function (id) {
-      id = String(id).trim();
+      // « commun-<id> » est l'ancre de la carte dans l'annuaire : qui colle
+      // l'ancre au lieu de l'identifiant obtient quand même la bonne fiche.
+      id = String(id).trim().replace(/^#?commun-/, '');
       if (!id || ids.indexOf(id) !== -1) { return; }
       if (FORME_ID.test(id) && parId[id]) { ids.push(id); } else { inconnus.push(id); }
     });
