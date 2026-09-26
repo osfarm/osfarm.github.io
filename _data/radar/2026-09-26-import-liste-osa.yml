@@ -93,12 +93,12 @@ candidats:
   curation: OpenSourceAgriculture
   titre: Insect Detect
   url: https://maxsitt.github.io/insect-detect-docs/
-  depot: https://github.com/maxsitt/insect-detect-docs
+  depot: https://github.com/maxsitt/insect-detect
   description: Build your own insect-detecting camera trap for automated monitoring
-  licence: cc-by-sa-4.0
-  date_maj: '2026-04-16'
-  techno: ''
-  popularite: 31
+  licence: gpl-3.0
+  date_maj: '2026-09-03'
+  techno: Python
+  popularite: 69
   mots_cles:
   - In-Field Deployment
   - camera-trap
@@ -110,8 +110,8 @@ candidats:
   - opencv-ai-kit
   score: 71
   raisons:
-  - licence cc-by-sa-4.0
-  - actif (moins d'un an)
+  - licence gpl-3.0
+  - actif (moins de 3 mois)
   - retenu par la liste OpenSourceAgriculture
   propose_le: '2026-09-26'
   publier: true
@@ -150,16 +150,18 @@ candidats:
   - 'vocabulaire : forestry'
   - retenu par la liste OpenSourceAgriculture
   propose_le: '2026-09-26'
-  publier: false
-  resume: ''
-  interet: ''
-  pertinence: non
-  redige_par: mistral-small-latest
+  publier: true
+  resume: Jeu de plus de 43 000 images synthétiques de troncs d'arbres, en couleur et en profondeur,
+    générées avec le moteur Unity, accompagné de modèles de détection pré-entraînés. Il sert à entraîner
+    des modèles de vision qui détectent les arbres et estiment leur diamètre.
+  interet: Permet d'entraîner la détection des troncs et l'estimation de leur diamètre en forêt.
+  pertinence: oui
+  redige_par: relecture
   mots_cles_fr:
-  - synthétique
+  - forêt
   - tronc d'arbre
   - vision par ordinateur
-  - jeu vidéo
+  - données synthétiques
 - id: 4bf7bdca11df
   famille: donnees
   relecteur: ionosphere bertrandgorge

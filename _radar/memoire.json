@@ -220,6 +220,12 @@
   "statut": "propose",
   "url": "https://zenodo.org/records/7457983"
  },
+ "290289511b20": {
+  "examine_le": "2026-09-26",
+  "score": 71,
+  "statut": "propose",
+  "url": "https://github.com/maxsitt/insect-detect"
+ },
  "297f64659a60": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
