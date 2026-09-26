@@ -1,0 +1,992 @@
+# Lot du radar OSFarm. Passer « publier » à false pour écarter une fiche,
+# corriger « resume » au besoin. La fusion de la pull request publie le reste.
+date: '2026-09-26'
+liste: awesome-cropsteering
+examines: 54
+retenus: 26
+rejets:
+  deja_vu: 0
+  deja_sur_le_site: 0
+  licence: 27
+  score: 1
+pannes: []
+candidats:
+- id: e3ba8834be42
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-cropsteering
+  curation: awesome-cropsteering
+  titre: Smart Irrigation
+  url: https://github.com/altmenorg/HAsmartirrigation
+  description: Calculates irrigation duration and volume from evapotranspiration data
+  licence: mit
+  date_maj: '2026-09-26'
+  techno: Python
+  popularite: 555
+  mots_cles:
+  - Home Assistant Automation
+  - crop
+  - evaporation
+  - evapotranspiration
+  - flow
+  - grass
+  - home-automation
+  - homeassistant
+  score: 97
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : crop, irrigation'
+  - retenu par la liste awesome-cropsteering
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Outil de calcul de la durée et du volume d'irrigation à partir de données d'évapotranspiration.
+    Il détermine les besoins en eau des cultures.
+  interet: Optimiser l'apport en eau des cultures en fonction des conditions climatiques.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - irrigation
+  - évapotranspiration
+  - calcul
+  - eau
+  - culture
+- id: 6db5faba4465
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-cropsteering
+  curation: awesome-cropsteering
+  titre: HA-Irrigation-Strategy
+  url: https://github.com/JakeTheRabbit/HA-Irrigation-Strategy
+  description: Crop steering irrigation strategy (P0-P3 phases) for Home Assistant with GUI blueprint
+    configuration
+  licence: mit
+  date_maj: '2026-09-26'
+  techno: HTML
+  popularite: 18
+  mots_cles:
+  - Home Assistant Automation
+  - automation
+  - crop-steering
+  - home-assistant
+  - hydroponics
+  - irrigation
+  - irrigation-strategy
+  - open-source
+  score: 92
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : crop, irrigation'
+  - retenu par la liste awesome-cropsteering
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Stratégie d'irrigation automatisée pour cultures (phases P0-P3) avec interface graphique dans
+    Home Assistant. Elle permet de configurer des règles d'arrosage.
+  interet: Adapter l'irrigation aux différentes phases de croissance des plantes.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - irrigation
+  - automatisation
+  - phases de croissance
+  - configuration
+  - serre
+- id: c019b96c5529
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-cropsteering
+  curation: awesome-cropsteering
+  titre: Isley
+  url: https://github.com/dwot/isley
+  description: Self-hosted cannabis grow journal with sensor tracking for AC Infinity controllers and
+    Ecowitt soil sensors
+  licence: mit
+  date_maj: '2026-09-02'
+  techno: Go
+  popularite: 84
+  mots_cles:
+  - Grow Automation
+  - cannabis
+  - growing-plants
+  - selfhosted
+  score: 89
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : soil'
+  - retenu par la liste awesome-cropsteering
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Journal de culture auto-hébergé pour plantes, incluant le suivi de capteurs pour contrôleurs
+    et sondes de sol. Il enregistre les données environnementales.
+  interet: Surveiller et ajuster les conditions de culture en temps réel.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - journal de culture
+  - suivi de capteurs
+  - auto-hébergement
+  - plantes
+  - environnement
+- id: b4e2bc39a2da
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-cropsteering
+  curation: awesome-cropsteering
+  titre: Mycodo
+  url: https://github.com/kizniche/Mycodo
+  description: Mycodo is open source software for the Raspberry Pi that couples inputs and outputs in
+    interesting ways to sense and manipulate the environment
+  licence: gpl-3.0
+  date_maj: '2026-08-03'
+  techno: Python
+  popularite: 3288
+  mots_cles:
+  - Grow Automation
+  - automation
+  - cultivation
+  - environment
+  - graphs
+  - grow
+  - hydroponic
+  - measurements
+  score: 87
+  raisons:
+  - licence gpl-3.0
+  - actif (moins de 3 mois)
+  - retenu par la liste awesome-cropsteering
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Logiciel open source pour Raspberry Pi permettant de contrôler et surveiller des environnements
+    de culture. Il relie des entrées et sorties pour agir sur l'environnement.
+  interet: Automatiser et optimiser les conditions de culture en fonction de données mesurées.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - automatisation
+  - contrôle environnemental
+  - culture
+  - Raspberry Pi
+  - surveillance
+- id: c6999c288cc6
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-cropsteering
+  curation: awesome-cropsteering
+  titre: Home Assistant Plant
+  url: https://github.com/Olen/homeassistant-plant
+  description: Alternative Plant component with thresholds, species data and daily light integral
+  licence: gpl-3.0
+  date_maj: '2026-09-04'
+  techno: Python
+  popularite: 870
+  mots_cles:
+  - Home Assistant Automation
+  - home-assistant
+  - homeassistant
+  - plant
+  score: 87
+  raisons:
+  - licence gpl-3.0
+  - actif (moins de 3 mois)
+  - retenu par la liste awesome-cropsteering
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Composant alternatif pour Home Assistant dédié au suivi des plantes avec seuils et données d'espèces.
+    Il calcule l'intégrale lumineuse quotidienne.
+  interet: Adapter les soins aux besoins spécifiques des plantes en fonction de leur espèce.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - suivi des plantes
+  - seuils
+  - espèces
+  - lumière
+  - automatisation
+- id: 8af57000f157
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-cropsteering
+  curation: awesome-cropsteering
+  titre: Telegraf
+  url: https://github.com/influxdata/telegraf
+  description: Plugin-driven agent for collecting and shipping metrics (MQTT, Modbus, sensors) to InfluxDB
+    and others
+  licence: mit
+  date_maj: '2026-09-25'
+  techno: Go
+  popularite: 17833
+  mots_cles:
+  - Metrics and Logging
+  - golang
+  - hacktoberfest
+  - influxdb
+  - json
+  - kafka
+  - logs
+  - metrics
+  score: 87
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - retenu par la liste awesome-cropsteering
+  propose_le: '2026-09-26'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - métriques
+  - collecte de données
+  - capteurs
+  - transmission
+  - systèmes
+- id: 933f78c13fae
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-cropsteering
+  curation: awesome-cropsteering
+  titre: OpenPlantbook integration
+  url: https://github.com/Olen/home-assistant-openplantbook
+  description: Fetches per-species care thresholds from OpenPlantbook.io
+  licence: gpl-3.0
+  date_maj: '2026-08-11'
+  techno: Python
+  popularite: 564
+  mots_cles:
+  - Home Assistant Automation
+  - hacs
+  - home-assistant
+  - homeassistant
+  - integration
+  score: 85
+  raisons:
+  - licence gpl-3.0
+  - actif (moins de 3 mois)
+  - retenu par la liste awesome-cropsteering
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Ce projet récupère des seuils de soins par espèce depuis OpenPlantbook.io. Il permet d'automatiser
+    des actions liées aux plantes dans un système domotique.
+  interet: Automatiser la gestion des besoins spécifiques des plantes en fonction de leur espèce.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - automatisation
+  - plantes
+  - seuils
+  - soins
+  - domotique
+- id: f62af1142116
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-cropsteering
+  curation: awesome-cropsteering
+  titre: TerrariumPI
+  url: https://github.com/theyosh/TerrariumPI
+  description: 'Raspberry Pi automation for enclosed environments: climate, lighting, watering and webcams'
+  licence: gpl-3.0
+  date_maj: '2026-09-19'
+  techno: Python
+  popularite: 474
+  mots_cles:
+  - Grow Automation
+  - aquarium
+  - automation
+  - cooling
+  - enclosure
+  - gui
+  - heating
+  - humidity
+  score: 83
+  raisons:
+  - licence gpl-3.0
+  - actif (moins de 3 mois)
+  - retenu par la liste awesome-cropsteering
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Ce projet automatise les environnements clos (climat, éclairage, arrosage, caméras) via un Raspberry
+    Pi. Il permet de contrôler des espaces de culture fermés.
+  interet: Contrôler et optimiser les conditions de culture dans des environnements clos.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - automatisation
+  - climat
+  - culture
+  - environnement clos
+  - raspberry pi
+- id: 0e418fdb1777
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-cropsteering
+  curation: awesome-cropsteering
+  titre: Hydruino
+  url: https://github.com/NachtRaveVL/Simple-Hydroponics-Arduino
+  description: Fully configurable hydroponics automation controller for Arduino-compatible MCUs, offline
+    with no cloud dependency
+  licence: mit
+  date_maj: '2026-09-03'
+  techno: C++
+  popularite: 96
+  mots_cles:
+  - Grow Automation
+  - arduino
+  - arduino-library
+  - automation
+  - controller
+  - diy
+  - diy-solutions
+  - hydroponic-software-solution
+  score: 83
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - retenu par la liste awesome-cropsteering
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Ce projet contrôle l'hydroponie via des microcontrôleurs Arduino compatibles, sans dépendance
+    au cloud. Il permet de gérer des systèmes de culture hydroponique.
+  interet: Gérer et automatiser des systèmes de culture hydroponique hors ligne.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - arduino
+  - automatisation
+  - hydroponie
+  - microcontrôleur
+  - système hors ligne
+- id: 051485381c9e
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-cropsteering
+  curation: awesome-cropsteering
+  titre: HAGR
+  url: https://github.com/JakeTheRabbit/HAGR
+  description: Home Assistant Grow Room is a repository for grow automation related things for Home Assistant
+  licence: unlicense
+  date_maj: '2026-08-17'
+  techno: C++
+  popularite: 65
+  mots_cles:
+  - Home Assistant Automation
+  - automation
+  - cannabis
+  - climate-control
+  - esphome
+  - grow-room
+  - home-assistant
+  - hydroponics
+  score: 83
+  raisons:
+  - licence unlicense
+  - actif (moins de 3 mois)
+  - retenu par la liste awesome-cropsteering
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Ce projet centralise des automatisations liées à la culture dans Home Assistant. Il permet de
+    gérer des environnements de culture automatisés.
+  interet: Centraliser et automatiser la gestion des environnements de culture.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - automatisation
+  - culture
+  - domotique
+  - environnement
+  - home assistant
+- id: b4d4c2caa2cb
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-cropsteering
+  curation: awesome-cropsteering
+  titre: Irrigation Unlimited
+  url: https://github.com/rgc99/irrigation_unlimited
+  description: 'Feature-rich irrigation controller: unlimited zones, sequences, seasonal adjustment'
+  licence: mit
+  date_maj: '2026-06-22'
+  techno: Python
+  popularite: 462
+  mots_cles:
+  - Home Assistant Automation
+  - garden-automation
+  - hacs
+  - home-assistant
+  - home-automation
+  - homeassistant
+  - irrigation
+  - irrigation-control-system
+  score: 82
+  raisons:
+  - licence mit
+  - actif (moins d'un an)
+  - 'vocabulaire : irrigation'
+  - retenu par la liste awesome-cropsteering
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Ce projet contrôle l'irrigation avec de nombreuses zones, séquences et ajustements saisonniers.
+    Il permet de gérer des systèmes d'arrosage automatisés.
+  interet: Automatiser et optimiser l'irrigation des cultures.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - arrosage
+  - automatisation
+  - irrigation
+  - saisons
+  - zones
+- id: e6d98f8bb1b8
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-cropsteering
+  curation: awesome-cropsteering
+  titre: AC Infinity integration
+  url: https://github.com/dalinicus/homeassistant-acinfinity
+  description: Home Assistant integration for AC Infinity UIS grow-tent controllers
+  licence: mit
+  date_maj: '2026-09-20'
+  techno: Python
+  popularite: 207
+  mots_cles:
+  - Home Assistant Automation
+  - acinfinity
+  - grow
+  - growlights
+  - growtent
+  - hacs
+  - home-assistant
+  - homeassistant
+  score: 81
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - retenu par la liste awesome-cropsteering
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Ce projet intègre les contrôleurs de tente de culture AC Infinity dans Home Assistant. Il permet
+    de gérer des tentes de culture automatisées.
+  interet: Automatiser le contrôle des conditions dans des tentes de culture.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - automatisation
+  - culture
+  - domotique
+  - tente de culture
+  - home assistant
+- id: 32888cadfa8b
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-cropsteering
+  curation: awesome-cropsteering
+  titre: Cannlytics
+  url: https://github.com/cannlytics/cannlytics
+  description: Open-source cannabis data pipelines and lab analytics tooling
+  licence: mit
+  date_maj: '2026-09-21'
+  techno: Python
+  popularite: 82
+  mots_cles:
+  - Facility management
+  - cannabis
+  - cannabis-api
+  - cannabis-app
+  - cannabis-data
+  - cannabis-scripts
+  - cannabis-strains
+  - cannabis-variety
+  score: 81
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - retenu par la liste awesome-cropsteering
+  propose_le: '2026-09-26'
+  publier: false
+  resume: Outil open source de traitement de données et d'analyse pour les laboratoires spécialisés dans
+    le cannabis. Il permet de gérer des flux de données et des analyses en lien avec la production de
+    cannabis.
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - cannabis
+  - données-laboratoire
+  - analyse
+  - flux-données
+  - open-source
+- id: 31eeeefd3298
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-cropsteering
+  curation: awesome-cropsteering
+  titre: Growlink Terralink for ESPHome
+  url: https://github.com/JakeTheRabbit/Grownlink-Terralink-Substrate-Sensor-for-ESP-Home
+  description: ESP32/ESPHome reading a Growlink Terralink TDR substrate sensor over SDI-12, exposing VWC/pwEC/temp
+    to Home Assistant for coco and rockwool
+  licence: mit
+  date_maj: '2026-08-17'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - ESPHome Configs
+  - crop-steering
+  - esp32
+  - esphome
+  - growlink
+  - home-assistant
+  - sdi-12
+  - soil-moisture
+  score: 77
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - retenu par la liste awesome-cropsteering
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Configuration logicielle pour lire des capteurs de substrat via ESP32/ESPHome et transmettre
+    les données à Home Assistant. Il permet de surveiller l'humidité, la conductivité électrique et la
+    température des substrats comme la fibre de coco ou la laine de roche.
+  interet: Permet de suivre et ajuster les conditions de culture en fonction des données des substrats.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - esp32
+  - esphome
+  - capteurs-substrat
+  - home-assistant
+  - surveillance-culture
+- id: d043f358cf95
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-cropsteering
+  curation: awesome-cropsteering
+  titre: Arduino-SDI-12
+  url: https://github.com/EnviroDIY/Arduino-SDI-12
+  description: The de-facto Arduino library for SDI-12 communication with environmental sensors, no extra
+    hardware needed
+  licence: bsd-3-clause
+  date_maj: '2026-06-23'
+  techno: C++
+  popularite: 187
+  mots_cles:
+  - Metrics and Logging
+  - arduino-library
+  - environmental-monitoring
+  - environmental-sensors
+  score: 76
+  raisons:
+  - licence bsd-3-clause
+  - actif (moins d'un an)
+  - retenu par la liste awesome-cropsteering
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Bibliothèque Arduino pour communiquer avec des capteurs environnementaux via le protocole SDI-12.
+    Elle permet de récupérer des mesures sans matériel supplémentaire.
+  interet: Facilite la collecte automatisée de données environnementales pour le suivi des cultures.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - arduino
+  - sdi-12
+  - capteurs-environnementaux
+  - mesures-automatisées
+  - bibliothèque
+- id: 7871be84126d
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-cropsteering
+  curation: awesome-cropsteering
+  titre: WEGA-HPG
+  url: https://github.com/WEGA-project/wega-hpg
+  description: 'HPG Calculator — Hydroponic Profile Generator : calcul, correction et suivi des profils
+    de nutrition en hydroponie'
+  licence: gpl-3.0
+  date_maj: '2026-02-14'
+  techno: HTML
+  popularite: 184
+  mots_cles:
+  - Calculators
+  score: 74
+  raisons:
+  - licence gpl-3.0
+  - actif (moins d'un an)
+  - retenu par la liste awesome-cropsteering
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Calculateur de solutions nutritives pour l'hydroponie, qui établit, corrige et conserve des
+    profils de nutrition à partir des engrais disponibles. Il s'adresse aux cultivateurs hors-sol qui
+    préparent eux-mêmes leurs solutions.
+  interet: Permet de calculer la composition des solutions nutritives d'une culture hydroponique.
+  pertinence: oui
+  redige_par: relecture
+  mots_cles_fr:
+  - hydroponie
+  - solution nutritive
+  - fertilisation
+  - calculateur
+- id: 87d4dc7aa233
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-cropsteering
+  curation: awesome-cropsteering
+  titre: Tasmota-Hydroponics-Controller
+  url: https://github.com/LucidEye/Tasmota-Hydroponics-Controller
+  description: 'Tasmota Berry scripts for grow-tent and hydro VPD control: lights, pump, humidifier, PWM
+    fans'
+  licence: mit
+  date_maj: '2026-05-24'
+  techno: Berry
+  popularite: 4
+  mots_cles:
+  - Tasmota Configs
+  - berry
+  - esp32
+  - grow-tent
+  - home-automation
+  - hydroponics
+  - iot
+  - tasmota
+  score: 70
+  raisons:
+  - licence mit
+  - actif (moins d'un an)
+  - retenu par la liste awesome-cropsteering
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Scripts pour contrôler des équipements de culture sous serre ou hydroponique via Tasmota Berry.
+    Il permet de gérer l'éclairage, la pompe, l'humidificateur et les ventilateurs.
+  interet: Automatise le contrôle des conditions environnementales pour les cultures en intérieur ou hydroponiques.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - tasmota
+  - berry
+  - hydroponie
+  - automatisation-culture
+  - esp32
+- id: 31c6c9f55417
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-cropsteering
+  curation: awesome-cropsteering
+  titre: ESP32-SDI12
+  url: https://github.com/HarveyBates/ESP32-SDI12
+  description: SDI-12 library for ESP32 microcontrollers
+  licence: lgpl-2.1
+  date_maj: '2024-02-28'
+  techno: C++
+  popularite: 18
+  mots_cles:
+  - Metrics and Logging
+  - agriculture
+  - digital-agriculture
+  - embedded
+  - esp32
+  - microcontroller
+  - sdi-12
+  - sdi12
+  score: 62
+  raisons:
+  - licence lgpl-2.1
+  - aucune activité récente
+  - 'vocabulaire : agriculture'
+  - retenu par la liste awesome-cropsteering
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Bibliothèque SDI-12 pour microcontrôleurs ESP32. Elle permet de communiquer avec des capteurs
+    environnementaux.
+  interet: Permet l'acquisition automatisée de données environnementales pour le suivi des cultures.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - esp32
+  - sdi-12
+  - capteurs-environnementaux
+  - microcontrôleur
+  - agriculture-numérique
+- id: 50d0999a074b
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-cropsteering
+  curation: awesome-cropsteering
+  titre: WEGA-Box
+  url: https://github.com/WEGA-project/wegabox
+  description: Hydroponic system management toolkit
+  licence: gpl-3.0
+  date_maj: '2024-12-20'
+  techno: C++
+  popularite: 21
+  mots_cles:
+  - Grow Automation
+  score: 61
+  raisons:
+  - licence gpl-3.0
+  - activité ancienne
+  - retenu par la liste awesome-cropsteering
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Outil de gestion pour systèmes hydroponiques automatisés. Il permet de contrôler et surveiller
+    les paramètres de culture hors-sol.
+  interet: Automatiser la gestion des cultures hors-sol en ajustant les conditions de croissance.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - hydroponie
+  - automatisation
+  - gestion
+  - culture hors-sol
+- id: 128b761953a7
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-cropsteering
+  curation: awesome-cropsteering
+  titre: TDR-Sensor
+  url: https://github.com/Emperiusm/TDR-Sensor
+  description: A TDR sensor that measures moisture content, EC, and temperature for Rockwool Substrates
+    or Soil Substrates
+  licence: agpl-3.0
+  date_maj: '2023-04-07'
+  techno: C++
+  popularite: 7
+  mots_cles:
+  - Metrics and Logging
+  score: 61
+  raisons:
+  - licence agpl-3.0
+  - aucune activité récente
+  - 'vocabulaire : soil'
+  - retenu par la liste awesome-cropsteering
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Outil logiciel pour mesurer l'humidité, la conductivité électrique et la température dans des
+    substrats. Il traite les données des capteurs TDR.
+  interet: Surveiller les conditions du substrat pour optimiser l'irrigation et la nutrition des plantes.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - capteur
+  - substrat
+  - humidité
+  - conductivité électrique
+  - température
+- id: e6b9e8dd51b6
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-cropsteering
+  curation: awesome-cropsteering
+  titre: gardenAutomation
+  url: https://github.com/ledgardener/gardenAutomation
+  description: Garden Automation toolkit by LedGardener
+  licence: mit
+  date_maj: '2021-03-02'
+  techno: C++
+  popularite: 531
+  mots_cles:
+  - Grow Automation
+  score: 60
+  raisons:
+  - licence mit
+  - aucune activité récente
+  - retenu par la liste awesome-cropsteering
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Outil d'automatisation pour jardins et cultures sous serre. Il permet de gérer des systèmes
+    d'arrosage et d'éclairage.
+  interet: Automatiser les tâches de jardinage pour maintenir des conditions de croissance optimales.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - automatisation
+  - jardin
+  - serre
+  - arrosage
+  - éclairage
+- id: 42acfdb799ca
+  famille: donnees
+  relecteur: ionosphere bertrandgorge
+  source: liste-cropsteering
+  curation: awesome-cropsteering
+  titre: PlantDoc Dataset
+  url: https://github.com/pratikkayal/PlantDoc-Dataset
+  description: Dataset for visual plant disease detection in real (non-lab) conditions
+  licence: cc-by-4.0
+  date_maj: '2021-05-02'
+  techno: ''
+  popularite: 445
+  mots_cles:
+  - AI/ML
+  - dataset
+  - detection
+  - diseases
+  - paper
+  - plant-disease-detection
+  score: 56
+  raisons:
+  - licence cc-by-4.0
+  - aucune activité récente
+  - retenu par la liste awesome-cropsteering
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Jeu de données pour la détection visuelle de maladies végétales en conditions réelles. Il contient
+    des images annotées de plantes malades.
+  interet: Entraîner des modèles de détection de maladies végétales pour améliorer la surveillance des
+    cultures.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  famille_initiale: logiciel
+  mots_cles_fr:
+  - maladie végétale
+  - détection visuelle
+  - dataset
+  - images annotées
+  - apprentissage automatique
+- id: c52f90dd290a
+  famille: materiel
+  relecteur: ionosphere bertrandgorge
+  source: liste-cropsteering
+  curation: awesome-cropsteering
+  titre: OpenSprinkler Hardware
+  url: https://github.com/OpenSprinkler/OpenSprinkler-Hardware
+  description: OpenSprinkler Hardware Design files, made in EagleCAD software
+  licence: cern-ohl-s-2.0
+  date_maj: '2026-04-25'
+  techno: Prolog
+  popularite: 79
+  mots_cles:
+  - DIY
+  score: 74
+  raisons:
+  - licence cern-ohl-s-2.0
+  - actif (moins d'un an)
+  - retenu par la liste awesome-cropsteering
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Fichiers de conception matérielle pour un système d'arrosage automatisé open-source. Il inclut
+    les plans électroniques et mécaniques.
+  interet: Construire un système d'irrigation automatisé pour optimiser l'utilisation de l'eau.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - irrigation
+  - automatisation
+  - open-source
+  - électronique
+  - conception matérielle
+- id: 3fd29a1ddf82
+  famille: materiel
+  relecteur: ionosphere bertrandgorge
+  source: liste-cropsteering
+  curation: awesome-cropsteering
+  titre: Chirp i2c-moisture-sensor
+  url: https://github.com/Miceuz/i2c-moisture-sensor
+  description: The canonical open-hardware I2C capacitive soil moisture sensor
+  licence: apache-2.0
+  date_maj: '2023-02-25'
+  techno: C
+  popularite: 258
+  mots_cles:
+  - DIY
+  - avr
+  - i2c
+  - kicad
+  - sensor
+  - soil-moisture
+  - soil-moisture-sensor
+  score: 62
+  raisons:
+  - licence apache-2.0
+  - aucune activité récente
+  - 'vocabulaire : soil'
+  - retenu par la liste awesome-cropsteering
+  propose_le: '2026-09-26'
+  publier: true
+  resume: Conception open-hardware d'un capteur capacitif d'humidité du sol en communication I2C. Il est
+    compatible avec des microcontrôleurs AVR.
+  interet: Mesurer précisément l'humidité du sol pour ajuster l'irrigation.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - capteur
+  - humidité du sol
+  - I2C
+  - open-hardware
+  - microcontrôleur
+- id: 4b7611ddcb99
+  famille: materiel
+  relecteur: ionosphere bertrandgorge
+  source: liste-cropsteering
+  curation: awesome-cropsteering
+  titre: WEGA-Mixer
+  url: https://github.com/WEGA-project/wega-mixer
+  description: WEGA-Mixer is a device for the automatic preparation of two-component complex fertilizers
+    in liquids by precisely mixing their composition (RU, requires google translate).
+  licence: gpl-3.0
+  date_maj: '2023-04-18'
+  techno: C++
+  popularite: 32
+  mots_cles:
+  - Mixers and Dosers
+  score: 61
+  raisons:
+  - licence gpl-3.0
+  - aucune activité récente
+  - 'vocabulaire : fertilizer'
+  - retenu par la liste awesome-cropsteering
+  propose_le: '2026-09-26'
+  publier: true
+  resume: WEGA-Mixer est un appareil conçu pour préparer automatiquement des engrais liquides complexes
+    à deux composants en mélangeant précisément leur composition. Il permet de doser et mélanger des solutions
+    fertilisantes selon des proportions définies.
+  interet: Automatiser la préparation de mélanges fertilisants adaptés à des besoins agricoles spécifiques.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - mélangeur
+  - engrais
+  - dosage
+  - fertilisation
+  - liquide
+- id: bbe91a559831
+  famille: materiel
+  relecteur: ionosphere bertrandgorge
+  source: liste-cropsteering
+  curation: awesome-cropsteering
+  titre: SENTSOR Core ESP32-EMBED
+  url: https://github.com/adamalfath/sentsor-core-esp32embed
+  description: all-in-one, super low power development board based on latest revision of ESP32 chip. BOM,
+    easyEDA PCB blueprints
+  licence: cc-by-sa-4.0
+  date_maj: '2021-03-25'
+  techno: ''
+  popularite: 10
+  mots_cles:
+  - DIY
+  - development-board
+  - esp32
+  - espressif
+  - hardware-design
+  - iot
+  - iot-device
+  - sentsor
+  score: 55
+  raisons:
+  - licence cc-by-sa-4.0
+  - aucune activité récente
+  - retenu par la liste awesome-cropsteering
+  propose_le: '2026-09-26'
+  publier: false
+  resume: SENTSOR Core ESP32-EMBED est une carte de développement tout-en-un à très faible consommation
+    basée sur le microcontrôleur ESP32. Elle inclut des plans de circuit imprimé et une liste de composants
+    pour une reproduction facile.
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - carte électronique
+  - esp32
+  - microcontrôleur
+  - low-power
+  - iot
+resume_genere_le: 2026-09-26 10:35
