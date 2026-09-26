@@ -140,33 +140,66 @@ def ecrire_corps_pr(contenu: dict, fichier: Path) -> None:
     except ValueError:
         chemin_lot = fichier
 
-    lignes = [
-        f"## Radar du {contenu.get('date', '')}",
-        "",
-        f"{contenu.get('examines', 0)} projets examinés · {len(candidats)} proposés · "
-        f"{rejets.get('licence', 0)} écartés faute de licence ouverte.",
-        "",
-        "**Valider en trois minutes :** dans l'onglet *Files changed*, éditez "
-        f"`{chemin_lot}` (menu ⋯ → *Edit file*). Passez à `publier: false` ce qui ne "
-        "doit pas sortir et corrigez un résumé si besoin. **La fusion publie** "
-        "les fiches restantes sur l'annuaire et le fil d'actualités.",
-        "",
-        "Sans fusion sous trois jours, ce lot est fermé automatiquement et ses projets "
-        "reviendront dans un lot suivant : rien ne s'accumule.",
-        "",
-    ]
+    # Lot d'import d'une liste de la communauté (collecte.py --import-liste) :
+    # plus long, relu une fois, et c'est sa fusion qui marque la liste importée.
+    liste = contenu.get("liste")
+    if liste:
+        lignes = [
+            f"## Import de la liste {liste}",
+            "",
+            f"{contenu.get('examines', 0)} entrées examinées · {len(candidats)} proposées · "
+            f"{rejets.get('licence', 0)} écartées faute de licence ouverte vérifiée · "
+            f"{rejets.get('deja_sur_le_site', 0)} déjà dans l'annuaire.",
+            "",
+            "**Relire l'import :** dans l'onglet *Files changed*, éditez "
+            f"`{chemin_lot}` (menu ⋯ → *Edit file*). Passez à `publier: false` ce qui ne "
+            "doit pas sortir. Vérifiez au passage le **dépôt** indiqué quand il diffère du "
+            "lien de la liste : c'est lui qui donne la licence. **La fusion publie** les "
+            "fiches restantes et marque la liste comme importée : ensuite, seules ses "
+            "nouvelles entrées remonteront dans les lots quotidiens.",
+            "",
+            "Cet import bloque les lots quotidiens tant qu'il est ouvert. Sans fusion sous "
+            "quatorze jours, il est fermé automatiquement.",
+            "",
+        ]
+    else:
+        lignes = [
+            f"## Radar du {contenu.get('date', '')}",
+            "",
+            f"{contenu.get('examines', 0)} projets examinés · {len(candidats)} proposés · "
+            f"{rejets.get('licence', 0)} écartés faute de licence ouverte.",
+            "",
+            "**Valider en trois minutes :** dans l'onglet *Files changed*, éditez "
+            f"`{chemin_lot}` (menu ⋯ → *Edit file*). Passez à `publier: false` ce qui ne "
+            "doit pas sortir et corrigez un résumé si besoin. **La fusion publie** "
+            "les fiches restantes sur l'annuaire et le fil d'actualités.",
+            "",
+            "Sans fusion sous trois jours, ce lot est fermé automatiquement et ses projets "
+            "reviendront dans un lot suivant : rien ne s'accumule.",
+            "",
+        ]
 
     for famille in FAMILLES:
         fiches = [c for c in candidats if c.get("famille") == famille]
         if not fiches:
             continue
-        relecteurs = sorted({c["relecteur"] for c in fiches if c.get("relecteur")})
+        # Un champ `relecteur` peut en nommer plusieurs, séparés par des espaces.
+        relecteurs = sorted({r for c in fiches for r in (c.get("relecteur") or "").split()})
         mention = " · " + " ".join(f"@{r}" for r in relecteurs) if relecteurs else ""
         lignes += [f"### {ETIQUETTES[famille]} — {len(fiches)} fiche(s){mention}", ""]
+        if liste:
+            # collecte.py met la section de la liste en premier mot-clé.
+            fiches = sorted(fiches, key=lambda c: (c.get("mots_cles") or [""])[0])
+        section_courante = None
         for c in fiches:
+            section = (c.get("mots_cles") or [""])[0] if liste else None
+            if section and section != section_courante:
+                lignes += ([""] if section_courante else []) + [f"**{section}**", ""]
+                section_courante = section
             etat = "" if c.get("publier", True) else " — ❌ `publier: false`"
+            depot = f" · [dépôt]({c['depot']})" if c.get("depot") else ""
             lignes.append(f"- **[{c['titre']}]({c['url']})** · `{c.get('licence') or '?'}` "
-                          f"· score {c.get('score', 0)}{etat}")
+                          f"· score {c.get('score', 0)}{depot}{etat}")
             if c.get("resume"):
                 lignes.append(f"  {c['resume']}")
             if c.get("interet"):

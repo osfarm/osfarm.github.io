@@ -54,9 +54,9 @@ sur `main`, donc ses projets reviennent dans un lot suivant.
    | `MISTRAL_API_KEY` | rédaction des résumés en français | la description d'origine est gardée |
    | `OSHWA_TOKEN` | annuaire du matériel certifié OSHWA | la source est ignorée |
 
-3. **Relecteurs** : renseigner `relecteur` (identifiant GitHub) dans
-   `_radar/sources.yml` pour les familles qui n'en ont pas encore. Ils sont
-   mentionnés dans chaque pull request.
+3. **Relecteurs** : renseigner `relecteur` (identifiant GitHub, ou une liste
+   d'identifiants) dans `_radar/sources.yml` pour les familles qui n'en ont pas
+   encore. Ils sont mentionnés dans chaque pull request.
 4. Lancer un premier passage à la main : Actions → Radar des communs → Run workflow.
 
 ## En local
@@ -95,6 +95,38 @@ Les projets dont l'URL figure déjà dans un fichier `_data/*.yml` du site ou
 dans `_data/radar/communaute.yml` (url, dépôt ou démo) ne sont jamais proposés.
 `fichiers_lots()` (dans `collecte.py`) écarte ce dernier fichier : ce n'est pas
 un lot, et ni `resume.py` ni `diffusion.py` ne le traitent.
+
+## Les listes de la communauté
+
+D'autres tiennent déjà des listes « awesome » de projets agricoles ouverts. Une
+source `type: liste` dans `sources.yml` les lit : chaque ligne de tableau ou
+chaque puce `- [Nom](url) - description` devient un candidat, dont la licence
+vient du dépôt que `resoudre()` retrouve à partir du lien de la liste :
+
+- GitHub, GitLab, Hugging Face et Zenodo sont interrogés directement. Un
+  compte GitHub seul n'est suivi que s'il n'a qu'un dépôt à lui, et une page
+  `*.github.io/<projet>` mène au dépôt `<projet>` ;
+- pour un autre site, la page est lue. Si elle cite **un seul** dépôt qui
+  porte le nom du projet ou du site, sans être son site web ni sa
+  documentation, ce dépôt est suivi et noté dans le champ `depot` de la
+  fiche ;
+- sans dépôt, pas de licence vérifiée, donc pas de fiche. C'est le cas de
+  Kaggle, de Mendeley, des pages d'université et des articles.
+
+Une liste s'importe **une fois** : Actions → Radar des communs → Run workflow,
+avec le champ « liste » rempli de son id (ou `collecte.py --import-liste <id>`
+en local, avec `--blanc` pour calibrer). L'import n'a pas de plafond, ouvre
+une pull request `radar-import` qui expire sous quatorze jours, et écrit
+`_data/radar/AAAA-MM-JJ-import-<id>.yml`. C'est la présence de ce fichier sur
+`main` qui marque la liste comme importée. Avant, la collecte quotidienne
+ignore la liste ; après, elle n'en interroge que les entrées inconnues de la
+mémoire, donc presque rien.
+
+Les fiches d'une liste portent `curation: <nom de la liste>`, qui vaut
+`bonus_curation` points (10) dans la note, et la section de la liste en
+premier mot-clé. Le même projet n'est pas reproposé sous l'URL de son site et
+sous celle de son dépôt : le dédoublonnage et la mémoire tiennent compte des
+deux. Choix, mesures et listes écartées : `_radar/LISTES.md`.
 
 ## L'autre porte d'entrée : le formulaire de proposition
 

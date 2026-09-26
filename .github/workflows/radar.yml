@@ -3,11 +3,20 @@ name: Radar des communs
 # Chaque jour ouvré : collecte, résumé, puis une pull request « lot du radar ».
 # La fusion de cette pull request publie les fiches validées (le site lit
 # _data/radar/ directement). Voir _radar/README.md.
+#
+# Lancé à la main avec le champ « liste » rempli, il importe une liste de la
+# communauté (source de type liste dans sources.yml) : une pull request unique,
+# sans plafond, dont la fusion marque la liste importée. Voir _radar/LISTES.md.
 
 on:
   schedule:
     - cron: "0 5 * * 1-5"      # du lundi au vendredi, 5 h UTC
   workflow_dispatch:
+    inputs:
+      liste:
+        description: "Import initial d'une liste : son id dans _radar/sources.yml (ex. liste-osa). Vide pour un passage ordinaire."
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -26,19 +35,24 @@ jobs:
       # Un seul lot en relecture à la fois : un lot ouvert pendant que le suivant
       # se prépare reproposerait les mêmes projets et ferait entrer les deux
       # pull requests en conflit sur la mémoire. Un lot non fusionné sous trois
-      # jours est fermé ; ses projets reviendront dans un lot suivant.
+      # jours est fermé ; ses projets reviendront dans un lot suivant. Un import
+      # de liste (label radar-import), plus long à relire, a quatorze jours.
       - name: Fermer les lots expirés
         id: attente
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh label create radar --color 2c974b --description "Lot du radar des communs" --force
+          gh label create radar-import --color 0e8a16 --description "Import d'une liste de la communauté" --force
           limite=$(date -u -d '3 days ago' +%FT%TZ)
-          gh pr list --label radar --state open --json number,createdAt \
-            -q ".[] | select(.createdAt < \"$limite\") | .number" |
+          limite_import=$(date -u -d '14 days ago' +%FT%TZ)
+          # Date limite de chaque PR selon qu'elle est un import ou un lot du jour
+          echeance="(if (.labels | map(.name) | index(\"radar-import\")) then \"$limite_import\" else \"$limite\" end)"
+          gh pr list --label radar --state open --json number,createdAt,labels \
+            -q ".[] | select(.createdAt < $echeance) | .number" |
           while read -r n; do
             gh pr close "$n" --delete-branch \
-              --comment "Lot expiré faute de fusion sous trois jours. Ses projets reviendront dans un prochain lot."
+              --comment "Lot expiré faute de fusion dans son délai (trois jours, quatorze pour un import de liste). Ses projets reviendront dans un prochain lot."
           done
           # On ne compte que les lots NON expirés, c'est-à-dire ceux qui
           # attendent vraiment une relecture. Compter les PR encore « open »
@@ -48,8 +62,8 @@ jobs:
           # (constaté le 21/09/2026, après quatre jours sans nouveau lot).
           # Filtrer par date plutôt que par état rend le test indépendant de ce
           # délai de propagation.
-          ouverts=$(gh pr list --label radar --state open --json number,createdAt \
-            -q "[.[] | select(.createdAt >= \"$limite\")] | length")
+          ouverts=$(gh pr list --label radar --state open --json number,createdAt,labels \
+            -q "[.[] | select(.createdAt >= $echeance)] | length")
           echo "ouverts=$ouverts" >> "$GITHUB_OUTPUT"
           if [ "$ouverts" != "0" ]; then
             echo "Un lot attend encore sa relecture : pas de nouvelle collecte aujourd'hui."
@@ -71,28 +85,31 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OSHWA_TOKEN: ${{ secrets.OSHWA_TOKEN }}
-        run: python _radar/collecte.py
+          LISTE: ${{ inputs.liste }}
+        run: python _radar/collecte.py ${LISTE:+--import-liste "$LISTE"}
 
+      # Un import ouvre sa pull request même sans fiche retenue : sa fusion dépose
+      # le lot d'import et la mémoire, qui marquent la liste comme importée.
       - name: Résumé
-        if: steps.collecte.outputs.retenus != '' && steps.collecte.outputs.retenus != '0'
+        if: steps.collecte.outputs.fichier != '' && (steps.collecte.outputs.retenus != '0' || inputs.liste != '')
         env:
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
         run: python _radar/resume.py --fichier "${{ steps.collecte.outputs.fichier }}"
 
       - name: Ouvrir la pull request du lot
-        if: steps.collecte.outputs.retenus != '' && steps.collecte.outputs.retenus != '0'
+        if: steps.collecte.outputs.fichier != '' && (steps.collecte.outputs.retenus != '0' || inputs.liste != '')
         uses: peter-evans/create-pull-request@v7
         with:
-          branch: radar/lot-${{ github.run_number }}
+          branch: ${{ inputs.liste && format('radar/import-{0}', inputs.liste) || format('radar/lot-{0}', github.run_number) }}
           delete-branch: true
           add-paths: |
             _data/radar/*.yml
             _radar/memoire.json
             _radar/resumes.json
-          commit-message: "radar : lot à relire (${{ steps.collecte.outputs.retenus }} fiches)"
-          title: "Radar : ${{ steps.collecte.outputs.retenus }} fiche(s) à relire"
+          commit-message: "${{ inputs.liste && format('radar : import de la liste {0} ({1} fiches)', inputs.liste, steps.collecte.outputs.retenus) || format('radar : lot à relire ({0} fiches)', steps.collecte.outputs.retenus) }}"
+          title: "${{ inputs.liste && format('Radar : import de la liste {0} ({1} fiches)', inputs.liste, steps.collecte.outputs.retenus) || format('Radar : {0} fiche(s) à relire', steps.collecte.outputs.retenus) }}"
           body-path: _radar/pr_body.md
-          labels: radar
+          labels: ${{ inputs.liste && 'radar,radar-import' || 'radar' }}
 
       - name: Signaler les sources en panne
         if: steps.collecte.outputs.pannes != '' && steps.collecte.outputs.pannes != '0'

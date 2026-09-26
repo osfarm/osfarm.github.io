@@ -1,10 +1,10 @@
 # Radar OSFarm — sources surveillées
 # Ajouter une source = ajouter un bloc. Rien d'autre à modifier.
 #
-# type       github_search | huggingface | datagouv | zenodo | oshwa | rss | api
+# type       github_search | huggingface | datagouv | zenodo | oshwa | rss | api | liste
 # famille    logiciel | materiel | donnees | modele
-# relecteur  identifiant GitHub de la personne qui valide cette famille ;
-#            elle est mentionnée dans la pull request du jour
+# relecteur  identifiant GitHub de la personne qui valide cette famille, ou une
+#            liste d'identifiants ; mentionnés dans la pull request du jour
 # actif      false pour désactiver sans supprimer
 # famille_fixe  true pour que le modèle de langue ne reclasse pas les fiches
 #               de cette source (utile au matériel, souvent vu comme du logiciel)
@@ -14,6 +14,7 @@ reglages:
   max_par_relecteur: 8     # plafond par lot : la relecture doit tenir en 3 min
   quarantaine_jours: 90    # délai avant de réexaminer un projet écarté
   pause_entre_sources: 1
+  bonus_curation: 10       # points d'une entrée retenue par une liste de la communauté
 
 sources:
 
@@ -154,4 +155,56 @@ sources:
     url: https://hackaday.com/tag/agriculture/feed/
     limite: 20
     relecteur: ""
+    actif: false
+
+  # ------------------------------------------------ listes de la communauté
+  # Des listes « awesome » tenues à la main par d'autres. Une liste s'importe
+  # une fois (Actions → Radar des communs → Run workflow, champ « liste »),
+  # puis seules ses nouveautés remontent. Tant que l'import n'est pas fusionné,
+  # la collecte quotidienne l'ignore. Conception : _radar/LISTES.md
+  #   url                   README brut de la liste
+  #   nom                   écrit dans le champ `curation` des fiches
+  #   familles_par_section  morceau d'un titre de section → famille, du titre
+  #                         le plus proche au plus lointain ; sinon `famille`
+  #   suivre_les_sites      false pour ne pas lire les sites vitrines à la
+  #                         recherche de leur dépôt
+  - id: liste-osa
+    type: liste
+    url: https://raw.githubusercontent.com/geezacoleman/OpenSourceAgriculture/main/README.md
+    nom: OpenSourceAgriculture
+    famille: logiciel
+    familles_par_section:
+      dataset: donnees
+      foundation model: modele
+      hardware: materiel
+      in-field: materiel
+    famille_fixe: true
+    relecteur: [ionosphere, bertrandgorge]
+
+  - id: liste-awesome-agriculture
+    type: liste
+    url: https://raw.githubusercontent.com/brycejohnston/awesome-agriculture/master/README.md
+    nom: awesome-agriculture
+    famille: logiciel
+    familles_par_section:
+      datasets: donnees
+      hardware: materiel
+      robotics: materiel
+    relecteur: [ionosphere, bertrandgorge]
+
+  # Récente et active, mais orientée culture sous abri et domotique, avec une
+  # section de guides qui ne sont pas des communs : à calibrer en --blanc.
+  - id: liste-cropsteering
+    type: liste
+    url: https://raw.githubusercontent.com/Intergalactic-XYZ/awesome-cropsteering/main/README.md
+    nom: awesome-cropsteering
+    famille: logiciel
+    familles_par_section:
+      diy: materiel
+      components: materiel
+      sensors: materiel
+      mcu: materiel
+      relay: materiel
+      mixers: materiel
+    relecteur: [ionosphere, bertrandgorge]
     actif: false

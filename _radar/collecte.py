@@ -15,6 +15,9 @@ Usage :
     python _radar/collecte.py --source github-agri
     python _radar/collecte.py --blanc     # lot écrit dans _radar/brouillon/,
                                           # mémoire intacte : pour calibrer
+    python _radar/collecte.py --import-liste liste-osa
+                                          # import initial d'une liste de la
+                                          # communauté, sans plafond (LISTES.md)
 
 Variables d'environnement facultatives :
     GITHUB_TOKEN   relève les quotas de l'API GitHub (recherche : 10 -> 30 req/min)
@@ -35,6 +38,7 @@ from dataclasses import asdict, dataclass, field
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
+from urllib.parse import quote, urlsplit
 
 import requests
 import yaml
@@ -182,14 +186,23 @@ def exclu(texte: str) -> str | None:
 # Structure d'un candidat
 # --------------------------------------------------------------------------
 
+def identifiant(url: str) -> str:
+    """Clé d'un projet dans la mémoire et dans les lots."""
+    return hashlib.sha1((url or "").strip().lower().rstrip("/").encode("utf-8")).hexdigest()[:12]
+
+
 @dataclass
 class Candidat:
     id: str = ""
     famille: str = "logiciel"
     relecteur: str = ""
     source: str = ""
+    # Nom de la liste de la communauté qui a retenu ce projet, s'il en vient
+    curation: str = ""
     titre: str = ""
     url: str = ""
+    # Dépôt de code quand l'url est un site vitrine (sources de type liste)
+    depot: str = ""
     description: str = ""
     licence: str = ""
     date_maj: str = ""
@@ -203,8 +216,7 @@ class Candidat:
 
     def finaliser(self) -> "Candidat":
         self.url = (self.url or "").strip()
-        cle = self.url.lower().rstrip("/")
-        self.id = hashlib.sha1(cle.encode("utf-8")).hexdigest()[:12]
+        self.id = identifiant(self.url)
         self.titre = re.sub(r"\s+", " ", self.titre or "").strip()[:160]
         self.description = re.sub(r"\s+", " ", self.description or "").strip()[:400]
         self.mots_cles = [str(m) for m in self.mots_cles if m][:8]
@@ -233,6 +245,31 @@ def get_json(url: str, entetes: dict | None = None, params: dict | None = None,
                 raise
             time.sleep(3 * (tentative + 1))
     raise RuntimeError(f"quota toujours atteint après {essais} essais : {url}")
+
+
+def lire_json(url: str, entetes: dict | None = None, params: dict | None = None) -> Any:
+    """Comme get_json, mais un lien mort rend None au lieu d'une panne : sert à
+    résoudre les entrées d'une liste, où un 404 est une réponse, pas un échec."""
+    entetes_complets = {"User-Agent": "radar-osfarm (+https://osfarm.org)", **(entetes or {})}
+    try:
+        r = requests.get(url, headers=entetes_complets, params=params, timeout=DELAI_REQUETE)
+    except requests.RequestException:
+        return None
+    if r.status_code in (403, 429) and "rate limit" in r.text.lower():
+        return get_json(url, entetes, params)      # attend la fin du quota
+    if not r.ok:
+        return None
+    try:
+        return r.json()
+    except ValueError:
+        return None
+
+
+def entetes_github() -> dict:
+    entetes = {"Accept": "application/vnd.github+json"}
+    if os.getenv("GITHUB_TOKEN"):
+        entetes["Authorization"] = f"Bearer {os.environ['GITHUB_TOKEN']}"
+    return entetes
 
 
 def chemin(obj: Any, route: str, defaut: Any = "") -> Any:
@@ -269,9 +306,14 @@ def duree_en_jours(valeur: Any) -> int:
 
 
 def nouveau(src: dict, famille_defaut: str, **champs: Any) -> Candidat:
+    relecteur = src.get("relecteur") or ""
+    if isinstance(relecteur, list):
+        # Plusieurs relecteurs : une seule chaîne, pour que les lots restent
+        # lisibles par resume.py et que le plafond les compte comme un groupe.
+        relecteur = " ".join(relecteur)
     return Candidat(
         famille=src.get("famille", famille_defaut),
-        relecteur=src.get("relecteur", ""),
+        relecteur=relecteur,
         source=src["id"],
         **champs,
     ).finaliser()
@@ -291,12 +333,9 @@ def connecteur_github(src: dict) -> list[Candidat]:
         suffixe += f" stars:>={int(filtres['etoiles_min'])}"
 
     requetes = src.get("requetes") or [src["requete"]]
-    entetes = {"Accept": "application/vnd.github+json"}
-    jeton = os.getenv("GITHUB_TOKEN")
-    if jeton:
-        entetes["Authorization"] = f"Bearer {jeton}"
+    entetes = entetes_github()
     # 10 recherches par minute sans jeton, 30 avec
-    pause = 2.1 if jeton else 6.5
+    pause = 2.1 if os.getenv("GITHUB_TOKEN") else 6.5
 
     sortie = []
     for i, requete in enumerate(requetes):
@@ -457,6 +496,352 @@ def connecteur_api(src: dict) -> list[Candidat]:
     return sortie
 
 
+# --------------------------------------------------------------------------
+# Listes de la communauté (« awesome lists ») — conception : _radar/LISTES.md
+#
+# Une liste est lue en trois temps : lire_liste() en tire les entrées sans
+# toucher au réseau, resoudre() remonte de chaque lien jusqu'à un dépôt dont la
+# forge dit la licence, connecteur_liste() en fait des candidats ordinaires.
+# --------------------------------------------------------------------------
+
+SECTIONS_IGNOREES = ("contents", "table of contents", "contributing", "license",
+                     "licence", "related", "other awesome", "sommaire")
+
+# Premier lien d'une ligne. Tolère `[nom]((url))`, faute vue dans
+# OpenSourceAgriculture ; `(?<!!)` écarte les images.
+RE_LIEN = re.compile(r"(?<!!)\[([^\]]+)\]\(\(?\s*([^()\s]+)\s*\)?\)")
+RE_TITRE = re.compile(r"^(#{1,6})\s+(.+?)\s*#*\s*$")
+RE_PUCE = re.compile(r"^\s*[-*+]\s+(.*)$")
+RE_SEPARATEUR = re.compile(r"^\s*\|?[\s:|-]+\|[\s:|-]*$")
+PAUSE_RESOLUTION = 0.5  # secondes entre deux entrées : l'API REST n'a pas de
+                        # quota par minute, mais GitHub freine les rafales
+
+
+@dataclass
+class Entree:
+    titre: str
+    url: str
+    description: str
+    sections: list[str]
+
+
+def nettoyer_markdown(texte: str) -> str:
+    texte = re.sub(r"!\[[^\]]*\]\([^)]*\)", "", texte)          # images
+    texte = re.sub(r"\[\s*\]\([^)]*\)", "", texte)               # badges vidés
+    texte = RE_LIEN.sub(lambda m: m.group(1), texte)              # liens → texte
+    texte = re.sub(r"<[^>]+>", " ", texte)
+    texte = re.sub(r"[*`]", "", texte)
+    return re.sub(r"\s+", " ", texte).strip(" -–—:|")
+
+
+def premier_lien(texte: str) -> tuple[str, str] | None:
+    """Premier lien d'une ligne qui désigne un projet : ni ancre, ni courriel,
+    ni badge `[![…](…)](…)`."""
+    for m in RE_LIEN.finditer(texte):
+        nom, url = m.group(1).strip(), m.group(2).strip()
+        if nom.startswith("!") or not url.startswith(("http://", "https://")):
+            continue
+        # Sans l'ancre : `…/record/7535814#.ZC3um3ZByUk` et `…/record/7535814`
+        # sont le même projet pour la mémoire.
+        return nettoyer_markdown(nom), url.split("#", 1)[0]
+    return None
+
+
+def lire_liste(texte: str) -> list[Entree]:
+    """Entrées d'une liste Markdown, en tableaux ou en puces. Pure : aucun appel
+    réseau, pour pouvoir la vérifier sur un README enregistré."""
+    lignes = texte.splitlines()
+    sections: list[str] = []
+    col_description: int | None = None
+    entrees: list[Entree] = []
+
+    for i, ligne in enumerate(lignes):
+        titre = RE_TITRE.match(ligne)
+        if titre:
+            niveau = len(titre.group(1))
+            sections = sections[: niveau - 1] + [""] * max(0, niveau - 1 - len(sections))
+            sections.append(nettoyer_markdown(titre.group(2)))
+            col_description = None
+            continue
+        if any(s.lower().startswith(SECTIONS_IGNOREES) for s in sections if s):
+            continue
+        contexte = [s for s in sections if s]
+
+        if ligne.lstrip().startswith("|"):
+            if RE_SEPARATEUR.match(ligne):
+                continue
+            cellules = [c.strip() for c in ligne.strip().strip("|").split("|")]
+            suivante = lignes[i + 1] if i + 1 < len(lignes) else ""
+            if RE_SEPARATEUR.match(suivante):
+                # En-tête : repérer la colonne Description, les autres
+                # colonnes (tâche, nombre d'images…) varient d'une section à l'autre.
+                col_description = next((k for k, c in enumerate(cellules)
+                                        if "description" in c.lower()), None)
+                continue
+            lien = premier_lien(ligne)
+            if not lien:
+                continue
+            if col_description is not None and col_description < len(cellules):
+                description = cellules[col_description]
+            else:
+                description = next((c for c in reversed(cellules[1:]) if c.strip()), "")
+            entrees.append(Entree(lien[0], lien[1], nettoyer_markdown(description), contexte))
+            continue
+
+        puce = RE_PUCE.match(ligne)
+        if puce:
+            corps = puce.group(1).lstrip("*_ ")
+            # Seule une puce qui commence par son lien nomme un projet ; une
+            # phrase qui cite un lien au passage n'en est pas un.
+            m = RE_LIEN.match(corps)
+            lien = premier_lien(m.group(0)) if m else None
+            if not lien:
+                continue
+            entrees.append(Entree(lien[0], lien[1], nettoyer_markdown(corps[m.end():]),
+                                  contexte))
+
+    return entrees
+
+
+def depot_github(proprietaire: str, nom: str) -> dict | None:
+    data = lire_json(f"https://api.github.com/repos/{proprietaire}/{nom}", entetes_github())
+    if not data or not data.get("html_url"):
+        return None
+    return {
+        "depot": data["html_url"],
+        "licence": normaliser_licence(chemin(data, "license.spdx_id")),
+        "date_maj": (data.get("pushed_at") or "")[:10],
+        "techno": data.get("language") or "",
+        "popularite": data.get("stargazers_count", 0),
+        "description": data.get("description") or "",
+        "mots_cles": data.get("topics", []),
+    }
+
+
+def depot_gitlab(hote: str, chemin_projet: str) -> dict | None:
+    data = lire_json(f"https://{hote}/api/v4/projects/{quote(chemin_projet, safe='')}",
+                     params={"license": "true"})
+    if not data or not data.get("web_url"):
+        return None
+    return {
+        "depot": data["web_url"],
+        "licence": normaliser_licence(chemin(data, "license.key")),
+        "date_maj": (data.get("last_activity_at") or "")[:10],
+        "techno": "",
+        "popularite": data.get("star_count", 0),
+        "description": data.get("description") or "",
+        "mots_cles": data.get("topics") or data.get("tag_list") or [],
+    }
+
+
+def depot_huggingface(genre: str, ident: str) -> dict | None:
+    data = lire_json(f"https://huggingface.co/api/{genre}/{ident}")
+    if not data:
+        return None
+    etiquettes = [str(t) for t in data.get("tags", [])]
+    licence = chemin(data, "cardData.license") or next(
+        (t.split(":", 1)[1] for t in etiquettes if t.startswith("license:")), "")
+    if isinstance(licence, list):
+        licence = licence[0] if licence else ""
+    prefixe = "" if genre == "models" else f"{genre}/"
+    return {
+        "depot": f"https://huggingface.co/{prefixe}{data.get('id') or ident}",
+        "licence": normaliser_licence(licence),
+        "date_maj": (data.get("lastModified") or "")[:10],
+        "techno": "",
+        "popularite": int(data.get("likes") or 0),
+        "description": "",
+        "mots_cles": [t for t in etiquettes if ":" not in t],
+    }
+
+
+def depot_zenodo(numero: str) -> dict | None:
+    data = lire_json(f"https://zenodo.org/api/records/{numero}")
+    if not data:
+        return None
+    meta = data.get("metadata", {})
+    return {
+        "depot": f"https://zenodo.org/records/{numero}",
+        "licence": normaliser_licence(chemin(meta, "license.id") or chemin(meta, "license")),
+        "date_maj": (data.get("modified") or meta.get("publication_date") or "")[:10],
+        "techno": "",
+        "popularite": 0,
+        "description": re.sub("<[^>]+>", " ", meta.get("description", "") or ""),
+        "mots_cles": meta.get("keywords") or [],
+    }
+
+
+# Dépôts qu'un site cite sans qu'ils soient le projet : son propre site web, sa
+# documentation. QGIS renvoyait vers qgis/QGIS-Website, sous une autre licence
+# que le logiciel (constaté le 26/09/2026).
+RE_DEPOT_ANNEXE = re.compile(r"(website|homepage|site|docs?|\.github\.io)$", re.IGNORECASE)
+
+# Premiers segments de chemin qui ne sont pas des comptes sur github.com
+PAGES_GITHUB = {"about", "apps", "collections", "features", "login", "marketplace",
+                "orgs", "settings", "site", "sponsors", "topics", "trending"}
+
+
+# Morceaux d'un nom d'hôte qui ne disent rien du projet
+HOTES_GENERIQUES = {"www", "com", "org", "net", "edu", "io", "ag", "de", "fr", "uk",
+                    "github", "gitlab", "docs", "doc", "data", "datasets", "app",
+                    "discourse", "forum", "community", "wiki", "blog", "shop", "store"}
+
+
+def apparente(titre: str, url: str, proprietaire: str, nom: str) -> bool:
+    """Le dépôt porte-t-il le nom du projet ou de son site ? Écarte les scripts
+    tiers qu'embarquent les pages (newrelic, discourse…), constatés le 26/09/2026."""
+    depot = re.sub(r"[^a-z0-9]", "", sans_accents(f"{proprietaire}{nom}"))
+    mots = re.findall(r"[a-z0-9]+", sans_accents(titre))
+    mots += [m for m in re.findall(r"[a-z0-9]+", urlsplit(url).netloc.lower())
+             if m not in HOTES_GENERIQUES]
+    compact = re.sub(r"[^a-z0-9]", "", sans_accents(titre))
+    return (len(compact) >= 4 and compact in depot) or any(
+        len(m) >= 4 and m in depot for m in mots)
+
+
+def depot_cite_par_le_site(url: str, titre: str) -> dict | None:
+    """Un site vitrine qui renvoie vers un seul dépôt à son nom : c'est le sien.
+    S'il en cite plusieurs, on ne devine pas."""
+    try:
+        r = requests.get(url, headers={"User-Agent": "radar-osfarm (+https://osfarm.org)"},
+                         timeout=DELAI_REQUETE)
+    except requests.RequestException:
+        return None
+    if not r.ok or "html" not in r.headers.get("content-type", ""):
+        return None
+    html = r.text[:500_000]
+    depots = set()
+    for proprietaire, nom in re.findall(
+            r"https?://(?:www\.)?github\.com/([\w.-]+)/([\w.-]+)", html):
+        if (proprietaire.lower() not in PAGES_GITHUB
+                and not RE_DEPOT_ANNEXE.search(nom.removesuffix(".git"))
+                and apparente(titre, url, proprietaire, nom)):
+            depots.add((proprietaire.lower(), nom.lower().removesuffix(".git")))
+    if len(depots) != 1:
+        return None
+    return depot_github(*depots.pop())
+
+
+def resoudre(url: str, titre: str = "", suivre_les_sites: bool = True) -> dict | None:
+    """Du lien d'une liste au dépôt qui porte la licence. None : aucun dépôt."""
+    morceaux = urlsplit(url)
+    hote = morceaux.netloc.lower().removeprefix("www.")
+    chemin_url = [p for p in morceaux.path.split("/") if p]
+
+    if hote == "github.com":
+        if len(chemin_url) >= 2:
+            return depot_github(chemin_url[0], chemin_url[1].removesuffix(".git"))
+        if len(chemin_url) == 1:
+            # Un compte seul : on ne suit que s'il n'a qu'un dépôt à lui.
+            depots = lire_json(f"https://api.github.com/users/{chemin_url[0]}/repos",
+                               entetes_github(), {"per_page": 100, "type": "owner"})
+            propres = [d for d in depots or [] if not d.get("fork")]
+            if len(propres) == 1:
+                return depot_github(chemin_url[0], propres[0]["name"])
+        return None
+    if hote.endswith(".github.io") and chemin_url:
+        trouve = depot_github(hote.split(".")[0], chemin_url[0])
+        if trouve:
+            return trouve
+    if hote.startswith("gitlab.") or hote == "framagit.org":
+        projet = "/".join(chemin_url[: chemin_url.index("-")] if "-" in chemin_url else chemin_url)
+        return depot_gitlab(hote, projet) if projet.count("/") >= 1 else None
+    if hote == "huggingface.co":
+        if len(chemin_url) >= 3 and chemin_url[0] in ("datasets", "spaces"):
+            return depot_huggingface(chemin_url[0], "/".join(chemin_url[1:3]))
+        if len(chemin_url) >= 2 and chemin_url[0] not in ("docs", "blog", "papers"):
+            return depot_huggingface("models", "/".join(chemin_url[:2]))
+        return None
+    zenodo = re.search(r"zenodo\.org/records?/(\d+)|10\.5281/zenodo\.(\d+)", url)
+    if zenodo:
+        return depot_zenodo(zenodo.group(1) or zenodo.group(2))
+    if suivre_les_sites:
+        return depot_cite_par_le_site(url, titre)
+    return None
+
+
+def famille_de_section(sections: list[str], correspondances: dict) -> str | None:
+    """Du titre le plus proche au plus lointain, la première correspondance."""
+    for section in reversed(sections):
+        for motif, famille in correspondances.items():
+            if motif.lower() in section.lower():
+                return famille
+    return None
+
+
+def deja_traite(url: str, memoire: dict, sur_le_site: set[str], delai_jours: int) -> bool:
+    """Pré-filtre des listes, pour ne pas interroger la forge sur une entrée
+    déjà tranchée. main() garde la décision finale."""
+    if url.lower().rstrip("/").removesuffix(".git") in sur_le_site:
+        return True
+    entree = memoire.get(identifiant(url))
+    if not entree:
+        return False
+    if entree.get("statut") not in {"quarantaine", "sans_licence"}:
+        return True
+    try:
+        vu = datetime.strptime(entree["examine_le"], "%Y-%m-%d")
+    except (KeyError, ValueError):
+        return False
+    return (datetime.now() - vu).days < delai_jours
+
+
+def connecteur_liste(src: dict) -> list[Candidat]:
+    reponse = requests.get(src["url"], timeout=DELAI_REQUETE,
+                           headers={"User-Agent": "radar-osfarm (+https://osfarm.org)"})
+    reponse.raise_for_status()
+    entrees = lire_liste(reponse.text)
+    if not entrees:
+        # Levée plutôt que liste vide : main() la range dans les pannes,
+        # signalées dans la pull request et dans l'issue d'échec.
+        raise RuntimeError("aucune entrée lue : la liste a-t-elle changé de format ?")
+    if not os.getenv("GITHUB_TOKEN"):
+        print("   GITHUB_TOKEN absent : 60 requêtes par heure, la résolution s'arrêtera vite",
+              file=sys.stderr)
+
+    reglages, _ = charger_configuration()
+    delai = int(reglages.get("quarantaine_jours", 90))
+    memoire = charger_memoire()
+    sur_le_site = urls_du_site()
+    correspondances = src.get("familles_par_section") or {}
+    suivre = src.get("suivre_les_sites", True)
+
+    # Une liste en cite d'autres (« Awesome GIS »…) : ce sont des lectures, pas
+    # des communs, et le radar ne suit que les listes déclarées ici.
+    a_resoudre = [e for e in entrees
+                  if not e.titre.lower().startswith("awesome")
+                  and "/awesome" not in e.url.lower()
+                  and not deja_traite(e.url, memoire, sur_le_site, delai)]
+    print(f"   {len(entrees)} entrées lues · {len(a_resoudre)} à résoudre")
+
+    sortie = []
+    for i, e in enumerate(a_resoudre):
+        if i:
+            time.sleep(PAUSE_RESOLUTION)
+        depot = resoudre(e.url, e.titre, suivre) or {}
+        url_depot = depot.get("depot", "")
+        if url_depot.lower().rstrip("/") == e.url.lower().rstrip("/"):
+            url_depot = ""
+        section = e.sections[-1] if e.sections else ""
+        c = nouveau(
+            src, "logiciel",
+            curation=src.get("nom") or src["id"],
+            titre=e.titre,
+            url=e.url,
+            depot=url_depot,
+            description=e.description or depot.get("description", ""),
+            licence=depot.get("licence", ""),
+            date_maj=depot.get("date_maj", ""),
+            techno=depot.get("techno", ""),
+            popularite=depot.get("popularite", 0),
+            # La section d'abord : resume.py s'en sert pour grouper l'import.
+            mots_cles=([section] if section else []) + list(depot.get("mots_cles", [])),
+        )
+        c.famille = famille_de_section(e.sections, correspondances) or c.famille
+        sortie.append(c)
+    return sortie
+
+
 CONNECTEURS = {
     "github_search": connecteur_github,
     "huggingface": connecteur_huggingface,
@@ -465,6 +850,7 @@ CONNECTEURS = {
     "oshwa": connecteur_oshwa,
     "rss": connecteur_rss,
     "api": connecteur_api,
+    "liste": connecteur_liste,
 }
 
 
@@ -472,7 +858,7 @@ CONNECTEURS = {
 # Notation
 # --------------------------------------------------------------------------
 
-def noter(c: Candidat) -> Candidat:
+def noter(c: Candidat, bonus_curation: int = 0) -> Candidat:
     score, raisons = 0, []
 
     if licence_ouverte(c.licence):
@@ -516,6 +902,11 @@ def noter(c: Candidat) -> Candidat:
         score += 3
     if len(c.description) > 80:
         score += 2
+    if c.curation:
+        # Une personne a déjà jugé ce projet digne d'être listé : un avantage,
+        # jamais de quoi passer le seuil sans licence ouverte.
+        score += bonus_curation
+        raisons.append(f"retenu par la liste {c.curation}")
 
     motif = exclu(texte)
     if motif:
@@ -579,6 +970,22 @@ def fichiers_lots() -> list[Path]:
     return sorted(f for f in DOSSIER_LOTS.glob("*.yml") if f != FICHIER_COMMUNAUTE)
 
 
+def import_fait(id_source: str) -> bool:
+    """Une liste est importée quand son lot d'import est sur la branche : c'est
+    la fusion de sa pull request qui le dépose, aucun autre état à tenir."""
+    return any(f.name.endswith(f"-import-{id_source}.yml") for f in fichiers_lots())
+
+
+def sans_champs_vides(c: Candidat) -> dict:
+    """Fiche du lot : `depot` et `curation` n'y figurent que s'ils disent quelque
+    chose, pour que les fiches des autres sources restent inchangées."""
+    fiche = asdict(c)
+    for cle in ("depot", "curation"):
+        if not fiche[cle]:
+            del fiche[cle]
+    return fiche
+
+
 def urls_du_site() -> set[str]:
     """Liens déjà présents dans les fichiers tenus à la main : _data/*.yml et
     les projets de la communauté (url, depot, demo)."""
@@ -601,17 +1008,32 @@ def main() -> int:
     ap.add_argument("--source", help="ne traiter qu'une source (son id)")
     ap.add_argument("--blanc", action="store_true",
                     help="tourner à blanc : lot dans _radar/brouillon/, mémoire intacte")
+    ap.add_argument("--import-liste", metavar="ID",
+                    help="import initial d'une source de type liste, sans plafond")
     args = ap.parse_args()
 
     reglages, sources = charger_configuration()
     seuil = int(reglages.get("seuil_score", 55))
     max_relecteur = int(reglages.get("max_par_relecteur", 8))
     delai = int(reglages.get("quarantaine_jours", 90))
+    bonus_curation = int(reglages.get("bonus_curation", 0))
 
+    liste_importee = None
+    if args.import_liste:
+        args.source = args.import_liste
     if args.source:
         sources = [s for s in sources if s.get("id") == args.source]
         if not sources:
             print(f"source « {args.source} » introuvable", file=sys.stderr)
+            return 2
+    if args.import_liste:
+        liste_importee = sources[0]
+        if liste_importee.get("type") != "liste":
+            print(f"« {args.import_liste} » n'est pas une source de type liste", file=sys.stderr)
+            return 2
+        if import_fait(args.import_liste) and not args.blanc:
+            print(f"« {args.import_liste} » est déjà importée : ses nouveautés passent "
+                  "par la collecte quotidienne", file=sys.stderr)
             return 2
 
     memoire = charger_memoire()
@@ -629,6 +1051,12 @@ def main() -> int:
         if src.get("famille", "logiciel") not in FAMILLES:
             pannes.append(f"{src.get('id')} : famille « {src.get('famille')} » inconnue")
             continue
+        if src.get("type") == "liste" and not liste_importee and not import_fait(src["id"]):
+            # Sans import fusionné, la liste entière passerait au compte-gouttes
+            # du plafond quotidien : on attend l'import (LISTES.md).
+            print(f"→ {src['id']} : pas encore importée, ignorée "
+                  f"(collecte.py --import-liste {src['id']})")
+            continue
         print(f"→ {src['id']} ({src['type']})")
         try:
             resultats = fonction(src)
@@ -644,7 +1072,7 @@ def main() -> int:
     for c in bruts:
         if not c.url or not c.titre:
             continue
-        noter(c)
+        noter(c, bonus_curation)
         if c.id not in uniques or c.score > uniques[c.id].score:
             uniques[c.id] = c
 
@@ -653,10 +1081,13 @@ def main() -> int:
     sur_le_site = urls_du_site()
 
     for c in uniques.values():
-        if c.url.lower().rstrip("/") in sur_le_site:
+        # Le dépôt compte autant que l'url : un projet déjà proposé par la
+        # recherche GitHub ne doit pas revenir sous l'adresse de son site.
+        liens = [c.url] + ([c.depot] if c.depot else [])
+        if any(lien.lower().rstrip("/").removesuffix(".git") in sur_le_site for lien in liens):
             rejets["deja_sur_le_site"] += 1
             continue
-        entree = memoire.get(c.id)
+        entree = memoire.get(c.id) or (memoire.get(identifiant(c.depot)) if c.depot else None)
         if entree and not a_reexaminer(entree, c.score, delai):
             rejets["deja_vu"] += 1
             continue
@@ -678,19 +1109,25 @@ def main() -> int:
     final: list[Candidat] = []
     for c in retenus:
         cle = c.relecteur or c.famille
-        if compte.get(cle, 0) >= max_relecteur:
+        if compte.get(cle, 0) >= max_relecteur and not liste_importee:
             continue
         compte[cle] = compte.get(cle, 0) + 1
         c.propose_le = aujourdhui
         final.append(c)
         memoire[c.id] = {"statut": "propose", "score": c.score,
                          "examine_le": aujourdhui, "url": c.url}
+        if c.depot:
+            # Sinon la recherche GitHub reproposerait le dépôt sous sa propre url.
+            memoire[identifiant(c.depot)] = {**memoire[c.id], "url": c.depot}
 
     final.sort(key=lambda x: (FAMILLES.index(x.famille), -x.score))
 
     dossier = DOSSIER_BROUILLON if args.blanc else DOSSIER_LOTS
     dossier.mkdir(parents=True, exist_ok=True)
-    sortie = dossier / f"{aujourdhui}.yml"
+    # Le lot d'import garde la date en tête : /fr/actualites/ parcourt les lots
+    # dans l'ordre de leur nom.
+    suffixe = f"-import-{liste_importee['id']}" if liste_importee else ""
+    sortie = dossier / f"{aujourdhui}{suffixe}.yml"
 
     # Deux passages le même jour complètent le lot au lieu de l'écraser, pour ne
     # perdre ni les fiches déjà proposées ni les corrections d'un relecteur.
@@ -698,10 +1135,11 @@ def main() -> int:
     if sortie.exists():
         anciens = (yaml.safe_load(sortie.read_text(encoding="utf-8")) or {}).get("candidats") or []
     connus = {a.get("id") for a in anciens}
-    candidats = anciens + [asdict(c) for c in final if c.id not in connus]
+    candidats = anciens + [sans_champs_vides(c) for c in final if c.id not in connus]
 
     contenu = {
         "date": aujourdhui,
+        **({"liste": liste_importee.get("nom") or liste_importee["id"]} if liste_importee else {}),
         "examines": len(uniques),
         "retenus": len(candidats),
         "rejets": rejets,

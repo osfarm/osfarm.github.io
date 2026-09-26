@@ -25,9 +25,17 @@ large: true
   {%- assign publies = publies | plus: 1 -%}
   {%- assign date_lot = lot[1].date | default: lot[0] -%}
   {%- assign index_mois = date_lot | date: "%-m" | minus: 1 %}
-  <article class="border-top py-5" id="radar-{{ date_lot }}">
+  {%- comment -%}
+    L'ancre suit le nom du fichier : `radar-2026-09-17` pour un lot du jour,
+    comme avant, et une ancre distincte pour un import de liste le même jour.
+  {%- endcomment %}
+  <article class="border-top py-5" id="radar-{{ lot[0] }}">
     <h2 class="alt-h3 mb-2">
+      {% if lot[1].liste -%}
+      Import de la liste {{ lot[1].liste }}, {{ date_lot | date: "%-d" }} {{ mois[index_mois] }} {{ date_lot | date: "%Y" }}
+      {%- else -%}
       Radar du {{ date_lot | date: "%-d" }} {{ mois[index_mois] }} {{ date_lot | date: "%Y" }}
+      {%- endif %}
     </h2>
     <p class="text-gray">
       {{ valides.size }} {% if valides.size > 1 %}nouveaux communs agricoles{% else %}nouveau commun agricole{% endif %}
