@@ -1,0 +1,933 @@
+# Lot du radar OSFarm. Passer « publier » à false pour écarter une fiche,
+# corriger « resume » au besoin. La fusion de la pull request publie le reste.
+date: '2026-09-28'
+examines: 338
+retenus: 24
+rejets:
+  deja_vu: 183
+  deja_sur_le_site: 7
+  licence: 7
+  score: 0
+pannes: []
+candidats:
+- id: 936b8cf9a40c
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: shrutikbalwan/Smart-Agriculture-AI-Prediction-System
+  url: https://github.com/shrutikbalwan/Smart-Agriculture-AI-Prediction-System
+  description: An AI-powered Smart Agriculture System using Flask, Machine Learning, MySQL, ESP32, and
+    an Interactive Dashboard for crop recommendation, yield prediction, irrigation planning, and farm
+    analytics.
+  licence: mit
+  date_maj: '2026-09-26'
+  techno: Python
+  popularite: 3
+  mots_cles:
+  - agriculture
+  - artificial-intelligence
+  - automation
+  - chartjs
+  - crop-prediction
+  - dashboard
+  - data-science
+  - esp32
+  score: 92
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farm, crop, irrigation, yield'
+  propose_le: '2026-09-28'
+  publier: true
+  resume: Système d'intelligence artificielle pour l'agriculture utilisant des modèles de machine learning
+    et une interface web. Il propose des recommandations de cultures, des prédictions de rendement, des
+    plans d'irrigation et des analyses de ferme.
+  interet: Aider à la prise de décision pour la gestion des cultures et des ressources en eau.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - agriculture
+  - intelligence artificielle
+  - prédiction
+  - irrigation
+  - analyse de ferme
+- id: 8c2bda86e9e7
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: nmi-agro/fdm
+  url: https://github.com/nmi-agro/fdm
+  description: Transforming Farm Data into Actionable Insights
+  licence: mit
+  date_maj: '2026-09-28'
+  techno: TypeScript
+  popularite: 12
+  mots_cles:
+  - agriculture
+  - data-model
+  - farm
+  - postgresql
+  - typescript
+  score: 86
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farm'
+  propose_le: '2026-09-28'
+  publier: true
+  resume: Outil transformant des données agricoles en informations exploitables via une interface web.
+    Il repose sur une base de données PostgreSQL et une application TypeScript.
+  interet: Faciliter l'analyse et l'exploitation des données de ferme pour des décisions éclairées.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - agriculture
+  - données
+  - analyse
+  - postgresql
+  - typescript
+- id: d232e6abeb70
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: Mohd-Iyad/sms-based-crop-advisory-iot-system
+  url: https://github.com/Mohd-Iyad/sms-based-crop-advisory-iot-system
+  description: IoT-based crop advisory system using ESP32, sensor data, weather validation, and SMS-based
+    agricultural alerts.
+  licence: mit
+  date_maj: '2026-09-26'
+  techno: Python
+  popularite: 3
+  mots_cles:
+  - agriculture
+  - arduino
+  - automation
+  - crop-advisory
+  - embedded-systems
+  - esp32
+  - iot
+  - python
+  score: 85
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, crop, weather'
+  propose_le: '2026-09-28'
+  publier: true
+  resume: Système de conseil agricole basé sur l'internet des objets utilisant des capteurs et des alertes
+    par SMS. Il valide les données météorologiques pour fournir des recommandations.
+  interet: Automatiser le suivi des cultures et la diffusion d'alertes agricoles.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - agriculture
+  - iot
+  - capteurs
+  - alertes
+  - conseil agricole
+- id: b2b1f2edac6a
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: PrinceDale99/TyFi
+  url: https://github.com/PrinceDale99/TyFi
+  description: An autonomous parametric insurance protocol protecting farmers against climate disasters
+  licence: mit
+  date_maj: '2026-09-24'
+  techno: HTML
+  popularite: 3
+  mots_cles:
+  - agriculture
+  - agriculture-technology
+  - blockchain
+  - insurance
+  - insuretech
+  - stellar
+  - web3
+  score: 85
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farmer'
+  propose_le: '2026-09-28'
+  publier: true
+  resume: Protocole d'assurance paramétrique autonome protégeant les agriculteurs contre les catastrophes
+    climatiques via une blockchain. Il utilise le réseau Stellar.
+  interet: ''
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - agriculture
+  - assurance
+  - blockchain
+  - catastrophes climatiques
+  - stellar
+- id: f128a3168e57
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: nkz-os/nkz
+  url: https://github.com/nkz-os/nkz
+  description: 'Open-source FIWARE NGSI-LD platform for agriculture, industry and environment. Multi-tenant,
+    modular. Live demo: nekazari.robotika.cloud | Docs: nkz-os.org'
+  licence: agpl-3.0
+  date_maj: '2026-09-28'
+  techno: Python
+  popularite: 4
+  mots_cles:
+  - agritech
+  - cesiumjs
+  - digital-twin
+  - docker-compose
+  - fiware-ngsi
+  - iot-platform
+  - keycloak
+  - multi-tenant
+  score: 85
+  raisons:
+  - licence agpl-3.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, agritech'
+  propose_le: '2026-09-28'
+  publier: true
+  resume: Plateforme open source basée sur FIWARE NGSI-LD pour l'agriculture, l'industrie et l'environnement.
+    Elle permet de créer des jumeaux numériques et est déployable via Docker.
+  interet: Centraliser et analyser des données agricoles et environnementales pour des applications variées.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - agriculture
+  - fiware
+  - jumeau numérique
+  - iot
+  - plateforme
+- id: 1d4dc6133fd6
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: rajputomsingh/Fieldly
+  url: https://github.com/rajputomsingh/Fieldly
+  description: Building digital infrastructure for intelligent farmland leasing, realtime agricultural
+    operations, and scalable rural coordination systems.
+  licence: mit
+  date_maj: '2026-09-26'
+  techno: TypeScript
+  popularite: 122
+  mots_cles:
+  - agritech
+  - distributed-systems
+  - docker
+  - event-driven-architecture
+  - nextjs
+  - postgresql
+  - prisma
+  - pusher
+  score: 85
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agritech, rural'
+  propose_le: '2026-09-28'
+  publier: true
+  resume: Infrastructure numérique pour la location de terres agricoles, la coordination des opérations
+    et les systèmes de gestion rurale. Elle repose sur une architecture distribuée et des bases de données.
+  interet: Optimiser la gestion des terres et la coordination des activités agricoles.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - agriculture
+  - location de terres
+  - coordination
+  - architecture distribuée
+  - gestion rurale
+- id: 88011d962f43
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: 202519003/multisensor-crop-classification-jhansi
+  url: https://github.com/202519003/multisensor-crop-classification-jhansi
+  description: Comparative study of 5 satellite sensors (Sentinel-1, Sentinel-2, Landsat-8, MODIS, S1+S2
+    fusion) and 4 ML classifiers (RF, CART, GTB, SVM) for Rabi-season crop classification in Jhansi District,
+    India - built on Google Earth Engine with 1,941 field-verified ground truth points.
+  licence: mit
+  date_maj: '2026-09-05'
+  techno: ''
+  popularite: 3
+  mots_cles:
+  - agriculture
+  - crop-classification
+  - gis
+  - google-earth-engine
+  - india
+  - landsat-8
+  - machine-learning
+  - modis
+  score: 85
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, crop, gis'
+  propose_le: '2026-09-28'
+  publier: true
+  resume: Outil de classification des cultures agricoles basé sur l'analyse de données satellites et d'apprentissage
+    automatique. Il compare cinq capteurs satellites et quatre algorithmes pour identifier les cultures
+    pendant la saison Rabi.
+  interet: Permet d'estimer les surfaces cultivées et de suivre l'évolution des cultures à partir d'images
+    satellites.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - classification-cultures
+  - satellite
+  - apprentissage-automatique
+  - gis
+  - rabi
+- id: 16a043ebf743
+  famille: modele
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: Alex0420W/HarvestSight
+  url: https://github.com/Alex0420W/HarvestSight
+  description: Geospatial-AI corn yield forecasting for the U.S. Corn Belt. Team project fine-tuning NASA/IBM
+    Prithvi-EO-2.0-600M with LoRA, fused with weather/soil/drought features and calibrated uncertainty
+    cones. State-level RMSE ~3–5 bu/ac — competitive with USDA WASDE. CSU Geospatial AI Hackathon 2026.
+  licence: mit
+  date_maj: '2026-04-30'
+  techno: Jupyter Notebook
+  popularite: 4
+  mots_cles:
+  - agriculture
+  - crop-yield-prediction
+  - foundation-models
+  - geospacial
+  - hackathon
+  - lora
+  - nasa-hls
+  - precision-agriculture
+  score: 85
+  raisons:
+  - licence mit
+  - actif (moins d'un an)
+  - 'vocabulaire : agriculture, soil, yield, geospatial, weather'
+  propose_le: '2026-09-28'
+  publier: true
+  resume: Modèle de prévision des rendements de maïs utilisant des données géospatiales et des caractéristiques
+    météorologiques et pédologiques. Il intègre un ajustement par LoRA et des cônes d'incertitude.
+  interet: Aide à anticiper les rendements agricoles en combinant données satellitaires et conditions
+    environnementales.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  famille_initiale: logiciel
+  mots_cles_fr:
+  - rendement-maïs
+  - prévision
+  - géospatial
+  - fondation-modèles
+  - incertitude
+- id: 73e56b38d803
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-elevage
+  titre: epicpast/nsip
+  url: https://github.com/epicpast/nsip
+  description: Sheep genetic evaluation CLI & MCP server -- search animals, compare EBVs, plan matings,
+    rank flocks via the NSIP database
+  licence: mit
+  date_maj: '2026-09-21'
+  techno: Rust
+  popularite: 3
+  mots_cles:
+  - agriculture
+  - animal-science
+  - api-client
+  - breeding
+  - cli
+  - ebv
+  - genetics
+  - livestock
+  score: 85
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, livestock'
+  propose_le: '2026-09-28'
+  publier: true
+  resume: Interface en ligne de commande et serveur MCP pour évaluer et comparer des animaux ovins via
+    la base de données NSIP. Permet de rechercher des animaux, comparer des valeurs d'élevage et planifier
+    des accouplements.
+  interet: Facilite la sélection génétique et la gestion des troupeaux ovins.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - ovins
+  - élevage
+  - sélection-génétique
+  - ebv
+  - cli
+- id: 7e87ade2ab96
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-viti
+  titre: mathworks-robotics/Tractor-Sprayer-Navigation-in-Vineyard
+  url: https://github.com/mathworks-robotics/Tractor-Sprayer-Navigation-in-Vineyard
+  description: Getting started with driving a tractor-sprayer in a vineyard using Unreal Engine® and MATLAB®.
+  licence: bsd-3-clause
+  date_maj: '2025-11-11'
+  techno: MATLAB
+  popularite: 4
+  mots_cles:
+  - agricultural-tractor
+  - matlab
+  - path-planning
+  - robotics
+  - robotics-simulation
+  - unreal-engine
+  - vineyard
+  score: 75
+  raisons:
+  - licence bsd-3-clause
+  - actif (moins d'un an)
+  - 'vocabulaire : vineyard, tractor'
+  propose_le: '2026-09-28'
+  publier: true
+  resume: Simulateur de navigation d'un tracteur-pulvérisateur dans un vignoble utilisant Unreal Engine
+    et MATLAB.
+  interet: ''
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - tracteur
+  - pulvérisateur
+  - vignoble
+  - simulation
+  - robotique
+- id: ce6d53c93419
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-elevage
+  titre: roma-glushko/frens
+  url: https://github.com/roma-glushko/frens
+  description: 🤝 Build friendships that last.
+  licence: apache-2.0
+  date_maj: '2026-07-23'
+  techno: Go
+  popularite: 5
+  mots_cles:
+  - cli
+  - connections
+  - crm
+  - dairy
+  - family
+  - friends
+  - friendship
+  - golang-application
+  score: 74
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : dairy'
+  propose_le: '2026-09-28'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - cli
+  - connections
+  - crm
+- id: 653d64fb13e0
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-elevage
+  titre: beepnl/beep-vue-app
+  url: https://github.com/beepnl/beep-vue-app
+  description: BEEP webapp version 3
+  licence: mit
+  date_maj: '2026-07-14'
+  techno: Vue
+  popularite: 5
+  mots_cles:
+  - beehive
+  - beekeeper
+  - beekeeping
+  - beep
+  - logbook
+  - vuejs
+  score: 74
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : beehive'
+  propose_le: '2026-09-28'
+  publier: true
+  resume: Application web pour le suivi des ruches et la gestion des ruchers par les apiculteurs. Permet
+    de consigner les observations et l'activité des colonies.
+  interet: Aide à la traçabilité et à la gestion des colonies d'abeilles.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - apiculture
+  - ruche
+  - traçabilité
+  - logbook
+  - abeilles
+- id: e679db2e8a29
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-elevage
+  titre: frabas/DISPLACE_GUI
+  url: https://github.com/frabas/DISPLACE_GUI
+  description: A Scientific Research Software for Spatial Fisheries and Natural Resource Management
+  licence: gpl-2.0
+  date_maj: '2026-09-23'
+  techno: C
+  popularite: 12
+  mots_cles:
+  - aquaculture
+  - bio-economics
+  - fisheries
+  - impact-assessment
+  - marine-resources
+  - marine-traffics
+  - ocean
+  - sustainability
+  score: 73
+  raisons:
+  - licence gpl-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : sustainability'
+  propose_le: '2026-09-28'
+  publier: true
+  resume: Logiciel scientifique dédié à la gestion spatiale des ressources halieutiques et à l'évaluation
+    des impacts des activités de pêche. Il permet de modéliser les dynamiques des ressources marines et
+    les interactions avec les activités humaines.
+  interet: Évaluer les impacts des pratiques de pêche sur les écosystèmes marins.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - aquaculture
+  - bio-économie
+  - évaluation d'impact
+  - ressources marines
+  - gestion spatiale
+- id: ee83a493a7f1
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: UNIVERSAL SEEDING DEVICE FOR SOWING SEEDS OF DESERT FORAGE PLANTS
+  url: https://doi.org/10.5281/zenodo.23011071
+  description: The development and implementation of resource-saving technologies and technical equipment
+    for agriculture are among the important priorities of modern agricultural engineering. This is particularly
+    relevant for desert and semi-desert regions, where unfavorable climatic conditions, limited soil moisture,
+    low precipitation, and degradation of natural pastures significantly restrict the productivity
+  licence: cc-by-4.0
+  date_maj: '2026-09-28'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - desert forage plants, Izen, seed, seeding device, seed metering unit, seeding machine, sowing technology,
+    resource-saving technology, sowing depth, seed spacing, desert agriculture.
+  score: 92
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, pasture, seed, soil'
+  propose_le: '2026-09-28'
+  publier: true
+  resume: Document décrivant une technologie et un équipement de semis pour plantes fourragères adaptées
+    aux régions désertiques et semi-arides. Il détaille les principes de fonctionnement d'un semoir et
+    les paramètres techniques de semis.
+  interet: Adapter les techniques de semis aux contraintes climatiques des zones arides.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - semoir
+  - plantes fourragères
+  - technologie de semis
+  - zones arides
+  - agriculture durable
+- id: 096f10f62ee0
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: '[GATE] Annual crop yield predictions – field performance [WORK IN PROGRESS]'
+  url: https://doi.org/10.5281/zenodo.23010549
+  description: ''
+  licence: cc-by-4.0
+  date_maj: '2026-09-28'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - crop yield
+  - yield prediction
+  - relative yield
+  - field-level agriculture
+  - agricultural fields
+  - machine learning
+  - spatial modelling
+  - geospatial data
+  score: 89
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, crop, yield, geospatial'
+  propose_le: '2026-09-28'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: inconnu
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - rendement agricole
+  - prédiction de rendement
+  - apprentissage automatique
+  - niveau parcellaire
+- id: c976c5a3242e
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: WAYS TO INCREASE THE EFFICIENCY OF MEAT PRODUCTION IN UZBEKISTAN
+  url: https://doi.org/10.5281/zenodo.22983632
+  description: 'This thesis analyzes the current state of meat production in Uzbekistan, the economic
+    significance of the livestock sector, and the core factors influencing production efficiency. Furthermore,
+    practical proposals are developed to scale up meat output by consolidating the forage and fodder base,
+    adopting modern intensive technologies, advancing selective breeding practices, and extending financial '
+  licence: cc-by-4.0
+  date_maj: '2026-09-26'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - livestock farming, meat production, efficiency, profitability, fodder base, intensive technology,
+    food security.
+  score: 88
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : farming, livestock, food'
+  propose_le: '2026-09-28'
+  publier: true
+  resume: Document analysant les facteurs influençant l'efficacité de la production de viande en Ouzbékistan
+    et proposant des pistes d'amélioration. Il aborde notamment la gestion des ressources fourragères
+    et les technologies d'élevage.
+  interet: Optimiser les pratiques d'élevage pour améliorer la production de viande.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - élevage
+  - production de viande
+  - efficacité
+  - ressources fourragères
+  - technologies d'élevage
+- id: 9a39c8593ace
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: COMPARATIVE EFFECTIVENESS OF SIDERAT CROPS AND ALFALFA IN IMPROVING THE MELIORATIVE CONDITION
+    AND PRODUCTIVITY OF SALINE LANDS IN THE BUKHARA REGION
+  url: https://doi.org/10.5281/zenodo.22970724
+  description: '&nbsp;Soil salinization is a major constraint on irrigated agriculture in the Bukhara
+    region of Uzbekistan, where 80&ndash;85% of irrigated lands are affected to varying degrees. This
+    study compares the effectiveness of annual siderat (green manure) crops&mdash;primarily mung bean
+    ( Vigna radiata ), rapeseed ( Brassica napus ), and mustard ( Sinapis alba )&mdash;with the perennial
+    legume alfalfa ('
+  licence: cc-by-4.0
+  date_maj: '2026-09-26'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - siderat crops, green manure, alfalfa, saline soils, melioration, soil fertility, Bukhara region, Uzbekistan.
+  score: 88
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, crop, soil'
+  propose_le: '2026-09-28'
+  publier: true
+  resume: Étude comparant l'efficacité de cultures de couverture annuelles et de la luzerne pour améliorer
+    la fertilité des sols salins dans la région de Boukhara. Elle évalue leur impact sur la productivité
+    des terres irriguées.
+  interet: Améliorer la fertilité des sols salins pour soutenir l'agriculture irriguée.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - cultures de couverture
+  - luzerne
+  - sols salins
+  - fertilité du sol
+  - agriculture irriguée
+- id: f29a294eb6f5
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: Conservatoires de l'abeille noire (périmètres) - Normandie
+  url: https://www.data.gouv.fr/datasets/conservatoires-de-labeille-noire-perimetres-normandie
+  description: 'Le périmètre des conservatoires de l''abeille noire en Normandie. Cinq conservatoires
+    existent en Normandie : Calvados, Lisieux, Eure, Orne et Seine-Maritime. La donnée n''entre pas dans
+    le cadre de la directive Inspire. **Contexte de collecte** Couche réalisée pour les besoins cartographiques
+    du service de la valorisation des produits agricoles régionaux de la Région Normandie, permettant
+    de visual'
+  licence: etalab-2.0
+  date_maj: '2026-09-26'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - developpement-durable
+  - donnees-de-reference
+  - donnees-ouvertes
+  - donnees-regionales-de-reference
+  - environnement
+  - espaces-naturels
+  - mesures-agro-environnementales
+  score: 85
+  raisons:
+  - licence etalab-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agricole, agriculture'
+  propose_le: '2026-09-28'
+  publier: true
+  resume: Données géographiques représentant les périmètres des conservatoires de l'abeille noire en Normandie.
+    Ces zones visent à préserver une race locale d'abeilles adaptée aux conditions régionales.
+  interet: Préserver les populations d'abeilles locales pour soutenir les écosystèmes agricoles.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - abeille noire
+  - conservatoire
+  - données géographiques
+  - préservation des races locales
+  - apiculture
+- id: ec4e06f00abe
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: Conservatoires de l'abeille noire (composition communale) - Normandie
+  url: https://www.data.gouv.fr/datasets/conservatoires-de-labeille-noire-composition-communale-normandie
+  description: 'La composition communale des conservatoires de l''abeille noire en Normandie. Cinq conservatoires
+    existent en Normandie : Calvados, Livarot, Eure, Orne et Seine-Maritime. La donnée n''entre pas dans
+    le cadre de la directive Inspire." **Contexte de collecte** Couche réalisée pour les besoins cartographiques
+    du service de la valorisation des produits agricoles régionaux de la Région Normandie, permett'
+  licence: etalab-2.0
+  date_maj: '2026-09-26'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - developpement-durable
+  - donnees-de-reference
+  - donnees-ouvertes
+  - donnees-regionales-de-reference
+  - environnement
+  - espaces-naturels
+  - mesures-agro-environnementales
+  score: 85
+  raisons:
+  - licence etalab-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agricole, agriculture'
+  propose_le: '2026-09-28'
+  publier: true
+  resume: Cette donnée recense la localisation communale des conservatoires de l'abeille noire en Normandie.
+    Elle permet de cartographier les zones de préservation de cette race d'abeille.
+  interet: Cette donnée peut servir à identifier les zones de conservation d'une espèce pollinisatrice
+    utile à l'agriculture.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - abeille noire
+  - conservatoire
+  - normandie
+  - cartographie
+  - pollinisation
+- id: 081576686688
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: Conservatoires de l'abeille noire (centroïdes) - Normandie
+  url: https://www.data.gouv.fr/datasets/conservatoires-de-labeille-noire-centroides-normandie
+  description: 'Le centroïde des conservatoires de l''abeille noire en Normandie. Cinq conservatoires
+    existent en Normandie : Calvados, Livarot, Eure, Orne et Seine-Maritime. La donnée n''entre pas dans
+    le cadre de la directive Inspire. **Contexte de collecte** Couche réalisée pour les besoins cartographiques
+    du service de la valorisation des produits agricoles régionaux de la Région Normandie, permettant
+    de visual'
+  licence: etalab-2.0
+  date_maj: '2026-09-26'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - developpement-durable
+  - donnees-de-reference
+  - donnees-ouvertes
+  - donnees-regionales-de-reference
+  - environnement
+  - espaces-naturels
+  - mesures-agro-environnementales
+  score: 85
+  raisons:
+  - licence etalab-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agricole, agriculture'
+  propose_le: '2026-09-28'
+  publier: true
+  resume: Cette donnée fournit les centroïdes géographiques des conservatoires de l'abeille noire en Normandie.
+    Elle permet de localiser précisément ces zones de préservation.
+  interet: Cette donnée peut servir à localiser les zones de conservation d'une espèce pollinisatrice
+    utile à l'agriculture.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - abeille noire
+  - conservatoire
+  - normandie
+  - centroïde
+  - géolocalisation
+- id: 5a395e34f809
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: Anonymized Dataset for Sustainable Agricultural Practice Adoption among Pakistani Farmers
+  url: https://doi.org/10.5281/zenodo.23000544
+  description: This dataset contains anonymized item-level responses used in the study on sustainable
+    agricultural practice adoption among Pakistani farmers. It includes 462 respondents and 63 measurement
+    items covering the constructs examined in the measurement and structural models. All direct personal
+    identifiers and demographic grouping variables have been excluded to protect participant confidentiality.
+    The
+  licence: cc-by-4.0
+  date_maj: '2026-09-27'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - Sustainable agriculture
+  - Agricultural technology adoption
+  - Digital literacy
+  - Pakistani farmers
+  - PLS-SEM
+  score: 85
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farmer'
+  propose_le: '2026-09-28'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+- id: 015fbbf6f3fd
+  famille: modele
+  relecteur: ionosphere
+  source: hf-modeles-agri
+  titre: brimbim/agriculture-crop-disease-model-v1
+  url: https://huggingface.co/brimbim/agriculture-crop-disease-model-v1
+  description: peft safetensors mixtral agriculture crop-disease autoscientist-challenge lora mistral
+    en
+  licence: apache-2.0
+  date_maj: '2026-06-13'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - peft
+  - safetensors
+  - mixtral
+  - agriculture
+  - crop-disease
+  - autoscientist-challenge
+  - lora
+  - mistral
+  score: 75
+  raisons:
+  - licence apache-2.0
+  - actif (moins d'un an)
+  - 'vocabulaire : agriculture, crop'
+  propose_le: '2026-09-28'
+  publier: true
+  resume: Ce modèle vise à identifier les maladies des cultures agricoles. Il utilise des techniques d'apprentissage
+    automatique pour analyser des images ou données agricoles.
+  interet: Ce modèle peut servir à détecter des maladies végétales pour aider à la gestion des cultures.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - maladie des cultures
+  - apprentissage automatique
+  - détection
+  - agriculture
+  - modèle
+- id: 899775881e41
+  famille: modele
+  relecteur: ionosphere
+  source: hf-modeles-agri
+  titre: agricf/phi-3.5-mini-soilqa-agriculture
+  url: https://huggingface.co/agricf/phi-3.5-mini-soilqa-agriculture
+  description: transformers safetensors text-generation-inference unsloth llama trl en endpoints_compatible
+  licence: apache-2.0
+  date_maj: '2026-03-18'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - transformers
+  - safetensors
+  - text-generation-inference
+  - unsloth
+  - llama
+  - trl
+  - en
+  - endpoints_compatible
+  score: 75
+  raisons:
+  - licence apache-2.0
+  - actif (moins d'un an)
+  - 'vocabulaire : agriculture, soil'
+  propose_le: '2026-09-28'
+  publier: true
+  resume: Ce modèle génère des réponses textuelles sur des questions liées aux sols agricoles. Il est
+    conçu pour répondre à des requêtes spécifiques dans le domaine agricole.
+  interet: Ce modèle peut servir à fournir des informations ou des conseils sur la gestion des sols agricoles.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - sol agricole
+  - réponse textuelle
+  - gestion des sols
+  - modèle
+  - agriculture
+- id: 4237ff353aae
+  famille: modele
+  relecteur: ionosphere
+  source: hf-modeles-agri
+  titre: agricf/phi-3.5-mini-croprec-agriculture
+  url: https://huggingface.co/agricf/phi-3.5-mini-croprec-agriculture
+  description: transformers safetensors text-generation-inference unsloth llama trl en endpoints_compatible
+  licence: apache-2.0
+  date_maj: '2026-03-16'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - transformers
+  - safetensors
+  - text-generation-inference
+  - unsloth
+  - llama
+  - trl
+  - en
+  - endpoints_compatible
+  score: 75
+  raisons:
+  - licence apache-2.0
+  - actif (moins d'un an)
+  - 'vocabulaire : agriculture, crop'
+  propose_le: '2026-09-28'
+  publier: true
+  resume: Ce modèle génère des recommandations sur les cultures agricoles. Il est conçu pour répondre
+    à des requêtes spécifiques dans le domaine agricole.
+  interet: Ce modèle peut servir à fournir des conseils sur le choix ou la gestion des cultures.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - culture agricole
+  - recommandation
+  - gestion des cultures
+  - modèle
+  - agriculture
+resume_genere_le: 2026-09-28 11:30

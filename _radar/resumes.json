@@ -13,6 +13,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Jeu de données partiel sur les indemnisations d'assurance récolte aux États-Unis entre 1989 et 2023. Il contient un échantillon de 1 000 lignes extraites d'un jeu de 4 173 884 lignes."
  },
+ "015fbbf6f3fd": {
+  "famille": "modele",
+  "id": "015fbbf6f3fd",
+  "interet": "Ce modèle peut servir à détecter des maladies végétales pour aider à la gestion des cultures.",
+  "mots_cles": [
+   "maladie des cultures",
+   "apprentissage automatique",
+   "détection",
+   "agriculture",
+   "modèle"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce modèle vise à identifier les maladies des cultures agricoles. Il utilise des techniques d'apprentissage automatique pour analyser des images ou données agricoles."
+ },
  "051485381c9e": {
   "famille": "logiciel",
   "id": "051485381c9e",
@@ -57,6 +72,35 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Échantillonneur d'eau automatisé à faible coût, connecté par IoT, conçu pour la recherche sur la qualité de l'eau en temps quasi réel. Il permet de mesurer des paramètres de l'eau sur le terrain."
+ },
+ "081576686688": {
+  "famille": "donnees",
+  "id": "081576686688",
+  "interet": "Cette donnée peut servir à localiser les zones de conservation d'une espèce pollinisatrice utile à l'agriculture.",
+  "mots_cles": [
+   "abeille noire",
+   "conservatoire",
+   "normandie",
+   "centroïde",
+   "géolocalisation"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Cette donnée fournit les centroïdes géographiques des conservatoires de l'abeille noire en Normandie. Elle permet de localiser précisément ces zones de préservation."
+ },
+ "096f10f62ee0": {
+  "famille": "donnees",
+  "id": "096f10f62ee0",
+  "interet": "",
+  "mots_cles": [
+   "rendement agricole",
+   "prédiction de rendement",
+   "apprentissage automatique",
+   "niveau parcellaire"
+  ],
+  "pertinence": "inconnu",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
  },
  "0d5d953436ac": {
   "famille": "donnees",
@@ -161,6 +205,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Jeu de données et code d'analyse pour estimer la teneur en azote des feuilles de citrus par imagerie hyperspectrale. Il permet de développer des modèles de diagnostic foliaire non destructif."
  },
+ "16a043ebf743": {
+  "famille": "modele",
+  "id": "16a043ebf743",
+  "interet": "Aide à anticiper les rendements agricoles en combinant données satellitaires et conditions environnementales.",
+  "mots_cles": [
+   "rendement-maïs",
+   "prévision",
+   "géospatial",
+   "fondation-modèles",
+   "incertitude"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Modèle de prévision des rendements de maïs utilisant des données géospatiales et des caractéristiques météorologiques et pédologiques. Il intègre un ajustement par LoRA et des cônes d'incertitude."
+ },
  "18a20cd89e62": {
   "famille": "donnees",
   "id": "18a20cd89e62",
@@ -233,6 +292,21 @@
   "pertinence": "non",
   "redige_par": "mistral-small-latest",
   "resume": "Code source permettant le fonctionnement du réseau de stations météorologiques Iowa Environmental Mesonet. Il gère la collecte et la diffusion de données météorologiques."
+ },
+ "1d4dc6133fd6": {
+  "famille": "logiciel",
+  "id": "1d4dc6133fd6",
+  "interet": "Optimiser la gestion des terres et la coordination des activités agricoles.",
+  "mots_cles": [
+   "agriculture",
+   "location de terres",
+   "coordination",
+   "architecture distribuée",
+   "gestion rurale"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Infrastructure numérique pour la location de terres agricoles, la coordination des opérations et les systèmes de gestion rurale. Elle repose sur une architecture distribuée et des bases de données."
  },
  "2072617884e2": {
   "famille": "logiciel",
@@ -534,6 +608,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Ce projet compile des données ouvertes sur les substances actives des produits phytopharmaceutiques et leurs impacts documentés. Il permet d'accéder à des références issues de sources variées pour analyser les risques associés."
  },
+ "4237ff353aae": {
+  "famille": "modele",
+  "id": "4237ff353aae",
+  "interet": "Ce modèle peut servir à fournir des conseils sur le choix ou la gestion des cultures.",
+  "mots_cles": [
+   "culture agricole",
+   "recommandation",
+   "gestion des cultures",
+   "modèle",
+   "agriculture"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce modèle génère des recommandations sur les cultures agricoles. Il est conçu pour répondre à des requêtes spécifiques dans le domaine agricole."
+ },
  "42acfdb799ca": {
   "famille": "donnees",
   "id": "42acfdb799ca",
@@ -726,6 +815,15 @@
   "redige_par": "mistral-small-latest",
   "resume": ""
  },
+ "5a395e34f809": {
+  "famille": "donnees",
+  "id": "5a395e34f809",
+  "interet": "",
+  "mots_cles": [],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
  "5b95fc1b97f1": {
   "famille": "donnees",
   "id": "5b95fc1b97f1",
@@ -770,6 +868,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Ce jeu de données propose des résultats standardisés du réseau FADN de l'UE, agrégés sur une grille et contrôlés pour éviter toute divulgation, pour la période 2008-2020. Il s'agit de données comptables harmonisées au niveau des exploitations agricoles européennes."
+ },
+ "653d64fb13e0": {
+  "famille": "logiciel",
+  "id": "653d64fb13e0",
+  "interet": "Aide à la traçabilité et à la gestion des colonies d'abeilles.",
+  "mots_cles": [
+   "apiculture",
+   "ruche",
+   "traçabilité",
+   "logbook",
+   "abeilles"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Application web pour le suivi des ruches et la gestion des ruchers par les apiculteurs. Permet de consigner les observations et l'activité des colonies."
  },
  "6b45fa3a8093": {
   "famille": "logiciel",
@@ -830,6 +943,21 @@
   "pertinence": "non",
   "redige_par": "mistral-small-latest",
   "resume": ""
+ },
+ "73e56b38d803": {
+  "famille": "logiciel",
+  "id": "73e56b38d803",
+  "interet": "Facilite la sélection génétique et la gestion des troupeaux ovins.",
+  "mots_cles": [
+   "ovins",
+   "élevage",
+   "sélection-génétique",
+   "ebv",
+   "cli"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Interface en ligne de commande et serveur MCP pour évaluer et comparer des animaux ovins via la base de données NSIP. Permet de rechercher des animaux, comparer des valeurs d'élevage et planifier des accouplements."
  },
  "7502092a85dd": {
   "famille": "donnees",
@@ -960,6 +1088,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Outil d'évaluation du bétail basé sur l'IA utilisant une photo et des marqueurs ArUco pour estimer la condition corporelle et identifier les races. Il fournit des conseils de santé à partir d'une seule image."
  },
+ "7e87ade2ab96": {
+  "famille": "logiciel",
+  "id": "7e87ade2ab96",
+  "interet": "",
+  "mots_cles": [
+   "tracteur",
+   "pulvérisateur",
+   "vignoble",
+   "simulation",
+   "robotique"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Simulateur de navigation d'un tracteur-pulvérisateur dans un vignoble utilisant Unreal Engine et MATLAB."
+ },
  "7f14bbdc5366": {
   "famille": "logiciel",
   "id": "7f14bbdc5366",
@@ -1020,6 +1163,36 @@
   "redige_par": "mistral-small-latest",
   "resume": "Scripts pour contrôler des équipements de culture sous serre ou hydroponique via Tasmota Berry. Il permet de gérer l'éclairage, la pompe, l'humidificateur et les ventilateurs."
  },
+ "88011d962f43": {
+  "famille": "logiciel",
+  "id": "88011d962f43",
+  "interet": "Permet d'estimer les surfaces cultivées et de suivre l'évolution des cultures à partir d'images satellites.",
+  "mots_cles": [
+   "classification-cultures",
+   "satellite",
+   "apprentissage-automatique",
+   "gis",
+   "rabi"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Outil de classification des cultures agricoles basé sur l'analyse de données satellites et d'apprentissage automatique. Il compare cinq capteurs satellites et quatre algorithmes pour identifier les cultures pendant la saison Rabi."
+ },
+ "899775881e41": {
+  "famille": "modele",
+  "id": "899775881e41",
+  "interet": "Ce modèle peut servir à fournir des informations ou des conseils sur la gestion des sols agricoles.",
+  "mots_cles": [
+   "sol agricole",
+   "réponse textuelle",
+   "gestion des sols",
+   "modèle",
+   "agriculture"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce modèle génère des réponses textuelles sur des questions liées aux sols agricoles. Il est conçu pour répondre à des requêtes spécifiques dans le domaine agricole."
+ },
  "8af57000f157": {
   "famille": "logiciel",
   "id": "8af57000f157",
@@ -1049,6 +1222,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Application mobile utilisant l'intelligence artificielle pour diagnostiquer les maladies des cultures à partir d'images de plantes. Elle propose des recommandations de traitement adaptées aux maladies détectées."
+ },
+ "8c2bda86e9e7": {
+  "famille": "logiciel",
+  "id": "8c2bda86e9e7",
+  "interet": "Faciliter l'analyse et l'exploitation des données de ferme pour des décisions éclairées.",
+  "mots_cles": [
+   "agriculture",
+   "données",
+   "analyse",
+   "postgresql",
+   "typescript"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Outil transformant des données agricoles en informations exploitables via une interface web. Il repose sur une base de données PostgreSQL et une application TypeScript."
  },
  "8c8ba87de1f1": {
   "famille": "modele",
@@ -1122,6 +1310,36 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Ce projet récupère des seuils de soins par espèce depuis OpenPlantbook.io. Il permet d'automatiser des actions liées aux plantes dans un système domotique."
+ },
+ "936b8cf9a40c": {
+  "famille": "logiciel",
+  "id": "936b8cf9a40c",
+  "interet": "Aider à la prise de décision pour la gestion des cultures et des ressources en eau.",
+  "mots_cles": [
+   "agriculture",
+   "intelligence artificielle",
+   "prédiction",
+   "irrigation",
+   "analyse de ferme"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Système d'intelligence artificielle pour l'agriculture utilisant des modèles de machine learning et une interface web. Il propose des recommandations de cultures, des prédictions de rendement, des plans d'irrigation et des analyses de ferme."
+ },
+ "9a39c8593ace": {
+  "famille": "donnees",
+  "id": "9a39c8593ace",
+  "interet": "Améliorer la fertilité des sols salins pour soutenir l'agriculture irriguée.",
+  "mots_cles": [
+   "cultures de couverture",
+   "luzerne",
+   "sols salins",
+   "fertilité du sol",
+   "agriculture irriguée"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Étude comparant l'efficacité de cultures de couverture annuelles et de la luzerne pour améliorer la fertilité des sols salins dans la région de Boukhara. Elle évalue leur impact sur la productivité des terres irriguées."
  },
  "9a6daf1af2ab": {
   "famille": "donnees",
@@ -1248,6 +1466,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Application d'assistance à la collecte de données pédologiques. Elle facilite l'enregistrement et la gestion des informations sur les sols."
+ },
+ "b2b1f2edac6a": {
+  "famille": "logiciel",
+  "id": "b2b1f2edac6a",
+  "interet": "",
+  "mots_cles": [
+   "agriculture",
+   "assurance",
+   "blockchain",
+   "catastrophes climatiques",
+   "stellar"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Protocole d'assurance paramétrique autonome protégeant les agriculteurs contre les catastrophes climatiques via une blockchain. Il utilise le réseau Stellar."
  },
  "b359187bebd4": {
   "famille": "modele",
@@ -1502,6 +1735,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Ensemble de plugins pour l'ingénierie géospatiale agricole dans Claude Code. Il propose des agents, compétences et garde-fous pour le traitement d'images satellites, PostGIS et Earth Engine."
  },
+ "c976c5a3242e": {
+  "famille": "donnees",
+  "id": "c976c5a3242e",
+  "interet": "Optimiser les pratiques d'élevage pour améliorer la production de viande.",
+  "mots_cles": [
+   "élevage",
+   "production de viande",
+   "efficacité",
+   "ressources fourragères",
+   "technologies d'élevage"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Document analysant les facteurs influençant l'efficacité de la production de viande en Ouzbékistan et proposant des pistes d'amélioration. Il aborde notamment la gestion des ressources fourragères et les technologies d'élevage."
+ },
  "c9a1e573680a": {
   "famille": "logiciel",
   "id": "c9a1e573680a",
@@ -1571,6 +1819,19 @@
   "redige_par": "mistral-small-latest",
   "resume": ""
  },
+ "ce6d53c93419": {
+  "famille": "logiciel",
+  "id": "ce6d53c93419",
+  "interet": "",
+  "mots_cles": [
+   "cli",
+   "connections",
+   "crm"
+  ],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
  "cee2b6e345e8": {
   "famille": "logiciel",
   "id": "cee2b6e345e8",
@@ -1630,6 +1891,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Bibliothèque Arduino pour communiquer avec des capteurs environnementaux via le protocole SDI-12. Elle permet de récupérer des mesures sans matériel supplémentaire."
+ },
+ "d232e6abeb70": {
+  "famille": "logiciel",
+  "id": "d232e6abeb70",
+  "interet": "Automatiser le suivi des cultures et la diffusion d'alertes agricoles.",
+  "mots_cles": [
+   "agriculture",
+   "iot",
+   "capteurs",
+   "alertes",
+   "conseil agricole"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Système de conseil agricole basé sur l'internet des objets utilisant des capteurs et des alertes par SMS. Il valide les données météorologiques pour fournir des recommandations."
  },
  "d4c44d87cabb": {
   "famille": "donnees",
@@ -1824,6 +2100,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Ce modèle de génération de texte est adapté à des applications agricoles au Malawi en utilisant des techniques de fine-tuning (LoRA) sur Qwen2. Il est compatible avec des endpoints de génération de texte."
  },
+ "e679db2e8a29": {
+  "famille": "logiciel",
+  "id": "e679db2e8a29",
+  "interet": "Évaluer les impacts des pratiques de pêche sur les écosystèmes marins.",
+  "mots_cles": [
+   "aquaculture",
+   "bio-économie",
+   "évaluation d'impact",
+   "ressources marines",
+   "gestion spatiale"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Logiciel scientifique dédié à la gestion spatiale des ressources halieutiques et à l'évaluation des impacts des activités de pêche. Il permet de modéliser les dynamiques des ressources marines et les interactions avec les activités humaines."
+ },
  "e6b9e8dd51b6": {
   "famille": "logiciel",
   "id": "e6b9e8dd51b6",
@@ -1854,6 +2145,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Ce projet intègre les contrôleurs de tente de culture AC Infinity dans Home Assistant. Il permet de gérer des tentes de culture automatisées."
  },
+ "ec4e06f00abe": {
+  "famille": "donnees",
+  "id": "ec4e06f00abe",
+  "interet": "Cette donnée peut servir à identifier les zones de conservation d'une espèce pollinisatrice utile à l'agriculture.",
+  "mots_cles": [
+   "abeille noire",
+   "conservatoire",
+   "normandie",
+   "cartographie",
+   "pollinisation"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Cette donnée recense la localisation communale des conservatoires de l'abeille noire en Normandie. Elle permet de cartographier les zones de préservation de cette race d'abeille."
+ },
  "ed382ff29f67": {
   "famille": "logiciel",
   "id": "ed382ff29f67",
@@ -1868,6 +2174,51 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Plateforme locale de gestion des exploitations agricoles intégrant champs, tâches, bétail, finances, conformité et météo. Elle centralise plusieurs systèmes européens de parcelles (SIGPAC, BRP, RPG, etc.)."
+ },
+ "ee83a493a7f1": {
+  "famille": "donnees",
+  "id": "ee83a493a7f1",
+  "interet": "Adapter les techniques de semis aux contraintes climatiques des zones arides.",
+  "mots_cles": [
+   "semoir",
+   "plantes fourragères",
+   "technologie de semis",
+   "zones arides",
+   "agriculture durable"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Document décrivant une technologie et un équipement de semis pour plantes fourragères adaptées aux régions désertiques et semi-arides. Il détaille les principes de fonctionnement d'un semoir et les paramètres techniques de semis."
+ },
+ "f128a3168e57": {
+  "famille": "logiciel",
+  "id": "f128a3168e57",
+  "interet": "Centraliser et analyser des données agricoles et environnementales pour des applications variées.",
+  "mots_cles": [
+   "agriculture",
+   "fiware",
+   "jumeau numérique",
+   "iot",
+   "plateforme"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Plateforme open source basée sur FIWARE NGSI-LD pour l'agriculture, l'industrie et l'environnement. Elle permet de créer des jumeaux numériques et est déployable via Docker."
+ },
+ "f29a294eb6f5": {
+  "famille": "donnees",
+  "id": "f29a294eb6f5",
+  "interet": "Préserver les populations d'abeilles locales pour soutenir les écosystèmes agricoles.",
+  "mots_cles": [
+   "abeille noire",
+   "conservatoire",
+   "données géographiques",
+   "préservation des races locales",
+   "apiculture"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Données géographiques représentant les périmètres des conservatoires de l'abeille noire en Normandie. Ces zones visent à préserver une race locale d'abeilles adaptée aux conditions régionales."
  },
  "f4f3083c6bc3": {
   "famille": "logiciel",

@@ -10,6 +10,12 @@
   "statut": "propose",
   "url": "https://huggingface.co/datasets/claritystorm/usda-crop-insurance-indemnities-weather"
  },
+ "015fbbf6f3fd": {
+  "examine_le": "2026-09-28",
+  "score": 75,
+  "statut": "propose",
+  "url": "https://huggingface.co/brimbim/agriculture-crop-disease-model-v1"
+ },
  "01b2d769486d": {
   "examine_le": "2026-09-26",
   "statut": "sans_licence",
@@ -43,10 +49,22 @@
   "statut": "propose",
   "url": "https://github.com/CSU-Agricultural-Water-Quality-Program/low-cost-iot-water-sampler"
  },
+ "081576686688": {
+  "examine_le": "2026-09-28",
+  "score": 85,
+  "statut": "propose",
+  "url": "https://www.data.gouv.fr/datasets/conservatoires-de-labeille-noire-centroides-normandie"
+ },
  "08f31efa9b9f": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
   "url": "https://github.com/abeerrai01/HAL-Harvest-Advisory-with-Linguistic-Intelligence"
+ },
+ "096f10f62ee0": {
+  "examine_le": "2026-09-28",
+  "score": 89,
+  "statut": "propose",
+  "url": "https://doi.org/10.5281/zenodo.23010549"
  },
  "0a2fb0e9327a": {
   "examine_le": "2026-09-26",
@@ -172,10 +190,21 @@
   "statut": "propose",
   "url": "https://doi.org/10.5281/zenodo.22764834"
  },
+ "16a043ebf743": {
+  "examine_le": "2026-09-28",
+  "score": 85,
+  "statut": "propose",
+  "url": "https://github.com/Alex0420W/HarvestSight"
+ },
  "16ea60458af2": {
   "examine_le": "2026-09-26",
   "statut": "sans_licence",
   "url": "https://github.com/LAR/lincolnbeet_dataset"
+ },
+ "175daaa7193e": {
+  "examine_le": "2026-09-28",
+  "statut": "sans_licence",
+  "url": "https://github.com/Gssiva/Day-Start-India"
  },
  "18751a594f47": {
   "examine_le": "2026-09-17",
@@ -226,6 +255,12 @@
   "score": 84,
   "statut": "propose",
   "url": "https://github.com/akrherz/iem"
+ },
+ "1d4dc6133fd6": {
+  "examine_le": "2026-09-28",
+  "score": 85,
+  "statut": "propose",
+  "url": "https://github.com/rajputomsingh/Fieldly"
  },
  "1ea36d771aaa": {
   "examine_le": "2026-09-17",
@@ -574,6 +609,12 @@
   "statut": "sans_licence",
   "url": "https://github.com/gauchitodev/sway-deere"
  },
+ "4237ff353aae": {
+  "examine_le": "2026-09-28",
+  "score": 75,
+  "statut": "propose",
+  "url": "https://huggingface.co/agricf/phi-3.5-mini-croprec-agriculture"
+ },
  "42acfdb799ca": {
   "examine_le": "2026-09-26",
   "score": 56,
@@ -656,6 +697,11 @@
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
   "url": "https://huggingface.co/datasets/anhbui80103/crop"
+ },
+ "4f98e9324b08": {
+  "examine_le": "2026-09-28",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/datasets/Kaelyn01/crop-paired-visual-evidence"
  },
  "50069a9ea2da": {
   "examine_le": "2026-09-26",
@@ -775,6 +821,12 @@
   "statut": "sans_licence",
   "url": "https://github.com/Sibajx/davis-sdr-greenhouse"
  },
+ "5a395e34f809": {
+  "examine_le": "2026-09-28",
+  "score": 85,
+  "statut": "propose",
+  "url": "https://doi.org/10.5281/zenodo.23000544"
+ },
  "5aeeb620fef5": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
@@ -829,6 +881,11 @@
   "statut": "sans_licence",
   "url": "https://huggingface.co/datasets/PHENOBIID/CropDynamicsBench"
  },
+ "61182447fc5a": {
+  "examine_le": "2026-09-28",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/datasets/Yashodhr/Frank_Uni_CropedDataset"
+ },
  "6192e75e6b23": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
@@ -855,6 +912,12 @@
   "score": 85,
   "statut": "propose",
   "url": "https://doi.org/10.5281/zenodo.22940411"
+ },
+ "653d64fb13e0": {
+  "examine_le": "2026-09-28",
+  "score": 74,
+  "statut": "propose",
+  "url": "https://github.com/beepnl/beep-vue-app"
  },
  "65b9b6ba07e5": {
   "examine_le": "2026-09-17",
@@ -952,6 +1015,11 @@
   "statut": "propose",
   "url": "https://github.com/JohnDeere/OperationsCenterAPI-OAuth2-NodeJS-Example"
  },
+ "723c62f595e8": {
+  "examine_le": "2026-09-28",
+  "statut": "sans_licence",
+  "url": "https://github.com/cropandweed/releaf"
+ },
  "72a1fcfccb06": {
   "examine_le": "2026-09-26",
   "statut": "sans_licence",
@@ -966,6 +1034,12 @@
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
   "url": "https://huggingface.co/akshat1363/v6-plant-disease-backup"
+ },
+ "73e56b38d803": {
+  "examine_le": "2026-09-28",
+  "score": 85,
+  "statut": "propose",
+  "url": "https://github.com/epicpast/nsip"
  },
  "745c67b1da73": {
   "examine_le": "2026-09-26",
@@ -1096,6 +1170,12 @@
   "statut": "sans_licence",
   "url": "https://github.com/cwfid/dataset"
  },
+ "7e87ade2ab96": {
+  "examine_le": "2026-09-28",
+  "score": 75,
+  "statut": "propose",
+  "url": "https://github.com/mathworks-robotics/Tractor-Sprayer-Navigation-in-Vineyard"
+ },
  "7f14bbdc5366": {
   "examine_le": "2026-09-26",
   "score": 75,
@@ -1158,6 +1238,11 @@
   "statut": "sans_licence",
   "url": "https://huggingface.co/bugbug05/CNN_plant_disease_model"
  },
+ "87b0446bf6ad": {
+  "examine_le": "2026-09-28",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/datasets/RehanIshfaq/V2_crop_and_weed_plant_seedlings_dataset"
+ },
  "87b7b9534a19": {
   "examine_le": "2026-09-26",
   "score": 64,
@@ -1170,6 +1255,12 @@
   "statut": "propose",
   "url": "https://github.com/LucidEye/Tasmota-Hydroponics-Controller"
  },
+ "88011d962f43": {
+  "examine_le": "2026-09-28",
+  "score": 85,
+  "statut": "propose",
+  "url": "https://github.com/202519003/multisensor-crop-classification-jhansi"
+ },
  "88897eb1ba48": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
@@ -1179,6 +1270,12 @@
   "examine_le": "2026-09-26",
   "statut": "sans_licence",
   "url": "https://github.com/JiaxuanYou/crop_yield_prediction"
+ },
+ "899775881e41": {
+  "examine_le": "2026-09-28",
+  "score": 75,
+  "statut": "propose",
+  "url": "https://huggingface.co/agricf/phi-3.5-mini-soilqa-agriculture"
  },
  "8a431af97148": {
   "examine_le": "2026-09-17",
@@ -1211,6 +1308,12 @@
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
   "url": "https://huggingface.co/KAHIYE/Plant-Disease-Predictor"
+ },
+ "8c2bda86e9e7": {
+  "examine_le": "2026-09-28",
+  "score": 86,
+  "statut": "propose",
+  "url": "https://github.com/nmi-agro/fdm"
  },
  "8c8ba87de1f1": {
   "examine_le": "2026-09-17",
@@ -1251,6 +1354,17 @@
   "score": 85,
   "statut": "propose",
   "url": "https://github.com/Olen/home-assistant-openplantbook"
+ },
+ "936b8cf9a40c": {
+  "examine_le": "2026-09-28",
+  "score": 92,
+  "statut": "propose",
+  "url": "https://github.com/shrutikbalwan/Smart-Agriculture-AI-Prediction-System"
+ },
+ "93fb324cf5e4": {
+  "examine_le": "2026-09-28",
+  "statut": "sans_licence",
+  "url": "https://github.com/kavya13510/Kisaanmitr"
  },
  "9564f66ddc16": {
   "examine_le": "2026-09-26",
@@ -1307,6 +1421,12 @@
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
   "url": "https://huggingface.co/Priikshit/gemma3-1b-indian-agriculture"
+ },
+ "9a39c8593ace": {
+  "examine_le": "2026-09-28",
+  "score": 88,
+  "statut": "propose",
+  "url": "https://doi.org/10.5281/zenodo.22970724"
  },
  "9a6daf1af2ab": {
   "examine_le": "2026-09-26",
@@ -1468,6 +1588,12 @@
   "examine_le": "2026-09-26",
   "statut": "sans_licence",
   "url": "https://github.com/JohnDeere/MyJohnDeereAPI-OAuth2-Python-Example"
+ },
+ "b2b1f2edac6a": {
+  "examine_le": "2026-09-28",
+  "score": 85,
+  "statut": "propose",
+  "url": "https://github.com/PrinceDale99/TyFi"
  },
  "b359187bebd4": {
   "examine_le": "2026-09-17",
@@ -1682,6 +1808,12 @@
   "statut": "sans_licence",
   "url": "https://huggingface.co/parvejnawaj9/fassalkart-ai-llama3-8b-agriculture"
  },
+ "c976c5a3242e": {
+  "examine_le": "2026-09-28",
+  "score": 88,
+  "statut": "propose",
+  "url": "https://doi.org/10.5281/zenodo.22983632"
+ },
  "c9a1e573680a": {
   "examine_le": "2026-09-26",
   "score": 98,
@@ -1738,6 +1870,12 @@
   "statut": "sans_licence",
   "url": "https://github.com/martinhrvn/hive-pal"
  },
+ "ce6d53c93419": {
+  "examine_le": "2026-09-28",
+  "score": 74,
+  "statut": "propose",
+  "url": "https://github.com/roma-glushko/frens"
+ },
  "cee2b6e345e8": {
   "examine_le": "2026-09-17",
   "score": 93,
@@ -1792,6 +1930,17 @@
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
   "url": "https://www.data.gouv.fr/datasets/petites-regions-agricoles-hauts-de-france"
+ },
+ "d1c5fb8a8cb4": {
+  "examine_le": "2026-09-28",
+  "statut": "sans_licence",
+  "url": "https://www.data.gouv.fr/datasets/jardin-agriculture-urbaine-potager-1"
+ },
+ "d232e6abeb70": {
+  "examine_le": "2026-09-28",
+  "score": 85,
+  "statut": "propose",
+  "url": "https://github.com/Mohd-Iyad/sms-based-crop-advisory-iot-system"
  },
  "d4c44d87cabb": {
   "examine_le": "2026-09-21",
@@ -1941,6 +2090,12 @@
   "statut": "sans_licence",
   "url": "https://zenodo.org/record/7535814"
  },
+ "e679db2e8a29": {
+  "examine_le": "2026-09-28",
+  "score": 73,
+  "statut": "propose",
+  "url": "https://github.com/frabas/DISPLACE_GUI"
+ },
  "e6b9e8dd51b6": {
   "examine_le": "2026-09-26",
   "score": 60,
@@ -1973,6 +2128,12 @@
   "statut": "sans_licence",
   "url": "https://github.com/Undisciplined-alchemist8546/jiofarm"
  },
+ "ec4e06f00abe": {
+  "examine_le": "2026-09-28",
+  "score": 85,
+  "statut": "propose",
+  "url": "https://www.data.gouv.fr/datasets/conservatoires-de-labeille-noire-composition-communale-normandie"
+ },
  "ecad9e64fa42": {
   "examine_le": "2026-09-26",
   "statut": "sans_licence",
@@ -1994,6 +2155,18 @@
   "statut": "sans_licence",
   "url": "https://www.rakwireless.com/en-us/products/wisblock"
  },
+ "ee83a493a7f1": {
+  "examine_le": "2026-09-28",
+  "score": 92,
+  "statut": "propose",
+  "url": "https://doi.org/10.5281/zenodo.23011071"
+ },
+ "f128a3168e57": {
+  "examine_le": "2026-09-28",
+  "score": 85,
+  "statut": "propose",
+  "url": "https://github.com/nkz-os/nkz"
+ },
  "f1b263654b5b": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
@@ -2008,6 +2181,12 @@
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
   "url": "https://huggingface.co/Harish39/plant_disease_classifier"
+ },
+ "f29a294eb6f5": {
+  "examine_le": "2026-09-28",
+  "score": 85,
+  "statut": "propose",
+  "url": "https://www.data.gouv.fr/datasets/conservatoires-de-labeille-noire-perimetres-normandie"
  },
  "f32fd20de6ee": {
   "examine_le": "2026-09-17",
