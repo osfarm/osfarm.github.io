@@ -1268,6 +1268,22 @@ candidats:
   propose_le: '2024-06-01'
   source: communaute-osfarm
   publier: true
+- id: projet-tofmapper
+  titre: TOFMapper
+  url: https://github.com/Moerizzy/TOFMapper
+  demo: https://www.sciencedirect.com/science/article/pii/S2666017226001483?via%3Dihub
+  github_org: Moerizzy
+  famille: modele
+  categorie: Cartographie et SIG
+  category: Geospatial, GIS and Global Positionning System reference
+  licence: gpl-3.0 license
+  techno: Python
+  description: TOFMapper est un outil de segmentation sémantique destiné à cartographier et classifier les arbres hors forêt dans des images aériennes à haute résolution. Segmentation et classification d'images aériennes en quatre catégories d'arbres hors forêt (Forêt, Groupe d'arbres, Alignement, Arbre isolé) Capacité à traiter de grandes images d'inférence en découpant et en réassemblant des vignettes et des images adjacentes, tout en évitant les effets de bordure
+  resume: TOFMapper est un outil de segmentation sémantique destiné à cartographier et classifier les arbres hors forêt dans des images aériennes à haute résolution. Segmentation et classification d'images aériennes en quatre catégories d'arbres hors forêt (Forêt, Groupe d'arbres, Alignement, Arbre isolé) Capacité à traiter de grandes images d'inférence en découpant et en réassemblant des vignettes et des images adjacentes, tout en évitant les effets de bordure
+  date_maj: '2026-08-19'
+  propose_le: '2026-10-01'
+  source: proposition-site
+  publier: true
 - id: projet-traccar
   titre: Traccar
   url: https://www.traccar.org/
