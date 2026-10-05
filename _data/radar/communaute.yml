@@ -338,6 +338,19 @@ candidats:
   propose_le: '2024-06-01'
   source: communaute-osfarm
   publier: true
+- id: projet-opheno
+  titre: OPheno
+  url: https://huggingface.co/OPheno
+  demo: https://huggingface.co/spaces/OPheno/OPheno
+  famille: donnees
+  categorie: IA et apprentissage automatique
+  category: Machine Learning and AI
+  licence: cc-by-4.0
+  description: OPheno vise à rassembler l'ensemble des connaissances en malherbologie, allant de la recherche universitaire et des essais au champ jusqu'aux observations réalisées en culture au cours de la saison. En offrant une plateforme ouverte et collaborative pour les données relatives à la levée et à la phénologie, OPheno favorise la coopération, renforce la transparence et accélère le développement de modèles et d'outils reposant sur des observations fiables et comparables. Tous les jeux de données hébergés par OPheno respectent les principes de la science ouverte et ont pour vocation de soutenir tout
+  resume: OPheno vise à rassembler l'ensemble des connaissances en malherbologie, allant de la recherche universitaire et des essais au champ jusqu'aux observations réalisées en culture au cours de la saison. En offrant une plateforme ouverte et collaborative pour les données relatives à la levée et à la phénologie, OPheno favorise la coopération, renforce la transparence et accélère le développement de modèles et d'outils reposant sur des observations fiables et comparables. Tous les jeux de données hébergés par OPheno respectent les principes de la science ouverte et ont pour vocation de soutenir tout
+  propose_le: '2026-10-05'
+  source: proposition-site
+  publier: true
 - id: projet-phytocheck
   titre: Phytocheck
   url: https://github.com/elkaou/phytocheck-app
