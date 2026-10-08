@@ -61,8 +61,8 @@ adhésions payées sur HelloAsso et envoie le courriel de bienvenue du bureau.
   Un renouvellement ne redéclenche rien.
 - **Fenêtre** : le relevé porte sur les 14 derniers jours et ignore ce qui
   précède le réglage `depuis` (la mise en service).
-- **Réglages** : le nœud « Réglages » porte `depuis`, `essai_vers`, `plafond`
-  et `delai_acces_jours`. Une adresse dans `essai_vers` fait partir un seul
+- **Réglages** : le nœud « Réglages » porte `depuis`, `essai_vers`, `plafond`,
+  `delai_acces_jours` et `formulaires_exclus`. Une adresse dans `essai_vers` fait partir un seul
   courriel d'essai, sans copie au bureau ni enregistrement ; la vider remet
   le workflow en production. Au-delà de `plafond` envois (20) en un passage,
   rien ne part et l'exécution échoue.
@@ -70,8 +70,11 @@ adhésions payées sur HelloAsso et envoie le courriel de bienvenue du bureau.
   d'ouverture des accès y est répété : `delai_acces_jours` du nœud
   « Réglages » et `meta.delai_acces_jours` de `_data/adhesion.yml` se changent
   ensemble.
-- **Formulaires d'essai** : ce workflow ne les écarte pas. Une adhésion de
-  test sur `adhesion-osfarm-2026-dev` déclencherait un courriel de bienvenue.
+- **Formulaires d'essai** : `formulaires_exclus` écarte les adhésions passées
+  sur un formulaire HelloAsso de test (`adhesion-osfarm-2026-dev`).
+- **Exécutions** : les exécutions réussies ne sont pas conservées dans n8n,
+  car elles contiennent les réponses de HelloAsso. La table
+  `adhesion_bienvenue` est la trace des envois.
 - **Panne** : si HelloAsso ne répond pas, rien n'est envoyé et le bureau est
   prévenu une fois par jour, à 9 h. Une panne du serveur de courrier ne peut
   pas être signalée par courriel : elle se lit dans les exécutions de n8n.
