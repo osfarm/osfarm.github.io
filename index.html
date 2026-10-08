@@ -18,7 +18,7 @@ permalink: /
 {%- endfor -%}
 {%- assign solutions = site.data.radar.communaute.candidats | where: "publier", true | sort_natural: "titre" -%}
 {%- assign communaute = "/community/" | relative_url -%}
-{%- assign adhesion = "https://www.helloasso.com/associations/osfarm/adhesions/adhesion-osfarm-2024" -%}
+{%- assign adhesion = "/join/" | relative_url -%}
 </div><!-- ends .full-width that started in header.html -->
 
 <div class="accueil">
@@ -154,7 +154,7 @@ permalink: /
         <li><strong>You want to support</strong> agricultural commons, through financial or skills sponsorship.</li>
       </ul>
       <div class="accueil-liens">
-        <a class="bouton-osfarm bouton-osfarm--plein" href="{{ adhesion }}" target="_blank" rel="noopener">Join</a>
+        <a class="bouton-osfarm bouton-osfarm--plein" href="{{ adhesion }}">Join</a>
         <a class="bouton-osfarm" href="https://discord.gg/AtY5ZxCsWM" target="_blank" rel="noopener">Chat on Discord</a>
         <a class="bouton-osfarm" href="{{ "/contact/" | relative_url }}">Contact us</a>
       </div>

@@ -25,6 +25,7 @@ sitemap: false
 {%- assign cat = site.data.catalogue -%}
 {%- assign asso = site.data.association -%}
 {%- assign ops = site.data.operateurs -%}
+{%- assign adh = site.data.adhesion -%}
 # SOCLE DE CONNAISSANCE — OSFarm
 # Généré le {{ site.time | date: "%Y-%m-%d" }} depuis www.osfarm.org. Version faisant foi.
 
@@ -83,12 +84,14 @@ Objet : rassembler et faire connaître les communs numériques de l'agriculture
 mettre en relation ceux qui les font avec ceux qui s'en servent.
 
 Ce qu'OSFarm fait : tenir l'annuaire des communs, tenir un catalogue de
-formations et de missions opérées par ses adhérents, animer la communauté.
+formations et de missions opérées par ses adhérents, animer la communauté,
+organiser elle-même des sessions de codesign, des bootcamps et des hackathons
+(voir ADHÉSION ET ACCOMPAGNEMENT).
 Ce qu'OSFarm ne fait pas : vendre des logiciels, prendre une commission sur les
-prestations de ses adhérents, être partie aux contrats, garantir les
-prestations.
+prestations de ses adhérents, être partie aux contrats du catalogue, garantir
+les prestations de ses adhérents.
 
-Adhésion : {{ cat.meta.adhesion_url }}
+Adhésion : {{ site.url }}/fr/adherer/ (voir ADHÉSION ET ACCOMPAGNEMENT)
 L'adhésion est la seule condition pour opérer un module du catalogue et donne
 droit à une remise d'au moins {{ cat.meta.remise_adherent_min }} % sur les
 tarifs publics.
@@ -106,6 +109,32 @@ Pages utiles :
 - Documentation (publications et rapports) : {{ site.url }}/fr/documentation/ (EN : {{ site.url }}/documentation/)
 - Contact et mentions légales : {{ site.url }}/fr/contact/
 - Données ouvertes de l'annuaire : {{ site.url }}/data/communs.json et /data/communs.csv
+
+## ADHÉSION ET ACCOMPAGNEMENT
+
+Page : {{ site.url }}/fr/adherer/ (EN : {{ site.url }}/join/)
+Paiement de l'adhésion sur HelloAsso : {{ adh.meta.helloasso }}
+Les accès sont ouverts à la main, sous {{ adh.meta.delai_acces_jours }} jours ouvrés après l'adhésion.
+
+Formules, par an :
+{%- for f in adh.formules %}
+- {{ f.titre.fr }} : {{ f.prix }} €{% for i in f.inclus %}{% assign n = adh.niveaux | where: "id", i.niveau | first %} ; comprend {{ i.par_an }} {{ n.titre.fr | downcase }} par an{% endfor %}
+{%- endfor %}
+
+Avantages communs aux formules :
+- Un canal réservé aux adhérents, distinct du Discord public ; l'invitation
+  est envoyée après l'adhésion.
+- Solutions ouvertes hébergées par OSFarm :{% for h in adh.hebergees %} {{ h.nom }} ({{ h.resume.fr }}) {{ h.url }}{% unless forloop.last %} ;{% endunless %}{% endfor %}
+- Lexicon ({{ adh.meta.lexicon_catalogue }}). Sans adhérer : {{ adh.lexicon.public.fr }} En adhérant : {{ adh.lexicon.adherent.fr }}
+- Au moins {{ cat.meta.remise_adherent_min }} % de remise sur les tarifs publics des formations du catalogue.
+
+Niveaux d'accompagnement ({{ adh.niveaux | size }}). Ils sont organisés, vendus et facturés par
+l'association elle-même, à la différence du catalogue. Prix sans adhérer, puis
+par formule :
+{%- for n in adh.niveaux %}
+- {{ n.titre.fr }} ({{ n.format.fr | downcase }}) : {{ n.resume.fr }}
+  {% capture prix_socle %}{% if n.prix == nil %}Sur devis.{% else %}Sans adhérer : {% include adhesion-prix.html niveau=n public="public" lang="fr" %}{% for f in adh.formules %} ; adhérent {{ f.titre.fr | downcase }} : {% include adhesion-prix.html niveau=n public=f.id lang="fr" %}{% endfor %}.{% endif %}{% endcapture %}{{ prix_socle | replace: "&nbsp;", " " }}
+{%- endfor %}
 
 ## CATALOGUE FORMATION ET CONSEIL
 
@@ -268,7 +297,9 @@ Titre | organisme | année | nature | langue du texte
 - Proposer un projet pour l'annuaire : le formulaire en bas de {{ site.url }}/fr/communs/
 - Demander un devis pour une formation : la fiche du module sur {{ site.url }}/fr/catalogue/
 - Proposer d'opérer un module : {{ site.url }}/fr/proposer-un-module/
-- Adhérer : {{ cat.meta.adhesion_url }}
+- Adhérer, connaître les tarifs et les avantages : {{ site.url }}/fr/adherer/
+- Demander une session de codesign, un bootcamp ou un hackathon : le
+  formulaire en bas de {{ site.url }}/fr/adherer/
 - Toute autre demande, presse comprise : {{ site.url }}/fr/contact/
 - Signaler une erreur sur une fiche, ou demander le retrait d'un logo :
   https://github.com/osfarm/osfarm.github.io/issues/new

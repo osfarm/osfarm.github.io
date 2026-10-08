@@ -67,6 +67,16 @@
     {%- endif -%}
     {% if include.resume and include.resume != "" %}<p>{{ include.resume }}</p>{% endif %}
     {% if include.interet and include.interet != "" %}<p class="radar-interet">{{ include.interet }}</p>{% endif %}
+    {%- comment -%}
+      Solution que l'association héberge pour ses adhérents : _data/adhesion.yml.
+    {%- endcomment -%}
+    {%- if include.id_fiche -%}
+      {%- assign hebergee = site.data.adhesion.hebergees | where: "fiche", include.id_fiche | first -%}
+      {%- if hebergee %}
+      <p class="radar-hebergee">Hébergé par OSFarm pour ses adhérents :
+        <a href="{{ "/fr/adherer/" | relative_url }}">voir l'adhésion</a></p>
+      {%- endif -%}
+    {%- endif %}
   </div>
 
   <div class="radar-carte-pied">

@@ -18,7 +18,6 @@ meta:
   devise: EUR
   # Adresses lues par assets/js/catalogue.js : rien n'est codé en dur côté JS.
   courriel_repli: "contact@osfarm.org"
-  adhesion_url: "https://www.helloasso.com/associations/osfarm/adhesions/adhesion-osfarm-2024"
   webhook_demande: "https://automation.osfarm.org/webhook/catalogue-demande"
   webhook_candidature: "https://automation.osfarm.org/webhook/catalogue-operateur"
 
