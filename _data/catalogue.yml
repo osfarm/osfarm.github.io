@@ -18,6 +18,10 @@ meta:
   devise: EUR
   # Adresses lues par assets/js/catalogue.js : rien n'est codé en dur côté JS.
   courriel_repli: "contact@osfarm.org"
+  # Lien d'adhésion cité par les courriels du workflow n8n « Catalogue — suivi
+  # des candidatures », qui lit /catalogue.json. Le site, lui, passe par
+  # _data/adhesion.yml.
+  adhesion_url: "https://www.osfarm.org/fr/adherer/"
   webhook_demande: "https://automation.osfarm.org/webhook/catalogue-demande"
   webhook_candidature: "https://automation.osfarm.org/webhook/catalogue-operateur"
 
