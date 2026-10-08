@@ -52,7 +52,5 @@ partagent la limite de cinq envois par heure et par adresse IP.
   Lexicon) : à la main, après vérification de l'adhésion sur HelloAsso.
 - **Adresse du canal des adhérents** : la page n'en donne pas, l'invitation
   est envoyée après l'adhésion.
-- **Campagne HelloAsso** : `meta.helloasso` pointe sur la campagne 2024 ; à
-  vérifier qu'elle est ouverte et qu'elle propose les deux cotisations.
 - **Mention « hébergé par OSFarm » en anglais** : seule la carte de
   `/fr/communs/` la porte ; `/community/` utilise un autre gabarit.
