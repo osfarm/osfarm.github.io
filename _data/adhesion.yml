@@ -1,0 +1,181 @@
+# ---------------------------------------------------------------------------
+# OSFarm — Adhésion et accompagnement
+# Source unique de vérité des pages /fr/adherer/ et /join/, du lien « Adhérer »
+# de tout le site, de la mention « hébergé par OSFarm » des cartes de
+# l'annuaire et de la section ADHÉSION de /data/socle.txt.
+#
+# Deux modèles à ne pas confondre :
+#   - le catalogue (_data/catalogue.yml) : l'association référence, les
+#     adhérents opèrent et facturent ;
+#   - les niveaux d'accompagnement ci-dessous : l'association organise, vend
+#     et facture elle-même (décision du bureau, octobre 2026).
+#
+# Chaque texte existe en français et en anglais. Dans `avantages`, %hebergees
+# est remplacé par la liste des solutions hébergées et %remise par
+# catalogue.meta.remise_adherent_min. Mode d'emploi : _adhesion/README.md.
+# ---------------------------------------------------------------------------
+
+meta:
+  # Campagne HelloAsso par défaut ; une formule peut porter la sienne
+  # (`helloasso:`) le jour où il y a une campagne par formule.
+  helloasso: "https://www.helloasso.com/associations/osfarm/adhesions/adhesion-osfarm-2024"
+  # Le formulaire de demande part au workflow n8n « Site — formulaire de
+  # contact », sous le profil « Accompagnement ».
+  webhook: "https://automation.osfarm.org/webhook/site-contact"
+  courriel: "contact@osfarm.org"
+  delai_acces_jours: 5         # ouverture des accès, faite à la main
+  lexicon: "https://lexicon.osfarm.org"
+  lexicon_catalogue: "https://lexicon.osfarm.org/catalog"
+
+# Dans l'ordre d'affichage. `inclus` : ce qu'une formule offre sur les niveaux
+# d'accompagnement — la carte de la formule et le prix du niveau en découlent.
+formules:
+  - id: app
+    prix: 10
+    helloasso: null
+    titre:
+      fr: "Personne physique"
+      en: "Individual"
+    pour:
+      fr: "Vous adhérez en votre nom : agriculteur, développeur, chercheur, étudiant."
+      en: "You join in your own name: farmer, developer, researcher, student."
+    inclus: []
+
+  - id: apm
+    prix: 500
+    helloasso: null
+    titre:
+      fr: "Personne morale"
+      en: "Organisation"
+    pour:
+      fr: "Vous adhérez au nom d'une structure : entreprise, coopérative, institut, collectivité, association."
+      en: "You join on behalf of a body: company, cooperative, institute, local authority, non-profit."
+    inclus: [{ niveau: codesign, par_an: 1 }]
+
+# Communs aux deux formules.
+avantages:
+  - id: canal
+    titre:
+      fr: "La communauté des adhérents"
+      en: "The members' community"
+    texte:
+      fr: "Un canal réservé aux adhérents, distinct du Discord public. L'invitation vous est envoyée après l'adhésion."
+      en: "A members-only channel, separate from the public Discord. The invitation is sent to you after you join."
+
+  - id: hebergees
+    titre:
+      fr: "Des solutions ouvertes hébergées par OSFarm"
+      en: "Open solutions hosted by OSFarm"
+    texte:
+      fr: "Une sélection de solutions de l'annuaire, installées et tenues par l'association. Pour le moment : %hebergees."
+      en: "A selection of solutions from the directory, installed and maintained by the association. For now: %hebergees."
+
+  - id: lexicon
+    titre:
+      fr: "L'accès adhérent au Lexicon"
+      en: "Member access to the Lexicon"
+    texte:
+      fr: "Une clef d'API aux limites relevées et tous les jeux de données."
+      en: "An API key with higher limits and every dataset."
+
+  - id: catalogue
+    titre:
+      fr: "Le tarif adhérent du catalogue"
+      en: "The member rate of the catalogue"
+    texte:
+      fr: "Au moins %remise % de remise sur les tarifs publics des formations."
+      en: "At least %remise% off the public rates of the training courses."
+
+# Ce que le Lexicon ouvre à chacun, et ce que l'adhésion ajoute.
+lexicon:
+  public:
+    fr: "Les sources de données publiques, et l'API avec une limite d'appels."
+    en: "The public data sources, and the API with a call limit."
+  adherent:
+    fr: "Toutes les sources de données, et une clef d'API aux limites relevées."
+    en: "Every data source, and an API key with higher limits."
+
+# Solutions hébergées par l'association pour ses adhérents. `fiche` est
+# l'identifiant de la fiche de l'annuaire, quand il y en a une : sa carte
+# porte alors la mention « hébergé par OSFarm ».
+hebergees:
+  - id: traccar
+    nom: "Traccar"
+    url: "https://traccar.osfarm.org"
+    fiche: projet-traccar
+    resume:
+      fr: "suivi GPS"
+      en: "GPS tracking"
+
+# L'échelle, du plus léger au plus engageant. `prix` par public, en euros :
+# 0 s'affiche « gratuit », `prix: null` « sur devis », `a_partir_de: true`
+# « à partir de ». `demande: true` propose le niveau dans le formulaire.
+# `voir_catalogue` renvoie à une mission du catalogue (référence).
+niveaux:
+  - id: impromptu
+    prix: { public: 100, app: 0, apm: 0 }
+    demande: false
+    titre:
+      fr: "Session de codesign impromptue"
+      en: "Impromptu co-design session"
+    resume:
+      fr: "Un adhérent décide de passer du temps sur un sujet et invite ceux qui le souhaitent à participer à la réflexion ou au développement."
+      en: "A member decides to spend time on a topic and invites anyone interested to join the thinking or the development."
+    format:
+      fr: "À l'initiative d'un adhérent, annoncée sur le canal des adhérents"
+      en: "Started by a member, announced on the members' channel"
+
+  - id: codesign
+    prix: { public: 500, app: 500, apm: 500 }
+    demande: true
+    titre:
+      fr: "Session de codesign"
+      en: "Co-design session"
+    resume:
+      fr: "Une visio de trois heures consacrée à votre sujet."
+      en: "A three-hour video call devoted to your topic."
+    format:
+      fr: "Visio de 3 heures"
+      en: "3-hour video call"
+
+  - id: bootcamp
+    prix: { public: 3000, app: 3000, apm: 3000 }
+    a_partir_de: true
+    demande: true
+    titre:
+      fr: "Bootcamp"
+      en: "Bootcamp"
+    resume:
+      fr: "Une session qui réunit les experts d'un sujet et se termine par un livrable : nouveau référentiel, API, outil d'aide à la décision."
+      en: "A session that brings together the experts on a topic and ends with a deliverable: new reference dataset, API, decision-support tool."
+    format:
+      fr: "Deux à trois jours"
+      en: "Two to three days"
+
+  - id: hackathon
+    prix: { public: 5000, app: 5000, apm: 5000 }
+    a_partir_de: true
+    demande: true
+    voir_catalogue: P5
+    titre:
+      fr: "Hackathon"
+      en: "Hackathon"
+    resume:
+      fr: "Plusieurs équipes travaillent en parallèle sur des sujets divers. L'équipe OSFarm les accompagne dans l'utilisation des outils, des modèles et des données."
+      en: "Several teams work in parallel on various topics. The OSFarm team helps them use the tools, models and data."
+    format:
+      fr: "Plusieurs équipes en parallèle"
+      en: "Several teams in parallel"
+
+  - id: projet
+    prix: null
+    demande: true
+    titre:
+      fr: "Projet de recherche"
+      en: "Research project"
+    resume:
+      fr: "OSFarm peut être partenaire d'un projet de recherche à composante numérique agricole, en tant que collectif d'experts."
+      en: "OSFarm can be a partner in a research project with a digital agriculture component, as a collective of experts."
+    format:
+      fr: "Partenariat"
+      en: "Partnership"

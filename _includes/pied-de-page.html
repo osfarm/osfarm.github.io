@@ -22,7 +22,7 @@
             <img src="{{ "/assets/img/logo_white.png" | relative_url }}" alt="{% if lang == "fr" %}OSFarm, accueil{% else %}OSFarm, home{% endif %}" width="105" height="64">
           </a>
           <p>{% if lang == "fr" %}Les communs numériques de l'agriculture, faits et entretenus par ceux qui s'en servent.{% else %}The digital commons of agriculture, built and kept by the people who use them.{% endif %}</p>
-          <a class="site-join" href="{{ site.data.catalogue.meta.adhesion_url }}" target="_blank" rel="noopener">{% if lang == "fr" %}Adhérer{% else %}Join{% endif %}</a>
+          <a class="site-join" href="{% if lang == "fr" %}{{ "/fr/adherer/" | relative_url }}{% else %}{{ "/join/" | relative_url }}{% endif %}">{% if lang == "fr" %}Adhérer{% else %}Join{% endif %}</a>
         </div>
 
         <nav class="pied-colonne" aria-label="{% if lang == "fr" %}Rubriques du site{% else %}Site sections{% endif %}">

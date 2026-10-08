@@ -1,0 +1,31 @@
+{%- comment -%}
+  Le prix d'un niveau d'accompagnement pour un public donné.
+  Usage : {% include adhesion-prix.html niveau=n public="apm" lang="fr" %}
+  `public` vaut « public » ou l'id d'une formule de _data/adhesion.yml.
+
+  Sans `prix`, le niveau est sur devis. Un prix de 0 s'écrit « gratuit ». Si la
+  formule compte ce niveau dans `inclus`, le prix devient celui des sessions
+  suivantes : la session offerte n'est écrite qu'à cet endroit de la donnée.
+{%- endcomment -%}
+{%- assign prix_niveau = include.niveau -%}
+{%- assign prix_fr = true -%}
+{%- if include.lang == "en" %}{% assign prix_fr = false %}{% endif -%}
+{%- assign prix_formule = site.data.adhesion.formules | where: "id", include.public | first -%}
+{%- assign prix_inclus = prix_formule.inclus | where: "niveau", prix_niveau.id | first -%}
+{%- if prix_niveau.prix == nil -%}
+  {%- if prix_fr %}sur devis{% else %}on request{% endif -%}
+{%- else -%}
+  {%- assign prix_montant = prix_niveau.prix[include.public] -%}
+  {%- if prix_montant == 0 -%}
+    {%- if prix_fr %}gratuit{% else %}free{% endif -%}
+  {%- elsif prix_inclus -%}
+    {%- if prix_fr -%}
+      {{ prix_inclus.par_an }} incluse par an, puis {% include catalogue-tarif.html montant=prix_montant lang="fr" %}
+    {%- else -%}
+      {{ prix_inclus.par_an }} included per year, then {% include catalogue-tarif.html montant=prix_montant lang="en" %}
+    {%- endif -%}
+  {%- else -%}
+    {%- if prix_niveau.a_partir_de %}{% if prix_fr %}à partir de {% else %}from {% endif %}{% endif -%}
+    {%- include catalogue-tarif.html montant=prix_montant lang=include.lang -%}
+  {%- endif -%}
+{%- endif -%}

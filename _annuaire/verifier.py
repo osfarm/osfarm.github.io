@@ -30,6 +30,8 @@ EXPORT = RACINE / "_site" / "data" / "communs.json"
 VOCABULAIRE = RACINE / "_data" / "radar" / "communaute.yml"
 BESOINS = RACINE / "_data" / "besoins.yml"
 COMPARATEUR = RACINE / "_data" / "comparateur.yml"
+ADHESION = RACINE / "_data" / "adhesion.yml"
+CATALOGUE = RACINE / "_data" / "catalogue.yml"
 
 # Forme d'un identifiant de fiche. C'est un contrat du comparateur
 # (_annuaire/COMPARATEUR.md) : ses liens séparent les fiches par des virgules,
@@ -135,6 +137,38 @@ def controler_comparateur(fiches: list[dict]) -> list[str]:
     return fautes
 
 
+def controler_adhesion(fiches: list[dict]) -> list[str]:
+    """Les renvois de _data/adhesion.yml désignent quelque chose qui existe.
+
+    Une solution hébergée dont la fiche a disparu de l'annuaire perd sa
+    mention sans bruit ; une session offerte sur un niveau inconnu disparaît de
+    la page ; un renvoi vers une mission absente du catalogue mène nulle part.
+    Lu au motif, sans PyYAML, comme `types_autorises()`.
+    """
+    if not ADHESION.exists():
+        return []
+    texte = ADHESION.read_text(encoding="utf-8")
+    bloc = re.search(r"^niveaux:\n((?:(?:\s+.*)?\n)+?)(?=^\S|\Z)", texte, re.M)
+    if not bloc:
+        return [f"clé « niveaux: » introuvable dans {ADHESION.name}"]
+    niveaux = re.findall(r"^  - id:\s*(\S+)", bloc.group(1), re.M)
+    fautes = [f"adhésion : identifiant de niveau « {n} » hors de [a-z0-9-]"
+              for n in niveaux if not FORME_ID.match(n)]
+    for n in re.findall(r"\bniveau:\s*([^\s,}]+)", texte):
+        if n not in niveaux:
+            fautes.append(f"adhésion : « inclus » cite le niveau « {n} », absent de « niveaux »")
+    publies = {f["id"] for f in fiches}
+    for ident in re.findall(r"^\s+fiche:\s*(\S+)", texte, re.M):
+        if ident not in publies:
+            fautes.append(f"adhésion : la solution hébergée renvoie à « {ident} », "
+                          "qui n'est pas une fiche publiée")
+    missions = set(re.findall(r"^  - ref:\s*(\S+)", CATALOGUE.read_text(encoding="utf-8"), re.M))
+    for ref in re.findall(r"^\s+voir_catalogue:\s*(\S+)", texte, re.M):
+        if ref not in missions:
+            fautes.append(f"adhésion : « voir_catalogue: {ref} » n'est pas une référence du catalogue")
+    return fautes
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--json", default=str(EXPORT),
@@ -149,7 +183,8 @@ def main() -> int:
 
     fiches = json.loads(export.read_text(encoding="utf-8"))
     autorises = types_autorises()
-    fautes = controler(fiches, autorises) + controler_besoins() + controler_comparateur(fiches)
+    fautes = controler(fiches, autorises) + controler_besoins() \
+        + controler_comparateur(fiches) + controler_adhesion(fiches)
 
     repartition = {}
     for f in fiches:

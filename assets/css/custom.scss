@@ -2516,6 +2516,243 @@ $osfarm-titres: "OSFarm Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif;
   .contact-legal { margin-top: 72px; }
 }
 
+// Page Adhésion (/fr/adherer/ et /join/, _includes/adhesion.html) : les deux
+// formules côte à côte, le Lexicon public et adhérent, puis l'échelle des
+// niveaux d'accompagnement, chacun avec ses prix. Le formulaire reprend les
+// champs de la page Contact.
+.adhesion {
+  color: $osfarm-encre;
+
+  a { color: $osfarm-green-dark; }
+
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
+    outline: 3px solid $osfarm-soleil;
+    outline-offset: 2px;
+  }
+}
+
+.adhesion-formules {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.adhesion-formule {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  background: #fff;
+  border: 1px solid $radar-bordure;
+  border-radius: 14px;
+
+  .bouton-osfarm {
+    align-self: flex-start;
+    margin-top: auto;
+  }
+}
+
+.adhesion-formule-titre {
+  margin: 0;
+  padding: 0;
+  font-family: $osfarm-titres;
+  font-size: 22px;
+  font-weight: 700;
+  color: $osfarm-encre;
+}
+
+.adhesion-formule-prix {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  margin: 8px 0 12px;
+
+  strong {
+    font-family: $osfarm-titres;
+    font-size: clamp(36px, 5vw, 48px);
+    line-height: 1.1;
+    color: $osfarm-green-dark;
+  }
+
+  span { color: $radar-attenue; }
+}
+
+.adhesion-formule-pour {
+  margin: 0 0 20px;
+  color: $radar-attenue;
+}
+
+.adhesion-avantages {
+  margin: 0 0 28px;
+  padding: 0;
+  list-style: none;
+
+  li {
+    padding: 12px 0;
+    font-size: 15px;
+    line-height: 1.5;
+    border-top: 1px solid $radar-bordure;
+  }
+
+  strong {
+    display: block;
+    font-size: 16px;
+  }
+}
+
+.adhesion-avantage-plus strong::before {
+  content: "+ ";
+  color: $osfarm-green;
+}
+
+.adhesion-note {
+  max-width: 46rem;
+  margin: 20px 0 0;
+  font-size: 15px;
+  color: $radar-attenue;
+}
+
+.adhesion-section { margin-top: 88px; }
+
+.adhesion-intro {
+  max-width: 46rem;
+  margin: 0 0 28px;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.adhesion-lexicon {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin: 0 0 20px;
+
+  div {
+    padding: 20px 24px;
+    border: 1px solid $radar-bordure;
+    border-radius: 12px;
+  }
+
+  dt {
+    margin-bottom: 4px;
+    font-weight: 700;
+  }
+
+  dd { margin: 0; }
+}
+
+.adhesion-lexicon-adherent {
+  background: #f3f8ef;
+  border-color: $osfarm-green !important;
+}
+
+.adhesion-niveaux {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: niveau;
+}
+
+.adhesion-niveau {
+  display: grid;
+  grid-template-columns: 56px minmax(0, 3fr) minmax(0, 2fr);
+  gap: 8px 24px;
+  padding: 28px 0;
+  border-top: 1px solid $radar-bordure;
+  counter-increment: niveau;
+
+  &::before {
+    content: counter(niveau);
+    font-family: $osfarm-titres;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1;
+    color: $osfarm-green;
+  }
+
+  h3 {
+    margin: 0;
+    font-family: $osfarm-titres;
+    font-size: 20px;
+    font-weight: 700;
+    color: $osfarm-encre;
+  }
+
+  p { margin: 0 0 8px; }
+
+  dl { margin: 0 0 12px; }
+
+  dl div {
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    padding: 6px 0;
+    font-size: 15px;
+    border-bottom: 1px dotted $radar-bordure;
+  }
+
+  dt {
+    font-weight: 400;
+    color: $radar-attenue;
+  }
+
+  dd {
+    margin: 0;
+    font-weight: 700;
+    text-align: right;
+  }
+}
+
+.adhesion-niveau-format {
+  font-size: 14px;
+  font-weight: 600;
+  color: $radar-attenue;
+}
+
+.adhesion-niveau-renvoi { font-size: 14px; }
+
+.adhesion-niveau-devis {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.adhesion-demander { font-weight: 600; }
+
+.adhesion-incitation {
+  margin: 8px 0 0;
+  padding: 20px 24px;
+  background: #fff8d6;
+  border-left: 4px solid $osfarm-soleil;
+  border-radius: 0 12px 12px 0;
+
+  strong { display: block; }
+}
+
+.adhesion-formulaire .contact-champs { margin-top: 0; }
+
+@media (max-width: 767px) {
+  .adhesion-formules,
+  .adhesion-lexicon { grid-template-columns: minmax(0, 1fr); }
+  .adhesion-formule { padding: 24px; }
+  .adhesion-section { margin-top: 64px; }
+  .adhesion-niveau { grid-template-columns: 40px minmax(0, 1fr); }
+  .adhesion-niveau::before { font-size: 30px; }
+  .adhesion-niveau-prix { grid-column: 2; }
+}
+
+// Carte de l'annuaire d'une solution hébergée par l'association pour ses
+// adhérents (_data/adhesion.yml, `hebergees`).
+.radar-hebergee {
+  font-size: 13px;
+  font-weight: 600;
+  color: $osfarm-green-dark;
+
+  a { color: $osfarm-green-dark; text-decoration: underline; }
+}
+
 // Page Le collectif (docs/fr/collectif.html) : la ferme de La Vauzelle en
 // grand, sa fiche, le projet REBUS, le bureau et les projets en cours. Même
 // vocabulaire que les pages Pourquoi, Accueil et Contact.

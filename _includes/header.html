@@ -41,7 +41,7 @@
           <p class="site-nav-lang" aria-label="Site language">
             <span aria-current="true">EN</span><a href="{% if jumelle and jumelle.redirect == nil %}{{ autre | relative_url }}{% else %}{{ "/fr/" | relative_url }}{% endif %}" lang="fr" hreflang="fr">FR</a>
           </p>
-          <a class="site-join" href="https://www.helloasso.com/associations/osfarm/adhesions/adhesion-osfarm-2024" target="_blank" rel="noopener">Join</a>
+          <a class="site-join" href="{{ "/join/" | relative_url }}"{% if page.url == "/join/" %} aria-current="page"{% endif %}>Join</a>
         </div>
       </div>
     </nav>

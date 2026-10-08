@@ -1,0 +1,262 @@
+{%- comment -%}
+  Adhésion et accompagnement : les deux formules, ce que le Lexicon ouvre aux
+  adhérents, les niveaux d'accompagnement et le formulaire de demande.
+
+  Usage   : {% include adhesion.html lang="fr" %}
+  Données : _data/adhesion.yml ; la remise du catalogue vient de
+            _data/catalogue.yml.
+
+  Le paiement se fait sur HelloAsso et les accès sont ouverts à la main : la
+  page annonce un délai, jamais un accès immédiat. Les niveaux sont vendus par
+  l'association elle-même, à l'inverse du catalogue — la page le dit.
+  Styles : section « Page Adhésion » de assets/css/custom.scss.
+{%- endcomment -%}
+{%- assign lang = include.lang | default: "fr" -%}
+{%- assign adh = site.data.adhesion -%}
+{%- assign cat = site.data.catalogue -%}
+{%- if lang == "fr" -%}
+  {%- assign url_catalogue = "/fr/catalogue/" | relative_url -%}
+  {%- assign url_donnees = "/fr/contact/#donnees-personnelles" | relative_url -%}
+{%- else -%}
+  {%- assign url_catalogue = "/catalogue/" | relative_url -%}
+  {%- assign url_donnees = "/contact/#personal-data" | relative_url -%}
+{%- endif -%}
+{%- capture liste_hebergees -%}
+  {%- for h in adh.hebergees -%}
+    <a href="{{ h.url }}" target="_blank" rel="noopener">{{ h.nom }}</a> ({{ h.resume[lang] }}){% unless forloop.last %}, {% endunless %}
+  {%- endfor -%}
+{%- endcapture -%}
+
+<div class="adhesion">
+
+  <section class="adhesion-formules" id="formules" aria-label="{% if lang == "fr" %}Les formules d'adhésion{% else %}Membership options{% endif %}">
+    {%- for f in adh.formules %}
+    <article class="adhesion-formule" id="formule-{{ f.id }}">
+      <h2 class="adhesion-formule-titre">{{ f.titre[lang] }}</h2>
+      <p class="adhesion-formule-prix">
+        <strong>{% include catalogue-tarif.html montant=f.prix lang=lang %}</strong>
+        <span>{% if lang == "fr" %}par an{% else %}per year{% endif %}</span>
+      </p>
+      <p class="adhesion-formule-pour">{{ f.pour[lang] }}</p>
+      <ul class="adhesion-avantages">
+        {%- for a in adh.avantages %}
+        <li>
+          <strong>{{ a.titre[lang] }}</strong>
+          {{ a.texte[lang] | replace: "%hebergees", liste_hebergees | replace: "%remise", cat.meta.remise_adherent_min }}
+        </li>
+        {%- endfor %}
+        {%- for i in f.inclus %}
+        {%- assign n = adh.niveaux | where: "id", i.niveau | first %}
+        <li class="adhesion-avantage-plus">
+          <strong>{% if lang == "fr" %}{{ i.par_an }} {{ n.titre.fr | downcase }} par an{% else %}{{ i.par_an }} {{ n.titre.en | downcase }} per year{% endif %}</strong>
+          {{ n.resume[lang] }}
+        </li>
+        {%- endfor %}
+      </ul>
+      <a class="bouton-osfarm bouton-osfarm--clair bouton-osfarm--plein" href="{{ f.helloasso | default: adh.meta.helloasso }}" target="_blank" rel="noopener">
+        {%- if lang == "fr" %}Adhérer sur HelloAsso{% else %}Join on HelloAsso{% endif -%}
+      </a>
+    </article>
+    {%- endfor %}
+  </section>
+
+  <p class="adhesion-note">
+    {%- if lang == "fr" %}
+    Le paiement se fait sur HelloAsso. Vos accès sont ouverts à la main, sous
+    {{ adh.meta.delai_acces_jours }} jours ouvrés, à l'adresse électronique donnée lors de l'adhésion.
+    Adhérer, c'est aussi voter en assemblée générale.
+    {%- else %}
+    Payment goes through HelloAsso, whose pages are in French. Your access is opened by hand, within
+    {{ adh.meta.delai_acces_jours }} working days, for the email address given when you joined.
+    Members also vote at the general assembly.
+    {%- endif %}
+  </p>
+
+  <section class="adhesion-section" id="lexicon" aria-labelledby="lexicon-titre">
+    <h2 id="lexicon-titre" class="contact-h2">{% if lang == "fr" %}Le Lexicon : ouvert à tous, complet pour les adhérents{% else %}The Lexicon: open to all, complete for members{% endif %}</h2>
+    <dl class="adhesion-lexicon">
+      <div>
+        <dt>{% if lang == "fr" %}Sans adhérer{% else %}Without joining{% endif %}</dt>
+        <dd>{{ adh.lexicon.public[lang] }}</dd>
+      </div>
+      <div class="adhesion-lexicon-adherent">
+        <dt>{% if lang == "fr" %}En adhérant{% else %}As a member{% endif %}</dt>
+        <dd>{{ adh.lexicon.adherent[lang] }}</dd>
+      </div>
+    </dl>
+    <p>
+      {%- if lang == "fr" %}
+      Le <a href="{{ adh.meta.lexicon_catalogue }}" target="_blank" rel="noopener">catalogue du Lexicon</a>
+      indique, jeu par jeu, ce qui est ouvert et ce qui est réservé aux adhérents.
+      {%- else %}
+      The <a href="{{ adh.meta.lexicon_catalogue }}" target="_blank" rel="noopener" hreflang="fr">Lexicon catalogue</a>
+      (in French) shows, dataset by dataset, what is open and what is for members.
+      {%- endif %}
+    </p>
+  </section>
+
+  <section class="adhesion-section" id="accompagnement" aria-labelledby="accompagnement-titre">
+    <h2 id="accompagnement-titre" class="contact-h2">
+      {%- if lang == "fr" %}{{ adh.niveaux.size }} niveaux de découverte et d'accompagnement autour de vos besoins{% else %}{{ adh.niveaux.size }} levels of discovery and support around your needs{% endif -%}
+    </h2>
+    <p class="adhesion-intro">
+      {%- if lang == "fr" %}
+      Ces sessions sont organisées, vendues et facturées par l'association OSFarm. Pour une formation ou
+      une mission de conseil assurée par l'un de ses adhérents, voyez le
+      <a href="{{ url_catalogue }}">catalogue</a>.
+      {%- else %}
+      These sessions are organised, sold and invoiced by the OSFarm association. For a training course or
+      a consulting assignment delivered by one of its members, see the
+      <a href="{{ url_catalogue }}">catalogue</a>.
+      {%- endif %}
+    </p>
+
+    <ol class="adhesion-niveaux">
+      {%- for n in adh.niveaux %}
+      <li class="adhesion-niveau" id="niveau-{{ n.id }}">
+        <div class="adhesion-niveau-texte">
+          <h3>{{ n.titre[lang] }}</h3>
+          <p class="adhesion-niveau-format">{{ n.format[lang] }}</p>
+          <p>{{ n.resume[lang] }}</p>
+          {%- if n.voir_catalogue %}
+          {%- assign mission = cat.missions | where: "ref", n.voir_catalogue | first %}
+          <p class="adhesion-niveau-renvoi">
+            {%- if lang == "fr" %}
+            Pour un hackathon interne animé par un adhérent, voyez la mission
+            <a href="{{ url_catalogue }}#mission-{{ mission.ref | downcase }}">{{ mission.ref }} du catalogue</a>.
+            {%- else %}
+            For an in-house hackathon run by a member, see assignment
+            <a href="{{ url_catalogue }}#mission-{{ mission.ref | downcase }}">{{ mission.ref }} in the catalogue</a>.
+            {%- endif %}
+          </p>
+          {%- endif %}
+        </div>
+        <div class="adhesion-niveau-prix">
+          {%- if n.prix == nil %}
+          <p class="adhesion-niveau-devis">{% include adhesion-prix.html niveau=n public="public" lang=lang %}</p>
+          {%- else %}
+          <dl>
+            <div>
+              <dt>{% if lang == "fr" %}Sans adhérer{% else %}Without joining{% endif %}</dt>
+              <dd>{% include adhesion-prix.html niveau=n public="public" lang=lang %}</dd>
+            </div>
+            {%- for f in adh.formules %}
+            <div>
+              <dt>{% if lang == "fr" %}Adhérent {{ f.titre.fr | downcase }}{% else %}{{ f.titre.en }} member{% endif %}</dt>
+              <dd>{% include adhesion-prix.html niveau=n public=f.id lang=lang %}</dd>
+            </div>
+            {%- endfor %}
+          </dl>
+          {%- endif %}
+          {%- if n.demande %}
+          <a class="adhesion-demander" href="#demande" data-niveau="{{ n.id }}">{% if lang == "fr" %}Demander{% else %}Ask for it{% endif %}</a>
+          {%- else %}
+          <a class="adhesion-demander" href="#formules">{% if lang == "fr" %}Adhérer pour y participer{% else %}Join to take part{% endif %}</a>
+          {%- endif %}
+        </div>
+      </li>
+      {%- endfor %}
+    </ol>
+
+    {%- assign n_impromptu = adh.niveaux | where: "id", "impromptu" | first -%}
+    {%- assign n_codesign = adh.niveaux | where: "id", "codesign" | first -%}
+    {%- assign f_app = adh.formules | where: "id", "app" | first -%}
+    {%- assign f_apm = adh.formules | where: "id", "apm" | first -%}
+    {%- if n_impromptu and n_codesign and f_app and f_apm %}
+    <p class="adhesion-incitation">
+      {%- if lang == "fr" %}
+      <strong>À ce prix, autant adhérer, et c'est voulu.</strong>
+      Une session impromptue coûte {% include catalogue-tarif.html montant=n_impromptu.prix.public lang="fr" %} sans adhérer,
+      l'adhésion d'une personne physique {% include catalogue-tarif.html montant=f_app.prix lang="fr" %} par an.
+      Une session de codesign coûte {% include catalogue-tarif.html montant=n_codesign.prix.public lang="fr" %},
+      l'adhésion d'une personne morale {% include catalogue-tarif.html montant=f_apm.prix lang="fr" %} par an, session comprise.
+      {%- else %}
+      <strong>At these prices you may as well join, and that is the point.</strong>
+      An impromptu session costs {% include catalogue-tarif.html montant=n_impromptu.prix.public lang="en" %} without joining,
+      an individual membership {% include catalogue-tarif.html montant=f_app.prix lang="en" %} a year.
+      A co-design session costs {% include catalogue-tarif.html montant=n_codesign.prix.public lang="en" %},
+      an organisation membership {% include catalogue-tarif.html montant=f_apm.prix lang="en" %} a year, session included.
+      {%- endif %}
+    </p>
+    {%- endif %}
+  </section>
+
+  <section class="adhesion-section" id="demande" aria-labelledby="demande-titre">
+    <h2 id="demande-titre" class="contact-h2">{% if lang == "fr" %}Demander une session, un bootcamp ou un hackathon{% else %}Ask for a session, a bootcamp or a hackathon{% endif %}</h2>
+    <p class="adhesion-intro">
+      {%- if lang == "fr" %}
+      Dites-nous votre sujet : l'équipe vous répond à l'adresse indiquée et établit le devis.
+      {%- else %}
+      Tell us your topic: the team replies to the address you give and draws up the quote.
+      {%- endif %}
+    </p>
+    <form class="adhesion-formulaire" id="adhesion-formulaire" data-lang="{{ lang }}"
+          data-webhook="{{ adh.meta.webhook }}" data-repli="{{ adh.meta.courriel }}">
+      <div class="contact-champs">
+        <label class="contact-champ">
+          <span>{% if lang == "fr" %}Niveau souhaité{% else %}Level you are after{% endif %}</span>
+          <select name="niveau" required>
+            <option value="">{% if lang == "fr" %}Choisissez un niveau{% else %}Choose a level{% endif %}</option>
+            {%- for n in adh.niveaux %}{% if n.demande %}
+            <option value="{{ n.id }}">{{ n.titre[lang] }}</option>
+            {%- endif %}{% endfor %}
+          </select>
+        </label>
+        <label class="contact-champ">
+          <span>{% if lang == "fr" %}Êtes-vous adhérent ?{% else %}Are you a member?{% endif %}</span>
+          <select name="adherent" required>
+            <option value="{% if lang == "fr" %}non{% else %}no{% endif %}">{% if lang == "fr" %}Pas encore{% else %}Not yet{% endif %}</option>
+            {%- for f in adh.formules %}
+            <option value="{{ f.titre[lang] | downcase }}">{% if lang == "fr" %}Oui, {{ f.titre.fr | downcase }}{% else %}Yes, {{ f.titre.en | downcase }}{% endif %}</option>
+            {%- endfor %}
+          </select>
+        </label>
+        <label class="contact-champ">
+          <span>{% if lang == "fr" %}Nom et prénom{% else %}Full name{% endif %}</span>
+          <input type="text" name="nom" required autocomplete="name" maxlength="120">
+        </label>
+        <label class="contact-champ">
+          <span>{% if lang == "fr" %}Courriel{% else %}Email{% endif %}</span>
+          <input type="email" name="email" required autocomplete="email" maxlength="200">
+        </label>
+        <label class="contact-champ contact-champ--large">
+          <span>{% if lang == "fr" %}Structure <small>(facultatif)</small>{% else %}Organisation <small>(optional)</small>{% endif %}</span>
+          <input type="text" name="organisation" autocomplete="organization" maxlength="200">
+        </label>
+        <label class="contact-champ contact-champ--large">
+          <span>{% if lang == "fr" %}Votre sujet, et la période envisagée{% else %}Your topic, and when you have in mind{% endif %}</span>
+          <textarea name="message" rows="6" required minlength="10" maxlength="6000"></textarea>
+        </label>
+        <input type="text" name="site_web" class="catalogue-leurre" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <label class="contact-accord contact-champ--large">
+          <input type="checkbox" name="rgpd" value="oui" required>
+          <span>
+            {%- if lang == "fr" %}
+            J'accepte qu'OSFarm utilise ces informations pour répondre à ma demande.
+            <a href="{{ url_donnees }}">Ce que nous faisons de vos données</a>
+            {%- else %}
+            I agree that OSFarm may use this information to answer my request.
+            <a href="{{ url_donnees }}">What we do with your data</a>
+            {%- endif %}
+          </span>
+        </label>
+        <div class="contact-envoi contact-champ--large">
+          <button type="submit" class="contact-envoyer">{% if lang == "fr" %}Envoyer la demande{% else %}Send the request{% endif %}</button>
+          <p class="contact-etat" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </form>
+    <noscript>
+      <p class="adhesion-intro">
+        {%- if lang == "fr" %}
+        Le formulaire a besoin de JavaScript. Écrivez-nous directement à
+        <a href="mailto:{{ adh.meta.courriel }}">{{ adh.meta.courriel }}</a>, en précisant le niveau souhaité.
+        {%- else %}
+        The form needs JavaScript. Email us directly at
+        <a href="mailto:{{ adh.meta.courriel }}">{{ adh.meta.courriel }}</a>, saying which level you are after.
+        {%- endif %}
+      </p>
+    </noscript>
+  </section>
+
+</div>

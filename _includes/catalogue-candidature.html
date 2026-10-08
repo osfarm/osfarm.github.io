@@ -136,14 +136,14 @@
     {%- if lang == "fr" %}
     <h2 class="radar-encart-titre">Pas encore adhérent ?</h2>
     <p class="mb-0">
-      <a href="{{ cat.meta.adhesion_url }}" target="_blank" rel="noopener">L'adhésion se fait ici</a>.
+      <a href="{{ "/fr/adherer/" | relative_url }}">L'adhésion se fait ici</a>.
       Votre candidature est conservée et instruite dès qu'elle est enregistrée : une adhésion
       manquante met la candidature en attente, elle ne la rejette pas.
     </p>
     {%- else %}
     <h2 class="radar-encart-titre">Not a member yet?</h2>
     <p class="mb-0">
-      <a href="{{ cat.meta.adhesion_url }}" target="_blank" rel="noopener">Join here</a>.
+      <a href="{{ "/join/" | relative_url }}">Join here</a>.
       Your application is kept and assessed as soon as the membership is recorded: a missing
       membership puts the application on hold, it does not reject it.
     </p>

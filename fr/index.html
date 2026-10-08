@@ -38,7 +38,7 @@ permalink: /fr/
   {%- assign n_debut = exemple_noms.size | minus: 1 -%}
   {%- assign exemple_debut = exemple_noms | slice: 0, n_debut -%}
 {%- endif -%}
-{%- assign adhesion = "https://www.helloasso.com/associations/osfarm/adhesions/adhesion-osfarm-2024" -%}
+{%- assign adhesion = "/fr/adherer/" | relative_url -%}
 </div><!-- ends .full-width that started in fr-header.html -->
 
 <div class="accueil">
@@ -177,7 +177,7 @@ permalink: /fr/
         <li><strong>Vous voulez soutenir</strong> le développement des communs agricoles, par du mécénat financier ou de compétences.</li>
       </ul>
       <div class="accueil-liens">
-        <a class="bouton-osfarm bouton-osfarm--plein" href="{{ adhesion }}" target="_blank" rel="noopener">Adhérer</a>
+        <a class="bouton-osfarm bouton-osfarm--plein" href="{{ adhesion }}">Adhérer</a>
         <a class="bouton-osfarm" href="https://discord.gg/AtY5ZxCsWM" target="_blank" rel="noopener">Discuter sur Discord</a>
         <a class="bouton-osfarm" href="{{ "/fr/contact/" | relative_url }}">Nous écrire</a>
       </div>

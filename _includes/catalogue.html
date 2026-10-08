@@ -16,8 +16,10 @@
 {%- assign coef = 100 | minus: cat.meta.remise_adherent_min -%}
 {%- if lang == "fr" -%}
   {%- assign url_proposer = "/fr/proposer-un-module/" | relative_url -%}
+  {%- assign url_adherer = "/fr/adherer/" | relative_url -%}
 {%- else -%}
   {%- assign url_proposer = "/propose-a-module/" | relative_url -%}
+  {%- assign url_adherer = "/join/" | relative_url -%}
 {%- endif -%}
 
 <section class="catalogue" id="catalogue"
@@ -30,23 +32,27 @@
     {%- if lang == "fr" %}
     <p class="catalogue-claim">L'association référence, les adhérents opèrent.</p>
     <p>
-      OSFarm ne vend ni formation ni prestation et ne prend aucune commission. Le catalogue
+      Sur ce catalogue, OSFarm ne vend rien et ne prend aucune commission : il
       rassemble ce que ses adhérents savent faire autour des outils communs de l'annuaire.
       Vous choisissez un module, la demande part directement à l'opérateur, qui vous répond
       sous {{ cat.meta.delai_reponse_jours }} jours ouvrés et contractualise avec vous.
       Les adhérents bénéficient d'au moins {{ cat.meta.remise_adherent_min }} % de remise.
       Le catalogue est lui-même un commun : il se télécharge en
       <a href="{{ "/catalogue.json" | relative_url }}">JSON</a>.
+      Les sessions de codesign, bootcamps et hackathons que l'association organise elle-même
+      sont sur la page <a href="{{ url_adherer }}#accompagnement">Adhérer</a>.
     </p>
     {%- else %}
     <p class="catalogue-claim">The association lists, its members deliver.</p>
     <p>
-      OSFarm sells no training and no consulting, and takes no commission. The catalogue
+      In this catalogue OSFarm sells nothing and takes no commission: it
       gathers what its members can do around the shared tools of the directory. Pick a module
       and your request goes straight to the operator, who answers within
       {{ cat.meta.delai_reponse_jours }} working days and contracts directly with you.
       Members get at least {{ cat.meta.remise_adherent_min }}% off. The catalogue is itself a
       common good: download it as <a href="{{ "/catalogue.json" | relative_url }}">JSON</a>.
+      The co-design sessions, bootcamps and hackathons the association runs itself are on the
+      <a href="{{ url_adherer }}#accompagnement">Join</a> page.
     </p>
     {%- endif %}
   </div>
@@ -249,7 +255,7 @@
     <a class="radar-bouton catalogue-bouton" href="{{ url_proposer }}">
       {% if lang == "fr" %}Proposer un module ou une mission{% else %}Propose a module or an assignment{% endif %}
     </a>
-    <a class="radar-bouton catalogue-bouton" href="{{ cat.meta.adhesion_url }}" target="_blank" rel="noopener">
+    <a class="radar-bouton catalogue-bouton" href="{{ url_adherer }}">
       {% if lang == "fr" %}Adhérer d'abord{% else %}Become a member first{% endif %}
     </a>
   </div>

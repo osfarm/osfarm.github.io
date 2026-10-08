@@ -42,6 +42,7 @@ All structured content lives in `_data/` as YAML files — this is the primary s
 Key data files:
 - `_data/osfarm_projects.yml` — open source farming projects featured on the site
 - `_data/radar/communaute.yml` — hand-maintained community projects, in the radar entry format plus `img`, `demo`, `github_org`, `categorie` (FR) and `category` (EN); shown in `/fr/communs/` with the radar lots, on `/community/` grouped by `category`, and as avatars on the home pages. Its `meta`, `familles` and `categories` keys feed the "propose a project" form, not the directory itself
+- `_data/adhesion.yml` — membership fees, member benefits, OSFarm-hosted solutions and the support levels sold by the association (`/fr/adherer/`, `/join/`)
 - `_data/catalogue.yml` — training modules, consulting assignments, rates and the endpoints/addresses the catalogue forms post to (`meta`)
 - `_data/operateurs.yml` — the member organisations that deliver catalogue modules, plus the partners cited on module cards (`role: partenaire`)
 - `_data/teams.yml` — team member information
@@ -86,6 +87,10 @@ A bubble on every page answers visitors from the site's own published content. `
 ### Catalogue formation & conseil
 
 `/fr/catalogue/` and `/catalogue/` list the training modules and consulting assignments OSFarm members deliver around the tools of the directory. The association lists, members operate: it takes no commission and is not a party to the contract, so a module offers a quote only when `statut: ouvert` **and** `operateur` are both set in `_data/catalogue.yml` — otherwise the card calls for an operator and points at `/fr/proposer-un-module/` (`/propose-a-module/` in English), which carries the operator charter and the application form. `_includes/catalogue.html` and `_includes/catalogue-candidature.html` render everything from `_data/catalogue.yml` + `_data/operateurs.yml`; `assets/js/catalogue.js` handles the family filters, the `#module-a1` deep links and posting both forms to the n8n webhooks declared in `meta` (nothing is hard-coded in the JS). `/catalogue.json` is the same data as a feed, which n8n reads to route a request to its operator. Editing `_data/` is the only gesture needed; the workflow specs and the pre-launch checklist are in `_catalogue/README.md`.
+
+### Adhésion & accompagnement
+
+`/fr/adherer/` and `/join/` present the two membership fees (individual, organisation), what members get (members' channel, OSFarm-hosted solutions, full Lexicon access, catalogue discount) and the support levels — co-design sessions, bootcamp, hackathon, research project. Unlike the catalogue, **the association itself sells and invoices these levels**; the page and the socle say so. Everything comes from `_data/adhesion.yml` through `_includes/adhesion.html` (with `lang=`) and `adhesion-prix.html`; every "Adhérer"/"Join" link on the site points to these pages, and only they link to HelloAsso (`meta.helloasso`). A session a fee includes is written once, in `formules[].inclus`. An entry of `hebergees` with a `fiche` adds a "hébergé par OSFarm" line to that directory card. `assets/js/adhesion.js` posts the request form to the contact workflow (`meta.webhook`). Access is opened by hand after payment — nothing is automated. Details and open points: `_adhesion/README.md`.
 
 ### Documentation
 

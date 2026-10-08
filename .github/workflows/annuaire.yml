@@ -17,6 +17,7 @@ on:
       - '_data/radar/**'
       - '_data/besoins.yml'
       - '_data/comparateur.yml'
+      - '_data/adhesion.yml'
       - 'data/communs.json'
       - 'data/communs.csv'
       - '_includes/radar-fiches.html'
