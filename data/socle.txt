@@ -122,15 +122,19 @@ Formules, par an :
 {%- endfor %}
 
 Avantages communs aux formules :
-- Un canal réservé aux adhérents, distinct du Discord public ; l'invitation
-  est envoyée après l'adhésion.
+- Un canal de discussion réservé aux adhérents ; l'invitation est envoyée
+  après l'adhésion. Son outil et son adresse ne sont pas publiés : ne les
+  nomme pas.
 - Solutions ouvertes hébergées par OSFarm :{% for h in adh.hebergees %} {{ h.nom }} ({{ h.resume.fr }}) {{ h.url }}{% unless forloop.last %} ;{% endunless %}{% endfor %}
-- Lexicon ({{ adh.meta.lexicon_catalogue }}). Sans adhérer : {{ adh.lexicon.public.fr }} En adhérant : {{ adh.lexicon.adherent.fr }}
+- Lexicon ({{ adh.meta.lexicon_catalogue }}), service de données distinct des
+  solutions hébergées. Sans adhérer : {{ adh.lexicon.public.fr }} En adhérant : {{ adh.lexicon.adherent.fr }}
 - Au moins {{ cat.meta.remise_adherent_min }} % de remise sur les tarifs publics des formations du catalogue.
 
 Niveaux d'accompagnement ({{ adh.niveaux | size }}). Ils sont organisés, vendus et facturés par
-l'association elle-même, à la différence du catalogue. Prix sans adhérer, puis
-par formule :
+l'association elle-même, à la différence du catalogue. Deux niveaux portent
+le mot « codesign » et n'ont pas le même prix : ne les confonds pas, et ne dis
+« gratuit » ou « incluse » que là où la ligne du niveau l'écrit pour cette
+formule. Prix sans adhérer, puis par formule :
 {%- for n in adh.niveaux %}
 - {{ n.titre.fr }} ({{ n.format.fr | downcase }}) : {{ n.resume.fr }}
   {% capture prix_socle %}{% if n.prix == nil %}Sur devis.{% else %}Sans adhérer : {% include adhesion-prix.html niveau=n public="public" lang="fr" %}{% for f in adh.formules %} ; adhérent {{ f.titre.fr | downcase }} : {% include adhesion-prix.html niveau=n public=f.id lang="fr" %}{% endfor %}.{% endif %}{% endcapture %}{{ prix_socle | replace: "&nbsp;", " " }}

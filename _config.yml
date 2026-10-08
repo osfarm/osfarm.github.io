@@ -20,8 +20,13 @@ twitter:
 # Google Analytics 4 measurement ID (G-XXXXXXXXXX). Loaded only in production
 # builds, and only once set.
 google_analytics: G-832L2YLP8Z
-# Google Search Console: prefer a "Domain" property verified by a DNS TXT record
-# on osfarm.org. If an HTML tag is used instead, set its content here:
+# Google Search Console: a "Domain" property (DNS TXT record on osfarm.org)
+# reports on every subdomain — traccar, lexicon, automation… To follow this
+# site alone, use the URL-prefix property https://www.osfarm.org/. Neither
+# decides what gets indexed: each subdomain answers for itself. Decision of
+# October 2026: www and lexicon are indexed; traccar and automation are kept
+# out with an "X-Robots-Tag: noindex" header set on their reverse proxy.
+# If an HTML tag is used to verify, set its content here:
 # webmaster_verifications:
 #  google: ""
 
