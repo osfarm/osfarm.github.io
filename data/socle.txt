@@ -140,6 +140,15 @@ formule. Prix sans adhérer, puis par formule :
   {% capture prix_socle %}{% if n.prix == nil %}Sur devis.{% else %}Sans adhérer : {% include adhesion-prix.html niveau=n public="public" lang="fr" %}{% for f in adh.formules %} ; adhérent {{ f.titre.fr | downcase }} : {% include adhesion-prix.html niveau=n public=f.id lang="fr" %}{% endfor %}.{% endif %}{% endcapture %}{{ prix_socle | replace: "&nbsp;", " " }}
 {%- endfor %}
 
+Le même barème, lu par public. Pour répondre à « combien paie tel adhérent »,
+lis la ligne de son public et rien d'autre :
+{% capture bareme_socle -%}
+- Sans adhérer :{% for n in adh.niveaux %} {{ n.titre.fr }} ({{ n.format.fr | downcase }}) : {% include adhesion-prix.html niveau=n public="public" lang="fr" %}{% unless forloop.last %} ;{% endunless %}{% endfor %}.
+{%- for f in adh.formules %}
+- Adhérent {{ f.titre.fr | downcase }} ({{ f.prix }} € par an) :{% for n in adh.niveaux %} {{ n.titre.fr }} ({{ n.format.fr | downcase }}) : {% include adhesion-prix.html niveau=n public=f.id lang="fr" %}{% unless forloop.last %} ;{% endunless %}{% endfor %}.{% if f.inclus.size == 0 %} Aucune session n'est incluse dans cette formule : ce qui n'est pas marqué « gratuit » sur cette ligne est payant, au prix indiqué.{% endif %}
+{%- endfor %}
+{%- endcapture %}{{ bareme_socle | replace: "&nbsp;", " " }}
+
 ## CATALOGUE FORMATION ET CONSEIL
 
 Modèle : l'association référence, les adhérents opèrent. Service gratuit,
