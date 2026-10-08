@@ -1,0 +1,946 @@
+# Lot du radar OSFarm. Passer « publier » à false pour écarter une fiche,
+# corriger « resume » au besoin. La fusion de la pull request publie le reste.
+date: '2026-10-05'
+examines: 343
+retenus: 25
+rejets:
+  deja_vu: 154
+  deja_sur_le_site: 7
+  licence: 30
+  score: 2
+pannes: []
+candidats:
+- id: 27bb878c81e8
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: WilliamMajanja/AgriPulse-EdgeCluster
+  url: https://github.com/WilliamMajanja/AgriPulse-EdgeCluster
+  description: Edge-native Farm Management Information System on a 3-node Raspberry Pi 5 cluster with
+    Hailo-10H AI acceleration, real-time sensor telemetry, and on-device LLM agronomy (FastAPI + Ollama).
+  licence: mit
+  date_maj: '2026-07-24'
+  techno: HTML
+  popularite: 3
+  mots_cles:
+  - agriculture
+  - edge-computing
+  - farm-management
+  - fastapi
+  - fmis
+  - hailo
+  - iot
+  - kubernetes
+  score: 92
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, agronomy, farm'
+  propose_le: '2026-10-05'
+  publier: true
+  resume: Système d'information de gestion de ferme exécuté en périphérie sur un cluster de trois Raspberry
+    Pi 5 avec accélération IA Hailo-10H, traitant des données de capteurs en temps réel et intégrant un
+    modèle de langage dédié à l'agronomie. Il fournit une interface FastAPI pour interagir avec les fonctionnalités
+    locales.
+  interet: Permet d'analyser et d'agir sur des données agricoles collectées directement à la ferme.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - gestion de ferme
+  - edge computing
+  - télémétrie
+  - modèle de langage
+  - raspberry pi
+- id: a9a0fd80b4f6
+  famille: modele
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: open-turba/turba-models
+  url: https://github.com/open-turba/turba-models
+  description: Model package for loading pretrained soil fertility and fertilizer recommendation models
+    for Morocco.
+  licence: mit
+  date_maj: '2026-10-03'
+  techno: Jupyter Notebook
+  popularite: 5
+  mots_cles:
+  - agriculture
+  - fertilizer
+  - machine-learning
+  - morocco
+  score: 91
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, fertilizer, soil'
+  propose_le: '2026-10-05'
+  publier: true
+  resume: Package de modèles pré-entraînés pour estimer la fertilité des sols et recommander des engrais
+    au Maroc. Il charge ces modèles via une interface dédiée.
+  interet: Aide à la prise de décision pour l'apport d'engrais en fonction des caractéristiques du sol.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  famille_initiale: logiciel
+  mots_cles_fr:
+  - fertilité des sols
+  - recommandation d'engrais
+  - maroc
+  - machine learning
+  - modèle pré-entraîné
+- id: 87e3315c823f
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: montimaj/agribound
+  url: https://github.com/montimaj/agribound
+  description: An AI-powered field boundary delineation toolkit combining satellite foundation models,
+    embeddings, and global training data for accurate agricultural parcel/field boundary mapping.
+  licence: apache-2.0
+  date_maj: '2026-09-30'
+  techno: Python
+  popularite: 89
+  mots_cles:
+  - agriculture
+  - computer-vision
+  - field-boundary
+  - geoai
+  - geospatial
+  - geospatial-foundation-model
+  - pre-trained-model
+  - satellite-embeddings
+  score: 91
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, field-boundary, geospatial'
+  propose_le: '2026-10-05'
+  publier: true
+  resume: Outil d'IA pour délimiter les parcelles agricoles en combinant des modèles de fondation géospatiaux,
+    des embeddings et des données d'entraînement mondiales. Il produit des cartes précises des limites
+    de champs.
+  interet: Facilite la cartographie et la gestion des parcelles agricoles.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - délimitation de parcelles
+  - vision par ordinateur
+  - modèle de fondation géospatial
+  - cartographie
+  - agriculture de précision
+- id: c7ae8e5bb16a
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: mforce/cluckwork
+  url: https://github.com/mforce/cluckwork
+  description: 'Self-hosted egg farm management: daily production by grade, FIFO egg-lot traceability,
+    sales and stock.'
+  licence: mit
+  date_maj: '2026-10-05'
+  techno: C#
+  popularite: 8
+  mots_cles:
+  - agritech
+  - aspnetcore
+  - docker
+  - dotnet
+  - efcore
+  - egg-production
+  - farm-management
+  - multi-tenant
+  score: 91
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agritech, farm, traceability'
+  propose_le: '2026-10-05'
+  publier: true
+  resume: Logiciel de gestion pour élevage de poules pondeuses en auto-hébergement, traçant la production
+    quotidienne par catégorie, la traçabilité des lots d'œufs et les stocks.
+  interet: Organise la production et la traçabilité des œufs dans un élevage.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - élevage de poules
+  - traçabilité
+  - gestion de production
+  - stock
+  - auto-hébergement
+- id: 3e41adf70aca
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: open-turba/turba-client
+  url: https://github.com/open-turba/turba-client
+  description: Python client for querying publicly accessible soil profile and fertilizer recommendation
+    workflows across Morocco.
+  licence: mit
+  date_maj: '2026-10-03'
+  techno: Python
+  popularite: 3
+  mots_cles:
+  - agriculture
+  - fertilizer
+  - morocco
+  - npk-recommendation
+  - site-specific
+  score: 88
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, fertilizer, soil'
+  propose_le: '2026-10-05'
+  publier: true
+  resume: Client Python pour interroger des flux de travail publics de profils de sols et de recommandations
+    d'engrais au Maroc. Il permet d'accéder à ces données via une interface programmatique.
+  interet: Permet d'obtenir des recommandations d'engrais spécifiques au sol.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - profil de sol
+  - recommandation d'engrais
+  - maroc
+  - client python
+  - site spécifique
+- id: 8c2bda86e9e7
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: nmi-agro/fdm
+  url: https://github.com/nmi-agro/fdm
+  description: Transforming Farm Data into Actionable Insights
+  licence: mit
+  date_maj: '2026-10-05'
+  techno: TypeScript
+  popularite: 12
+  mots_cles:
+  - agriculture
+  - data-model
+  - farm
+  - postgresql
+  - typescript
+  score: 86
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farm'
+  propose_le: '2026-10-05'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: inconnu
+  redige_par: mistral-small-latest
+- id: c1922bb1a7eb
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: SvenVw/rvo-connector
+  url: https://github.com/SvenVw/rvo-connector
+  description: A client to connect to RVO webservices for agricultural information
+  licence: mit
+  date_maj: '2026-10-05'
+  techno: TypeScript
+  popularite: 6
+  mots_cles:
+  - agriculture
+  - edi-crop
+  - eherkenning
+  - geojson
+  - gis
+  - gml
+  - jwks
+  - netherlands
+  score: 86
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, crop, gis'
+  propose_le: '2026-10-05'
+  publier: true
+  resume: Client logiciel pour se connecter aux services web de l'agence néerlandaise RVO afin d'accéder
+    à des informations agricoles. Il permet de récupérer des données structurées sur les cultures et les
+    exploitations.
+  interet: Faciliter l'accès à des données administratives et techniques pour la gestion des exploitations
+    agricoles.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - agriculture
+  - edi-crop
+  - eherkenning
+  - geojson
+  - gis
+- id: b2b1f2edac6a
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: PrinceDale99/TyFi
+  url: https://github.com/PrinceDale99/TyFi
+  description: An autonomous parametric insurance protocol protecting farmers against climate disasters
+  licence: mit
+  date_maj: '2026-10-03'
+  techno: HTML
+  popularite: 3
+  mots_cles:
+  - agriculture
+  - agriculture-technology
+  - blockchain
+  - insurance
+  - insuretech
+  - stellar
+  - web3
+  score: 85
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farmer'
+  propose_le: '2026-10-05'
+  publier: true
+  resume: Protocole d'assurance paramétrique autonome utilisant la blockchain pour protéger les agriculteurs
+    contre les catastrophes climatiques. Il repose sur des données environnementales pour déclencher des
+    indemnisations.
+  interet: Permettre une couverture financière automatisée en cas d'événements climatiques défavorables
+    pour les agriculteurs.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - agriculture
+  - blockchain
+  - insurance
+  - insuretech
+  - stellar
+- id: 73e56b38d803
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-elevage
+  titre: epicpast/nsip
+  url: https://github.com/epicpast/nsip
+  description: Sheep genetic evaluation CLI & MCP server -- search animals, compare EBVs, plan matings,
+    rank flocks via the NSIP database
+  licence: mit
+  date_maj: '2026-09-28'
+  techno: Rust
+  popularite: 3
+  mots_cles:
+  - agriculture
+  - animal-science
+  - api-client
+  - breeding
+  - cli
+  - ebv
+  - genetics
+  - livestock
+  score: 85
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, livestock'
+  propose_le: '2026-10-05'
+  publier: true
+  resume: Outil en ligne de commande et serveur MCP pour évaluer génétiquement les ovins via la base de
+    données NSIP. Il permet de rechercher des animaux, comparer leurs valeurs d'élevage et planifier des
+    accouplements.
+  interet: Optimiser la sélection génétique et la gestion des troupeaux ovins grâce à des données d'évaluation.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - agriculture
+  - animal-science
+  - breeding
+  - cli
+  - ebv
+- id: 7e87ade2ab96
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-viti
+  titre: mathworks-robotics/Tractor-Sprayer-Navigation-in-Vineyard
+  url: https://github.com/mathworks-robotics/Tractor-Sprayer-Navigation-in-Vineyard
+  description: Getting started with driving a tractor-sprayer in a vineyard using Unreal Engine® and MATLAB®.
+  licence: bsd-3-clause
+  date_maj: '2026-09-30'
+  techno: MATLAB
+  popularite: 4
+  mots_cles:
+  - agricultural-tractor
+  - matlab
+  - path-planning
+  - robotics
+  - robotics-simulation
+  - unreal-engine
+  - vineyard
+  score: 82
+  raisons:
+  - licence bsd-3-clause
+  - actif (moins de 3 mois)
+  - 'vocabulaire : vineyard, tractor'
+  propose_le: '2026-10-05'
+  publier: true
+  resume: Démonstration de navigation automatisée d'un tracteur-pulvérisateur dans un vignoble à l'aide
+    d'Unreal Engine et MATLAB. Il illustre la planification de trajectoires pour des opérations culturales.
+  interet: Automatiser des tâches de pulvérisation dans les vignobles pour améliorer la précision et réduire
+    les intrants.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - agricultural-tractor
+  - matlab
+  - path-planning
+  - robotics
+  - unreal-engine
+- id: ab99c8950105
+  famille: materiel
+  relecteur: jancelin
+  source: github-materiel-agri
+  titre: storedesign/Duo-Bot
+  url: https://github.com/storedesign/Duo-Bot
+  description: Duolingo Farm XP and Streak bot
+  licence: mit
+  date_maj: '2025-10-04'
+  techno: HTML
+  popularite: 3
+  mots_cles:
+  - autolingo
+  - automation
+  - bot
+  - duo
+  - duo-bot
+  - duolingo
+  - farmbot
+  - farming
+  score: 66
+  raisons:
+  - licence mit
+  - activité ancienne
+  - 'vocabulaire : farm, farming'
+  propose_le: '2026-10-05'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - automation
+  - bot
+  - duo
+  - duolingo
+- id: 5f1b0297bf45
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: Données descriptives des activités de cultures marines à l'échelle métropolitaine - projet Carpediem
+    2018
+  url: https://www.data.gouv.fr/datasets/donnees-descriptives-des-activites-de-cultures-marines-a-lechelle-metropolitaine-projet-carpediem-2018-1
+  description: 'Données produites dans le cadre du projet Carpediem piloté par l''Agence Française pour
+    la Biodiversité avec l''appui scientifique et technique de l''UMR Amure (convention AFB-UBO réference
+    AAMP/16 007). Données sources : CEREMA, IFREMER, les DDTM. Le projet Carpediem a pour objectif la
+    production de cartographies de synthèse des pressions anthropiques et de leurs effets probables ou
+    potentiels sur l'
+  licence: etalab-2.0
+  date_maj: '2026-10-02'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - administration
+  - agriculture
+  - amenagement
+  - atlantique
+  - dcsmm
+  - economie
+  - elevage
+  - facades-maritimes
+  score: 92
+  raisons:
+  - licence etalab-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, elevage, culture, biodiversite'
+  propose_le: '2026-10-05'
+  publier: false
+  resume: Données cartographiques et descriptives des activités de cultures marines en France métropolitaine,
+    issues de sources institutionnelles. Elles synthétisent les pressions anthropiques et leurs effets
+    sur les écosystèmes marins.
+  interet: Documenter les impacts des activités humaines sur les écosystèmes marins pour orienter les
+    politiques d'aménagement et de gestion.
+  pertinence: non
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - administration
+  - amenagement
+  - atlantique
+  - dcsmm
+  - economie
+- id: ae45ebbdafc2
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: Données descriptives (carroyage 1' x 1') des activités de cultures marines à l'échelle métropolitaine
+    - projet Carpediem 2018
+  url: https://www.data.gouv.fr/datasets/donnees-descriptives-carroyage-1-x-1-des-activites-de-cultures-marines-a-lechelle-metropolitaine-projet-carpediem-2018-1
+  description: 'Données produites dans le cadre du projet Carpediem piloté par l''Agence Française pour
+    la Biodiversité avec l''appui scientifique et technique de l''UMR Amure (convention AFB-UBO réference
+    AAMP/16 007). Données sources : CEREMA, IFREMER, les DDTM. Le projet Carpediem a pour objectif la
+    production de cartographies de synthèse des pressions anthropiques et de leurs effets probables ou
+    potentiels sur l'
+  licence: etalab-2.0
+  date_maj: '2026-10-02'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - administration
+  - agriculture
+  - amenagement
+  - atlantique
+  - dcsmm
+  - economie
+  - elevage
+  - facades-maritimes
+  score: 92
+  raisons:
+  - licence etalab-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, elevage, culture, biodiversite'
+  propose_le: '2026-10-05'
+  publier: true
+  resume: Cartographie des activités de cultures marines sous forme de carroyage 1' x 1' à l'échelle métropolitaine.
+    Ces données permettent de visualiser les pressions anthropiques sur le milieu marin.
+  interet: Évaluer l'impact des activités humaines sur les écosystèmes marins liés à l'alimentation.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - cultures marines
+  - cartographie
+  - pressions anthropiques
+  - métropole
+  - carroyage
+- id: bc295efb024c
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: EFFECT OF NANOPREPARATIONS ON FIELD GERMINATION OF CROTALARIA SEEDS
+  url: https://doi.org/10.5281/zenodo.23153503
+  description: Today, preserving soil fertility, increasing crop resistance to stress factors, and obtaining
+    high and high-quality yields with lower resource inputs are among the most pressing scientific and
+    practical issues in agriculture. Especially under conditions of abrupt climate change, water scarcity,
+    soil degradation, and declining nutrient reserves, the inclusion of leguminous crops in cropping systems
+  licence: cc-by-4.0
+  date_maj: '2026-10-05'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - In Uzbekistan, a number of scientific studies have also been conducted on the introduction of sunn
+    hemp and on its biological characteristics, sowing dates, seeding rates, and the effects of biostimulants
+  score: 92
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, crop, seed, soil, yield, water'
+  propose_le: '2026-10-05'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: inconnu
+  redige_par: mistral-small-latest
+- id: b29803d69655
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: 'Evaluating human-AI workflows for field research in viticulture: supporting files'
+  url: https://doi.org/10.5281/zenodo.23142108
+  description: 'S1: Aleks reasoning log for vine-scale model development (Workflow 1). S2: Aleks reasoning
+    log for sampling-plan development (Workflow 2). S3: Literature supplied to Aleks, organized by workflow.
+    S4: Python scripts for vine-scale model development and 2025 forecasting (Workflow 1). File legends
+    are included. Underlying vineyard data and the fitted model are not included. Logs, inventory, and
+    legen'
+  licence: cc-by-4.0
+  date_maj: '2026-10-04'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - human–AI collaboration
+  - viticulture
+  - precision agriculture
+  - disease forecasting
+  - sampling design
+  score: 92
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, vineyard, viticulture'
+  propose_le: '2026-10-05'
+  publier: true
+  resume: Fichiers de support pour évaluer des workflows humain-IA en recherche viticole, incluant des
+    logs de raisonnement et des scripts Python. Ces données documentent des méthodes de modélisation et
+    de prévision.
+  interet: Développer des outils d'aide à la décision pour la gestion des maladies en viticulture.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - viticulture
+  - modélisation
+  - prévisions
+  - collaboration humain-ia
+  - échantillonnage
+- id: 977d988aa7ee
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: Contribution of the postharvest period to soil N2O emissions from arable Mediterranean crops
+  url: https://doi.org/10.5281/zenodo.23102316
+  description: Mediterranean regions and other semi-arid climate regions are distributed worldwide and
+    make a significant contribution to global food production and greenhouse gas emissions. Nitrous oxide
+    (N₂O) is involved in the destruction of stratospheric ozone and is a potent greenhouse gas, making
+    a substantial contribution to the carbon footprint of agroecosystems. Therefore, accurate quantification
+    of N₂O
+  licence: cc-by-4.0
+  date_maj: '2026-10-02'
+  techno: ''
+  popularite: 0
+  mots_cles: []
+  score: 91
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : crop, greenhouse, soil, carbon, food'
+  propose_le: '2026-10-05'
+  publier: true
+  resume: Données sur les émissions de N2O du sol pendant la période post-récolte des cultures méditerranéennes.
+    Ces données visent à quantifier l'impact des pratiques agricoles sur les émissions de gaz à effet
+    de serre.
+  interet: Comprendre le rôle des pratiques agricoles dans les émissions de gaz à effet de serre des agroécosystèmes
+    méditerranéens.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - émissions de n2o
+  - post-récolte
+  - cultures méditerranéennes
+  - gaz à effet de serre
+  - agroécosystèmes
+- id: 1d8fca9c8e9f
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: Rahul5505/Crop_Disease_Images
+  url: https://huggingface.co/datasets/Rahul5505/Crop_Disease_Images
+  description: Crop Disease Expert Annotations 1,026 expert annotations over 989 crop photographs, covering
+    pests, diseases and nutrient deficiencies across 74 crop types. The images are included in this repository.
+    Every image is a photo taken by a smallholder farmer on their own plot and sent to F
+  licence: cc-by-4.0
+  date_maj: '2026-10-05'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - crop-disease
+  - pest-detection
+  - plant-pathology
+  - expert-annotations
+  - india
+  score: 91
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farmer, crop'
+  propose_le: '2026-10-05'
+  publier: true
+  resume: Ensemble de 1 026 annotations expertes sur 989 photographies de cultures présentant des maladies,
+    ravageurs ou carences. Ces images proviennent de petits agriculteurs et sont destinées à l'analyse
+    des problèmes phytosanitaires.
+  interet: Améliorer la détection et le diagnostic des maladies et ravageurs des cultures pour les agriculteurs.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - maladies des cultures
+  - ravageurs
+  - carences
+  - annotations expertes
+  - détection
+- id: 718f62c791ab
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: Données descriptives de l'activité de mouillages permanents à l'échelle métropolitaine - projet
+    Carpediem 2018
+  url: https://www.data.gouv.fr/datasets/donnees-descriptives-de-lactivite-de-mouillages-permanents-a-lechelle-metropolitaine-projet-carpediem-2018-1
+  description: 'Données produites dans le cadre du projet Carpediem piloté par l''Agence Française pour
+    la Biodiversité avec l''appui scientifique et technique de l''UMR Amure (convention AFB-UBO réference
+    AAMP/16 007). Données sources : Agence de l''eau RMC, les DREAL, les DDTM, Shom. Le projet Carpediem
+    a pour objectif la production de cartographies de synthèse des pressions anthropiques et de leurs
+    effets probable'
+  licence: etalab-2.0
+  date_maj: '2026-10-02'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - administration
+  - agriculture
+  - amenagement
+  - atlantique
+  - dcsmm
+  - economie
+  - elevage
+  - facades-maritimes
+  score: 88
+  raisons:
+  - licence etalab-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, elevage, biodiversite'
+  propose_le: '2026-10-05'
+  publier: true
+  resume: Cartographie des activités de mouillages permanents sous forme de carroyage 1' x 1' à l'échelle
+    métropolitaine. Ces données permettent de visualiser les pressions anthropiques sur le milieu marin.
+  interet: Évaluer l'impact des activités humaines sur les écosystèmes marins liés à l'alimentation.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - mouillages permanents
+  - cartographie
+  - pressions anthropiques
+  - métropole
+  - carroyage
+- id: fd3e5c400ade
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: INFLUENCE OF PLANTING METHODS, TIMES AND CRITERIA ON YIELD AND GRAIN QUALITY OF CHEESE VARIETIES
+    IN IRRIGATED LANDS
+  url: https://doi.org/10.5281/zenodo.23159307
+  description: The article studies the effect of planting methods, timing and criteria on the yield and
+    grain quality of pea varieties in irrigated lands (in the conditions of the Kashkadarya region). The
+    results of the study show the extent to which pea varieties have an impact on the yield and grain
+    quality of irrigated soils of the Kashkadarya region. &nbsp;
+  licence: cc-by-4.0
+  date_maj: '2026-10-05'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - Irrigated land, soil-climatic conditions, pea varieties, grain quality, harvest time.
+  score: 88
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : harvest, soil, yield, climat'
+  propose_le: '2026-10-05'
+  publier: true
+  resume: Cette étude analyse l'impact des méthodes de semis, des périodes et des critères sur le rendement
+    et la qualité des grains de variétés de pois en terres irriguées. Elle fournit des données sur les
+    performances de ces variétés dans des conditions pédoclimatiques spécifiques.
+  interet: Évaluer l'adaptation des variétés de pois aux conditions d'irrigation pour optimiser les pratiques
+    culturales.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - pois
+  - irrigation
+  - rendement
+  - qualité des grains
+  - variétés
+- id: 1a4ed52f3226
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: 'Rethinking Urban Food Systems through Urban Agriculture and Vertical Farming for Health and
+    Environment: A Systematic Review'
+  url: https://doi.org/10.5281/zenodo.23099767
+  description: 'This dataset supports the systematic review article "Rethinking Urban Food Systems through
+    Urban Agriculture and Vertical Farming for Health and Environment: A Systematic Review", which synthesises
+    evidence from 22 Core studies examining how the integration of biological systems, smart technologies,
+    architectural design, food engineering, and environmental management in urban agriculture and verti'
+  licence: cc0-1.0
+  date_maj: '2026-10-03'
+  techno: ''
+  popularite: 0
+  mots_cles: []
+  score: 88
+  raisons:
+  - licence cc0-1.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farming, food'
+  propose_le: '2026-10-05'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - agriculture urbaine
+  - fermes verticales
+  - systèmes alimentaires
+- id: f75e116c733e
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: ixrbhii/crop-disease-qa
+  url: https://huggingface.co/datasets/ixrbhii/crop-disease-qa
+  description: 'Crop Disease Q&A (42 crops) 9,076 question–answer records on crop diseases, pests and
+    their management, for 42 crops. It is the knowledge base of the Multi-Crop Disease Decision Support
+    System, and of the Crop disease guide in LULC Fetch (Agri menu). Photo models that go with it: ever'
+  licence: cc-by-4.0
+  date_maj: '2026-10-04'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - plant-disease
+  - crop-protection
+  - pest-management
+  - india
+  score: 88
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, crop, plant-disease'
+  propose_le: '2026-10-05'
+  publier: true
+  resume: Cette base de connaissances contient 9 076 questions-réponses sur les maladies, ravageurs et
+    leur gestion pour 42 cultures. Elle sert de support au système d'aide à la décision pour les maladies
+    des cultures.
+  interet: Identifier et gérer les maladies et ravageurs des cultures pour améliorer les pratiques de
+    protection des plantes.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - maladies des cultures
+  - ravageurs
+  - protection des plantes
+  - gestion des cultures
+- id: 5cb744a4caf4
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: torchgeo/sustainbench_crop_yield
+  url: https://huggingface.co/datasets/torchgeo/sustainbench_crop_yield
+  description: 'Homepage: https://sustainlab-group.github.io/sustainbench/docs/datasets/sdg2/crop_yield.html
+    Paper: https://doi.org/10.1145/3209811.3212707 Redistributed from https://drive.google.com/drive/folders/1hsp2PlXAgcQ0pbx_vvPKHZcj_Am3rWx4
+    without modification.'
+  licence: cc-by-sa-4.0
+  date_maj: '2026-09-29'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - geospatial
+  score: 82
+  raisons:
+  - licence cc-by-sa-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : crop, yield, geospatial'
+  propose_le: '2026-10-05'
+  publier: true
+  resume: Cet ensemble de données géospatiales porte sur les rendements des cultures pour des indicateurs
+    liés aux objectifs de développement durable. Il est redistribué sans modification.
+  interet: ''
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - rendement des cultures
+  - géospatial
+  - objectifs de développement durable
+- id: b67f3441c65a
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: torchgeo/harmonized_global_crops
+  url: https://huggingface.co/datasets/torchgeo/harmonized_global_crops
+  description: geospatial
+  licence: cc-by-sa-4.0
+  date_maj: '2026-09-29'
+  techno: ''
+  popularite: 31
+  mots_cles:
+  - geospatial
+  score: 77
+  raisons:
+  - licence cc-by-sa-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : crop, geospatial'
+  propose_le: '2026-10-05'
+  publier: true
+  resume: Cet ensemble de données géospatiales harmonisées couvre les cultures à l'échelle mondiale. Il
+    est redistribué sans modification.
+  interet: ''
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - cultures
+  - géospatial
+  - harmonisation
+- id: c1299a2298d0
+  famille: modele
+  relecteur: ionosphere
+  source: hf-modeles-agri
+  titre: agenthinkmesh/gcc_agriculture_ai
+  url: https://huggingface.co/agenthinkmesh/gcc_agriculture_ai
+  description: sklearn tabular-regression tabular-classification scikit-learn automl synthetic-data agriculture
+    food-security aquaculture gcc kuwait en
+  licence: mit
+  date_maj: '2026-09-29'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - sklearn
+  - tabular-regression
+  - tabular-classification
+  - scikit-learn
+  - automl
+  - synthetic-data
+  - agriculture
+  - food-security
+  score: 76
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-10-05'
+  publier: true
+  resume: Ce modèle utilise des techniques d'apprentissage automatique pour des tâches de classification
+    et de régression tabulaires dans le domaine agricole et de la sécurité alimentaire. Il inclut des
+    données synthétiques.
+  interet: Automatiser des tâches de modélisation et de prédiction pour l'agriculture et la sécurité alimentaire.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - apprentissage automatique
+  - classification tabulaire
+  - régression tabulaire
+  - sécurité alimentaire
+- id: 015fbbf6f3fd
+  famille: modele
+  relecteur: ionosphere
+  source: hf-modeles-agri
+  titre: brimbim/agriculture-crop-disease-model-v1
+  url: https://huggingface.co/brimbim/agriculture-crop-disease-model-v1
+  description: peft safetensors mixtral agriculture crop-disease autoscientist-challenge lora mistral
+    en
+  licence: apache-2.0
+  date_maj: '2026-06-13'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - peft
+  - safetensors
+  - mixtral
+  - agriculture
+  - crop-disease
+  - autoscientist-challenge
+  - lora
+  - mistral
+  score: 75
+  raisons:
+  - licence apache-2.0
+  - actif (moins d'un an)
+  - 'vocabulaire : agriculture, crop'
+  propose_le: '2026-10-05'
+  publier: true
+  resume: Ce projet propose un modèle de langage spécialisé dans la reconnaissance des maladies des cultures
+    agricoles. Il permet d'identifier des symptômes ou des maladies à partir de données textuelles ou
+    d'images.
+  interet: Il peut servir à analyser des données agricoles pour détecter des problèmes sanitaires dans
+    les cultures.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - maladie des cultures
+  - reconnaissance de symptômes
+  - modèle de langage
+  - agriculture
+  - analyse de données
+resume_genere_le: 2026-10-05 12:06
