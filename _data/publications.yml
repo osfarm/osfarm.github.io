@@ -18,7 +18,8 @@
 #   resume      { fr, en } — rédigé par l'association, jamais copié de l'éditeur
 #   url         lien pérenne, DOI quand il existe
 #   acces       ouvert (texte librement lisible), formulaire (gratuit contre un
-#               formulaire) ou notice (présentation seule, texte ailleurs ou payant)
+#               formulaire ou une inscription) ou notice (présentation seule,
+#               texte ailleurs ou payant)
 #   verifie_le  date du dernier contrôle du lien
 #   pourquoi    true pour les sources citées sur /why/ et /fr/why/
 #   titre_fr, url_fr   facultatifs : la version française officielle, montrée
@@ -38,6 +39,10 @@ groupes:
     titre: { fr: Recherche ouverte et évaluation des modèles, en: Open research and model evaluation }
   - id: portails
     titre: { fr: Portails et ressources vivantes, en: Portals and living resources }
+  # Lectures de filière, hors IA et numérique : élevage, réglementation,
+  # bien-être et génétique des chevaux, ânes et mulets (rapport du 09/10/2026).
+  - id: equides
+    titre: { fr: Filières équines et asines, en: Equine and donkey sectors }
 # `avertissement` s'affiche sur la carte : le lecteur doit savoir ce qu'il lit.
 natures:
   - id: rapport
@@ -62,6 +67,14 @@ natures:
     avertissement:
       fr: Portail vivant — source de veille, non publication.
       en: Living portal — a watch source, not a publication.
+  - id: fiche
+    titre: { fr: Fiche ou guide technique, en: Technical sheet or guide }
+  - id: conference
+    titre: { fr: Conférence filmée, en: Recorded talk }
+  - id: reglement
+    titre: { fr: Texte réglementaire, en: Regulation }
+  - id: norme
+    titre: { fr: Norme internationale, en: International standard }
 publications:
   # --- france
   - id: cgaaer-ia-metiers-ministere
@@ -517,3 +530,264 @@ publications:
     url: "https://www.oecd.org/en/topics/innovation-and-digital-in-agriculture.html"
     acces: ouvert
     verifie_le: 2026-09-22
+  # --- equides
+  - id: ifce-ane-de-travail
+    titre: "Âne de travail : faire les bons choix"
+    auteur: N. Seguin, P. Sachot, A. Appelgren — IFCE, équipédia
+    annee: 2025
+    nature: fiche
+    groupe: equides
+    langue: fr
+    resume:
+      fr: Fiche tirée de l'étude préliminaire CoolÂne (2020-2022) sur la traction asine en maraîchage — besoins de l'animal, choix de l'âne et du matériel, engagement en temps et en argent.
+      en: A sheet drawn from the CoolÂne preliminary study (2020-2022) on donkey traction in market gardening — the animal's needs, choosing the donkey and the equipment, the time and money involved.
+    url: "https://equipedia.ifce.fr/autres-activites-equestres/attelage/cheval-utilitaire/ane-de-travail-faire-les-bons-choix"
+    acces: ouvert
+    verifie_le: 2026-10-09
+  - id: remvt-anes-poitevin-catalan-maroc
+    titre: "Body Measurements of Donkeys of Poitevin and Catalan Breeds and their Crossbreds in Morocco"
+    auteur: I. Boujenane, M. Machmoum — Revue d'élevage et de médecine vétérinaire des pays tropicaux
+    annee: 2008
+    nature: article
+    groupe: equides
+    langue: en
+    resume:
+      fr: Mensurations de 309 ânes poitevins, catalans et croisés utilisés dans les haras nationaux marocains ; témoigne d'une sélection asine ancienne au Maroc. Le lien mène à la notice AGRIS.
+      en: Body measurements of 309 Poitevin, Catalan and crossbred donkeys used in Morocco's national studs; evidence of long-standing donkey breeding in Morocco. The link leads to the AGRIS record.
+    url: "https://agris.fao.org/search/en/providers/122436/records/67599bc1c7a957febdfe3d29"
+    acces: notice
+    verifie_le: 2026-10-09
+  - id: brooke-indicateurs-bien-etre
+    titre: "Brooke Animal Welfare Indicators Repository"
+    auteur: Brooke — Action for Working Horses and Donkeys
+    annee: continu
+    nature: portail
+    groupe: equides
+    langue: en
+    resume:
+      fr: Indicateurs et protocoles d'évaluation du bien-être des chevaux, ânes et mulets de travail, mesurés sur l'animal. Le téléchargement demande une inscription gratuite.
+      en: Animal-based indicators and assessment protocols for the welfare of working horses, donkeys and mules. Downloading requires free registration.
+    url: "https://awi.actionforanimalhealth.org/"
+    acces: formulaire
+    verifie_le: 2026-10-09
+  - id: sorec-bibliotheque-haras-nationaux
+    titre: "Bibliothèque des Haras nationaux"
+    auteur: Société Royale d'Encouragement du Cheval (SOREC)
+    annee: continu
+    nature: portail
+    groupe: equides
+    langue: fr
+    resume:
+      fr: Stud-books marocains, catalogues d'étalons, formulaires et guides des Haras nationaux du Maroc. Aucune licence de réutilisation n'y figure — à consulter, pas à republier.
+      en: Moroccan stud-books, stallion catalogues, forms and guides from Morocco's national studs. No reuse licence is stated — to be consulted, not republished.
+    url: "https://haras.sorec.ma/bibliotheque"
+    acces: ouvert
+    verifie_le: 2026-10-09
+  - id: ifce-filiere-lait-equide
+    titre: "Comprendre la filière « lait d'équidé »"
+    auteur: F. Ducazeau, M. Busmey, L. Legendre — IFCE
+    annee: 2025
+    nature: conference
+    groupe: equides
+    langue: fr
+    resume:
+      fr: Webconférence du 16 octobre 2025 sur le lait de jument et d'ânesse — producteurs, usages alimentaires et cosmétiques, potentiel d'une filière émergente, avec le témoignage d'une asinerie.
+      en: A web conference held on 16 October 2025 on mare and donkey milk — producers, food and cosmetic uses, the potential of an emerging sector, with a donkey farm's account.
+    url: "https://www.ifce.fr/ifce/connaissances/webconferences/elevage-et-entretien/comprendre-la-filiere-lait-dequide/"
+    acces: ouvert
+    verifie_le: 2026-10-09
+  - id: iav-barbe-microsatellites
+    titre: "Analyse génétique et relations phylogénétiques du cheval Barbe par l'utilisation des microsatellites"
+    auteur: M. Piro, H. Alyakine, M. Ezzaouia, F. Lasfar, H. Ouled Ahmed, L. Ouragh — Revue Marocaine des Sciences Agronomiques et Vétérinaires
+    annee: 2019
+    nature: article
+    groupe: equides
+    langue: fr
+    resume:
+      fr: Comparaison génétique des chevaux Barbes du Maroc et de Tunisie par microsatellites, menée par l'IAV Hassan II et la Fondation nationale d'amélioration de la race chevaline. Résultats agrégés, sans jeu de données déposé.
+      en: A microsatellite-based genetic comparison of Barb horses from Morocco and Tunisia, by IAV Hassan II and Tunisia's national horse-breeding foundation. Aggregate results, with no deposited dataset.
+    url: "https://www.agrimaroc.org/index.php/Actes_IAVH2/article/view/673"
+    acces: ouvert
+    verifie_le: 2026-10-09
+  - id: commission-faq-identification-equides
+    titre: "Equine animals — FAQs"
+    auteur: European Commission, DG Health and Food Safety
+    annee: continu
+    nature: portail
+    groupe: equides
+    langue: en
+    resume:
+      fr: Questions-réponses officielles sur l'identification des équidés dans l'Union — code unique, transpondeur, document d'identification à vie, duplicata — avec la base légale de chaque réponse.
+      en: Official questions and answers on the identification of equine animals in the Union — unique code, transponder, single lifetime identification document, duplicates — each with its legal basis.
+    url: "https://food.ec.europa.eu/animals/identification/equine-animals/faqs_en"
+    acces: ouvert
+    verifie_le: 2026-10-09
+  - id: equipedia
+    titre: "équipédia"
+    auteur: Institut français du cheval et de l'équitation (IFCE)
+    annee: continu
+    nature: portail
+    groupe: equides
+    langue: fr
+    resume:
+      fr: L'encyclopédie technique de l'IFCE — élevage, alimentation, santé, bien-être, réglementation et utilisations du cheval et de l'âne, en fiches signées et datées.
+      en: The IFCE's technical encyclopaedia — breeding, feeding, health, welfare, regulation and uses of horses and donkeys, in signed and dated sheets.
+    url: "https://equipedia.ifce.fr/"
+    acces: ouvert
+    verifie_le: 2026-10-09
+  - id: iav-parente-snp-chevaux-marocains
+    titre: "Evaluation of the effectiveness of single nucleotide polymorphisms compared to microsatellite markers for parentage verification in Moroccan horses"
+    auteur: O. Aminou, B. Badaoui, M. Machmoum, M. Piro — Animal Genetics
+    annee: 2024
+    nature: article
+    groupe: equides
+    langue: en
+    resume:
+      fr: Contrôle de filiation par un panel de 144 SNP comparé aux microsatellites, sur 1 074 chevaux de cinq races élevées au Maroc (Arabe, Barbe, Pur-sang, Anglo-arabe, Arabe-Barbe). Le lien mène au résumé PubMed.
+      en: Parentage testing with a 144-SNP panel compared with microsatellites, on 1,074 horses of five breeds raised in Morocco (Arabian, Barb, Thoroughbred, Anglo-Arabian, Arabian-Barb). The link leads to the PubMed abstract.
+    url: "https://pubmed.ncbi.nlm.nih.gov/38383954/"
+    acces: notice
+    verifie_le: 2026-10-09
+  - id: iav-frequence-scid-maroc
+    titre: "Frequency of the severe combined immunodeficiency disease gene among horses in Morocco"
+    auteur: M. Piro, A. Benjouad, N. S. Tligui, K. El Allali, M. El Kohen, A. Nabich, L. Ouragh — Equine Veterinary Journal
+    annee: 2008
+    nature: article
+    groupe: equides
+    langue: en
+    resume:
+      fr: Fréquence des porteurs du gène de l'immunodéficience combinée sévère chez les chevaux arabes et croisés arabes du Maroc, et étalons importés qui l'ont diffusé. Le lien mène au résumé PubMed.
+      en: Frequency of carriers of the severe combined immunodeficiency gene among Arabian and Arabian-cross horses in Morocco, and the imported stallions that spread it. The link leads to the PubMed abstract.
+    url: "https://pubmed.ncbi.nlm.nih.gov/19031514/"
+    acces: notice
+    verifie_le: 2026-10-09
+  - id: ifce-guide-aides-pac-filiere-equine
+    titre: "Guide des aides PAC — Filière équine 2025"
+    auteur: Institut français du cheval et de l'équitation (IFCE)
+    annee: 2025
+    nature: fiche
+    groupe: equides
+    langue: fr
+    resume:
+      fr: Les aides de la politique agricole commune ouvertes aux détenteurs d'équidés, fiche par fiche — aides directes, éco-régimes, développement rural, protection des races menacées. Vaut pour le millésime 2025.
+      en: The common agricultural policy payments open to equine keepers, sheet by sheet — direct payments, eco-schemes, rural development, protection of endangered breeds. Valid for the 2025 campaign.
+    url: "https://equipedia.ifce.fr/bibliotheque/3._Guide__pocket_et_autres_pdf/3.5_Autres_pdf/guide-aides-PAC-national-avril-2025.pdf"
+    acces: ouvert
+    verifie_le: 2026-10-09
+  - id: genes-variants-ca-lfs-scid-mena
+    titre: "Investigation of Cerebellar Abiotrophy (CA), Lavender Foal Syndrome (LFS), and Severe Combined Immunodeficiency (SCID) Variants in a Cohort of Three MENA Region Horse Breeds"
+    auteur: A. Ayad, S. Almarzook, O. Besseboua, S. Aissanou, K. Piórkowska et al. — Genes
+    annee: 2021
+    nature: article
+    groupe: equides
+    langue: en
+    resume:
+      fr: Recherche de trois variants responsables de maladies héréditaires chez l'Arabe, le Barbe et l'Arabe-Barbe d'Afrique du Nord et du Moyen-Orient. Article en libre accès.
+      en: A search for three variants causing inherited diseases in Arabian, Barb and Arabian-Barb horses from North Africa and the Middle East. Open-access paper.
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8701198/"
+    acces: ouvert
+    verifie_le: 2026-10-09
+  - id: ifce-alimentation-ane
+    titre: "L'alimentation de l'âne : principes généraux et conseils pratiques"
+    auteur: L. Le Masne, P. Sachot — IFCE, équipédia
+    annee: 2023
+    nature: fiche
+    groupe: equides
+    langue: fr
+    resume:
+      fr: Comportement alimentaire, besoins et rationnement de l'âne, qui ne se nourrit pas comme un petit cheval — de quoi éviter d'appliquer telles quelles les références chevalines.
+      en: Feeding behaviour, requirements and rationing of the donkey, which is not fed like a small horse — a safeguard against applying horse references unchanged.
+    url: "https://equipedia.ifce.fr/elevage-et-entretien/alimentation/nutrition-et-ration/lalimentation-de-lane-principes-generaux-et-conseils-pratiques"
+    acces: ouvert
+    verifie_le: 2026-10-09
+  - id: ifce-races-reconnues-gerees-france
+    titre: "Les races reconnues et gérées en France"
+    auteur: M. Dhollande, C. Arnaud — IFCE, équipédia
+    annee: 2021
+    nature: fiche
+    groupe: equides
+    langue: fr
+    resume:
+      fr: Aperçu des races d'équidés reconnues et gérées en France — chevaux de sang, poneys, chevaux de trait et ânes — avec leurs effectifs. Fiche de 2021, antérieure aux reconnaissances les plus récentes.
+      en: An overview of the equine breeds recognised and managed in France — light horses, ponies, draught horses and donkeys — with their numbers. A 2021 sheet, older than the latest recognitions.
+    url: "https://equipedia.ifce.fr/elevage-et-entretien/race-et-robe/races-dequides/les-races-reconnues-et-gerees-en-france"
+    acces: ouvert
+    verifie_le: 2026-10-09
+  - id: ue-2016-1012-reglement-zootechnique
+    titre: "Règlement (UE) 2016/1012 relatif aux conditions zootechniques et généalogiques applicables à l'élevage, aux échanges et à l'entrée dans l'Union de reproducteurs"
+    auteur: Parlement européen et Conseil de l'Union européenne
+    annee: 2016
+    nature: reglement
+    groupe: equides
+    langue: fr
+    resume:
+      fr: Le règlement zootechnique de l'Union — organismes de sélection, programmes de sélection et livres généalogiques, équidés compris.
+      en: The Union's animal breeding regulation — breed societies, breeding programmes and breeding books, equines included.
+    url: "https://eur-lex.europa.eu/eli/reg/2016/1012/oj"
+    acces: ouvert
+    verifie_le: 2026-10-09
+  - id: ue-2016-429-sante-animale
+    titre: "Règlement (UE) 2016/429 relatif aux maladies animales transmissibles (« législation sur la santé animale »)"
+    auteur: Parlement européen et Conseil de l'Union européenne
+    annee: 2016
+    nature: reglement
+    groupe: equides
+    langue: fr
+    resume:
+      fr: Le règlement-cadre de la santé animale dans l'Union, base de l'identification, de la traçabilité et des mouvements des équidés ; à lire avec les règlements 2019/2035 et 2021/963.
+      en: The Union's framework regulation on animal health, the basis for identifying, tracing and moving equine animals; to be read with regulations 2019/2035 and 2021/963.
+    url: "https://eur-lex.europa.eu/eli/reg/2016/429/oj"
+    acces: ouvert
+    verifie_le: 2026-10-09
+  - id: ue-2021-963-identification-equides
+    titre: "Règlement d'exécution (UE) 2021/963 relatif à l'identification et à l'enregistrement des équidés"
+    auteur: Commission européenne
+    annee: 2021
+    nature: reglement
+    groupe: equides
+    langue: fr
+    resume:
+      fr: Le cadre actuel du document d'identification unique à vie des équidés et des bases de données qui l'accompagnent ; il a remplacé le règlement 2015/262.
+      en: The current framework for the single lifetime identification document of equine animals and the databases behind it; it replaced regulation 2015/262.
+    url: "https://eur-lex.europa.eu/eli/reg_impl/2021/963/oj"
+    acces: ouvert
+    verifie_le: 2026-10-09
+  - id: fao-traction-animale-maroc
+    titre: "Rentabilité de la traction animale dans les petites exploitations marocaines"
+    auteur: B. Elhimdy, J. Chiche — IAV Hassan II, dans Starkey et Faye (éd.), CTA
+    annee: 1990
+    nature: etude
+    groupe: equides
+    langue: fr
+    resume:
+      fr: Communication d'un atelier de 1988 sur les usages et les coûts des ânes, mulets et chevaux de trait dans les petites exploitations du Maroc. Document historique — ses effectifs ne décrivent pas la situation actuelle.
+      en: A paper from a 1988 workshop on the uses and costs of donkeys, mules and draught horses on small Moroccan farms. A historical document — its figures do not describe the present situation.
+    url: "https://www.fao.org/4/x5455b/x5455b0o.htm"
+    acces: ouvert
+    verifie_le: 2026-10-09
+  - id: woah-code-terrestre-equides-de-travail
+    titre: "Terrestrial Animal Health Code — Chapter 7.12. Welfare of working equids"
+    auteur: World Organisation for Animal Health (WOAH)
+    annee: 2022
+    nature: norme
+    groupe: equides
+    langue: en
+    resume:
+      fr: La norme internationale sur le bien-être des chevaux, ânes et mulets de travail, adoptée en 2016 — alimentation, abri, charge de travail, harnachement, fin de vie. Le lien mène à l'édition courante du Code.
+      en: The international standard on the welfare of working horses, donkeys and mules, adopted in 2016 — feeding, shelter, workload, harnessing, end of life. The link leads to the current edition of the Code.
+    url: "https://www.woah.org/fileadmin/Home/eng/Health_standards/tahc/current/chapitre_aw_working_equids.pdf"
+    acces: ouvert
+    verifie_le: 2026-10-09
+  - id: icwe-wesli
+    titre: "Working Equid Standards Library of Information (WESLI)"
+    auteur: International Coalition for Working Equids (ICWE)
+    annee: continu
+    nature: portail
+    groupe: equides
+    langue: en
+    resume:
+      fr: Bibliothèque de guides pratiques rangés selon les articles du chapitre 7.12 du Code terrestre — eau, alimentation, abri, harnachement, maréchalerie, charge de travail des ânes et des mulets.
+      en: A library of practical guides arranged by the articles of Chapter 7.12 of the Terrestrial Code — water, feed, shelter, harnessing, farriery and workloads of donkeys and mules.
+    url: "https://www.icweworkingequids.org/wesli/"
+    acces: ouvert
+    verifie_le: 2026-10-09

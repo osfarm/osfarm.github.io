@@ -26,7 +26,11 @@ task :test do
                   # été lus à la main ou par Wayback le 22/09/2026 ; leur date de
                   # contrôle est dans `verifie_le`.
                   %r{\Ahttps://www\.oecd\.org/}, %r{\Ahttps://www\.usda\.gov/},
-                  %r{\Ahttps://www\.undp\.org/}],
+                  %r{\Ahttps://www\.undp\.org/},
+                  # Filières équines et asines : les deux sites de l'IFCE
+                  # (Incapsula) renvoient une page de défi à tout robot. Fiches
+                  # lues par Wayback le 09/10/2026.
+                  %r{\Ahttps://equipedia\.ifce\.fr/}, %r{\Ahttps://www\.ifce\.fr/}],
     ignore_files: [%r{/stories/}],
     ignore_status_codes: [429]
   )

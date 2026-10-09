@@ -46,7 +46,7 @@ Key data files:
 - `_data/catalogue.yml` — training modules, consulting assignments, rates and the endpoints/addresses the catalogue forms post to (`meta`)
 - `_data/operateurs.yml` — the member organisations that deliver catalogue modules, plus the partners cited on module cards (`role: partenaire`)
 - `_data/teams.yml` — team member information
-- `_data/publications.yml` — the Documentation section (`/fr/documentation/`, `/documentation/`): reports, studies, books, papers and portals on AI and digital agriculture, under `publications`, with their `groupes` and `natures`. Entries flagged `pourquoi: true` also show on `/why/`
+- `_data/publications.yml` — the Documentation section (`/fr/documentation/`, `/documentation/`): reports, studies, books, papers and portals on AI and digital agriculture, plus an `equides` group of readings on the equine and donkey sectors, under `publications`, with their `groupes` and `natures`. Entries flagged `pourquoi: true` also show on `/why/`
 - `_data/showcases.yml` — featured case studies
 
 These files are flat lists of entries (`communaute.yml` keeps them under `candidats`, `catalogue.yml` under `modules` and `missions`, `publications.yml` under `publications`). Keep entries sorted alphabetically by name within their group, or by reference for the catalogue.
@@ -94,7 +94,7 @@ A bubble on every page answers visitors from the site's own published content. `
 
 ### Documentation
 
-`/fr/documentation/` and `/documentation/` list readings, not commons: publications never enter the directory, its counter, `data/communs.{json,csv}` or the `famille` values (a public contract, see `_annuaire/DESIGN.md`). `_includes/documentation.html` (with `lang=`) renders `_data/publications.yml`; `assets/js/documentation.js` is only the kind filter. Titles and authors stay in the document's language; summaries are `{ fr, en }`; `annee` is the document's year, not its web page's; preprints and portals carry a visible warning. The entries also feed a DOCUMENTATION section of `data/socle.txt`, so the assistant can cite them. Requirements and the 22/09/2026 link check are in `_documentation/EXIGENCES.md`; sites that answer 403 to every robot are listed in the `Rakefile` `ignore_urls`.
+`/fr/documentation/` and `/documentation/` list readings, not commons: publications never enter the directory, its counter, `data/communs.{json,csv}` or the `famille` values (a public contract, see `_annuaire/DESIGN.md`). `_includes/documentation.html` (with `lang=`) renders `_data/publications.yml`; `assets/js/documentation.js` is only the kind filter. Titles and authors stay in the document's language; summaries are `{ fr, en }`; `annee` is the document's year, not its web page's; preprints and portals carry a visible warning. The entries also feed a DOCUMENTATION section of `data/socle.txt`, so the assistant can cite them. Requirements, the 22/09/2026 link check and the 09/10/2026 equine and donkey addition (what went to the directory, to Documentation, to `besoins.yml`, and what was left out) are in `_documentation/EXIGENCES.md`; sites that answer 403 to every robot are listed in the `Rakefile` `ignore_urls`.
 
 ### Deployment
 
