@@ -1,6 +1,7 @@
 {%- comment -%}
   Rubrique Documentation : publications, rapports, ouvrages et portails de
-  veille sur l'IA et le numérique agricoles. Ce ne sont pas des communs : ils
+  veille sur l'IA et le numérique agricoles, plus un groupe de lectures sur les
+  filières équines et asines. Ce ne sont pas des communs : ils
   n'entrent ni dans l'annuaire, ni dans son compteur, ni dans communs.json.
 
   Usage   : {% include documentation.html lang="fr" %}
@@ -22,12 +23,16 @@
     {%- if lang == "fr" %}
     {{ doc.publications.size }} références sur l'intelligence artificielle et le numérique
     en agriculture : rapports publics, études, ouvrages, articles et portails de veille.
+    Un groupe à part réunit les lectures des filières équines et asines — élevage,
+    réglementation, bien-être, génétique.
     Elles éclairent les communs de l'<a href="{{ "/fr/communs/" | relative_url }}">annuaire</a>
     sans s'y confondre : on les lit, on ne les installe pas. Chaque notice renvoie au texte
     chez son éditeur ; nous n'en republions aucun.
     {%- else %}
     {{ doc.publications.size }} references on artificial intelligence and digital technology in
-    agriculture: public reports, studies, books, papers and watch portals. They shed light on the
+    agriculture: public reports, studies, books, papers and watch portals. A separate group
+    gathers readings on the equine and donkey sectors — breeding, regulation, welfare, genetics.
+    They shed light on the
     commons in the <a href="{{ "/community/" | relative_url }}">directory</a> without being part
     of it: you read them, you don't install them. Each entry links to the text at its publisher;
     we republish none of them.

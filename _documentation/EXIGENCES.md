@@ -172,3 +172,54 @@ Sites qui renvoient 403 à tout robot, exclus de html-proofer dans le
   rien ne garantit qu'il reste en ligne.
 - `ia-des-champs.com` redirige vers `ia-des-champs.lovable.app`, dont la
   balise canonical pointe vers `lia-des-champs.lovable.app`, qui répond 404.
+
+## Filières équines et asines — ajout du 09/10/2026
+
+Source : rapport de veille d'Hervé Pillaud, *Ressources numériques des filières
+équines et asines* (9 octobre 2026, environ 65 ressources, 64 liens). Décisions
+de David Joulin du même jour : la rubrique s'ouvre au-delà de l'IA et du
+numérique par un groupe `equides` ; l'API Équidés entre dans l'annuaire comme
+`service` ; les infrastructures à accès contrôlé restent hors site ; le lexique
+demandé par le rapport est une proposition pour le Lexicon
+(osfarm/lexicon#5), pas une page du site.
+
+**Répartition**
+
+- Annuaire (`communaute.yml`, catégorie « Filières équines et asines ») :
+  Fichier des équidés (Licence Ouverte), Vienna Horse Data Collection
+  (CC BY-SA 3.0), Ensembl cheval et Ensembl âne (données sans restriction, code
+  Apache 2.0), API Équidés (service tiers, sans licence déclarée — dit sur la
+  fiche).
+- Documentation : 20 notices, groupe `equides`, quatre natures nouvelles
+  (`fiche`, `conference`, `reglement`, `norme`). 34 → 54 références.
+- Besoins non couverts (`besoins.yml`) : cinq fiches, source
+  `rapport-equides-2026-10`.
+
+**Écarté de l'annuaire après lecture des licences**
+
+- OpenStudbook : CC0, mais 2 fiches de chevaux dans l'export.
+- PFERD : code CC BY-NC-SA 4.0, données réservées à la recherche non
+  commerciale.
+- DLC_Horse : aucune licence dans le dépôt.
+- EQDS : domaine expiré, standard introuvable.
+- open-horse-data : dépôt déplacé, deux archives non redistribuables.
+- En attente d'une licence de réutilisation lue à la source : OMIA, Horse
+  QTLdb, FAANG, exports DAD-IS (animalgenome.org et faang.org étaient en
+  maintenance le 09/10/2026).
+- Hors site : webservices SIRE, FEI, WBFSH, IFHA, FFE, France Galop, LeTROT,
+  E‑SIREMA ; l'étiquette de maturité à cinq valeurs ; UELN, qui pourrait entrer
+  comme `standard` sur le précédent d'ISOBUS.
+
+**Vérification**
+
+- Années et auteurs lus sur chaque document. Les fiches équipédia et la
+  webconférence de l'IFCE l'ont été par Wayback : les deux sites de l'IFCE
+  renvoient un défi Incapsula à tout robot, d'où leur ajout à `ignore_urls`.
+- Chapitre 7.12 du Code terrestre : le rapport liait l'édition 2018 ; la notice
+  pointe l'édition courante (PDF daté du 10/08/2022).
+- Articles d'*Animal Genetics* et d'*Equine Veterinary Journal* : lien vers le
+  résumé PubMed, `acces: notice`.
+- Nombre de races asines reconnues : huit selon le rapport, neuf selon le
+  ministère citant l'IFCE 2024 ; la fiche équipédia, de 2021, ne tranche pas. Le
+  résumé de la notice ne donne donc aucun chiffre.
+- Budget du socle : à mesurer après build (voir N2).

@@ -84,3 +84,75 @@
     références publiques, en toute transparence.
   propose_le: '2026-09-21'
   source: rapport-consolide-2026-09
+
+# Deuxième série issue du rapport de veille d'Hervé Pillaud sur les filières
+# équines et asines (9 octobre 2026). Mêmes précautions : le rapport constate
+# une absence dans la veille publique, pas l'inexistence de la ressource chez
+# ses détenteurs.
+
+- id: besoin-corpus-ia-equine
+  titre: Corpus d'images et de vidéos d'équidés sous licence ouverte
+  famille: donnees
+  type: besoin
+  categorie: Filières équines et asines
+  resume: Aucun corpus annoté identifié à ce jour pour la locomotion, le
+    bien-être ou l'identification des équidés qui soit réutilisable sans
+    restriction. Les jeux publiés sont réservés à la recherche non commerciale
+    ou diffusés sans licence.
+  interet: Permettrait d'entraîner et de comparer des modèles de vision sur des
+    chevaux et des ânes sans dépendre de données fermées.
+  propose_le: '2026-10-09'
+  source: rapport-equides-2026-10
+
+- id: besoin-donnees-courses-reutilisables
+  titre: Données de courses et de compétitions réutilisables
+  famille: donnees
+  type: besoin
+  categorie: Filières équines et asines
+  resume: Aucune source ouverte identifiée à ce jour pour les résultats de
+    courses et de compétitions équestres. Les données se consultent en ligne,
+    mais leur export et leur réutilisation restent sous licence fermée.
+  interet: Permettrait d'analyser performances, carrières et pedigrees sans
+    contrat avec chaque société de courses ou fédération.
+  propose_le: '2026-10-09'
+  source: rapport-equides-2026-10
+
+- id: besoin-serie-anes-mulets-maroc
+  titre: Série ouverte sur les ânes et mulets de travail au Maroc
+  famille: donnees
+  type: besoin
+  categorie: Filières équines et asines
+  resume: Aucune série récente identifiée à ce jour sur les effectifs, les
+    usages, la santé et la charge de travail des ânes et mulets au Maroc. Les
+    chiffres publics de traction animale sont anciens et ne valent pas
+    effectifs actuels.
+  interet: Permettrait de mesurer le rôle agricole et social des équidés de
+    travail et de suivre leur bien-être dans le temps.
+  propose_le: '2026-10-09'
+  source: rapport-equides-2026-10
+
+- id: besoin-studbooks-marocains-structures
+  titre: Stud-books marocains en données structurées
+  famille: donnees
+  type: besoin
+  categorie: Filières équines et asines
+  resume: Aucun export structuré identifié à ce jour pour les stud-books et
+    les catalogues d'étalons marocains. Ils sont publiés en volumes PDF, sans
+    identifiants persistants ni licence de réutilisation.
+  interet: Permettrait de relier généalogies, races et identifiants UELN du
+    Barbe et de l'Arabe-Barbe aux bases des autres pays.
+  propose_le: '2026-10-09'
+  source: rapport-equides-2026-10
+
+- id: besoin-vocabulaire-equin-multilingue
+  titre: Vocabulaire équin et asin multilingue
+  famille: donnees
+  type: besoin
+  categorie: Filières équines et asines
+  resume: Aucun vocabulaire contrôlé identifié à ce jour pour décrire les
+    équidés en français, anglais, arabe et amazighe. Espèce, type, race et
+    usage se confondent d'une base à l'autre.
+  interet: Permettrait d'échanger des données d'identité et d'élevage entre la
+    France, le Maroc et les bases internationales sans retraduire chaque terme.
+  propose_le: '2026-10-09'
+  source: rapport-equides-2026-10

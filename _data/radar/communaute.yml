@@ -88,6 +88,8 @@ categories:
     en: Sales and Customers links
   - fr: Bases de connaissances
     en: Knowledgebases and Learning Resources
+  - fr: Filières équines et asines
+    en: Equine and donkey sectors
 candidats:
 - id: projet-agopengps
   titre: Agopengps
@@ -1701,5 +1703,127 @@ candidats:
   - plantes
   date_maj: '2026-09-17'
   propose_le: '2024-06-01'
+  source: communaute-osfarm
+  publier: true
+# --- Filières équines et asines : fiches issues du rapport de veille d'Hervé
+# Pillaud du 09/10/2026, licences relues à la source le même jour. N'entrent ici
+# que les ressources dont la réutilisation est établie ; les lectures sont dans
+# _data/publications.yml, les manques dans _data/besoins.yml.
+- id: projet-api-equides
+  type: service
+  titre: API Équidés
+  url: https://api-equides.org/
+  demo: https://docs.api-equides.org/
+  famille: donnees
+  categorie: Filières équines et asines
+  category: Equine and donkey sectors
+  description: API REST ouverte sur les fiches publiques d'équidés de l'IFCE, avec généalogie, indices de
+    performance et statut à la reproduction. Service indépendant, non affilié à l'IFCE.
+  resume: API Équidés est un service indépendant du Collectif Pixel qui réexpose, sans clé ni compte,
+    4,4 millions de fiches publiques d'équidés extraites d'infochevaux.ifce.fr. Aucune licence n'est
+    déclarée sur data.gouv.fr ; le service invoque le droit de réutilisation des informations publiques,
+    et les fiches de l'IFCE font seules autorité.
+  interet: Permet d'interroger pedigrees, descendances et indices de performance des équidés
+    immatriculés en France sans passer par les webservices sous convention du SIRE.
+  mots_cles_fr:
+  - équidés
+  - généalogie
+  - api
+  - indices de performance
+  date_maj: '2026-08-16'
+  propose_le: '2026-10-09'
+  source: communaute-osfarm
+  publier: true
+- id: projet-ensembl-ane
+  type: service
+  titre: Ensembl — génome de l'âne
+  url: https://www.ensembl.org/Equus_asinus/Info/Index
+  famille: donnees
+  categorie: Filières équines et asines
+  category: Equine and donkey sectors
+  description: Ensembl is a genome browser for vertebrate genomes that supports research in comparative genomics,
+    evolution, sequence variation and transcriptional regulation.
+  resume: Ensembl publie l'assemblage ASM1607732v2 du génome de l'âne domestique, avec ses séquences et
+    ses annotations de gènes à consulter ou à télécharger. Les données sont diffusées sans restriction
+    d'usage et le code d'Ensembl est sous licence Apache 2.0 ; il n'existe pas de base de variations
+    propre à l'âne.
+  interet: Permet de disposer d'un génome de référence annoté pour les travaux de génétique et de
+    conservation des races asines.
+  mots_cles_fr:
+  - génome
+  - âne
+  - annotation
+  - génomique
+  propose_le: '2026-10-09'
+  source: communaute-osfarm
+  publier: true
+- id: projet-ensembl-cheval
+  type: service
+  titre: Ensembl — génome du cheval
+  url: https://www.ensembl.org/Equus_caballus/Info/Index
+  famille: donnees
+  categorie: Filières équines et asines
+  category: Equine and donkey sectors
+  description: Ensembl is a genome browser for vertebrate genomes that supports research in comparative genomics,
+    evolution, sequence variation and transcriptional regulation.
+  resume: Ensembl publie l'assemblage de référence EquCab3.0 du génome du cheval, avec ses annotations
+    de gènes, ses variants et une API pour les interroger. Les données sont diffusées sans restriction
+    d'usage et le code d'Ensembl est sous licence Apache 2.0.
+  interet: Permet de relier un variant, un gène ou une région du génome du cheval à son annotation, en
+    citant la version de l'assemblage.
+  mots_cles_fr:
+  - génome
+  - cheval
+  - variants
+  - génomique
+  propose_le: '2026-10-09'
+  source: communaute-osfarm
+  publier: true
+- id: projet-fichier-des-equides
+  titre: Fichier des équidés
+  url: https://www.data.gouv.fr/datasets/fichier-des-equides
+  famille: donnees
+  categorie: Filières équines et asines
+  category: Equine and donkey sectors
+  licence: etalab-2.0
+  description: Le département SIRE de l'Institut français du cheval et de l'équitation produit un fichier
+    contenant les données publiques des équidés immatriculés en France depuis 1976, soit environ
+    4 millions de lignes.
+  resume: Le Fichier des équidés est l'extraction publique de la base SIRE de l'IFCE, soit environ
+    4 millions d'équidés immatriculés en France depuis 1976. Chaque ligne donne la race, le sexe, la
+    robe, la date et le pays de naissance, le nom, le statut vis-à-vis de la consommation humaine et la
+    date de mort ; le fichier ne porte ni identifiant, ni filiation, ni propriétaire.
+  interet: Permet de dénombrer les équidés français par race, année de naissance ou statut de
+    consommation à partir d'une source officielle sous Licence Ouverte.
+  mots_cles_fr:
+  - équidés
+  - identification
+  - races
+  - données ouvertes
+  date_maj: '2026-08-24'
+  propose_le: '2026-10-09'
+  source: communaute-osfarm
+  publier: true
+- id: projet-vienna-horse-data-collection
+  titre: Vienna Horse Data Collection
+  url: https://horse.informatik.uni-bonn.de/vhdc-home.html
+  famille: donnees
+  categorie: Filières équines et asines
+  category: Equine and donkey sectors
+  licence: cc-by-sa-3.0
+  description: Vienna Horse Data Collection (VHDC) offers free web access to large collections of motion
+    sequences from quadrupedal animals in different motion classes.
+  resume: La Vienna Horse Data Collection rassemble des séquences de capture de mouvement de chevaux,
+    enregistrées pour la recherche en biomécanique et réutilisées en animation et en robotique. Elle
+    s'adresse aux chercheurs et aux étudiants qui ont besoin de données de locomotion sans pouvoir les
+    produire eux-mêmes.
+  interet: Permet d'étudier la locomotion du cheval ou d'entraîner des modèles de mouvement sur des
+    données réelles sous licence ouverte.
+  mots_cles_fr:
+  - locomotion
+  - capture de mouvement
+  - biomécanique
+  - cheval
+  propose_le: '2026-10-09'
   source: communaute-osfarm
   publier: true
