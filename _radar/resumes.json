@@ -28,6 +28,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Ce projet propose un modèle de langage spécialisé dans la reconnaissance des maladies des cultures agricoles. Il permet d'identifier des symptômes ou des maladies à partir de données textuelles ou d'images."
  },
+ "039285e58d9c": {
+  "famille": "logiciel",
+  "id": "039285e58d9c",
+  "interet": "Aide à repérer des maladies sur des cultures via l'analyse d'images.",
+  "mots_cles": [
+   "détection-maladies",
+   "yolo",
+   "deepseek",
+   "vue3",
+   "spring-boot"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Système de détection de maladies des cultures basé sur l'intelligence artificielle avec le modèle YOLO et une assistance optionnelle par DeepSeek. Il est développé avec Vue 3, Spring Boot et Flask."
+ },
  "051485381c9e": {
   "famille": "logiciel",
   "id": "051485381c9e",
@@ -73,6 +88,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Échantillonneur d'eau automatisé à faible coût, connecté par IoT, conçu pour la recherche sur la qualité de l'eau en temps quasi réel. Il permet de mesurer des paramètres de l'eau sur le terrain."
  },
+ "081576686688": {
+  "famille": "donnees",
+  "id": "081576686688",
+  "interet": "Cette donnée peut servir à analyser la répartition spatiale des zones de conservation d'une espèce pollinisatrice.",
+  "mots_cles": [
+   "abeille noire",
+   "conservatoire",
+   "normandie",
+   "centroïde",
+   "données géographiques"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Cette donnée cartographique fournit les centroïdes des conservatoires de l'abeille noire en Normandie. Elle permet de représenter ces zones sous forme de points géographiques."
+ },
  "0d5d953436ac": {
   "famille": "donnees",
   "id": "0d5d953436ac",
@@ -102,6 +132,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Ce projet contrôle l'hydroponie via des microcontrôleurs Arduino compatibles, sans dépendance au cloud. Il permet de gérer des systèmes de culture hydroponique."
+ },
+ "0ef306e889de": {
+  "famille": "modele",
+  "id": "0ef306e889de",
+  "interet": "Ce modèle peut servir à optimiser les outils de semis direct dans des sols secs, limitant l'érosion et améliorant l'implantation des cultures.",
+  "mots_cles": [
+   "semis direct",
+   "sols arides",
+   "mécanique des sols",
+   "outils agricoles",
+   "modélisation"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce modèle théorique étudie la mécanique de pénétration des socs de semoir et de coupe des résidus de paille pour le semis direct en sols arides. Il analyse les contraintes mécaniques rencontrées dans ces conditions."
  },
  "0f9f451e065a": {
   "famille": "logiciel",
@@ -176,6 +221,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Jeu de données et code d'analyse pour estimer la teneur en azote des feuilles de citrus par imagerie hyperspectrale. Il permet de développer des modèles de diagnostic foliaire non destructif."
  },
+ "16c9a94b7896": {
+  "famille": "donnees",
+  "id": "16c9a94b7896",
+  "interet": "Ce projet peut servir à analyser la répartition spatiale des cultures pour des études agronomiques ou de planification agricole.",
+  "mots_cles": [
+   "observation-terre",
+   "télédétection",
+   "sentinel-1",
+   "sentinel-2",
+   "cultures"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Jeu de données d'observation de la Terre pour identifier les types de cultures à partir d'images Sentinel-1 et Sentinel-2. Il permet de distinguer les parcelles cultivées selon des labels prédéfinis."
+ },
  "18a20cd89e62": {
   "famille": "donnees",
   "id": "18a20cd89e62",
@@ -190,6 +250,15 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Base de données et outil de suivi des cultures avec une API. Permet d'enregistrer et de gérer des informations sur les cultures."
+ },
+ "18ea20be8b16": {
+  "famille": "donnees",
+  "id": "18ea20be8b16",
+  "interet": "",
+  "mots_cles": [],
+  "pertinence": "inconnu",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
  },
  "1a4ed52f3226": {
   "famille": "donnees",
@@ -261,6 +330,21 @@
   "pertinence": "non",
   "redige_par": "mistral-small-latest",
   "resume": "Code source permettant le fonctionnement du réseau de stations météorologiques Iowa Environmental Mesonet. Il gère la collecte et la diffusion de données météorologiques."
+ },
+ "1d4dc6133fd6": {
+  "famille": "logiciel",
+  "id": "1d4dc6133fd6",
+  "interet": "",
+  "mots_cles": [
+   "agritech",
+   "distributed-systems",
+   "event-driven-architecture",
+   "nextjs",
+   "postgresql"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Infrastructure numérique open source pour la location de terres agricoles, la coordination des opérations agricoles en temps réel et les systèmes ruraux évolutifs."
  },
  "1d8fca9c8e9f": {
   "famille": "donnees",
@@ -562,6 +646,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Client Python pour interroger des flux de travail publics de profils de sols et de recommandations d'engrais au Maroc. Il permet d'accéder à ces données via une interface programmatique."
  },
+ "3ee198d9083e": {
+  "famille": "donnees",
+  "id": "3ee198d9083e",
+  "interet": "Ce projet peut servir à analyser la répartition spatiale des cultures pour des études agronomiques ou de planification agricole.",
+  "mots_cles": [
+   "observation-terre",
+   "télédétection",
+   "sentinel-2",
+   "cultures",
+   "kenya"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Jeu de données d'observation de la Terre pour identifier les types de cultures au Kenya à partir d'images Sentinel-2. Il permet de distinguer les parcelles cultivées selon des labels prédéfinis."
+ },
  "3fbddb3731f9": {
   "famille": "logiciel",
   "id": "3fbddb3731f9",
@@ -606,6 +705,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Ce projet compile des données ouvertes sur les substances actives des produits phytopharmaceutiques et leurs impacts documentés. Il permet d'accéder à des références issues de sources variées pour analyser les risques associés."
+ },
+ "4237ff353aae": {
+  "famille": "modele",
+  "id": "4237ff353aae",
+  "interet": "",
+  "mots_cles": [
+   "transformers",
+   "safetensors",
+   "text-generation",
+   "llama",
+   "modèle"
+  ],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
  },
  "42acfdb799ca": {
   "famille": "donnees",
@@ -799,6 +913,21 @@
   "redige_par": "mistral-small-latest",
   "resume": ""
  },
+ "5b5db8c15469": {
+  "famille": "logiciel",
+  "id": "5b5db8c15469",
+  "interet": "Fournit des informations météorologiques adaptées à la gestion des cultures.",
+  "mots_cles": [
+   "agriculture",
+   "frost-warning",
+   "open-meteo",
+   "peach",
+   "static-site"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Assistant météorologique agricole en ligne pour les producteurs de pêches de Pinggu, proposant des alertes de gel, des calculs de besoins en froid et des fenêtres de récolte."
+ },
  "5b95fc1b97f1": {
   "famille": "donnees",
   "id": "5b95fc1b97f1",
@@ -871,6 +1000,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Ce jeu de données propose des résultats standardisés du réseau FADN de l'UE, agrégés sur une grille et contrôlés pour éviter toute divulgation, pour la période 2008-2020. Il s'agit de données comptables harmonisées au niveau des exploitations agricoles européennes."
+ },
+ "67d533b81c03": {
+  "famille": "modele",
+  "id": "67d533b81c03",
+  "interet": "Permet d'orienter les choix culturaux en fonction des besoins énergétiques.",
+  "mots_cles": [
+   "calorique",
+   "cultures",
+   "indice",
+   "modélisation",
+   "sustainability"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Outil de calcul de l'indice de suitability calorique pour les cultures. Il évalue la pertinence des cultures en fonction de leur apport énergétique."
  },
  "6b45fa3a8093": {
   "famille": "logiciel",
@@ -1181,6 +1325,36 @@
   "redige_par": "mistral-small-latest",
   "resume": "Outil d'IA pour délimiter les parcelles agricoles en combinant des modèles de fondation géospatiaux, des embeddings et des données d'entraînement mondiales. Il produit des cartes précises des limites de champs."
  },
+ "88011d962f43": {
+  "famille": "logiciel",
+  "id": "88011d962f43",
+  "interet": "Permet de classer des cultures à partir d'images satellites.",
+  "mots_cles": [
+   "crop-classification",
+   "gis",
+   "google-earth-engine",
+   "sentinel-1",
+   "sentinel-2"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Étude comparative de cinq capteurs satellites et quatre classifieurs d'apprentissage automatique pour la classification des cultures pendant la saison Rabi dans le district de Jhansi en Inde."
+ },
+ "899775881e41": {
+  "famille": "modele",
+  "id": "899775881e41",
+  "interet": "",
+  "mots_cles": [
+   "transformers",
+   "safetensors",
+   "text-generation",
+   "llama",
+   "modèle"
+  ],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
  "8af57000f157": {
   "famille": "logiciel",
   "id": "8af57000f157",
@@ -1234,6 +1408,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Modèle de détection d'objets pour identifier des maladies sur des feuilles de plantes à partir d'images. Il localise et classe des maladies végétales en utilisant une architecture de type RT-DETR."
+ },
+ "8ccac6645686": {
+  "famille": "logiciel",
+  "id": "8ccac6645686",
+  "interet": "Permet d'identifier des maladies sur des cultures à partir d'images.",
+  "mots_cles": [
+   "détection-maladies",
+   "cnn",
+   "esp32-cam",
+   "streamlit",
+   "gemini-api"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Outil de détection de maladies végétales utilisant trois réseaux de neurones convolutifs pour analyser des photos de feuilles parmi 107 classes couvrant 27 cultures. Il propose des explications sur les prochaines étapes via une interface Streamlit."
  },
  "8f4ea6f2e79e": {
   "famille": "logiciel",
@@ -1337,6 +1526,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Ce projet recense les dépassements de seuils réglementaires en pesticides dans les cours d'eau dans le cadre de la stratégie Ecophyto 2030. Il identifie des territoires prioritaires pour des actions de réduction des pesticides."
+ },
+ "a3ae24c122b1": {
+  "famille": "logiciel",
+  "id": "a3ae24c122b1",
+  "interet": "Facilite la mutualisation des coûts d'équipement entre agriculteurs.",
+  "mots_cles": [
+   "coûts partagés",
+   "facturation",
+   "machines agricoles",
+   "mutualisation",
+   "tracteurs"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Logiciel de gestion partagée des coûts liés aux machines agricoles. Il permet de suivre l'utilisation des tracteurs et outils, calculer les parts de coûts et générer des factures conformes au droit fiscal autrichien."
  },
  "a6e26b50aa3c": {
   "famille": "materiel",
@@ -1767,6 +1971,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Fichiers de conception matérielle pour un système d'arrosage automatisé open-source. Il inclut les plans électroniques et mécaniques."
  },
+ "c5b5a41d7867": {
+  "famille": "donnees",
+  "id": "c5b5a41d7867",
+  "interet": "Ce projet peut servir à automatiser le contrôle des cultures soumises à des restrictions réglementaires.",
+  "mots_cles": [
+   "observation-terre",
+   "satellite",
+   "cultures-restrictives",
+   "arabie-saoudite",
+   "modèles"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ontologie et registre de modèles d'observation de la Terre pour la détection de cultures restreintes en Arabie Saoudite. Il structure les données et les modèles permettant d'identifier des cultures spécifiques."
+ },
  "c6999c288cc6": {
   "famille": "logiciel",
   "id": "c6999c288cc6",
@@ -1892,6 +2111,21 @@
   "id": "cc9e00b9dd1d",
   "interet": "",
   "mots_cles": [],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
+ "ce6d53c93419": {
+  "famille": "logiciel",
+  "id": "ce6d53c93419",
+  "interet": "",
+  "mots_cles": [
+   "cli",
+   "connections",
+   "crm",
+   "family",
+   "friends"
+  ],
   "pertinence": "non",
   "redige_par": "mistral-small-latest",
   "resume": ""
@@ -2104,6 +2338,15 @@
   "redige_par": "mistral-small-latest",
   "resume": "Modèle de fondation basé sur Vision Transformer (ViT) pour le blé, utilisant une approche en deux étapes avec entraînement enseignant-élève. Optimisé pour des tâches spécifiques via un module léger."
  },
+ "de0eabc972e1": {
+  "famille": "donnees",
+  "id": "de0eabc972e1",
+  "interet": "",
+  "mots_cles": [],
+  "pertinence": "inconnu",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
  "dfaa8673abfd": {
   "famille": "donnees",
   "id": "dfaa8673abfd",
@@ -2133,6 +2376,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Outil de calcul de la durée et du volume d'irrigation à partir de données d'évapotranspiration. Il détermine les besoins en eau des cultures."
+ },
+ "e3ff69d6567b": {
+  "famille": "donnees",
+  "id": "e3ff69d6567b",
+  "interet": "Contribue à l'amélioration des formations en agriculture durable.",
+  "mots_cles": [
+   "agriculture durable",
+   "culture écologique",
+   "formation",
+   "pédagogie",
+   "spécialistes agricoles"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Données sur les caractéristiques pédagogiques et psychologiques liées au développement de la culture écologique chez les futurs spécialistes agricoles. Ces données analysent les décisions quotidiennes des agronomes concernant le sol, l'eau, les produits chimiques et la biodiversité."
  },
  "e412ded7b3d6": {
   "famille": "modele",
@@ -2179,6 +2437,30 @@
   "redige_par": "mistral-small-latest",
   "resume": "Ce projet intègre les contrôleurs de tente de culture AC Infinity dans Home Assistant. Il permet de gérer des tentes de culture automatisées."
  },
+ "e75500e582e3": {
+  "famille": "donnees",
+  "id": "e75500e582e3",
+  "interet": "",
+  "mots_cles": [],
+  "pertinence": "inconnu",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
+ "ec4e06f00abe": {
+  "famille": "donnees",
+  "id": "ec4e06f00abe",
+  "interet": "Cette donnée peut servir à identifier des zones de conservation d'une espèce pollinisatrice utile à l'agriculture.",
+  "mots_cles": [
+   "abeille noire",
+   "conservatoire",
+   "normandie",
+   "données géographiques",
+   "pollinisation"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Cette donnée cartographique recense les conservatoires de l'abeille noire en Normandie par commune. Elle permet de localiser géographiquement ces zones dédiées à la préservation de cette race d'abeille."
+ },
  "ed382ff29f67": {
   "famille": "logiciel",
   "id": "ed382ff29f67",
@@ -2193,6 +2475,51 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Plateforme locale de gestion des exploitations agricoles intégrant champs, tâches, bétail, finances, conformité et météo. Elle centralise plusieurs systèmes européens de parcelles (SIGPAC, BRP, RPG, etc.)."
+ },
+ "f128a3168e57": {
+  "famille": "logiciel",
+  "id": "f128a3168e57",
+  "interet": "",
+  "mots_cles": [
+   "fiware-ngsi",
+   "iot-platform",
+   "digital-twin",
+   "cesiumjs",
+   "docker-compose"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Plateforme open source basée sur FIWARE NGSI-LD pour l'agriculture, l'industrie et l'environnement. Elle est modulaire et multi-locataires."
+ },
+ "f17a23460682": {
+  "famille": "donnees",
+  "id": "f17a23460682",
+  "interet": "Ce projet peut servir à analyser la répartition spatiale des cultures pour des études agronomiques ou de planification agricole.",
+  "mots_cles": [
+   "observation-terre",
+   "télédétection",
+   "sentinel-2",
+   "cultures",
+   "afrique-du-sud"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Jeu de données d'observation de la Terre pour identifier les types de cultures en Afrique du Sud à partir d'images Sentinel-2. Il permet de distinguer les parcelles cultivées selon des labels prédéfinis."
+ },
+ "f29a294eb6f5": {
+  "famille": "donnees",
+  "id": "f29a294eb6f5",
+  "interet": "Permet de localiser les zones de conservation d'une race d'abeilles locale.",
+  "mots_cles": [
+   "abeille noire",
+   "conservation",
+   "normandie",
+   "périmètres",
+   "race locale"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Données géographiques des périmètres des conservatoires de l'abeille noire en Normandie. Ces zones visent à préserver une race locale d'abeilles."
  },
  "f4f3083c6bc3": {
   "famille": "logiciel",
@@ -2312,6 +2639,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Rover agricole intelligent utilisant l'IA pour détecter les maladies des plantes, naviguer de manière autonome et surveiller en temps réel via IoT. Il combine vision par ordinateur et capteurs ESP32."
+ },
+ "fb9995ec3fe8": {
+  "famille": "donnees",
+  "id": "fb9995ec3fe8",
+  "interet": "Cette donnée peut servir à analyser la répartition spatiale des cultures et leur évolution dans le temps.",
+  "mots_cles": [
+   "télédétection",
+   "classification des cultures",
+   "afrique du sud",
+   "données satellitaires",
+   "agriculture"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce jeu de données repackagé classe les types de cultures en Afrique du Sud à partir d'images satellites. Il permet de distinguer les cultures présentes dans une région donnée."
  },
  "fc1d8039e3c7": {
   "famille": "donnees",
