@@ -1,0 +1,904 @@
+# Lot du radar OSFarm. Passer « publier » à false pour écarter une fiche,
+# corriger « resume » au besoin. La fusion de la pull request publie le reste.
+date: '2026-10-09'
+examines: 341
+retenus: 24
+rejets:
+  deja_vu: 187
+  deja_sur_le_site: 7
+  licence: 9
+  score: 0
+pannes: []
+candidats:
+- id: 8ccac6645686
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: Abhash-Chakraborty/AgroHealth
+  url: https://github.com/Abhash-Chakraborty/AgroHealth
+  description: 'Prototype plant-disease detector: three CNNs vote on a leaf photo (107 classes, 27 crops),
+    Gemini explains next steps. ESP32-CAM + Streamlit, April 2025.'
+  licence: mit
+  date_maj: '2026-10-06'
+  techno: Jupyter Notebook
+  popularite: 4
+  mots_cles:
+  - agriculture
+  - cnn
+  - ensemble-learning
+  - esp32-cam
+  - gemini-api
+  - keras
+  - opencv
+  - plant-disease-detection
+  score: 88
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, crop, plant-disease'
+  propose_le: '2026-10-09'
+  publier: true
+  resume: Outil de détection de maladies végétales utilisant trois réseaux de neurones convolutifs pour
+    analyser des photos de feuilles parmi 107 classes couvrant 27 cultures. Il propose des explications
+    sur les prochaines étapes via une interface Streamlit.
+  interet: Permet d'identifier des maladies sur des cultures à partir d'images.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - détection-maladies
+  - cnn
+  - esp32-cam
+  - streamlit
+  - gemini-api
+- id: 039285e58d9c
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: FuTseYi/CropLens
+  url: https://github.com/FuTseYi/CropLens
+  description: AI-powered crop disease detection with YOLO and optional DeepSeek assistance, built with
+    Vue 3, Spring Boot, and Flask.
+  licence: mit
+  date_maj: '2026-10-09'
+  techno: Vue
+  popularite: 40
+  mots_cles:
+  - agriculture
+  - computer-vision
+  - crop-disease
+  - crop-disease-detection
+  - cropdisease-detection
+  - deepseek
+  - flask
+  - object-detection
+  score: 85
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, crop'
+  propose_le: '2026-10-09'
+  publier: true
+  resume: Système de détection de maladies des cultures basé sur l'intelligence artificielle avec le modèle
+    YOLO et une assistance optionnelle par DeepSeek. Il est développé avec Vue 3, Spring Boot et Flask.
+  interet: Aide à repérer des maladies sur des cultures via l'analyse d'images.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - détection-maladies
+  - yolo
+  - deepseek
+  - vue3
+  - spring-boot
+- id: f128a3168e57
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: nkz-os/nkz
+  url: https://github.com/nkz-os/nkz
+  description: 'Open-source FIWARE NGSI-LD platform for agriculture, industry and environment. Multi-tenant,
+    modular. Live demo: nekazari.robotika.cloud | Docs: nkz-os.org'
+  licence: agpl-3.0
+  date_maj: '2026-10-09'
+  techno: Python
+  popularite: 4
+  mots_cles:
+  - agritech
+  - cesiumjs
+  - digital-twin
+  - docker-compose
+  - fiware-ngsi
+  - iot-platform
+  - keycloak
+  - multi-tenant
+  score: 85
+  raisons:
+  - licence agpl-3.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, agritech'
+  propose_le: '2026-10-09'
+  publier: true
+  resume: Plateforme open source basée sur FIWARE NGSI-LD pour l'agriculture, l'industrie et l'environnement.
+    Elle est modulaire et multi-locataires.
+  interet: ''
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - fiware-ngsi
+  - iot-platform
+  - digital-twin
+  - cesiumjs
+  - docker-compose
+- id: 1d4dc6133fd6
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: rajputomsingh/Fieldly
+  url: https://github.com/rajputomsingh/Fieldly
+  description: Building digital infrastructure for intelligent farmland leasing, realtime agricultural
+    operations, and scalable rural coordination systems.
+  licence: mit
+  date_maj: '2026-10-03'
+  techno: TypeScript
+  popularite: 124
+  mots_cles:
+  - agritech
+  - distributed-systems
+  - docker
+  - event-driven-architecture
+  - nextjs
+  - postgresql
+  - prisma
+  - pusher
+  score: 85
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agritech, rural'
+  propose_le: '2026-10-09'
+  publier: true
+  resume: Infrastructure numérique open source pour la location de terres agricoles, la coordination des
+    opérations agricoles en temps réel et les systèmes ruraux évolutifs.
+  interet: ''
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - agritech
+  - distributed-systems
+  - event-driven-architecture
+  - nextjs
+  - postgresql
+- id: 88011d962f43
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: 202519003/multisensor-crop-classification-jhansi
+  url: https://github.com/202519003/multisensor-crop-classification-jhansi
+  description: Comparative study of 5 satellite sensors (Sentinel-1, Sentinel-2, Landsat-8, MODIS, S1+S2
+    fusion) and 4 ML classifiers (RF, CART, GTB, SVM) for Rabi-season crop classification in Jhansi District,
+    India - built on Google Earth Engine with 1,941 field-verified ground truth points.
+  licence: mit
+  date_maj: '2026-09-05'
+  techno: ''
+  popularite: 3
+  mots_cles:
+  - agriculture
+  - crop-classification
+  - gis
+  - google-earth-engine
+  - india
+  - landsat-8
+  - machine-learning
+  - modis
+  score: 85
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, crop, gis'
+  propose_le: '2026-10-09'
+  publier: true
+  resume: Étude comparative de cinq capteurs satellites et quatre classifieurs d'apprentissage automatique
+    pour la classification des cultures pendant la saison Rabi dans le district de Jhansi en Inde.
+  interet: Permet de classer des cultures à partir d'images satellites.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - crop-classification
+  - gis
+  - google-earth-engine
+  - sentinel-1
+  - sentinel-2
+- id: 5b5db8c15469
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: DearDragon233/taoyuan-weather-assistant
+  url: https://github.com/DearDragon233/taoyuan-weather-assistant
+  description: 面向平谷桃农的免费在线农事气象小助手：冻害预警/需冷量/采收窗口/病害风险/自动农事方案 | Open-Meteo 数据 | 零依赖单文件
+  licence: mit
+  date_maj: '2026-10-08'
+  techno: HTML
+  popularite: 5
+  mots_cles:
+  - agriculture
+  - frost-warning
+  - open-meteo
+  - peach
+  - pinggu
+  - static-site
+  - weather
+  score: 83
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, meteo, weather'
+  propose_le: '2026-10-09'
+  publier: true
+  resume: Assistant météorologique agricole en ligne pour les producteurs de pêches de Pinggu, proposant
+    des alertes de gel, des calculs de besoins en froid et des fenêtres de récolte.
+  interet: Fournit des informations météorologiques adaptées à la gestion des cultures.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - agriculture
+  - frost-warning
+  - open-meteo
+  - peach
+  - static-site
+- id: 67d533b81c03
+  famille: modele
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: ozak/Caloric-Suitability-Index
+  url: https://github.com/ozak/Caloric-Suitability-Index
+  description: Caloric Suitability Index
+  licence: cc-by-sa-4.0
+  date_maj: '2026-10-06'
+  techno: HTML
+  popularite: 13
+  mots_cles:
+  - agricultural-modelling
+  - agriculture
+  - agriculture-research
+  - caloric-suitability-indices
+  - crop
+  - csi
+  - cultivation
+  - data
+  score: 83
+  raisons:
+  - licence cc-by-sa-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, crop'
+  propose_le: '2026-10-09'
+  publier: true
+  resume: Outil de calcul de l'indice de suitability calorique pour les cultures. Il évalue la pertinence
+    des cultures en fonction de leur apport énergétique.
+  interet: Permet d'orienter les choix culturaux en fonction des besoins énergétiques.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  famille_initiale: logiciel
+  mots_cles_fr:
+  - calorique
+  - cultures
+  - indice
+  - modélisation
+  - sustainability
+- id: a3ae24c122b1
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: d0linger/Treckrr
+  url: https://github.com/d0linger/Treckrr
+  description: 'Self-hosted cost-sharing ledger for agricultural machinery: book tractors and implements,
+    calculate shared rates, and issue tax-compliant Austrian invoices.'
+  licence: mit
+  date_maj: '2026-10-08'
+  techno: Go
+  popularite: 3
+  mots_cles:
+  - agricultural-machinery
+  - agriculture
+  - austrian-tax
+  - cost-sharing
+  - docker
+  - farm-management
+  - golang
+  - invoicing
+  score: 82
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, tractor'
+  propose_le: '2026-10-09'
+  publier: true
+  resume: Logiciel de gestion partagée des coûts liés aux machines agricoles. Il permet de suivre l'utilisation
+    des tracteurs et outils, calculer les parts de coûts et générer des factures conformes au droit fiscal
+    autrichien.
+  interet: Facilite la mutualisation des coûts d'équipement entre agriculteurs.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - coûts partagés
+  - facturation
+  - machines agricoles
+  - mutualisation
+  - tracteurs
+- id: ce6d53c93419
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-elevage
+  titre: roma-glushko/frens
+  url: https://github.com/roma-glushko/frens
+  description: 🤝 Build friendships that last.
+  licence: apache-2.0
+  date_maj: '2026-07-23'
+  techno: Go
+  popularite: 5
+  mots_cles:
+  - cli
+  - connections
+  - crm
+  - dairy
+  - family
+  - friends
+  - friendship
+  - golang-application
+  score: 74
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : dairy'
+  propose_le: '2026-10-09'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - cli
+  - connections
+  - crm
+  - family
+  - friends
+- id: e3ff69d6567b
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: PEDAGOGICAL AND PSYCHOLOGICAL FEATURES OF DEVELOPING ECOLOGICAL CULTURE IN FUTURE AGRICULTURAL
+    SPECIALISTS
+  url: https://doi.org/10.5281/zenodo.23260106
+  description: '&nbsp;Agricultural specialists make daily decisions about soil, water, chemicals and biodiversity,
+    so the ecological culture of future agronomists, land managers and agricultural engineers directly
+    shapes the sustainability of the sector. Higher education, however, often transfers ecological knowledge
+    without developing the values, motivation and behavioral habits that turn knowledge into practice'
+  licence: cc-by-4.0
+  date_maj: '2026-10-09'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - ecological culture; agricultural education; pedagogical psychology; environmental attitudes; sustainable
+    agriculture; higher education
+  score: 92
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, culture, soil, biodiversity, sustainability, water'
+  propose_le: '2026-10-09'
+  publier: true
+  resume: Données sur les caractéristiques pédagogiques et psychologiques liées au développement de la
+    culture écologique chez les futurs spécialistes agricoles. Ces données analysent les décisions quotidiennes
+    des agronomes concernant le sol, l'eau, les produits chimiques et la biodiversité.
+  interet: Contribue à l'amélioration des formations en agriculture durable.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - agriculture durable
+  - culture écologique
+  - formation
+  - pédagogie
+  - spécialistes agricoles
+- id: 18ea20be8b16
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: 'ETC benchmarking tables (Project "Carbon farming Certification system: The transition towards
+    result-based agriculture sector (CarbFarmS)"'
+  url: https://doi.org/10.5281/zenodo.23219432
+  description: ''
+  licence: cc-by-4.0
+  date_maj: '2026-10-08'
+  techno: ''
+  popularite: 0
+  mots_cles: []
+  score: 86
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farming, carbon'
+  propose_le: '2026-10-09'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: inconnu
+  redige_par: mistral-small-latest
+- id: f29a294eb6f5
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: Conservatoires de l'abeille noire (périmètres) - Normandie
+  url: https://www.data.gouv.fr/datasets/conservatoires-de-labeille-noire-perimetres-normandie
+  description: 'Le périmètre des conservatoires de l''abeille noire en Normandie. Cinq conservatoires
+    existent en Normandie : Calvados, Lisieux, Eure, Orne et Seine-Maritime. La donnée n''entre pas dans
+    le cadre de la directive Inspire. **Contexte de collecte** Couche réalisée pour les besoins cartographiques
+    du service de la valorisation des produits agricoles régionaux de la Région Normandie, permettant
+    de visual'
+  licence: etalab-2.0
+  date_maj: '2026-09-26'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - developpement-durable
+  - donnees-de-reference
+  - donnees-ouvertes
+  - donnees-regionales-de-reference
+  - environnement
+  - espaces-naturels
+  - mesures-agro-environnementales
+  score: 85
+  raisons:
+  - licence etalab-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agricole, agriculture'
+  propose_le: '2026-10-09'
+  publier: true
+  resume: Données géographiques des périmètres des conservatoires de l'abeille noire en Normandie. Ces
+    zones visent à préserver une race locale d'abeilles.
+  interet: Permet de localiser les zones de conservation d'une race d'abeilles locale.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - abeille noire
+  - conservation
+  - normandie
+  - périmètres
+  - race locale
+- id: ec4e06f00abe
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: Conservatoires de l'abeille noire (composition communale) - Normandie
+  url: https://www.data.gouv.fr/datasets/conservatoires-de-labeille-noire-composition-communale-normandie
+  description: 'La composition communale des conservatoires de l''abeille noire en Normandie. Cinq conservatoires
+    existent en Normandie : Calvados, Livarot, Eure, Orne et Seine-Maritime. La donnée n''entre pas dans
+    le cadre de la directive Inspire." **Contexte de collecte** Couche réalisée pour les besoins cartographiques
+    du service de la valorisation des produits agricoles régionaux de la Région Normandie, permett'
+  licence: etalab-2.0
+  date_maj: '2026-09-26'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - developpement-durable
+  - donnees-de-reference
+  - donnees-ouvertes
+  - donnees-regionales-de-reference
+  - environnement
+  - espaces-naturels
+  - mesures-agro-environnementales
+  score: 85
+  raisons:
+  - licence etalab-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agricole, agriculture'
+  propose_le: '2026-10-09'
+  publier: true
+  resume: Cette donnée cartographique recense les conservatoires de l'abeille noire en Normandie par commune.
+    Elle permet de localiser géographiquement ces zones dédiées à la préservation de cette race d'abeille.
+  interet: Cette donnée peut servir à identifier des zones de conservation d'une espèce pollinisatrice
+    utile à l'agriculture.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - abeille noire
+  - conservatoire
+  - normandie
+  - données géographiques
+  - pollinisation
+- id: 081576686688
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: Conservatoires de l'abeille noire (centroïdes) - Normandie
+  url: https://www.data.gouv.fr/datasets/conservatoires-de-labeille-noire-centroides-normandie
+  description: 'Le centroïde des conservatoires de l''abeille noire en Normandie. Cinq conservatoires
+    existent en Normandie : Calvados, Livarot, Eure, Orne et Seine-Maritime. La donnée n''entre pas dans
+    le cadre de la directive Inspire. **Contexte de collecte** Couche réalisée pour les besoins cartographiques
+    du service de la valorisation des produits agricoles régionaux de la Région Normandie, permettant
+    de visual'
+  licence: etalab-2.0
+  date_maj: '2026-09-26'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - developpement-durable
+  - donnees-de-reference
+  - donnees-ouvertes
+  - donnees-regionales-de-reference
+  - environnement
+  - espaces-naturels
+  - mesures-agro-environnementales
+  score: 85
+  raisons:
+  - licence etalab-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agricole, agriculture'
+  propose_le: '2026-10-09'
+  publier: true
+  resume: Cette donnée cartographique fournit les centroïdes des conservatoires de l'abeille noire en
+    Normandie. Elle permet de représenter ces zones sous forme de points géographiques.
+  interet: Cette donnée peut servir à analyser la répartition spatiale des zones de conservation d'une
+    espèce pollinisatrice.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - abeille noire
+  - conservatoire
+  - normandie
+  - centroïde
+  - données géographiques
+- id: e75500e582e3
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: 'Ontario Topsoil Sampling Project: Soil Health Baseline Study'
+  url: https://doi.org/10.5281/zenodo.22681515
+  description: 'In 2019, the Ontario Ministry of Agriculture, Food and Agribusiness (OMAFA) launched the&nbsp;
+    Ontario Topsoil Sampling Project (OTSP). The aim of the OTSP was to better understand the variability
+    and range of agricultural topsoil properties and soil health indicators by collecting up&nbsp;to-date
+    soil information throughout the province. A key goal was to establish baseline&nbsp; information for '
+  licence: cc-by-4.0
+  date_maj: '2026-10-08'
+  techno: ''
+  popularite: 0
+  mots_cles: []
+  score: 85
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, soil, food'
+  propose_le: '2026-10-09'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: inconnu
+  redige_par: mistral-small-latest
+- id: 0ef306e889de
+  famille: modele
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: THEORETICAL MODELING OF FURROW OPENER SOIL PENETRATION AND STRAW-CUTTING MECHANICS FOR DIRECT
+    SEEDING IN ARID SOILS
+  url: https://doi.org/10.5281/zenodo.23219789
+  description: 'Abstract&mdash; In non-irrigated arid and semi-arid agro-ecological zones, establishing
+    secondary crops immediately following winter wheat harvest is essential for soil conservation and
+    crop intensification. However, direct row seeding into dry, unplowed soils faces two severe mechanical
+    challenges: extreme soil penetration resistance (1.5&ndash;3.5 MPa) and the presence of dense surface
+    wheat str'
+  licence: cc-by-4.0
+  date_maj: '2026-10-07'
+  techno: ''
+  popularite: 0
+  mots_cles: []
+  score: 85
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : crop, harvest, soil'
+  propose_le: '2026-10-09'
+  publier: true
+  resume: Ce modèle théorique étudie la mécanique de pénétration des socs de semoir et de coupe des résidus
+    de paille pour le semis direct en sols arides. Il analyse les contraintes mécaniques rencontrées dans
+    ces conditions.
+  interet: Ce modèle peut servir à optimiser les outils de semis direct dans des sols secs, limitant l'érosion
+    et améliorant l'implantation des cultures.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  famille_initiale: donnees
+  mots_cles_fr:
+  - semis direct
+  - sols arides
+  - mécanique des sols
+  - outils agricoles
+  - modélisation
+- id: de0eabc972e1
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: THE YIELD AND AGROTECHNICAL SIGNIFICANCE OF CHINESE-BRED HOT PEPPER (CAPSICUM ANNUUM L.) HYBRIDS
+    UNDER THE CONDITIONS OF THE ANDIJAN REGION OF UZBEKISTAN
+  url: https://doi.org/10.5281/zenodo.23218917
+  description: This article highlights the growing global and domestic interest in, and demand for, the
+    cultivation of hot pepper ( Capsicum annuum L.). The study was conducted in the soil and climatic
+    conditions of the Oltinkol, Jalaquduq, and Kurgontepa districts of the Andijan region. In the experiments,
+    the Chinese-bred hybrid varieties "Hongkong 23," "Hongkong 25," and "Hongkong 26" were grown using
+    drip ir
+  licence: cc-by-4.0
+  date_maj: '2026-10-07'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - Hot pepper (Capsicum annuum L.), hybrid varieties, drip irrigation, planting under plastic mulch,
+    productivity, soil moisture, agrotechnology.
+  score: 85
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : irrigation, soil, yield'
+  propose_le: '2026-10-09'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: inconnu
+  redige_par: mistral-small-latest
+- id: fb9995ec3fe8
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: isp-uv-es/south-africa-crop-type-taco
+  url: https://huggingface.co/datasets/isp-uv-es/south-africa-crop-type-taco
+  description: South Africa Crop Type Competition This is a repackaging, not a new dataset. It is South
+    Africa Crop Type Competition by Western Cape Department of Agriculture, Radiant Earth Foundation,
+    converted to TACO. Pixel values and labels are kept as released except where the description be
+  licence: cc-by-sa-4.0
+  date_maj: '2026-10-08'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - earth-observation
+  - remote-sensing
+  - taco
+  score: 85
+  raisons:
+  - licence cc-by-sa-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, crop, remote-sensing'
+  propose_le: '2026-10-09'
+  publier: true
+  resume: Ce jeu de données repackagé classe les types de cultures en Afrique du Sud à partir d'images
+    satellites. Il permet de distinguer les cultures présentes dans une région donnée.
+  interet: Cette donnée peut servir à analyser la répartition spatiale des cultures et leur évolution
+    dans le temps.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - télédétection
+  - classification des cultures
+  - afrique du sud
+  - données satellitaires
+  - agriculture
+- id: 3ee198d9083e
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: isp-uv-es/cv4a-kenya-crop-type-taco
+  url: https://huggingface.co/datasets/isp-uv-es/cv4a-kenya-crop-type-taco
+  description: CV4A Kenya Crop Type Competition This is a repackaging, not a new dataset. It is CV4A Kenya
+    Crop Type Competition by Radiant Earth Foundation / PlantVillage, Computer Vision for Agriculture
+    (CV4A) Workshop, ICLR 2020, ESA Copernicus / Sentinel-2, converted to TACO. Pixel values and
+  licence: cc-by-sa-4.0
+  date_maj: '2026-10-08'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - earth-observation
+  - remote-sensing
+  - taco
+  score: 85
+  raisons:
+  - licence cc-by-sa-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, crop, remote-sensing'
+  propose_le: '2026-10-09'
+  publier: true
+  resume: Jeu de données d'observation de la Terre pour identifier les types de cultures au Kenya à partir
+    d'images Sentinel-2. Il permet de distinguer les parcelles cultivées selon des labels prédéfinis.
+  interet: Ce projet peut servir à analyser la répartition spatiale des cultures pour des études agronomiques
+    ou de planification agricole.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - observation-terre
+  - télédétection
+  - sentinel-2
+  - cultures
+  - kenya
+- id: f17a23460682
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: isp-uv-es/geobench-m-sa-crop-type-taco
+  url: https://huggingface.co/datasets/isp-uv-es/geobench-m-sa-crop-type-taco
+  description: GEO-Bench m-SA-crop-type This is a repackaging, not a new dataset. It is GEO-Bench m-SA-crop-type
+    by Radiant Earth Foundation / Western Cape Department of Agriculture, ESA Copernicus / Sentinel-2,
+    ServiceNow Research (GEO-Bench), converted to TACO. Pixel values and labels are kept
+  licence: cc-by-sa-4.0
+  date_maj: '2026-10-08'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - earth-observation
+  - remote-sensing
+  - taco
+  score: 85
+  raisons:
+  - licence cc-by-sa-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, crop, remote-sensing'
+  propose_le: '2026-10-09'
+  publier: true
+  resume: Jeu de données d'observation de la Terre pour identifier les types de cultures en Afrique du
+    Sud à partir d'images Sentinel-2. Il permet de distinguer les parcelles cultivées selon des labels
+    prédéfinis.
+  interet: Ce projet peut servir à analyser la répartition spatiale des cultures pour des études agronomiques
+    ou de planification agricole.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - observation-terre
+  - télédétection
+  - sentinel-2
+  - cultures
+  - afrique-du-sud
+- id: c5b5a41d7867
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: CodeNinjatools/restricted-crop-monitoring-saudi-arabia-ontology
+  url: https://huggingface.co/datasets/CodeNinjatools/restricted-crop-monitoring-saudi-arabia-ontology
+  description: 'Restricted crop earth observation ontology and model register for agricultural enforcement
+    The object model and the model and equipment register from Fodder Watch: Earth Observation That Turns
+    Restricted-Crop Detections Into Enforceable Case Files, an open reference architecture by Co'
+  licence: cc-by-4.0
+  date_maj: '2026-10-06'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - physical-ai
+  - sovereign-ai
+  - saudi-arabia
+  - earth-observation
+  - satellite-imagery
+  - agriculture
+  - water-conservation
+  - reference-architecture
+  score: 82
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, crop'
+  propose_le: '2026-10-09'
+  publier: true
+  resume: Ontologie et registre de modèles d'observation de la Terre pour la détection de cultures restreintes
+    en Arabie Saoudite. Il structure les données et les modèles permettant d'identifier des cultures spécifiques.
+  interet: Ce projet peut servir à automatiser le contrôle des cultures soumises à des restrictions réglementaires.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - observation-terre
+  - satellite
+  - cultures-restrictives
+  - arabie-saoudite
+  - modèles
+- id: 16c9a94b7896
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: isp-uv-es/cropharvest-taco
+  url: https://huggingface.co/datasets/isp-uv-es/cropharvest-taco
+  description: CropHarvest This is a repackaging, not a new dataset. It is CropHarvest by NASA Harvest
+    / University of Maryland (Tseng et al.), ESA Copernicus / Sentinel-1 and Sentinel-2, converted to
+    TACO. Pixel values and labels are kept as released except where the description below says other
+  licence: cc-by-sa-4.0
+  date_maj: '2026-10-08'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - earth-observation
+  - remote-sensing
+  - taco
+  score: 76
+  raisons:
+  - licence cc-by-sa-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : harvest, remote-sensing'
+  propose_le: '2026-10-09'
+  publier: true
+  resume: Jeu de données d'observation de la Terre pour identifier les types de cultures à partir d'images
+    Sentinel-1 et Sentinel-2. Il permet de distinguer les parcelles cultivées selon des labels prédéfinis.
+  interet: Ce projet peut servir à analyser la répartition spatiale des cultures pour des études agronomiques
+    ou de planification agricole.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - observation-terre
+  - télédétection
+  - sentinel-1
+  - sentinel-2
+  - cultures
+- id: 899775881e41
+  famille: modele
+  relecteur: ionosphere
+  source: hf-modeles-agri
+  titre: agricf/phi-3.5-mini-soilqa-agriculture
+  url: https://huggingface.co/agricf/phi-3.5-mini-soilqa-agriculture
+  description: transformers safetensors text-generation-inference unsloth llama trl en endpoints_compatible
+  licence: apache-2.0
+  date_maj: '2026-03-18'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - transformers
+  - safetensors
+  - text-generation-inference
+  - unsloth
+  - llama
+  - trl
+  - en
+  - endpoints_compatible
+  score: 75
+  raisons:
+  - licence apache-2.0
+  - actif (moins d'un an)
+  - 'vocabulaire : agriculture, soil'
+  propose_le: '2026-10-09'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - transformers
+  - safetensors
+  - text-generation
+  - llama
+  - modèle
+- id: 4237ff353aae
+  famille: modele
+  relecteur: ionosphere
+  source: hf-modeles-agri
+  titre: agricf/phi-3.5-mini-croprec-agriculture
+  url: https://huggingface.co/agricf/phi-3.5-mini-croprec-agriculture
+  description: transformers safetensors text-generation-inference unsloth llama trl en endpoints_compatible
+  licence: apache-2.0
+  date_maj: '2026-03-16'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - transformers
+  - safetensors
+  - text-generation-inference
+  - unsloth
+  - llama
+  - trl
+  - en
+  - endpoints_compatible
+  score: 75
+  raisons:
+  - licence apache-2.0
+  - actif (moins d'un an)
+  - 'vocabulaire : agriculture, crop'
+  propose_le: '2026-10-09'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - transformers
+  - safetensors
+  - text-generation
+  - llama
+  - modèle
+resume_genere_le: 2026-10-09 11:42
