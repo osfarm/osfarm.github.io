@@ -88,6 +88,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Échantillonneur d'eau automatisé à faible coût, connecté par IoT, conçu pour la recherche sur la qualité de l'eau en temps quasi réel. Il permet de mesurer des paramètres de l'eau sur le terrain."
  },
+ "07dd34993119": {
+  "famille": "donnees",
+  "id": "07dd34993119",
+  "interet": "Permet d'analyser les liens entre climat, altitude et rendements agricoles.",
+  "mots_cles": [
+   "éthiopie",
+   "climat",
+   "rendement",
+   "culture",
+   "altitude"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce jeu de données couvre 34 ans de données climatiques et de rendements de cultures (Teff, Blé, Maïs) en Éthiopie, organisées par zones altitudinales agro-écologiques. Il inclut des indicateurs climatiques nationaux et l'indice océanique Niño 3.4."
+ },
  "081576686688": {
   "famille": "donnees",
   "id": "081576686688",
@@ -102,6 +117,36 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Cette donnée cartographique fournit les centroïdes des conservatoires de l'abeille noire en Normandie. Elle permet de représenter ces zones sous forme de points géographiques."
+ },
+ "083db8746f76": {
+  "famille": "donnees",
+  "id": "083db8746f76",
+  "interet": "Permet de visualiser les zones d'intervention pour des projets de développement territorial en aquaculture.",
+  "mots_cles": [
+   "pêche",
+   "aquaculture",
+   "territoires",
+   "stratégie-commune",
+   "normandie"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Périmètres des groupes d'action locale pêche et aquaculture en Normandie. Ces territoires associent acteurs publics et privés autour d'une stratégie commune."
+ },
+ "0ce570823952": {
+  "famille": "logiciel",
+  "id": "0ce570823952",
+  "interet": "Surveillance automatisée des cultures pour optimiser les interventions.",
+  "mots_cles": [
+   "surveillance",
+   "cultures",
+   "robotique",
+   "analyse de données",
+   "agriculture"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "AgroVision est une plateforme de surveillance intelligente des cultures combinant logiciel, analyse de données et simulation par robot. Elle permet de suivre l'état des cultures en temps réel."
  },
  "0d5d953436ac": {
   "famille": "donnees",
@@ -273,6 +318,21 @@
   "redige_par": "mistral-small-latest",
   "resume": ""
  },
+ "1ae6a9917b33": {
+  "famille": "logiciel",
+  "id": "1ae6a9917b33",
+  "interet": "Facilite l'intégration et la compatibilité des systèmes électroniques dans les outils agricoles.",
+  "mots_cles": [
+   "iso11783",
+   "isobus",
+   "j1939",
+   "protocoles",
+   "rust"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Implémentation en Rust des protocoles ISO11783 (ISOBUS) et J1939 utilisés dans les équipements agricoles. Permet l'interopérabilité et la communication entre machines agricoles connectées."
+ },
  "1b8a2abb9b86": {
   "famille": "modele",
   "id": "1b8a2abb9b86",
@@ -390,6 +450,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Balance connectée pour ruches utilisant un ESP32, mesurant le poids et la température avec transmission via Wi-Fi. Projet DIY open source."
+ },
+ "20dd4d6ef068": {
+  "famille": "donnees",
+  "id": "20dd4d6ef068",
+  "interet": "Permet de localiser et suivre les actions de conservation des races animales locales.",
+  "mots_cles": [
+   "races-patrimoniales",
+   "normandie",
+   "cartographie",
+   "préservation",
+   "animaux"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Cartographie des sites en Normandie présentant des animaux de races patrimoniales normandes. Cette couche géographique valorise le plan de préservation de ces races."
  },
  "21072f6bce2a": {
   "famille": "logiciel",
@@ -586,6 +661,32 @@
   "redige_par": "mistral-small-latest",
   "resume": "Données annuelles de ventes de pesticides par département en France, déclarées par les distributeurs. Elles permettent de suivre les ventes sur le territoire."
  },
+ "3781fc1cd1e3": {
+  "famille": "logiciel",
+  "id": "3781fc1cd1e3",
+  "interet": "",
+  "mots_cles": [
+   "egalim",
+   "restauration collective"
+  ],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
+ "37da7fedc520": {
+  "famille": "logiciel",
+  "id": "37da7fedc520",
+  "interet": "Soutient l'échange d'informations et la collaboration dans les pratiques agroécologiques.",
+  "mots_cles": [
+   "agroécologie",
+   "collaboration",
+   "réseau social",
+   "wiki"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Plateforme collaborative dédiée à l'agroécologie, combinant un wiki et un réseau social. Permet le partage de connaissances et la coordination entre acteurs."
+ },
  "396b20da67fd": {
   "famille": "logiciel",
   "id": "396b20da67fd",
@@ -600,6 +701,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Bibliothèque logicielle pour planifier les trajectoires de couverture des véhicules agricoles autonomes. Elle optimise les déplacements pour couvrir efficacement les champs."
+ },
+ "3a9656ecaf79": {
+  "famille": "donnees",
+  "id": "3a9656ecaf79",
+  "interet": "Aide à évaluer les risques de transfert de polluants vers les milieux aquatiques.",
+  "mots_cles": [
+   "ruissellement",
+   "eau",
+   "agriculture",
+   "haie",
+   "morbihan"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Cet indice cartographie le risque de ruissellement des écoulements superficiels vers les cours d'eau en zone agricole, calculé par maille de 1 hectare dans le Morbihan. Il s'appuie sur des critères comme la pente du terrain et la présence de haies."
  },
  "3b6b49498e58": {
   "famille": "modele",
@@ -751,6 +867,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Ce système permet de surveiller et contrôler à distance le climat dans les serres et cultures indoor. Il est compatible avec divers capteurs et interrupteurs intelligents accessibles en ligne de commande."
  },
+ "45cd803b3312": {
+  "famille": "donnees",
+  "id": "45cd803b3312",
+  "interet": "Facilite l'identification des sources d'approvisionnement pour des circuits courts alimentaires.",
+  "mots_cles": [
+   "fournisseurs",
+   "restauration-scolaire",
+   "produits-locaux",
+   "normandie",
+   "alimentation"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Liste des fournisseurs d'aliments pour la restauration scolaire en Normandie. Cette donnée s'inscrit dans un plan visant à augmenter la part de produits locaux."
+ },
  "4ad58db7a5f1": {
   "famille": "logiciel",
   "id": "4ad58db7a5f1",
@@ -765,6 +896,15 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Plugin WordPress permettant de calculer des données liées aux cultures et à l'agriculture. Il propose des outils de calcul spécifiques à ces domaines."
+ },
+ "4b1fd04ac274": {
+  "famille": "donnees",
+  "id": "4b1fd04ac274",
+  "interet": "",
+  "mots_cles": [],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
  },
  "4b34f19545cd": {
   "famille": "logiciel",
@@ -1000,6 +1140,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Ce jeu de données propose des résultats standardisés du réseau FADN de l'UE, agrégés sur une grille et contrôlés pour éviter toute divulgation, pour la période 2008-2020. Il s'agit de données comptables harmonisées au niveau des exploitations agricoles européennes."
+ },
+ "653d64fb13e0": {
+  "famille": "logiciel",
+  "id": "653d64fb13e0",
+  "interet": "Suivi des ruches et gestion des activités apicoles.",
+  "mots_cles": [
+   "apiculture",
+   "ruches",
+   "suivi",
+   "journal",
+   "gestion"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "BEEP est une application web pour le suivi des ruches et la gestion des ruchers. Elle permet de consigner les observations et activités liées aux abeilles."
  },
  "67d533b81c03": {
   "famille": "modele",
@@ -1497,6 +1652,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Données sur les émissions de N2O du sol pendant la période post-récolte des cultures méditerranéennes. Ces données visent à quantifier l'impact des pratiques agricoles sur les émissions de gaz à effet de serre."
  },
+ "998da46bf898": {
+  "famille": "logiciel",
+  "id": "998da46bf898",
+  "interet": "",
+  "mots_cles": [
+   "analyse décisionnelle",
+   "bayésien",
+   "cours",
+   "statistiques",
+   "université"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Cours universitaire sur l'analyse décisionnelle appliquée à l'agriculture, incluant des supports de cours et des matériaux pédagogiques. Aborde les méthodes bayésiennes et l'agroécologie."
+ },
  "9a6daf1af2ab": {
   "famille": "donnees",
   "id": "9a6daf1af2ab",
@@ -1511,6 +1681,45 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Jeu de données sémantique à grande échelle pour la cartographie des adventices à partir d'imagerie multispectrale aérienne. Utilise des réseaux de neurones profonds pour le désherbage de précision."
+ },
+ "9c815bd68155": {
+  "famille": "logiciel",
+  "id": "9c815bd68155",
+  "interet": "Gestion automatisée des conditions de culture en hydroponie.",
+  "mots_cles": [
+   "hydroponie",
+   "automatisation",
+   "iot",
+   "gestion de croissance",
+   "embedded"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Hydro0x01 est un système open source de contrôle IoT pour jardins hydroponiques. Il permet une gestion automatisée de la croissance des plantes."
+ },
+ "9d6da6457b7a": {
+  "famille": "donnees",
+  "id": "9d6da6457b7a",
+  "interet": "",
+  "mots_cles": [
+   "video",
+   "tool-use",
+   "agentic",
+   "sft",
+   "preflight"
+  ],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
+ "9eadc0129d37": {
+  "famille": "donnees",
+  "id": "9eadc0129d37",
+  "interet": "",
+  "mots_cles": [],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
  },
  "9f1110fd8228": {
   "famille": "donnees",
@@ -1622,6 +1831,34 @@
   "pertinence": "non",
   "redige_par": "mistral-small-latest",
   "resume": ""
+ },
+ "ac41a6b6b9d3": {
+  "famille": "logiciel",
+  "id": "ac41a6b6b9d3",
+  "interet": "Facilite le développement d'applications pour l'agriculture de précision sur plateformes matérielles légères.",
+  "mots_cles": [
+   "arduino",
+   "agriculture de précision",
+   "systèmes embarqués"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Bibliothèque logicielle pour Arduino Edge Control, dédiée aux systèmes embarqués en agriculture de précision. Permet le contrôle et la gestion de capteurs et actionneurs."
+ },
+ "ace19c3fb23b": {
+  "famille": "modele",
+  "id": "ace19c3fb23b",
+  "interet": "Permet d'identifier automatiquement des maladies végétales à partir d'images.",
+  "mots_cles": [
+   "classification-images",
+   "maladies-plantes",
+   "dinov2",
+   "vision-par-ordinateur",
+   "agriculture"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Modèle de classification d'images pour la détection de maladies des plantes basé sur DINOv2. Compatible avec des endpoints de vision par ordinateur."
  },
  "ae45ebbdafc2": {
   "famille": "donnees",
@@ -1830,6 +2067,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Données annuelles d'achats de pesticides par code postal en France, déclarées par les distributeurs. Elles permettent de suivre les achats sur le territoire."
  },
+ "bb123e95962f": {
+  "famille": "logiciel",
+  "id": "bb123e95962f",
+  "interet": "Contribue à la lutte contre les espèces invasives dans les écosystèmes agricoles.",
+  "mots_cles": [
+   "frelon asiatique",
+   "ia",
+   "machine learning",
+   "piège",
+   "vespa velutina"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Outil d'intelligence artificielle conçu pour détecter et piéger les frelons asiatiques tout en épargnant les espèces natives. Utilise des modèles de machine learning pour identifier les cibles."
+ },
  "bbe91a559831": {
   "famille": "matériel",
   "id": "bbe91a559831",
@@ -1853,6 +2105,21 @@
   "pertinence": "inconnu",
   "redige_par": "mistral-small-latest",
   "resume": ""
+ },
+ "bc58189f95bd": {
+  "famille": "logiciel",
+  "id": "bc58189f95bd",
+  "interet": "Surveillance automatisée des paramètres aquatiques pour l'aquaculture.",
+  "mots_cles": [
+   "aquaculture",
+   "surveillance",
+   "eau",
+   "capteurs",
+   "automatisation"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "FishMaster est un système de surveillance en temps réel des conditions de l'eau pour aquariums intelligents. Il utilise des capteurs et une interface pour suivre les paramètres environnementaux."
  },
  "bf026b463fac": {
   "famille": "logiciel",
@@ -2190,6 +2457,30 @@
   "redige_par": "mistral-small-latest",
   "resume": "Bibliothèque Arduino pour communiquer avec des capteurs environnementaux via le protocole SDI-12. Elle permet de récupérer des mesures sans matériel supplémentaire."
  },
+ "d226f71a55b1": {
+  "famille": "donnees",
+  "id": "d226f71a55b1",
+  "interet": "Peut servir à l'analyse des paysages agricoles et des cultures à l'échelle européenne.",
+  "mots_cles": [
+   "cultures",
+   "lucas",
+   "enquêtes-européennes",
+   "photos",
+   "paysages-agricoles"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Photos de couverture LUCAS de 12 cultures issues des enquêtes européennes LUCAS de 2006 à 2018."
+ },
+ "d3929c67accf": {
+  "famille": "logiciel",
+  "id": "d3929c67accf",
+  "interet": "",
+  "mots_cles": [],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
  "d4c44d87cabb": {
   "famille": "donnees",
   "id": "d4c44d87cabb",
@@ -2279,6 +2570,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "farmOS est une application web de gestion des enregistrements agricoles. Elle permet de suivre les activités, les cultures, le bétail et le matériel sur une exploitation."
  },
+ "dab4017c76b1": {
+  "famille": "donnees",
+  "id": "dab4017c76b1",
+  "interet": "Permet de suivre l'évolution des structures agricoles sur plusieurs décennies.",
+  "mots_cles": [
+   "recensement",
+   "agriculture",
+   "morvan",
+   "structure",
+   "évolution"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce jeu de données recense les résultats du Recensement Général Agricole pour les communes du Parc naturel régional du Morvan aux années 1988, 2000, 2010 et 2020."
+ },
  "dc0f5c62e9ef": {
   "famille": "donnees",
   "id": "dc0f5c62e9ef",
@@ -2289,6 +2595,15 @@
    "vision par ordinateur",
    "jeu vidéo"
   ],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
+ "dc378054aa4d": {
+  "famille": "donnees",
+  "id": "dc378054aa4d",
+  "interet": "",
+  "mots_cles": [],
   "pertinence": "non",
   "redige_par": "mistral-small-latest",
   "resume": ""
@@ -2406,6 +2721,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Ce modèle de génération de texte est adapté à des applications agricoles au Malawi en utilisant des techniques de fine-tuning (LoRA) sur Qwen2. Il est compatible avec des endpoints de génération de texte."
+ },
+ "e679db2e8a29": {
+  "famille": "logiciel",
+  "id": "e679db2e8a29",
+  "interet": "Modélisation et évaluation des impacts sur les ressources halieutiques.",
+  "mots_cles": [
+   "pêches",
+   "ressources marines",
+   "modélisation",
+   "impact",
+   "gestion spatiale"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "DISPLACE_GUI est un logiciel de recherche scientifique pour la gestion spatiale des pêches et des ressources naturelles. Il permet d'évaluer les impacts et les flux marins."
  },
  "e6b9e8dd51b6": {
   "famille": "logiciel",
