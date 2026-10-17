@@ -96,6 +96,10 @@ A bubble on every page answers visitors from the site's own published content. `
 
 `/fr/documentation/` and `/documentation/` list readings, not commons: publications never enter the directory, its counter, `data/communs.{json,csv}` or the `famille` values (a public contract, see `_annuaire/DESIGN.md`). `_includes/documentation.html` (with `lang=`) renders `_data/publications.yml`; `assets/js/documentation.js` is only the kind filter. Titles and authors stay in the document's language; summaries are `{ fr, en }`; `annee` is the document's year, not its web page's; preprints and portals carry a visible warning. The entries also feed a DOCUMENTATION section of `data/socle.txt`, so the assistant can cite them. Requirements, the 22/09/2026 link check and the 09/10/2026 equine and donkey addition (what went to the directory, to Documentation, to `besoins.yml`, and what was left out) are in `_documentation/EXIGENCES.md`; sites that answer 403 to every robot are listed in the `Rakefile` `ignore_urls`.
 
+### Maquette 3D REBUS
+
+`/fr/rebus/plan/` (`docs/fr/rebus-plan.html`) shows the 3D model of the SCI Les Chênes Verts REBUS project. `assets/js/maquette-chenes-verts.js` is a three.js viewer (pinned `three@0.170.0` imported by full jsDelivr `+esm` URLs — no import map: the header already loads a module and Firefox ignores a later import map — Draco decoder from the same version) that reads `assets/3d/chenes-verts/scene.json` and its GLB layers; object metadata comes from the glTF extras. **Do not edit `assets/3d/chenes-verts/`, `assets/img/chenes-verts/` or `assets/plans/chenes-verts/` (2D plans: A3 PDFs + WebP previews) by hand**: they are produced by the model pipeline (FreeCAD -> Blender, `osfarm` step of its `build.sh`, outside this repository). Without WebGL the page falls back to a rendered image.
+
 ### Deployment
 
 Generated output goes to `_site/` (git-ignored); GitHub Pages builds and deploys automatically on push to `main`.

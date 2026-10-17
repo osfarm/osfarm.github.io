@@ -457,6 +457,7 @@ p { color: var(--gray-600); margin-bottom: 0; }
     </div>
     <div class="cta-actions">
       <a href="/docs/fr/pres_rebus.html" target="_blank" class="btn-green">Presentation →</a>
+      <a href="/fr/rebus/plan/" class="btn-green">Plan →</a>
       <a href="https://osfarm.org" class="btn-outline-green">Découvrir OSFarm →</a>
     </div>
   </div>
