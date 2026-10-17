@@ -1,0 +1,147 @@
+---
+title: "REBUS : la maquette 3D"
+layout: fr-support-page
+permalink: /fr/rebus/plan/
+description: "REBUS, le FarmLab de La Vauzelle à Saint-Porchaire : le bâtiment, son site, ses réseaux et son terrain, reconstruits en 3D avec des outils libres."
+lang: fr
+large: true
+---
+{%- comment -%}
+  Maquette 3D du projet REBUS (SCI Les Chênes Verts). Les fichiers de assets/3d/chenes-verts/ et
+  assets/img/chenes-verts/ et assets/plans/chenes-verts/ sont produits par la chaîne de la maquette (FreeCAD -> Blender, étape
+  « osfarm » de son build.sh) : ne pas les éditer à la main. Visionneuse : assets/js/maquette-chenes-verts.js.
+{%- endcomment -%}
+{%- assign modeles = "/assets/3d/chenes-verts/" | relative_url -%}
+{%- assign images = "/assets/img/chenes-verts/" | relative_url -%}
+{%- assign plans = "/assets/plans/chenes-verts/" | relative_url -%}
+
+<style>
+  .maquette { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 16px; margin: 24px 0 40px; }
+  .maquette-vue { position: relative; height: min(70vh, 640px); min-height: 360px; border-radius: 8px; overflow: hidden;
+    background: #d7e6f1 url("{{ images }}rebus_ESQ.webp") center / cover no-repeat; }
+  .maquette-prete .maquette-vue { background-image: none; }
+  .maquette-vue canvas { display: block; width: 100%; height: 100%; touch-action: none; }
+  .maquette-etat { position: absolute; left: 12px; bottom: 12px; margin: 0; padding: 4px 10px; border-radius: 4px;
+    background: rgba(255, 255, 255, .85); font-size: 14px; }
+  .maquette-etat:empty { display: none; }
+  .maquette-fiche { position: absolute; right: 12px; top: 12px; max-width: 260px; padding: 10px 12px 8px; border-radius: 6px;
+    background: rgba(255, 255, 255, .95); box-shadow: 0 2px 8px rgba(0, 0, 0, .2); font-size: 14px; }
+  .maquette-fiche dl { margin: 6px 0 0; display: grid; grid-template-columns: auto 1fr; gap: 2px 10px; }
+  .maquette-fiche dt { color: #586069; font-weight: normal; }
+  .maquette-fiche dd { margin: 0; }
+  .maquette-fermer { position: absolute; right: 6px; top: 2px; border: 0; background: none; font-size: 20px; line-height: 1; cursor: pointer; }
+  .maquette-panneau h2 { font-size: 15px; margin: 16px 0 8px; color: #338000; }
+  .maquette-panneau h2:first-child { margin-top: 0; }
+  .maquette-etats, .maquette-vues { display: flex; flex-wrap: wrap; gap: 6px; }
+  .maquette-panneau .btn { border: 1px solid #338000; color: #338000; background: #fff; }
+  .maquette-panneau .btn[aria-pressed="true"] { background: #338000; color: #fff; }
+  .maquette-case { display: flex; align-items: center; gap: 6px; margin: 4px 0; font-size: 14px; font-weight: normal; cursor: pointer; }
+  .maquette-reseaux { margin: 4px 0 0 20px; }
+  .maquette-pastille { display: inline-block; width: 14px; height: 6px; border-radius: 3px; }
+  .maquette-aide { font-size: 13px; color: #586069; margin-top: 16px; }
+  .maquette-en-plan .maquette-vue canvas { cursor: grab; }
+  .maquette-sans-webgl .maquette-panneau { display: none; }
+  .maquette-sans-webgl { grid-template-columns: 1fr; }
+  .galerie { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; margin: 16px 0 40px; }
+  .galerie figure { margin: 0; }
+  .galerie img { width: 100%; height: auto; border-radius: 6px; display: block; }
+  .galerie figcaption { font-size: 14px; color: #586069; margin-top: 6px; }
+  @media (max-width: 900px) {
+    .maquette { grid-template-columns: 1fr; }
+    .maquette-vue { height: 60vh; }
+  }
+</style>
+
+<p>
+  À la ferme de La Vauzelle, à Saint-Porchaire (Charente-Maritime), la <strong>SCI Les Chênes Verts</strong> transforme
+  d'anciens bâtiments agricoles pour accueillir <strong><a href="{{ "/fr/rebus/" | relative_url }}">REBUS</a></strong>,
+  le FarmLab porté par OSFarm : formation, réparation et expérimentation autour de l'agriculture numérique open source,
+  avec ateliers, forge, établis et coin café. Pour préparer les travaux et partager le projet, nous avons reconstruit
+  le bâtiment, son terrain et ses réseaux enterrés en 3D, à partir des plans de l'architecte, d'un relevé GPS du site
+  et des données de l'IGN. C'est une première brique du jumeau numérique de REBUS.
+</p>
+
+<div id="maquette" class="maquette" data-base="{{ modeles }}"
+     data-draco="https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/draco/gltf/">
+  <div class="maquette-vue">
+    <p class="maquette-etat" role="status" aria-live="polite">Chargement de la maquette…</p>
+    <div class="maquette-fiche" hidden></div>
+  </div>
+  <div class="maquette-panneau">
+    <h2>REBUS</h2>
+    <div class="maquette-etats"></div>
+    <h2>Calques</h2>
+    <div class="maquette-calques"></div>
+    <div class="maquette-reseaux" hidden></div>
+    <h2>Vues</h2>
+    <div class="maquette-vues"></div>
+    <p class="maquette-aide">Glisser pour tourner, molette ou pincement pour zoomer, clic droit pour se déplacer.
+      Cliquer sur un élément pour afficher sa fiche (matériau, diamètre et profondeur d'une canalisation…).
+      En vue de dessus, glisser pour se déplacer.</p>
+  </div>
+</div>
+
+<h2>Rendus</h2>
+<div class="galerie">
+  <figure><img src="{{ images }}aerienne_site.webp" width="1600" height="1000" loading="lazy" alt="Vue aérienne de la ferme de La Vauzelle : bâtiments, chemins, cultures et forêt">
+    <figcaption>La ferme de La Vauzelle vue du sud-ouest : cultures, cours, chemins et forêt.</figcaption></figure>
+  <figure><img src="{{ images }}rebus_EDL.webp" width="1600" height="1000" loading="lazy" alt="Le bâtiment aujourd'hui, toiture en tuiles et auvent ouvert">
+    <figcaption>Aujourd'hui : toiture en tuiles, auvent ouvert sur poteaux.</figcaption></figure>
+  <figure><img src="{{ images }}rebus_ESQ.webp" width="1600" height="1000" loading="lazy" alt="Le projet REBUS, toiture en bac acier anthracite et appentis vitré">
+    <figcaption>Le projet : bac acier RAL 7016, appentis sud fermé par quatre baies vitrées.</figcaption></figure>
+  <figure><img src="{{ images }}facade_sud_ESQ.webp" width="1600" height="1000" loading="lazy" alt="Façade sud du projet à hauteur d'œil">
+    <figcaption>La façade sud, à hauteur d'œil.</figcaption></figure>
+  <figure><img src="{{ images }}terrasse_est.webp" width="1600" height="1000" loading="lazy" alt="Angle est : l'appentis prolongé au-dessus de la terrasse, sur poteaux bois">
+    <figcaption>L'angle est : l'appentis prolongé au-dessus de la terrasse.</figcaption></figure>
+  <figure><img src="{{ images }}interieur_reparation.webp" width="1600" height="1000" loading="lazy" alt="Intérieur de l'espace de réparation, vers le coin café">
+    <figcaption>L'espace de réparation, vers le coin café.</figcaption></figure>
+  <figure><img src="{{ images }}reseaux_ecorche.webp" width="1600" height="1000" loading="lazy" alt="Écorché des réseaux enterrés sous un terrain translucide">
+    <figcaption>Les réseaux enterrés : eaux pluviales, eaux usées, eau, électricité.</figcaption></figure>
+  <figure><img src="{{ images }}atelier_local1.webp" width="1600" height="1000" loading="lazy" alt="L'atelier métal du Local 1 : découpe laser, bouteilles de gaz, compresseur, table de soudure">
+    <figcaption>L'atelier métal (Local 1, toiture retirée) : découpe laser, soudure, scie, presse.</figcaption></figure>
+  <figure><img src="{{ images }}agencement_dessus.webp" width="1600" height="1000" loading="lazy" alt="Vue de dessus du bâtiment sans toiture, avec les machines et le mobilier">
+    <figcaption>L'agencement vu de dessus : ateliers, postes de réparation, coin café.</figcaption></figure>
+</div>
+
+<h2>Plans 2D</h2>
+<p>Les mêmes données, vues de dessus et à l'échelle : plans A3 à imprimer ou à annoter (PDF vectoriels).</p>
+<div class="galerie">
+  <figure><a href="{{ plans }}plan_masse.pdf"><img src="{{ plans }}plan_masse.webp" width="1600" height="1131" loading="lazy" alt="Plan de masse du site sur l'orthophotographie, avec les bâtiments et les réseaux enterrés"></a>
+    <figcaption>Plan de masse au 1/1000 : bâtiments, clôtures, réseaux enterrés avec diamètres et profondeurs (<a href="{{ plans }}plan_masse.pdf">PDF</a>).</figcaption></figure>
+  <figure><a href="{{ plans }}plan_rebus_EDL.pdf"><img src="{{ plans }}plan_rebus_EDL.webp" width="1600" height="1131" loading="lazy" alt="Plan du rez-de-chaussée du bâtiment aujourd'hui"></a>
+    <figcaption>REBUS aujourd'hui, au 1/100 : pièces actuelles et éléments à démolir (<a href="{{ plans }}plan_rebus_EDL.pdf">PDF</a>).</figcaption></figure>
+  <figure><a href="{{ plans }}plan_rebus_ESQ.pdf"><img src="{{ plans }}plan_rebus_ESQ.webp" width="1600" height="1131" loading="lazy" alt="Plan du rez-de-chaussée du projet REBUS avec les pièces et leurs surfaces"></a>
+    <figcaption>REBUS en projet, au 1/100 : pièces et surfaces, cloisons neuves, appentis prolongé (<a href="{{ plans }}plan_rebus_ESQ.pdf">PDF</a>).</figcaption></figure>
+  <figure><a href="{{ plans }}plan_agencement.pdf"><img src="{{ plans }}plan_agencement.webp" width="1600" height="1131" loading="lazy" alt="Plan d'agencement intérieur : machines et mobilier numérotés, nomenclature"></a>
+    <figcaption>Agencement intérieur au 1/100 : machines et mobilier numérotés, dégagements, nomenclature (<a href="{{ plans }}plan_agencement.pdf">PDF</a>).</figcaption></figure>
+</div>
+
+<h2>Comment la maquette est faite</h2>
+<p>Tout est généré par des scripts à partir des données sources : quand un plan ou un relevé change, la maquette se reconstruit en quelques minutes.</p>
+<ul>
+  <li><strong>Bâtiment REBUS</strong> : les plans Archicad de l'architecte (DXF) distinguent l'existant, le démoli et le neuf.
+    <a href="https://www.freecad.org/">FreeCAD</a> en tire des murs, ouvertures, sols, toiture et pièces au format BIM (IFC).</li>
+  <li><strong>Site</strong> : relevé GPS des bâtiments, regards et réseaux sous <a href="https://qgis.org/">QGIS</a>,
+    relief du <a href="https://geoservices.ign.fr/lidarhd">LiDAR HD de l'IGN</a> (le relevé et le relief concordent à 10 cm près).
+    Le sol est habillé par l'orthophotographie de l'IGN ; routes, chemins et bassin viennent de la BD TOPO.</li>
+  <li><strong>Arbres et bâtiments voisins</strong> : chaque arbre est placé et dimensionné d'après la hauteur de canopée
+    du LiDAR HD (plus de 2 600 arbres) ; les toitures voisines prennent leurs hauteurs dans ces mêmes mesures, et leurs
+    matériaux dans les vidéos de drone du site.</li>
+  <li><strong>Réseaux enterrés</strong> : eaux pluviales posées à leur fil d'eau mesuré aux regards ; les autres à 60 cm sous le terrain.</li>
+  <li><strong>Rendus et 3D web</strong> : <a href="https://www.blender.org/">Blender</a> (matériaux, rendus, export glTF),
+    affichage dans le navigateur avec <a href="https://threejs.org/">three.js</a>.</li>
+  <li><strong>Agencement intérieur</strong> : machines et mobilier sont placés dans <a href="https://qgis.org/">QGIS</a>
+    sur le plan du bâtiment ; la chaîne vérifie les dégagements (1,20 m autour de la découpe laser), les portes, les passages
+    et les aires PMR, puis reporte l'agencement dans la maquette, les plans et la 3D. Dimensions des machines indicatives.</li>
+  <li><strong>Plans 2D</strong> : tracés à l'échelle avec <a href="https://matplotlib.org/">Matplotlib</a> à partir des mêmes données.</li>
+</ul>
+<p class="text-gray">
+  Plans du bâtiment : MG Architecture (Franck Gacel et Christophe Godet, architectes associés, Saintes), diffusés avec leur accord.
+  Données géographiques : IGN (LiDAR HD, orthophotographie, BD TOPO).
+</p>
+<p class="text-gray">
+  Maquette indicative, pour la présentation et la préparation des travaux : elle ne remplace ni les plans de l'architecte
+  ni un repérage des réseaux avant terrassement.
+</p>
+
+<script type="module" src="{{ "/assets/js/maquette-chenes-verts.js" | relative_url }}"></script>

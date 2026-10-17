@@ -1,0 +1,160 @@
+{
+ "titre": "SCI Les Chênes Verts — REBUS",
+ "unite": "m",
+ "repere": "local : Lambert 93 - (406300, 6532400), altitude NGF - 20 m ; glTF Y en haut (x, z, -y)",
+ "calques": [
+  {
+   "id": "terrain",
+   "fichier": "terrain.glb",
+   "libelle": "Terrain, cours et chemins",
+   "visible": true,
+   "octets": 2398512,
+   "objets": 7
+  },
+  {
+   "id": "arbres",
+   "fichier": "arbres.glb",
+   "libelle": "Arbres",
+   "visible": true,
+   "octets": 744240,
+   "objets": 2622
+  },
+  {
+   "id": "contexte",
+   "fichier": "contexte.glb",
+   "libelle": "Bâtiments voisins",
+   "visible": true,
+   "octets": 28968,
+   "objets": 20
+  },
+  {
+   "id": "paysage",
+   "fichier": "paysage.glb",
+   "libelle": "Clôtures, murets, poteaux",
+   "visible": true,
+   "octets": 41388,
+   "objets": 22
+  },
+  {
+   "id": "rebus_EDL",
+   "fichier": "rebus_EDL.glb",
+   "libelle": "REBUS — état actuel",
+   "visible": false,
+   "octets": 112212,
+   "objets": 93
+  },
+  {
+   "id": "rebus_ESQ",
+   "fichier": "rebus_ESQ.glb",
+   "libelle": "REBUS — projet",
+   "visible": true,
+   "octets": 147248,
+   "objets": 121
+  },
+  {
+   "id": "reseaux",
+   "fichier": "reseaux.glb",
+   "libelle": "Réseaux enterrés",
+   "visible": false,
+   "octets": 770924,
+   "objets": 55
+  },
+  {
+   "id": "mobilier",
+   "fichier": "mobilier.glb",
+   "libelle": "Mobilier et machines (projet)",
+   "visible": true,
+   "octets": 60956,
+   "objets": 29
+  }
+ ],
+ "reseaux": [
+  {
+   "calque": "EP_actuel",
+   "couleur": "#2e8b57"
+  },
+  {
+   "calque": "EP_travaux",
+   "couleur": "#7fc97f"
+  },
+  {
+   "calque": "Eau_puit",
+   "couleur": "#1e6fd9"
+  },
+  {
+   "calque": "Adduction",
+   "couleur": "#6baed6"
+  },
+  {
+   "calque": "Elec",
+   "couleur": "#d62828"
+  },
+  {
+   "calque": "Elec_solaire",
+   "couleur": "#f28e2b"
+  }
+ ],
+ "vues": {
+  "site": {
+   "position": [
+    -66.04,
+    95,
+    117.87
+   ],
+   "cible": [
+    22,
+    -2,
+    -8
+   ]
+  },
+  "rebus": {
+   "position": [
+    15.84,
+    11.87,
+    26.66
+   ],
+   "cible": [
+    35.54,
+    1.87,
+    1.45
+   ]
+  },
+  "facade_sud": {
+   "position": [
+    22.62,
+    2.07,
+    25.88
+   ],
+   "cible": [
+    30.22,
+    2.27,
+    9.56
+   ]
+  },
+  "reseaux": {
+   "position": [
+    32.18,
+    75,
+    86.42
+   ],
+   "cible": [
+    5,
+    -3,
+    -18
+   ]
+  },
+  "terrasse_est": {
+   "position": [
+    50.45,
+    3.87,
+    26.78
+   ],
+   "cible": [
+    41.72,
+    1.97,
+    10.93
+   ]
+  }
+ },
+ "profondeur_defaut_reseaux_m": 0.6
+}
