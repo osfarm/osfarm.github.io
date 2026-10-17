@@ -1,0 +1,894 @@
+# Lot du radar OSFarm. Passer « publier » à false pour écarter une fiche,
+# corriger « resume » au besoin. La fusion de la pull request publie le reste.
+date: '2026-10-13'
+examines: 342
+retenus: 24
+rejets:
+  deja_vu: 204
+  deja_sur_le_site: 8
+  licence: 7
+  score: 0
+pannes: []
+candidats:
+- id: 1ae6a9917b33
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: Open-Agriculture/AgIsoStack-rs
+  url: https://github.com/Open-Agriculture/AgIsoStack-rs
+  description: A Rust implementation of the ISO11783 (ISOBUS) & J1939 protocols
+  licence: mit
+  date_maj: '2026-09-11'
+  techno: Rust
+  popularite: 35
+  mots_cles:
+  - agriculture
+  - agritech
+  - canbus
+  - iso11783
+  - isobus
+  - j1939
+  - rust
+  - smart-farming
+  score: 93
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, agritech, farm, farming'
+  propose_le: '2026-10-13'
+  publier: true
+  resume: Implémentation en Rust des protocoles ISO11783 (ISOBUS) et J1939 utilisés dans les équipements
+    agricoles. Permet l'interopérabilité et la communication entre machines agricoles connectées.
+  interet: Facilite l'intégration et la compatibilité des systèmes électroniques dans les outils agricoles.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - iso11783
+  - isobus
+  - j1939
+  - protocoles
+  - rust
+- id: bb123e95962f
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: gitDew/waspinator
+  url: https://github.com/gitDew/waspinator
+  description: 🐝 Detects and traps invasive Vespa velutinas using AI, while avoiding native Vespa crabros.
+  licence: agpl-3.0
+  date_maj: '2026-09-18'
+  techno: Python
+  popularite: 10
+  mots_cles:
+  - agritech
+  - ai
+  - environment
+  - machine-learning
+  - python
+  - trap
+  - vespa-velutina
+  - yolo
+  score: 79
+  raisons:
+  - licence agpl-3.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agritech'
+  propose_le: '2026-10-13'
+  publier: true
+  resume: Outil d'intelligence artificielle conçu pour détecter et piéger les frelons asiatiques tout
+    en épargnant les espèces natives. Utilise des modèles de machine learning pour identifier les cibles.
+  interet: Contribue à la lutte contre les espèces invasives dans les écosystèmes agricoles.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - frelon asiatique
+  - ia
+  - machine learning
+  - piège
+  - vespa velutina
+- id: 998da46bf898
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: CWWhitney/Decision_Analysis_Course
+  url: https://github.com/CWWhitney/Decision_Analysis_Course
+  description: 🎓 Uni-Bonn Decision Analysis graduate course, lectures and materials
+  licence: mit
+  date_maj: '2026-06-24'
+  techno: HTML
+  popularite: 27
+  mots_cles:
+  - agriculture
+  - agriculture-research
+  - agroecology
+  - bayesian-inference
+  - bayesian-statistics
+  - decision-analysis
+  - decision-theory
+  score: 79
+  raisons:
+  - licence mit
+  - actif (moins d'un an)
+  - 'vocabulaire : agriculture, agroecology'
+  propose_le: '2026-10-13'
+  publier: true
+  resume: Cours universitaire sur l'analyse décisionnelle appliquée à l'agriculture, incluant des supports
+    de cours et des matériaux pédagogiques. Aborde les méthodes bayésiennes et l'agroécologie.
+  interet: ''
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - analyse décisionnelle
+  - bayésien
+  - cours
+  - statistiques
+  - université
+- id: 37da7fedc520
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: Gororobas/gororobas
+  url: https://github.com/Gororobas/gororobas
+  description: Collaborative agroecology wiki & social network - winner of Gel Data 2024 hackathon (form.
+    EdgeDB)
+  licence: apache-2.0
+  date_maj: '2026-10-13'
+  techno: TypeScript
+  popularite: 28
+  mots_cles:
+  - agroecology
+  - edgedb
+  - effects
+  - nextjs
+  - tailwindcss
+  - tiptap
+  score: 79
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agroecology'
+  propose_le: '2026-10-13'
+  publier: true
+  resume: Plateforme collaborative dédiée à l'agroécologie, combinant un wiki et un réseau social. Permet
+    le partage de connaissances et la coordination entre acteurs.
+  interet: Soutient l'échange d'informations et la collaboration dans les pratiques agroécologiques.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - agroécologie
+  - collaboration
+  - réseau social
+  - wiki
+- id: 3781fc1cd1e3
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: betagouv/ma-cantine
+  url: https://github.com/betagouv/ma-cantine
+  description: Accompagner les acteurs de la restauration collective dans la loi EGalim
+  licence: mit
+  date_maj: '2026-10-13'
+  techno: Python
+  popularite: 20
+  mots_cles:
+  - agriculture
+  - alimentation
+  - ecologie
+  - egalim
+  - restauration
+  score: 77
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-10-13'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - egalim
+  - restauration collective
+- id: ac41a6b6b9d3
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: arduino-libraries/Arduino_EdgeControl
+  url: https://github.com/arduino-libraries/Arduino_EdgeControl
+  description: Arduino Library for Arduino Edge Control
+  licence: mpl-2.0
+  date_maj: '2026-09-27'
+  techno: C++
+  popularite: 13
+  mots_cles:
+  - agriculture
+  - arduino
+  - arduino-library
+  - embedded
+  - embedded-systems
+  - precision-agriculture
+  score: 77
+  raisons:
+  - licence mpl-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-10-13'
+  publier: true
+  resume: Bibliothèque logicielle pour Arduino Edge Control, dédiée aux systèmes embarqués en agriculture
+    de précision. Permet le contrôle et la gestion de capteurs et actionneurs.
+  interet: Facilite le développement d'applications pour l'agriculture de précision sur plateformes matérielles
+    légères.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - arduino
+  - agriculture de précision
+  - systèmes embarqués
+- id: 0ce570823952
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: luis-hdz7/AgroVision
+  url: https://github.com/luis-hdz7/AgroVision
+  description: AgroVision es una plataforma tecnológica orientada al monitoreo inteligente de cultivos,
+    combinando software, análisis de datos, visualización técnica y simulación de inspección agrícola
+    mediante un robot de reconocimiento.
+  licence: mit
+  date_maj: '2026-10-09'
+  techno: TypeScript
+  popularite: 3
+  mots_cles:
+  - agriculture
+  - ai
+  - api
+  - hackathon-project
+  - nicaraguan
+  - technology
+  - web
+  score: 76
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-10-13'
+  publier: true
+  resume: AgroVision est une plateforme de surveillance intelligente des cultures combinant logiciel,
+    analyse de données et simulation par robot. Elle permet de suivre l'état des cultures en temps réel.
+  interet: Surveillance automatisée des cultures pour optimiser les interventions.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - surveillance
+  - cultures
+  - robotique
+  - analyse de données
+  - agriculture
+- id: 9c815bd68155
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: suvitha1962-del/Hydro0x01
+  url: https://github.com/suvitha1962-del/Hydro0x01
+  description: Automate your hydroponic garden with this open source IoT control system for precise monitoring
+    and plant growth management.
+  licence: mit
+  date_maj: '2026-10-13'
+  techno: TypeScript
+  popularite: 3
+  mots_cles:
+  - agritech
+  - arduino
+  - automation
+  - embedded-systems
+  - esp32
+  - hydroponic
+  - hydroponic-systems
+  - influxdb
+  score: 76
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agritech'
+  propose_le: '2026-10-13'
+  publier: true
+  resume: Hydro0x01 est un système open source de contrôle IoT pour jardins hydroponiques. Il permet une
+    gestion automatisée de la croissance des plantes.
+  interet: Gestion automatisée des conditions de culture en hydroponie.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - hydroponie
+  - automatisation
+  - iot
+  - gestion de croissance
+  - embedded
+- id: 653d64fb13e0
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-elevage
+  titre: beepnl/beep-vue-app
+  url: https://github.com/beepnl/beep-vue-app
+  description: BEEP webapp version 3
+  licence: mit
+  date_maj: '2026-10-08'
+  techno: Vue
+  popularite: 5
+  mots_cles:
+  - beehive
+  - beekeeper
+  - beekeeping
+  - beep
+  - logbook
+  - vuejs
+  score: 74
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : beehive'
+  propose_le: '2026-10-13'
+  publier: true
+  resume: BEEP est une application web pour le suivi des ruches et la gestion des ruchers. Elle permet
+    de consigner les observations et activités liées aux abeilles.
+  interet: Suivi des ruches et gestion des activités apicoles.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - apiculture
+  - ruches
+  - suivi
+  - journal
+  - gestion
+- id: d3929c67accf
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-elevage
+  titre: MemloreApp/memlore
+  url: https://github.com/MemloreApp/memlore
+  description: A little life. A lasting story. A cross-platform, privacy-first, local-first journal —
+    with rich, optional AI.
+  licence: agpl-3.0
+  date_maj: '2026-10-11'
+  techno: Rust
+  popularite: 3
+  mots_cles:
+  - android-app
+  - cross-platform
+  - dairy
+  - dairy-app
+  - dayone
+  - dinhanhthi
+  - ios-app
+  - journal
+  score: 73
+  raisons:
+  - licence agpl-3.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : dairy'
+  propose_le: '2026-10-13'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+- id: e679db2e8a29
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-elevage
+  titre: frabas/DISPLACE_GUI
+  url: https://github.com/frabas/DISPLACE_GUI
+  description: A Scientific Research Software for Spatial Fisheries and Natural Resource Management
+  licence: gpl-2.0
+  date_maj: '2026-10-13'
+  techno: C
+  popularite: 12
+  mots_cles:
+  - aquaculture
+  - bio-economics
+  - fisheries
+  - impact-assessment
+  - marine-resources
+  - marine-traffics
+  - ocean
+  - sustainability
+  score: 73
+  raisons:
+  - licence gpl-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : sustainability'
+  propose_le: '2026-10-13'
+  publier: true
+  resume: DISPLACE_GUI est un logiciel de recherche scientifique pour la gestion spatiale des pêches et
+    des ressources naturelles. Il permet d'évaluer les impacts et les flux marins.
+  interet: Modélisation et évaluation des impacts sur les ressources halieutiques.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - pêches
+  - ressources marines
+  - modélisation
+  - impact
+  - gestion spatiale
+- id: bc58189f95bd
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-elevage
+  titre: ALNezar/FishMaster
+  url: https://github.com/ALNezar/FishMaster
+  description: Smart aquarium monitoring system using ESP32, MQTT, Spring Boot, SSE, PostgreSQL, and React
+    for real-time water condition tracking.
+  licence: mit
+  date_maj: '2026-09-09'
+  techno: JavaScript
+  popularite: 8
+  mots_cles:
+  - aquaculture
+  - aquarium
+  - arduino
+  - embedded
+  - embedded-systems
+  - environmental-monitoring
+  - environmental-monitoring-systems
+  - esp32
+  score: 73
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : water'
+  propose_le: '2026-10-13'
+  publier: true
+  resume: FishMaster est un système de surveillance en temps réel des conditions de l'eau pour aquariums
+    intelligents. Il utilise des capteurs et une interface pour suivre les paramètres environnementaux.
+  interet: Surveillance automatisée des paramètres aquatiques pour l'aquaculture.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - aquaculture
+  - surveillance
+  - eau
+  - capteurs
+  - automatisation
+- id: 07dd34993119
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: aykgeh/ethiopia-crop-climate-altitude-zones
+  url: https://huggingface.co/datasets/aykgeh/ethiopia-crop-climate-altitude-zones
+  description: '🌾 Ethiopian Climate & Crop Yield Dataset by Altitude Zones (1990–2023) This dataset contains
+    34 years of Ethiopian national climate indicators, Oceanic Niño Index (Niño 3.4), and crop yields
+    (Teff, Wheat, Maize) disaggregated across traditional agro-ecological altitude zones: Lowland'
+  licence: mit
+  date_maj: '2026-10-12'
+  techno: ''
+  popularite: 1
+  mots_cles:
+  - agriculture
+  - ethiopia
+  - climate
+  - el-nino
+  - crop-yield
+  score: 91
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, crop, yield, climat'
+  propose_le: '2026-10-13'
+  publier: true
+  resume: Ce jeu de données couvre 34 ans de données climatiques et de rendements de cultures (Teff, Blé,
+    Maïs) en Éthiopie, organisées par zones altitudinales agro-écologiques. Il inclut des indicateurs
+    climatiques nationaux et l'indice océanique Niño 3.4.
+  interet: Permet d'analyser les liens entre climat, altitude et rendements agricoles.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - éthiopie
+  - climat
+  - rendement
+  - culture
+  - altitude
+- id: 9eadc0129d37
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: 'REMOTE SENSING AND GIS-BASED ASSESSMENT OF SOIL SALINITY IN IRRIGATED LANDS: METHODS, CHALLENGES
+    AND PROSPECTS FOR PRECISION AGRICULTURE'
+  url: https://doi.org/10.5281/zenodo.23324555
+  description: '&nbsp; Soil salinization is a major land degradation process affecting the sustainability
+    of irrigated agriculture, particularly in arid and semi-arid regions. Conventional soil sampling provides
+    essential information about salinity levels but may be insufficient for continuous monitoring of large
+    agricultural territories because of spatial variability, sampling costs, and temporal limitations.
+    Re'
+  licence: cc-by-4.0
+  date_maj: '2026-10-12'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - soil salinity, remote sensing, geographic information systems, GIS, Sentinel-2, Landsat, spectral
+    indices, machine learning, irrigated agriculture, precision agriculture.
+  score: 88
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, soil, gis, sustainability'
+  propose_le: '2026-10-13'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+- id: 4b1fd04ac274
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: 'Data and code: how much are America''s forests worth? Farms, forests and fishing compared on
+    value added, carbon, trade and research funding, United States, 1961'
+  url: https://doi.org/10.5281/zenodo.23122536
+  description: 'Data, R and Python scripts, and figures behind an article for The Conversation US on crowded
+    U.S. forests and the value GDP does not count, and its companion figure. The package compiles (1)
+    gross and net value added (BEA GDP by Industry and Fixed Assets) for farms plus food manufacturing,
+    wood plus paper manufacturing, and marine living resources (BEA Marine Economy Satellite Account),
+    with each '
+  licence: cc-by-4.0
+  date_maj: '2026-10-12'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - forest economics
+  - value added
+  - ecosystem services
+  - gross ecosystem product
+  - forest carbon sink
+  - carbon leakage
+  - social cost of carbon
+  - trade
+  score: 82
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : farm, carbon, food'
+  propose_le: '2026-10-13'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+- id: 3a9656ecaf79
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: Indice de risque de ruissellement des écoulements superficiels vers les cours d’eau en zone agricole
+    - 2026
+  url: https://www.data.gouv.fr/datasets/indice-de-risque-de-ruissellement-des-ecoulements-superficiels-vers-les-cours-deau-en-zone-agricole-2026
+  description: 'Cet indice permet d''apprécier et de cartographier le risque de ruissellement des écoulements
+    superficiels vers les cours d’eau en zone agricole. C''est un outil d''aide à la prise de décision
+    et un outil de communication et de sensibilisation. Pour le millésime 2026, il est calculé sur l''ensemble
+    du département du Morbihan par maille de 1 ha à partir des critères suivants : - la pente du terrain
+    (RG'
+  licence: etalab-2.0
+  date_maj: '2026-06-19'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - agriculture-agri-environnement
+  - donnees-ouvertes
+  - eau
+  - haie
+  - inspire
+  - occupation-sol
+  - pente
+  score: 78
+  raisons:
+  - licence etalab-2.0
+  - actif (moins d'un an)
+  - 'vocabulaire : agricole, agriculture'
+  propose_le: '2026-10-13'
+  publier: true
+  resume: Cet indice cartographie le risque de ruissellement des écoulements superficiels vers les cours
+    d'eau en zone agricole, calculé par maille de 1 hectare dans le Morbihan. Il s'appuie sur des critères
+    comme la pente du terrain et la présence de haies.
+  interet: Aide à évaluer les risques de transfert de polluants vers les milieux aquatiques.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - ruissellement
+  - eau
+  - agriculture
+  - haie
+  - morbihan
+- id: dc378054aa4d
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: Transmission agricole en région Provence-Alpes-Côte d'Azur
+  url: https://www.data.gouv.fr/datasets/transmission-agricole-en-region-provence-alpes-cote-d-azur
+  description: '**Cette étude, *« Transmission Sud » : État des lieux et enjeux de transmission agricole
+    en région Sud*, a été réalisée par l''Institut national de recherche pour l''agriculture, l''alimentation
+    et l''environnement (Inrae), en partenariat avec la région Provence-Alpes-Côte d''Azur.** En 2020,
+    une exploitation sur deux est dirigée par au moins un exploitant de 55 ans ou plus, avec un pic de
+    départs en r'
+  licence: cc-by-sa-4.0
+  date_maj: '2026-05-21'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - exploitation-agricole
+  - retraite
+  score: 78
+  raisons:
+  - licence cc-by-sa-4.0
+  - actif (moins d'un an)
+  - 'vocabulaire : agricole, agriculture'
+  propose_le: '2026-10-13'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+- id: dab4017c76b1
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: Recensement Géneral Agricole (RGA) dans les communes du Parc naturel régional du Morvan
+  url: https://www.data.gouv.fr/datasets/donnees-du-recensement-general-agricole-rga-dans-le-parc-naturel-regional-du-morvan-1
+  description: Données du Recensement Général Agricole dans les communes du Parc naturel régional du Morvan
+    (1988, 2000, 2010, 2020)
+  licence: etalab-2.0
+  date_maj: '2026-04-29'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - pnr-du-morvan
+  - recensement-agricole
+  - rga
+  score: 78
+  raisons:
+  - licence etalab-2.0
+  - actif (moins d'un an)
+  - 'vocabulaire : agricole, agriculture'
+  propose_le: '2026-10-13'
+  publier: true
+  resume: Ce jeu de données recense les résultats du Recensement Général Agricole pour les communes du
+    Parc naturel régional du Morvan aux années 1988, 2000, 2010 et 2020.
+  interet: Permet de suivre l'évolution des structures agricoles sur plusieurs décennies.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - recensement
+  - agriculture
+  - morvan
+  - structure
+  - évolution
+- id: 20dd4d6ef068
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: Sites vitrines des races patrimoniales normandes - Normandie
+  url: https://www.data.gouv.fr/datasets/sites-vitrines-des-races-patrimoniales-normandes-normandie-1
+  description: 'Sites, en Normandie, où peuvent être vus des animaux de races patrimoniales normandes.
+    La donnée n’entre pas dans le cadre de la directive INSPIRE. **Contexte de collecte** Couche géographique
+    réalisée pour une cartographie statique puis dynamique à insérer dans le site Internet de la Région
+    Normandie, afin de valoriser le plan de préservation des races normandes. **Méthode de collecte**
+    Éléments '
+  licence: etalab-2.0
+  date_maj: '2026-09-26'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - developpement-durable
+  - donnees-ouvertes
+  - donnees-regionales-de-reference
+  - milieu-naturel
+  - patrimoine
+  - preservation
+  - races
+  score: 76
+  raisons:
+  - licence etalab-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-10-13'
+  publier: true
+  resume: Cartographie des sites en Normandie présentant des animaux de races patrimoniales normandes.
+    Cette couche géographique valorise le plan de préservation de ces races.
+  interet: Permet de localiser et suivre les actions de conservation des races animales locales.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - races-patrimoniales
+  - normandie
+  - cartographie
+  - préservation
+  - animaux
+- id: 45cd803b3312
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: Fournisseurs pour l'alimentation de la restauration scolaire - Normandie
+  url: https://www.data.gouv.fr/datasets/fournisseurs-pour-lalimentation-de-la-restauration-scolaire-normandie-1
+  description: Les fournisseurs pour l'alimentation de la restauration scolaire en Normandie. La donnée
+    n'entre pas dans le cadre de la directive Inspire. **Contexte de collecte** Cette donnée s'inscrit
+    dans le cadre du plan "Je mange normand dans mon lycée". Elle a pour objectif de participer à l'atteinte
+    de l'objectif de 80% de produits normands servis en restauration scolaire d'ici 2021 mais également
+    de part
+  licence: etalab-2.0
+  date_maj: '2026-09-26'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - donnees-de-reference
+  - donnees-ouvertes
+  - donnees-regionales-de-reference
+  - lycees
+  score: 76
+  raisons:
+  - licence etalab-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-10-13'
+  publier: true
+  resume: Liste des fournisseurs d'aliments pour la restauration scolaire en Normandie. Cette donnée s'inscrit
+    dans un plan visant à augmenter la part de produits locaux.
+  interet: Facilite l'identification des sources d'approvisionnement pour des circuits courts alimentaires.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - fournisseurs
+  - restauration-scolaire
+  - produits-locaux
+  - normandie
+  - alimentation
+- id: 083db8746f76
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: Groupes d'action locale pêche et aquaculture 2023-2027 - Normandie
+  url: https://www.data.gouv.fr/datasets/groupes-daction-locale-peche-et-aquaculture-2023-2027-normandie-1
+  description: Les périmètres des groupes d'action locale pêche et aquaculture LEADER en Normandie. La
+    donnée n'entre pas dans le cadre de la directive Inspire. **Contexte de collecte** Couche créée pour
+    les besoins cartographiques des différents services ou directions. Les territoires constitués en GALPA
+    associent les acteurs des secteurs publics et privés autour d’une stratégie commune et de sa mise
+    en œuvre v
+  licence: etalab-2.0
+  date_maj: '2026-09-26'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - amenagement-des-territoires
+  - donnees-de-reference
+  - donnees-ouvertes
+  - donnees-regionales-de-reference
+  - europe
+  - fonds-europeen-pour-les-affaires-maritimes-et-la-peche-feamp
+  - fonds-europeens
+  score: 76
+  raisons:
+  - licence etalab-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-10-13'
+  publier: true
+  resume: Périmètres des groupes d'action locale pêche et aquaculture en Normandie. Ces territoires associent
+    acteurs publics et privés autour d'une stratégie commune.
+  interet: Permet de visualiser les zones d'intervention pour des projets de développement territorial
+    en aquaculture.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - pêche
+  - aquaculture
+  - territoires
+  - stratégie-commune
+  - normandie
+- id: 9d6da6457b7a
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: Lanxingxuan/Video_Crop_Data_uniform_frames_20260905_v1
+  url: https://huggingface.co/datasets/Lanxingxuan/Video_Crop_Data_uniform_frames_20260905_v1
+  description: 'Video Crop Data: Uniform Frames 20260905 v1 A real 100-candidate LVBench preflight using
+    the JSONL v8 Teacher protocol, 64 uniformly sampled overview frames, and temporal crop tools. Images
+    are 480x270 pixels. The run completed with 98 terminal answers, 93 matching GT, and 65 pipeline'
+  licence: mit
+  date_maj: '2026-10-11'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - video
+  - tool-use
+  - agentic
+  - sft
+  - preflight
+  score: 73
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : crop'
+  propose_le: '2026-10-13'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - video
+  - tool-use
+  - agentic
+  - sft
+  - preflight
+- id: d226f71a55b1
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: Emulated-Inc/sci-crop-photo-lucas-new-country
+  url: https://huggingface.co/datasets/Emulated-Inc/sci-crop-photo-lucas-new-country
+  description: LUCAS cover photos of 12 crops Cover photos from the Land Use and Coverage Area frame Survey
+    (LUCAS) of the European Union, surveys 2006, 2009, 2012, 2015 and 2018, for every survey point whose
+    recorded land cover is one of 12 crops (B11 common wheat, B12 durum wheat, B13 barley, B14
+  licence: cc-by-4.0
+  date_maj: '2026-10-10'
+  techno: ''
+  popularite: 0
+  mots_cles: []
+  score: 73
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : crop'
+  propose_le: '2026-10-13'
+  publier: true
+  resume: Photos de couverture LUCAS de 12 cultures issues des enquêtes européennes LUCAS de 2006 à 2018.
+  interet: Peut servir à l'analyse des paysages agricoles et des cultures à l'échelle européenne.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - cultures
+  - lucas
+  - enquêtes-européennes
+  - photos
+  - paysages-agricoles
+- id: ace19c3fb23b
+  famille: modele
+  relecteur: ionosphere
+  source: hf-modeles-plantes
+  titre: rodynaemad/plant-disease-dinov2-small
+  url: https://huggingface.co/rodynaemad/plant-disease-dinov2-small
+  description: transformers onnx safetensors dinov2 image-classification agriculture plant-disease computer-vision
+    model-index endpoints_compatible
+  licence: cc-by-sa-4.0
+  date_maj: '2026-10-09'
+  techno: ''
+  popularite: 51
+  mots_cles:
+  - transformers
+  - onnx
+  - safetensors
+  - dinov2
+  - image-classification
+  - agriculture
+  - plant-disease
+  - computer-vision
+  score: 88
+  raisons:
+  - licence cc-by-sa-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, plant-disease'
+  propose_le: '2026-10-13'
+  publier: true
+  resume: Modèle de classification d'images pour la détection de maladies des plantes basé sur DINOv2.
+    Compatible avec des endpoints de vision par ordinateur.
+  interet: Permet d'identifier automatiquement des maladies végétales à partir d'images.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - classification-images
+  - maladies-plantes
+  - dinov2
+  - vision-par-ordinateur
+  - agriculture
+resume_genere_le: 2026-10-13 12:30
