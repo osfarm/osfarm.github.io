@@ -1,0 +1,872 @@
+# Lot du radar OSFarm. Passer « publier » à false pour écarter une fiche,
+# corriger « resume » au besoin. La fusion de la pull request publie le reste.
+date: '2026-10-19'
+examines: 342
+retenus: 24
+rejets:
+  deja_vu: 213
+  deja_sur_le_site: 7
+  licence: 12
+  score: 1
+pannes: []
+candidats:
+- id: fb5acd90df20
+  famille: donnees
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: SabhyaC26/crop-map
+  url: https://github.com/SabhyaC26/crop-map
+  description: What's growing here? A playful map of what California grows, from DWR field-level crop
+    data. MapLibre + PMTiles, no backend.
+  licence: mit
+  date_maj: '2026-10-14'
+  techno: TypeScript
+  popularite: 15
+  mots_cles:
+  - agriculture
+  - california
+  - map
+  - maplibre
+  - openstreetmap
+  - pmtiles
+  - typescript
+  - vite
+  score: 85
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, crop'
+  propose_le: '2026-10-19'
+  publier: true
+  resume: Carte interactive des cultures californiennes basée sur des données de champs. Elle visualise
+    les types de cultures cultivées à l'échelle parcellaire.
+  interet: Permet d'analyser la répartition spatiale des cultures pour des études agronomiques ou de gestion
+    territoriale.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  famille_initiale: logiciel
+  mots_cles_fr:
+  - californie
+  - carte
+  - cultures
+  - données agricoles
+  - parcelles
+- id: adeec615211b
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: Sustainable-Robotics-Base-for-Crops/mission_studio
+  url: https://github.com/Sustainable-Robotics-Base-for-Crops/mission_studio
+  description: 'Mission Studio: open-source agricultural mission planner for the SRBC robot (JSON Agri
+    v3). Working prototype for field trials; wider field validation in progress.'
+  licence: apache-2.0
+  date_maj: '2026-10-14'
+  techno: TypeScript
+  popularite: 3
+  mots_cles:
+  - agricultural-robotics
+  - agriculture
+  - json-agri
+  - mission-planning
+  - srbc
+  score: 82
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, crop'
+  propose_le: '2026-10-19'
+  publier: true
+  resume: Outil de planification de missions pour un robot agricole open source. Il génère des trajectoires
+    pour des essais en champ.
+  interet: Facilite l'automatisation des tâches agricoles via la robotique.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - mission
+  - planification
+  - robotique agricole
+  - trajectoire
+  - traitement de champ
+- id: ae7ac62c1886
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-elevage
+  titre: danilkotelnikov/Felex
+  url: https://github.com/danilkotelnikov/Felex
+  description: Professional animal feed ration optimizer with AI assistant. Free, offline, open-source.
+  licence: mit
+  date_maj: '2026-04-05'
+  techno: Rust
+  popularite: 3
+  mots_cles:
+  - agriculture
+  - desktop-app
+  - feed-formulation
+  - linear-programming
+  - livestock
+  - optimization
+  - react
+  - rust
+  score: 78
+  raisons:
+  - licence mit
+  - actif (moins d'un an)
+  - 'vocabulaire : agriculture, livestock'
+  propose_le: '2026-10-19'
+  publier: true
+  resume: Logiciel d'optimisation des rations alimentaires pour le bétail avec assistance par IA. Il fonctionne
+    hors ligne et sans abonnement.
+  interet: Aide à formuler des rations nutritionnelles adaptées pour améliorer l'élevage.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - alimentation animale
+  - bétail
+  - optimisation
+  - ration
+  - ruminants
+- id: 28e290f91837
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: cyanheads/brapi-mcp-server
+  url: https://github.com/cyanheads/brapi-mcp-server
+  description: A collaborative BrAPI v2.1 workspace for multi-agent research via MCP. Search studies,
+    germplasm, genotypes, and more across Breedbase, T3, Sweetpotatobase, and any BrAPI v2-compliant server.
+  licence: apache-2.0
+  date_maj: '2026-10-19'
+  techno: TypeScript
+  popularite: 4
+  mots_cles:
+  - agriculture
+  - bioinformatics
+  - brapi
+  - breedbase
+  - cyanheads
+  - genotyping
+  - germplasm
+  - llm-tools
+  score: 76
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-10-19'
+  publier: true
+  resume: Interface collaborative pour interroger des bases de données génétiques végétales via le standard
+    BrAPI. Elle permet de rechercher des études, génotypes et germoplasmes.
+  interet: Simplifie l'accès et l'analyse de données génomiques pour la sélection végétale.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - brapi
+  - génétique végétale
+  - germoplasme
+  - génotype
+  - sélection variétale
+- id: 73faacdfd775
+  famille: modele
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: VatsalKhanna5/agri-perceiver-2026
+  url: https://github.com/VatsalKhanna5/agri-perceiver-2026
+  description: A lightweight specialist vision language model paradigm for structured biological phenotyping.
+  licence: apache-2.0
+  date_maj: '2026-09-01'
+  techno: TeX
+  popularite: 4
+  mots_cles:
+  - agritech
+  - machine-learning
+  - parameter-efficient-fine-tuning
+  - pseudo-intelligent-artificial-structures
+  - vision-language-model
+  score: 76
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agritech'
+  propose_le: '2026-10-19'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: inconnu
+  redige_par: mistral-small-latest
+  famille_initiale: logiciel
+- id: b4335b512a7d
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: nandhakumar-murugan/Next-Gen-Agricultural-Supply-Chain-on-Blockchain
+  url: https://github.com/nandhakumar-murugan/Next-Gen-Agricultural-Supply-Chain-on-Blockchain
+  description: 🌾 AgriTrade — Next-Gen decentralized agricultural supply chain on Blockchain with Solidity
+    smart contracts, provenance tracking, and fair pricing.
+  licence: mit
+  date_maj: '2026-08-24'
+  techno: JavaScript
+  popularite: 3
+  mots_cles:
+  - agritech
+  - blockchain
+  - dapp
+  - ethereum
+  - javascript
+  - smart-contracts
+  - solidity
+  - supply-chain
+  score: 76
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agritech'
+  propose_le: '2026-10-19'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+- id: f310c38d4f64
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: Xiaomiju-x/RootScope-AdventureX2026
+  url: https://github.com/Xiaomiju-x/RootScope-AdventureX2026
+  description: 🏆 RootScope（溯根）— AdventureX 2026 双赛道获奖：地瓜机器人赛道二等奖（银奖 · 最终第 2 名）＋ superun.ai「不比代码，比谁离问题最近」赛道三等奖。RDK
+    X5 + STM32 固定式根区灌溉舱。
+  licence: apache-2.0
+  date_maj: '2026-10-02'
+  techno: Python
+  popularite: 3
+  mots_cles:
+  - adventurex-2026
+  - agritech
+  - award-winning
+  - bpu
+  - computer-vision
+  - d-robotics
+  - edge-ai
+  - embedded-systems
+  score: 76
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agritech'
+  propose_le: '2026-10-19'
+  publier: true
+  resume: Projet de robot fixe pour l'irrigation localisée des racines utilisant un système embarqué RDK
+    X5 et STM32. Il permet de contrôler précisément l'apport en eau au niveau des racines des plantes.
+  interet: Optimiser l'irrigation des cultures en ajustant localement l'apport en eau.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - irrigation racinaire
+  - robot fixe
+  - agriculture de précision
+  - contrôle embarqué
+  - système racinaire
+- id: edc22a122b8e
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: rserdarkara-hash/monolith
+  url: https://github.com/rserdarkara-hash/monolith
+  description: A research-grade tool for comprehensive spatial and descriptive analysis of soils.
+  licence: gpl-3.0
+  date_maj: '2026-10-13'
+  techno: R
+  popularite: 8
+  mots_cles:
+  - cokriging
+  - cross-validation
+  - data-visualization
+  - digital-soil-mapping
+  - geostatistics
+  - gstat
+  - kriging
+  - mapping-tools
+  score: 76
+  raisons:
+  - licence gpl-3.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : soil'
+  propose_le: '2026-10-19'
+  publier: true
+  resume: Outil de recherche pour l'analyse spatiale et descriptive des sols. Il permet de visualiser
+    et d'analyser des données pédologiques de manière approfondie.
+  interet: Étudier et cartographier les propriétés des sols pour adapter les pratiques agricoles.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - analyse des sols
+  - cartographie pédologique
+  - géostatistique
+  - visualisation spatiale
+  - cokrigeage
+- id: d60f42cef956
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: meltoner/agrofelis
+  url: https://github.com/meltoner/agrofelis
+  description: Agile energy dense agricultural robot design plans and open source code repository
+  licence: mit
+  date_maj: '2026-10-06'
+  techno: G-code
+  popularite: 3
+  mots_cles:
+  - 3d
+  - 3d-printing
+  - agriculture
+  - artificial-intelligence
+  - autonomy
+  - esp32
+  - fabrication
+  - hackaday
+  score: 76
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-10-19'
+  publier: true
+  resume: Plans de conception et code open source pour un robot agricole énergétiquement efficace et agile.
+    Il inclut des éléments de conception 3D et des composants électroniques.
+  interet: Développer des robots autonomes pour des tâches agricoles variées.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - robot agricole
+  - autonomie
+  - conception 3d
+  - agriculture de précision
+  - électronique embarquée
+- id: 9f4843d347e3
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: 'Data and code for: Yield advantages and resource-reporting gaps in plant factories with artificial
+    lighting. A meta-analysis'
+  url: https://doi.org/10.5281/zenodo.23467736
+  description: Source data, live Excel calculations, source-reference key and reproducible analysis code
+    supporting Yield advantages and resource-reporting gaps in plant factories with artificial lighting.
+    A meta-analysis . The curated workbook contains 784 plant-factory treatment records from 154 sources,
+    with eligibility flags selecting 689 analyzed records from 125 sources. All 31 worksheets are visible
+    and 3
+  licence: cc-by-4.0
+  date_maj: '2026-10-19'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - plant factories with artificial lighting
+  - PFAL
+  - vertical farming
+  - meta-analysis
+  - controlled environment agriculture
+  - yield
+  - energy use
+  - water use
+  score: 92
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farming, yield, water'
+  propose_le: '2026-10-19'
+  publier: true
+  resume: Données et code pour une méta-analyse sur les avantages de rendement et les écarts de reporting
+    dans les fermes verticales avec éclairage artificiel. Il contient 784 enregistrements de traitements.
+  interet: Évaluer l'efficacité des systèmes de culture en environnement contrôlé pour optimiser les rendements.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - fermes verticales
+  - éclairage artificiel
+  - méta-analyse
+  - rendement agricole
+  - culture en environnement contrôlé
+- id: b46eae213236
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: Source data and plotting code for "Enhancing soil self-cleansing capacity for safe and productive
+    agriculture"
+  url: https://doi.org/10.5281/zenodo.23448432
+  description: 'Source data and plotting code for the figures of the article "Enhancing soil self-cleansing
+    capacity for safe and productive agriculture". The article quantifies the self-cleansing of organochlorine
+    pesticides (OCPs) in Chinese agricultural soils from 1980 to 2020, tests the effect of tillage intensity
+    in five field experiments, and assesses an optimized reduced-tillage strategy and its costs and '
+  licence: cc-by-4.0
+  date_maj: '2026-10-18'
+  techno: ''
+  popularite: 0
+  mots_cles: []
+  score: 88
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, pesticide, soil'
+  propose_le: '2026-10-19'
+  publier: true
+  resume: Données sources et code de traçage pour l'article sur l'amélioration de la capacité d'autoépuration
+    des sols pour une agriculture sûre et productive.
+  interet: Analyser l'impact des pratiques agricoles sur la dégradation des polluants dans les sols.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - autoépuration des sols
+  - polluants organochlorés
+  - pratiques agricoles
+  - travail du sol
+  - analyse de données
+- id: 5452c3035730
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: 'Reproducibility package for: Field Wetness Governs the Advective Enhancement of Evapotranspiration
+    at Irrigated Farms in Arizona: Implications for Operational W'
+  url: https://doi.org/10.5281/zenodo.23425814
+  description: 'This package contains the processed data and Python scripts that reproduce the tables
+    and figures of Vivoni et al., &ldquo;Field Wetness Governs the Advective Enhancement of Evapotranspiration
+    at Irrigated Farms in Arizona: Implications for Operational Water Accounting.&rdquo; Running the included
+    scripts regenerates main-text Figures 1&ndash;10 and Tables 1&ndash;4 and supporting-information Figu'
+  licence: cc-by-4.0
+  date_maj: '2026-10-16'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - evapotranspiration
+  - OpenET
+  - oasis effect
+  - lateral advection
+  - eddy covariance
+  - surface energy balance
+  - irrigated agriculture
+  - remote sensing
+  score: 88
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farm, water'
+  propose_le: '2026-10-19'
+  publier: true
+  resume: Paquet de reproductibilité contenant des données traitées et des scripts Python pour reproduire
+    les résultats d'une étude sur l'évapotranspiration dans les fermes irriguées.
+  interet: Comprendre les mécanismes d'évapotranspiration pour optimiser l'irrigation et la gestion de
+    l'eau.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - évapotranspiration
+  - irrigation
+  - bilan hydrique
+  - agriculture irriguée
+  - analyse de données
+- id: 37579770427e
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: Source data and plotting code for "Enhancing soil self-cleansing capacity for safe and productive
+    agriculture"
+  url: https://doi.org/10.5281/zenodo.23417955
+  description: Source data and plotting code for the figures of the article "Enhancing soil self-cleansing
+    capacity for safe and productive agriculture". The article quantifies the self-cleansing of organochlorine
+    pesticides (OCPs) in Chinese agricultural soils from 1980 to 2020, tests the effect of tillage intensity
+    in five field experiments, and assesses an optimized reduced-tillage strategy and its costs and&
+  licence: cc-by-4.0
+  date_maj: '2026-10-16'
+  techno: ''
+  popularite: 0
+  mots_cles: []
+  score: 88
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, pesticide, soil'
+  propose_le: '2026-10-19'
+  publier: true
+  resume: Données et code de traçage sur l'autoépuration des sols agricoles chinois contaminés par des
+    pesticides organochlorés entre 1980 et 2020. Le projet évalue l'impact de l'intensité du labour sur
+    cette capacité d'autoépuration.
+  interet: Permet d'étudier les stratégies de gestion des sols pour limiter la contamination par des polluants
+    persistants.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - autoépuration
+  - sols agricoles
+  - pesticides
+  - labour
+  - contamination
+- id: 4fe6d3c78b19
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: 'HIDRONUT: data and analysis code for: The added value of Sentinel-2 imagery for soil-water monitoring
+    in citrus: gains between dates, not between monitored plot'
+  url: https://doi.org/10.5281/zenodo.23350788
+  description: Paired Sentinel-2 and PlanetScope reflectance and capacitance-probe soil-water records
+    from eleven plot-deployment periods in commercial citrus orchards in Huelva, Spain, January 2024 to
+    May 2025, together with the frozen analysis pipeline that produces every model-based result reported
+    in the associated article. The pipeline evaluates linear and tree-based models under random, date-grouped,
+    block
+  licence: cc-by-4.0
+  date_maj: '2026-10-16'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - Sentinel-2
+  - precision agriculture
+  - model transferability
+  score: 88
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, orchard, water'
+  propose_le: '2026-10-19'
+  publier: true
+  resume: Données de réflectance Sentinel-2 et PlanetScope couplées à des mesures de teneur en eau du
+    sol dans des vergers de citrus en Espagne. Le code d'analyse évalue des modèles pour le suivi hydrique
+    des sols.
+  interet: Aide à optimiser l'irrigation et le suivi hydrique dans les cultures pérennes.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - Sentinel-2
+  - PlanetScope
+  - suivi hydrique
+  - citrus
+  - modélisation
+- id: db40120e7ae2
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: Control of Plant Diseases and Pests in Greenhouses under the Conditions of Bukhara Region
+  url: https://doi.org/10.5281/zenodo.23411305
+  description: 'This article discusses the main diseases and pests affecting agricultural crops grown
+    in greenhouses under the sharply continental climate of the Bukhara region, their patterns of spread,
+    and measures to control them. It examines an integrated pest management (IPM) system combining agronomic,
+    biological, and chemical methods to control pests such as greenhouse whiteflies, spider mites, and
+    tomato '
+  licence: cc-by-4.0
+  date_maj: '2026-10-16'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - greenhouse, Bukhara climate, pests, whitefly, spider mite, soil solarization, entomophages, integrated
+    pest management.
+  score: 85
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : crop, greenhouse, soil'
+  propose_le: '2026-10-19'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: inconnu
+  redige_par: mistral-small-latest
+- id: 35aa2713b2d9
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: Zones agricoles défavorisées de montagne en BFC
+  url: https://www.data.gouv.fr/datasets/zones-agricoles-defavorisees-de-montagne-en-bfc-1
+  description: Le classement des communes en zone de montagne (au sens des zones agricoles défavorisées
+    de montagne - zonage agriculture) repose sur les dispositions du règlement n°1257/1999 du Conseil
+    du 17 mai 1999 concernant le soutien au développement rural et plus particulièrement sur son article
+    18 pour la montagne, et la directive 76/401/CEE du Conseil du 6 avril 1976 (détermination précise
+    des critères p
+  licence: etalab-2.0
+  date_maj: '2026-04-29'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - zone-de-montagne
+  - zones-agricoles-dfavorises
+  score: 81
+  raisons:
+  - licence etalab-2.0
+  - actif (moins d'un an)
+  - 'vocabulaire : agricole, agriculture, rural'
+  propose_le: '2026-10-19'
+  publier: true
+  resume: Données géographiques classant les communes de Bourgogne-Franche-Comté en zones agricoles défavorisées
+    de montagne selon des critères réglementaires européens.
+  interet: Permet d'identifier les zones éligibles à des aides spécifiques liées à l'agriculture en montagne.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - zones agricoles défavorisées
+  - montagne
+  - classement
+  - aides agricoles
+  - réglementation
+- id: 06ba1009922b
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: ASSESSMENT OF WINTER RAPESEED VARIETIES AND ACCESSIONS BASED ON PRODUCTIVITY INDICATORS
+  url: https://doi.org/10.5281/zenodo.23383625
+  description: This study was conducted under the conditions of the Samarkand region using winter rapeseed
+    (Brassica napus L.) varieties and accessions evaluated in breeding nurseries. The introduced accessions
+    were compared with the reference variety Yuntai and analysed. Traits representing productivity components
+    were assessed, and the accessions showing the highest values were selected for the next stage of t
+  licence: cc-by-4.0
+  date_maj: '2026-10-15'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - winter rapeseed, varieties and accessions, introduction, productivity, seed yield.
+  score: 79
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : seed, yield'
+  propose_le: '2026-10-19'
+  publier: true
+  resume: Données et analyses sur l'évaluation de variétés et accessions de colza d'hiver en Ouzbékistan,
+    basées sur des indicateurs de productivité.
+  interet: Contribue à la sélection de variétés adaptées pour améliorer le rendement des cultures.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - colza d'hiver
+  - variétés
+  - productivité
+  - sélection
+  - rendement
+- id: 099a7e77fb51
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: Project-AgML/image_safari_unknown_crop_cip_nairobi
+  url: https://huggingface.co/datasets/Project-AgML/image_safari_unknown_crop_cip_nairobi
+  description: Image Safari Unknown Crop Cip Nairobi Unlabeled RGB field photographs of unspecified crops
+    taken at the CIP Nairobi site (Nairobi, Kenya) from 2025-02-24 to 2025-11-20 for the Image Safari
+    project, which collected a large, diverse set of crop images across sub-Saharan Africa as a foun
+  licence: cc-by-sa-4.0
+  date_maj: '2026-10-08'
+  techno: ''
+  popularite: 2
+  mots_cles: []
+  score: 73
+  raisons:
+  - licence cc-by-sa-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : crop'
+  propose_le: '2026-10-19'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: inconnu
+  redige_par: mistral-small-latest
+- id: eb1267352a32
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: Project-AgML/image_safari_unknown_crop_cimmyt_kiboko
+  url: https://huggingface.co/datasets/Project-AgML/image_safari_unknown_crop_cimmyt_kiboko
+  description: Image Safari Unknown Crop Cimmyt Kiboko Unlabeled RGB field photographs of unspecified
+    crops taken at the CIMMYT Kiboko site (Kiboko, Kenya) from 2025-04-25 to 2025-09-18 for the Image
+    Safari project, which collected a large, diverse set of crop images across sub-Saharan Africa as a
+    f
+  licence: cc-by-sa-4.0
+  date_maj: '2026-10-08'
+  techno: ''
+  popularite: 2
+  mots_cles: []
+  score: 73
+  raisons:
+  - licence cc-by-sa-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : crop'
+  propose_le: '2026-10-19'
+  publier: true
+  resume: Jeu de données d'images RGB non étiquetées de champs de cultures non spécifiées prises au site
+    de Kiboko (Kenya) entre avril et septembre 2025. Ces images proviennent d'un projet collectant des
+    photographies de cultures en Afrique subsaharienne.
+  interet: Permet d'entraîner des modèles de vision par ordinateur pour l'analyse d'images agricoles.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - images agricoles
+  - cultures non spécifiées
+  - kenya
+  - rgb
+  - vision par ordinateur
+- id: dbe84b1ddc6e
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: Project-AgML/image_safari_unknown_crop_ciat_arusha
+  url: https://huggingface.co/datasets/Project-AgML/image_safari_unknown_crop_ciat_arusha
+  description: Image Safari Unknown Crop Ciat Arusha Unlabeled RGB field photographs of unspecified crops
+    taken at the CIAT Arusha site (Arusha, Tanzania) from 2025-05-21 to 2025-09-24 for the Image Safari
+    project, which collected a large, diverse set of crop images across sub-Saharan Africa as a fo
+  licence: cc-by-sa-4.0
+  date_maj: '2026-10-08'
+  techno: ''
+  popularite: 0
+  mots_cles: []
+  score: 73
+  raisons:
+  - licence cc-by-sa-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : crop'
+  propose_le: '2026-10-19'
+  publier: true
+  resume: Jeu de données d'images RGB non étiquetées de champs de cultures non spécifiées prises au site
+    d'Arusha (Tanzanie) entre mai et septembre 2025. Ces images proviennent d'un projet collectant des
+    photographies de cultures en Afrique subsaharienne.
+  interet: Permet d'entraîner des modèles de vision par ordinateur pour l'analyse d'images agricoles.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - images agricoles
+  - cultures non spécifiées
+  - tanzanie
+  - rgb
+  - vision par ordinateur
+- id: eef4de70c2fb
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: Project-AgML/image_safari_crop_weed_segmentation
+  url: https://huggingface.co/datasets/Project-AgML/image_safari_crop_weed_segmentation
+  description: Image Safari Crop Weed Segmentation Crop and weed segmentation of field photographs from
+    the Image Safari project, a large crop image collection from sites across sub-Saharan Africa. QED
+    annotators outlined every crop plant and weed in 2,114 smartphone images of 16 crops (100-200 imag
+  licence: cc-by-sa-4.0
+  date_maj: '2026-10-08'
+  techno: ''
+  popularite: 0
+  mots_cles: []
+  score: 73
+  raisons:
+  - licence cc-by-sa-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : crop'
+  propose_le: '2026-10-19'
+  publier: true
+  resume: Jeu de données d'images annotées pour la segmentation des cultures et des adventices issues
+    de photographies de champs. Contient 2 114 images de 16 cultures avec des contours tracés pour chaque
+    plante et adventice.
+  interet: Permet de développer des outils de détection automatique des adventices pour la gestion des
+    cultures.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - segmentation
+  - cultures
+  - adventices
+  - images annotées
+  - détection automatique
+- id: cae6ceba00cd
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: Project-AgML/sesame_crop_weed_detection
+  url: https://huggingface.co/datasets/Project-AgML/sesame_crop_weed_detection
+  description: 'Sesame Crop Weed Detection Sesame crop and weed detection: 1,300 RGB images (512 x 512
+    pixels) of sesame plants and weeds in the field with 2,072 hand-drawn bounding boxes in two classes,
+    sesame (1,212) and weed (860), 1 to 19 boxes per image. The publisher photographed 589 scenes at'
+  licence: cc0-1.0
+  date_maj: '2026-10-07'
+  techno: ''
+  popularite: 0
+  mots_cles: []
+  score: 73
+  raisons:
+  - licence cc0-1.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : crop'
+  propose_le: '2026-10-19'
+  publier: true
+  resume: Jeu de données de 1 300 images RGB (512x512 pixels) de plants de sésame et d'adventices en champ,
+    avec 2 072 boîtes englobantes dessinées à la main. Contient 1 à 19 boîtes par image.
+  interet: Permet d'entraîner des modèles de détection d'adventices spécifiques au sésame.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - sésame
+  - adventices
+  - détection
+  - images annotées
+  - boîtes englobantes
+- id: 164ac78b09fc
+  famille: modele
+  relecteur: ionosphere
+  source: hf-modeles-plantes
+  titre: uWandile/farmacy-plant-disease
+  url: https://huggingface.co/uWandile/farmacy-plant-disease
+  description: image-classification plant-disease tomato potato vision agriculture en endpoints_compatible
+  licence: mit
+  date_maj: '2026-10-16'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - image-classification
+  - plant-disease
+  - tomato
+  - potato
+  - vision
+  - agriculture
+  - en
+  - endpoints_compatible
+  score: 82
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, plant-disease'
+  propose_le: '2026-10-19'
+  publier: true
+  resume: Modèle de classification d'images pour la détection de maladies des plantes sur tomates et pommes
+    de terre. Compatible avec des endpoints de vision par ordinateur.
+  interet: Peut servir à identifier automatiquement des maladies sur des cultures de tomates et pommes
+    de terre.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - classification d'images
+  - maladies des plantes
+  - tomate
+  - pomme de terre
+  - vision par ordinateur
+- id: 23deaf07c7f9
+  famille: modele
+  relecteur: ionosphere
+  source: hf-modeles-agri
+  titre: adaniele/Agriculture-DelAny-v2-Plane
+  url: https://huggingface.co/adaniele/Agriculture-DelAny-v2-Plane
+  description: ultralytics instance-segmentation field-boundary-delineation remote-sensing aerial-imagery
+    geospatial
+  licence: agpl-3.0
+  date_maj: '2026-07-28'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - ultralytics
+  - instance-segmentation
+  - field-boundary-delineation
+  - remote-sensing
+  - aerial-imagery
+  - geospatial
+  score: 73
+  raisons:
+  - licence agpl-3.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : geospatial, remote-sensing'
+  propose_le: '2026-10-19'
+  publier: true
+  resume: Modèle de segmentation d'instances pour la délimitation des parcelles agricoles à partir d'imagerie
+    aérienne. Utilise des données de télédétection géospatiales.
+  interet: Permet de cartographier automatiquement les limites des parcelles agricoles.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - segmentation d'instances
+  - délimitation de parcelles
+  - télédétection
+  - imagerie aérienne
+  - géospatial
+resume_genere_le: 2026-10-19 10:34
