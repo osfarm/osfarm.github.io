@@ -73,6 +73,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Plateforme d'intelligence artificielle pour l'agriculture qui relie producteurs et acheteurs via une évaluation automatisée de la qualité des cultures. Elle inclut des prévisions de prix, de demande et une gestion logistique."
  },
+ "06ba1009922b": {
+  "famille": "donnees",
+  "id": "06ba1009922b",
+  "interet": "Contribue à la sélection de variétés adaptées pour améliorer le rendement des cultures.",
+  "mots_cles": [
+   "colza d'hiver",
+   "variétés",
+   "productivité",
+   "sélection",
+   "rendement"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Données et analyses sur l'évaluation de variétés et accessions de colza d'hiver en Ouzbékistan, basées sur des indicateurs de productivité."
+ },
  "07d2fda70d33": {
   "famille": "materiel",
   "id": "07d2fda70d33",
@@ -132,6 +147,15 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Périmètres des groupes d'action locale pêche et aquaculture en Normandie. Ces territoires associent acteurs publics et privés autour d'une stratégie commune."
+ },
+ "099a7e77fb51": {
+  "famille": "donnees",
+  "id": "099a7e77fb51",
+  "interet": "",
+  "mots_cles": [],
+  "pertinence": "inconnu",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
  },
  "0ce570823952": {
   "famille": "logiciel",
@@ -250,6 +274,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Extraction filtrée des informations réglementaires sur les produits phytosanitaires autorisés en vigne, incluant délais et distances. Elle provient du catalogue officiel E-Phy."
+ },
+ "164ac78b09fc": {
+  "famille": "modele",
+  "id": "164ac78b09fc",
+  "interet": "Peut servir à identifier automatiquement des maladies sur des cultures de tomates et pommes de terre.",
+  "mots_cles": [
+   "classification d'images",
+   "maladies des plantes",
+   "tomate",
+   "pomme de terre",
+   "vision par ordinateur"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Modèle de classification d'images pour la détection de maladies des plantes sur tomates et pommes de terre. Compatible avec des endpoints de vision par ordinateur."
  },
  "164d00c12f42": {
   "famille": "donnees",
@@ -481,6 +520,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Plateforme de monitoring IoT basée sur ESP32 utilisant MQTT pour collecter des télémétries en temps réel via des capteurs dynamiques. Elle permet de surveiller des paramètres environnementaux ou agricoles à distance."
  },
+ "23deaf07c7f9": {
+  "famille": "modele",
+  "id": "23deaf07c7f9",
+  "interet": "Permet de cartographier automatiquement les limites des parcelles agricoles.",
+  "mots_cles": [
+   "segmentation d'instances",
+   "délimitation de parcelles",
+   "télédétection",
+   "imagerie aérienne",
+   "géospatial"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Modèle de segmentation d'instances pour la délimitation des parcelles agricoles à partir d'imagerie aérienne. Utilise des données de télédétection géospatiales."
+ },
  "27bb878c81e8": {
   "famille": "logiciel",
   "id": "27bb878c81e8",
@@ -510,6 +564,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Jeu de données RGB-D annoté pour la segmentation sémantique d'espèces végétales en grandes cultures. Il contient des images haute résolution (1600×1140) avec des masques de vérité terrain manuels pour cinq espèces dont des adventices."
+ },
+ "28e290f91837": {
+  "famille": "logiciel",
+  "id": "28e290f91837",
+  "interet": "Simplifie l'accès et l'analyse de données génomiques pour la sélection végétale.",
+  "mots_cles": [
+   "brapi",
+   "génétique végétale",
+   "germoplasme",
+   "génotype",
+   "sélection variétale"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Interface collaborative pour interroger des bases de données génétiques végétales via le standard BrAPI. Elle permet de rechercher des études, génotypes et germoplasmes."
  },
  "2abbce3fa1b0": {
   "famille": "logiciel",
@@ -660,6 +729,36 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Données annuelles de ventes de pesticides par département en France, déclarées par les distributeurs. Elles permettent de suivre les ventes sur le territoire."
+ },
+ "35aa2713b2d9": {
+  "famille": "donnees",
+  "id": "35aa2713b2d9",
+  "interet": "Permet d'identifier les zones éligibles à des aides spécifiques liées à l'agriculture en montagne.",
+  "mots_cles": [
+   "zones agricoles défavorisées",
+   "montagne",
+   "classement",
+   "aides agricoles",
+   "réglementation"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Données géographiques classant les communes de Bourgogne-Franche-Comté en zones agricoles défavorisées de montagne selon des critères réglementaires européens."
+ },
+ "37579770427e": {
+  "famille": "donnees",
+  "id": "37579770427e",
+  "interet": "Permet d'étudier les stratégies de gestion des sols pour limiter la contamination par des polluants persistants.",
+  "mots_cles": [
+   "autoépuration",
+   "sols agricoles",
+   "pesticides",
+   "labour",
+   "contamination"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Données et code de traçage sur l'autoépuration des sols agricoles chinois contaminés par des pesticides organochlorés entre 1980 et 2020. Le projet évalue l'impact de l'intensité du labour sur cette capacité d'autoépuration."
  },
  "3781fc1cd1e3": {
   "famille": "logiciel",
@@ -966,6 +1065,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Jeu de données d'images de mauvaises herbes dans les cultures de maïs, collecté sur des machines agricoles pour évaluer la détection des adventices. Il sert à entraîner des modèles de détection d'objets."
  },
+ "4fe6d3c78b19": {
+  "famille": "donnees",
+  "id": "4fe6d3c78b19",
+  "interet": "Aide à optimiser l'irrigation et le suivi hydrique dans les cultures pérennes.",
+  "mots_cles": [
+   "Sentinel-2",
+   "PlanetScope",
+   "suivi hydrique",
+   "citrus",
+   "modélisation"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Données de réflectance Sentinel-2 et PlanetScope couplées à des mesures de teneur en eau du sol dans des vergers de citrus en Espagne. Le code d'analyse évalue des modèles pour le suivi hydrique des sols."
+ },
  "502e950907ae": {
   "famille": "logiciel",
   "id": "502e950907ae",
@@ -1039,6 +1153,21 @@
   "pertinence": "non",
   "redige_par": "mistral-small-latest",
   "resume": ""
+ },
+ "5452c3035730": {
+  "famille": "donnees",
+  "id": "5452c3035730",
+  "interet": "Comprendre les mécanismes d'évapotranspiration pour optimiser l'irrigation et la gestion de l'eau.",
+  "mots_cles": [
+   "évapotranspiration",
+   "irrigation",
+   "bilan hydrique",
+   "agriculture irriguée",
+   "analyse de données"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Paquet de reproductibilité contenant des données traitées et des scripts Python pour reproduire les résultats d'une étude sur l'évapotranspiration dans les fermes irriguées."
  },
  "54c1bd1767eb": {
   "famille": "donnees",
@@ -1260,6 +1389,15 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Outil en ligne de commande et serveur MCP pour évaluer génétiquement les ovins via la base de données NSIP. Il permet de rechercher des animaux, comparer leurs valeurs d'élevage et planifier des accouplements."
+ },
+ "73faacdfd775": {
+  "famille": "modele",
+  "id": "73faacdfd775",
+  "interet": "",
+  "mots_cles": [],
+  "pertinence": "inconnu",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
  },
  "7502092a85dd": {
   "famille": "donnees",
@@ -1736,6 +1874,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Ce projet recense les dépassements de seuils réglementaires en pesticides dans les cours d'eau dans le cadre de la stratégie Ecophyto 2030. Il identifie des territoires prioritaires pour des actions de réduction des pesticides."
  },
+ "9f4843d347e3": {
+  "famille": "donnees",
+  "id": "9f4843d347e3",
+  "interet": "Évaluer l'efficacité des systèmes de culture en environnement contrôlé pour optimiser les rendements.",
+  "mots_cles": [
+   "fermes verticales",
+   "éclairage artificiel",
+   "méta-analyse",
+   "rendement agricole",
+   "culture en environnement contrôlé"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Données et code pour une méta-analyse sur les avantages de rendement et les écarts de reporting dans les fermes verticales avec éclairage artificiel. Il contient 784 enregistrements de traitements."
+ },
  "a3ae24c122b1": {
   "famille": "logiciel",
   "id": "a3ae24c122b1",
@@ -1860,6 +2013,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Modèle de classification d'images pour la détection de maladies des plantes basé sur DINOv2. Compatible avec des endpoints de vision par ordinateur."
  },
+ "adeec615211b": {
+  "famille": "logiciel",
+  "id": "adeec615211b",
+  "interet": "Facilite l'automatisation des tâches agricoles via la robotique.",
+  "mots_cles": [
+   "mission",
+   "planification",
+   "robotique agricole",
+   "trajectoire",
+   "traitement de champ"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Outil de planification de missions pour un robot agricole open source. Il génère des trajectoires pour des essais en champ."
+ },
  "ae45ebbdafc2": {
   "famille": "donnees",
   "id": "ae45ebbdafc2",
@@ -1889,6 +2057,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Plateforme tout-en-un pour l'analyse des cultures, les services de marché et la consultation agricole experte. Elle propose des recommandations et des outils d'aide à la décision."
+ },
+ "ae7ac62c1886": {
+  "famille": "logiciel",
+  "id": "ae7ac62c1886",
+  "interet": "Aide à formuler des rations nutritionnelles adaptées pour améliorer l'élevage.",
+  "mots_cles": [
+   "alimentation animale",
+   "bétail",
+   "optimisation",
+   "ration",
+   "ruminants"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Logiciel d'optimisation des rations alimentaires pour le bétail avec assistance par IA. Il fonctionne hors ligne et sans abonnement."
  },
  "af85050e5d73": {
   "famille": "matériel",
@@ -1993,6 +2176,30 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Modèle numérique simulant les dynamiques biogéochimiques et hydrologiques des sols pour l'étude du stockage du carbone. Il se concentre sur les couches superficielles du sol."
+ },
+ "b4335b512a7d": {
+  "famille": "logiciel",
+  "id": "b4335b512a7d",
+  "interet": "",
+  "mots_cles": [],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
+ "b46eae213236": {
+  "famille": "donnees",
+  "id": "b46eae213236",
+  "interet": "Analyser l'impact des pratiques agricoles sur la dégradation des polluants dans les sols.",
+  "mots_cles": [
+   "autoépuration des sols",
+   "polluants organochlorés",
+   "pratiques agricoles",
+   "travail du sol",
+   "analyse de données"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Données sources et code de traçage pour l'article sur l'amélioration de la capacité d'autoépuration des sols pour une agriculture sûre et productive."
  },
  "b4d4c2caa2cb": {
   "famille": "logiciel",
@@ -2343,6 +2550,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Base de données géospatiale de la production d'avocat au Mexique en 2025, intégrant des données par cultivar. Elle fournit des variables de production au niveau municipal."
  },
+ "cae6ceba00cd": {
+  "famille": "donnees",
+  "id": "cae6ceba00cd",
+  "interet": "Permet d'entraîner des modèles de détection d'adventices spécifiques au sésame.",
+  "mots_cles": [
+   "sésame",
+   "adventices",
+   "détection",
+   "images annotées",
+   "boîtes englobantes"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Jeu de données de 1 300 images RGB (512x512 pixels) de plants de sésame et d'adventices en champ, avec 2 072 boîtes englobantes dessinées à la main. Contient 1 à 19 boîtes par image."
+ },
  "cb9aa159ce42": {
   "famille": "logiciel",
   "id": "cb9aa159ce42",
@@ -2526,6 +2748,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Piège photographique pour insectes utilisant une caméra et l'apprentissage profond, permettant une détection automatisée. Il permet de surveiller les populations d'insectes sur le terrain."
  },
+ "d60f42cef956": {
+  "famille": "logiciel",
+  "id": "d60f42cef956",
+  "interet": "Développer des robots autonomes pour des tâches agricoles variées.",
+  "mots_cles": [
+   "robot agricole",
+   "autonomie",
+   "conception 3d",
+   "agriculture de précision",
+   "électronique embarquée"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Plans de conception et code open source pour un robot agricole énergétiquement efficace et agile. Il inclut des éléments de conception 3D et des composants électroniques."
+ },
  "d90aeaa302bc": {
   "famille": "logiciel",
   "id": "d90aeaa302bc",
@@ -2584,6 +2821,30 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Ce jeu de données recense les résultats du Recensement Général Agricole pour les communes du Parc naturel régional du Morvan aux années 1988, 2000, 2010 et 2020."
+ },
+ "db40120e7ae2": {
+  "famille": "donnees",
+  "id": "db40120e7ae2",
+  "interet": "",
+  "mots_cles": [],
+  "pertinence": "inconnu",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
+ "dbe84b1ddc6e": {
+  "famille": "donnees",
+  "id": "dbe84b1ddc6e",
+  "interet": "Permet d'entraîner des modèles de vision par ordinateur pour l'analyse d'images agricoles.",
+  "mots_cles": [
+   "images agricoles",
+   "cultures non spécifiées",
+   "tanzanie",
+   "rgb",
+   "vision par ordinateur"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Jeu de données d'images RGB non étiquetées de champs de cultures non spécifiées prises au site d'Arusha (Tanzanie) entre mai et septembre 2025. Ces images proviennent d'un projet collectant des photographies de cultures en Afrique subsaharienne."
  },
  "dc0f5c62e9ef": {
   "famille": "donnees",
@@ -2776,6 +3037,21 @@
   "redige_par": "mistral-small-latest",
   "resume": ""
  },
+ "eb1267352a32": {
+  "famille": "donnees",
+  "id": "eb1267352a32",
+  "interet": "Permet d'entraîner des modèles de vision par ordinateur pour l'analyse d'images agricoles.",
+  "mots_cles": [
+   "images agricoles",
+   "cultures non spécifiées",
+   "kenya",
+   "rgb",
+   "vision par ordinateur"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Jeu de données d'images RGB non étiquetées de champs de cultures non spécifiées prises au site de Kiboko (Kenya) entre avril et septembre 2025. Ces images proviennent d'un projet collectant des photographies de cultures en Afrique subsaharienne."
+ },
  "ec4e06f00abe": {
   "famille": "donnees",
   "id": "ec4e06f00abe",
@@ -2805,6 +3081,36 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Plateforme locale de gestion des exploitations agricoles intégrant champs, tâches, bétail, finances, conformité et météo. Elle centralise plusieurs systèmes européens de parcelles (SIGPAC, BRP, RPG, etc.)."
+ },
+ "edc22a122b8e": {
+  "famille": "logiciel",
+  "id": "edc22a122b8e",
+  "interet": "Étudier et cartographier les propriétés des sols pour adapter les pratiques agricoles.",
+  "mots_cles": [
+   "analyse des sols",
+   "cartographie pédologique",
+   "géostatistique",
+   "visualisation spatiale",
+   "cokrigeage"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Outil de recherche pour l'analyse spatiale et descriptive des sols. Il permet de visualiser et d'analyser des données pédologiques de manière approfondie."
+ },
+ "eef4de70c2fb": {
+  "famille": "donnees",
+  "id": "eef4de70c2fb",
+  "interet": "Permet de développer des outils de détection automatique des adventices pour la gestion des cultures.",
+  "mots_cles": [
+   "segmentation",
+   "cultures",
+   "adventices",
+   "images annotées",
+   "détection automatique"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Jeu de données d'images annotées pour la segmentation des cultures et des adventices issues de photographies de champs. Contient 2 114 images de 16 cultures avec des contours tracés pour chaque plante et adventice."
  },
  "f128a3168e57": {
   "famille": "logiciel",
@@ -2850,6 +3156,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Données géographiques des périmètres des conservatoires de l'abeille noire en Normandie. Ces zones visent à préserver une race locale d'abeilles."
+ },
+ "f310c38d4f64": {
+  "famille": "logiciel",
+  "id": "f310c38d4f64",
+  "interet": "Optimiser l'irrigation des cultures en ajustant localement l'apport en eau.",
+  "mots_cles": [
+   "irrigation racinaire",
+   "robot fixe",
+   "agriculture de précision",
+   "contrôle embarqué",
+   "système racinaire"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Projet de robot fixe pour l'irrigation localisée des racines utilisant un système embarqué RDK X5 et STM32. Il permet de contrôler précisément l'apport en eau au niveau des racines des plantes."
  },
  "f4f3083c6bc3": {
   "famille": "logiciel",
@@ -2954,6 +3275,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Documentation technique du matériel FarmBot Express, un système de culture automatisé. Elle détaille les composants et leur assemblage."
+ },
+ "fb5acd90df20": {
+  "famille": "donnees",
+  "id": "fb5acd90df20",
+  "interet": "Permet d'analyser la répartition spatiale des cultures pour des études agronomiques ou de gestion territoriale.",
+  "mots_cles": [
+   "californie",
+   "carte",
+   "cultures",
+   "données agricoles",
+   "parcelles"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Carte interactive des cultures californiennes basée sur des données de champs. Elle visualise les types de cultures cultivées à l'échelle parcellaire."
  },
  "fb8f5842e988": {
   "famille": "logiciel",
