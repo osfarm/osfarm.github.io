@@ -78,6 +78,12 @@
   "statut": "propose",
   "url": "https://www.data.gouv.fr/datasets/conservatoires-de-labeille-noire-centroides-normandie"
  },
+ "082ddd682870": {
+  "examine_le": "2026-10-20",
+  "score": 71,
+  "statut": "propose",
+  "url": "https://github.com/beepnl/BEEP"
+ },
  "083db8746f76": {
   "examine_le": "2026-10-13",
   "score": 76,
@@ -409,6 +415,12 @@
   "statut": "sans_licence",
   "url": "https://huggingface.co/datasets/Ayaan1-2/indian_crop_diseases"
  },
+ "246a2af70dfa": {
+  "examine_le": "2026-10-20",
+  "score": 73,
+  "statut": "propose",
+  "url": "https://huggingface.co/YuvrajSingh9886/phi3-mini-fine-tuned-agricultural-common-plant-diseases-QnA"
+ },
  "248860bc1693": {
   "examine_le": "2026-09-25",
   "statut": "sans_licence",
@@ -456,6 +468,12 @@
   "statut": "sans_licence",
   "url": "https://huggingface.co/jeet18wc2005/onion_plant_disease_detectionmodel"
  },
+ "28d5143792b9": {
+  "examine_le": "2026-10-20",
+  "score": 76,
+  "statut": "propose",
+  "url": "https://www.data.gouv.fr/datasets/occupation-du-sol-2024"
+ },
  "28e290f91837": {
   "examine_le": "2026-10-19",
   "score": 76,
@@ -498,6 +516,12 @@
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
   "url": "https://github.com/daiv05/maize-doctor-classifier"
+ },
+ "2c20a08f2ae4": {
+  "examine_le": "2026-10-20",
+  "score": 72,
+  "statut": "propose",
+  "url": "https://github.com/Sowaiba-01/AgroVision-Net"
  },
  "2c4bfd1838f8": {
   "examine_le": "2026-09-17",
@@ -574,6 +598,12 @@
   "score": 62,
   "statut": "propose",
   "url": "https://github.com/HarveyBates/ESP32-SDI12"
+ },
+ "31c95688c36f": {
+  "examine_le": "2026-10-20",
+  "score": 70,
+  "statut": "propose",
+  "url": "https://github.com/AhmadJeddi/Plant-Disease-Classification"
  },
  "31eeeefd3298": {
   "examine_le": "2026-09-26",
@@ -677,6 +707,12 @@
   "score": 79,
   "statut": "propose",
   "url": "https://github.com/Gororobas/gororobas"
+ },
+ "3824127d815d": {
+  "examine_le": "2026-10-20",
+  "score": 76,
+  "statut": "propose",
+  "url": "https://www.data.gouv.fr/datasets/agripag-abattis-frais-du-parc-amazonien-de-guyane"
  },
  "396b20da67fd": {
   "examine_le": "2026-09-25",
@@ -823,6 +859,12 @@
   "score": 56,
   "statut": "propose",
   "url": "https://github.com/pratikkayal/PlantDoc-Dataset"
+ },
+ "42c44ba59c6b": {
+  "examine_le": "2026-10-20",
+  "score": 71,
+  "statut": "propose",
+  "url": "https://github.com/UCDavisLibrary/ava"
  },
  "42eba7f9ae2b": {
   "examine_le": "2026-09-17",
@@ -1449,15 +1491,33 @@
   "statut": "sans_licence",
   "url": "https://huggingface.co/manshirai09/dkv-plant-disease-cnn"
  },
+ "7bd2a2ecbfcc": {
+  "examine_le": "2026-10-20",
+  "score": 76,
+  "statut": "propose",
+  "url": "https://github.com/tecelskyyivan-alt/ardu-field-planner"
+ },
  "7be637e80e52": {
   "examine_le": "2026-09-26",
   "statut": "sans_licence",
   "url": "https://github.com/agstack"
  },
+ "7c5953d6ab05": {
+  "examine_le": "2026-10-20",
+  "score": 83,
+  "statut": "propose",
+  "url": "https://github.com/nmi-agro/Open-Bodem-Index-Calculator"
+ },
  "7cbe569a4a26": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
   "url": "https://www.adafruit.com/product/6476"
+ },
+ "7ce583f1f071": {
+  "examine_le": "2026-10-20",
+  "score": 85,
+  "statut": "propose",
+  "url": "https://doi.org/10.5281/zenodo.23475740"
  },
  "7d2ac03bca2b": {
   "examine_le": "2026-09-26",
@@ -1509,6 +1569,12 @@
   "statut": "propose",
   "url": "https://github.com/JohnDeere/MyJohnDeereAPI-OAuth2-NodeJS-Example"
  },
+ "801ddf6aa554": {
+  "examine_le": "2026-10-20",
+  "score": 76,
+  "statut": "propose",
+  "url": "https://github.com/tong-xz/GrapeSAM"
+ },
  "805909b8a7d3": {
   "examine_le": "2026-09-21",
   "score": 85,
@@ -1535,6 +1601,12 @@
   "statut": "sans_licence",
   "url": "https://openhydroponics.com/"
  },
+ "8342abf9fd65": {
+  "examine_le": "2026-10-20",
+  "score": 85,
+  "statut": "propose",
+  "url": "https://doi.org/10.5281/zenodo.23371775"
+ },
  "84386342a004": {
   "examine_le": "2026-09-26",
   "statut": "sans_licence",
@@ -1554,6 +1626,18 @@
   "examine_le": "2026-09-26",
   "statut": "sans_licence",
   "url": "https://github.com/zhangchuanyin/weed-datasets"
+ },
+ "85466bd0f73e": {
+  "examine_le": "2026-10-20",
+  "score": 91,
+  "statut": "propose",
+  "url": "https://doi.org/10.5281/zenodo.23488602"
+ },
+ "8600a44f0ec6": {
+  "examine_le": "2026-10-20",
+  "score": 92,
+  "statut": "propose",
+  "url": "https://doi.org/10.5281/zenodo.23475487"
  },
  "864be8ef8ba4": {
   "examine_le": "2026-09-17",
@@ -1906,6 +1990,12 @@
   "statut": "propose",
   "url": "https://github.com/FarmBot-Docs/farmbot-meta"
  },
+ "a779cdb2e600": {
+  "examine_le": "2026-10-20",
+  "score": 79,
+  "statut": "propose",
+  "url": "https://doi.org/10.5281/zenodo.23489005"
+ },
  "a81974e6bce5": {
   "examine_le": "2026-09-21",
   "score": 88,
@@ -2084,11 +2174,23 @@
   "statut": "propose",
   "url": "https://github.com/kizniche/Mycodo"
  },
+ "b4ec47ef3189": {
+  "examine_le": "2026-10-20",
+  "score": 71,
+  "statut": "propose",
+  "url": "https://github.com/Gratheon/entrance-observer"
+ },
  "b67f3441c65a": {
   "examine_le": "2026-10-05",
   "score": 77,
   "statut": "propose",
   "url": "https://huggingface.co/datasets/torchgeo/harmonized_global_crops"
+ },
+ "b67f8bc7c904": {
+  "examine_le": "2026-10-20",
+  "score": 71,
+  "statut": "propose",
+  "url": "https://huggingface.co/LourivalGontijo/plant-disease-vit"
  },
  "b718e994298f": {
   "examine_le": "2026-10-13",
@@ -2133,6 +2235,12 @@
   "statut": "propose",
   "url": "https://www.data.gouv.fr/datasets/achats-de-pesticides-par-code-postal-1"
  },
+ "b99a606c34cc": {
+  "examine_le": "2026-10-20",
+  "score": 82,
+  "statut": "propose",
+  "url": "https://huggingface.co/Ananthakrishnanmzen/PlantDiseaseDetection"
+ },
  "bb123e95962f": {
   "examine_le": "2026-10-13",
   "score": 79,
@@ -2160,6 +2268,11 @@
   "statut": "propose",
   "url": "https://github.com/adamalfath/sentsor-core-esp32embed"
  },
+ "bc14ba2fbf9a": {
+  "examine_le": "2026-10-20",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/Av1447/plant-disease-model"
+ },
  "bc295efb024c": {
   "examine_le": "2026-10-05",
   "score": 92,
@@ -2186,6 +2299,12 @@
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
   "url": "https://huggingface.co/MadhawaDG/agriculture-lstm-zynq"
+ },
+ "be7906c6fe2f": {
+  "examine_le": "2026-10-20",
+  "score": 71,
+  "statut": "propose",
+  "url": "https://huggingface.co/bhaskar06/agri-plant-disease-model"
  },
  "be9c06237650": {
   "examine_le": "2026-10-09",
@@ -2713,6 +2832,12 @@
   "statut": "propose",
   "url": "https://github.com/dalinicus/homeassistant-acinfinity"
  },
+ "e6dd5de5dfa8": {
+  "examine_le": "2026-10-20",
+  "score": 73,
+  "statut": "propose",
+  "url": "https://github.com/sun2006-xin/smart-greenhouse"
+ },
  "e75500e582e3": {
   "examine_le": "2026-10-09",
   "score": 85,
@@ -2739,6 +2864,12 @@
   "score": 73,
   "statut": "propose",
   "url": "https://huggingface.co/datasets/Project-AgML/image_safari_unknown_crop_cimmyt_kiboko"
+ },
+ "eb54b1af6d41": {
+  "examine_le": "2026-10-20",
+  "score": 71,
+  "statut": "propose",
+  "url": "https://github.com/WriteW/TapLog"
  },
  "ec10ca910ba2": {
   "examine_le": "2026-09-17",
@@ -2867,6 +2998,12 @@
   "statut": "propose",
   "url": "https://github.com/FarmBot/farmbot-arduino-firmware"
  },
+ "f5a690641937": {
+  "examine_le": "2026-10-20",
+  "score": 74,
+  "statut": "propose",
+  "url": "https://github.com/leaukojo/carlito"
+ },
  "f5a9b2608077": {
   "examine_le": "2026-10-05",
   "statut": "sans_licence",
@@ -2933,6 +3070,12 @@
   "statut": "propose",
   "url": "https://github.com/FarmBot-Docs/farmbot-express"
  },
+ "faa61616c6d9": {
+  "examine_le": "2026-10-20",
+  "score": 74,
+  "statut": "propose",
+  "url": "https://github.com/earthdaily/earthdaily-documentation"
+ },
  "fb216819be4e": {
   "examine_le": "2026-09-26",
   "statut": "sans_licence",
@@ -2972,6 +3115,12 @@
   "examine_le": "2026-10-13",
   "statut": "sans_licence",
   "url": "https://github.com/ketchbrookanalytics/fcall"
+ },
+ "fd31e5fc5044": {
+  "examine_le": "2026-10-20",
+  "score": 76,
+  "statut": "propose",
+  "url": "https://www.data.gouv.fr/datasets/occupation-du-sol-multidate"
  },
  "fd3e5c400ade": {
   "examine_le": "2026-10-05",

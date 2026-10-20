@@ -133,6 +133,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Cette donnée cartographique fournit les centroïdes des conservatoires de l'abeille noire en Normandie. Elle permet de représenter ces zones sous forme de points géographiques."
  },
+ "082ddd682870": {
+  "famille": "logiciel",
+  "id": "082ddd682870",
+  "interet": "Facilite le suivi et la gestion des colonies d'abeilles.",
+  "mots_cles": [
+   "abeille",
+   "ruche",
+   "surveillance",
+   "capteur",
+   "inspection"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Système open source de surveillance des abeilles incluant une application, une API et un système de mesure pour les données de capteurs. Il permet de suivre l'activité des ruches via des inspections et des données de capteurs."
+ },
  "083db8746f76": {
   "famille": "donnees",
   "id": "083db8746f76",
@@ -535,6 +550,15 @@
   "redige_par": "mistral-small-latest",
   "resume": "Modèle de segmentation d'instances pour la délimitation des parcelles agricoles à partir d'imagerie aérienne. Utilise des données de télédétection géospatiales."
  },
+ "246a2af70dfa": {
+  "famille": "modele",
+  "id": "246a2af70dfa",
+  "interet": "",
+  "mots_cles": [],
+  "pertinence": "inconnu",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
  "27bb878c81e8": {
   "famille": "logiciel",
   "id": "27bb878c81e8",
@@ -565,6 +589,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Jeu de données RGB-D annoté pour la segmentation sémantique d'espèces végétales en grandes cultures. Il contient des images haute résolution (1600×1140) avec des masques de vérité terrain manuels pour cinq espèces dont des adventices."
  },
+ "28d5143792b9": {
+  "famille": "donnees",
+  "id": "28d5143792b9",
+  "interet": "Permet d'étudier l'état actuel de l'occupation des sols, incluant les surfaces agricoles.",
+  "mots_cles": [
+   "occupation du sol",
+   "2024",
+   "territoire",
+   "artificialisation",
+   "analyse"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Base de données d'occupation du sol pour l'année 2024 sur le territoire de Lunel Agglo, produite à partir d'une nomenclature détaillée. Elle permet d'analyser l'utilisation des sols pour cette année spécifique."
+ },
  "28e290f91837": {
   "famille": "logiciel",
   "id": "28e290f91837",
@@ -594,6 +633,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Package Python pour calculer l'évapotranspiration de référence ou potentielle (ETo)."
+ },
+ "2c20a08f2ae4": {
+  "famille": "logiciel",
+  "id": "2c20a08f2ae4",
+  "interet": "Permet d'identifier automatiquement des maladies végétales à partir d'images.",
+  "mots_cles": [
+   "maladie végétale",
+   "classification",
+   "deep learning",
+   "vision par ordinateur",
+   "interface web"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Système de deep learning pour classifier les maladies des plantes parmi 38 catégories en utilisant un modèle EfficientNetB0 ajusté sur le jeu de données PlantVillage. Il propose une interface web via Gradio avec seuillage de confiance et une intégration continue via GitHub Actions."
  },
  "2cb7bccd97e4": {
   "famille": "logiciel",
@@ -669,6 +723,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Bibliothèque SDI-12 pour microcontrôleurs ESP32. Elle permet de communiquer avec des capteurs environnementaux."
+ },
+ "31c95688c36f": {
+  "famille": "logiciel",
+  "id": "31c95688c36f",
+  "interet": "Permet de détecter automatiquement des maladies végétales à partir d'images.",
+  "mots_cles": [
+   "maladie végétale",
+   "classification",
+   "deep learning",
+   "vision par ordinateur",
+   "resnet"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Framework de deep learning basé sur ResNet50-DCBAM pour classifier les maladies des plantes à partir du jeu de données PlantVillage. Il inclut des pipelines d'entraînement et d'évaluation reproductibles."
  },
  "31eeeefd3298": {
   "famille": "logiciel",
@@ -785,6 +854,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Plateforme collaborative dédiée à l'agroécologie, combinant un wiki et un réseau social. Permet le partage de connaissances et la coordination entre acteurs."
+ },
+ "3824127d815d": {
+  "famille": "donnees",
+  "id": "3824127d815d",
+  "interet": "Ce projet permet de suivre l'évolution des pratiques agricoles en milieu forestier tropical.",
+  "mots_cles": [
+   "abattis",
+   "agriculture",
+   "Guyane",
+   "Parc amazonien",
+   "suivi spatial"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce projet propose des couches polygonales des abattis frais créés chaque année depuis 2005 dans le Parc amazonien de Guyane. Les données sont disponibles sous forme de géopackage."
  },
  "396b20da67fd": {
   "famille": "logiciel",
@@ -950,6 +1034,19 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Jeu de données pour la détection visuelle de maladies végétales en conditions réelles. Il contient des images annotées de plantes malades."
+ },
+ "42c44ba59c6b": {
+  "famille": "donnees",
+  "id": "42c44ba59c6b",
+  "interet": "",
+  "mots_cles": [
+   "viticulture",
+   "aire viticole",
+   "géographie"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
  },
  "42eba7f9ae2b": {
   "famille": "logiciel",
@@ -1485,6 +1582,51 @@
   "redige_par": "mistral-small-latest",
   "resume": "Jeu de données de 11 057 images de cultures, maladies et ravageurs issues de photographies de petits agriculteurs."
  },
+ "7bd2a2ecbfcc": {
+  "famille": "logiciel",
+  "id": "7bd2a2ecbfcc",
+  "interet": "Facilite la planification de vols pour des opérations de pulvérisation ou de couverture de terrain en agriculture de précision.",
+  "mots_cles": [
+   "drone",
+   "pulvérisation",
+   "planification",
+   "trajectoire",
+   "agriculture de précision"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Outil de planification de missions pour drones agricoles ArduCopter, générant des trajectoires de couverture de champ en boustrophédon. Permet d'exporter des fichiers de mission ou de les télécharger en temps réel via télémétrie."
+ },
+ "7c5953d6ab05": {
+  "famille": "logiciel",
+  "id": "7c5953d6ab05",
+  "interet": "Permet d'évaluer la qualité des sols agricoles pour orienter les pratiques de gestion ou de conservation.",
+  "mots_cles": [
+   "sol",
+   "qualité",
+   "indice",
+   "r",
+   "pédologie"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Package R implémentant le calcul de l'Open Bodem Index (OBI), un indicateur de qualité des sols. Il fournit les fonctions nécessaires pour évaluer cet indice à partir de données pédologiques."
+ },
+ "7ce583f1f071": {
+  "famille": "donnees",
+  "id": "7ce583f1f071",
+  "interet": "Ce projet aide à développer des modèles de reconnaissance d'images pour le diagnostic des maladies des cultures.",
+  "mots_cles": [
+   "pêcher",
+   "feuilles",
+   "dommages foliaires",
+   "agriculture de précision",
+   "classification d'images"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce jeu de données contient 182 images annotées de feuilles de pêcher issues d'un verger commercial, destinées à la classification des dommages foliaires. Il étudie le décalage entre les jeux de données publics et les images de terrain."
+ },
  "7d855e5c6e2a": {
   "famille": "logiciel",
   "id": "7d855e5c6e2a",
@@ -1558,6 +1700,21 @@
   "redige_par": "mistral-small-latest",
   "resume": ""
  },
+ "801ddf6aa554": {
+  "famille": "modele",
+  "id": "801ddf6aa554",
+  "interet": "Permet d'automatiser le décompte et l'évaluation visuelle des grappes de raisin pour le suivi de la maturation ou la gestion des récoltes.",
+  "mots_cles": [
+   "raisin",
+   "segmentation",
+   "deep learning",
+   "comptage",
+   "viticulture"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Modèle de segmentation d'images pour localiser et compter les baies de raisin sur des grappes, ainsi que pour estimer la fermeture visuelle des grappes. Implémente une approche par deep learning pour l'instance segmentation."
+ },
  "805909b8a7d3": {
   "famille": "donnees",
   "id": "805909b8a7d3",
@@ -1572,6 +1729,51 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Ce jeu de données mesure, à l'échelle communale, la proportion de responsables d'exploitations agricoles de 55 ans ou plus en 2020. Il contient 34 920 lignes, une par commune de France métropolitaine."
+ },
+ "8342abf9fd65": {
+  "famille": "donnees",
+  "id": "8342abf9fd65",
+  "interet": "Ce projet permet de tester et améliorer les méthodes de détection des cyberattaques dans les infrastructures agricoles connectées.",
+  "mots_cles": [
+   "iot",
+   "cybersécurité",
+   "jeu de données",
+   "ferme intelligente",
+   "détection d'intrusion"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce jeu de données réseau labellisé couvre des environnements IoT/IIoT, incluant un système de ferme intelligente basé sur des capteurs et actionneurs. Il est conçu pour la détection d'intrusions et d'attaques cyber."
+ },
+ "85466bd0f73e": {
+  "famille": "donnees",
+  "id": "85466bd0f73e",
+  "interet": "",
+  "mots_cles": [
+   "télésurveillance",
+   "agriculture intelligente",
+   "technologies innovantes",
+   "capteurs",
+   "automatisation"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Cet article propose un système d'évaluation pour le suivi à distance des productions agricoles, basé sur des indicateurs technologiques et environnementaux. Il analyse les bénéfices des technologies innovantes et leur contexte d'adoption."
+ },
+ "8600a44f0ec6": {
+  "famille": "donnees",
+  "id": "8600a44f0ec6",
+  "interet": "Ce projet permet d'évaluer les performances et l'efficacité des systèmes de culture en environnement contrôlé.",
+  "mots_cles": [
+   "serres verticales",
+   "méta-analyse",
+   "rendement",
+   "environnement contrôlé",
+   "agriculture urbaine"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce projet fournit des données, des calculs Excel et du code d'analyse issus d'une méta-analyse sur les avantages de rendement et les lacunes de reporting des ressources dans les serres verticales à éclairage artificiel. Il inclut 784 enregistrements de traitements issus de 154 sources, avec 689 enregistrements analysés."
  },
  "87b7b9534a19": {
   "famille": "donnees",
@@ -1917,6 +2119,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Documentation technique et commerciale de l'entreprise FarmBot Inc. Elle décrit l'organisation et les processus internes liés à la gestion de l'entreprise."
  },
+ "a779cdb2e600": {
+  "famille": "donnees",
+  "id": "a779cdb2e600",
+  "interet": "Ce projet permet d'évaluer l'impact du changement climatique sur l'élevage et les stratégies d'adaptation.",
+  "mots_cles": [
+   "bétail",
+   "stress thermique",
+   "changement climatique",
+   "pertes économiques",
+   "adaptation"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce projet fournit des données et du code révisés sur les pertes économiques liées au stress thermique chez le bétail entre 2000 et 2024. Il inclut des seuils de THI, des pertes évitables et des valeurs par tête en USD constants."
+ },
  "a81974e6bce5": {
   "famille": "donnees",
   "id": "a81974e6bce5",
@@ -2231,6 +2448,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Logiciel open source pour Raspberry Pi permettant de contrôler et surveiller des environnements de culture. Il relie des entrées et sorties pour agir sur l'environnement."
  },
+ "b4ec47ef3189": {
+  "famille": "logiciel",
+  "id": "b4ec47ef3189",
+  "interet": "Permet de surveiller l'activité des abeilles à partir d'images en temps réel.",
+  "mots_cles": [
+   "abeille",
+   "ruche",
+   "traitement vidéo",
+   "edge computing",
+   "surveillance"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Service de traitement vidéo de l'entrée des ruches en périphérie (edge) pour l'apiculture. Il analyse les flux vidéo des ruches pour en extraire des informations sur l'activité des abeilles."
+ },
  "b67f3441c65a": {
   "famille": "donnees",
   "id": "b67f3441c65a",
@@ -2243,6 +2475,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Cet ensemble de données géospatiales harmonisées couvre les cultures à l'échelle mondiale. Il est redistribué sans modification."
+ },
+ "b67f8bc7c904": {
+  "famille": "modele",
+  "id": "b67f8bc7c904",
+  "interet": "Peut servir à classifier automatiquement des maladies sur des plantes à partir d'images.",
+  "mots_cles": [
+   "classification",
+   "maladie végétale",
+   "vision par ordinateur",
+   "transformer",
+   "agriculture"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Modèle de classification d'images pour identifier des maladies végétales, basé sur des transformers visuels et PyTorch. Il analyse des images de plantes pour détecter des maladies."
  },
  "b78b7fffd539": {
   "famille": "donnees",
@@ -2273,6 +2520,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Données annuelles d'achats de pesticides par code postal en France, déclarées par les distributeurs. Elles permettent de suivre les achats sur le territoire."
+ },
+ "b99a606c34cc": {
+  "famille": "modele",
+  "id": "b99a606c34cc",
+  "interet": "Peut servir à détecter automatiquement des maladies sur des plantes à partir d'images.",
+  "mots_cles": [
+   "détection",
+   "maladie végétale",
+   "vision par ordinateur",
+   "yolov11",
+   "agriculture"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Modèle de détection d'objets pour identifier des maladies végétales à partir d'images, basé sur YOLOv11. Il utilise des frameworks de vision par ordinateur pour analyser des images agricoles."
  },
  "bb123e95962f": {
   "famille": "logiciel",
@@ -2327,6 +2589,15 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "FishMaster est un système de surveillance en temps réel des conditions de l'eau pour aquariums intelligents. Il utilise des capteurs et une interface pour suivre les paramètres environnementaux."
+ },
+ "be7906c6fe2f": {
+  "famille": "modele",
+  "id": "be7906c6fe2f",
+  "interet": "",
+  "mots_cles": [],
+  "pertinence": "inconnu",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
  },
  "bf026b463fac": {
   "famille": "logiciel",
@@ -3028,6 +3299,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Ce projet intègre les contrôleurs de tente de culture AC Infinity dans Home Assistant. Il permet de gérer des tentes de culture automatisées."
  },
+ "e6dd5de5dfa8": {
+  "famille": "logiciel",
+  "id": "e6dd5de5dfa8",
+  "interet": "Permet de surveiller et contrôler automatiquement des paramètres environnementaux en serre pour optimiser la croissance des cultures.",
+  "mots_cles": [
+   "serre",
+   "iot",
+   "ia embarquée",
+   "capteurs",
+   "contrôle environnemental"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Système IoT pour serre intelligente utilisant des microcontrôleurs ESP8266/ESP32-CAM, des capteurs multiples et une interface web pour le contrôle. Intègre des fonctionnalités d'IA embarquée pour des réponses adaptatives."
+ },
  "e75500e582e3": {
   "famille": "donnees",
   "id": "e75500e582e3",
@@ -3051,6 +3337,20 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Jeu de données d'images RGB non étiquetées de champs de cultures non spécifiées prises au site de Kiboko (Kenya) entre avril et septembre 2025. Ces images proviennent d'un projet collectant des photographies de cultures en Afrique subsaharienne."
+ },
+ "eb54b1af6d41": {
+  "famille": "logiciel",
+  "id": "eb54b1af6d41",
+  "interet": "",
+  "mots_cles": [
+   "android",
+   "dairy",
+   "journal",
+   "jeux"
+  ],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
  },
  "ec4e06f00abe": {
   "famille": "donnees",
@@ -3202,6 +3502,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Firmware pour Arduino exécutant des commandes de type G-code pour déplacer un FarmBot et actionner l'outil monté. Il gère les mouvements et les opérations mécaniques."
  },
+ "f5a690641937": {
+  "famille": "logiciel",
+  "id": "f5a690641937",
+  "interet": "",
+  "mots_cles": [
+   "simulateur",
+   "véhicule",
+   "aéronautique",
+   "automobile",
+   "éducatif"
+  ],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
  "f62af1142116": {
   "famille": "logiciel",
   "id": "f62af1142116",
@@ -3275,6 +3590,20 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Documentation technique du matériel FarmBot Express, un système de culture automatisé. Elle détaille les composants et leur assemblage."
+ },
+ "faa61616c6d9": {
+  "famille": "logiciel",
+  "id": "faa61616c6d9",
+  "interet": "",
+  "mots_cles": [
+   "documentation",
+   "observation de la terre",
+   "analyse d'images",
+   "classification"
+  ],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": "Documentation technique dédiée à des produits d'analyse d'images, notamment pour l'observation de la Terre et l'agriculture."
  },
  "fb5acd90df20": {
   "famille": "donnees",
@@ -3350,6 +3679,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Code associé à une publication scientifique pour compter des mammifères africains à partir d'images aériennes à l'aide de l'apprentissage profond. L'objectif est de détecter et compter précisément des animaux."
+ },
+ "fd31e5fc5044": {
+  "famille": "donnees",
+  "id": "fd31e5fc5044",
+  "interet": "Permet d'étudier les changements d'usage des sols, notamment l'artificialisation et les surfaces agricoles.",
+  "mots_cles": [
+   "occupation du sol",
+   "évolution",
+   "territoire",
+   "artificialisation",
+   "analyse"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Base de données d'occupation du sol couvrant plusieurs années pour le territoire de Lunel Agglo, produite à partir d'une nomenclature détaillée. Elle permet d'analyser l'évolution de l'utilisation des sols sur ce territoire."
  },
  "fd3e5c400ade": {
   "famille": "donnees",
