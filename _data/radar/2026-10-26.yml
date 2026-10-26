@@ -1,0 +1,774 @@
+# Lot du radar OSFarm. Passer « publier » à false pour écarter une fiche,
+# corriger « resume » au besoin. La fusion de la pull request publie le reste.
+date: '2026-10-26'
+examines: 345
+retenus: 24
+rejets:
+  deja_vu: 228
+  deja_sur_le_site: 7
+  licence: 9
+  score: 0
+pannes: []
+candidats:
+- id: 307b6bb4267c
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: Joaquin-Gajardo/nigeria-crop-mask
+  url: https://github.com/Joaquin-Gajardo/nigeria-crop-mask
+  description: 'Code for: Evaluating the role of training data origin for country-scale cropland mapping
+    in data-scarce regions: A case study of Nigeria'
+  licence: mit
+  date_maj: '2026-10-23'
+  techno: Jupyter Notebook
+  popularite: 4
+  mots_cles:
+  - agriculture
+  - deep-learning
+  - pytorch
+  - remote-sensing
+  score: 92
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, cropland, crop, remote-sensing'
+  propose_le: '2026-10-26'
+  publier: true
+  resume: 'Code for: Evaluating the role of training data origin for country-scale cropland mapping in
+    data-scarce regions: A case study of Nigeria'
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 6f3dfc7f0f22
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: onethree7/Horticalc
+  url: https://github.com/onethree7/Horticalc
+  description: Local, open-source fertilizer calculator and nutrient-solution solver for horticulture
+    and hydroponics.
+  licence: gpl-3.0
+  date_maj: '2026-10-26'
+  techno: Python
+  popularite: 3
+  mots_cles:
+  - agritech
+  - cross-platform
+  - desktop-app
+  - electrical-conductivity
+  - fertigation
+  - fertilizer
+  - fertilizer-calculator
+  - horticulture
+  score: 91
+  raisons:
+  - licence gpl-3.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agritech, horticulture, fertilizer'
+  propose_le: '2026-10-26'
+  publier: true
+  resume: Local, open-source fertilizer calculator and nutrient-solution solver for horticulture and hydroponics.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: a3957f2c7f4a
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: keylorpineda/healthycropping
+  url: https://github.com/keylorpineda/healthycropping
+  description: Offline-first Android app that detects coffee, cacao and banana diseases from a phone photo.
+  licence: mit
+  date_maj: '2026-10-22'
+  techno: Python
+  popularite: 4
+  mots_cles:
+  - agriculture
+  - agtech
+  - android-app
+  - central-america
+  - computer-vision
+  - costa-rica
+  - decision-support
+  - edge-ai
+  score: 85
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, agtech'
+  propose_le: '2026-10-26'
+  publier: true
+  resume: Offline-first Android app that detects coffee, cacao and banana diseases from a phone photo.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 7e8be6e34b36
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: LucasGeno/farmcore
+  url: https://github.com/LucasGeno/farmcore
+  description: 'Open, farmer-controlled farm data: a modular core with installable apps'
+  licence: apache-2.0
+  date_maj: '2026-10-25'
+  techno: Python
+  popularite: 3
+  mots_cles:
+  - agriculture
+  - crop-protection
+  - farm-data
+  - fastapi
+  - open-data
+  - postgis
+  - precision-agriculture
+  - self-hosted
+  score: 83
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farm'
+  propose_le: '2026-10-26'
+  publier: true
+  resume: 'Open, farmer-controlled farm data: a modular core with installable apps'
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 7c5953d6ab05
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: nmi-agro/Open-Bodem-Index-Calculator
+  url: https://github.com/nmi-agro/Open-Bodem-Index-Calculator
+  description: An R package containing the functions for the Open Bodem Index (OBI)
+  licence: gpl-3.0
+  date_maj: '2026-10-20'
+  techno: R
+  popularite: 17
+  mots_cles:
+  - agriculture
+  - package
+  - r
+  - soil
+  score: 83
+  raisons:
+  - licence gpl-3.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, soil'
+  propose_le: '2026-10-26'
+  publier: true
+  resume: An R package containing the functions for the Open Bodem Index (OBI)
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 9cacec703d6b
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: skdas20/SkeoTrace
+  url: https://github.com/skdas20/SkeoTrace
+  description: 'Farm-to-fork food traceability: tamper-evident hash-chain ledger, QR codes and role-based
+    dashboards. React, Express, TypeScript, MongoDB.'
+  licence: mit
+  date_maj: '2026-10-25'
+  techno: TypeScript
+  popularite: 4
+  mots_cles:
+  - agriculture
+  - blockchain
+  - express
+  - food-safety
+  - merkle-tree
+  - mongodb
+  - organic
+  - qr-code
+  score: 82
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, food, traceability'
+  propose_le: '2026-10-26'
+  publier: true
+  resume: 'Farm-to-fork food traceability: tamper-evident hash-chain ledger, QR codes and role-based dashboards.
+    React, Express, TypeScript, MongoDB.'
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 7bd2a2ecbfcc
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: tecelskyyivan-alt/ardu-field-planner
+  url: https://github.com/tecelskyyivan-alt/ardu-field-planner
+  description: ArduCopter field-coverage mission planner + MAVLink GCS for agricultural spraying — draw
+    a field, generate a boustrophedon route, export .plan/.waypoints or live-upload with telemetry. Planner
+    runs offline (satellite map needs internet or pre-cache). PWA + Android/iOS + desktop.
+  licence: gpl-3.0
+  date_maj: '2026-10-25'
+  techno: Python
+  popularite: 4
+  mots_cles:
+  - agriculture
+  - arducopter
+  - ardupilot
+  - coverage-path-planning
+  - drone
+  - gcs
+  - mavlink
+  - mission-planner
+  score: 76
+  raisons:
+  - licence gpl-3.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-10-26'
+  publier: true
+  resume: ArduCopter field-coverage mission planner + MAVLink GCS for agricultural spraying — draw a field,
+    generate a boustrophedon route, export .plan/.waypoints or live-upload with telemetry. Planner runs
+    offline (satellite…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: e527f1d5052e
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: renansouz/maia-intelligence-NEXT
+  url: https://github.com/renansouz/maia-intelligence-NEXT
+  description: Sistema de monitoramento e prevenção de risco agrícola com IA, integrando telemetria real
+    de máquinas, gestão de apólice e fluxo completo entre seguradora, gestor e operador. 🌾
+  licence: mit
+  date_maj: '2026-10-24'
+  techno: Jupyter Notebook
+  popularite: 3
+  mots_cles:
+  - agriculture
+  - fastapi
+  - isolation-forest
+  - jwt-authentication
+  - machine-learning-algorithms
+  - oracle-database
+  - python3
+  - risk-management
+  score: 76
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-10-26'
+  publier: true
+  resume: Sistema de monitoramento e prevenção de risco agrícola com IA, integrando telemetria real de
+    máquinas, gestão de apólice e fluxo completo entre seguradora, gestor e operador. 🌾
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 60d921c2715d
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-elevage
+  titre: deaneeth/smart-beehive-dashboard
+  url: https://github.com/deaneeth/smart-beehive-dashboard
+  description: Real-time web dashboard for visualizing beehive metrics including temperature, humidity,
+    weight, bee activity, and alerts. Built with React and Firebase, designed to work with ESP32-based
+    Smart Beehive IoT monitoring hardware.
+  licence: mit
+  date_maj: '2026-10-24'
+  techno: TypeScript
+  popularite: 4
+  mots_cles:
+  - agriculture-tech
+  - beekeeping
+  - data-visualization
+  - environmental-monitoring
+  - firebase
+  - iot
+  - iot-dashboard
+  - nextjs
+  score: 73
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : beehive'
+  propose_le: '2026-10-26'
+  publier: true
+  resume: Real-time web dashboard for visualizing beehive metrics including temperature, humidity, weight,
+    bee activity, and alerts. Built with React and Firebase, designed to work with ESP32-based Smart Beehive
+    IoT monitoring…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: eb54b1af6d41
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-elevage
+  titre: WriteW/TapLog
+  url: https://github.com/WriteW/TapLog
+  description: A powerful diary with some games.
+  licence: mit
+  date_maj: '2026-08-04'
+  techno: Kotlin
+  popularite: 3
+  mots_cles:
+  - android
+  - dairy
+  - jetpack-compose
+  - kotlin
+  - kotlin-android
+  score: 71
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : dairy'
+  propose_le: '2026-10-26'
+  publier: true
+  resume: A powerful diary with some games.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 082ddd682870
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-elevage
+  titre: beepnl/BEEP
+  url: https://github.com/beepnl/BEEP
+  description: BEEP - Open source bee monitoring - App/API/Measurement system
+  licence: agpl-3.0
+  date_maj: '2026-10-26'
+  techno: PHP
+  popularite: 129
+  mots_cles:
+  - app
+  - bee
+  - beekeeping
+  - inspections
+  - sensor-data
+  score: 71
+  raisons:
+  - licence agpl-3.0
+  - actif (moins de 3 mois)
+  propose_le: '2026-10-26'
+  publier: true
+  resume: BEEP - Open source bee monitoring - App/API/Measurement system
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: b4ec47ef3189
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-elevage
+  titre: Gratheon/entrance-observer
+  url: https://github.com/Gratheon/entrance-observer
+  description: Beehive entrance video processing service on the edge
+  licence: agpl-3.0
+  date_maj: '2026-10-25'
+  techno: Jupyter Notebook
+  popularite: 3
+  mots_cles:
+  - ai
+  - beekeeping
+  - edge
+  score: 71
+  raisons:
+  - licence agpl-3.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : beehive'
+  propose_le: '2026-10-26'
+  publier: true
+  resume: Beehive entrance video processing service on the edge
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 42c44ba59c6b
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-viti
+  titre: UCDavisLibrary/ava
+  url: https://github.com/UCDavisLibrary/ava
+  description: American Viticultural Areas
+  licence: cc0-1.0
+  date_maj: '2026-10-15'
+  techno: R
+  popularite: 82
+  mots_cles: []
+  score: 71
+  raisons:
+  - licence cc0-1.0
+  - actif (moins de 3 mois)
+  propose_le: '2026-10-26'
+  publier: true
+  resume: American Viticultural Areas
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 4a04c0f2b541
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: UsmanSait/elnino-crop-failure-pbl
+  url: https://huggingface.co/datasets/UsmanSait/elnino-crop-failure-pbl
+  description: 🛰️ Spatiotemporal CNN–LSTM Framework for Maharashtra Kharif Crop Failure Prediction An
+    Operational Multi-Crop Deep Learning & Geospatial Analytics System for ENSO-Driven Agricultural Shock
+    Early Warning Live Production Dashboard • Full Technical Report (DOCX
+  licence: mit
+  date_maj: '2026-10-20'
+  techno: ''
+  popularite: 1
+  mots_cles:
+  - climate-change
+  - agriculture
+  - remote-sensing
+  - sentinel-2
+  - earth-observation
+  - el-nino
+  - crop-failure
+  - deep-learning
+  score: 88
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, crop, geospatial, remote-sensing'
+  propose_le: '2026-10-26'
+  publier: true
+  resume: 🛰️ Spatiotemporal CNN–LSTM Framework for Maharashtra Kharif Crop Failure Prediction An Operational
+    Multi-Crop Deep Learning & Geospatial Analytics System for ENSO-Driven Agricultural Shock Early Warning
+    Live…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: dd17afe2f031
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: Macroeconomic assessment of Climate Change Impacts
+  url: https://doi.org/10.5281/zenodo.23577132
+  description: 'Macroeconomic assessment of climate change impacts: Sea-level rise, Riverine Floods, Agriculture,
+    Forestry, Labour (Productivity+Supply), Energy Demand, Energy Supply, Biodiversity, Wild Fires plus
+    compounded assessment of all impacts'
+  licence: cc-by-4.0
+  date_maj: '2026-10-23'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - Climate Change Impacts
+  - Macroeconomic assessment
+  - Computable General Equilibrium
+  - ACCREU
+  - Subnational data
+  - NUTS2 level
+  score: 85
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, forestry, biodiversity'
+  propose_le: '2026-10-26'
+  publier: true
+  resume: 'Macroeconomic assessment of climate change impacts: Sea-level rise, Riverine Floods, Agriculture,
+    Forestry, Labour (Productivity+Supply), Energy Demand, Energy Supply, Biodiversity, Wild Fires plus
+    compounded…'
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 5eb30982537c
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: Greenhouse gas emissions from soil and tractor fuel after a single tillage operation on a sandy
+    tropical soil
+  url: https://doi.org/10.5281/zenodo.23585088
+  description: ''
+  licence: cc-by-4.0
+  date_maj: '2026-10-23'
+  techno: ''
+  popularite: 0
+  mots_cles: []
+  score: 83
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : greenhouse, soil, tractor'
+  propose_le: '2026-10-26'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: ab9cbea25a7b
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: 'Data and code for: Between-system contrasts can inflate remote sensing accuracy for soil carbon:
+    a call for within-field validation'
+  url: https://doi.org/10.5281/zenodo.23629287
+  description: 'Soil organic carbon (SOC), particulate (POC) and mineral-associated (MAOC) organic carbon
+    at 60 points (20 per system: native forest, integrated crop–livestock system and managed pasture)
+    and three layers (0–100, 100–200 and 200–300 mm), sampled in the dry (2 July 2024) and wet (1 April
+    2025) seasons at Fazenda Barbosa, Brejo, Maranhão, Brazil, with UAV, PlanetScope, Sentinel-2, terrain
+    and textur'
+  licence: cc-by-4.0
+  date_maj: '2026-10-24'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - soil organic carbon
+  - particulate organic carbon
+  - mineral-associated organic carbon
+  - remote sensing
+  - Sentinel-2
+  - PlanetScope
+  - unmanned aerial vehicle
+  - model validation
+  score: 82
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : pasture, soil, carbon'
+  propose_le: '2026-10-26'
+  publier: true
+  resume: 'Soil organic carbon (SOC), particulate (POC) and mineral-associated (MAOC) organic carbon at
+    60 points (20 per system: native forest, integrated crop–livestock system and managed pasture) and
+    three layers (0–100,…'
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 61fe3d2c9e10
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: 'IrrMapper v1.2: annual 30 m irrigated-agriculture maps of 11 western US states, 1985-2025'
+  url: https://doi.org/10.5281/zenodo.23603289
+  description: IrrMapper is a Random Forest classification of Landsat imagery that maps irrigated agriculture
+    each year at 30 m across Arizona, California, Colorado, Idaho, Montana, New Mexico, Nevada, Oregon,
+    Utah, Washington and Wyoming. This deposit is the GeoTIFF release of version 1.2, the product served
+    in the Google Earth Engine public data catalog as UMT/Climate/IrrMapper_RF/v1_2. One zip per state
+    holds
+  licence: cc-by-4.0
+  date_maj: '2026-10-23'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - irrigation
+  - irrigated agriculture
+  - Landsat
+  - random forest
+  - western United States
+  - land cover
+  - Google Earth Engine
+  - IrrMapper
+  score: 82
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, irrigation'
+  propose_le: '2026-10-26'
+  publier: true
+  resume: IrrMapper is a Random Forest classification of Landsat imagery that maps irrigated agriculture
+    each year at 30 m across Arizona, California, Colorado, Idaho, Montana, New Mexico, Nevada, Oregon,
+    Utah, Washington and…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 3b3720061452
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: 'J. Hydrol. Reg. Stud. article data for Gallois, N. et al., "Regional groundwater nitrogen response
+    to past and contrasting future agrosystem trajectories: Proce'
+  url: https://doi.org/10.5281/zenodo.19486144
+  description: 'Dataset for the peer‑reviewed submission to Journal of Hydrology - Regional Studies entitled
+    &ldquo;Regional groundwater nitrogen response to past and contrasting future agrosystem trajectories:
+    Process-based hydro-agronomic modeling of the Seine basin&rdquo;. The dataset includes: A PDF document
+    describing the metadata for all provided files. A netCDF file (netCDF4 format) containing simulated
+    da'
+  licence: cc-by-4.0
+  date_maj: '2026-10-25'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - STICS
+  - nitrate
+  - agriculture
+  - cawaqs
+  - water drainage
+  - nitrogen
+  - leaching
+  score: 79
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, water'
+  propose_le: '2026-10-26'
+  publier: true
+  resume: 'Dataset for the peer‑reviewed submission to Journal of Hydrology - Regional Studies entitled
+    &ldquo;Regional groundwater nitrogen response to past and contrasting future agrosystem trajectories:
+    Process-based…'
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 3824127d815d
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: AGRIPAG - Abattis frais du Parc amazonien de Guyane
+  url: https://www.data.gouv.fr/datasets/agripag-abattis-frais-du-parc-amazonien-de-guyane
+  description: Couches polygonales des abattis frais créés sur le territoire du Parc amazonien chaque
+    année depuis 2005. Une couche par année contenues dans le geopackage.
+  licence: etalab-2.0
+  date_maj: '2026-09-11'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - abattis
+  - abattis-1
+  - agriculture
+  - agriculture-1
+  - agripag
+  - agripag-1
+  - pag
+  score: 76
+  raisons:
+  - licence etalab-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-10-26'
+  publier: true
+  resume: Couches polygonales des abattis frais créés sur le territoire du Parc amazonien chaque année
+    depuis 2005. Une couche par année contenues dans le geopackage.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: fd31e5fc5044
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: Occupation du sol multidate
+  url: https://www.data.gouv.fr/datasets/occupation-du-sol-multidate
+  description: Base de données d'Occupation du sol du territoire de la Communauté d'agglomération Lunel
+    Agglo, regroupant l'ensemble des millésimes. Chaque millésime a été réalisé en grande partie par PIAO
+    sur la base d'une nomenclature à 4 niveaux. Cette base de données a été produite dans le but de fournir
+    un outil d'analyse et d'observation du territoire.
+  licence: etalab-2.0
+  date_maj: '2026-10-09'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - artificialisation
+  - couverture
+  - evolution
+  - lunel-agglo
+  - naf
+  - nature
+  - occupation-du-sol
+  score: 76
+  raisons:
+  - licence etalab-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-10-26'
+  publier: true
+  resume: Base de données d'Occupation du sol du territoire de la Communauté d'agglomération Lunel Agglo,
+    regroupant l'ensemble des millésimes. Chaque millésime a été réalisé en grande partie par PIAO sur
+    la base d'une…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 28d5143792b9
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: Occupation du sol 2024
+  url: https://www.data.gouv.fr/datasets/occupation-du-sol-2024
+  description: Base de données d'Occupation du sol du territoire de la Communauté d'agglomération Lunel
+    Agglo, millésime 2024. Elle a été réalisée en grande partie par PIAO sur la base d'une nomenclature
+    à 4 niveaux. Cette base de données a été produite dans le but de fournir un outil d'analyse et d'observation
+    du territoire.
+  licence: etalab-2.0
+  date_maj: '2026-10-09'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - '2024'
+  - agriculture
+  - artificialisation
+  - couverture
+  - evolution
+  - lunel-agglo
+  - naf
+  - nature
+  score: 76
+  raisons:
+  - licence etalab-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-10-26'
+  publier: true
+  resume: Base de données d'Occupation du sol du territoire de la Communauté d'agglomération Lunel Agglo,
+    millésime 2024. Elle a été réalisée en grande partie par PIAO sur la base d'une nomenclature à 4 niveaux.
+    Cette base de…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: b99a606c34cc
+  famille: modele
+  relecteur: ionosphere
+  source: hf-modeles-plantes
+  titre: Ananthakrishnanmzen/PlantDiseaseDetection
+  url: https://huggingface.co/Ananthakrishnanmzen/PlantDiseaseDetection
+  description: ultralytics object-detection plant-disease yolov11 agriculture computer-vision pytorch
+    tflite onnx en model-index
+  licence: mit
+  date_maj: '2026-10-20'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - ultralytics
+  - object-detection
+  - plant-disease
+  - yolov11
+  - agriculture
+  - computer-vision
+  - pytorch
+  - tflite
+  score: 82
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, plant-disease'
+  propose_le: '2026-10-26'
+  publier: true
+  resume: ultralytics object-detection plant-disease yolov11 agriculture computer-vision pytorch tflite
+    onnx en model-index
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 246a2af70dfa
+  famille: modele
+  relecteur: ionosphere
+  source: hf-modeles-plantes
+  titre: YuvrajSingh9886/phi3-mini-fine-tuned-agricultural-common-plant-diseases-QnA
+  url: https://huggingface.co/YuvrajSingh9886/phi3-mini-fine-tuned-agricultural-common-plant-diseases-QnA
+  description: transformers safetensors text-generation-inference unsloth mistral trl en endpoints_compatible
+  licence: apache-2.0
+  date_maj: '2026-10-07'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - transformers
+  - safetensors
+  - text-generation-inference
+  - unsloth
+  - mistral
+  - trl
+  - en
+  - endpoints_compatible
+  score: 73
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : plant-disease'
+  propose_le: '2026-10-26'
+  publier: true
+  resume: transformers safetensors text-generation-inference unsloth mistral trl en endpoints_compatible
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+resume_genere_le: 2026-10-26 10:50
