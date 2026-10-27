@@ -1,0 +1,746 @@
+# Lot du radar OSFarm. Passer « publier » à false pour écarter une fiche,
+# corriger « resume » au besoin. La fusion de la pull request publie le reste.
+date: '2026-10-27'
+examines: 343
+retenus: 24
+rejets:
+  deja_vu: 255
+  deja_sur_le_site: 7
+  licence: 2
+  score: 0
+pannes: []
+candidats:
+- id: f02a7b4a2e95
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: UCR-Robotics/Citrus-Farm-Dataset
+  url: https://github.com/UCR-Robotics/Citrus-Farm-Dataset
+  description: 'IROS/ISVC 2023: Multimodal Dataset for Localization, Mapping and Crop Monitoring in Citrus
+    Tree Farms'
+  licence: cc-by-sa-4.0
+  date_maj: '2026-10-26'
+  techno: Python
+  popularite: 71
+  mots_cles:
+  - agricultural-robotics
+  - agriculture
+  - citrus
+  - citrus-farm
+  - dataset
+  - datasets
+  - isvc
+  - localization
+  score: 97
+  raisons:
+  - licence cc-by-sa-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farm, crop'
+  propose_le: '2026-10-27'
+  publier: true
+  resume: 'IROS/ISVC 2023: Multimodal Dataset for Localization, Mapping and Crop Monitoring in Citrus
+    Tree Farms'
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 7288b80f39d7
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: natuleadan/skills
+  url: https://github.com/natuleadan/skills
+  description: One platform skill and sixteen industry AI tool skills for AI coding agents. Apache-2.0.
+  licence: apache-2.0
+  date_maj: '2026-10-27'
+  techno: TypeScript
+  popularite: 3
+  mots_cles:
+  - agent-skills
+  - agriculture
+  - ai-agents
+  - ai-tools
+  - biology
+  - healthcare
+  - platform
+  - security
+  score: 76
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-10-27'
+  publier: true
+  resume: One platform skill and sixteen industry AI tool skills for AI coding agents. Apache-2.0.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 457ef48afeb4
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: michaelmfoley/stablebound
+  url: https://github.com/michaelmfoley/stablebound
+  description: 'Stable administrative boundaries for subnational statistics: harmonise district-level
+    records across boundary changes. Python package with the India lineage bundled.'
+  licence: mit
+  date_maj: '2026-10-26'
+  techno: Python
+  popularite: 4
+  mots_cles:
+  - administrative-boundaries
+  - agriculture
+  - harmonization
+  - india
+  - python
+  - subnational-statistics
+  score: 76
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-10-27'
+  publier: true
+  resume: 'Stable administrative boundaries for subnational statistics: harmonise district-level records
+    across boundary changes. Python package with the India lineage bundled.'
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 801ddf6aa554
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: tong-xz/GrapeSAM
+  url: https://github.com/tong-xz/GrapeSAM
+  description: Official implementation of GrapeSAM for grape cluster segmentation, berry localization,
+    counting, and visual cluster closure estimation.
+  licence: apache-2.0
+  date_maj: '2026-07-30'
+  techno: Python
+  popularite: 4
+  mots_cles:
+  - agriculture
+  - berry-counting
+  - computer-vision
+  - deep-learning
+  - grape
+  - instance-segmentation
+  - precision-agriculture
+  - segment-anything
+  score: 76
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-10-27'
+  publier: true
+  resume: Official implementation of GrapeSAM for grape cluster segmentation, berry localization, counting,
+    and visual cluster closure estimation.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: e6dd5de5dfa8
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: sun2006-xin/smart-greenhouse
+  url: https://github.com/sun2006-xin/smart-greenhouse
+  description: ESP8266+ESP32-CAM Smart Greenhouse IoT System | Multi-sensor | MQTT | TFLite Edge AI |
+    Web Control | Bounded On-demand AI | Responsive Dual Web UI
+  licence: apache-2.0
+  date_maj: '2026-08-28'
+  techno: C
+  popularite: 4
+  mots_cles:
+  - agriculture-iot
+  - arduino
+  - edge-ai
+  - embedded-web
+  - esp32-cam
+  - esp8266
+  - iot
+  - modbus-rtu
+  score: 73
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : greenhouse'
+  propose_le: '2026-10-27'
+  publier: true
+  resume: ESP8266+ESP32-CAM Smart Greenhouse IoT System | Multi-sensor | MQTT | TFLite Edge AI | Web Control
+    | Bounded On-demand AI | Responsive Dual Web UI
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 2c20a08f2ae4
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: Sowaiba-01/AgroVision-Net
+  url: https://github.com/Sowaiba-01/AgroVision-Net
+  description: Deep learning system for plant disease classification across 38 categories using EfficientNetB0
+    fine-tuning on the PlantVillage dataset. Features a Gradio web interface, confidence thresholding,
+    and full CI via GitHub Actions.
+  licence: mit
+  date_maj: '2026-07-07'
+  techno: Python
+  popularite: 7
+  mots_cles:
+  - agritech
+  - computer-vision
+  - deep-learning
+  - efficientnet
+  - gradio-app
+  - keras3
+  - plant-disease-detection
+  - pytest
+  score: 72
+  raisons:
+  - licence mit
+  - actif (moins d'un an)
+  - 'vocabulaire : agritech'
+  propose_le: '2026-10-27'
+  publier: true
+  resume: Deep learning system for plant disease classification across 38 categories using EfficientNetB0
+    fine-tuning on the PlantVillage dataset. Features a Gradio web interface, confidence thresholding,
+    and full CI via…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 7c683edbb8f5
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: joss
+  titre: 'GeoRacoon: A Python package for scalable, parallelized geospatial raster analysis'
+  url: https://joss.theoj.org/papers/10.21105/joss.10797
+  description: ''
+  licence: osi-approuvee
+  date_maj: '2026-10-23'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - GIS
+  - parallelization
+  - MLR
+  - remote sensing
+  score: 71
+  raisons:
+  - licence osi-approuvee
+  - actif (moins de 3 mois)
+  - 'vocabulaire : geospatial, gis'
+  propose_le: '2026-10-27'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 31c95688c36f
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: AhmadJeddi/Plant-Disease-Classification
+  url: https://github.com/AhmadJeddi/Plant-Disease-Classification
+  description: A ResNet50-DCBAM deep learning framework for plant disease classification using the PlantVillage
+    dataset with reproducible training and evaluation pipelines.
+  licence: mit
+  date_maj: '2026-10-19'
+  techno: Python
+  popularite: 49
+  mots_cles:
+  - attention-mechanism
+  - cbam
+  - cnn
+  - computer-vision
+  - dcbam
+  - deep-learning
+  - image-classification
+  - plant-disease-classification
+  score: 70
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  propose_le: '2026-10-27'
+  publier: true
+  resume: A ResNet50-DCBAM deep learning framework for plant disease classification using the PlantVillage
+    dataset with reproducible training and evaluation pipelines.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 70ee4562d97c
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-elevage
+  titre: vetrns/AquaSmart
+  url: https://github.com/vetrns/AquaSmart
+  description: Platform Cloud Aquaculture berbasis AI untuk investor & manajer tambak — prediksi pertumbuhan
+    ikan, optimasi pakan, dan analisis risiko mortalitas dengan XGBoost & LLM. React + TypeScript, PWA-ready.
+    (BETA)
+  licence: mit
+  date_maj: '2026-08-08'
+  techno: TypeScript
+  popularite: 6
+  mots_cles:
+  - aquaculture
+  - pwa
+  - react
+  - tyypescript
+  - xgboost
+  score: 70
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  propose_le: '2026-10-27'
+  publier: true
+  resume: Platform Cloud Aquaculture berbasis AI untuk investor & manajer tambak — prediksi pertumbuhan
+    ikan, optimasi pakan, dan analisis risiko mortalitas dengan XGBoost & LLM. React + TypeScript, PWA-ready.
+    (BETA)
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 9fb94413051b
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-viti
+  titre: YSSF8/Vineyard
+  url: https://github.com/YSSF8/Vineyard
+  description: A tool to create and manage Wine themes for Linux desktop customization.
+  licence: mit
+  date_maj: '2026-01-27'
+  techno: Python
+  popularite: 5
+  mots_cles: []
+  score: 70
+  raisons:
+  - licence mit
+  - actif (moins d'un an)
+  - 'vocabulaire : vineyard'
+  propose_le: '2026-10-27'
+  publier: true
+  resume: A tool to create and manage Wine themes for Linux desktop customization.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 447377746f3a
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-elevage
+  titre: qppd/crab-grid-smart-aeration
+  url: https://github.com/qppd/crab-grid-smart-aeration
+  description: House-powered LoRa P2P mud crab fattening monitor — ESP32 + SX1278 915 MHz sensor grid,
+    automated aeration, real-time dashboard, and thesis-grade aquaculture IoT documentation
+  licence: mit
+  date_maj: '2026-10-06'
+  techno: ''
+  popularite: 3
+  mots_cles:
+  - 915mhz
+  - aquaculture
+  - arduino
+  - esp32
+  - firebase
+  - iot
+  - lora-p2p
+  - mangrove
+  score: 67
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  propose_le: '2026-10-27'
+  publier: true
+  resume: House-powered LoRa P2P mud crab fattening monitor — ESP32 + SX1278 915 MHz sensor grid, automated
+    aeration, real-time dashboard, and thesis-grade aquaculture IoT documentation
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 0512a4cdd866
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agroalimentaire
+  titre: 'Open Food Facts - Produits alimentaires : ingrédients, nutrition, labels'
+  url: https://www.data.gouv.fr/datasets/open-food-facts-produits-alimentaires-ingredients-nutrition-labels
+  description: '[Open Food Facts](https://fr.openfoodfacts.org/) répertorie les informations sur les produits
+    alimentaires : ingrédients, informations nutritionnelles, labels etc. Les données proviennent majoritairement
+    de la collecte citoyenne (crowdsourcing) des informations.'
+  licence: odbl-1.0
+  date_maj: '2026-10-27'
+  techno: ''
+  popularite: 43
+  mots_cles:
+  - agroalimentaire
+  - alimentation
+  - aliments
+  - collecte-citoyenne
+  - composition-nutritionnelle
+  - consommation
+  - crowdsourcing
+  - ingredients
+  score: 76
+  raisons:
+  - licence odbl-1.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : alimentaire, food'
+  propose_le: '2026-10-27'
+  publier: true
+  resume: '[Open Food Facts](https://fr.openfoodfacts.org/) répertorie les informations sur les produits
+    alimentaires : ingrédients, informations nutritionnelles, labels etc. Les données proviennent majoritairement
+    de la…'
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 59350e12a2b6
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: Data, models and code for "Background Suppression with Plant-focused Image Transformation for
+    Robust Plant Detection in Field Images"
+  url: https://doi.org/10.5281/zenodo.23619519
+  description: This record contains the data, the trained models and the code of the paper "Background
+    Suppression with Plant-focused Image Transformation for Robust Plant Detection in Field Images". Plant-focused
+    Image Transformation (PIT) is a preprocessing method that keeps the target plant in a field image
+    and sets the background to black. Six object detectors (Faster R-CNN, SSD, EfficientDet-D1, YOLOv8s,
+    YO
+  licence: cc-by-4.0
+  date_maj: '2026-10-25'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - Plant-focused Image Transformation (PIT)
+  - Background suppression
+  - Plant detection
+  - Weed detection
+  - Object detection
+  - Domain shift
+  - Precision agriculture
+  score: 76
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-10-27'
+  publier: true
+  resume: This record contains the data, the trained models and the code of the paper "Background Suppression
+    with Plant-focused Image Transformation for Robust Plant Detection in Field Images". Plant-focused
+    Image…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 57aaff0fd920
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: 'Replication Data, SPSS Syntax, and Google Earth Engine Code for: Post-Flood Recovery and Climate-Smart
+    Agriculture in Mehar Taluka, Sindh (2020–2026)'
+  url: https://doi.org/10.5281/zenodo.23640058
+  description: 'This repository contains the complete replication materials and data files supporting
+    the study assessing household resilience, flood recovery, and climate-smart agriculture in Mehar Taluka,
+    Dadu District, Sindh (2020&ndash;2026). The dataset and scripts are organized into three primary files:
+    MUS_n455_SPSS_dataset.sav : The anonymized quantitative survey dataset comprising $n=455$ household
+    respo'
+  licence: cc-by-4.0
+  date_maj: '2026-10-26'
+  techno: ''
+  popularite: 0
+  mots_cles: []
+  score: 76
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-10-27'
+  publier: true
+  resume: This repository contains the complete replication materials and data files supporting the study
+    assessing household resilience, flood recovery, and climate-smart agriculture in Mehar Taluka, Dadu
+    District, Sindh…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: fc11f18187c9
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: 'MCR-CO2: a global gridded monthly anthropogenic CO₂ emission dataset at 0.05° resolution for
+    1970_01–2025_12'
+  url: https://doi.org/10.5281/zenodo.23337181
+  description: 'MCR-CO₂ is a global gridded monthly anthropogenic CO₂ emission dataset at 0.05&deg; spatial
+    resolution covering January 1970 to December 2025 . The dataset provides 672 monthly layers for seven
+    harmonized sectors: power generation, industry, buildings, road transport, agriculture, waste, and
+    fuel production, together with total-emission products. MCR-CO₂ combines EDGAR, ODIAC, CEDS, MEIC
+    daily cou'
+  licence: cc-by-4.0
+  date_maj: '2026-10-25'
+  techno: ''
+  popularite: 0
+  mots_cles: []
+  score: 76
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-10-27'
+  publier: true
+  resume: MCR-CO₂ is a global gridded monthly anthropogenic CO₂ emission dataset at 0.05&deg; spatial
+    resolution covering January 1970 to December 2025 . The dataset provides 672 monthly layers for seven
+    harmonized sectors:…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 5cd18b1f0b06
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: Contracts awarded by the Department of Primary Industries, Queensland, from July 2025
+  url: https://doi.org/10.5281/zenodo.23615012
+  description: Every contract worth $10,000 or more awarded by the Queensland Department of Primary Industries
+    since July 2025, with supplier, value, date and procurement method. This is the 2026-10-13 version
+    of this dataset on publicdata.au, with 1,263 rows and 24 fields. The same version is kept at https://publicdata.au/d/qld-dpi-contract-disclosure/v/2026-10-13/
+    in 8 formats, with every earlier version and a
+  licence: cc-by-4.0
+  date_maj: '2026-10-24'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - Australia
+  - government open data
+  - publicdata.au
+  - contract disclosure
+  - government contracts
+  - procurement
+  - Primary Industries
+  - agriculture
+  score: 76
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-10-27'
+  publier: true
+  resume: Every contract worth $10,000 or more awarded by the Queensland Department of Primary Industries
+    since July 2025, with supplier, value, date and procurement method. This is the 2026-10-13 version
+    of this dataset on…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 62e429b0c7e1
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: 'Soil microbial diversity and association networks under tillage and no-tillage in Ohio soybean
+    fields: Sequencing data and analysis code'
+  url: https://doi.org/10.5281/zenodo.23603407
+  description: This dataset contains sequencing source data and analysis code supporting &ldquo;Soil microbial
+    diversity and association networks under tillage and no-tillage in Ohio soybean fields&rdquo;. The
+    focused archives do not contain manuscript text, supplementary documents, figures, workbooks, archived
+    statistical result tables or network edge exports. The manuscript and supplementary document are maint
+  licence: cc0-1.0
+  date_maj: '2026-10-27'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - soil microbiome; no-till; tillage; fungal communities; AMF; carbon; compositional data; sensitivity
+    analysis.
+  score: 76
+  raisons:
+  - licence cc0-1.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : soil, carbon'
+  propose_le: '2026-10-27'
+  publier: true
+  resume: This dataset contains sequencing source data and analysis code supporting &ldquo;Soil microbial
+    diversity and association networks under tillage and no-tillage in Ohio soybean fields&rdquo;. The
+    focused archives do…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: df2c1541adad
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: INVESTIGATION OF CHANGES IN THE MORPHOPHYSIOLOGICAL AND BIOCHEMICAL INDICATORS OF THE PLANT STEVIA
+    REBAUDIANA BERTONI UNDER VARIOUS ECOLOGICAL CONDITIONS
+  url: https://doi.org/10.5281/zenodo.23594252
+  description: 'Stevia rebaudiana Bertoni is a perennial herb valued for steviol glycosides, especially
+    stevioside and rebaudioside A, which are used as high-intensity, low-calorie sweeteners. The accumulation
+    of these compounds and the plant&rsquo;s productivity are influenced by environmental conditions,
+    including water availability, soil salinity, temperature, light, humidity and soil properties. This
+    article '
+  licence: cc-by-4.0
+  date_maj: '2026-10-23'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - Stevia rebaudiana; ecological conditions; morphophysiology; biochemical indicators; steviol glycosides;
+    drought stress; salinity; photosynthesis.
+  score: 76
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : soil, water'
+  propose_le: '2026-10-27'
+  publier: true
+  resume: Stevia rebaudiana Bertoni is a perennial herb valued for steviol glycosides, especially stevioside
+    and rebaudioside A, which are used as high-intensity, low-calorie sweeteners. The accumulation of
+    these compounds and…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: f82515dc7143
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agroalimentaire
+  titre: Agreste - Graphagri
+  url: https://www.data.gouv.fr/datasets/agreste-graphagri
+  description: Un panorama de l’agriculture, des industries agroalimentaires, de la forêt et de l’alimentation,
+    avec tableaux, graphiques, cartes et commentaires. Données de cadrage, Territoire et climat, Structures
+    et moyens de production agricoles, Population agricole, formation et recherche, Résultats économiques
+    de l’agriculture, Entreprises agroalimentaires, Bois et sciages, Environnement, Alimentation, Com
+  licence: etalab-2.0
+  date_maj: '2025-03-06'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - agroalimentaire
+  - aides
+  - alimentation
+  - animaux
+  - aviculture
+  - bois
+  - bovins
+  score: 75
+  raisons:
+  - licence etalab-2.0
+  - activité ancienne
+  - 'vocabulaire : agricole, agriculture, aviculture, bovin, climat'
+  propose_le: '2026-10-27'
+  publier: true
+  resume: Un panorama de l’agriculture, des industries agroalimentaires, de la forêt et de l’alimentation,
+    avec tableaux, graphiques, cartes et commentaires. Données de cadrage, Territoire et climat, Structures
+    et moyens de…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 657d086affcf
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: Swapnajoy123456/elrobot_pizza_all_cropped
+  url: https://huggingface.co/datasets/Swapnajoy123456/elrobot_pizza_all_cropped
+  description: 'This dataset was created using LeRobot. Dataset Structure meta/info.json: { "codebase_version":
+    "v3.0", "fps": 30, "features": { "action": { "dtype": "float32", "names": [ "joint_1.pos", "joint_2.pos",'
+  licence: apache-2.0
+  date_maj: '2026-10-25'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - LeRobot
+  score: 67
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  propose_le: '2026-10-27'
+  publier: true
+  resume: 'This dataset was created using LeRobot. Dataset Structure meta/info.json: { "codebase_version":
+    "v3.0", "fps": 30, "features": { "action": { "dtype": "float32", "names": [ "joint_1.pos", "joint_2.pos",'
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: be7906c6fe2f
+  famille: modele
+  relecteur: ionosphere
+  source: hf-modeles-plantes
+  titre: bhaskar06/agri-plant-disease-model
+  url: https://huggingface.co/bhaskar06/agri-plant-disease-model
+  description: ''
+  licence: mit
+  date_maj: '2026-10-19'
+  techno: ''
+  popularite: 0
+  mots_cles: []
+  score: 71
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : plant-disease'
+  propose_le: '2026-10-27'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: b67f8bc7c904
+  famille: modele
+  relecteur: ionosphere
+  source: hf-modeles-plantes
+  titre: LourivalGontijo/plant-disease-vit
+  url: https://huggingface.co/LourivalGontijo/plant-disease-vit
+  description: pytorch image-classification vision-transformer plant-disease computer-vision
+  licence: mit
+  date_maj: '2026-10-17'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - pytorch
+  - image-classification
+  - vision-transformer
+  - plant-disease
+  - computer-vision
+  score: 71
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : plant-disease'
+  propose_le: '2026-10-27'
+  publier: true
+  resume: pytorch image-classification vision-transformer plant-disease computer-vision
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 900b85fa4f2a
+  famille: modele
+  relecteur: ionosphere
+  source: hf-modeles-plantes
+  titre: xoxics/plant_diseases_in_common_agri_crops
+  url: https://huggingface.co/xoxics/plant_diseases_in_common_agri_crops
+  description: ''
+  licence: mit
+  date_maj: '2026-10-06'
+  techno: ''
+  popularite: 0
+  mots_cles: []
+  score: 71
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : crop'
+  propose_le: '2026-10-27'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 14658ac55b97
+  famille: modele
+  relecteur: ionosphere
+  source: hf-modeles-agri
+  titre: LishaV01/agriculture-crop-disease-detection
+  url: https://huggingface.co/LishaV01/agriculture-crop-disease-detection
+  description: safetensors vit image-classification
+  licence: apache-2.0
+  date_maj: '2026-03-25'
+  techno: ''
+  popularite: 7
+  mots_cles:
+  - safetensors
+  - vit
+  - image-classification
+  score: 67
+  raisons:
+  - licence apache-2.0
+  - actif (moins d'un an)
+  - 'vocabulaire : crop'
+  propose_le: '2026-10-27'
+  publier: true
+  resume: safetensors vit image-classification
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+resume_genere_le: 2026-10-27 10:16
