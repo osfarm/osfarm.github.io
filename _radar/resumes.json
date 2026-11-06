@@ -43,6 +43,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Système de détection de maladies des cultures basé sur l'intelligence artificielle avec le modèle YOLO et une assistance optionnelle par DeepSeek. Il est développé avec Vue 3, Spring Boot et Flask."
  },
+ "0512a4cdd866": {
+  "famille": "donnees",
+  "id": "0512a4cdd866",
+  "interet": "",
+  "mots_cles": [
+   "produits alimentaires",
+   "composition nutritionnelle",
+   "labels",
+   "collecte citoyenne",
+   "base de données"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Cette base de données répertorie les informations nutritionnelles, les ingrédients et les labels des produits alimentaires. Les données proviennent principalement d'une collecte citoyenne."
+ },
  "051485381c9e": {
   "famille": "logiciel",
   "id": "051485381c9e",
@@ -402,6 +417,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Bibliothèque Python permettant d'accéder aux données pédologiques de l'USDA-NRCS. Elle facilite l'intégration de ces données dans des applications ou analyses."
  },
+ "1c10913f703a": {
+  "famille": "logiciel",
+  "id": "1c10913f703a",
+  "interet": "Permet de renforcer les capacités des agricultrices dans un contexte de vulnérabilité alimentaire.",
+  "mots_cles": [
+   "agriculture",
+   "formation",
+   "rwanda",
+   "sécurité alimentaire",
+   "femmes"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Plateforme éducative destinée aux agricultrices au Rwanda pour renforcer leurs compétences agricoles. Elle vise à améliorer la sécurité alimentaire et réduire la malnutrition infantile."
+ },
  "1c1c147ecae1": {
   "famille": "donnees",
   "id": "1c1c147ecae1",
@@ -534,6 +564,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Modèle de segmentation d'instances pour la délimitation des parcelles agricoles à partir d'imagerie aérienne. Utilise des données de télédétection géospatiales."
+ },
+ "240e8ffd518f": {
+  "famille": "logiciel",
+  "id": "240e8ffd518f",
+  "interet": "Facilite l'accès à des modèles de simulation pour évaluer des scénarios agronomiques.",
+  "mots_cles": [
+   "modélisation",
+   "cultures",
+   "agronomie",
+   "simulation",
+   "open source"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Liste curated et auto-rafraîchie de modèles agricoles open source pour simuler les cultures et les processus agronomiques. Elle centralise des outils comme APSIM et AquaCrop."
  },
  "27bb878c81e8": {
   "famille": "logiciel",
@@ -966,6 +1011,20 @@
   "redige_par": "mistral-small-latest",
   "resume": "Ce système permet de surveiller et contrôler à distance le climat dans les serres et cultures indoor. Il est compatible avec divers capteurs et interrupteurs intelligents accessibles en ligne de commande."
  },
+ "457ef48afeb4": {
+  "famille": "logiciel",
+  "id": "457ef48afeb4",
+  "interet": "",
+  "mots_cles": [
+   "statistiques",
+   "administratif",
+   "harmonisation",
+   "python"
+  ],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
  "45cd803b3312": {
   "famille": "donnees",
   "id": "45cd803b3312",
@@ -980,6 +1039,22 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Liste des fournisseurs d'aliments pour la restauration scolaire en Normandie. Cette donnée s'inscrit dans un plan visant à augmenter la part de produits locaux."
+ },
+ "480fa26d99ca": {
+  "famille": "donnees",
+  "id": "480fa26d99ca",
+  "interet": "Permet d'étudier les technologies de navigation et de perception pour les robots agricoles sous couvert végétal.",
+  "mots_cles": [
+   "robot agricole",
+   "navigation",
+   "perception",
+   "maïs",
+   "rgb-d",
+   "lidar"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce jeu de données décrit un petit robot suivi équipé de caméras RGB-D, d'un LiDAR 360°, d'une IMU et d'un système RTK, utilisé sous le couvert de maïs mature en 2026."
  },
  "4ad58db7a5f1": {
   "famille": "logiciel",
@@ -1225,6 +1300,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Cet ensemble de données géospatiales porte sur les rendements des cultures pour des indicateurs liés aux objectifs de développement durable. Il est redistribué sans modification."
  },
+ "5df61757b6e0": {
+  "famille": "donnees",
+  "id": "5df61757b6e0",
+  "interet": "Étudier les indicateurs de santé et de bien-être des vaches laitières pour adapter leur gestion.",
+  "mots_cles": [
+   "vaches laitières",
+   "rythme cardiaque",
+   "comportement",
+   "surveillance",
+   "données biométriques"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Jeu de données pseudonymisés sur le comportement et la variabilité du rythme cardiaque des vaches laitières, accompagné d'un livret de communication des résultats."
+ },
  "5f0b769462f2": {
   "famille": "materiel",
   "id": "5f0b769462f2",
@@ -1254,6 +1344,21 @@
   "pertinence": "non",
   "redige_par": "mistral-small-latest",
   "resume": "Données cartographiques et descriptives des activités de cultures marines en France métropolitaine, issues de sources institutionnelles. Elles synthétisent les pressions anthropiques et leurs effets sur les écosystèmes marins."
+ },
+ "63ad6c5717b1": {
+  "famille": "donnees",
+  "id": "63ad6c5717b1",
+  "interet": "Ces données peuvent servir à évaluer l'impact des systèmes agrivoltaïques sur les cultures.",
+  "mots_cles": [
+   "agrivoltaïsme",
+   "microclimat",
+   "melon",
+   "capteurs iot",
+   "rayonnement solaire"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce projet publie des données microclimatiques et environnementales mesurées sous un système agrivoltaïque pendant un cycle de culture de melon jaune. Les données incluent température de l'air, humidité du sol et rayonnement photosynthétiquement actif."
  },
  "63f4671c3a75": {
   "famille": "donnees",
@@ -1344,6 +1449,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Stratégie d'irrigation automatisée pour cultures (phases P0-P3) avec interface graphique dans Home Assistant. Elle permet de configurer des règles d'arrosage."
+ },
+ "70ee4562d97c": {
+  "famille": "logiciel",
+  "id": "70ee4562d97c",
+  "interet": "Améliorer la gestion des élevages aquacoles en anticipant les besoins des poissons et en réduisant les pertes.",
+  "mots_cles": [
+   "aquaculture",
+   "prédiction",
+   "optimisation",
+   "xgboost",
+   "analyse de risque"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Plateforme cloud d'aquaculture utilisant l'IA pour prédire la croissance des poissons, optimiser l'alimentation et analyser les risques de mortalité. Elle repose sur des modèles XGBoost et des grands modèles de langage."
  },
  "713e478bf2a1": {
   "famille": "logiciel",
@@ -1470,6 +1590,21 @@
   "redige_par": "mistral-small-latest",
   "resume": ""
  },
+ "7a7b664f364a": {
+  "famille": "modele",
+  "id": "7a7b664f364a",
+  "interet": "",
+  "mots_cles": [
+   "revue analytique",
+   "algorithmes graphiques",
+   "agriculture numérique",
+   "arbres de spanning",
+   "stress des cultures"
+  ],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
  "7b4c276adecc": {
   "famille": "donnees",
   "id": "7b4c276adecc",
@@ -1572,6 +1707,36 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Ce jeu de données mesure, à l'échelle communale, la proportion de responsables d'exploitations agricoles de 55 ans ou plus en 2020. Il contient 34 920 lignes, une par commune de France métropolitaine."
+ },
+ "83eaa091ae20": {
+  "famille": "donnees",
+  "id": "83eaa091ae20",
+  "interet": "Permet d'entraîner des modèles de détection d'adventices dans les cultures.",
+  "mots_cles": [
+   "jeu de données",
+   "images annotées",
+   "adventices",
+   "détection",
+   "agriculture"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce jeu de données contient 1 000 images annotées avec 56 530 boîtes englobantes pour deux catégories. Il est indexé dans la bibliothèque AgML."
+ },
+ "8736fab5068a": {
+  "famille": "donnees",
+  "id": "8736fab5068a",
+  "interet": "",
+  "mots_cles": [
+   "anglais",
+   "pédagogie",
+   "universités",
+   "analyse des besoins",
+   "Ouzbékistan"
+  ],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
  },
  "87b7b9534a19": {
   "famille": "donnees",
@@ -1678,6 +1843,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Application mobile utilisant l'intelligence artificielle pour diagnostiquer les maladies des cultures à partir d'images de plantes. Elle propose des recommandations de traitement adaptées aux maladies détectées."
  },
+ "8b9f86bd2f68": {
+  "famille": "logiciel",
+  "id": "8b9f86bd2f68",
+  "interet": "Aide à la gestion des prix, à la planification des récoltes et à la communication avec les agriculteurs.",
+  "mots_cles": [
+   "organisation de producteurs",
+   "prix",
+   "prévisions",
+   "inde",
+   "bot"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Système numérique pour les organisations de producteurs agricoles en Inde, incluant intelligence des prix, agrégation des récoltes, prévisions et un bot WhatsApp. Développé avec FastAPI."
+ },
  "8c2bda86e9e7": {
   "famille": "logiciel",
   "id": "8c2bda86e9e7",
@@ -1730,6 +1910,15 @@
   "redige_par": "mistral-small-latest",
   "resume": ""
  },
+ "900b85fa4f2a": {
+  "famille": "modele",
+  "id": "900b85fa4f2a",
+  "interet": "",
+  "mots_cles": [],
+  "pertinence": "inconnu",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
  "920d318823f6": {
   "famille": "matériel",
   "id": "920d318823f6",
@@ -1775,6 +1964,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Ce projet récupère des seuils de soins par espèce depuis OpenPlantbook.io. Il permet d'automatiser des actions liées aux plantes dans un système domotique."
  },
+ "95911583445e": {
+  "famille": "donnees",
+  "id": "95911583445e",
+  "interet": "Facilite l'analyse des méthodes d'apprentissage automatique pour l'élevage ovin et caprin.",
+  "mots_cles": [
+   "ovins",
+   "caprins",
+   "apprentissage automatique",
+   "poids corporel",
+   "revue systématique"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce jeu de données rassemble les décisions de sélection et les codes d'évaluation pour une revue systématique sur l'apprentissage automatique appliqué au poids corporel et aux caractéristiques de carcasse chez les ovins et caprins. Il accompagne un article scientifique."
+ },
  "977d988aa7ee": {
   "famille": "donnees",
   "id": "977d988aa7ee",
@@ -1819,6 +2023,15 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Jeu de données sémantique à grande échelle pour la cartographie des adventices à partir d'imagerie multispectrale aérienne. Utilise des réseaux de neurones profonds pour le désherbage de précision."
+ },
+ "9b8fc4e52372": {
+  "famille": "donnees",
+  "id": "9b8fc4e52372",
+  "interet": "",
+  "mots_cles": [],
+  "pertinence": "inconnu",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
  },
  "9c815bd68155": {
   "famille": "logiciel",
@@ -2244,6 +2457,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Cet ensemble de données géospatiales harmonisées couvre les cultures à l'échelle mondiale. Il est redistribué sans modification."
  },
+ "b67f8bc7c904": {
+  "famille": "modele",
+  "id": "b67f8bc7c904",
+  "interet": "Ce modèle peut être utilisé pour automatiser le diagnostic de maladies végétales.",
+  "mots_cles": [
+   "classification d'images",
+   "maladies végétales",
+   "vision par ordinateur",
+   "transformer",
+   "pytorch"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce projet propose un modèle de classification d'images basé sur des transformers de vision pour détecter des maladies sur des plantes. Il utilise la bibliothèque PyTorch."
+ },
  "b78b7fffd539": {
   "famille": "donnees",
   "id": "b78b7fffd539",
@@ -2327,6 +2555,15 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "FishMaster est un système de surveillance en temps réel des conditions de l'eau pour aquariums intelligents. Il utilise des capteurs et une interface pour suivre les paramètres environnementaux."
+ },
+ "be7906c6fe2f": {
+  "famille": "modele",
+  "id": "be7906c6fe2f",
+  "interet": "",
+  "mots_cles": [],
+  "pertinence": "inconnu",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
  },
  "bf026b463fac": {
   "famille": "logiciel",
@@ -2429,6 +2666,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Client logiciel pour se connecter aux services web de l'agence néerlandaise RVO afin d'accéder à des informations agricoles. Il permet de récupérer des données structurées sur les cultures et les exploitations."
+ },
+ "c20630899b6d": {
+  "famille": "donnees",
+  "id": "c20630899b6d",
+  "interet": "",
+  "mots_cles": [
+   "enquête",
+   "entreprises agroalimentaires",
+   "innovation",
+   "dépenses",
+   "statistiques"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Cette enquête statistique publique recense les caractéristiques et les dépenses d'innovation des entreprises agroalimentaires en 2022. Elle est réalisée par l'Insee et traitée par le SSP."
  },
  "c52f90dd290a": {
   "famille": "materiel",
@@ -2604,6 +2856,21 @@
   "redige_par": "mistral-small-latest",
   "resume": ""
  },
+ "cdb3a7ee753d": {
+  "famille": "logiciel",
+  "id": "cdb3a7ee753d",
+  "interet": "",
+  "mots_cles": [
+   "alimentation",
+   "ontologie",
+   "classification",
+   "owl",
+   "données"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ontologie dédiée à la description des aliments et des produits alimentaires, structurée en classes clés. Elle est développée dans le cadre de l'OBO Foundry."
+ },
  "ce6d53c93419": {
   "famille": "logiciel",
   "id": "ce6d53c93419",
@@ -2763,6 +3030,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Plans de conception et code open source pour un robot agricole énergétiquement efficace et agile. Il inclut des éléments de conception 3D et des composants électroniques."
  },
+ "d886b39f7d69": {
+  "famille": "donnees",
+  "id": "d886b39f7d69",
+  "interet": "Analyser les tendances agricoles et évaluer les performances des cultures à l'échelle nationale.",
+  "mots_cles": [
+   "statistiques agricoles",
+   "rendement",
+   "cultures",
+   "usda",
+   "parquet"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Jeu de données statistiques sur les cultures aux États-Unis issu de la base Quick Stats du NASS. Il contient des informations sur les rendements, les surfaces plantées et récoltées, et la production."
+ },
  "d90aeaa302bc": {
   "famille": "logiciel",
   "id": "d90aeaa302bc",
@@ -2821,6 +3103,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Ce jeu de données recense les résultats du Recensement Général Agricole pour les communes du Parc naturel régional du Morvan aux années 1988, 2000, 2010 et 2020."
+ },
+ "dad511616cbf": {
+  "famille": "matériel",
+  "id": "dad511616cbf",
+  "interet": "Optimiser l'irrigation pour réduire la consommation d'eau en ciblant les besoins des plantes.",
+  "mots_cles": [
+   "irrigation",
+   "robotique",
+   "racinaire",
+   "vision par ordinateur",
+   "microcontrôleur"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Projet de robot fixe pour l'irrigation localisée du système racinaire utilisant une caméra et un microcontrôleur STM32. Il permet de contrôler précisément l'apport en eau dans la zone racinaire."
  },
  "db40120e7ae2": {
   "famille": "donnees",
@@ -2922,6 +3219,21 @@
   "pertinence": "inconnu",
   "redige_par": "mistral-small-latest",
   "resume": ""
+ },
+ "de204eb9c328": {
+  "famille": "logiciel",
+  "id": "de204eb9c328",
+  "interet": "Permet d'accéder et d'analyser des données statistiques agricoles standardisées.",
+  "mots_cles": [
+   "statistiques",
+   "agriculture",
+   "données",
+   "sql",
+   "fao"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Serveur local proposant des statistiques agricoles mondiales issues de la base FAOSTAT, accessible via une interface SQL ou MCP. Utilise DuckDB et une architecture DataCanvas."
  },
  "dfaa8673abfd": {
   "famille": "donnees",
@@ -3202,6 +3514,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Firmware pour Arduino exécutant des commandes de type G-code pour déplacer un FarmBot et actionner l'outil monté. Il gère les mouvements et les opérations mécaniques."
  },
+ "f5a690641937": {
+  "famille": "logiciel",
+  "id": "f5a690641937",
+  "interet": "",
+  "mots_cles": [
+   "simulateur",
+   "véhicule",
+   "aérospatial",
+   "automobile",
+   "éducatif"
+  ],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
  "f62af1142116": {
   "famille": "logiciel",
   "id": "f62af1142116",
@@ -3260,6 +3587,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Ce dépôt illustre une gestion d'élevage ovin intégrant des outils d'intelligence artificielle et des guides pour les utilisateurs non techniques. Il inclut des enregistrements de reproduction et des vérifications de résultats écologiques."
+ },
+ "f82515dc7143": {
+  "famille": "donnees",
+  "id": "f82515dc7143",
+  "interet": "Ce projet permet d'obtenir des données de cadrage pour des études ou des prises de décision dans le secteur agricole.",
+  "mots_cles": [
+   "statistiques agricoles",
+   "agroalimentaire",
+   "forêt",
+   "alimentation",
+   "environnement"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce projet propose des données statistiques et des analyses sur l'agriculture, l'agroalimentaire, la forêt et l'alimentation sous forme de tableaux, graphiques et cartes. Il couvre des thèmes comme les structures agricoles, les résultats économiques et l'environnement."
  },
  "fa9fd9520b8f": {
   "famille": "materiel",
