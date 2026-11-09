@@ -1,0 +1,853 @@
+# Lot du radar OSFarm. Passer « publier » à false pour écarter une fiche,
+# corriger « resume » au besoin. La fusion de la pull request publie le reste.
+date: '2026-11-09'
+examines: 340
+retenus: 24
+rejets:
+  deja_vu: 199
+  deja_sur_le_site: 7
+  licence: 38
+  score: 0
+pannes: []
+candidats:
+- id: 1c10913f703a
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: samertall/AgriEmpower
+  url: https://github.com/samertall/AgriEmpower
+  description: A platform to educate female farmers in Rwanda to fight food insecurity and child malnutrition.
+  licence: mit
+  date_maj: '2026-10-28'
+  techno: JavaScript
+  popularite: 64
+  mots_cles:
+  - agriculture
+  - agritech
+  - food-security
+  - rwanda
+  - sustainable-agriculture
+  - women-in-agriculture
+  score: 98
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, agritech, farmer, food'
+  propose_le: '2026-11-09'
+  publier: true
+  resume: Plateforme éducative destinée aux agricultrices au Rwanda pour renforcer leurs compétences agricoles.
+    Elle vise à améliorer la sécurité alimentaire et réduire la malnutrition infantile.
+  interet: Permet de renforcer les capacités des agricultrices pour améliorer la production agricole et
+    la nutrition.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - agriculture
+  - formation
+  - rwanda
+  - sécurité alimentaire
+  - femmes
+- id: 240e8ffd518f
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: YuanyuanMa03/awesome-crop-models
+  url: https://github.com/YuanyuanMa03/awesome-crop-models
+  description: Curated, auto-refreshed list of open-source crop and agricultural process models on GitHub
+  licence: mit
+  date_maj: '2026-11-09'
+  techno: Python
+  popularite: 6
+  mots_cles:
+  - agricultural-modeling
+  - agriculture
+  - agronomy
+  - apsim
+  - aquacrop
+  - awesome
+  - awesome-list
+  - crop-growth-model
+  score: 94
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, agronomy, crop'
+  propose_le: '2026-11-09'
+  publier: true
+  resume: Liste curatée et auto-rafraîchie de modèles agricoles open source pour simuler les cultures
+    et les processus agronomiques. Elle centralise des outils comme APSIM ou AquaCrop.
+  interet: Fournit des outils de modélisation pour évaluer et optimiser les pratiques culturales.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - modélisation
+  - cultures
+  - agronomie
+  - simulation
+  - open source
+- id: 8b9f86bd2f68
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: 4LPH7/FPOLink
+  url: https://github.com/4LPH7/FPOLink
+  description: FPOLink TN — FPO Digital Operating System for Tamil Nadu (Price Intelligence, Harvest Aggregation,
+    Forecasting, Whatsapp Bot)
+  licence: mit
+  date_maj: '2026-11-08'
+  techno: HTML
+  popularite: 3
+  mots_cles:
+  - agriculture
+  - agritech
+  - farmers
+  - fastapi
+  - forecasting
+  - india
+  - lightgbm
+  - nextjs
+  score: 92
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, agritech, farmer, harvest'
+  propose_le: '2026-11-09'
+  publier: true
+  resume: Système numérique pour les organisations de producteurs en Inde du Sud, intégrant intelligence
+    des prix, agrégation des récoltes et prévisions. Il inclut un bot WhatsApp pour les interactions.
+  interet: Aide à la gestion des prix, à la planification des récoltes et à la communication avec les
+    producteurs.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - organisation de producteurs
+  - prix
+  - prévision
+  - inde
+  - bot
+- id: cdb3a7ee753d
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: FoodOntology/foodon
+  url: https://github.com/FoodOntology/foodon
+  description: The core repository for the FOODON food ontology project. This holds the key classes of
+    the ontology; larger files and the results of text-mining projects will be stored in other repos.
+  licence: cc-by-4.0
+  date_maj: '2026-11-03'
+  techno: Python
+  popularite: 248
+  mots_cles:
+  - agriculture
+  - food
+  - obofoundry
+  - ontology
+  - owl
+  score: 85
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, food'
+  propose_le: '2026-11-09'
+  publier: true
+  resume: Ontologie alimentaire structurant les concepts clés liés à l'alimentation et à l'agriculture.
+    Elle sert de référence pour l'annotation et l'interopérabilité des données.
+  interet: Permet une description standardisée des produits alimentaires et des processus agricoles pour
+    faciliter les échanges de données.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - ontologie
+  - alimentation
+  - agriculture
+  - interopérabilité
+  - données
+- id: 11238ae4b6c3
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: SkaFUU/aog-field-editor
+  url: https://github.com/SkaFUU/aog-field-editor
+  description: 'Browser editor for AgOpenGPS fields: boundary points, flags, field origin, layers and
+    track names – no install (EN/DE)'
+  licence: mit
+  date_maj: '2026-11-06'
+  techno: JavaScript
+  popularite: 3
+  mots_cles:
+  - agopengps
+  - field-boundary
+  - leaflet
+  - precision-agriculture
+  score: 82
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, field-boundary'
+  propose_le: '2026-11-09'
+  publier: true
+  resume: Éditeur web pour définir les limites de parcelles, les drapeaux et les couches dans AgOpenGPS.
+    Il fonctionne sans installation et propose des interfaces en anglais et en allemand.
+  interet: Facilite la configuration des champs pour les outils de précision agricole comme AgOpenGPS.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - parcelles
+  - agopengps
+  - édition web
+  - agriculture de précision
+  - géomatique
+- id: de204eb9c328
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: cyanheads/faostat-mcp-server
+  url: https://github.com/cyanheads/faostat-mcp-server
+  description: Global food & agriculture statistics from the UN FAOSTAT bulk-download corpus, served from
+    a local SQLite mirror with a DataCanvas SQL surface, via MCP. STDIO or Streamable HTTP.
+  licence: apache-2.0
+  date_maj: '2026-11-03'
+  techno: TypeScript
+  popularite: 3
+  mots_cles:
+  - agriculture
+  - ai-agents
+  - bun
+  - cyanheads
+  - duckdb
+  - fao
+  - faostat
+  - food
+  score: 79
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, food'
+  propose_le: '2026-11-09'
+  publier: true
+  resume: Serveur local fournissant des statistiques agricoles mondiales issues de la base FAOSTAT via
+    une interface SQL ou MCP. Les données sont accessibles en local via DuckDB.
+  interet: Permet d'accéder et d'analyser des données statistiques agricoles pour des études ou des rapports.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - statistiques
+  - agriculture
+  - fao
+  - données
+  - analyse
+- id: 74015ce4c6b2
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: Precision-AI-Inc/magnidata
+  url: https://github.com/Precision-AI-Inc/magnidata
+  description: Precision AI Open Source Data Visualization Tool
+  licence: apache-2.0
+  date_maj: '2026-11-04'
+  techno: Python
+  popularite: 5
+  mots_cles:
+  - agriculture
+  - computer-vision
+  - data-visualization
+  - dataset-curation
+  - embeddings
+  - flask
+  - image-segmentation
+  - mlflow
+  score: 77
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-11-09'
+  publier: true
+  resume: Outil open source de visualisation de données pour l'agriculture basé sur l'intelligence artificielle.
+    Il permet de traiter et visualiser des jeux de données agricoles.
+  interet: Faciliter l'analyse et la prise de décision à partir de données agricoles.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - visualisation
+  - données agricoles
+  - intelligence artificielle
+  - agriculture de précision
+  - curateur de données
+- id: 457ef48afeb4
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: michaelmfoley/stablebound
+  url: https://github.com/michaelmfoley/stablebound
+  description: 'Stable administrative boundaries for subnational statistics: harmonise district-level
+    records across boundary changes. Python package with the India lineage bundled.'
+  licence: mit
+  date_maj: '2026-11-04'
+  techno: Python
+  popularite: 4
+  mots_cles:
+  - administrative-boundaries
+  - agriculture
+  - harmonization
+  - india
+  - python
+  - subnational-statistics
+  score: 76
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-11-09'
+  publier: false
+  resume: Outil Python pour harmoniser les statistiques administratives à l'échelle infra-nationale, incluant
+    des données pour l'Inde. Il permet de comparer des enregistrements malgré les changements de limites
+    territoriales.
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - statistiques administratives
+  - harmonisation
+  - limites territoriales
+  - python
+  - inde
+- id: 9fb94413051b
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-viti
+  titre: YSSF8/Vineyard
+  url: https://github.com/YSSF8/Vineyard
+  description: A tool to create and manage Wine themes for Linux desktop customization.
+  licence: mit
+  date_maj: '2026-01-27'
+  techno: Python
+  popularite: 5
+  mots_cles: []
+  score: 70
+  raisons:
+  - licence mit
+  - actif (moins d'un an)
+  - 'vocabulaire : vineyard'
+  propose_le: '2026-11-09'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+- id: 801ddf6aa554
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-viti
+  titre: tong-xz/GrapeSAM
+  url: https://github.com/tong-xz/GrapeSAM
+  description: Official implementation of GrapeSAM for grape cluster segmentation, berry localization,
+    counting, and visual cluster closure estimation.
+  licence: apache-2.0
+  date_maj: '2026-07-30'
+  techno: Python
+  popularite: 4
+  mots_cles:
+  - agriculture
+  - berry-counting
+  - computer-vision
+  - deep-learning
+  - grape
+  - instance-segmentation
+  - precision-agriculture
+  - segment-anything
+  score: 69
+  raisons:
+  - licence apache-2.0
+  - actif (moins d'un an)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-11-09'
+  publier: true
+  resume: Outil de segmentation d'instances pour localiser, compter et estimer la fermeture des grappes
+    de raisin à partir d'images. Il utilise l'apprentissage profond pour analyser des données visuelles.
+  interet: Automatiser le suivi et l'évaluation des grappes de raisin dans les vignobles.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - segmentation
+  - grappes de raisin
+  - apprentissage profond
+  - localisation
+  - comptage
+- id: 447377746f3a
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-elevage
+  titre: qppd/crab-grid-smart-aeration
+  url: https://github.com/qppd/crab-grid-smart-aeration
+  description: House-powered LoRa P2P mud crab fattening monitor — ESP32 + SX1278 915 MHz sensor grid,
+    automated aeration, real-time dashboard, and thesis-grade aquaculture IoT documentation
+  licence: mit
+  date_maj: '2026-10-06'
+  techno: ''
+  popularite: 3
+  mots_cles:
+  - 915mhz
+  - aquaculture
+  - arduino
+  - esp32
+  - firebase
+  - iot
+  - lora-p2p
+  - mangrove
+  score: 67
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  propose_le: '2026-11-09'
+  publier: true
+  resume: Système IoT basé sur ESP32 et LoRa pour surveiller l'engraissement des crabes en aquaculture.
+    Il inclut une grille de capteurs, une aération automatisée et un tableau de bord en temps réel.
+  interet: Optimiser la gestion des conditions d'élevage des crabes en aquaculture.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - aquaculture
+  - iot
+  - esp32
+  - lorawan
+  - aération automatisée
+- id: ea08e6b3fb45
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: 'IMPLEMENTATION OF SOVIET TAX POLICY IN THE AGRICULTURE OF UZBEKISTAN AND ITS CONSEQUENCES (1920–1953:
+    ON THE EXAMPLE OF KASHKADARYA REGION)'
+  url: https://doi.org/10.5281/zenodo.24082212
+  description: This article comprehensively examines the formation, evolution, and practical implementation
+    of the tax policy carried out by the Soviet state in the agriculture of Uzbekistan, specifically using
+    the Kashkadarya region as a case study, based on archival documents. It reveals that beyond its fiscal
+    function, the Soviet tax system served as a crucial instrument for economically subjugating the rural
+  licence: cc-by-4.0
+  date_maj: '2026-11-09'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - Soviet tax policy, agriculture, Kashkadarya region, collectivization, contractization, tax burden,
+    administrative pressure, collective farm (kolkhoz), individual farm.
+  score: 88
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farm, rural'
+  propose_le: '2026-11-09'
+  publier: true
+  resume: Article analysant la politique fiscale soviétique appliquée à l'agriculture en Ouzbékistan entre
+    1920 et 1953, à partir de documents d'archives.
+  interet: ''
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - politique fiscale
+  - agriculture
+  - ouzbekistan
+  - collectivisation
+  - archives historiques
+- id: 5a9511844d67
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: 'Agrarian Policy of the USSR in 1953–1985: From Khrushchev''s Reforms to the Food Programme'
+  url: https://doi.org/10.5281/zenodo.24035276
+  description: 'The article studies the evolution of Soviet agrarian policy from the death of Stalin to
+    the mid-1980s. After 1953 the leadership repeatedly tried to reform agriculture: it raised procurement
+    prices, enlarged collective farms, developed the Virgin Lands, promoted maize, set up the councils
+    of national economy, carried out the 1965 reform, adopted the land reclamation programme and, in 1982,
+    the Foo'
+  licence: cc-by-4.0
+  date_maj: '2026-11-07'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agrarian policy, USSR, collective farms, state farms, Khrushchev, Brezhnev, Virgin Lands, land reclamation,
+    sovnarkhozes, Food Programme, agro-industrial complex.
+  score: 88
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farm, food'
+  propose_le: '2026-11-09'
+  publier: true
+  resume: Ce document analyse l'évolution des politiques agricoles soviétiques entre 1953 et 1985, en
+    détaillant les réformes successives et les programmes mis en œuvre. Il permet de comprendre les orientations
+    stratégiques de l'agriculture collective et étatique durant cette période.
+  interet: Étudier l'impact des politiques agricoles sur les structures de production et les rendements.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - politique agricole
+  - collectivisation
+  - réformes
+  - URSS
+  - programmes agricoles
+- id: 2d685a7dc99b
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: 'Dataset supporting Are Climate-Smart Practices Paying Off for Smallholder Farmers? Insights
+    from a Farm-Level Profitability Analysis in Limpopo Province, South '
+  url: https://doi.org/10.5281/zenodo.24051235
+  description: This dataset contains cross-sectional survey data collected from 300 smallholder farmers
+    in Limpopo Province, South Africa, to investigate the relationship between climate-smart agriculture
+    (CSA) investment intensity and farm-level financial and economic performance. The data were collected
+    between August and November 2024 using structured household questionnaires administered to smallholder
+    farme
+  licence: cc-by-4.0
+  date_maj: '2026-11-09'
+  techno: ''
+  popularite: 0
+  mots_cles: []
+  score: 85
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farmer'
+  propose_le: '2026-11-09'
+  publier: true
+  resume: Ce jeu de données contient des données d'enquête transversales recueillies auprès de 300 petits
+    agriculteurs de la province de Limpopo en Afrique du Sud. Il documente les investissements en agriculture
+    climato-intelligente et leurs performances économiques.
+  interet: Évaluer la rentabilité des pratiques agricoles climato-intelligentes pour les petits exploitants.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - agriculture climato-intelligente
+  - petits agriculteurs
+  - rentabilité
+  - enquête
+  - afrique du sud
+- id: a1aa03e449d0
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: 'MIcro- and NAno-Plastics in AGRIricultural Soils (MINAGRIS): A Database'
+  url: https://doi.org/10.5281/zenodo.23558768
+  description: 'This database is established within the Minagris project &ldquo; MIcro- and NAno-Plastics
+    in AGRIricultural Soils: sources, environmental fate and impacts on ecosystem services and overall
+    sustainability &rdquo; . It is composed of four types of data matrices: (i) basic characterization
+    of soil in eleven European case study sites; (ii) data of Micro-, Meso- and Nano-plastics; (iii) in-situ
+    experim'
+  licence: cc-by-4.0
+  date_maj: '2026-11-06'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - Agriculture
+  - Soil
+  - Microplastics
+  - Pollution
+  - Mesoplastics
+  - Nanoplastics
+  - Sustainability
+  - Ecosystem Services
+  score: 85
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, soil, sustainability'
+  propose_le: '2026-11-09'
+  publier: true
+  resume: Cette base de données recense des données sur les micro-, méso- et nanoplastiques dans les sols
+    agricoles européens. Elle inclut des caractérisations de sols et des résultats d'expériences in situ.
+  interet: Analyser la pollution des sols agricoles par les plastiques et ses impacts environnementaux.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - microplastiques
+  - sols agricoles
+  - pollution
+  - europe
+  - expérimentations
+- id: b6496078244f
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: USING FOREIGN EXPERIENCE IN WATER-SAVING TECHNOLOGIES AND ISSUES OF THEIR APPLICATION IN NATIONAL
+    AGRICULTURE
+  url: https://doi.org/10.5281/zenodo.24029588
+  description: Abstract. The article provides a comparative analysis of the experience of Israel, China,
+    Spain and India in water-saving irrigation technologies in agriculture, evaluates the dynamics of
+    introducing these technologies in Uzbekistan in 2017&ndash;2025 on the basis of official data, and
+    develops proposals for adapting foreign experience to national conditions.
+  licence: cc-by-4.0
+  date_maj: '2026-11-07'
+  techno: ''
+  popularite: 0
+  mots_cles: []
+  score: 82
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, irrigation'
+  propose_le: '2026-11-09'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+- id: cf5a0142c365
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: 'Supplementary Dataset and PRISMA 2020 Traceability: Mitigation Strategies and Evaluation Metrics
+    for Class Imbalance in Deep Learning-Based Phytopathology'
+  url: https://doi.org/10.5281/zenodo.23992881
+  description: 'Este conjunto de datos suplementario contiene la trazabilidad completa bajo la declaraci&oacute;n
+    PRISMA 2020 y la matriz de extracci&oacute;n de datos de la revisi&oacute;n sistem&aacute;tica titulada
+    "Estrategias de mitigaci&oacute;n y m&eacute;tricas de evaluaci&oacute;n ante el desbalance de clases
+    en fitopatolog&iacute;a basada en Deep Learning: Una revisi&oacute;n sistem&aacute;tica" . El ar'
+  licence: cc-by-4.0
+  date_maj: '2026-11-06'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - PRISMA 2020, Deep Learning, Plant Pathology, Class Imbalance, Evaluation Metrics, Precision Agriculture
+  score: 79
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, traceability'
+  propose_le: '2026-11-09'
+  publier: true
+  resume: Ce jeu de données complémentaire fournit la traçabilité PRISMA 2020 et une matrice d'extraction
+    pour une revue systématique sur les stratégies de mitigation du déséquilibre de classes en phytopathologie
+    par deep learning. Il inclut des métriques d'évaluation.
+  interet: Améliorer les modèles de détection des maladies végétales par apprentissage profond.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - phytopathologie
+  - deep learning
+  - déséquilibre de classes
+  - métriques
+  - prisma 2020
+- id: c20630899b6d
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agroalimentaire
+  titre: Agreste - Innovation - Enquête communautaire sur l'innovation dans les entreprises agroalimentaires
+    (CIS)
+  url: https://www.data.gouv.fr/datasets/agreste-innovation-enquete-communautaire-sur-linnovation-dans-les-entreprises-agroalimentaires-cis
+  description: Entreprises agroalimentaires de 10 salariés et plus, en 2022 Enquête Statistique publique,
+    Insee - CIS, traitements SSP Caractéristiques des entreprises, l’innovation en produits, biens et
+    services, les acteurs, l’innovation de procédé, les acteurs, sources d’information et de coopération,
+    objectifs des innovations principales activités et dépenses d’innovation, soutien public, partenaires,
+    freins
+  licence: etalab-2.0
+  date_maj: '2026-10-29'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - agroalimentaire
+  - depenses
+  - entreprises
+  - innovation
+  score: 76
+  raisons:
+  - licence etalab-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-11-09'
+  publier: true
+  resume: Cette enquête statistique publique décrit les caractéristiques et l'innovation des entreprises
+    agroalimentaires françaises de 10 salariés et plus en 2022. Elle couvre les dépenses, les partenariats
+    et les freins à l'innovation.
+  interet: Comprendre les dynamiques d'innovation dans le secteur agroalimentaire.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - agroalimentaire
+  - innovation
+  - entreprises
+  - dépenses
+  - enquête
+- id: 0512a4cdd866
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agroalimentaire
+  titre: 'Open Food Facts - Produits alimentaires : ingrédients, nutrition, labels'
+  url: https://www.data.gouv.fr/datasets/open-food-facts-produits-alimentaires-ingredients-nutrition-labels
+  description: '[Open Food Facts](https://fr.openfoodfacts.org/) répertorie les informations sur les produits
+    alimentaires : ingrédients, informations nutritionnelles, labels etc. Les données proviennent majoritairement
+    de la collecte citoyenne (crowdsourcing) des informations.'
+  licence: odbl-1.0
+  date_maj: '2026-11-07'
+  techno: ''
+  popularite: 44
+  mots_cles:
+  - agroalimentaire
+  - alimentation
+  - aliments
+  - collecte-citoyenne
+  - composition-nutritionnelle
+  - consommation
+  - crowdsourcing
+  - ingredients
+  score: 76
+  raisons:
+  - licence odbl-1.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : alimentaire, food'
+  propose_le: '2026-11-09'
+  publier: true
+  resume: Open Food Facts recense les caractéristiques des produits alimentaires (ingrédients, valeurs
+    nutritionnelles, labels) à partir de contributions volontaires. Il permet d'accéder à des données
+    structurées sur les aliments pour des analyses ou des comparaisons.
+  interet: Ce projet peut servir à étudier les compositions nutritionnelles ou les labels des produits
+    alimentaires.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - alimentation
+  - composition-nutritionnelle
+  - labels
+  - produits-alimentaires
+  - crowdsourcing
+- id: 9b8fc4e52372
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: tejaanish/sage-india-crops
+  url: https://huggingface.co/datasets/tejaanish/sage-india-crops
+  description: SAGE India Crops Selected, de-duplicated and split subset of tirtho149/SAGE (CC-BY-4.0;
+    Arshad et al., arXiv:2605.09768). Images are resized to at most 512 px. Crop Disease Train Validation
+    Test rice Bacterial Leaf Blight 364 76 78 rice Blast 1209 258 259 rice Brown Spo
+  licence: cc-by-4.0
+  date_maj: '2026-11-04'
+  techno: ''
+  popularite: 1
+  mots_cles: []
+  score: 73
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : crop'
+  propose_le: '2026-11-09'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: inconnu
+  redige_par: mistral-small-latest
+- id: df2058ef0489
+  famille: modele
+  relecteur: ionosphere
+  source: hf-modeles-plantes
+  titre: Ala17/plant-disease-detection
+  url: https://huggingface.co/Ala17/plant-disease-detection
+  description: pytorch image-classification plant-disease efficientnet
+  licence: mit
+  date_maj: '2026-11-08'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - pytorch
+  - image-classification
+  - plant-disease
+  - efficientnet
+  score: 71
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : plant-disease'
+  propose_le: '2026-11-09'
+  publier: true
+  resume: Ce projet propose un modèle de classification d'images pour détecter des maladies sur des plantes
+    à l'aide de l'architecture EfficientNet. Il utilise la bibliothèque PyTorch pour l'entraînement et
+    l'inférence.
+  interet: Ce modèle peut servir à identifier des maladies végétales à partir d'images.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - maladie-végétale
+  - classification-image
+  - efficientnet
+  - pytorch
+  - détection
+- id: be7906c6fe2f
+  famille: modele
+  relecteur: ionosphere
+  source: hf-modeles-plantes
+  titre: bhaskar06/agri-plant-disease-model
+  url: https://huggingface.co/bhaskar06/agri-plant-disease-model
+  description: ''
+  licence: mit
+  date_maj: '2026-10-19'
+  techno: ''
+  popularite: 0
+  mots_cles: []
+  score: 71
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : plant-disease'
+  propose_le: '2026-11-09'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: inconnu
+  redige_par: mistral-small-latest
+- id: b67f8bc7c904
+  famille: modele
+  relecteur: ionosphere
+  source: hf-modeles-plantes
+  titre: LourivalGontijo/plant-disease-vit
+  url: https://huggingface.co/LourivalGontijo/plant-disease-vit
+  description: pytorch image-classification vision-transformer plant-disease computer-vision
+  licence: mit
+  date_maj: '2026-10-17'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - pytorch
+  - image-classification
+  - vision-transformer
+  - plant-disease
+  - computer-vision
+  score: 71
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : plant-disease'
+  propose_le: '2026-11-09'
+  publier: true
+  resume: Ce projet propose un modèle de classification d'images pour détecter des maladies sur des plantes
+    à l'aide d'un Vision Transformer. Il utilise la bibliothèque PyTorch pour l'entraînement et l'inférence.
+  interet: Ce modèle peut servir à identifier des maladies végétales à partir d'images.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - maladie-végétale
+  - vision-transformer
+  - classification-image
+  - pytorch
+  - détection
+- id: 900b85fa4f2a
+  famille: modele
+  relecteur: ionosphere
+  source: hf-modeles-plantes
+  titre: xoxics/plant_diseases_in_common_agri_crops
+  url: https://huggingface.co/xoxics/plant_diseases_in_common_agri_crops
+  description: ''
+  licence: mit
+  date_maj: '2026-10-06'
+  techno: ''
+  popularite: 0
+  mots_cles: []
+  score: 71
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : crop'
+  propose_le: '2026-11-09'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: inconnu
+  redige_par: mistral-small-latest
+resume_genere_le: 2026-11-09 13:40

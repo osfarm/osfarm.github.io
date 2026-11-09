@@ -43,6 +43,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Système de détection de maladies des cultures basé sur l'intelligence artificielle avec le modèle YOLO et une assistance optionnelle par DeepSeek. Il est développé avec Vue 3, Spring Boot et Flask."
  },
+ "0512a4cdd866": {
+  "famille": "donnees",
+  "id": "0512a4cdd866",
+  "interet": "Ce projet peut servir à étudier les compositions nutritionnelles ou les labels des produits alimentaires.",
+  "mots_cles": [
+   "alimentation",
+   "composition-nutritionnelle",
+   "labels",
+   "produits-alimentaires",
+   "crowdsourcing"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Open Food Facts recense les caractéristiques des produits alimentaires (ingrédients, valeurs nutritionnelles, labels) à partir de contributions volontaires. Il permet d'accéder à des données structurées sur les aliments pour des analyses ou des comparaisons."
+ },
  "051485381c9e": {
   "famille": "logiciel",
   "id": "051485381c9e",
@@ -245,6 +260,21 @@
   "redige_par": "mistral-small-latest",
   "resume": ""
  },
+ "11238ae4b6c3": {
+  "famille": "logiciel",
+  "id": "11238ae4b6c3",
+  "interet": "Facilite la configuration des champs pour les outils de précision agricole comme AgOpenGPS.",
+  "mots_cles": [
+   "parcelles",
+   "agopengps",
+   "édition web",
+   "agriculture de précision",
+   "géomatique"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Éditeur web pour définir les limites de parcelles, les drapeaux et les couches dans AgOpenGPS. Il fonctionne sans installation et propose des interfaces en anglais et en allemand."
+ },
  "128b761953a7": {
   "famille": "logiciel",
   "id": "128b761953a7",
@@ -402,6 +432,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Bibliothèque Python permettant d'accéder aux données pédologiques de l'USDA-NRCS. Elle facilite l'intégration de ces données dans des applications ou analyses."
  },
+ "1c10913f703a": {
+  "famille": "logiciel",
+  "id": "1c10913f703a",
+  "interet": "Permet de renforcer les capacités des agricultrices pour améliorer la production agricole et la nutrition.",
+  "mots_cles": [
+   "agriculture",
+   "formation",
+   "rwanda",
+   "sécurité alimentaire",
+   "femmes"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Plateforme éducative destinée aux agricultrices au Rwanda pour renforcer leurs compétences agricoles. Elle vise à améliorer la sécurité alimentaire et réduire la malnutrition infantile."
+ },
  "1c1c147ecae1": {
   "famille": "donnees",
   "id": "1c1c147ecae1",
@@ -535,6 +580,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Modèle de segmentation d'instances pour la délimitation des parcelles agricoles à partir d'imagerie aérienne. Utilise des données de télédétection géospatiales."
  },
+ "240e8ffd518f": {
+  "famille": "logiciel",
+  "id": "240e8ffd518f",
+  "interet": "Fournit des outils de modélisation pour évaluer et optimiser les pratiques culturales.",
+  "mots_cles": [
+   "modélisation",
+   "cultures",
+   "agronomie",
+   "simulation",
+   "open source"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Liste curatée et auto-rafraîchie de modèles agricoles open source pour simuler les cultures et les processus agronomiques. Elle centralise des outils comme APSIM ou AquaCrop."
+ },
  "27bb878c81e8": {
   "famille": "logiciel",
   "id": "27bb878c81e8",
@@ -609,6 +669,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Client Ruby pour interagir avec la ressource agroclimatologique NASA (POWER). Il permet d'accéder à des données climatiques et solaires."
+ },
+ "2d685a7dc99b": {
+  "famille": "donnees",
+  "id": "2d685a7dc99b",
+  "interet": "Évaluer la rentabilité des pratiques agricoles climato-intelligentes pour les petits exploitants.",
+  "mots_cles": [
+   "agriculture climato-intelligente",
+   "petits agriculteurs",
+   "rentabilité",
+   "enquête",
+   "afrique du sud"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce jeu de données contient des données d'enquête transversales recueillies auprès de 300 petits agriculteurs de la province de Limpopo en Afrique du Sud. Il documente les investissements en agriculture climato-intelligente et leurs performances économiques."
  },
  "2e8e2b7f10db": {
   "famille": "donnees",
@@ -966,6 +1041,36 @@
   "redige_par": "mistral-small-latest",
   "resume": "Ce système permet de surveiller et contrôler à distance le climat dans les serres et cultures indoor. Il est compatible avec divers capteurs et interrupteurs intelligents accessibles en ligne de commande."
  },
+ "447377746f3a": {
+  "famille": "logiciel",
+  "id": "447377746f3a",
+  "interet": "Optimiser la gestion des conditions d'élevage des crabes en aquaculture.",
+  "mots_cles": [
+   "aquaculture",
+   "iot",
+   "esp32",
+   "lorawan",
+   "aération automatisée"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Système IoT basé sur ESP32 et LoRa pour surveiller l'engraissement des crabes en aquaculture. Il inclut une grille de capteurs, une aération automatisée et un tableau de bord en temps réel."
+ },
+ "457ef48afeb4": {
+  "famille": "logiciel",
+  "id": "457ef48afeb4",
+  "interet": "",
+  "mots_cles": [
+   "statistiques administratives",
+   "harmonisation",
+   "limites territoriales",
+   "python",
+   "inde"
+  ],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": "Outil Python pour harmoniser les statistiques administratives à l'échelle infra-nationale, incluant des données pour l'Inde. Il permet de comparer des enregistrements malgré les changements de limites territoriales."
+ },
  "45cd803b3312": {
   "famille": "donnees",
   "id": "45cd803b3312",
@@ -1181,6 +1286,21 @@
   "pertinence": "non",
   "redige_par": "mistral-small-latest",
   "resume": ""
+ },
+ "5a9511844d67": {
+  "famille": "donnees",
+  "id": "5a9511844d67",
+  "interet": "Étudier l'impact des politiques agricoles sur les structures de production et les rendements.",
+  "mots_cles": [
+   "politique agricole",
+   "collectivisation",
+   "réformes",
+   "URSS",
+   "programmes agricoles"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce document analyse l'évolution des politiques agricoles soviétiques entre 1953 et 1985, en détaillant les réformes successives et les programmes mis en œuvre. Il permet de comprendre les orientations stratégiques de l'agriculture collective et étatique durant cette période."
  },
  "5b5db8c15469": {
   "famille": "logiciel",
@@ -1399,6 +1519,21 @@
   "redige_par": "mistral-small-latest",
   "resume": ""
  },
+ "74015ce4c6b2": {
+  "famille": "logiciel",
+  "id": "74015ce4c6b2",
+  "interet": "Faciliter l'analyse et la prise de décision à partir de données agricoles.",
+  "mots_cles": [
+   "visualisation",
+   "données agricoles",
+   "intelligence artificielle",
+   "agriculture de précision",
+   "curateur de données"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Outil open source de visualisation de données pour l'agriculture basé sur l'intelligence artificielle. Il permet de traiter et visualiser des jeux de données agricoles."
+ },
  "7502092a85dd": {
   "famille": "donnees",
   "id": "7502092a85dd",
@@ -1558,6 +1693,21 @@
   "redige_par": "mistral-small-latest",
   "resume": ""
  },
+ "801ddf6aa554": {
+  "famille": "logiciel",
+  "id": "801ddf6aa554",
+  "interet": "Automatiser le suivi et l'évaluation des grappes de raisin dans les vignobles.",
+  "mots_cles": [
+   "segmentation",
+   "grappes de raisin",
+   "apprentissage profond",
+   "localisation",
+   "comptage"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Outil de segmentation d'instances pour localiser, compter et estimer la fermeture des grappes de raisin à partir d'images. Il utilise l'apprentissage profond pour analyser des données visuelles."
+ },
  "805909b8a7d3": {
   "famille": "donnees",
   "id": "805909b8a7d3",
@@ -1678,6 +1828,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Application mobile utilisant l'intelligence artificielle pour diagnostiquer les maladies des cultures à partir d'images de plantes. Elle propose des recommandations de traitement adaptées aux maladies détectées."
  },
+ "8b9f86bd2f68": {
+  "famille": "logiciel",
+  "id": "8b9f86bd2f68",
+  "interet": "Aide à la gestion des prix, à la planification des récoltes et à la communication avec les producteurs.",
+  "mots_cles": [
+   "organisation de producteurs",
+   "prix",
+   "prévision",
+   "inde",
+   "bot"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Système numérique pour les organisations de producteurs en Inde du Sud, intégrant intelligence des prix, agrégation des récoltes et prévisions. Il inclut un bot WhatsApp pour les interactions."
+ },
  "8c2bda86e9e7": {
   "famille": "logiciel",
   "id": "8c2bda86e9e7",
@@ -1727,6 +1892,15 @@
    "format de données"
   ],
   "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
+ "900b85fa4f2a": {
+  "famille": "modele",
+  "id": "900b85fa4f2a",
+  "interet": "",
+  "mots_cles": [],
+  "pertinence": "inconnu",
   "redige_par": "mistral-small-latest",
   "resume": ""
  },
@@ -1820,6 +1994,15 @@
   "redige_par": "mistral-small-latest",
   "resume": "Jeu de données sémantique à grande échelle pour la cartographie des adventices à partir d'imagerie multispectrale aérienne. Utilise des réseaux de neurones profonds pour le désherbage de précision."
  },
+ "9b8fc4e52372": {
+  "famille": "donnees",
+  "id": "9b8fc4e52372",
+  "interet": "",
+  "mots_cles": [],
+  "pertinence": "inconnu",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
  "9c815bd68155": {
   "famille": "logiciel",
   "id": "9c815bd68155",
@@ -1888,6 +2071,30 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Données et code pour une méta-analyse sur les avantages de rendement et les écarts de reporting dans les fermes verticales avec éclairage artificiel. Il contient 784 enregistrements de traitements."
+ },
+ "9fb94413051b": {
+  "famille": "logiciel",
+  "id": "9fb94413051b",
+  "interet": "",
+  "mots_cles": [],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
+ "a1aa03e449d0": {
+  "famille": "donnees",
+  "id": "a1aa03e449d0",
+  "interet": "Analyser la pollution des sols agricoles par les plastiques et ses impacts environnementaux.",
+  "mots_cles": [
+   "microplastiques",
+   "sols agricoles",
+   "pollution",
+   "europe",
+   "expérimentations"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Cette base de données recense des données sur les micro-, méso- et nanoplastiques dans les sols agricoles européens. Elle inclut des caractérisations de sols et des résultats d'expériences in situ."
  },
  "a3ae24c122b1": {
   "famille": "logiciel",
@@ -2231,6 +2438,15 @@
   "redige_par": "mistral-small-latest",
   "resume": "Logiciel open source pour Raspberry Pi permettant de contrôler et surveiller des environnements de culture. Il relie des entrées et sorties pour agir sur l'environnement."
  },
+ "b6496078244f": {
+  "famille": "donnees",
+  "id": "b6496078244f",
+  "interet": "",
+  "mots_cles": [],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
  "b67f3441c65a": {
   "famille": "donnees",
   "id": "b67f3441c65a",
@@ -2243,6 +2459,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Cet ensemble de données géospatiales harmonisées couvre les cultures à l'échelle mondiale. Il est redistribué sans modification."
+ },
+ "b67f8bc7c904": {
+  "famille": "modele",
+  "id": "b67f8bc7c904",
+  "interet": "Ce modèle peut servir à identifier des maladies végétales à partir d'images.",
+  "mots_cles": [
+   "maladie-végétale",
+   "vision-transformer",
+   "classification-image",
+   "pytorch",
+   "détection"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce projet propose un modèle de classification d'images pour détecter des maladies sur des plantes à l'aide d'un Vision Transformer. Il utilise la bibliothèque PyTorch pour l'entraînement et l'inférence."
  },
  "b78b7fffd539": {
   "famille": "donnees",
@@ -2327,6 +2558,15 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "FishMaster est un système de surveillance en temps réel des conditions de l'eau pour aquariums intelligents. Il utilise des capteurs et une interface pour suivre les paramètres environnementaux."
+ },
+ "be7906c6fe2f": {
+  "famille": "modele",
+  "id": "be7906c6fe2f",
+  "interet": "",
+  "mots_cles": [],
+  "pertinence": "inconnu",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
  },
  "bf026b463fac": {
   "famille": "logiciel",
@@ -2429,6 +2669,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Client logiciel pour se connecter aux services web de l'agence néerlandaise RVO afin d'accéder à des informations agricoles. Il permet de récupérer des données structurées sur les cultures et les exploitations."
+ },
+ "c20630899b6d": {
+  "famille": "donnees",
+  "id": "c20630899b6d",
+  "interet": "Comprendre les dynamiques d'innovation dans le secteur agroalimentaire.",
+  "mots_cles": [
+   "agroalimentaire",
+   "innovation",
+   "entreprises",
+   "dépenses",
+   "enquête"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Cette enquête statistique publique décrit les caractéristiques et l'innovation des entreprises agroalimentaires françaises de 10 salariés et plus en 2022. Elle couvre les dépenses, les partenariats et les freins à l'innovation."
  },
  "c52f90dd290a": {
   "famille": "materiel",
@@ -2604,6 +2859,21 @@
   "redige_par": "mistral-small-latest",
   "resume": ""
  },
+ "cdb3a7ee753d": {
+  "famille": "logiciel",
+  "id": "cdb3a7ee753d",
+  "interet": "Permet une description standardisée des produits alimentaires et des processus agricoles pour faciliter les échanges de données.",
+  "mots_cles": [
+   "ontologie",
+   "alimentation",
+   "agriculture",
+   "interopérabilité",
+   "données"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ontologie alimentaire structurant les concepts clés liés à l'alimentation et à l'agriculture. Elle sert de référence pour l'annotation et l'interopérabilité des données."
+ },
  "ce6d53c93419": {
   "famille": "logiciel",
   "id": "ce6d53c93419",
@@ -2633,6 +2903,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Ce projet est une liste curatée de ressources open source dédiées à l'agriculture de précision. Il recense des outils, bibliothèques et projets logiciels pour la gestion des exploitations agricoles."
+ },
+ "cf5a0142c365": {
+  "famille": "donnees",
+  "id": "cf5a0142c365",
+  "interet": "Améliorer les modèles de détection des maladies végétales par apprentissage profond.",
+  "mots_cles": [
+   "phytopathologie",
+   "deep learning",
+   "déséquilibre de classes",
+   "métriques",
+   "prisma 2020"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce jeu de données complémentaire fournit la traçabilité PRISMA 2020 et une matrice d'extraction pour une revue systématique sur les stratégies de mitigation du déséquilibre de classes en phytopathologie par deep learning. Il inclut des métriques d'évaluation."
  },
  "cf80b1567c4d": {
   "famille": "logiciel",
@@ -2923,6 +3208,36 @@
   "redige_par": "mistral-small-latest",
   "resume": ""
  },
+ "de204eb9c328": {
+  "famille": "logiciel",
+  "id": "de204eb9c328",
+  "interet": "Permet d'accéder et d'analyser des données statistiques agricoles pour des études ou des rapports.",
+  "mots_cles": [
+   "statistiques",
+   "agriculture",
+   "fao",
+   "données",
+   "analyse"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Serveur local fournissant des statistiques agricoles mondiales issues de la base FAOSTAT via une interface SQL ou MCP. Les données sont accessibles en local via DuckDB."
+ },
+ "df2058ef0489": {
+  "famille": "modele",
+  "id": "df2058ef0489",
+  "interet": "Ce modèle peut servir à identifier des maladies végétales à partir d'images.",
+  "mots_cles": [
+   "maladie-végétale",
+   "classification-image",
+   "efficientnet",
+   "pytorch",
+   "détection"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce projet propose un modèle de classification d'images pour détecter des maladies sur des plantes à l'aide de l'architecture EfficientNet. Il utilise la bibliothèque PyTorch pour l'entraînement et l'inférence."
+ },
  "dfaa8673abfd": {
   "famille": "donnees",
   "id": "dfaa8673abfd",
@@ -3036,6 +3351,21 @@
   "pertinence": "inconnu",
   "redige_par": "mistral-small-latest",
   "resume": ""
+ },
+ "ea08e6b3fb45": {
+  "famille": "donnees",
+  "id": "ea08e6b3fb45",
+  "interet": "",
+  "mots_cles": [
+   "politique fiscale",
+   "agriculture",
+   "ouzbekistan",
+   "collectivisation",
+   "archives historiques"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Article analysant la politique fiscale soviétique appliquée à l'agriculture en Ouzbékistan entre 1920 et 1953, à partir de documents d'archives."
  },
  "eb1267352a32": {
   "famille": "donnees",
