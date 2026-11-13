@@ -10,6 +10,11 @@
   "statut": "propose",
   "url": "https://huggingface.co/datasets/claritystorm/usda-crop-insurance-indemnities-weather"
  },
+ "014a7ce3b51b": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://github.com/bosch-engineering/off_highway_sensor_drivers"
+ },
  "015fbbf6f3fd": {
   "examine_le": "2026-10-05",
   "score": 75,
@@ -20,6 +25,11 @@
   "examine_le": "2026-09-26",
   "statut": "sans_licence",
   "url": "https://figshare.com/articles/dataset/Segmentation_of_sandplain_lupin_weeds_from_morphologically_similar_narrow-leafed_lupins_in_the_field/21746669"
+ },
+ "02995410e747": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/divi22huggingface/PlantDisease-Qwen3-4B"
  },
  "032341c4d430": {
   "examine_le": "2026-10-05",
@@ -42,6 +52,11 @@
   "score": 83,
   "statut": "propose",
   "url": "https://github.com/JakeTheRabbit/HAGR"
+ },
+ "05ee7273c013": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/datasets/Seeun-Park/rollout_1109_exp118_sft_crop256_long"
  },
  "06aa4105ce69": {
   "examine_le": "2026-09-25",
@@ -133,6 +148,11 @@
   "statut": "propose",
   "url": "https://github.com/luis-hdz7/AgroVision"
  },
+ "0d2f7a447744": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/sohaila-12345/plant-disease-vit"
+ },
  "0d5d953436ac": {
   "examine_le": "2026-09-21",
   "score": 85,
@@ -198,6 +218,12 @@
   "examine_le": "2026-10-05",
   "statut": "sans_licence",
   "url": "https://www.data.gouv.fr/datasets/surface-et-lineaire-de-haies-par-groupe-de-culture-et-mode-de-production-bio-non-bio-1"
+ },
+ "11238ae4b6c3": {
+  "examine_le": "2026-11-13",
+  "score": 82,
+  "statut": "propose",
+  "url": "https://github.com/SkaFUU/aog-field-editor"
  },
  "112e18cd4597": {
   "examine_le": "2026-09-17",
@@ -269,6 +295,11 @@
   "statut": "sans_licence",
   "url": "https://github.com/LAR/lincolnbeet_dataset"
  },
+ "18152c507862": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/datasets/Youxin056/4D_resample_normalize_crop"
+ },
  "182d253245ec": {
   "examine_le": "2026-10-05",
   "score": 50,
@@ -297,11 +328,23 @@
   "statut": "propose",
   "url": "https://doi.org/10.5281/zenodo.23219432"
  },
+ "1967f8e3561d": {
+  "examine_le": "2026-11-13",
+  "score": 76,
+  "statut": "propose",
+  "url": "https://huggingface.co/datasets/LibreYOLO/weed-crop-aerial"
+ },
  "1a4ed52f3226": {
   "examine_le": "2026-10-05",
   "score": 88,
   "statut": "propose",
   "url": "https://doi.org/10.5281/zenodo.23099767"
+ },
+ "1ad820e073b3": {
+  "examine_le": "2026-11-13",
+  "score": 79,
+  "statut": "propose",
+  "url": "https://huggingface.co/datasets/Lilambd/eu-crop-output-monitor"
  },
  "1ae6a9917b33": {
   "examine_le": "2026-10-13",
@@ -330,6 +373,12 @@
   "examine_le": "2026-09-26",
   "statut": "sans_licence",
   "url": "https://lacunafund.org/datasets/agriculture/"
+ },
+ "1c10913f703a": {
+  "examine_le": "2026-11-13",
+  "score": 98,
+  "statut": "propose",
+  "url": "https://github.com/samertall/AgriEmpower"
  },
  "1c1c147ecae1": {
   "examine_le": "2026-09-25",
@@ -410,6 +459,12 @@
   "statut": "sans_licence",
   "url": "https://huggingface.co/datasets/Sameer0011/Croppedimages"
  },
+ "240e8ffd518f": {
+  "examine_le": "2026-11-13",
+  "score": 94,
+  "statut": "propose",
+  "url": "https://github.com/YuanyuanMa03/awesome-crop-models"
+ },
  "2469cbcc9af1": {
   "examine_le": "2026-10-09",
   "statut": "sans_licence",
@@ -436,10 +491,21 @@
   "statut": "sans_licence",
   "url": "https://www.data.gouv.fr/datasets/ilots-culturaux-du-registre-parcellaire-graphique-non-anonymise-dans-le-departement-de-lorne-en-2024-1"
  },
+ "2588a967bb1e": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/datasets/Tsubakimoto-EAGLYS/20260901-milx-pc-crop"
+ },
  "261d34324e22": {
   "examine_le": "2026-09-26",
   "statut": "sans_licence",
   "url": "https://github.com/semanticsugarbeets/semanticsugarbeets"
+ },
+ "265d28199b92": {
+  "examine_le": "2026-11-13",
+  "score": 91,
+  "statut": "propose",
+  "url": "https://www.data.gouv.fr/datasets/rendements-et-reserve-en-champagne-2000-2026"
  },
  "2741f041906c": {
   "examine_le": "2026-09-26",
@@ -571,6 +637,12 @@
   "statut": "sans_licence",
   "url": "https://github.com/spMohanty/PlantVillage-Dataset"
  },
+ "302867d240d5": {
+  "examine_le": "2026-11-13",
+  "score": 71,
+  "statut": "propose",
+  "url": "https://huggingface.co/Media1234/plant-disease-cnn"
+ },
  "307b6bb4267c": {
   "examine_le": "2026-10-26",
   "score": 92,
@@ -637,6 +709,11 @@
   "score": 92,
   "statut": "propose",
   "url": "https://www.data.gouv.fr/datasets/ventes-de-pesticides-par-departement-1"
+ },
+ "336a89fd8f50": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://github.com/malitha-tishamal/CeyLogix-Field-Tracking-App"
  },
  "337a7c47343e": {
   "examine_le": "2026-09-25",
@@ -767,6 +844,16 @@
   "statut": "sans_licence",
   "url": "https://huggingface.co/Nazeerpasha123/AgricultureSupportAssistant"
  },
+ "3bd8278f54e4": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://doi.org/10.5281/zenodo.24152828"
+ },
+ "3c5afa7dedfd": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/datasets/Seeun-Park/rollout_1109_exp118_sft_crop256_single"
+ },
  "3c72cb27b183": {
   "examine_le": "2026-10-05",
   "statut": "sans_licence",
@@ -877,11 +964,31 @@
   "statut": "propose",
   "url": "https://github.com/larry-athey/climate-czar"
  },
+ "43a8e4d07504": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/datasets/Saint-lsy/endoscopy-outer-crop-v2"
+ },
+ "457c43990282": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/datasets/geonmin-kim/rollout_groot_so101_mfm_crop256__step9500_move_the_red_cube_from_t_rtc_1106_1427_20261106_142755"
+ },
+ "45b6a0100160": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/thirumaleswari/plant-disease-baseline"
+ },
  "45cd803b3312": {
   "examine_le": "2026-10-13",
   "score": 76,
   "statut": "propose",
   "url": "https://www.data.gouv.fr/datasets/fournisseurs-pour-lalimentation-de-la-restauration-scolaire-normandie-1"
+ },
+ "45f04c5e5b8b": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/vishwajeet456/fine-tuned-k2horizon-0.9B-agriculture"
  },
  "461d5f69378a": {
   "examine_le": "2026-09-17",
@@ -899,6 +1006,11 @@
   "statut": "quarantaine",
   "url": "https://github.com/JohnDeere/SampleData"
  },
+ "48d0c35cc1ab": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/divi22huggingface/plant-disease-qwen-model"
+ },
  "4a04c0f2b541": {
   "examine_le": "2026-10-26",
   "score": 88,
@@ -915,6 +1027,11 @@
   "score": 77,
   "statut": "propose",
   "url": "https://github.com/brycejohnston/farm-calculators"
+ },
+ "4adb2e303a28": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/jagadish1212/plantdisease"
  },
  "4b1fd04ac274": {
   "examine_le": "2026-10-13",
@@ -1084,6 +1201,11 @@
   "statut": "sans_licence",
   "url": "https://github.com/DigiBanks99/livestock-tracker"
  },
+ "56dd7c696037": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://github.com/ropensci/read.abares"
+ },
  "57308f7a7322": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
@@ -1115,6 +1237,11 @@
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
   "url": "https://github.com/Sibajx/davis-sdr-greenhouse"
+ },
+ "59b3768c18fa": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/gauravkumar8923/plant-disease-model"
  },
  "5a9f972f92ce": {
   "examine_le": "2026-10-09",
@@ -1225,6 +1352,11 @@
   "statut": "sans_licence",
   "url": "https://huggingface.co/datasets/Yashodhr/Frank_Uni_CropedDataset"
  },
+ "6162ff091989": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/datasets/SamuelWu318/ts-satfire-6-1-NIFC-CROP"
+ },
  "6192e75e6b23": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
@@ -1235,6 +1367,11 @@
   "score": 82,
   "statut": "propose",
   "url": "https://doi.org/10.5281/zenodo.23603289"
+ },
+ "62005430d013": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/datasets/Seeun-Park/rollout_1109_exp119_sft_crop128_single"
  },
  "620458028a31": {
   "examine_le": "2026-09-26",
@@ -1264,16 +1401,52 @@
   "statut": "propose",
   "url": "https://github.com/beepnl/beep-vue-app"
  },
+ "6544fd5fd067": {
+  "examine_le": "2026-11-13",
+  "score": 73,
+  "statut": "propose",
+  "url": "https://huggingface.co/Noor-Khan/plant-disease-prediction"
+ },
  "65b9b6ba07e5": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
   "url": "https://github.com/vespCV/vespcv"
+ },
+ "65fba80abd9a": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://github.com/azizbekqodirov2005/fermahisobi"
+ },
+ "66822452020c": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/datasets/Tsubakimoto-EAGLYS/20260901-milx-sc-crop"
+ },
+ "66a06476eccc": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/NamHai0510/plant-disease-model"
+ },
+ "672244d8ce03": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/datasets/hieudang3997/crop"
+ },
+ "677e5cd942cb": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/datasets/hkaman/california-crop-yield-benchmark"
  },
  "67d533b81c03": {
   "examine_le": "2026-10-09",
   "score": 83,
   "statut": "propose",
   "url": "https://github.com/ozak/Caloric-Suitability-Index"
+ },
+ "6875ccb0750b": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://github.com/semanticsugarbeets/rootdown"
  },
  "6953bcea9fd5": {
   "examine_le": "2026-09-17",
@@ -1398,6 +1571,12 @@
   "statut": "sans_licence",
   "url": "https://cwd-30.github.io/cwd-30/index.html"
  },
+ "72ac95134704": {
+  "examine_le": "2026-11-13",
+  "score": 88,
+  "statut": "propose",
+  "url": "https://doi.org/10.5281/zenodo.24137822"
+ },
  "72f11bdddd98": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
@@ -1419,6 +1598,12 @@
   "score": 76,
   "statut": "propose",
   "url": "https://github.com/VatsalKhanna5/agri-perceiver-2026"
+ },
+ "74015ce4c6b2": {
+  "examine_le": "2026-11-13",
+  "score": 77,
+  "statut": "propose",
+  "url": "https://github.com/Precision-AI-Inc/magnidata"
  },
  "742202fa3f03": {
   "examine_le": "2026-10-13",
@@ -1461,6 +1646,12 @@
   "statut": "sans_licence",
   "url": "https://github.com/arifulmrislam/Smart-farming-dashboard-with-ThingsBoard"
  },
+ "7673838cdb16": {
+  "examine_le": "2026-11-13",
+  "score": 92,
+  "statut": "propose",
+  "url": "https://doi.org/10.5281/zenodo.24185426"
+ },
  "77047ce2a3eb": {
   "examine_le": "2026-10-05",
   "statut": "sans_licence",
@@ -1471,6 +1662,11 @@
   "score": 88,
   "statut": "propose",
   "url": "https://www.data.gouv.fr/datasets/pesticides-nombre-de-doses-unites-nodu"
+ },
+ "784a00ef3d3b": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://github.com/ai-agriculture-circuits-and-systems/ai_agriculture_news"
  },
  "786e6048477a": {
   "examine_le": "2026-09-26",
@@ -1531,6 +1727,11 @@
   "statut": "sans_licence",
   "url": "https://huggingface.co/manshirai09/dkv-plant-disease-cnn"
  },
+ "7bac7f177205": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/datasets/HyebinKim/DL3DV_224_Lanczos_cropped"
+ },
  "7bd2a2ecbfcc": {
   "examine_le": "2026-10-26",
   "score": 76,
@@ -1541,6 +1742,11 @@
   "examine_le": "2026-09-26",
   "statut": "sans_licence",
   "url": "https://github.com/agstack"
+ },
+ "7c3eeefc9f01": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/datasets/Seeun-Park/rollout_1109_exp120_drift_crop256_long_2nd"
  },
  "7c5953d6ab05": {
   "examine_le": "2026-10-26",
@@ -1630,6 +1836,11 @@
   "statut": "sans_licence",
   "url": "https://github.com/morenoh149/plantdisease"
  },
+ "8242c4b57f4e": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/datasets/geonmin-kim/rollout_groot_so101_mfm_crop256__step9500_move_the_red_cube_from_t_rtc_1106_1425_20261106_142623"
+ },
  "82c0a1534c14": {
   "examine_le": "2026-09-26",
   "statut": "sans_licence",
@@ -1694,6 +1905,11 @@
   "statut": "propose",
   "url": "https://github.com/202519003/multisensor-crop-classification-jhansi"
  },
+ "88135d685ab8": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/datasets/yashdatasets/crop-line-sinhala"
+ },
  "88897eb1ba48": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
@@ -1747,6 +1963,18 @@
   "statut": "sans_licence",
   "url": "https://www.seeedstudio.com/"
  },
+ "8b9f86bd2f68": {
+  "examine_le": "2026-11-13",
+  "score": 92,
+  "statut": "propose",
+  "url": "https://github.com/4LPH7/FPOLink"
+ },
+ "8bcad80f693b": {
+  "examine_le": "2026-11-13",
+  "score": 85,
+  "statut": "propose",
+  "url": "https://doi.org/10.5281/zenodo.18244827"
+ },
  "8bd6ed6c9a5d": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
@@ -1775,6 +2003,11 @@
   "statut": "propose",
   "url": "https://github.com/Abhash-Chakraborty/AgroHealth"
  },
+ "8e4897ec6481": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/jackton439/plant-disease-mobilenet"
+ },
  "8e847a3f13da": {
   "examine_le": "2026-09-26",
   "statut": "sans_licence",
@@ -1785,6 +2018,12 @@
   "score": 85,
   "statut": "propose",
   "url": "https://github.com/GeospatialPython/pyshp"
+ },
+ "91eee93b9119": {
+  "examine_le": "2026-11-13",
+  "score": 88,
+  "statut": "propose",
+  "url": "https://huggingface.co/datasets/ShiSHiMaru81/Crop_Calendar_Dataset_BARC"
  },
  "920d318823f6": {
   "examine_le": "2026-09-26",
@@ -2126,6 +2365,12 @@
   "statut": "propose",
   "url": "https://github.com/danilkotelnikov/Felex"
  },
+ "aecab5dbdfb0": {
+  "examine_le": "2026-11-13",
+  "score": 92,
+  "statut": "propose",
+  "url": "https://doi.org/10.5281/zenodo.24144700"
+ },
  "af814b819dfa": {
   "examine_le": "2026-09-26",
   "statut": "sans_licence",
@@ -2224,6 +2469,12 @@
   "statut": "propose",
   "url": "https://huggingface.co/datasets/torchgeo/harmonized_global_crops"
  },
+ "b67f8bc7c904": {
+  "examine_le": "2026-11-13",
+  "score": 71,
+  "statut": "propose",
+  "url": "https://huggingface.co/LourivalGontijo/plant-disease-vit"
+ },
  "b718e994298f": {
   "examine_le": "2026-10-13",
   "statut": "sans_licence",
@@ -2267,11 +2518,21 @@
   "statut": "propose",
   "url": "https://www.data.gouv.fr/datasets/achats-de-pesticides-par-code-postal-1"
  },
+ "b95a53972d70": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/datasets/Seeun-Park/rollout_1109_exp121_drift_crop128_long"
+ },
  "b99a606c34cc": {
   "examine_le": "2026-10-26",
   "score": 82,
   "statut": "propose",
   "url": "https://huggingface.co/Ananthakrishnanmzen/PlantDiseaseDetection"
+ },
+ "baed3948ea2a": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/jackton439/plant-disease-detector"
  },
  "bb123e95962f": {
   "examine_le": "2026-10-13",
@@ -2310,6 +2571,11 @@
   "statut": "sans_licence",
   "url": "https://huggingface.co/Av1447/plant-disease-model"
  },
+ "bc24a0b6367a": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/datasets/Seeun-Park/rollout_1109_exp121_drift_crop128_single"
+ },
  "bc295efb024c": {
   "examine_le": "2026-10-05",
   "score": 92,
@@ -2336,6 +2602,12 @@
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
   "url": "https://huggingface.co/MadhawaDG/agriculture-lstm-zynq"
+ },
+ "be7906c6fe2f": {
+  "examine_le": "2026-11-13",
+  "score": 71,
+  "statut": "propose",
+  "url": "https://huggingface.co/bhaskar06/agri-plant-disease-model"
  },
  "be9c06237650": {
   "examine_le": "2026-10-09",
@@ -2424,6 +2696,11 @@
   "statut": "sans_licence",
   "url": "https://www.data.gouv.fr/datasets/ilots-culturaux-du-registre-parcellaire-graphique-non-anonymise-dans-le-departement-de-lorne-en-2024"
  },
+ "c30b59f0ddae": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/jackton439/plant_disease_results"
+ },
  "c381889e2de3": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
@@ -2444,6 +2721,11 @@
   "score": 74,
   "statut": "propose",
   "url": "https://github.com/OpenSprinkler/OpenSprinkler-Hardware"
+ },
+ "c57a39aa692d": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/datasets/SamuelWu318/ts-satfire-6-1-CROP"
  },
  "c5b5a41d7867": {
   "examine_le": "2026-10-09",
@@ -2483,6 +2765,12 @@
   "score": 91,
   "statut": "propose",
   "url": "https://github.com/mforce/cluckwork"
+ },
+ "c83766c4f209": {
+  "examine_le": "2026-11-13",
+  "score": 92,
+  "statut": "propose",
+  "url": "https://doi.org/10.5281/zenodo.24158064"
  },
  "c84e2beffebd": {
   "examine_le": "2026-09-26",
@@ -2534,6 +2822,11 @@
   "statut": "propose",
   "url": "https://github.com/superzero11/OpenFarm"
  },
+ "cba22f0a43de": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/datasets/Seeun-Park/rollout_1109_exp119_sft_crop128_long"
+ },
  "cc40126a4dbe": {
   "examine_le": "2026-09-26",
   "score": 83,
@@ -2551,6 +2844,12 @@
   "score": 82,
   "statut": "propose",
   "url": "https://doi.org/10.5281/zenodo.21896390"
+ },
+ "ccf830812190": {
+  "examine_le": "2026-11-13",
+  "score": 92,
+  "statut": "propose",
+  "url": "https://github.com/momoqiqi-qwq/penji"
  },
  "cd56b50a0f3c": {
   "examine_le": "2026-09-17",
@@ -2589,6 +2888,11 @@
   "score": 90,
   "statut": "propose",
   "url": "https://github.com/ncss-tech/soilDB"
+ },
+ "cfc705afac8e": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/shahab1/vit-beans-plant-disease"
  },
  "cfc9a62d81fd": {
   "examine_le": "2026-09-25",
@@ -2684,6 +2988,11 @@
   "statut": "sans_licence",
   "url": "https://github.com/Makerfabs/Lora-Soil-Moisture-Sensor"
  },
+ "d8b34d0f2bb2": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/datasets/Seeun-Park/rollout_1109_exp120_drift_crop256_single"
+ },
  "d8e10fcc9468": {
   "examine_le": "2026-10-19",
   "statut": "sans_licence",
@@ -2705,6 +3014,11 @@
   "score": 95,
   "statut": "propose",
   "url": "https://github.com/microsoft/farmvibes-ai"
+ },
+ "d9d327ee6fa1": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/NoorFatima10/Plant-disease-detection"
  },
  "da2c672d153b": {
   "examine_le": "2026-09-17",
@@ -2739,6 +3053,11 @@
   "statut": "sans_licence",
   "url": "https://huggingface.co/DebasishDhal99/Llama-3.2-3B-Instruct-agriculture-lora"
  },
+ "dba7cdbfcdfc": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/datasets/Tanha01/survey-crops-data"
+ },
  "dbe84b1ddc6e": {
   "examine_le": "2026-10-19",
   "score": 73,
@@ -2750,6 +3069,12 @@
   "score": 70,
   "statut": "propose",
   "url": "https://github.com/norlab-ulaval/PercepTreeV1"
+ },
+ "dc16cc967f49": {
+  "examine_le": "2026-11-13",
+  "score": 76,
+  "statut": "propose",
+  "url": "https://github.com/iameru/mschleuder"
  },
  "dc378054aa4d": {
   "examine_le": "2026-10-13",
@@ -2775,6 +3100,11 @@
   "statut": "propose",
   "url": "https://fomo4wheat.phenix-lab.com/"
  },
+ "dcf74598d235": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/datasets/Seeun-Park/rollout_1109_exp120_drift_crop256_long"
+ },
  "dd17afe2f031": {
   "examine_le": "2026-10-26",
   "score": 85,
@@ -2797,10 +3127,22 @@
   "statut": "propose",
   "url": "https://doi.org/10.5281/zenodo.23218917"
  },
+ "de204eb9c328": {
+  "examine_le": "2026-11-13",
+  "score": 79,
+  "statut": "propose",
+  "url": "https://github.com/cyanheads/faostat-mcp-server"
+ },
  "defab4269b0e": {
   "examine_le": "2026-09-17",
   "statut": "sans_licence",
   "url": "https://github.com/alejoarte/fish-feeder-web-demo"
+ },
+ "df2058ef0489": {
+  "examine_le": "2026-11-13",
+  "score": 71,
+  "statut": "propose",
+  "url": "https://huggingface.co/Ala17/plant-disease-detection"
  },
  "df4a0f456a21": {
   "examine_le": "2026-09-21",
@@ -2966,6 +3308,11 @@
   "statut": "propose",
   "url": "https://github.com/rserdarkara-hash/monolith"
  },
+ "ede2bb498d49": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/erum111/plant-leaf-disease-detection"
+ },
  "ee1e2a5875fb": {
   "examine_le": "2026-10-13",
   "statut": "sans_licence",
@@ -2988,6 +3335,11 @@
   "score": 85,
   "statut": "propose",
   "url": "https://github.com/nkz-os/nkz"
+ },
+ "f14bdcc45cd1": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/khalilahmed0062/plant-disease-detection-mobilenet"
  },
  "f17a23460682": {
   "examine_le": "2026-10-09",
@@ -3094,11 +3446,22 @@
   "statut": "sans_licence",
   "url": "https://huggingface.co/KushalGupta451/AgroAI-Plant-Disease"
  },
+ "f82515dc7143": {
+  "examine_le": "2026-11-13",
+  "score": 92,
+  "statut": "propose",
+  "url": "https://www.data.gouv.fr/datasets/agreste-graphagri"
+ },
  "f84adf77fd09": {
   "examine_le": "2026-10-19",
   "score": 0,
   "statut": "quarantaine",
   "url": "https://github.com/Agrisettle/HarvestLock"
+ },
+ "f87429568057": {
+  "examine_le": "2026-11-13",
+  "statut": "sans_licence",
+  "url": "https://huggingface.co/datasets/lakshitha1629/Crop-Disorder-Symptom-Questions"
  },
  "f912bf38f8c1": {
   "examine_le": "2026-09-26",
@@ -3115,6 +3478,12 @@
   "score": 58,
   "statut": "propose",
   "url": "https://github.com/FarmBot-Docs/farmbot-express"
+ },
+ "facb32aef697": {
+  "examine_le": "2026-11-13",
+  "score": 92,
+  "statut": "propose",
+  "url": "https://doi.org/10.5281/zenodo.24136746"
  },
  "fb216819be4e": {
   "examine_le": "2026-09-26",
