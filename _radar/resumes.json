@@ -344,6 +344,21 @@
   "redige_par": "mistral-small-latest",
   "resume": ""
  },
+ "1967f8e3561d": {
+  "famille": "donnees",
+  "id": "1967f8e3561d",
+  "interet": "Permet d'entraîner des modèles de vision par ordinateur pour identifier les adventices dans les cultures.",
+  "mots_cles": [
+   "aérien",
+   "adventices",
+   "cultures",
+   "détection",
+   "images"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Jeu de données d'images aériennes pour la détection d'adventices et de cultures. Il contient 1 176 images réparties en trois ensembles pour l'entraînement, la validation et le test."
+ },
  "1a4ed52f3226": {
   "famille": "donnees",
   "id": "1a4ed52f3226",
@@ -356,6 +371,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": ""
+ },
+ "1ad820e073b3": {
+  "famille": "donnees",
+  "id": "1ad820e073b3",
+  "interet": "Il sert à surveiller en temps quasi réel les variations de production agricole dans l'UE.",
+  "mots_cles": [
+   "surfaces cultivées",
+   "rendements",
+   "production agricole",
+   "ue",
+   "données en temps réel"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce projet fournit des séries temporelles de surfaces cultivées, rendements et productions agricoles pour les pays de l'Union européenne, à une fréquence quotidienne. Il suit les observations et révisions des données sources."
  },
  "1ae6a9917b33": {
   "famille": "logiciel",
@@ -535,6 +565,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Modèle de segmentation d'instances pour la délimitation des parcelles agricoles à partir d'imagerie aérienne. Utilise des données de télédétection géospatiales."
  },
+ "265d28199b92": {
+  "famille": "donnees",
+  "id": "265d28199b92",
+  "interet": "Il permet de suivre l'évolution des volumes de production et des réserves dans le cadre d'une appellation viticole.",
+  "mots_cles": [
+   "rendements",
+   "réserves individuelles",
+   "champagne",
+   "aoc",
+   "volumes commercialisables"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce jeu de données recense les rendements et les réserves individuelles en Champagne entre 2000 et 2026, selon les volumes fixés par l'interprofession. Il documente les quantités commercialisables et les excédents mis en réserve chaque année."
+ },
  "27bb878c81e8": {
   "famille": "logiciel",
   "id": "27bb878c81e8",
@@ -639,6 +684,20 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Ce projet fournit un jeu de données benchmark pour des modèles de raisonnement scientifique en agriculture. Il inclut des modèles de type LoRA et des outils d'autoscientist."
+ },
+ "302867d240d5": {
+  "famille": "modele",
+  "id": "302867d240d5",
+  "interet": "Permet de détecter des maladies sur des plantes à partir d'images.",
+  "mots_cles": [
+   "maladies végétales",
+   "classification",
+   "images",
+   "pytorch"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Modèle de classification d'images pour la détection de maladies végétales. Il est implémenté avec PyTorch."
  },
  "30fd807fe8fb": {
   "famille": "modele",
@@ -981,6 +1040,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Liste des fournisseurs d'aliments pour la restauration scolaire en Normandie. Cette donnée s'inscrit dans un plan visant à augmenter la part de produits locaux."
  },
+ "4LPH7/FPOLink": {
+  "famille": "logiciel",
+  "id": "4LPH7/FPOLink",
+  "interet": "Faciliter la gestion collective des récoltes et l'accès aux informations de marché.",
+  "mots_cles": [
+   "organisation de producteurs",
+   "marché",
+   "prévision",
+   "inde",
+   "bot"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Un système numérique pour les organisations de producteurs agricoles en Inde, intégrant intelligence des prix, agrégation des récoltes, prévisions et un bot WhatsApp. Il fonctionne via une API FastAPI."
+ },
  "4ad58db7a5f1": {
   "famille": "logiciel",
   "id": "4ad58db7a5f1",
@@ -1285,6 +1359,20 @@
   "redige_par": "mistral-small-latest",
   "resume": "BEEP est une application web pour le suivi des ruches et la gestion des ruchers. Elle permet de consigner les observations et activités liées aux abeilles."
  },
+ "6544fd5fd067": {
+  "famille": "modele",
+  "id": "6544fd5fd067",
+  "interet": "Peut servir à prédire la présence de maladies sur des plantes à partir d'images.",
+  "mots_cles": [
+   "maladies végétales",
+   "classification",
+   "images",
+   "réseau de neurones"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Modèle de classification d'images pour la détection de maladies végétales. Il utilise une architecture de réseau de neurones convolutif."
+ },
  "67d533b81c03": {
   "famille": "modele",
   "id": "67d533b81c03",
@@ -1375,6 +1463,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Cartographie des activités de mouillages permanents sous forme de carroyage 1' x 1' à l'échelle métropolitaine. Ces données permettent de visualiser les pressions anthropiques sur le milieu marin."
  },
+ "72ac95134704": {
+  "famille": "donnees",
+  "id": "72ac95134704",
+  "interet": "Il aide à optimiser les pratiques de fertilisation pour améliorer la productivité des cacaoyers.",
+  "mots_cles": [
+   "fertilisation",
+   "cacaoyers",
+   "rendements",
+   "essais agronomiques",
+   "nutriments"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce jeu de données rassemble les résultats d'essais agronomiques à long terme sur la fertilisation des cacaoyers dans les principales zones de production mondiales. Il évalue l'impact de différents apports en azote, phosphore et potassium sur les rendements."
+ },
  "73e56b38d803": {
   "famille": "logiciel",
   "id": "73e56b38d803",
@@ -1398,6 +1501,21 @@
   "pertinence": "inconnu",
   "redige_par": "mistral-small-latest",
   "resume": ""
+ },
+ "74015ce4c6b2": {
+  "famille": "logiciel",
+  "id": "74015ce4c6b2",
+  "interet": "Faciliter l'analyse et la compréhension des données issues de capteurs ou d'images pour optimiser les pratiques agricoles.",
+  "mots_cles": [
+   "agriculture",
+   "visualisation",
+   "données",
+   "vision par ordinateur",
+   "analyse"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Outil open source de visualisation de données pour l'agriculture utilisant la vision par ordinateur. Il permet de traiter et d'afficher des jeux de données agricoles."
  },
  "7502092a85dd": {
   "famille": "donnees",
@@ -1678,6 +1796,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Application mobile utilisant l'intelligence artificielle pour diagnostiquer les maladies des cultures à partir d'images de plantes. Elle propose des recommandations de traitement adaptées aux maladies détectées."
  },
+ "8bcad80f693b": {
+  "famille": "donnees",
+  "id": "8bcad80f693b",
+  "interet": "Il permet d'étudier l'impact des régimes alimentaires sur la croissance et la qualité des carcasses porcines.",
+  "mots_cles": [
+   "porcs",
+   "composition corporelle",
+   "qualité de la viande",
+   "régimes alimentaires",
+   "performances animales"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce jeu de données compile des mesures phénotypiques détaillées sur des porcs nourris avec des régimes variables en protéines et phosphore. Il inclut des données sur la composition corporelle, la qualité de la viande et les performances animales."
+ },
  "8c2bda86e9e7": {
   "famille": "logiciel",
   "id": "8c2bda86e9e7",
@@ -1727,6 +1860,15 @@
    "format de données"
   ],
   "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
+ "91eee93b9119": {
+  "famille": "donnees",
+  "id": "91eee93b9119",
+  "interet": "",
+  "mots_cles": [],
+  "pertinence": "inconnu",
   "redige_par": "mistral-small-latest",
   "resume": ""
  },
@@ -1888,6 +2030,36 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Données et code pour une méta-analyse sur les avantages de rendement et les écarts de reporting dans les fermes verticales avec éclairage artificiel. Il contient 784 enregistrements de traitements."
+ },
+ "SkaFUU/aog-field-editor": {
+  "famille": "logiciel",
+  "id": "SkaFUU/aog-field-editor",
+  "interet": "Configurer et gérer les données géospatiales des parcelles agricoles.",
+  "mots_cles": [
+   "agopengps",
+   "parcelles",
+   "géospatial",
+   "agriculture de précision",
+   "édition"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Un éditeur web pour définir les limites de parcelles, les drapeaux et les couches de données dans AgOpenGPS. Il permet de configurer des champs sans installation locale."
+ },
+ "YuanyuanMa03/awesome-crop-models": {
+  "famille": "logiciel",
+  "id": "YuanyuanMa03/awesome-crop-models",
+  "interet": "Simuler et optimiser les pratiques culturales à partir de modèles agronomiques.",
+  "mots_cles": [
+   "modélisation",
+   "cultures",
+   "agronomie",
+   "apsim",
+   "aquacrop"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Une liste curatée et auto-actualisée de modèles agricoles open source pour simuler les cultures et les processus agronomiques. Elle centralise des outils comme APSIM ou AquaCrop."
  },
  "a3ae24c122b1": {
   "famille": "logiciel",
@@ -2073,6 +2245,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Logiciel d'optimisation des rations alimentaires pour le bétail avec assistance par IA. Il fonctionne hors ligne et sans abonnement."
  },
+ "aecab5dbdfb0": {
+  "famille": "donnees",
+  "id": "aecab5dbdfb0",
+  "interet": "Analyser l'efficacité des systèmes d'irrigation automatisés pour améliorer la gestion de l'eau en agriculture.",
+  "mots_cles": [
+   "irrigation automatisée",
+   "capteurs d'humidité",
+   "agriculture de précision",
+   "gestion de l'eau",
+   "productivité"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Article et données associées sur l'évaluation des systèmes d'irrigation automatisés en agriculture. Il examine leur développement et leur performance."
+ },
  "af85050e5d73": {
   "famille": "matériel",
   "id": "af85050e5d73",
@@ -2244,6 +2431,20 @@
   "redige_par": "mistral-small-latest",
   "resume": "Cet ensemble de données géospatiales harmonisées couvre les cultures à l'échelle mondiale. Il est redistribué sans modification."
  },
+ "b67f8bc7c904": {
+  "famille": "modele",
+  "id": "b67f8bc7c904",
+  "interet": "Permet de détecter des maladies sur des plantes à partir d'images.",
+  "mots_cles": [
+   "maladies végétales",
+   "classification",
+   "images",
+   "vision par transformeur"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Modèle de classification d'images pour la détection de maladies végétales. Il utilise une architecture de vision par transformeur."
+ },
  "b78b7fffd539": {
   "famille": "donnees",
   "id": "b78b7fffd539",
@@ -2327,6 +2528,15 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "FishMaster est un système de surveillance en temps réel des conditions de l'eau pour aquariums intelligents. Il utilise des capteurs et une interface pour suivre les paramètres environnementaux."
+ },
+ "be7906c6fe2f": {
+  "famille": "modele",
+  "id": "be7906c6fe2f",
+  "interet": "",
+  "mots_cles": [],
+  "pertinence": "inconnu",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
  },
  "bf026b463fac": {
   "famille": "logiciel",
@@ -2505,6 +2715,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Logiciel de gestion pour élevage de poules pondeuses en auto-hébergement, traçant la production quotidienne par catégorie, la traçabilité des lots d'œufs et les stocks."
  },
+ "c83766c4f209": {
+  "famille": "donnees",
+  "id": "c83766c4f209",
+  "interet": "Évaluer les performances et les pratiques des systèmes de culture en environnement contrôlé pour optimiser leur efficacité.",
+  "mots_cles": [
+   "fermes verticales",
+   "éclairage artificiel",
+   "méta-analyse",
+   "rendement",
+   "agriculture contrôlée"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Jeu de données et code d'analyse pour une méta-analyse sur les avantages de rendement et les écarts de reporting dans les fermes verticales sous éclairage artificiel. Il contient 778 enregistrements de traitements."
+ },
  "c8b1344674e8": {
   "famille": "logiciel",
   "id": "c8b1344674e8",
@@ -2663,6 +2888,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Jeu de données ouvert et à grande échelle pour prédire les rendements agricoles en fonction des changements climatiques aux États-Unis. Le jeu de données est conçu pour des modèles d'apprentissage profond."
+ },
+ "cyanheads/faostat-mcp-server": {
+  "famille": "logiciel",
+  "id": "cyanheads/faostat-mcp-server",
+  "interet": "",
+  "mots_cles": [
+   "statistiques",
+   "fao",
+   "sql",
+   "agriculture",
+   "données"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Un serveur local fournissant des statistiques agricoles mondiales issues de la base FAOSTAT via une interface SQL ou HTTP. Il utilise une base de données SQLite et le protocole MCP."
  },
  "d043f358cf95": {
   "famille": "logiciel",
@@ -2860,6 +3100,21 @@
   "redige_par": "mistral-small-latest",
   "resume": ""
  },
+ "dc16cc967f49": {
+  "famille": "logiciel",
+  "id": "dc16cc967f49",
+  "interet": "Automatiser la logistique de distribution des produits agricoles dans les modèles de circuits courts.",
+  "mots_cles": [
+   "agriculture",
+   "circuits courts",
+   "distribution",
+   "gestion",
+   "coopérative"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Outil de gestion de distribution pour les circuits courts et les coopératives agricoles. Il permet d'organiser les livraisons de produits aux membres et aux points de distribution."
+ },
  "dc378054aa4d": {
   "famille": "donnees",
   "id": "dc378054aa4d",
@@ -2922,6 +3177,20 @@
   "pertinence": "inconnu",
   "redige_par": "mistral-small-latest",
   "resume": ""
+ },
+ "df2058ef0489": {
+  "famille": "modele",
+  "id": "df2058ef0489",
+  "interet": "Peut servir à identifier des maladies sur des plantes via des images.",
+  "mots_cles": [
+   "maladies végétales",
+   "classification",
+   "images",
+   "efficientnet"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Modèle de classification d'images pour la détection de maladies végétales. Il utilise l'architecture EfficientNet."
  },
  "dfaa8673abfd": {
   "famille": "donnees",
@@ -3261,6 +3530,15 @@
   "redige_par": "mistral-small-latest",
   "resume": "Ce dépôt illustre une gestion d'élevage ovin intégrant des outils d'intelligence artificielle et des guides pour les utilisateurs non techniques. Il inclut des enregistrements de reproduction et des vérifications de résultats écologiques."
  },
+ "f82515dc7143": {
+  "famille": "donnees",
+  "id": "f82515dc7143",
+  "interet": "",
+  "mots_cles": [],
+  "pertinence": "inconnu",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
  "fa9fd9520b8f": {
   "famille": "materiel",
   "id": "fa9fd9520b8f",
@@ -3275,6 +3553,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Documentation technique du matériel FarmBot Express, un système de culture automatisé. Elle détaille les composants et leur assemblage."
+ },
+ "facb32aef697": {
+  "famille": "donnees",
+  "id": "facb32aef697",
+  "interet": "Il sert à analyser les dynamiques d'occupation des sols et de production agricole à l'échelle mondiale.",
+  "mots_cles": [
+   "cultures mondiales",
+   "surfaces agricoles",
+   "occupation des sols",
+   "trends agricoles",
+   "données ouvertes"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce projet cartographie les cultures mondiales à l'échelle la plus fine possible avec des données ouvertes, en croisant les surfaces cultivées et les tendances nationales sur six décennies. Il permet de visualiser la répartition et l'évolution des terres agricoles et des cultures à l'échelle planétaire."
  },
  "fb5acd90df20": {
   "famille": "donnees",
@@ -3410,5 +3703,35 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Système de surveillance de ruches via LoRaWAN mesurant le poids, la température et l'état de la batterie. Il inclut un matériel embarqué et une application de configuration Bluetooth."
+ },
+ "momoqiqi-qwq/penji": {
+  "famille": "logiciel",
+  "id": "momoqiqi-qwq/penji",
+  "interet": "Automatiser la traçabilité des produits agricoles et des pratiques culturales.",
+  "mots_cles": [
+   "traçabilité",
+   "iot",
+   "agriculteurs",
+   "cloud",
+   "sécurité alimentaire"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Une application WeChat dédiée aux petits agriculteurs pour tracer les produits agricoles via des capteurs IoT et des registres de pratiques. Elle génère des codes QR pour la traçabilité et la vérification des données."
+ },
+ "samertall/AgriEmpower": {
+  "famille": "logiciel",
+  "id": "samertall/AgriEmpower",
+  "interet": "Renforcer les capacités des agricultrices pour améliorer la production alimentaire locale.",
+  "mots_cles": [
+   "agriculture",
+   "éducation",
+   "femmes",
+   "rwanda",
+   "sécurité alimentaire"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Une plateforme éducative destinée aux femmes agricultrices au Rwanda pour renforcer leurs compétences agricoles. Elle vise à améliorer la sécurité alimentaire et réduire la malnutrition infantile."
  }
 }
