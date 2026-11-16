@@ -43,6 +43,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Système de détection de maladies des cultures basé sur l'intelligence artificielle avec le modèle YOLO et une assistance optionnelle par DeepSeek. Il est développé avec Vue 3, Spring Boot et Flask."
  },
+ "0512a4cdd866": {
+  "famille": "donnees",
+  "id": "0512a4cdd866",
+  "interet": "Faciliter l'accès aux informations nutritionnelles des aliments pour les consommateurs et les professionnels.",
+  "mots_cles": [
+   "alimentation",
+   "composition nutritionnelle",
+   "produits alimentaires",
+   "collecte citoyenne",
+   "labels"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Cette base de données recense les informations nutritionnelles et les ingrédients des produits alimentaires. Les données sont collectées principalement par contribution citoyenne."
+ },
  "051485381c9e": {
   "famille": "logiciel",
   "id": "051485381c9e",
@@ -232,6 +247,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Interface 3D web utilisant WebGL pour visualiser et interagir avec un environnement de jardinage automatisé. Elle repose sur des technologies comme React, Three.js et GraphQL."
  },
+ "0fec63a1a5ed": {
+  "famille": "donnees",
+  "id": "0fec63a1a5ed",
+  "interet": "Évaluer l'impact de l'amendement de biochar sur la croissance des plantes.",
+  "mots_cles": [
+   "biochar",
+   "palmier",
+   "substrat de culture",
+   "croissance végétale",
+   "pyrolyse"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Un jeu de données sur la production et la caractérisation de biochar issu de déchets de palmiers et ses effets sur les propriétés du substrat de culture et la croissance du chou chinois. Ces données documentent une étude expérimentale."
+ },
  "106190affbfc": {
   "famille": "donnees",
   "id": "106190affbfc",
@@ -241,6 +271,15 @@
    "alimentation animale",
    "économie"
   ],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
+ "1222b4ede68b": {
+  "famille": "donnees",
+  "id": "1222b4ede68b",
+  "interet": "",
+  "mots_cles": [],
   "pertinence": "non",
   "redige_par": "mistral-small-latest",
   "resume": ""
@@ -260,6 +299,36 @@
   "redige_par": "mistral-small-latest",
   "resume": "Outil logiciel pour mesurer l'humidité, la conductivité électrique et la température dans des substrats. Il traite les données des capteurs TDR."
  },
+ "14658ac55b97": {
+  "famille": "modele",
+  "id": "14658ac55b97",
+  "interet": "Détecter des maladies sur des cultures à partir d'images pour optimiser les interventions phytosanitaires.",
+  "mots_cles": [
+   "maladie des cultures",
+   "classification d'images",
+   "transformers",
+   "vit",
+   "diagnostic"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Modèle de classification d'images utilisant des transformers pour identifier des maladies sur des cultures agricoles. Il analyse des images de plantes pour détecter des anomalies."
+ },
+ "1538bdf625cc": {
+  "famille": "modele",
+  "id": "1538bdf625cc",
+  "interet": "Permet d'estimer des rendements ou des choix culturaux à partir de données.",
+  "mots_cles": [
+   "machine learning",
+   "prédiction",
+   "conseil agricole",
+   "diagnostic",
+   "python"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Solution d'apprentissage automatique pour le conseil agricole, incluant la prédiction des cultures et l'inférence par lots. Elle propose des diagnostics de modèles."
+ },
  "154b3e2f57f8": {
   "famille": "donnees",
   "id": "154b3e2f57f8",
@@ -274,6 +343,36 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Extraction filtrée des informations réglementaires sur les produits phytosanitaires autorisés en vigne, incluant délais et distances. Elle provient du catalogue officiel E-Phy."
+ },
+ "15812fd6c009": {
+  "famille": "donnees",
+  "id": "15812fd6c009",
+  "interet": "Évaluer la santé ou la croissance des cultures à partir de données de télédétection.",
+  "mots_cles": [
+   "ndvi",
+   "sentinel-2",
+   "télédétection",
+   "agriculture",
+   "inde"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Un jeu de données annuel d'indice de végétation NDVI issu de Sentinel-2 pour un champ agricole près de Katol en Inde, incluant des indicateurs de nuages et de brume au niveau du champ. Ce jeu de données permet d'analyser l'état de la végétation sur une parcelle agricole."
+ },
+ "15f7f61f0a59": {
+  "famille": "logiciel",
+  "id": "15f7f61f0a59",
+  "interet": "Accéder à des données réglementaires fiables pour la gestion des intrants en agriculture.",
+  "mots_cles": [
+   "phytosanitaires",
+   "registres européens",
+   "réglementation",
+   "données structurées",
+   "produits autorisés"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Serveur MCP exposant les registres officiels européens des produits phytosanitaires de 30 pays, incluant leur statut d'autorisation, les substances actives et les usages autorisés par culture. Il fournit des données réglementaires structurées."
  },
  "164ac78b09fc": {
   "famille": "modele",
@@ -729,6 +828,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Bibliothèque SDI-12 pour microcontrôleurs ESP32. Elle permet de communiquer avec des capteurs environnementaux."
  },
+ "31c95688c36f": {
+  "famille": "logiciel",
+  "id": "31c95688c36f",
+  "interet": "Automatiser le diagnostic précoce des maladies végétales pour optimiser les interventions.",
+  "mots_cles": [
+   "apprentissage profond",
+   "classification",
+   "maladies végétales",
+   "resnet50",
+   "vision par ordinateur"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Cadre d'apprentissage profond utilisant un modèle ResNet50-DCBAM pour classer les maladies des plantes à partir d'images. Il propose des pipelines d'entraînement et d'évaluation reproductibles."
+ },
  "31eeeefd3298": {
   "famille": "logiciel",
   "id": "31eeeefd3298",
@@ -789,6 +903,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Données annuelles de ventes de pesticides par département en France, déclarées par les distributeurs. Elles permettent de suivre les ventes sur le territoire."
  },
+ "339db56af622": {
+  "famille": "modele",
+  "id": "339db56af622",
+  "interet": "S'entraîner à prendre des décisions stratégiques en gestion agricole pour anticiper les impacts.",
+  "mots_cles": [
+   "simulation",
+   "décisions agricoles",
+   "gestion ressources",
+   "entraînement",
+   "scénarios"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Simulateur de décisions agricoles permettant de s'entraîner à gérer des ressources comme les terres, les semences, les engrais, la main-d'œuvre et l'irrigation avant une saison réelle. Il modélise des scénarios de production."
+ },
  "35aa2713b2d9": {
   "famille": "donnees",
   "id": "35aa2713b2d9",
@@ -830,6 +959,21 @@
   "pertinence": "non",
   "redige_par": "mistral-small-latest",
   "resume": ""
+ },
+ "3784ea48da5f": {
+  "famille": "logiciel",
+  "id": "3784ea48da5f",
+  "interet": "Automatiser et suivre les conditions de culture en serre ou petite exploitation pour améliorer la gestion des ressources.",
+  "mots_cles": [
+   "serre",
+   "automatisation",
+   "irrigation",
+   "suivi culture",
+   "zigbee2mqtt"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Système de gestion pour serres et petites exploitations agricoles intégrant le suivi par capteurs Zigbee2MQTT, des journaux de culture et d'arrosage, ainsi que l'automatisation de l'éclairage et de l'irrigation. Il centralise les données et actions pour faciliter la gestion quotidienne."
  },
  "37da7fedc520": {
   "famille": "logiciel",
@@ -889,6 +1033,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Ce projet propose un modèle d'évaluation de la demande énergétique des systèmes agricoles en environnement contrôlé (CEA) alimentés par énergie solaire. Il compare cette demande à la production agricole spécifique à l'échelle mondiale."
+ },
+ "3b915ac5e325": {
+  "famille": "logiciel",
+  "id": "3b915ac5e325",
+  "interet": "Facilite l'intégration et l'échange de données entre différents outils agricoles.",
+  "mots_cles": [
+   "interopérabilité",
+   "ontologie",
+   "smart farming",
+   "standards",
+   "données agricoles"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Modèle sémantique ouvert réutilisant des standards existants pour faciliter l'interopérabilité entre solutions de smart farming. Il permet de structurer et échanger des données agricoles de manière cohérente."
  },
  "3cf912ac5204": {
   "famille": "logiciel",
@@ -1025,6 +1184,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Ce système permet de surveiller et contrôler à distance le climat dans les serres et cultures indoor. Il est compatible avec divers capteurs et interrupteurs intelligents accessibles en ligne de commande."
  },
+ "447377746f3a": {
+  "famille": "logiciel",
+  "id": "447377746f3a",
+  "interet": "Surveiller et réguler les paramètres d'élevage en aquaculture pour améliorer les conditions de production.",
+  "mots_cles": [
+   "aquaculture",
+   "esp32",
+   "iot",
+   "lorawan",
+   "surveillance"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Réseau de capteurs LoRa pour le suivi en temps réel de l'élevage de crabes en milieu contrôlé. Il automatise l'aération et fournit un tableau de bord de monitoring."
+ },
  "45cd803b3312": {
   "famille": "donnees",
   "id": "45cd803b3312",
@@ -1039,6 +1213,36 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Liste des fournisseurs d'aliments pour la restauration scolaire en Normandie. Cette donnée s'inscrit dans un plan visant à augmenter la part de produits locaux."
+ },
+ "4729f550aa6a": {
+  "famille": "donnees",
+  "id": "4729f550aa6a",
+  "interet": "Comparer les performances de systèmes de culture en environnement contrôlé.",
+  "mots_cles": [
+   "serres verticales",
+   "éclairage artificiel",
+   "méta-analyse",
+   "rendement",
+   "agriculture contrôlée"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Un jeu de données et des calculs Excel accompagnant une méta-analyse sur les avantages de rendement et les écarts de reporting des ressources dans les serres verticales à éclairage artificiel. Ces données et codes permettent de reproduire l'analyse des résultats."
+ },
+ "49130079f240": {
+  "famille": "donnees",
+  "id": "49130079f240",
+  "interet": "Évaluer l'importance de la pollinisation par les insectes pour la reproduction des plantes.",
+  "mots_cles": [
+   "pollinisation",
+   "reproduction végétale",
+   "insectes",
+   "plantes invasives",
+   "données agronomiques"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Ce projet documente la production de fruits et de graines chez Cynanchum acutum en fonction de la pollinisation par les insectes. Il fournit des données sur l'impact de la pollinisation entomophile sur la reproduction de cette plante."
  },
  "4LPH7/FPOLink": {
   "famille": "logiciel",
@@ -1124,6 +1328,15 @@
   "redige_par": "mistral-small-latest",
   "resume": "Application web pour configurer, personnaliser et piloter un FarmBot depuis n'importe quel appareil. Elle centralise les commandes et les paramètres du système."
  },
+ "4bee0875bbb0": {
+  "famille": "logiciel",
+  "id": "4bee0875bbb0",
+  "interet": "",
+  "mots_cles": [],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
  "4bf7bdca11df": {
   "famille": "donnees",
   "id": "4bf7bdca11df",
@@ -1197,6 +1410,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Outil de gestion pour systèmes hydroponiques automatisés. Il permet de contrôler et surveiller les paramètres de culture hors-sol."
+ },
+ "513c47265ef5": {
+  "famille": "logiciel",
+  "id": "513c47265ef5",
+  "interet": "Optimiser les paramètres de culture pour maximiser le rendement et la rentabilité en production de champignons.",
+  "mots_cles": [
+   "champignons",
+   "calculs techniques",
+   "efficacité biologique",
+   "hydratation substrat",
+   "rendement"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Bibliothèque JavaScript et interface en ligne de commande pour calculer les paramètres de culture de champignons gourmets : hydratation du substrat, ratio de mycélium, rendement en efficacité biologique et économie par lot. Elle automatise les calculs techniques nécessaires à la production."
  },
  "52fd55c68cfd": {
   "famille": "modele",
@@ -1329,6 +1557,19 @@
   "redige_par": "mistral-small-latest",
   "resume": "Données cartographiques et descriptives des activités de cultures marines en France métropolitaine, issues de sources institutionnelles. Elles synthétisent les pressions anthropiques et leurs effets sur les écosystèmes marins."
  },
+ "62c748ba8196": {
+  "famille": "logiciel",
+  "id": "62c748ba8196",
+  "interet": "",
+  "mots_cles": [
+   "analyse de logs",
+   "détection d'anomalies",
+   "validation de signaux"
+  ],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
  "63f4671c3a75": {
   "famille": "donnees",
   "id": "63f4671c3a75",
@@ -1432,6 +1673,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Stratégie d'irrigation automatisée pour cultures (phases P0-P3) avec interface graphique dans Home Assistant. Elle permet de configurer des règles d'arrosage."
+ },
+ "6db6b69af89b": {
+  "famille": "donnees",
+  "id": "6db6b69af89b",
+  "interet": "Développer des algorithmes de navigation autonome pour les engins agricoles.",
+  "mots_cles": [
+   "navigation autonome",
+   "détection de rangs",
+   "agriculture",
+   "guidage",
+   "machine agricole"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Un jeu de données pour la détection de lignes de navigation en agriculture, centré sur la détection des rangs de cultures. Ce jeu de données soutient la recherche sur les systèmes de guidage autonome pour les machines agricoles."
  },
  "713e478bf2a1": {
   "famille": "logiciel",
@@ -1661,6 +1917,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Démonstration de navigation automatisée d'un tracteur-pulvérisateur dans un vignoble à l'aide d'Unreal Engine et MATLAB. Il illustre la planification de trajectoires pour des opérations culturales."
  },
+ "7ef9efee8368": {
+  "famille": "modele",
+  "id": "7ef9efee8368",
+  "interet": "Automatiser le diagnostic précoce de maladies végétales pour faciliter la prise de décision en gestion des cultures.",
+  "mots_cles": [
+   "maladie végétale",
+   "diagnostic visuel",
+   "transformers",
+   "vit",
+   "classification d'images"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Modèle de classification d'images basé sur des transformers pour détecter des maladies végétales à partir de photos. Il permet d'identifier des anomalies visuelles sur des plantes."
+ },
  "7f14bbdc5366": {
   "famille": "logiciel",
   "id": "7f14bbdc5366",
@@ -1676,6 +1947,21 @@
   "redige_par": "mistral-small-latest",
   "resume": ""
  },
+ "801ddf6aa554": {
+  "famille": "logiciel",
+  "id": "801ddf6aa554",
+  "interet": "Faciliter l'évaluation quantitative et qualitative des grappes de raisin en viticulture.",
+  "mots_cles": [
+   "comptage",
+   "deep learning",
+   "grappes de raisin",
+   "segmentation d'instance",
+   "viticulture"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Modèle d'apprentissage profond pour la segmentation d'amas de raisins, la localisation et le comptage des baies, ainsi que l'estimation de la fermeture visuelle des grappes."
+ },
  "805909b8a7d3": {
   "famille": "donnees",
   "id": "805909b8a7d3",
@@ -1690,6 +1976,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Ce jeu de données mesure, à l'échelle communale, la proportion de responsables d'exploitations agricoles de 55 ans ou plus en 2020. Il contient 34 920 lignes, une par commune de France métropolitaine."
+ },
+ "84ef841c4878": {
+  "famille": "logiciel",
+  "id": "84ef841c4878",
+  "interet": "Assiste dans le diagnostic des maladies végétales à partir d'images.",
+  "mots_cles": [
+   "maladies végétales",
+   "diagnostic",
+   "images",
+   "tomate",
+   "riz"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Service de connaissances sur les maladies de la tomate et du riz, associant symptômes visuels, récupération par graphe et réponses sourcées. Il aide à identifier des problèmes culturaux."
  },
  "87b7b9534a19": {
   "famille": "donnees",
@@ -1751,6 +2052,19 @@
   "redige_par": "mistral-small-latest",
   "resume": "Étude comparative de cinq capteurs satellites et quatre classifieurs d'apprentissage automatique pour la classification des cultures pendant la saison Rabi dans le district de Jhansi en Inde."
  },
+ "896eb105ac0d": {
+  "famille": "donnees",
+  "id": "896eb105ac0d",
+  "interet": "",
+  "mots_cles": [
+   "robotique",
+   "dataset",
+   "action"
+  ],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
  "899775881e41": {
   "famille": "modele",
   "id": "899775881e41",
@@ -1765,6 +2079,21 @@
   "pertinence": "non",
   "redige_par": "mistral-small-latest",
   "resume": ""
+ },
+ "8a3c9332c955": {
+  "famille": "logiciel",
+  "id": "8a3c9332c955",
+  "interet": "Aide à organiser et documenter les soins apportés aux plantes cultivées.",
+  "mots_cles": [
+   "jardinage",
+   "suivi des cultures",
+   "rappels",
+   "photos",
+   "entretien"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Application Android pour suivre l'entretien des plantes en enregistrant des soins, des photos et des rappels. Elle permet de gérer un jardin ou des cultures en intérieur."
  },
  "8af57000f157": {
   "famille": "logiciel",
@@ -1962,6 +2291,19 @@
   "redige_par": "mistral-small-latest",
   "resume": "Jeu de données sémantique à grande échelle pour la cartographie des adventices à partir d'imagerie multispectrale aérienne. Utilise des réseaux de neurones profonds pour le désherbage de précision."
  },
+ "9c30456e2758": {
+  "famille": "donnees",
+  "id": "9c30456e2758",
+  "interet": "",
+  "mots_cles": [
+   "robotique",
+   "dataset",
+   "action"
+  ],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
+ },
  "9c815bd68155": {
   "famille": "logiciel",
   "id": "9c815bd68155",
@@ -1991,6 +2333,21 @@
   "pertinence": "non",
   "redige_par": "mistral-small-latest",
   "resume": ""
+ },
+ "9d7514b20572": {
+  "famille": "donnees",
+  "id": "9d7514b20572",
+  "interet": "Comprendre la contribution des arbres mâles à la pollinisation des cultures.",
+  "mots_cles": [
+   "pistachier",
+   "pollinisation",
+   "diversité génétique",
+   "ouzbékistan",
+   "arbre mâle"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Un jeu de données sur les pistachiers mâles en Ouzbékistan, incluant des informations sur leur évaluation et leur rôle dans la pollinisation. Ces données concernent la diversité génétique des pistachiers."
  },
  "9eadc0129d37": {
   "famille": "donnees",
@@ -2030,6 +2387,15 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Données et code pour une méta-analyse sur les avantages de rendement et les écarts de reporting dans les fermes verticales avec éclairage artificiel. Il contient 784 enregistrements de traitements."
+ },
+ "9fb94413051b": {
+  "famille": "logiciel",
+  "id": "9fb94413051b",
+  "interet": "",
+  "mots_cles": [],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
  },
  "SkaFUU/aog-field-editor": {
   "famille": "logiciel",
@@ -2118,6 +2484,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Jeu de données open source issu d'imagerie satellite pour cartographier les types de cultures à l'échelle mondiale. Il contient 95 186 points de données labellisés."
+ },
+ "a8ca69408bda": {
+  "famille": "logiciel",
+  "id": "a8ca69408bda",
+  "interet": "Consulter des données botaniques et culturales pour des applications agricoles ou de gestion végétale.",
+  "mots_cles": [
+   "taxonomie végétale",
+   "données botaniques",
+   "api",
+   "culture plantes",
+   "base de données"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "API REST botanique open source permettant de rechercher des espèces végétales, leur taxonomie et des informations de culture. Elle fournit des données standardisées sur les plantes."
  },
  "a9a0fd80b4f6": {
   "famille": "modele",
@@ -2640,6 +3021,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Client logiciel pour se connecter aux services web de l'agence néerlandaise RVO afin d'accéder à des informations agricoles. Il permet de récupérer des données structurées sur les cultures et les exploitations."
  },
+ "c20630899b6d": {
+  "famille": "donnees",
+  "id": "c20630899b6d",
+  "interet": "Analyser les dynamiques d'innovation dans le secteur agroalimentaire.",
+  "mots_cles": [
+   "innovation",
+   "agroalimentaire",
+   "entreprises",
+   "dépenses",
+   "statistiques"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Cette enquête recense les caractéristiques et les activités d'innovation des entreprises agroalimentaires de 10 salariés et plus en 2022. Elle inclut des données sur les dépenses, les partenariats et les freins à l'innovation."
+ },
  "c52f90dd290a": {
   "famille": "materiel",
   "id": "c52f90dd290a",
@@ -2919,6 +3315,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Bibliothèque Arduino pour communiquer avec des capteurs environnementaux via le protocole SDI-12. Elle permet de récupérer des mesures sans matériel supplémentaire."
  },
+ "d09522440539": {
+  "famille": "logiciel",
+  "id": "d09522440539",
+  "interet": "Organiser le suivi et l'entretien des plantes en intérieur ou en extérieur pour les particuliers ou petites structures.",
+  "mots_cles": [
+   "plantes d'intérieur",
+   "suivi entretien",
+   "calendrier",
+   "inventaire",
+   "collaboratif"
+  ],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": "Système collaboratif auto-hébergé de gestion des plantes incluant des fiches de suivi, des tâches d'entretien, un inventaire, des photos et un calendrier. Il permet d'organiser les soins et le suivi des végétaux."
+ },
  "d226f71a55b1": {
   "famille": "donnees",
   "id": "d226f71a55b1",
@@ -3061,6 +3472,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Ce jeu de données recense les résultats du Recensement Général Agricole pour les communes du Parc naturel régional du Morvan aux années 1988, 2000, 2010 et 2020."
+ },
+ "dad511616cbf": {
+  "famille": "materiel",
+  "id": "dad511616cbf",
+  "interet": "",
+  "mots_cles": [
+   "robotique",
+   "irrigation",
+   "vision par ordinateur",
+   "STM32",
+   "RDK X5"
+  ],
+  "pertinence": "inconnu",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
  },
  "db40120e7ae2": {
   "famille": "donnees",
@@ -3297,6 +3723,21 @@
   "redige_par": "mistral-small-latest",
   "resume": "Ce projet intègre les contrôleurs de tente de culture AC Infinity dans Home Assistant. Il permet de gérer des tentes de culture automatisées."
  },
+ "e6dd5de5dfa8": {
+  "famille": "logiciel",
+  "id": "e6dd5de5dfa8",
+  "interet": "Optimiser le contrôle des conditions climatiques et des ressources en culture sous serre.",
+  "mots_cles": [
+   "automatisation",
+   "esp32",
+   "esp8266",
+   "serre intelligente",
+   "système embarqué"
+  ],
+  "pertinence": "oui",
+  "redige_par": "mistral-small-latest",
+  "resume": "Système de gestion automatisée pour serres intelligentes utilisant des microcontrôleurs ESP8266 et ESP32-CAM. Il collecte des données environnementales et commande l'irrigation, la fertilisation et la ventilation."
+ },
  "e75500e582e3": {
   "famille": "donnees",
   "id": "e75500e582e3",
@@ -3470,6 +3911,21 @@
   "pertinence": "oui",
   "redige_par": "mistral-small-latest",
   "resume": "Firmware pour Arduino exécutant des commandes de type G-code pour déplacer un FarmBot et actionner l'outil monté. Il gère les mouvements et les opérations mécaniques."
+ },
+ "f5a690641937": {
+  "famille": "logiciel",
+  "id": "f5a690641937",
+  "interet": "",
+  "mots_cles": [
+   "simulateur",
+   "véhicule",
+   "CAN bus",
+   "aéronautique",
+   "automobile"
+  ],
+  "pertinence": "non",
+  "redige_par": "mistral-small-latest",
+  "resume": ""
  },
  "f62af1142116": {
   "famille": "logiciel",

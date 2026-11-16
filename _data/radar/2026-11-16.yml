@@ -1,0 +1,1195 @@
+# Lot du radar OSFarm. Passer « publier » à false pour écarter une fiche,
+# corriger « resume » au besoin. La fusion de la pull request publie le reste.
+date: '2026-11-16'
+examines: 374
+retenus: 32
+rejets:
+  deja_vu: 244
+  deja_sur_le_site: 7
+  licence: 22
+  score: 0
+pannes: []
+candidats:
+- id: 513c47265ef5
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: mycro-grow
+  url: https://github.com/SaschaHeyer/mycro-grow
+  description: 'JavaScript library and CLI for gourmet mushroom cultivation math: substrate hydration,
+    spawn ratio, biological-efficiency yield, and batch economics.'
+  licence: mit
+  date_maj: '2026-10-10'
+  techno: JavaScript
+  popularite: 0
+  mots_cles:
+  - Calculators
+  - agriculture
+  - agtech
+  - biological-efficiency
+  - calculator
+  - gourmet-mushrooms
+  - mushroom
+  - mushroom-cultivation
+  score: 100
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, agtech, yield'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-11-16'
+  publier: true
+  resume: 'Bibliothèque JavaScript et interface en ligne de commande pour calculer les paramètres de culture
+    de champignons gourmets : hydratation du substrat, ratio de mycélium, rendement en efficacité biologique
+    et économie par lot. Elle automatise les calculs techniques nécessaires à la production.'
+  interet: Optimiser les paramètres de culture pour maximiser le rendement et la rentabilité en production
+    de champignons.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - champignons
+  - calculs techniques
+  - efficacité biologique
+  - hydratation substrat
+  - rendement
+- id: 3784ea48da5f
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: GrowerHub
+  url: https://github.com/aspinozaxxx-lab/growerhub
+  description: Greenhouse and small-farm management with Zigbee2MQTT monitoring, plant and watering journals,
+    and lighting and irrigation automation.
+  licence: mit
+  date_maj: '2026-11-16'
+  techno: Java
+  popularite: 7
+  mots_cles:
+  - Farm Management Systems and Record Keeping
+  - esp32
+  - greenhouse-automation
+  - iot
+  - irrigation
+  - mqtt
+  - plant-monitoring
+  - react
+  score: 100
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : farm, greenhouse, irrigation'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-11-16'
+  publier: true
+  resume: Système de gestion pour serres et petites exploitations agricoles intégrant le suivi par capteurs
+    Zigbee2MQTT, des journaux de culture et d'arrosage, ainsi que l'automatisation de l'éclairage et de
+    l'irrigation. Il centralise les données et actions pour faciliter la gestion quotidienne.
+  interet: Automatiser et suivre les conditions de culture en serre ou petite exploitation pour améliorer
+    la gestion des ressources.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - serre
+  - automatisation
+  - irrigation
+  - suivi culture
+  - zigbee2mqtt
+- id: d09522440539
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: HortusFox
+  url: https://github.com/danielbrendel/hortusfox-web
+  description: Self-hosted collaborative plant management system with plant records, care tasks, inventory,
+    photos, and a calendar.
+  licence: mit
+  date_maj: '2026-11-03'
+  techno: PHP
+  popularite: 1698
+  mots_cles:
+  - Farm Management Systems and Record Keeping
+  - gardening
+  - home-plants
+  - horticulture
+  - hortusfox
+  - houseplants
+  - plant-care
+  - plant-collection
+  score: 100
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : farm, horticulture'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-11-16'
+  publier: false
+  resume: Système collaboratif auto-hébergé de gestion des plantes incluant des fiches de suivi, des tâches
+    d'entretien, un inventaire, des photos et un calendrier. Il permet d'organiser les soins et le suivi
+    des végétaux.
+  interet: Organiser le suivi et l'entretien des plantes en intérieur ou en extérieur pour les particuliers
+    ou petites structures.
+  pertinence: non
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - plantes d'intérieur
+  - suivi entretien
+  - calendrier
+  - inventaire
+  - collaboratif
+- id: 339db56af622
+  famille: modele
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: MugdhoAI/virtual-farm-2.0
+  url: https://github.com/MugdhoAI/virtual-farm-2.0
+  description: A farm decision simulator. Practice land, seed, fertilizer, labor, irrigation, and sell
+    or store decisions before the real season.
+  licence: mit
+  date_maj: '2026-11-14'
+  techno: HTML
+  popularite: 4
+  mots_cles:
+  - agriculture
+  - decision-making
+  - farm-management
+  - farming
+  - flask
+  - pytest
+  - python
+  - rice
+  score: 92
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farm, farming, fertilizer, irrigation, seed'
+  propose_le: '2026-11-16'
+  publier: true
+  resume: Simulateur de décisions agricoles permettant de s'entraîner à gérer des ressources comme les
+    terres, les semences, les engrais, la main-d'œuvre et l'irrigation avant une saison réelle. Il modélise
+    des scénarios de production.
+  interet: S'entraîner à prendre des décisions stratégiques en gestion agricole pour anticiper les impacts.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  famille_initiale: logiciel
+  mots_cles_fr:
+  - simulation
+  - décisions agricoles
+  - gestion ressources
+  - entraînement
+  - scénarios
+- id: 15f7f61f0a59
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: Agro GPS MCP
+  url: https://github.com/TheHiddenPandaDev/agro_gps_mcp
+  description: MCP server exposing the official plant protection product registers of 30 European countries
+    (authorisation status, active substances, authorised uses per crop) to AI assistants; free, no key.
+  licence: mit
+  date_maj: '2026-10-23'
+  techno: TypeScript
+  popularite: 0
+  mots_cles:
+  - Data Standardization, Interoperability and APIs
+  - agriculture
+  - europe
+  - farm-management
+  - field-notebook
+  - mcp
+  - mcp-server
+  - model-context-protocol
+  score: 92
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, crop'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-11-16'
+  publier: true
+  resume: Serveur MCP exposant les registres officiels européens des produits phytosanitaires de 30 pays,
+    incluant leur statut d'autorisation, les substances actives et les usages autorisés par culture. Il
+    fournit des données réglementaires structurées.
+  interet: Accéder à des données réglementaires fiables pour la gestion des intrants en agriculture.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - phytosanitaires
+  - registres européens
+  - réglementation
+  - données structurées
+  - produits autorisés
+- id: a8ca69408bda
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: Trefle
+  url: https://github.com/treflehq/trefle-api
+  description: Open source botanical REST API for querying plant species, taxonomy, and growing information.
+  licence: agpl-3.0
+  date_maj: '2026-11-10'
+  techno: Ruby
+  popularite: 589
+  mots_cles:
+  - Data Standardization, Interoperability and APIs
+  - api-rest
+  - biodiversity
+  - database
+  - farming-robots
+  - gardening-apps
+  - hacktoberfest
+  - plants
+  score: 90
+  raisons:
+  - licence agpl-3.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : biodiversity'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-11-16'
+  publier: true
+  resume: API REST botanique open source permettant de rechercher des espèces végétales, leur taxonomie
+    et des informations de culture. Elle fournit des données standardisées sur les plantes.
+  interet: Consulter des données botaniques et culturales pour des applications agricoles ou de gestion
+    végétale.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - taxonomie végétale
+  - données botaniques
+  - api
+  - culture plantes
+  - base de données
+- id: 3b915ac5e325
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: Open Agri Common Semantic Model (OCSM)
+  url: https://github.com/agstack/OpenAgri-OCSM
+  description: Ontology reusing existing standards to support semantic interoperability across smart farming
+    solutions.
+  licence: eupl-1.2
+  date_maj: '2026-11-13'
+  techno: Jupyter Notebook
+  popularite: 7
+  mots_cles:
+  - Data Standardization, Interoperability and APIs
+  - hacktoberfest
+  score: 89
+  raisons:
+  - licence eupl-1.2
+  - actif (moins de 3 mois)
+  - 'vocabulaire : farming'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-11-16'
+  publier: true
+  resume: Modèle sémantique ouvert réutilisant des standards existants pour faciliter l'interopérabilité
+    entre solutions de smart farming. Il permet de structurer et échanger des données agricoles de manière
+    cohérente.
+  interet: Facilite l'intégration et l'échange de données entre différents outils agricoles.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - interopérabilité
+  - ontologie
+  - smart farming
+  - standards
+  - données agricoles
+- id: 8a3c9332c955
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: Plant-it
+  url: https://github.com/MDeLuise/plant-it
+  description: Android gardening companion for logging plant care, keeping photos, and setting reminders.
+  licence: gpl-3.0
+  date_maj: '2026-01-20'
+  techno: Dart
+  popularite: 1380
+  mots_cles:
+  - Farm Management Systems and Record Keeping
+  - dart
+  - flutter
+  - gardening
+  - plants
+  score: 89
+  raisons:
+  - licence gpl-3.0
+  - actif (moins d'un an)
+  - 'vocabulaire : farm'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-11-16'
+  publier: true
+  resume: Application Android pour suivre l'entretien des plantes en enregistrant des soins, des photos
+    et des rappels. Elle permet de gérer un jardin ou des cultures en intérieur.
+  interet: Aide à organiser et documenter les soins apportés aux plantes cultivées.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - jardinage
+  - suivi des cultures
+  - rappels
+  - photos
+  - entretien
+- id: 1538bdf625cc
+  famille: modele
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: RozhakDev/SmartCropAdvisor
+  url: https://github.com/RozhakDev/SmartCropAdvisor
+  description: An end-to-end machine learning solution for agricultural decision support, featuring crop
+    prediction, batch inference, and model diagnostics.
+  licence: mit
+  date_maj: '2026-11-14'
+  techno: Jupyter Notebook
+  popularite: 10
+  mots_cles:
+  - agriculture
+  - crop-recommendation
+  - jupyter-notebook
+  - machine-learning
+  - python
+  - streamlit
+  score: 85
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, crop'
+  propose_le: '2026-11-16'
+  publier: true
+  resume: Solution d'apprentissage automatique pour le conseil agricole, incluant la prédiction des cultures
+    et l'inférence par lots. Elle propose des diagnostics de modèles.
+  interet: Permet d'estimer des rendements ou des choix culturaux à partir de données.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  famille_initiale: logiciel
+  mots_cles_fr:
+  - machine learning
+  - prédiction
+  - conseil agricole
+  - diagnostic
+  - python
+- id: 84ef841c4878
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: xbzz1018/agrigraph
+  url: https://github.com/xbzz1018/agrigraph
+  description: Tomato and rice disease knowledge service with image symptoms, graph retrieval, and cited
+    answers.
+  licence: apache-2.0
+  date_maj: '2026-11-16'
+  techno: Python
+  popularite: 4
+  mots_cles:
+  - agriculture
+  - graphrag
+  - knowledge-graph
+  - multimodal
+  - python
+  score: 76
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-11-16'
+  publier: true
+  resume: Service de connaissances sur les maladies de la tomate et du riz, associant symptômes visuels,
+    récupération par graphe et réponses sourcées. Il aide à identifier des problèmes culturaux.
+  interet: Assiste dans le diagnostic des maladies végétales à partir d'images.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - maladies végétales
+  - diagnostic
+  - images
+  - tomate
+  - riz
+- id: dad511616cbf
+  famille: materiel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: CanNyCat17/RootScope-AdventureX2026
+  url: https://github.com/CanNyCat17/RootScope-AdventureX2026
+  description: 🏆 RootScope（溯根）— AdventureX 2026 双赛道获奖：地瓜机器人赛道二等奖（银奖 · 最终第 2 名）＋ superun.ai「不比代码，比谁离问题最近」赛道三等奖。RDK
+    X5 + STM32 固定式根区灌溉舱。
+  licence: apache-2.0
+  date_maj: '2026-11-13'
+  techno: Python
+  popularite: 3
+  mots_cles:
+  - adventurex-2026
+  - agritech
+  - award-winning
+  - bpu
+  - computer-vision
+  - d-robotics
+  - edge-ai
+  - embedded-systems
+  score: 76
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agritech'
+  propose_le: '2026-11-16'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: inconnu
+  redige_par: mistral-small-latest
+  famille_initiale: logiciel
+  mots_cles_fr:
+  - robotique
+  - irrigation
+  - vision par ordinateur
+  - STM32
+  - RDK X5
+- id: f5a690641937
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: leaukojo/carlito
+  url: https://github.com/leaukojo/carlito
+  description: Ultra-lightweight, general-purpose vehicle simulator that runs in a web browser.
+  licence: mit
+  date_maj: '2026-11-16'
+  techno: GDScript
+  popularite: 4
+  mots_cles:
+  - aerospace
+  - agriculture
+  - automotive
+  - can-bus
+  - educational
+  - godot
+  - godot4
+  - isobus
+  score: 74
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-11-16'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - simulateur
+  - véhicule
+  - CAN bus
+  - aéronautique
+  - automobile
+- id: 31c95688c36f
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: AhmadJeddi/Plant-Disease-Classification
+  url: https://github.com/AhmadJeddi/Plant-Disease-Classification
+  description: A ResNet50-DCBAM deep learning framework for plant disease classification using the PlantVillage
+    dataset with reproducible training and evaluation pipelines.
+  licence: mit
+  date_maj: '2026-10-19'
+  techno: Python
+  popularite: 51
+  mots_cles:
+  - attention-mechanism
+  - cbam
+  - cnn
+  - computer-vision
+  - dcbam
+  - deep-learning
+  - image-classification
+  - plant-disease-classification
+  score: 73
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  propose_le: '2026-11-16'
+  publier: true
+  resume: Cadre d'apprentissage profond utilisant un modèle ResNet50-DCBAM pour classer les maladies des
+    plantes à partir d'images. Il propose des pipelines d'entraînement et d'évaluation reproductibles.
+  interet: Automatiser le diagnostic précoce des maladies végétales pour optimiser les interventions.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - apprentissage profond
+  - classification
+  - maladies végétales
+  - resnet50
+  - vision par ordinateur
+- id: e6dd5de5dfa8
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: sun2006-xin/smart-greenhouse
+  url: https://github.com/sun2006-xin/smart-greenhouse
+  description: 基于 ESP8266 + ESP32-CAM 的智慧大棚系统：采集空气温湿度、光照、空气质量和 RS485 土壤数据，联动灌溉、施肥、通风与补光；支持 MQTT、双端 Web
+    管理，以及摄像头本地 MobileNetV2 病害识别（自动巡检与手动触发）。
+  licence: apache-2.0
+  date_maj: '2026-08-28'
+  techno: C
+  popularite: 4
+  mots_cles:
+  - agriculture-iot
+  - arduino
+  - edge-ai
+  - embedded-web
+  - esp32-cam
+  - esp8266
+  - iot
+  - modbus-rtu
+  score: 73
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : greenhouse'
+  propose_le: '2026-11-16'
+  publier: true
+  resume: Système de gestion automatisée pour serres intelligentes utilisant des microcontrôleurs ESP8266
+    et ESP32-CAM. Il collecte des données environnementales et commande l'irrigation, la fertilisation
+    et la ventilation.
+  interet: Optimiser le contrôle des conditions climatiques et des ressources en culture sous serre.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - automatisation
+  - esp32
+  - esp8266
+  - serre intelligente
+  - système embarqué
+- id: 9fb94413051b
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-viti
+  titre: YSSF8/Vineyard
+  url: https://github.com/YSSF8/Vineyard
+  description: A tool to create and manage Wine themes for Linux desktop customization.
+  licence: mit
+  date_maj: '2026-01-27'
+  techno: Python
+  popularite: 5
+  mots_cles: []
+  score: 70
+  raisons:
+  - licence mit
+  - actif (moins d'un an)
+  - 'vocabulaire : vineyard'
+  propose_le: '2026-11-16'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+- id: 801ddf6aa554
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-viti
+  titre: tong-xz/GrapeSAM
+  url: https://github.com/tong-xz/GrapeSAM
+  description: Official implementation of GrapeSAM for grape cluster segmentation, berry localization,
+    counting, and visual cluster closure estimation.
+  licence: apache-2.0
+  date_maj: '2026-07-30'
+  techno: Python
+  popularite: 4
+  mots_cles:
+  - agriculture
+  - berry-counting
+  - computer-vision
+  - deep-learning
+  - grape
+  - instance-segmentation
+  - precision-agriculture
+  - segment-anything
+  score: 69
+  raisons:
+  - licence apache-2.0
+  - actif (moins d'un an)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-11-16'
+  publier: true
+  resume: Modèle d'apprentissage profond pour la segmentation d'amas de raisins, la localisation et le
+    comptage des baies, ainsi que l'estimation de la fermeture visuelle des grappes.
+  interet: Faciliter l'évaluation quantitative et qualitative des grappes de raisin en viticulture.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - comptage
+  - deep learning
+  - grappes de raisin
+  - segmentation d'instance
+  - viticulture
+- id: 62c748ba8196
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: joss
+  titre: 'Sentinel: Signal Validation and Anomaly Detection for Enterprise Log Data'
+  url: https://joss.theoj.org/papers/10.21105/joss.11275
+  description: ''
+  licence: osi-approuvee
+  date_maj: '2026-11-07'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - log analysis
+  - anomaly detection
+  - signal validation
+  - enterprise logs
+  score: 68
+  raisons:
+  - licence osi-approuvee
+  - actif (moins de 3 mois)
+  - 'vocabulaire : sentinel'
+  propose_le: '2026-11-16'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - analyse de logs
+  - détection d'anomalies
+  - validation de signaux
+- id: 447377746f3a
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-elevage
+  titre: qppd/crab-grid-smart-aeration
+  url: https://github.com/qppd/crab-grid-smart-aeration
+  description: House-powered LoRa P2P mud crab fattening monitor — ESP32 + SX1278 915 MHz sensor grid,
+    automated aeration, real-time dashboard, and thesis-grade aquaculture IoT documentation
+  licence: mit
+  date_maj: '2026-10-06'
+  techno: ''
+  popularite: 3
+  mots_cles:
+  - 915mhz
+  - aquaculture
+  - arduino
+  - esp32
+  - firebase
+  - iot
+  - lora-p2p
+  - mangrove
+  score: 67
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  propose_le: '2026-11-16'
+  publier: true
+  resume: Réseau de capteurs LoRa pour le suivi en temps réel de l'élevage de crabes en milieu contrôlé.
+    Il automatise l'aération et fournit un tableau de bord de monitoring.
+  interet: Surveiller et réguler les paramètres d'élevage en aquaculture pour améliorer les conditions
+    de production.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - aquaculture
+  - esp32
+  - iot
+  - lorawan
+  - surveillance
+- id: 4bee0875bbb0
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-viti
+  titre: LCAS/uav-vineyard-mapping
+  url: https://github.com/LCAS/uav-vineyard-mapping
+  description: ''
+  licence: apache-2.0
+  date_maj: '2026-07-01'
+  techno: Python
+  popularite: 3
+  mots_cles: []
+  score: 67
+  raisons:
+  - licence apache-2.0
+  - actif (moins d'un an)
+  - 'vocabulaire : vineyard'
+  propose_le: '2026-11-16'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+- id: 15812fd6c009
+  famille: donnees
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: VarshaKrishi Field NDVI
+  url: https://www.varshakrishi.com/open-data
+  depot: https://github.com/tanmaysahare/sentinel2-field-ndvi
+  description: One year of Sentinel-2 NDVI for a farm field near Katol, India, with field-level cloud
+    and haze flags (CC BY 4.0, CSV/JSON).
+  licence: mit
+  date_maj: '2026-10-22'
+  techno: Jupyter Notebook
+  popularite: 0
+  mots_cles:
+  - India
+  - agriculture
+  - cloud-optimized-geotiff
+  - earth-observation
+  - ndvi
+  - python
+  - remote-sensing
+  - sentinel-2
+  score: 100
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farm, ndvi, remote-sensing'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-11-16'
+  publier: true
+  resume: Un jeu de données annuel d'indice de végétation NDVI issu de Sentinel-2 pour un champ agricole
+    près de Katol en Inde, incluant des indicateurs de nuages et de brume au niveau du champ. Ce jeu de
+    données permet d'analyser l'état de la végétation sur une parcelle agricole.
+  interet: Évaluer la santé ou la croissance des cultures à partir de données de télédétection.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - ndvi
+  - sentinel-2
+  - télédétection
+  - agriculture
+  - inde
+- id: 4729f550aa6a
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: 'Data and code for: Yield advantages and resource-reporting gaps in plant factories with artificial
+    lighting. A meta-analysis'
+  url: https://doi.org/10.5281/zenodo.24249334
+  description: Source data, live Excel calculations, source-reference key and analysis code supporting
+    Yield advantages and resource-reporting gaps in plant factories with artificial lighting. A meta-analysis
+    . The curated workbook contains 778 plant-factory treatment records from 153 sources, with eligibility
+    flags selecting 683 analyzed records from 124 sources. It holds 34 worksheets and 33,472 Excel formulas
+  licence: cc-by-4.0
+  date_maj: '2026-11-16'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - plant factories with artificial lighting
+  - PFAL
+  - vertical farming
+  - meta-analysis
+  - controlled environment agriculture
+  - yield
+  - energy use
+  - water use
+  score: 92
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farming, yield, water'
+  propose_le: '2026-11-16'
+  publier: true
+  resume: Un jeu de données et des calculs Excel accompagnant une méta-analyse sur les avantages de rendement
+    et les écarts de reporting des ressources dans les serres verticales à éclairage artificiel. Ces données
+    et codes permettent de reproduire l'analyse des résultats.
+  interet: Comparer les performances de systèmes de culture en environnement contrôlé.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - serres verticales
+  - éclairage artificiel
+  - méta-analyse
+  - rendement
+  - agriculture contrôlée
+- id: 6db6b69af89b
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: Navigation Line Detection in agriculture
+  url: https://doi.org/10.5281/zenodo.24252918
+  description: 'Central Crop Row Detection Dataset for Agricultural Navigation This dataset supports research
+    in autonomous agricultural navigation, specifically for detecting central crop rows to enable precise
+    in-row guidance systems. Publication Details: Paper: Extracting the central crop row with CCRDNet
+    for universal in-row navigation in agriculture Authors: Zheng H and Wang Q (2026) Journal: Frontiers
+    in Pl'
+  licence: cc-by-4.0
+  date_maj: '2026-11-15'
+  techno: ''
+  popularite: 0
+  mots_cles: []
+  score: 82
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, crop'
+  propose_le: '2026-11-16'
+  publier: true
+  resume: Un jeu de données pour la détection de lignes de navigation en agriculture, centré sur la détection
+    des rangs de cultures. Ce jeu de données soutient la recherche sur les systèmes de guidage autonome
+    pour les machines agricoles.
+  interet: Développer des algorithmes de navigation autonome pour les engins agricoles.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - navigation autonome
+  - détection de rangs
+  - agriculture
+  - guidage
+  - machine agricole
+- id: 0fec63a1a5ed
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: Research Data for Production and Characterization of Palmyra-Waste Biochar and Its Effects on
+    Growing-Medium Properties and Chinese Kale Growth
+  url: https://doi.org/10.5281/zenodo.24240198
+  description: This dataset supports the research article entitled "Production and Characterization of
+    Palmyra-Waste Biochar and Its Effects on Growing-Medium Properties and Chinese Kale Growth." The dataset
+    contains experimental data on biochar production from palmyra palm (Borassus flabellifer L.) seed
+    shells and leaf petioles using a 200-L drum kiln, together with physicochemical characterization data
+    and mea
+  licence: cc-by-4.0
+  date_maj: '2026-11-15'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - Biochar
+  - Palmyra palm
+  - Biomass valorization
+  - Pyrolysis
+  - Chinese kale
+  - Growing media
+  - Repeated-measures ANOVA
+  - Sustainable agriculture
+  score: 82
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, seed'
+  propose_le: '2026-11-16'
+  publier: true
+  resume: Un jeu de données sur la production et la caractérisation de biochar issu de déchets de palmiers
+    et ses effets sur les propriétés du substrat de culture et la croissance du chou chinois. Ces données
+    documentent une étude expérimentale.
+  interet: Évaluer l'impact de l'amendement de biochar sur la croissance des plantes.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - biochar
+  - palmier
+  - substrat de culture
+  - croissance végétale
+  - pyrolyse
+- id: 9d7514b20572
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: MALE PISTACHIO TREES GROWING IN UZBEKISTAN
+  url: https://doi.org/10.5281/zenodo.24201660
+  description: '&nbsp;In Uzbekistan, natural pistachio stands have survived in mountain and foothill areas.
+    In addition, plantations established from seed around water reservoirs in the 1950s also form part
+    of the pistachio gene pool. Male pistachio trees do not bear fruit, and for this reason they are very
+    often cut down for firewood and other purposes. Knowledge of male trees allows us to understand how
+    importa'
+  licence: cc-by-4.0
+  date_maj: '2026-11-13'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - local, cultivar, form, male, evaluation, tree, competition, female, yield, quality.
+  score: 82
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : seed, yield, water'
+  propose_le: '2026-11-16'
+  publier: true
+  resume: Un jeu de données sur les pistachiers mâles en Ouzbékistan, incluant des informations sur leur
+    évaluation et leur rôle dans la pollinisation. Ces données concernent la diversité génétique des pistachiers.
+  interet: Comprendre la contribution des arbres mâles à la pollinisation des cultures.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - pistachier
+  - pollinisation
+  - diversité génétique
+  - ouzbékistan
+  - arbre mâle
+- id: 49130079f240
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: 'Supplementary material 10 from: Awuor GC, Mandelik Y, Matzrafi M, Schäckermann J (2026) Insect-mediated
+    pollination drives reproductive success and spread of th'
+  url: https://doi.org/10.3897/neobiota.110.194994.suppl10
+  description: Fruit production and seed output in C. acutum
+  licence: cc0-1.0
+  date_maj: '2026-11-15'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - Agroecology
+  - date plantation
+  - insect pollination
+  - invasive species management
+  - pollinia
+  - swallow-wort
+  score: 80
+  raisons:
+  - licence cc0-1.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agroecology, seed'
+  propose_le: '2026-11-16'
+  publier: true
+  resume: Ce projet documente la production de fruits et de graines chez Cynanchum acutum en fonction
+    de la pollinisation par les insectes. Il fournit des données sur l'impact de la pollinisation entomophile
+    sur la reproduction de cette plante.
+  interet: Évaluer l'importance de la pollinisation par les insectes pour la reproduction des plantes.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - pollinisation
+  - reproduction végétale
+  - insectes
+  - plantes invasives
+  - données agronomiques
+- id: c20630899b6d
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agroalimentaire
+  titre: Agreste - Innovation - Enquête communautaire sur l'innovation dans les entreprises agroalimentaires
+    (CIS)
+  url: https://www.data.gouv.fr/datasets/agreste-innovation-enquete-communautaire-sur-linnovation-dans-les-entreprises-agroalimentaires-cis
+  description: Entreprises agroalimentaires de 10 salariés et plus, en 2022 Enquête Statistique publique,
+    Insee - CIS, traitements SSP Caractéristiques des entreprises, l’innovation en produits, biens et
+    services, les acteurs, l’innovation de procédé, les acteurs, sources d’information et de coopération,
+    objectifs des innovations principales activités et dépenses d’innovation, soutien public, partenaires,
+    freins
+  licence: etalab-2.0
+  date_maj: '2026-11-16'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - agroalimentaire
+  - depenses
+  - entreprises
+  - innovation
+  score: 76
+  raisons:
+  - licence etalab-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-11-16'
+  publier: true
+  resume: Cette enquête recense les caractéristiques et les activités d'innovation des entreprises agroalimentaires
+    de 10 salariés et plus en 2022. Elle inclut des données sur les dépenses, les partenariats et les
+    freins à l'innovation.
+  interet: Analyser les dynamiques d'innovation dans le secteur agroalimentaire.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - innovation
+  - agroalimentaire
+  - entreprises
+  - dépenses
+  - statistiques
+- id: 0512a4cdd866
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agroalimentaire
+  titre: 'Open Food Facts - Produits alimentaires : ingrédients, nutrition, labels'
+  url: https://www.data.gouv.fr/datasets/open-food-facts-produits-alimentaires-ingredients-nutrition-labels
+  description: '[Open Food Facts](https://fr.openfoodfacts.org/) répertorie les informations sur les produits
+    alimentaires : ingrédients, informations nutritionnelles, labels etc. Les données proviennent majoritairement
+    de la collecte citoyenne (crowdsourcing) des informations.'
+  licence: odbl-1.0
+  date_maj: '2026-11-07'
+  techno: ''
+  popularite: 46
+  mots_cles:
+  - agroalimentaire
+  - alimentation
+  - aliments
+  - collecte-citoyenne
+  - composition-nutritionnelle
+  - consommation
+  - crowdsourcing
+  - ingredients
+  score: 76
+  raisons:
+  - licence odbl-1.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : alimentaire, food'
+  propose_le: '2026-11-16'
+  publier: true
+  resume: Cette base de données recense les informations nutritionnelles et les ingrédients des produits
+    alimentaires. Les données sont collectées principalement par contribution citoyenne.
+  interet: Faciliter l'accès aux informations nutritionnelles des aliments pour les consommateurs et les
+    professionnels.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - alimentation
+  - composition nutritionnelle
+  - produits alimentaires
+  - collecte citoyenne
+  - labels
+- id: 1222b4ede68b
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: 'ArabicaLens: A Multimodal Dataset of High-Resolution Leaf Imagery and SPAD-Based Chlorophyll
+    Readings'
+  url: https://doi.org/10.5281/zenodo.24247540
+  description: This dataset presents a curated collection of high-resolution images and associated physiological
+    measurements of Coffea Arabica leaves, developed to facilitate research in plant health assessment,
+    precision agriculture, and image-based chlorophyll estimation. It integrates visual leaf data with
+    SPAD-based chlorophyll readings and expert-annotated health labels, enabling both regression and classi
+  licence: cc-by-4.0
+  date_maj: '2026-11-15'
+  techno: ''
+  popularite: 0
+  mots_cles: []
+  score: 76
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-11-16'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+- id: 9c30456e2758
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: geonmin-kim/rollout_groot_so101_mfm_crop256__step9500_move_the_red_cube_from_t_rtc_1106_1538_20261106_154141
+  url: https://huggingface.co/datasets/geonmin-kim/rollout_groot_so101_mfm_crop256__step9500_move_the_red_cube_from_t_rtc_1106_1538_20261106_154141
+  description: 'This dataset was created using LeRobot. Dataset Structure meta/info.json: { "codebase_version":
+    "v3.0", "fps": 30, "features": { "action": { "dtype": "float32", "names": [ "shoulder_pan.pos", "shoulder_l'
+  licence: apache-2.0
+  date_maj: '2026-11-06'
+  techno: ''
+  popularite: 1
+  mots_cles:
+  - LeRobot
+  score: 67
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  propose_le: '2026-11-16'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - robotique
+  - dataset
+  - action
+- id: 896eb105ac0d
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: geonmin-kim/rollout_groot_so101_mfm_crop256__step9500_move_the_red_cube_from_t_rtc_1106_1526_20261106_152641
+  url: https://huggingface.co/datasets/geonmin-kim/rollout_groot_so101_mfm_crop256__step9500_move_the_red_cube_from_t_rtc_1106_1526_20261106_152641
+  description: 'This dataset was created using LeRobot. Dataset Structure meta/info.json: { "codebase_version":
+    "v3.0", "fps": 30, "features": { "action": { "dtype": "float32", "names": [ "shoulder_pan.pos", "shoulder_l'
+  licence: apache-2.0
+  date_maj: '2026-11-06'
+  techno: ''
+  popularite: 1
+  mots_cles:
+  - LeRobot
+  score: 67
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  propose_le: '2026-11-16'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: non
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - robotique
+  - dataset
+  - action
+- id: 7ef9efee8368
+  famille: modele
+  relecteur: ionosphere
+  source: hf-modeles-plantes
+  titre: vijayasai69/leaflens-plant-disease
+  url: https://huggingface.co/vijayasai69/leaflens-plant-disease
+  description: transformers safetensors vit image-classification generated_from_trainer endpoints_compatible
+  licence: apache-2.0
+  date_maj: '2026-11-15'
+  techno: ''
+  popularite: 1
+  mots_cles:
+  - transformers
+  - safetensors
+  - vit
+  - image-classification
+  - generated_from_trainer
+  - endpoints_compatible
+  score: 73
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : plant-disease'
+  propose_le: '2026-11-16'
+  publier: true
+  resume: Modèle de classification d'images basé sur des transformers pour détecter des maladies végétales
+    à partir de photos. Il permet d'identifier des anomalies visuelles sur des plantes.
+  interet: Automatiser le diagnostic précoce de maladies végétales pour faciliter la prise de décision
+    en gestion des cultures.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - maladie végétale
+  - diagnostic visuel
+  - transformers
+  - vit
+  - classification d'images
+- id: 14658ac55b97
+  famille: modele
+  relecteur: ionosphere
+  source: hf-modeles-agri
+  titre: LishaV01/agriculture-crop-disease-detection
+  url: https://huggingface.co/LishaV01/agriculture-crop-disease-detection
+  description: safetensors vit image-classification
+  licence: apache-2.0
+  date_maj: '2026-03-25'
+  techno: ''
+  popularite: 7
+  mots_cles:
+  - safetensors
+  - vit
+  - image-classification
+  score: 67
+  raisons:
+  - licence apache-2.0
+  - actif (moins d'un an)
+  - 'vocabulaire : crop'
+  propose_le: '2026-11-16'
+  publier: true
+  resume: Modèle de classification d'images utilisant des transformers pour identifier des maladies sur
+    des cultures agricoles. Il analyse des images de plantes pour détecter des anomalies.
+  interet: Détecter des maladies sur des cultures à partir d'images pour optimiser les interventions phytosanitaires.
+  pertinence: oui
+  redige_par: mistral-small-latest
+  mots_cles_fr:
+  - maladie des cultures
+  - classification d'images
+  - transformers
+  - vit
+  - diagnostic
+resume_genere_le: 2026-11-16 13:28
