@@ -1,0 +1,1048 @@
+# Lot du radar OSFarm. Passer « publier » à false pour écarter une fiche,
+# corriger « resume » au besoin. La fusion de la pull request publie le reste.
+date: '2026-11-19'
+examines: 399
+retenus: 32
+rejets:
+  deja_vu: 228
+  deja_sur_le_site: 7
+  licence: 45
+  score: 0
+pannes: []
+candidats:
+- id: 513c47265ef5
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: mycro-grow
+  url: https://github.com/SaschaHeyer/mycro-grow
+  description: 'JavaScript library and CLI for gourmet mushroom cultivation math: substrate hydration,
+    spawn ratio, biological-efficiency yield, and batch economics.'
+  licence: mit
+  date_maj: '2026-10-10'
+  techno: JavaScript
+  popularite: 0
+  mots_cles:
+  - Calculators
+  - agriculture
+  - agtech
+  - biological-efficiency
+  - calculator
+  - gourmet-mushrooms
+  - mushroom
+  - mushroom-cultivation
+  score: 100
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, agtech, yield'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-11-19'
+  publier: true
+  resume: 'JavaScript library and CLI for gourmet mushroom cultivation math: substrate hydration, spawn
+    ratio, biological-efficiency yield, and batch economics.'
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 3784ea48da5f
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: GrowerHub
+  url: https://github.com/aspinozaxxx-lab/growerhub
+  description: Greenhouse and small-farm management with Zigbee2MQTT monitoring, plant and watering journals,
+    and lighting and irrigation automation.
+  licence: mit
+  date_maj: '2026-11-19'
+  techno: Java
+  popularite: 7
+  mots_cles:
+  - Farm Management Systems and Record Keeping
+  - esp32
+  - greenhouse-automation
+  - iot
+  - irrigation
+  - mqtt
+  - plant-monitoring
+  - react
+  score: 100
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : farm, greenhouse, irrigation'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-11-19'
+  publier: true
+  resume: Greenhouse and small-farm management with Zigbee2MQTT monitoring, plant and watering journals,
+    and lighting and irrigation automation.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: d09522440539
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: HortusFox
+  url: https://github.com/danielbrendel/hortusfox-web
+  description: Self-hosted collaborative plant management system with plant records, care tasks, inventory,
+    photos, and a calendar.
+  licence: mit
+  date_maj: '2026-11-17'
+  techno: PHP
+  popularite: 1701
+  mots_cles:
+  - Farm Management Systems and Record Keeping
+  - gardening
+  - home-plants
+  - horticulture
+  - hortusfox
+  - houseplants
+  - plant-care
+  - plant-collection
+  score: 100
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : farm, horticulture'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-11-19'
+  publier: true
+  resume: Self-hosted collaborative plant management system with plant records, care tasks, inventory,
+    photos, and a calendar.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: a308cb4c8958
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: Teikei
+  url: https://github.com/teikei/teikei
+  description: Map platform connecting consumers with community-supported agriculture (CSA) farms.
+  licence: agpl-3.0
+  date_maj: '2026-11-07'
+  techno: TypeScript
+  popularite: 66
+  mots_cles:
+  - Markets and Food Systems
+  - crowdsourcing
+  - csa
+  - javascript
+  - leafletjs
+  - nodejs
+  - react
+  score: 100
+  raisons:
+  - licence agpl-3.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farm, food'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-11-19'
+  publier: true
+  resume: Map platform connecting consumers with community-supported agriculture (CSA) farms.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: a439ad45ccb4
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: Contour Alley Designer
+  url: https://github.com/viridisconservation/contour-alley-designer
+  description: Field-scale agroforestry design model (contour alley cropping, shelterbelts, silvopasture)
+    that simulates 40 years on real terrain and soils. Research software in development.
+  licence: apache-2.0
+  date_maj: '2026-11-17'
+  techno: Python
+  popularite: 0
+  mots_cles:
+  - Crop Modeling, Phenotyping, and Pathology
+  - agroforestry
+  - alley-cropping
+  - carbon-removal
+  - conservation
+  - earth-engine
+  - regenerative-agriculture
+  - silvopasture
+  score: 98
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, crop, soil'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-11-19'
+  publier: true
+  resume: Field-scale agroforestry design model (contour alley cropping, shelterbelts, silvopasture) that
+    simulates 40 years on real terrain and soils. Research software in development.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 6a702e7f66fa
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: sentinel-crop-pipeline
+  url: https://github.com/muend/sentinel-crop-pipeline
+  description: 'Reproducible Sentinel-2 L2A data preparation for crop-classification models: scene discovery,
+    cloud masking, patches, spatially blocked splits and label masks, with an optional Gemini or Claude
+    scene filter.'
+  licence: apache-2.0
+  date_maj: '2026-11-08'
+  techno: HTML
+  popularite: 5
+  mots_cles:
+  - Remote Sensing and Imagery
+  - agriculture
+  - arcgis
+  - cdse
+  - copernicus
+  - crop-classification
+  - geospatial
+  - geotiff
+  score: 98
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, crop, geospatial'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-11-19'
+  publier: true
+  resume: 'Reproducible Sentinel-2 L2A data preparation for crop-classification models: scene discovery,
+    cloud masking, patches, spatially blocked splits and label masks, with an optional Gemini or Claude
+    scene filter.'
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 339db56af622
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: MugdhoAI/virtual-farm-2.0
+  url: https://github.com/MugdhoAI/virtual-farm-2.0
+  description: A farm decision simulator. Practice land, seed, fertilizer, labor, irrigation, and sell
+    or store decisions before the real season.
+  licence: mit
+  date_maj: '2026-11-14'
+  techno: HTML
+  popularite: 4
+  mots_cles:
+  - agriculture
+  - decision-making
+  - farm-management
+  - farming
+  - flask
+  - pytest
+  - python
+  - rice
+  score: 92
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farm, farming, fertilizer, irrigation, seed'
+  propose_le: '2026-11-19'
+  publier: true
+  resume: A farm decision simulator. Practice land, seed, fertilizer, labor, irrigation, and sell or store
+    decisions before the real season.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 84ef841c4878
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: xbzz1018/agrigraph
+  url: https://github.com/xbzz1018/agrigraph
+  description: Tomato and rice disease knowledge service with image symptoms, graph retrieval, and cited
+    answers.
+  licence: apache-2.0
+  date_maj: '2026-11-17'
+  techno: Python
+  popularite: 4
+  mots_cles:
+  - agriculture
+  - graphrag
+  - knowledge-graph
+  - multimodal
+  - python
+  score: 76
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-11-19'
+  publier: true
+  resume: Tomato and rice disease knowledge service with image symptoms, graph retrieval, and cited answers.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: dad511616cbf
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: CanNyCat17/RootScope-AdventureX2026
+  url: https://github.com/CanNyCat17/RootScope-AdventureX2026
+  description: 🏆 RootScope（溯根）— AdventureX 2026 双赛道获奖：地瓜机器人赛道二等奖（银奖 · 最终第 2 名）＋ superun.ai「不比代码，比谁离问题最近」赛道三等奖。RDK
+    X5 + STM32 固定式根区灌溉舱。
+  licence: apache-2.0
+  date_maj: '2026-11-13'
+  techno: Python
+  popularite: 4
+  mots_cles:
+  - adventurex-2026
+  - agritech
+  - award-winning
+  - bpu
+  - computer-vision
+  - d-robotics
+  - edge-ai
+  - embedded-systems
+  score: 76
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agritech'
+  propose_le: '2026-11-19'
+  publier: true
+  resume: 🏆 RootScope（溯根）— AdventureX 2026 双赛道获奖：地瓜机器人赛道二等奖（银奖 · 最终第 2 名）＋ superun.ai「不比代码，比谁离问题最近」赛道三等奖。RDK
+    X5 + STM32 固定式根区灌溉舱。
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: f5a690641937
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: leaukojo/carlito
+  url: https://github.com/leaukojo/carlito
+  description: Ultra-lightweight, general-purpose vehicle simulator that runs in a web browser.
+  licence: mit
+  date_maj: '2026-11-17'
+  techno: GDScript
+  popularite: 4
+  mots_cles:
+  - aerospace
+  - agriculture
+  - automotive
+  - can-bus
+  - educational
+  - godot
+  - godot4
+  - isobus
+  score: 74
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-11-19'
+  publier: true
+  resume: Ultra-lightweight, general-purpose vehicle simulator that runs in a web browser.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 31c95688c36f
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: AhmadJeddi/Plant-Disease-Classification
+  url: https://github.com/AhmadJeddi/Plant-Disease-Classification
+  description: A ResNet50-DCBAM deep learning framework for plant disease classification using the PlantVillage
+    dataset with reproducible training and evaluation pipelines.
+  licence: mit
+  date_maj: '2026-10-19'
+  techno: Python
+  popularite: 50
+  mots_cles:
+  - attention-mechanism
+  - cbam
+  - cnn
+  - computer-vision
+  - dcbam
+  - deep-learning
+  - image-classification
+  - plant-disease-classification
+  score: 73
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  propose_le: '2026-11-19'
+  publier: true
+  resume: A ResNet50-DCBAM deep learning framework for plant disease classification using the PlantVillage
+    dataset with reproducible training and evaluation pipelines.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: e6dd5de5dfa8
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: sun2006-xin/smart-greenhouse
+  url: https://github.com/sun2006-xin/smart-greenhouse
+  description: 基于 ESP8266 + ESP32-CAM 的智慧大棚系统：采集空气温湿度、光照、空气质量和 RS485 土壤数据，联动灌溉、施肥、通风与补光；支持 MQTT、双端 Web
+    管理，以及摄像头本地 MobileNetV2 病害识别（自动巡检与手动触发）。
+  licence: apache-2.0
+  date_maj: '2026-08-28'
+  techno: C
+  popularite: 4
+  mots_cles:
+  - agriculture-iot
+  - arduino
+  - edge-ai
+  - embedded-web
+  - esp32-cam
+  - esp8266
+  - iot
+  - modbus-rtu
+  score: 73
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : greenhouse'
+  propose_le: '2026-11-19'
+  publier: true
+  resume: 基于 ESP8266 + ESP32-CAM 的智慧大棚系统：采集空气温湿度、光照、空气质量和 RS485 土壤数据，联动灌溉、施肥、通风与补光；支持 MQTT、双端 Web 管理，以及摄像头本地
+    MobileNetV2 病害识别（自动巡检与手动触发）。
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 9ad78ecaefe8
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-elevage
+  titre: Coprimal/memlore
+  url: https://github.com/Coprimal/memlore
+  description: A little life. A lasting story. A cross-platform, privacy-first, local-first journal —
+    with rich, optional AI.
+  licence: agpl-3.0
+  date_maj: '2026-11-19'
+  techno: Rust
+  popularite: 3
+  mots_cles:
+  - android-app
+  - coprimal
+  - cross-platform
+  - dairy
+  - dairy-app
+  - dayone
+  - ios-app
+  - journal
+  score: 73
+  raisons:
+  - licence agpl-3.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : dairy'
+  propose_le: '2026-11-19'
+  publier: true
+  resume: A little life. A lasting story. A cross-platform, privacy-first, local-first journal — with
+    rich, optional AI.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 98c048cfe9b0
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: joss
+  titre: 'EM27 Retrieval Pipeline: Automated EM27/SUN Data Processing'
+  url: https://joss.theoj.org/papers/10.21105/joss.10413
+  description: ''
+  licence: osi-approuvee
+  date_maj: '2026-11-18'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - Environmental Sensing
+  - Remote Sensing
+  - Greenhouse Gases
+  - EM27/SUN
+  - Bruker
+  - Climate Change
+  - Data Processing
+  - Data Pipeline
+  score: 71
+  raisons:
+  - licence osi-approuvee
+  - actif (moins de 3 mois)
+  - 'vocabulaire : greenhouse'
+  propose_le: '2026-11-19'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 9fb94413051b
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-viti
+  titre: YSSF8/Vineyard
+  url: https://github.com/YSSF8/Vineyard
+  description: A tool to create and manage Wine themes for Linux desktop customization.
+  licence: mit
+  date_maj: '2026-01-27'
+  techno: Python
+  popularite: 5
+  mots_cles: []
+  score: 70
+  raisons:
+  - licence mit
+  - actif (moins d'un an)
+  - 'vocabulaire : vineyard'
+  propose_le: '2026-11-19'
+  publier: true
+  resume: A tool to create and manage Wine themes for Linux desktop customization.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 801ddf6aa554
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-viti
+  titre: tong-xz/GrapeSAM
+  url: https://github.com/tong-xz/GrapeSAM
+  description: Official implementation of GrapeSAM for grape cluster segmentation, berry localization,
+    counting, and visual cluster closure estimation.
+  licence: apache-2.0
+  date_maj: '2026-07-30'
+  techno: Python
+  popularite: 4
+  mots_cles:
+  - agriculture
+  - berry-counting
+  - computer-vision
+  - deep-learning
+  - grape
+  - instance-segmentation
+  - precision-agriculture
+  - segment-anything
+  score: 69
+  raisons:
+  - licence apache-2.0
+  - actif (moins d'un an)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-11-19'
+  publier: true
+  resume: Official implementation of GrapeSAM for grape cluster segmentation, berry localization, counting,
+    and visual cluster closure estimation.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 24b97132b9a0
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: joss
+  titre: 'divent: An R Package for Diversity Measures Based on Entropy'
+  url: https://joss.theoj.org/papers/10.21105/joss.10860
+  description: ''
+  licence: osi-approuvee
+  date_maj: '2026-11-17'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - Biodiversity
+  - Phylogenetic diversity
+  - Functional diversity
+  - Entropy
+  - Hill numbers
+  - Estimation
+  - Partitioning
+  score: 68
+  raisons:
+  - licence osi-approuvee
+  - actif (moins de 3 mois)
+  - 'vocabulaire : biodiversity'
+  propose_le: '2026-11-19'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 447377746f3a
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-elevage
+  titre: qppd/crab-grid-smart-aeration
+  url: https://github.com/qppd/crab-grid-smart-aeration
+  description: House-powered LoRa P2P mud crab fattening monitor — ESP32 + SX1278 915 MHz sensor grid,
+    automated aeration, real-time dashboard, and thesis-grade aquaculture IoT documentation
+  licence: mit
+  date_maj: '2026-10-06'
+  techno: ''
+  popularite: 3
+  mots_cles:
+  - 915mhz
+  - aquaculture
+  - arduino
+  - esp32
+  - firebase
+  - iot
+  - lora-p2p
+  - mangrove
+  score: 67
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  propose_le: '2026-11-19'
+  publier: true
+  resume: House-powered LoRa P2P mud crab fattening monitor — ESP32 + SX1278 915 MHz sensor grid, automated
+    aeration, real-time dashboard, and thesis-grade aquaculture IoT documentation
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: c6b3ba82f444
+  famille: materiel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: Sowbot
+  url: https://github.com/Agroecology-Lab/Sowbot
+  description: Open-hardware seeding and weeding robot for smallholder agroecological farms, with a ROS
+    2 stack.
+  licence: mit
+  date_maj: '2026-11-18'
+  techno: Python
+  popularite: 104
+  mots_cles:
+  - Automation and Robotics
+  - agriculture
+  - agriculture-robotics
+  - agtech
+  - farm-robot
+  - farm-robotics
+  - farming
+  - robot
+  score: 100
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, agtech, farm, farming'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-11-19'
+  publier: true
+  resume: Open-hardware seeding and weeding robot for smallholder agroecological farms, with a ROS 2 stack.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 15812fd6c009
+  famille: donnees
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: VarshaKrishi Field NDVI
+  url: https://www.varshakrishi.com/open-data
+  depot: https://github.com/tanmaysahare/sentinel2-field-ndvi
+  description: One year of Sentinel-2 NDVI for a farm field near Katol, India, with field-level cloud
+    and haze flags (CC BY 4.0, CSV/JSON).
+  licence: mit
+  date_maj: '2026-10-22'
+  techno: Jupyter Notebook
+  popularite: 0
+  mots_cles:
+  - India
+  - agriculture
+  - cloud-optimized-geotiff
+  - earth-observation
+  - ndvi
+  - python
+  - remote-sensing
+  - sentinel-2
+  score: 100
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farm, ndvi, remote-sensing'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-11-19'
+  publier: true
+  resume: One year of Sentinel-2 NDVI for a farm field near Katol, India, with field-level cloud and haze
+    flags (CC BY 4.0, CSV/JSON).
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 7e457fbb8cb9
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: 'Data and code for: Yield advantages and resource-reporting gaps in plant factories with artificial
+    lighting. A meta-analysis'
+  url: https://doi.org/10.5281/zenodo.24340684
+  description: Source data, live Excel calculations, source-reference key and analysis code supporting
+    Yield advantages and resource-reporting gaps in plant factories with artificial lighting. A meta-analysis
+    . The curated workbook contains 778 plant-factory treatment records from 153 sources, with eligibility
+    flags selecting 683 analyzed records from 124 sources. It holds 10 worksheets and 34,774 Excel formulas
+  licence: cc-by-4.0
+  date_maj: '2026-11-18'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - plant factories with artificial lighting
+  - PFAL
+  - vertical farming
+  - meta-analysis
+  - controlled environment agriculture
+  - yield
+  - energy use
+  - water use
+  score: 92
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farming, yield, water'
+  propose_le: '2026-11-19'
+  publier: true
+  resume: Source data, live Excel calculations, source-reference key and analysis code supporting Yield
+    advantages and resource-reporting gaps in plant factories with artificial lighting. A meta-analysis
+    . The curated workbook…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: afd7ccb480cd
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: madhurya-jillkapally/Crop_Disease_Images
+  url: https://huggingface.co/datasets/madhurya-jillkapally/Crop_Disease_Images
+  description: Crop Disease Expert Annotations 1,026 expert annotations over 989 crop photographs, covering
+    pests, diseases and nutrient deficiencies across 74 crop types. The images are included in this repository.
+    Every image is a photo taken by a smallholder farmer on their own plot and sent to F
+  licence: cc-by-4.0
+  date_maj: '2026-11-17'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - crop-disease
+  - pest-detection
+  - plant-pathology
+  - expert-annotations
+  - india
+  score: 91
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farmer, crop'
+  propose_le: '2026-11-19'
+  publier: true
+  resume: Crop Disease Expert Annotations 1,026 expert annotations over 989 crop photographs, covering
+    pests, diseases and nutrient deficiencies across 74 crop types. The images are included in this repository.
+    Every image is…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: b1e30e8dfc10
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: Supplementary data for "Energy efficiency, greenhouse gas emissions and economic trade-offs in
+    conventional, reduced-input and relay-cropped spring barley cropp
+  url: https://doi.org/10.5281/zenodo.24329863
+  description: 'This dataset contains supplementary materials supporting the manuscript entitled &ldquo;Energy
+    efficiency, greenhouse gas emissions and economic trade-offs in conventional, reduced-input and relay-cropped
+    spring barley cropping systems&rdquo;. Supplementary Table S1 provides detailed descriptions of five
+    spring barley cropping systems: conventional tillage (CT), reduced tillage (RT), no-tillage (N'
+  licence: cc-by-4.0
+  date_maj: '2026-11-18'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - 'Keywords: Spring barley; Cropping systems; Energy efficiency; Greenhouse gas emissions; Sensitivity
+    analysis; Sustainable agriculture'
+  score: 88
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, crop, greenhouse'
+  propose_le: '2026-11-19'
+  publier: true
+  resume: This dataset contains supplementary materials supporting the manuscript entitled &ldquo;Energy
+    efficiency, greenhouse gas emissions and economic trade-offs in conventional, reduced-input and relay-cropped
+    spring…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 6b427f9d08e6
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: 'Fermage des vignes en Champagne et en Bourgogne, 2015-2026 : prix du raisin, part de la récolte
+    et rapport loyer / valeur vénale'
+  url: https://www.data.gouv.fr/datasets/fermage-des-vignes-en-champagne-et-en-bourgogne-2015-2026-prix-du-raisin-part-de-la-recolte-et-rapport-loyer-valeur-venale
+  description: 'Une vigne louée par bail rural se paie le plus souvent en quantité de denrée : des kilogrammes
+    de raisin en Champagne, des hectolitres ou des pièces de vin en Bourgogne. Le préfet fixe des bornes
+    à ce loyer, puis arrête chaque année le prix de la denrée qui sert à le convertir en euros. Ce jeu
+    de données reprend les séries et les calculs de l''étude « Louer une vigne en Champagne et en Bourgogne
+    : '
+  licence: cc-by-4.0
+  date_maj: '2026-11-18'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - bail-rural
+  - bourgogne
+  - champagne
+  - fermage
+  - indice-des-fermages
+  - prix-du-raisin
+  - vigne
+  score: 85
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, recolte, rural'
+  propose_le: '2026-11-19'
+  publier: true
+  resume: 'Une vigne louée par bail rural se paie le plus souvent en quantité de denrée : des kilogrammes
+    de raisin en Champagne, des hectolitres ou des pièces de vin en Bourgogne. Le préfet fixe des bornes
+    à ce loyer, puis…'
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 7674c9732806
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: 'Climate-smart aquaponics model: source code, input data and outputs'
+  url: https://doi.org/10.5281/zenodo.24295921
+  description: Accelerating climate change, population growth, and resource depletion severely threaten
+    global food security, especially in vulnerable arid regions. These threats necessitate the development
+    of sustainable agriculture like aquaponics, in which fish and plants coexist, benefiting each other
+    and forming a self-sustaining food system that enhances water, energy, and nutrient efficiency. This
+    study d
+  licence: cc-by-4.0
+  date_maj: '2026-11-17'
+  techno: ''
+  popularite: 0
+  mots_cles: []
+  score: 82
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, food, water'
+  propose_le: '2026-11-19'
+  publier: true
+  resume: Accelerating climate change, population growth, and resource depletion severely threaten global
+    food security, especially in vulnerable arid regions. These threats necessitate the development of
+    sustainable…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: ee6c03ab0b69
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: 'Edible flowers in Turkish folk cuisine: inventory, screening record and analysis code'
+  url: https://doi.org/10.5281/zenodo.24362613
+  description: '# Edible flowers in Turkish folk cuisine: inventory, screening record and analysis code
+    Data and code for the article "Flowers in Turkish folk cuisine: a systematic inventory of published
+    ethnobotanical records, culinary uses and food safety" (submitted to the International Journal of
+    Gastronomy and Food Science). Author: Elif Ferahoğlu, &Ccedil;ukurova University, Faculty of Agriculture,
+    Departme'
+  licence: cc-by-4.0
+  date_maj: '2026-11-19'
+  techno: ''
+  popularite: 0
+  mots_cles: []
+  score: 79
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, food'
+  propose_le: '2026-11-19'
+  publier: true
+  resume: '# Edible flowers in Turkish folk cuisine: inventory, screening record and analysis code Data
+    and code for the article "Flowers in Turkish folk cuisine: a systematic inventory of published ethnobotanical
+    records,…'
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 2a564b277894
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: Caloric food self-sufficiency among 53 high-income countries for the period 2000–2019
+  url: https://doi.org/10.5281/zenodo.21262625
+  description: 'This dataset includes the variables used in the paper "How natural and economic conditions
+    are associated with food self-sufficiency: A comparative analysis among high-income countries," published
+    in the Agriculture and Food Security journal. The main focus is on the caloric food self-sufficiency
+    ratio (SSR) for plant- and animal-based products. The caloric SSR is calculated for 53 high-income
+    cou'
+  licence: cc-by-4.0
+  date_maj: '2026-11-18'
+  techno: ''
+  popularite: 0
+  mots_cles: []
+  score: 79
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, food'
+  propose_le: '2026-11-19'
+  publier: true
+  resume: 'This dataset includes the variables used in the paper "How natural and economic conditions
+    are associated with food self-sufficiency: A comparative analysis among high-income countries," published
+    in the Agriculture…'
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 2da87b0f7670
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: 'PROMOTING ENVIRONMENTAL SUSTAINABILITY IN SCHOOLS THROUGH CHEMISTRY EDUCATION: INTEGRATING GREEN
+    CHEMISTRY AND PRACTICAL ENVIRONMENTAL PROJECTS'
+  url: https://doi.org/10.5281/zenodo.24340377
+  description: '&nbsp; Environmental sustainability has become an essential priority in contemporary education
+    due to increasing environmental challenges, including climate change, deforestation, water pollution,
+    soil degradation, and the excessive use of natural resources. This study examines the educational
+    potential of integrating environmental sustainability principles into secondary school chemistry educatio'
+  licence: cc-by-4.0
+  date_maj: '2026-11-18'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - chemistry education, environmental sustainability, green chemistry, environmental awareness, ecological
+    competence, project-based learning, sustainable development.
+  score: 79
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : soil, sustainability, water'
+  propose_le: '2026-11-19'
+  publier: true
+  resume: '&nbsp; Environmental sustainability has become an essential priority in contemporary education
+    due to increasing environmental challenges, including climate change, deforestation, water pollution,
+    soil degradation,…'
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 1c4f0fa38f77
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: 'Replication package for: Replacing Lost Supply and Reconfiguring Import Sources after a Food
+    Safety Shock: Evidence from EU Sesame Imports'
+  url: https://doi.org/10.5281/zenodo.24336830
+  description: 'This package contains the data, code and results needed to reproduce every number in the
+    article "Replacing Lost Supply and Reconfiguring Import Sources after a Food Safety Shock: Evidence
+    from EU Sesame Imports" (manuscript agriculture-4691348, submitted to Agriculture, MDPI). &nbsp; Contents:
+    18 raw Eurostat Comext files (dataset DS-045409, CN8 12074090, EU27 monthly imports, value and net
+    weigh'
+  licence: cc-by-4.0
+  date_maj: '2026-11-18'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - sesame
+  - ethylene oxide
+  - food safety
+  - EU imports
+  - Eurostat Comext
+  - PPML
+  - replication package
+  - Jensen-Shannon divergence
+  score: 79
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, food'
+  propose_le: '2026-11-19'
+  publier: true
+  resume: 'This package contains the data, code and results needed to reproduce every number in the article
+    "Replacing Lost Supply and Reconfiguring Import Sources after a Food Safety Shock: Evidence from EU
+    Sesame Imports"…'
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: c80589cc1a36
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: test-authoring/reef-point-cover-classifier-training-crops
+  url: https://huggingface.co/datasets/test-authoring/reef-point-cover-classifier-training-crops
+  description: reef-point-cover-classifier-training-crops Mirror of public source data, taken on 2026-11-18.
+    Each section below names one source, its licence and its attribution; the original licence of each
+    source applies. Files listed as unchanged are byte-for-byte copies of the published files; f
+  licence: cc0-1.0
+  date_maj: '2026-11-18'
+  techno: ''
+  popularite: 0
+  mots_cles: []
+  score: 73
+  raisons:
+  - licence cc0-1.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : crop'
+  propose_le: '2026-11-19'
+  publier: true
+  resume: reef-point-cover-classifier-training-crops Mirror of public source data, taken on 2026-11-18.
+    Each section below names one source, its licence and its attribution; the original licence of each
+    source applies. Files…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 35d655ff07ed
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: tetrak/armenian-ocr-crops
+  url: https://huggingface.co/datasets/tetrak/armenian-ocr-crops
+  description: Tetrak Armenian OCR crops Training data for tetrak_hy, the Armenian text recogniser we
+    are building as an EasyOCR custom model in tetrak-hy-trainer for Tetrak, an OCR pipeline for community
+    archives. The dataset has one configuration per synthetic crop set that trained a released mode
+  licence: cc-by-sa-4.0
+  date_maj: '2026-11-16'
+  techno: ''
+  popularite: 2
+  mots_cles:
+  - ocr
+  - text-recognition
+  - armenian
+  - synthetic-data
+  - easyocr
+  score: 73
+  raisons:
+  - licence cc-by-sa-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : crop'
+  propose_le: '2026-11-19'
+  publier: true
+  resume: Tetrak Armenian OCR crops Training data for tetrak_hy, the Armenian text recogniser we are building
+    as an EasyOCR custom model in tetrak-hy-trainer for Tetrak, an OCR pipeline for community archives.
+    The dataset has…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 7ef9efee8368
+  famille: modele
+  relecteur: ionosphere
+  source: hf-modeles-plantes
+  titre: vijayasai69/leaflens-plant-disease
+  url: https://huggingface.co/vijayasai69/leaflens-plant-disease
+  description: transformers safetensors vit image-classification generated_from_trainer endpoints_compatible
+  licence: apache-2.0
+  date_maj: '2026-11-15'
+  techno: ''
+  popularite: 1
+  mots_cles:
+  - transformers
+  - safetensors
+  - vit
+  - image-classification
+  - generated_from_trainer
+  - endpoints_compatible
+  score: 73
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : plant-disease'
+  propose_le: '2026-11-19'
+  publier: true
+  resume: transformers safetensors vit image-classification generated_from_trainer endpoints_compatible
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+resume_genere_le: 2026-11-19 14:14
