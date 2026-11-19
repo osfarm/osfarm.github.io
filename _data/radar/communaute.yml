@@ -340,6 +340,22 @@ candidats:
   propose_le: '2024-06-01'
   source: communaute-osfarm
   publier: true
+- id: projet-openfarmplanner
+  titre: OpenFarmPlanner
+  url: https://github.com/OpenFarmPlanner/planner
+  demo: https://openfarmplanner.org/
+  github_org: OpenFarmPlanner
+  famille: logiciel
+  categorie: Gestion d'exploitation
+  category: Farm Management Systems and Record Keeping
+  licence: agpl-3.0
+  techno: TypeScript
+  description: Open-source crop planning software for vegetable production. Plan crops, growing areas, and planting schedules in one place. Designed for market gardens and community-supported agriculture (CSA).
+  resume: OpenFarmPlanner est une application web gratuite et open source pour la planification des cultures maraîchères, avec des tableaux interactifs similaires à Excel, une gestion graphique des parcelles et des planches de culture, un calendrier cultural et le calcul des besoins en semences. Sa bibliothèque collaborative permet aux maraîchers de partager leurs données culturales, et l'application est disponible en plusieurs langues.
+  date_maj: '2026-11-19'
+  propose_le: '2026-11-19'
+  source: proposition-site
+  publier: true
 - id: projet-opheno
   titre: OPheno
   url: https://huggingface.co/OPheno
