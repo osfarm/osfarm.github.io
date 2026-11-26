@@ -1,0 +1,1046 @@
+# Lot du radar OSFarm. Passer « publier » à false pour écarter une fiche,
+# corriger « resume » au besoin. La fusion de la pull request publie le reste.
+date: '2026-11-23'
+examines: 403
+retenus: 32
+rejets:
+  deja_vu: 221
+  deja_sur_le_site: 5
+  licence: 45
+  score: 0
+pannes: []
+candidats:
+- id: 513c47265ef5
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: mycro-grow
+  url: https://github.com/SaschaHeyer/mycro-grow
+  description: 'JavaScript library and CLI for gourmet mushroom cultivation math: substrate hydration,
+    spawn ratio, biological-efficiency yield, and batch economics.'
+  licence: mit
+  date_maj: '2026-10-10'
+  techno: JavaScript
+  popularite: 0
+  mots_cles:
+  - Calculators
+  - agriculture
+  - agtech
+  - biological-efficiency
+  - calculator
+  - gourmet-mushrooms
+  - mushroom
+  - mushroom-cultivation
+  score: 100
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, agtech, yield'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-11-23'
+  publier: true
+  resume: 'JavaScript library and CLI for gourmet mushroom cultivation math: substrate hydration, spawn
+    ratio, biological-efficiency yield, and batch economics.'
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 3784ea48da5f
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: GrowerHub
+  url: https://github.com/aspinozaxxx-lab/growerhub
+  description: Greenhouse and small-farm management with Zigbee2MQTT monitoring, plant and watering journals,
+    and lighting and irrigation automation.
+  licence: mit
+  date_maj: '2026-11-19'
+  techno: Java
+  popularite: 7
+  mots_cles:
+  - Farm Management Systems and Record Keeping
+  - esp32
+  - greenhouse-automation
+  - iot
+  - irrigation
+  - mqtt
+  - plant-monitoring
+  - react
+  score: 100
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : farm, greenhouse, irrigation'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-11-23'
+  publier: true
+  resume: Greenhouse and small-farm management with Zigbee2MQTT monitoring, plant and watering journals,
+    and lighting and irrigation automation.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: d09522440539
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: HortusFox
+  url: https://github.com/danielbrendel/hortusfox-web
+  description: Self-hosted collaborative plant management system with plant records, care tasks, inventory,
+    photos, and a calendar.
+  licence: mit
+  date_maj: '2026-11-23'
+  techno: PHP
+  popularite: 1701
+  mots_cles:
+  - Farm Management Systems and Record Keeping
+  - gardening
+  - home-plants
+  - horticulture
+  - hortusfox
+  - houseplants
+  - plant-care
+  - plant-collection
+  score: 100
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : farm, horticulture'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-11-23'
+  publier: true
+  resume: Self-hosted collaborative plant management system with plant records, care tasks, inventory,
+    photos, and a calendar.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: a308cb4c8958
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: Teikei
+  url: https://github.com/teikei/teikei
+  description: Map platform connecting consumers with community-supported agriculture (CSA) farms.
+  licence: agpl-3.0
+  date_maj: '2026-11-07'
+  techno: TypeScript
+  popularite: 66
+  mots_cles:
+  - Markets and Food Systems
+  - crowdsourcing
+  - csa
+  - javascript
+  - leafletjs
+  - nodejs
+  - react
+  score: 100
+  raisons:
+  - licence agpl-3.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farm, food'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-11-23'
+  publier: true
+  resume: Map platform connecting consumers with community-supported agriculture (CSA) farms.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: a439ad45ccb4
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: Contour Alley Designer
+  url: https://github.com/viridisconservation/contour-alley-designer
+  description: Field-scale agroforestry design model (contour alley cropping, shelterbelts, silvopasture)
+    that simulates 40 years on real terrain and soils. Research software in development.
+  licence: apache-2.0
+  date_maj: '2026-11-22'
+  techno: Python
+  popularite: 1
+  mots_cles:
+  - Crop Modeling, Phenotyping, and Pathology
+  - agroforestry
+  - alley-cropping
+  - carbon-removal
+  - conservation
+  - earth-engine
+  - regenerative-agriculture
+  - silvopasture
+  score: 98
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, crop, soil'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-11-23'
+  publier: true
+  resume: Field-scale agroforestry design model (contour alley cropping, shelterbelts, silvopasture) that
+    simulates 40 years on real terrain and soils. Research software in development.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 6a702e7f66fa
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: sentinel-crop-pipeline
+  url: https://github.com/muend/sentinel-crop-pipeline
+  description: 'Reproducible Sentinel-2 L2A data preparation for crop-classification models: scene discovery,
+    cloud masking, patches, spatially blocked splits and label masks, with an optional Gemini or Claude
+    scene filter.'
+  licence: apache-2.0
+  date_maj: '2026-11-23'
+  techno: HTML
+  popularite: 5
+  mots_cles:
+  - Remote Sensing and Imagery
+  - agriculture
+  - arcgis
+  - cdse
+  - copernicus
+  - crop-classification
+  - geospatial
+  - geotiff
+  score: 98
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, crop, geospatial'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-11-23'
+  publier: true
+  resume: 'Reproducible Sentinel-2 L2A data preparation for crop-classification models: scene discovery,
+    cloud masking, patches, spatially blocked splits and label masks, with an optional Gemini or Claude
+    scene filter.'
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 4b2279f7187c
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: DHURJATI-JS/kisansetu-farmers-webapp
+  url: https://github.com/DHURJATI-JS/kisansetu-farmers-webapp
+  description: '🌱 KisanSetu: a fair-work web app for Indian farms. Hiring with protected wages, payroll,
+    farm shops, scheme checks and an AI helper in every Indian language. FastAPI · PostgreSQL · Redis.'
+  licence: mit
+  date_maj: '2026-11-19'
+  techno: Python
+  popularite: 4
+  mots_cles:
+  - agriculture
+  - agritech
+  - farmers
+  - fastapi
+  - gemma
+  - india
+  - llm
+  - multilingual
+  score: 92
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, agritech, farm, farmer'
+  propose_le: '2026-11-23'
+  publier: true
+  resume: '🌱 KisanSetu: a fair-work web app for Indian farms. Hiring with protected wages, payroll, farm
+    shops, scheme checks and an AI helper in every Indian language. FastAPI · PostgreSQL · Redis.'
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: df0050380ded
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: Shannon-Goddard/grow_app
+  url: https://github.com/Shannon-Goddard/grow_app
+  description: '🌿 GrowApp Cannabis Guide - Mobile App Repository | Data-driven cultivation platform with
+    2,800+ strain database, smart grow scheduling, and plant diagnostics. Available on iOS & Android App
+    Stores. For contributions, visit our web repository, link below:'
+  licence: mit
+  date_maj: '2026-11-21'
+  techno: HTML
+  popularite: 16
+  mots_cles:
+  - agriculture
+  - android
+  - app-store
+  - cannabis
+  - cultivation
+  - google-play
+  - grow-tracker
+  - horticulture
+  score: 88
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, horticulture'
+  propose_le: '2026-11-23'
+  publier: true
+  resume: 🌿 GrowApp Cannabis Guide - Mobile App Repository | Data-driven cultivation platform with 2,800+
+    strain database, smart grow scheduling, and plant diagnostics. Available on iOS & Android App Stores.
+    For contributions,…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: e00213577945
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: toibawani/kashmir-land-plan
+  url: https://github.com/toibawani/kashmir-land-plan
+  description: Dependency-free offline-first PWA that helps farmers in Jammu & Kashmir turn plot details
+    into practical questions for their local agriculture office. No backend, no login, 168 automated tests.
+  licence: mit
+  date_maj: '2026-11-18'
+  techno: JavaScript
+  popularite: 3
+  mots_cles:
+  - accessibility
+  - agriculture
+  - farmers
+  - jammu-and-kashmir
+  - kashmir
+  - no-build
+  - offline-first
+  - prototype
+  score: 85
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farmer'
+  propose_le: '2026-11-23'
+  publier: true
+  resume: Dependency-free offline-first PWA that helps farmers in Jammu & Kashmir turn plot details into
+    practical questions for their local agriculture office. No backend, no login, 168 automated tests.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 7352a0e8ccb1
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-elevage
+  titre: jeffreytse/jekyll-theme-yat
+  url: https://github.com/jeffreytse/jekyll-theme-yat
+  description: 🎨 Yet another theme for elegant writers with modern flat style and beautiful night/dark
+    mode.
+  licence: mit
+  date_maj: '2026-11-20'
+  techno: HTML
+  popularite: 1205
+  mots_cles:
+  - aesthetic
+  - awesome
+  - beautiful
+  - blog
+  - customizable
+  - dairy
+  - dark-mode
+  - dark-theme
+  score: 83
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : dairy'
+  propose_le: '2026-11-23'
+  publier: true
+  resume: 🎨 Yet another theme for elegant writers with modern flat style and beautiful night/dark mode.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 8553d7b38890
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: Anovvy/PalmAI_Plugin
+  url: https://github.com/Anovvy/PalmAI_Plugin
+  description: An advanced QGIS plugin for automated oil palm plantation monitoring. Features include
+    tree counting, health classification, center point extraction, and road network segmentation using
+    YOLOv8 and DeepLabV3+.
+  licence: mit
+  date_maj: '2026-11-20'
+  techno: Python
+  popularite: 3
+  mots_cles:
+  - deep-learning
+  - deeplab-v3-plus
+  - dockerfile
+  - gis
+  - githubactions
+  - precision-agriculture
+  - qgis-plugin
+  - remote-sensing
+  score: 82
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, gis, remote-sensing'
+  propose_le: '2026-11-23'
+  publier: true
+  resume: An advanced QGIS plugin for automated oil palm plantation monitoring. Features include tree
+    counting, health classification, center point extraction, and road network segmentation using YOLOv8
+    and DeepLabV3+.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 85d0bd6cb399
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: maiychrus25/OpenTea-DX-OS
+  url: https://github.com/maiychrus25/OpenTea-DX-OS
+  description: 'Open-source digital transformation OS for agricultural cooperatives: headless core (SSO,
+    API gateway, data, workflow), plug-in apps via manifest, and evidence-based HPDI metrics. OLP 2026
+    entry.'
+  licence: mit
+  date_maj: '2026-11-23'
+  techno: TypeScript
+  popularite: 35
+  mots_cles:
+  - agriculture
+  - apache-apisix
+  - app-manifest
+  - cooperative
+  - digital-transformation
+  - dx-os
+  - headless
+  - hpdi
+  score: 79
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-11-23'
+  publier: true
+  resume: 'Open-source digital transformation OS for agricultural cooperatives: headless core (SSO, API
+    gateway, data, workflow), plug-in apps via manifest, and evidence-based HPDI metrics. OLP 2026 entry.'
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 3e6ecc082805
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: mwania-stephen/Agri-Sasa
+  url: https://github.com/mwania-stephen/Agri-Sasa
+  description: Agritech App - (Agri-Sasa) project automates agricultural supply chain through digitization
+    & quality control.
+  licence: mit
+  date_maj: '2026-11-21'
+  techno: Kotlin
+  popularite: 5
+  mots_cles:
+  - agritech
+  - android
+  - backend-api
+  - dagger-hilt
+  - daraja-mpesa
+  - fintech-app
+  - firebase
+  - googlemaps-api
+  score: 79
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agritech'
+  propose_le: '2026-11-23'
+  publier: true
+  resume: Agritech App - (Agri-Sasa) project automates agricultural supply chain through digitization
+    & quality control.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 84ef841c4878
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: xbzz1018/agrigraph
+  url: https://github.com/xbzz1018/agrigraph
+  description: Tomato and rice disease knowledge service with image symptoms, graph retrieval, and cited
+    answers.
+  licence: apache-2.0
+  date_maj: '2026-11-23'
+  techno: Python
+  popularite: 4
+  mots_cles:
+  - agriculture
+  - graphrag
+  - knowledge-graph
+  - multimodal
+  - python
+  score: 76
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-11-23'
+  publier: true
+  resume: Tomato and rice disease knowledge service with image symptoms, graph retrieval, and cited answers.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 457ef48afeb4
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: michaelmfoley/stablebound
+  url: https://github.com/michaelmfoley/stablebound
+  description: 'Stable administrative boundaries for subnational statistics: harmonise district-level
+    records across boundary changes. Python package with the India lineage bundled.'
+  licence: mit
+  date_maj: '2026-11-19'
+  techno: Python
+  popularite: 4
+  mots_cles:
+  - administrative-boundaries
+  - agriculture
+  - harmonization
+  - india
+  - python
+  - subnational-statistics
+  score: 76
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-11-23'
+  publier: true
+  resume: 'Stable administrative boundaries for subnational statistics: harmonise district-level records
+    across boundary changes. Python package with the India lineage bundled.'
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: ec143e261d1c
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-elevage
+  titre: wloonis/animal-counter
+  url: https://github.com/wloonis/animal-counter
+  description: 'Real-time bidirectional pig counter on NVIDIA Jetson Orin: YOLO→TensorRT detection, OC-SORT
+    tracking with custom anti-ID-switch guards, fixed-camera counting line, auto-recorded clips — deployed
+    on single-node K3s via Ansible.'
+  licence: gpl-3.0
+  date_maj: '2026-09-30'
+  techno: Python
+  popularite: 3
+  mots_cles:
+  - ansible
+  - cattle
+  - chicken
+  - computer-vision
+  - counter
+  - cow
+  - edge-ai
+  - ia
+  score: 73
+  raisons:
+  - licence gpl-3.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : cattle'
+  propose_le: '2026-11-23'
+  publier: true
+  resume: 'Real-time bidirectional pig counter on NVIDIA Jetson Orin: YOLO→TensorRT detection, OC-SORT
+    tracking with custom anti-ID-switch guards, fixed-camera counting line, auto-recorded clips — deployed
+    on single-node K3s…'
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 9ad78ecaefe8
+  famille: logiciel
+  relecteur: ionosphere
+  source: github-elevage
+  titre: Coprimal/memlore
+  url: https://github.com/Coprimal/memlore
+  description: A little life. A lasting story. A cross-platform, privacy-first, local-first journal —
+    with rich, optional AI.
+  licence: agpl-3.0
+  date_maj: '2026-11-19'
+  techno: Rust
+  popularite: 3
+  mots_cles:
+  - android-app
+  - coprimal
+  - cross-platform
+  - dairy
+  - dairy-app
+  - dayone
+  - ios-app
+  - journal
+  score: 73
+  raisons:
+  - licence agpl-3.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : dairy'
+  propose_le: '2026-11-23'
+  publier: true
+  resume: A little life. A lasting story. A cross-platform, privacy-first, local-first journal — with
+    rich, optional AI.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: c6b3ba82f444
+  famille: materiel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: Sowbot
+  url: https://github.com/Agroecology-Lab/Sowbot
+  description: Open-hardware seeding and weeding robot for smallholder agroecological farms, with a ROS
+    2 stack.
+  licence: mit
+  date_maj: '2026-11-22'
+  techno: Python
+  popularite: 105
+  mots_cles:
+  - Automation and Robotics
+  - agriculture
+  - agriculture-robotics
+  - agtech
+  - farm-robot
+  - farm-robotics
+  - farming
+  - robot
+  score: 100
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, agtech, farm, farming'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-11-23'
+  publier: true
+  resume: Open-hardware seeding and weeding robot for smallholder agroecological farms, with a ROS 2 stack.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 15812fd6c009
+  famille: donnees
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: VarshaKrishi Field NDVI
+  url: https://www.varshakrishi.com/open-data
+  depot: https://github.com/tanmaysahare/sentinel2-field-ndvi
+  description: One year of Sentinel-2 NDVI for a farm field near Katol, India, with field-level cloud
+    and haze flags (CC BY 4.0, CSV/JSON).
+  licence: mit
+  date_maj: '2026-10-22'
+  techno: Jupyter Notebook
+  popularite: 0
+  mots_cles:
+  - India
+  - agriculture
+  - cloud-optimized-geotiff
+  - earth-observation
+  - ndvi
+  - python
+  - remote-sensing
+  - sentinel-2
+  score: 100
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farm, ndvi, remote-sensing'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-11-23'
+  publier: true
+  resume: One year of Sentinel-2 NDVI for a farm field near Katol, India, with field-level cloud and haze
+    flags (CC BY 4.0, CSV/JSON).
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: dfda45170f8f
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: AgriSeg - Pear Tree - Dataset of Synthetic Images for Semantic Segmentation for Visual Navigation
+    in Row-based Crops
+  url: https://doi.org/10.5281/zenodo.23696984
+  description: Precision agriculture has emerged as a valid alternative to traditional farming technologies
+    in the last two decades. Four fundamental requirements can be associated with this technology, such
+    as increasing productivity, allocating resources reasonably, adapting to climate change, and reducing
+    food waste. Precision agriculture is often led by trending and latest technology, such as mobile robotics
+  licence: cc-by-4.0
+  date_maj: '2026-11-23'
+  techno: ''
+  popularite: 0
+  mots_cles: []
+  score: 92
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farming, crop, food'
+  propose_le: '2026-11-23'
+  publier: true
+  resume: Precision agriculture has emerged as a valid alternative to traditional farming technologies
+    in the last two decades. Four fundamental requirements can be associated with this technology, such
+    as increasing…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: e0d308fb88d3
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: AgriSeg - Autumn/Winter - Dataset of Synthetic Images for Semantic Segmentation for Visual Navigation
+    in Row-based Crops
+  url: https://doi.org/10.5281/zenodo.23696274
+  description: Precision agriculture has emerged as a valid alternative to traditional farming technologies
+    in the last two decades. Four fundamental requirements can be associated with this technology, such
+    as increasing productivity, allocating resources reasonably, adapting to climate change, and reducing
+    food waste. Precision agriculture is often led by trending and latest technology, such as mobile robotics
+  licence: cc-by-4.0
+  date_maj: '2026-11-23'
+  techno: ''
+  popularite: 0
+  mots_cles: []
+  score: 92
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farming, crop, food'
+  propose_le: '2026-11-23'
+  publier: true
+  resume: Precision agriculture has emerged as a valid alternative to traditional farming technologies
+    in the last two decades. Four fundamental requirements can be associated with this technology, such
+    as increasing…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: c592fd72b303
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: AgriSeg - Big Trees - Dataset of Synthetic Images for Semantic Segmentation for Visual Navigation
+    in Row-based Crops
+  url: https://doi.org/10.5281/zenodo.23696409
+  description: Precision agriculture has emerged as a valid alternative to traditional farming technologies
+    in the last two decades. Four fundamental requirements can be associated with this technology, such
+    as increasing productivity, allocating resources reasonably, adapting to climate change, and reducing
+    food waste. Precision agriculture is often led by trending and latest technology, such as mobile robotics
+  licence: cc-by-4.0
+  date_maj: '2026-11-23'
+  techno: ''
+  popularite: 0
+  mots_cles: []
+  score: 92
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farming, crop, food'
+  propose_le: '2026-11-23'
+  publier: true
+  resume: Precision agriculture has emerged as a valid alternative to traditional farming technologies
+    in the last two decades. Four fundamental requirements can be associated with this technology, such
+    as increasing…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: fdbb9e5c5ab0
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: AgriSeg - Chard - Dataset of Synthetic Images for Semantic Segmentation for Visual Navigation
+    in Row-based Crops
+  url: https://doi.org/10.5281/zenodo.23696623
+  description: Precision agriculture has emerged as a valid alternative to traditional farming technologies
+    in the last two decades. Four fundamental requirements can be associated with this technology, such
+    as increasing productivity, allocating resources reasonably, adapting to climate change, and reducing
+    food waste. Precision agriculture is often led by trending and latest technology, such as mobile robotics
+  licence: cc-by-4.0
+  date_maj: '2026-11-23'
+  techno: ''
+  popularite: 0
+  mots_cles: []
+  score: 92
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farming, crop, food'
+  propose_le: '2026-11-23'
+  publier: true
+  resume: Precision agriculture has emerged as a valid alternative to traditional farming technologies
+    in the last two decades. Four fundamental requirements can be associated with this technology, such
+    as increasing…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 8b12d15264ee
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: AgriSeg - Cotton - Dataset of Synthetic Images for Semantic Segmentation for Visual Navigation
+    in Row-based Crops
+  url: https://doi.org/10.5281/zenodo.23696970
+  description: Precision agriculture has emerged as a valid alternative to traditional farming technologies
+    in the last two decades. Four fundamental requirements can be associated with this technology, such
+    as increasing productivity, allocating resources reasonably, adapting to climate change, and reducing
+    food waste. Precision agriculture is often led by trending and latest technology, such as mobile robotics
+  licence: cc-by-4.0
+  date_maj: '2026-11-23'
+  techno: ''
+  popularite: 0
+  mots_cles: []
+  score: 92
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farming, crop, food'
+  propose_le: '2026-11-23'
+  publier: true
+  resume: Precision agriculture has emerged as a valid alternative to traditional farming technologies
+    in the last two decades. Four fundamental requirements can be associated with this technology, such
+    as increasing…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 2141c155a57b
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: AgriSeg - Vineyard - Dataset of Synthetic Images for Semantic Segmentation for Visual Navigation
+    in Row-based Crops
+  url: https://doi.org/10.5281/zenodo.23697174
+  description: Precision agriculture has emerged as a valid alternative to traditional farming technologies
+    in the last two decades. Four fundamental requirements can be associated with this technology, such
+    as increasing productivity, allocating resources reasonably, adapting to climate change, and reducing
+    food waste. Precision agriculture is often led by trending and latest technology, such as mobile robotics
+  licence: cc-by-4.0
+  date_maj: '2026-11-23'
+  techno: ''
+  popularite: 0
+  mots_cles: []
+  score: 92
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farming, vineyard, crop, food'
+  propose_le: '2026-11-23'
+  publier: true
+  resume: Precision agriculture has emerged as a valid alternative to traditional farming technologies
+    in the last two decades. Four fundamental requirements can be associated with this technology, such
+    as increasing…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: b67d2820c2e4
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: AgriSeg - Zucchini - Dataset of Synthetic Images for Semantic Segmentation for Visual Navigation
+    in Row-based Crops
+  url: https://doi.org/10.5281/zenodo.23697229
+  description: Precision agriculture has emerged as a valid alternative to traditional farming technologies
+    in the last two decades. Four fundamental requirements can be associated with this technology, such
+    as increasing productivity, allocating resources reasonably, adapting to climate change, and reducing
+    food waste. Precision agriculture is often led by trending and latest technology, such as mobile robotics
+  licence: cc-by-4.0
+  date_maj: '2026-11-23'
+  techno: ''
+  popularite: 0
+  mots_cles: []
+  score: 92
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farming, crop, food'
+  propose_le: '2026-11-23'
+  publier: true
+  resume: Precision agriculture has emerged as a valid alternative to traditional farming technologies
+    in the last two decades. Four fundamental requirements can be associated with this technology, such
+    as increasing…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 5a719f01a287
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: AgriSeg - Lavender - Dataset of Synthetic Images for Semantic Segmentation for Visual Navigation
+    in Row-based Crops
+  url: https://doi.org/10.5281/zenodo.23696725
+  description: Precision agriculture has emerged as a valid alternative to traditional farming technologies
+    in the last two decades. Four fundamental requirements can be associated with this technology, such
+    as increasing productivity, allocating resources reasonably, adapting to climate change, and reducing
+    food waste. Precision agriculture is often led by trending and latest technology, such as mobile robotics
+  licence: cc-by-4.0
+  date_maj: '2026-11-23'
+  techno: ''
+  popularite: 0
+  mots_cles: []
+  score: 92
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farming, crop, food'
+  propose_le: '2026-11-23'
+  publier: true
+  resume: Precision agriculture has emerged as a valid alternative to traditional farming technologies
+    in the last two decades. Four fundamental requirements can be associated with this technology, such
+    as increasing…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 242779bc18ff
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: xexflare/cropx
+  url: https://huggingface.co/datasets/xexflare/cropx
+  description: 'CropX: crop nutrient needs, growth stages and yields (v1.0.0) CropX describes 17 crops
+    grown in Africa: how much N, P2O5, K2O and S a crop takes up and carries off per tonne of harvest,
+    how many days it spends in each FAO growth stage, and the lowest, average and highest yield of 2020'
+  licence: cc-by-4.0
+  date_maj: '2026-11-21'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - crops
+  - africa
+  - crop-nutrition
+  - yields
+  - provenance
+  score: 92
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, crop, harvest, yield'
+  propose_le: '2026-11-23'
+  publier: true
+  resume: 'CropX: crop nutrient needs, growth stages and yields (v1.0.0) CropX describes 17 crops grown
+    in Africa: how much N, P2O5, K2O and S a crop takes up and carries off per tonne of harvest, how many
+    days it spends in…'
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 9ef168036ca8
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: Dheerax/cropsight-india-s2a-v2
+  url: https://huggingface.co/datasets/Dheerax/cropsight-india-s2a-v2
+  description: 'CropSight India: Sentinel-2A cropland segmentation dataset (v2) 21,870 image / mask pairs
+    (256 × 256 px, 10 m, 6 bands) from 87 Sentinel-2A Level-2A scenes over 30 major farming regions in
+    16 Indian states, in three 2021 seasons, with pixel-aligned cropland masks. Split Chips'
+  licence: cc-by-4.0
+  date_maj: '2026-11-19'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - sentinel-2
+  - remote-sensing
+  - agriculture
+  - india
+  - cropland
+  - segmentation
+  score: 92
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, cropland, farming, remote-sensing'
+  propose_le: '2026-11-23'
+  publier: true
+  resume: 'CropSight India: Sentinel-2A cropland segmentation dataset (v2) 21,870 image / mask pairs (256
+    × 256 px, 10 m, 6 bands) from 87 Sentinel-2A Level-2A scenes over 30 major farming regions in 16 Indian
+    states, in three…'
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 3aa9c4c0b4a2
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: dineshcode5/Crop_Disease_Images
+  url: https://huggingface.co/datasets/dineshcode5/Crop_Disease_Images
+  description: Crop Disease Expert Annotations 1,026 expert annotations over 989 crop photographs, covering
+    pests, diseases and nutrient deficiencies across 74 crop types. The images are included in this repository.
+    Every image is a photo taken by a smallholder farmer on their own plot and sent to F
+  licence: cc-by-4.0
+  date_maj: '2026-11-22'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - crop-disease
+  - pest-detection
+  - plant-pathology
+  - expert-annotations
+  - india
+  score: 91
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farmer, crop'
+  propose_le: '2026-11-23'
+  publier: true
+  resume: Crop Disease Expert Annotations 1,026 expert annotations over 989 crop photographs, covering
+    pests, diseases and nutrient deficiencies across 74 crop types. The images are included in this repository.
+    Every image is…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: afd7ccb480cd
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: madhurya-jillkapally/Crop_Disease_Images
+  url: https://huggingface.co/datasets/madhurya-jillkapally/Crop_Disease_Images
+  description: Crop Disease Expert Annotations 1,026 expert annotations over 989 crop photographs, covering
+    pests, diseases and nutrient deficiencies across 74 crop types. The images are included in this repository.
+    Every image is a photo taken by a smallholder farmer on their own plot and sent to F
+  licence: cc-by-4.0
+  date_maj: '2026-11-17'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - crop-disease
+  - pest-detection
+  - plant-pathology
+  - expert-annotations
+  - india
+  score: 91
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farmer, crop'
+  propose_le: '2026-11-23'
+  publier: true
+  resume: Crop Disease Expert Annotations 1,026 expert annotations over 989 crop photographs, covering
+    pests, diseases and nutrient deficiencies across 74 crop types. The images are included in this repository.
+    Every image is…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: db70ce1b5d6f
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: walkingshadow/crop-rotation-changes-data
+  url: https://huggingface.co/datasets/walkingshadow/crop-rotation-changes-data
+  description: crop-rotation-changes-data Input archive for the Terminal-Bench Science task crop-rotation-changes.
+    crop-rotation-changes/input/crop-rotation-changes.tar unpacks to data/parcels.csv (75 agricultural
+    parcels with an opaque 12-character identifier, the declared main-crop group of relati
+  licence: cc-by-4.0
+  date_maj: '2026-11-23'
+  techno: ''
+  popularite: 0
+  mots_cles: []
+  score: 73
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : crop'
+  propose_le: '2026-11-23'
+  publier: true
+  resume: crop-rotation-changes-data Input archive for the Terminal-Bench Science task crop-rotation-changes.
+    crop-rotation-changes/input/crop-rotation-changes.tar unpacks to data/parcels.csv (75 agricultural
+    parcels with an…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+resume_genere_le: 2026-11-23 15:47
