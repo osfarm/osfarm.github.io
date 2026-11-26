@@ -87,12 +87,12 @@ large: true
     <figcaption>La ferme de La Vauzelle vue du sud-ouest : cultures, cours, chemins et forêt.</figcaption></figure>
   <figure><img src="{{ images }}rebus_EDL.webp" width="1600" height="1000" loading="lazy" alt="Le bâtiment aujourd'hui, toiture en tuiles et auvent ouvert">
     <figcaption>Aujourd'hui : toiture en tuiles, auvent ouvert sur poteaux.</figcaption></figure>
-  <figure><img src="{{ images }}rebus_ESQ.webp" width="1600" height="1000" loading="lazy" alt="Le projet REBUS, toiture en bac acier anthracite et appentis vitré">
-    <figcaption>Le projet : bac acier RAL 7016, appentis sud fermé par quatre baies vitrées.</figcaption></figure>
+  <figure><img src="{{ images }}rebus_ESQ.webp" width="1600" height="1000" loading="lazy" alt="Le projet REBUS, toiture en bac acier anthracite et façade sud en bardage bois">
+    <figcaption>Le projet (esquisse V2 de l'architecte) : bac acier RAL 7016, façade sud en bardage bois.</figcaption></figure>
   <figure><img src="{{ images }}facade_sud_ESQ.webp" width="1600" height="1000" loading="lazy" alt="Façade sud du projet à hauteur d'œil">
     <figcaption>La façade sud, à hauteur d'œil.</figcaption></figure>
-  <figure><img src="{{ images }}terrasse_est.webp" width="1600" height="1000" loading="lazy" alt="Angle est : l'appentis prolongé au-dessus de la terrasse, sur poteaux bois">
-    <figcaption>L'angle est : l'appentis prolongé au-dessus de la terrasse.</figcaption></figure>
+  <figure><img src="{{ images }}terrasse_est.webp" width="1600" height="1000" loading="lazy" alt="Angle est : la partie couverte ouverte sur la terrasse, en bardage bois">
+    <figcaption>L'angle est : la partie couverte ouverte sur la terrasse.</figcaption></figure>
   <figure><img src="{{ images }}interieur_reparation.webp" width="1600" height="1000" loading="lazy" alt="Intérieur de l'espace de réparation, vers le coin café">
     <figcaption>L'espace de réparation, vers le coin café.</figcaption></figure>
   <figure><img src="{{ images }}reseaux_ecorche.webp" width="1600" height="1000" loading="lazy" alt="Écorché des réseaux enterrés sous un terrain translucide">
@@ -111,7 +111,7 @@ large: true
   <figure><a href="{{ plans }}plan_rebus_EDL.pdf"><img src="{{ plans }}plan_rebus_EDL.webp" width="1600" height="1131" loading="lazy" alt="Plan du rez-de-chaussée du bâtiment aujourd'hui"></a>
     <figcaption>REBUS aujourd'hui, au 1/100 : pièces actuelles et éléments à démolir (<a href="{{ plans }}plan_rebus_EDL.pdf">PDF</a>).</figcaption></figure>
   <figure><a href="{{ plans }}plan_rebus_ESQ.pdf"><img src="{{ plans }}plan_rebus_ESQ.webp" width="1600" height="1131" loading="lazy" alt="Plan du rez-de-chaussée du projet REBUS avec les pièces et leurs surfaces"></a>
-    <figcaption>REBUS en projet, au 1/100 : pièces et surfaces, cloisons neuves, appentis prolongé (<a href="{{ plans }}plan_rebus_ESQ.pdf">PDF</a>).</figcaption></figure>
+    <figcaption>REBUS en projet, au 1/100 : pièces et surfaces, cloisons neuves ; d'après l'esquisse précédente (ESQ01a), la maquette 3D montre la V2 (<a href="{{ plans }}plan_rebus_ESQ.pdf">PDF</a>).</figcaption></figure>
   <figure><a href="{{ plans }}plan_agencement.pdf"><img src="{{ plans }}plan_agencement.webp" width="1600" height="1131" loading="lazy" alt="Plan d'agencement intérieur : machines et mobilier numérotés, nomenclature"></a>
     <figcaption>Agencement intérieur au 1/100 : machines et mobilier numérotés, dégagements, nomenclature (<a href="{{ plans }}plan_agencement.pdf">PDF</a>).</figcaption></figure>
 </div>
@@ -119,14 +119,18 @@ large: true
 <h2>Comment la maquette est faite</h2>
 <p>Tout est généré par des scripts à partir des données sources : quand un plan ou un relevé change, la maquette se reconstruit en quelques minutes.</p>
 <ul>
-  <li><strong>Bâtiment REBUS</strong> : les plans Archicad de l'architecte (DXF) distinguent l'existant, le démoli et le neuf.
-    <a href="https://www.freecad.org/">FreeCAD</a> en tire des murs, ouvertures, sols, toiture et pièces au format BIM (IFC).</li>
+  <li><strong>Bâtiment REBUS</strong> : pour l'état actuel, les plans Archicad de l'architecte (DXF) distinguent l'existant,
+    le démoli et le neuf ; <a href="https://www.freecad.org/">FreeCAD</a> en tire des murs, ouvertures, sols, toiture et pièces
+    au format BIM (IFC). Le projet est la maquette 3D de l'esquisse V2 de l'architecte (Archicad, publiée au format BIMx),
+    lue directement avec ses éléments et leurs propriétés, puis convertie en IFC ; le bardage bois et le bac acier
+    sont ceux retenus par le maître d'ouvrage.</li>
   <li><strong>Site</strong> : relevé GPS des bâtiments, regards et réseaux sous <a href="https://qgis.org/">QGIS</a>,
     relief du <a href="https://geoservices.ign.fr/lidarhd">LiDAR HD de l'IGN</a> (le relevé et le relief concordent à 10 cm près).
     Le sol est habillé par l'orthophotographie de l'IGN ; routes, chemins et bassin viennent de la BD TOPO.</li>
   <li><strong>Arbres et bâtiments voisins</strong> : chaque arbre est placé et dimensionné d'après la hauteur de canopée
-    du LiDAR HD (plus de 2 600 arbres) ; les toitures voisines prennent leurs hauteurs dans ces mêmes mesures, et leurs
-    matériaux dans les vidéos de drone du site.</li>
+    du LiDAR HD (plus de 2 600 arbres). Le hangar accolé et les trois bâtiments de la cour viennent de la maquette
+    de l'architecte ; les autres bâtiments prennent leurs hauteurs dans le LiDAR HD et leurs matériaux dans les vidéos
+    de drone du site.</li>
   <li><strong>Réseaux enterrés</strong> : eaux pluviales posées à leur fil d'eau mesuré aux regards ; les autres à 60 cm sous le terrain.</li>
   <li><strong>Rendus et 3D web</strong> : <a href="https://www.blender.org/">Blender</a> (matériaux, rendus, export glTF),
     affichage dans le navigateur avec <a href="https://threejs.org/">three.js</a>.</li>

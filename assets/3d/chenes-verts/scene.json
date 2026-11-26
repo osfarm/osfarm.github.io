@@ -24,8 +24,8 @@
    "fichier": "contexte.glb",
    "libelle": "Bâtiments voisins",
    "visible": true,
-   "octets": 28968,
-   "objets": 20
+   "octets": 858820,
+   "objets": 113
   },
   {
    "id": "paysage",
@@ -48,8 +48,8 @@
    "fichier": "rebus_ESQ.glb",
    "libelle": "REBUS — projet",
    "visible": true,
-   "octets": 147248,
-   "objets": 121
+   "octets": 1305708,
+   "objets": 730
   },
   {
    "id": "reseaux",

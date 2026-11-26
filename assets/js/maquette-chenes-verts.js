@@ -29,7 +29,7 @@ const LIBELLES_RESEAUX = {
 const LIBELLES_CATEGORIES = {
   mur: 'Mur', muret: 'Muret', cloison: 'Cloison', bardage: 'Bardage', fenetre: 'Fenêtre', porte: 'Porte',
   toiture: 'Toiture', sol: 'Sol', poteau: 'Poteau', charpente: 'Charpente bois', arbre: 'Arbre',
-  mobilier: 'Mobilier',
+  mobilier: 'Mobilier', menuiserie: 'Menuiserie', sanitaire: 'Sanitaire', equipement: 'Équipement',
 };
 const LIBELLES_CHAMPS = {
   Etat_element: 'État', Hauteur_m: 'Hauteur', Toit: 'Toiture', Murs: 'Murs', materiau: 'Matériau', Calque: 'Réseau', Nature: 'Nature',
