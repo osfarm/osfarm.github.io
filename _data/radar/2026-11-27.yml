@@ -1,0 +1,1014 @@
+# Lot du radar OSFarm. Passer « publier » à false pour écarter une fiche,
+# corriger « resume » au besoin. La fusion de la pull request publie le reste.
+date: '2026-11-27'
+examines: 375
+retenus: 32
+rejets:
+  deja_vu: 231
+  deja_sur_le_site: 7
+  licence: 16
+  score: 1
+pannes: []
+candidats:
+- id: 90f731547acb
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: Open Food Network
+  url: https://github.com/openfoodfoundation/openfoodnetwork
+  description: Online marketplace for farmers and food hubs to sell directly to eaters.
+  licence: agpl-3.0
+  date_maj: '2026-11-27'
+  techno: Ruby
+  popularite: 1305
+  mots_cles:
+  - Markets and Food Systems
+  - farmers
+  - food
+  - food-hubs
+  - hacktoberfest
+  - nonprofit
+  - rails
+  - ruby
+  score: 97
+  raisons:
+  - licence agpl-3.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : farmer, food'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-11-27'
+  publier: true
+  resume: Online marketplace for farmers and food hubs to sell directly to eaters.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 12e6e5201fd8
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: Juntagrico
+  url: https://github.com/juntagrico/juntagrico
+  description: 'Management platform for community-supported agriculture: memberships, shares, deliveries
+    and work shifts.'
+  licence: lgpl-3.0
+  date_maj: '2026-11-25'
+  techno: Python
+  popularite: 55
+  mots_cles:
+  - Markets and Food Systems
+  - community
+  - cooperative
+  - django
+  - python
+  score: 95
+  raisons:
+  - licence lgpl-3.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, food'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-11-27'
+  publier: true
+  resume: 'Management platform for community-supported agriculture: memberships, shares, deliveries and
+    work shifts.'
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: cdb3a7ee753d
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: FoodOn
+  url: https://github.com/FoodOntology/foodon
+  description: Open ontology for food, food sources and food processing.
+  licence: cc-by-4.0
+  date_maj: '2026-11-18'
+  techno: Python
+  popularite: 250
+  mots_cles:
+  - Data Standardization, Interoperability and APIs
+  - agriculture
+  - food
+  - obofoundry
+  - ontology
+  - owl
+  score: 93
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, food'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-11-27'
+  publier: true
+  resume: Open ontology for food, food sources and food processing.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 5c6bcfb72855
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: FoodCoopShop
+  url: https://github.com/foodcoopshop/foodcoopshop
+  description: Ordering and stock software for food co-ops and local farm shops.
+  licence: agpl-3.0
+  date_maj: '2026-11-27'
+  techno: PHP
+  popularite: 124
+  mots_cles:
+  - Markets and Food Systems
+  - cakephp
+  - docker-dev
+  - food-coop
+  - foodcoop
+  score: 93
+  raisons:
+  - licence agpl-3.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : farm, food'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-11-27'
+  publier: true
+  resume: Ordering and stock software for food co-ops and local farm shops.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 15f7f61f0a59
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: Agro GPS MCP
+  url: https://github.com/TheHiddenPandaDev/agro_gps_mcp
+  description: MCP server exposing the official plant protection product registers of 30 European countries
+    (authorisation status, active substances, authorised uses per crop) to AI assistants; free, no key.
+  licence: mit
+  date_maj: '2026-10-23'
+  techno: TypeScript
+  popularite: 1
+  mots_cles:
+  - Data Standardization, Interoperability and APIs
+  - agriculture
+  - europe
+  - farm-management
+  - field-notebook
+  - mcp
+  - mcp-server
+  - model-context-protocol
+  score: 92
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, crop'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-11-27'
+  publier: true
+  resume: MCP server exposing the official plant protection product registers of 30 European countries
+    (authorisation status, active substances, authorised uses per crop) to AI assistants; free, no key.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: a8ca69408bda
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: Trefle
+  url: https://github.com/treflehq/trefle-api
+  description: Open source botanical REST API for querying plant species, taxonomy, and growing information.
+  licence: agpl-3.0
+  date_maj: '2026-11-10'
+  techno: Ruby
+  popularite: 590
+  mots_cles:
+  - Data Standardization, Interoperability and APIs
+  - api-rest
+  - biodiversity
+  - database
+  - farming-robots
+  - gardening-apps
+  - hacktoberfest
+  - plants
+  score: 90
+  raisons:
+  - licence agpl-3.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : biodiversity'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-11-27'
+  publier: true
+  resume: Open source botanical REST API for querying plant species, taxonomy, and growing information.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: fb620cb5d481
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: OpenOlitor
+  url: https://github.com/OpenOlitor/openolitor-server
+  description: Administration software for community-supported agriculture initiatives.
+  licence: agpl-3.0
+  date_maj: '2026-11-22'
+  techno: Scala
+  popularite: 19
+  mots_cles:
+  - Markets and Food Systems
+  score: 90
+  raisons:
+  - licence agpl-3.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, food'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-11-27'
+  publier: true
+  resume: Administration software for community-supported agriculture initiatives.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 2494dbcf0d89
+  famille: logiciel
+  relecteur: ionosphere bertrandgorge
+  source: liste-awesome-agriculture
+  curation: awesome-agriculture
+  titre: SoilHive Core
+  url: https://github.com/varda-ag/soilhive-core
+  description: Federated platform for discovering, harmonising and sharing soil datasets across institutions.
+  licence: mit
+  date_maj: '2026-11-27'
+  techno: TypeScript
+  popularite: 10
+  mots_cles:
+  - Climate, Environment and Weather
+  score: 89
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : soil, weather'
+  - retenu par la liste awesome-agriculture
+  propose_le: '2026-11-27'
+  publier: true
+  resume: Federated platform for discovering, harmonising and sharing soil datasets across institutions.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: c27efed4a450
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: Vishnu868/Crop-Health-Assessment-and-Disease-Detection
+  url: https://github.com/Vishnu868/Crop-Health-Assessment-and-Disease-Detection
+  description: An IoT + ML-powered smart agriculture system for real-time plant disease detection using
+    YOLOv5 + SFR, integrated with a Flutter mobile app and ESP32-CAM for automation and advisory.
+  licence: mit
+  date_maj: '2026-11-27'
+  techno: Python
+  popularite: 5
+  mots_cles:
+  - agriculture
+  - computer-vision
+  - esp32-cam
+  - flutter
+  - iot
+  - plant-disease-detection
+  - yolov5
+  score: 79
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-11-27'
+  publier: true
+  resume: An IoT + ML-powered smart agriculture system for real-time plant disease detection using YOLOv5
+    + SFR, integrated with a Flutter mobile app and ESP32-CAM for automation and advisory.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 00237c8a9aa7
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: AgrDataSci/maniva
+  url: https://github.com/AgrDataSci/maniva
+  description: An open commons for agricultural research
+  licence: cc-by-4.0
+  date_maj: '2026-11-27'
+  techno: HTML
+  popularite: 5
+  mots_cles:
+  - agriculture
+  - commons
+  - open-data
+  - open-source
+  score: 77
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-11-27'
+  publier: true
+  resume: An open commons for agricultural research
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: dad511616cbf
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: CanNyCat17/RootScope-AdventureX2026
+  url: https://github.com/CanNyCat17/RootScope-AdventureX2026
+  description: 🏆 RootScope（溯根）— AdventureX 2026 双赛道获奖：地瓜机器人赛道二等奖（银奖 · 最终第 2 名）＋ superun.ai「不比代码，比谁离问题最近」赛道三等奖。RDK
+    X5 + STM32 固定式根区灌溉舱。
+  licence: apache-2.0
+  date_maj: '2026-11-13'
+  techno: Python
+  popularite: 4
+  mots_cles:
+  - adventurex-2026
+  - agritech
+  - award-winning
+  - bpu
+  - computer-vision
+  - d-robotics
+  - edge-ai
+  - embedded-systems
+  score: 76
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agritech'
+  propose_le: '2026-11-27'
+  publier: true
+  resume: 🏆 RootScope（溯根）— AdventureX 2026 双赛道获奖：地瓜机器人赛道二等奖（银奖 · 最终第 2 名）＋ superun.ai「不比代码，比谁离问题最近」赛道三等奖。RDK
+    X5 + STM32 固定式根区灌溉舱。
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: f5a690641937
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: leaukojo/carlito
+  url: https://github.com/leaukojo/carlito
+  description: Ultra-lightweight, general-purpose vehicle simulator that runs in a web browser.
+  licence: mit
+  date_maj: '2026-11-27'
+  techno: GDScript
+  popularite: 4
+  mots_cles:
+  - aerospace
+  - agriculture
+  - automotive
+  - can-bus
+  - educational
+  - godot
+  - godot4
+  - isobus
+  score: 74
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-11-27'
+  publier: true
+  resume: Ultra-lightweight, general-purpose vehicle simulator that runs in a web browser.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: ce9627cc7911
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: VehanRajintha/Rambukeroots
+  url: https://github.com/VehanRajintha/Rambukeroots
+  description: Modern Agriculture store website
+  licence: mit
+  date_maj: '2026-11-25'
+  techno: CSS
+  popularite: 4
+  mots_cles:
+  - agricultural-modelling
+  - agriculture
+  - agriculture-research
+  - agro
+  - agroweb
+  - website-design
+  - website-template
+  score: 74
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-11-27'
+  publier: true
+  resume: Modern Agriculture store website
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 31c95688c36f
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: github-agri
+  titre: AhmadJeddi/Plant-Disease-Classification
+  url: https://github.com/AhmadJeddi/Plant-Disease-Classification
+  description: A ResNet50-DCBAM deep learning framework for plant disease classification using the PlantVillage
+    dataset with reproducible training and evaluation pipelines.
+  licence: mit
+  date_maj: '2026-10-19'
+  techno: Python
+  popularite: 50
+  mots_cles:
+  - attention-mechanism
+  - cbam
+  - cnn
+  - computer-vision
+  - dcbam
+  - deep-learning
+  - image-classification
+  - plant-disease-classification
+  score: 73
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  propose_le: '2026-11-27'
+  publier: true
+  resume: A ResNet50-DCBAM deep learning framework for plant disease classification using the PlantVillage
+    dataset with reproducible training and evaluation pipelines.
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 98c048cfe9b0
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: joss
+  titre: 'EM27 Retrieval Pipeline: Automated EM27/SUN Data Processing'
+  url: https://joss.theoj.org/papers/10.21105/joss.10413
+  description: ''
+  licence: osi-approuvee
+  date_maj: '2026-11-18'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - Environmental Sensing
+  - Remote Sensing
+  - Greenhouse Gases
+  - EM27/SUN
+  - Bruker
+  - Climate Change
+  - Data Processing
+  - Data Pipeline
+  score: 71
+  raisons:
+  - licence osi-approuvee
+  - actif (moins de 3 mois)
+  - 'vocabulaire : greenhouse'
+  propose_le: '2026-11-27'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 24b97132b9a0
+  famille: logiciel
+  relecteur: alaabenfatma
+  source: joss
+  titre: 'divent: An R Package for Diversity Measures Based on Entropy'
+  url: https://joss.theoj.org/papers/10.21105/joss.10860
+  description: ''
+  licence: osi-approuvee
+  date_maj: '2026-11-17'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - Biodiversity
+  - Phylogenetic diversity
+  - Functional diversity
+  - Entropy
+  - Hill numbers
+  - Estimation
+  - Partitioning
+  score: 68
+  raisons:
+  - licence osi-approuvee
+  - actif (moins de 3 mois)
+  - 'vocabulaire : biodiversity'
+  propose_le: '2026-11-27'
+  publier: false
+  resume: ''
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: d23bb0c17779
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: WATER SCARCITY AND ITS EFFECTS IN INDIA
+  url: https://doi.org/10.5281/zenodo.24530467
+  description: Water is essential for human life, agriculture, industry and economic development. However,
+    many parts of India experience water stress and seasonal water shortages. This article examines the
+    main causes of water scarcity in India and explains its effects on people, farming, public health,
+    and the environment. The study is based on a review of official reports and published information
+    from the Go
+  licence: cc-by-4.0
+  date_maj: '2026-11-25'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - water scarcity, India, groundwater, agriculture, climate change, water management, conservation
+  score: 88
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, farming, water'
+  propose_le: '2026-11-27'
+  publier: true
+  resume: Water is essential for human life, agriculture, industry and economic development. However,
+    many parts of India experience water stress and seasonal water shortages. This article examines the
+    main causes of water…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 368132e60316
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: fazil89/india-crop-yield-prediction
+  url: https://huggingface.co/datasets/fazil89/india-crop-yield-prediction
+  description: 🇮🇳 India Crop Yield Prediction Dataset (2000–2026) A comprehensive dataset for building
+    crop yield prediction models for Indian agriculture, covering 27 years (2000–2026), 31 states/UTs,
+    and 62 crop types. Dataset Summary Metric Value Total Records 21,750 Y
+  licence: apache-2.0
+  date_maj: '2026-11-27'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - india
+  - crop-yield
+  - prediction
+  - regression
+  - time-series
+  score: 88
+  raisons:
+  - licence apache-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, crop, yield'
+  propose_le: '2026-11-27'
+  publier: true
+  resume: 🇮🇳 India Crop Yield Prediction Dataset (2000–2026) A comprehensive dataset for building crop
+    yield prediction models for Indian agriculture, covering 27 years (2000–2026), 31 states/UTs, and
+    62 crop types. Dataset…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 56e930fdf880
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agriculture
+  titre: Zones d'observation du captage naturel de l'huître creuse des Centres Techniques Régionaux
+  url: https://www.data.gouv.fr/datasets/zones-dobservation-du-captage-naturel-de-lhuitre-creuse-des-centres-techniques-regionaux
+  description: 'Cette couche localise les zones contenant les points de suivi du captage de l''huître
+    creuse opérés par 2 Centres Technique Régionaux, CAPENA et SMIDAP. Ces points de suivi étant très
+    variables d''une année à l''autre, et afin d''anonymiser les ostréiculteurs, cette couche a été créée
+    pour la valorisation des données dans les tableaux de bord Valérian. Cette couche attribue notamment
+    un identifiant à '
+  licence: cc-by-4.0
+  date_maj: '2026-11-27'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - activites-et-usages-peche-et-aquaculture
+  - agriculture
+  - directive-cadre-pour-la-planification-de-lespace-maritime
+  - environnement
+  - geolittoral
+  - hvd
+  - installations-agricoles-et-aquacoles
+  - metropole
+  score: 85
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agricole, agriculture'
+  propose_le: '2026-11-27'
+  publier: true
+  resume: Cette couche localise les zones contenant les points de suivi du captage de l'huître creuse
+    opérés par 2 Centres Technique Régionaux, CAPENA et SMIDAP. Ces points de suivi étant très variables
+    d'une année à l'autre,…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 20b055ecc7d8
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: Integrated Database of Environmental Data and Pollution in Agriculture (IDEPA)
+  url: https://doi.org/10.5281/zenodo.24338584
+  description: 'Title of baze:Integrated Database of Environmental Data and Pollution in Agriculture (IDEPA)
+    -&nbsp; &ndash; Field, Laboratory and Remote Sensing Data for Training Algorithms to Detect Heavy
+    Metal and Pesticide Contamination in Agricultural Areas (2025&ndash;2026 campaigns) Description: This
+    dataset is the core spatial database developed within the PADME project. PADME is a research project
+    run by'
+  licence: cc-by-4.0
+  date_maj: '2026-11-26'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - UAV
+  - Sentinel 2
+  score: 85
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, pesticide, sentinel'
+  propose_le: '2026-11-27'
+  publier: true
+  resume: Title of baze:Integrated Database of Environmental Data and Pollution in Agriculture (IDEPA)
+    -&nbsp; &ndash; Field, Laboratory and Remote Sensing Data for Training Algorithms to Detect Heavy
+    Metal and Pesticide…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 59390d6fa3d1
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: Conserving water resources and protecting the environment
+  url: https://doi.org/10.5281/zenodo.24541577
+  description: This article analyzes methods for the rational use of water, using Uzbekistan and the Aral
+    Sea as examples. Based on open-source data, it examines measures to reduce water waste in households,
+    agriculture, and industry. The analysis highlights the necessity of implementing, in tandem, measures
+    for monitoring water consumption and protecting water sources from pollution.
+  licence: cc-by-4.0
+  date_maj: '2026-11-25'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - water resources, water conservation, irrigation, wastewater, Aral Sea, environment.
+  score: 85
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, irrigation, water'
+  propose_le: '2026-11-27'
+  publier: true
+  resume: This article analyzes methods for the rational use of water, using Uzbekistan and the Aral Sea
+    as examples. Based on open-source data, it examines measures to reduce water waste in households,
+    agriculture, and…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 33ea5abe5e83
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: rowshelf/argentina-crop-estimates-by-department-magyp
+  url: https://huggingface.co/datasets/rowshelf/argentina-crop-estimates-by-department-magyp
+  description: 'Argentina Crop Estimates by Department (Free Sample) Free sample: this is the official
+    free sample of a RowShelf dataset. The product page is live at rowshelf.com. Purchases of the full
+    historical edition are currently unavailable. This repository contains only the free sample, not t'
+  licence: cc-by-4.0
+  date_maj: '2026-11-27'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - argentina
+  - crops
+  - soy
+  - maize
+  - wheat
+  - tabular
+  - csv
+  score: 82
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, crop'
+  propose_le: '2026-11-27'
+  publier: true
+  resume: 'Argentina Crop Estimates by Department (Free Sample) Free sample: this is the official free
+    sample of a RowShelf dataset. The product page is live at rowshelf.com. Purchases of the full historical
+    edition are…'
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 95416907a46f
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: InriaXagriscienceFM/acre_crop_weed_zenodo_segmentation
+  url: https://huggingface.co/datasets/InriaXagriscienceFM/acre_crop_weed_zenodo_segmentation
+  description: Acre Crop Weed Zenodo Segmentation RGB images of Maize / Corn, Common Bean, Weeds captured
+    in the field, annotated with bounding boxes. The dataset contains 1,000 images with 56,530 bounding
+    box annotations across 2 categories. This dataset is indexed on https://project-agml.github.io
+  licence: cc-by-4.0
+  date_maj: '2026-11-27'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agml
+  - agriculture
+  - observation-level-field
+  score: 82
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, crop'
+  propose_le: '2026-11-27'
+  publier: true
+  resume: Acre Crop Weed Zenodo Segmentation RGB images of Maize / Corn, Common Bean, Weeds captured in
+    the field, annotated with bounding boxes. The dataset contains 1,000 images with 56,530 bounding box
+    annotations across 2…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 0ae954b9a028
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: InriaXagriscienceFM/multi_crop_incl_vege_agriunion_uav_tiny_object_detection
+  url: https://huggingface.co/datasets/InriaXagriscienceFM/multi_crop_incl_vege_agriunion_uav_tiny_object_detection
+  description: Multi Crop Incl Vege Agriunion Uav Tiny Object Detection RGB images of Multi-crop (incl.
+    vegetables) captured from a drone, annotated with bounding boxes. AgriUnion is a multi-source unified
+    agricultural aerial dataset designed for tiny object detection and UAV edge deployment. It con
+  licence: cc-by-4.0
+  date_maj: '2026-11-26'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agml
+  - agriculture
+  - observation-level-canopy
+  score: 82
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture, crop'
+  propose_le: '2026-11-27'
+  publier: true
+  resume: Multi Crop Incl Vege Agriunion Uav Tiny Object Detection RGB images of Multi-crop (incl. vegetables)
+    captured from a drone, annotated with bounding boxes. AgriUnion is a multi-source unified agricultural
+    aerial…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 51dcd04fa042
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: EFFECT OF MINERAL AND ORGANIC FERTILIZERS ON NITRATE NITROGEN DYNAMICS IN IRRIGATED SOILS UNDER
+    COTTON IN JONDOR DISTRICT, BUKHARA REGION, UZBEKISTAN
+  url: https://doi.org/10.5281/zenodo.24586535
+  description: Efficient nitrogen management is essential for sustaining soil fertility and cotton productivity
+    in the irrigated lands of Uzbekistan. This study examines the initial agrochemical status of irrigated
+    soils in Jondor District, Bukhara Region, and the effect of mineral and organic fertilizers on the
+    seasonal dynamics of soil nitrate nitrogen (NO 3 &ndash;N) under cotton. Four treatments were compare
+  licence: cc-by-4.0
+  date_maj: '2026-11-27'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - irrigated soils; cotton; mineral fertilizer; manure; nitrate nitrogen; ammonium nitrogen; integrated
+    plant nutrient management; Uzbekistan.
+  score: 79
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : fertilizer, soil'
+  propose_le: '2026-11-27'
+  publier: true
+  resume: Efficient nitrogen management is essential for sustaining soil fertility and cotton productivity
+    in the irrigated lands of Uzbekistan. This study examines the initial agrochemical status of irrigated
+    soils in Jondor…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 02beb1d50254
+  famille: donnees
+  relecteur: bertrandgorge
+  source: zenodo-agri
+  titre: Evaluation of fungal disease incidence in faba bean (*Vicia faba* L.) varieties and accessions
+    under rainfed conditions.
+  url: https://doi.org/10.5281/zenodo.24522675
+  description: The faba bean (*Vicia faba* L.) is a promising legume crop for cultivation under rainfed
+    conditions; however, its yield is severely impacted by fungal diseases. In this study, the response
+    to fungal diseases was evaluated for 141 faba bean accessions&mdash;part of the ICARDA International
+    Stage 2 Trial (FBIS2T-26)&mdash;during the 2026 growing season. Rainfall throughout the season exceeded
+    the no
+  licence: cc-by-4.0
+  date_maj: '2026-11-25'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - faba bean, *Vicia faba*, rainfed conditions, chocolate spot, *Botrytis fabae*, *Alternaria*, wilt
+    and root rot, disease resistance, ICARDA.
+  score: 79
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : crop, yield'
+  propose_le: '2026-11-27'
+  publier: true
+  resume: The faba bean (*Vicia faba* L.) is a promising legume crop for cultivation under rainfed conditions;
+    however, its yield is severely impacted by fungal diseases. In this study, the response to fungal
+    diseases was…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: c20630899b6d
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agroalimentaire
+  titre: Agreste - Innovation - Enquête communautaire sur l'innovation dans les entreprises agroalimentaires
+    (CIS)
+  url: https://www.data.gouv.fr/datasets/agreste-innovation-enquete-communautaire-sur-linnovation-dans-les-entreprises-agroalimentaires-cis
+  description: Entreprises agroalimentaires de 10 salariés et plus, en 2022 Enquête Statistique publique,
+    Insee - CIS, traitements SSP Caractéristiques des entreprises, l’innovation en produits, biens et
+    services, les acteurs, l’innovation de procédé, les acteurs, sources d’information et de coopération,
+    objectifs des innovations principales activités et dépenses d’innovation, soutien public, partenaires,
+    freins
+  licence: etalab-2.0
+  date_maj: '2026-11-27'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - agriculture
+  - agroalimentaire
+  - depenses
+  - entreprises
+  - innovation
+  score: 76
+  raisons:
+  - licence etalab-2.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : agriculture'
+  propose_le: '2026-11-27'
+  publier: true
+  resume: Entreprises agroalimentaires de 10 salariés et plus, en 2022 Enquête Statistique publique, Insee
+    - CIS, traitements SSP Caractéristiques des entreprises, l’innovation en produits, biens et services,
+    les acteurs,…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 0512a4cdd866
+  famille: donnees
+  relecteur: bertrandgorge
+  source: datagouv-agroalimentaire
+  titre: 'Open Food Facts - Produits alimentaires : ingrédients, nutrition, labels'
+  url: https://www.data.gouv.fr/datasets/open-food-facts-produits-alimentaires-ingredients-nutrition-labels
+  description: '[Open Food Facts](https://fr.openfoodfacts.org/) répertorie les informations sur les produits
+    alimentaires : ingrédients, informations nutritionnelles, labels etc. Les données proviennent majoritairement
+    de la collecte citoyenne (crowdsourcing) des informations.'
+  licence: odbl-1.0
+  date_maj: '2026-11-20'
+  techno: ''
+  popularite: 46
+  mots_cles:
+  - agroalimentaire
+  - alimentation
+  - aliments
+  - collecte-citoyenne
+  - composition-nutritionnelle
+  - consommation
+  - crowdsourcing
+  - ingredients
+  score: 76
+  raisons:
+  - licence odbl-1.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : alimentaire, food'
+  propose_le: '2026-11-27'
+  publier: true
+  resume: '[Open Food Facts](https://fr.openfoodfacts.org/) répertorie les informations sur les produits
+    alimentaires : ingrédients, informations nutritionnelles, labels etc. Les données proviennent majoritairement
+    de la…'
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: cab9b0e5f0bf
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: Zenodo-ML/Crop-Sequence-Typology-North-Rhine-Westphalia-Germany-2019-2025
+  url: https://huggingface.co/datasets/Zenodo-ML/Crop-Sequence-Typology-North-Rhine-Westphalia-Germany-2019-2025
+  description: Data on Crop Sequence Typology in North Rhine-Westphalia, Germany (2019–2025) Description
+    This data set provides a crop sequence typology for North Rhine-Westphalia, Germany (2019–2025), originally
+    developed by Stein & Steinmann (2018, https://doi.org/10.1016/j.eja.2017
+  licence: cc-by-4.0
+  date_maj: '2026-11-24'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - zenodo
+  - scientific-data
+  - parquet
+  score: 73
+  raisons:
+  - licence cc-by-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : crop'
+  propose_le: '2026-11-27'
+  publier: true
+  resume: Data on Crop Sequence Typology in North Rhine-Westphalia, Germany (2019–2025) Description This
+    data set provides a crop sequence typology for North Rhine-Westphalia, Germany (2019–2025), originally
+    developed by Stein…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: c80589cc1a36
+  famille: donnees
+  relecteur: ionosphere
+  source: hf-datasets-agri
+  titre: test-authoring/reef-point-cover-classifier-training-crops
+  url: https://huggingface.co/datasets/test-authoring/reef-point-cover-classifier-training-crops
+  description: reef-point-cover-classifier-training-crops Mirror of public source data, taken on 2026-11-18.
+    Each section below names one source, its licence and its attribution; the original licence of each
+    source applies. Files listed as unchanged are byte-for-byte copies of the published files; f
+  licence: cc0-1.0
+  date_maj: '2026-11-18'
+  techno: ''
+  popularite: 0
+  mots_cles: []
+  score: 73
+  raisons:
+  - licence cc0-1.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : crop'
+  propose_le: '2026-11-27'
+  publier: true
+  resume: reef-point-cover-classifier-training-crops Mirror of public source data, taken on 2026-11-18.
+    Each section below names one source, its licence and its attribution; the original licence of each
+    source applies. Files…
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: 499e2eebdb07
+  famille: modele
+  relecteur: ionosphere
+  source: hf-modeles-plantes
+  titre: sangjin99/Self-Training-for-Plant-Disease-Analysis
+  url: https://huggingface.co/sangjin99/Self-Training-for-Plant-Disease-Analysis
+  description: Plant Plant phenomics Plant disease Plant lesion Segmentation Leaf segmentation Lesion
+    segmentation Disease segmentation Disease classification Self-learning Self-finetuning image-segmentation
+    en ko
+  licence: cc-by-sa-4.0
+  date_maj: '2026-11-26'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - Plant
+  - Plant phenomics
+  - Plant disease
+  - Plant lesion
+  - Segmentation
+  - Leaf segmentation
+  - Lesion segmentation
+  - Disease segmentation
+  score: 73
+  raisons:
+  - licence cc-by-sa-4.0
+  - actif (moins de 3 mois)
+  - 'vocabulaire : plant-disease'
+  propose_le: '2026-11-27'
+  publier: true
+  resume: Plant Plant phenomics Plant disease Plant lesion Segmentation Leaf segmentation Lesion segmentation
+    Disease segmentation Disease classification Self-learning Self-finetuning image-segmentation en ko
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+- id: f1a05ee311c8
+  famille: modele
+  relecteur: ionosphere
+  source: hf-modeles-plantes
+  titre: abia13/plant-disease-baseline-cnn
+  url: https://huggingface.co/abia13/plant-disease-baseline-cnn
+  description: pytorch image-classification plant-disease plantvillage cnn from-scratch education
+  licence: mit
+  date_maj: '2026-11-19'
+  techno: ''
+  popularite: 0
+  mots_cles:
+  - pytorch
+  - image-classification
+  - plant-disease
+  - plantvillage
+  - cnn
+  - from-scratch
+  - education
+  score: 73
+  raisons:
+  - licence mit
+  - actif (moins de 3 mois)
+  - 'vocabulaire : plant-disease'
+  propose_le: '2026-11-27'
+  publier: true
+  resume: pytorch image-classification plant-disease plantvillage cnn from-scratch education
+  interet: ''
+  pertinence: inconnu
+  redige_par: aucun
+resume_genere_le: 2026-11-27 14:48
